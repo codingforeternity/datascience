@@ -7,3 +7,5 @@ Welcome to the fcrimins.github.io wiki!
 [[ML Search]]
 
 [[Drug Discovery]]
+
+[[Differential Gene Expression]]
