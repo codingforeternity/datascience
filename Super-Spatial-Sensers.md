@@ -15,3 +15,8 @@ Email: "Super recognizers, drivers, diagnosers?"
 * "differential brain activity" like differential gene expression? 
 * I scored 12 out of 14--got the last 2 wrong which are presumably the hardest.  They say that anything above 10/14 could make you a super-recognizer.
 * It's odd that these sorts of things aren't ever tested for in interviews.  E.g. test peoples perception abilities.
+
+Email: "NYTimes: Learning to See Data"
+* http://nyti.ms/1IDHfaN
+* "perceptual learning"
+* "The beauty of such learning is that it is automatic; there’s no thinking involved. 'We don’t just see, we look; we don’t just hear, we listen,' wrote the field’s founder, Eleanor J. Gibson, in 1969. 'Perceptual learning is self-regulated, in the sense that modification occurs without the necessity of external reinforcement. It is stimulus-oriented, with the goal of extracting and reducing' the information needed."
