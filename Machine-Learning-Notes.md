@@ -9,5 +9,4 @@ Email: "What is the difference between convolutional neural networks, restricted
 
 Email: "Restricted Boltzmann machines vs multilayer neural networks - Coursera"
 * http://stats.stackexchange.com/questions/40598/restricted-boltzmann-machines-vs-multilayer-neural-networks
-* "So, if we already had PCA, why the hell did we come up with autoencoders and RBMs? It turns out that PCA only allows linear transformation of a data vectors."
 * "Once deep (or maybe not that deep) network is pretrained, input vectors are transformed to a better representation and resulting vectors are finally passed to real classifier (such as SVM or logistic regression). In an image above it means that at the very bottom there's one more component that actually does classification."
