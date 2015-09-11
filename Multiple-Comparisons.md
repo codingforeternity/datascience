@@ -16,3 +16,16 @@ Email: "can you get this paper too?"
   * http://www.sciencedirect.com/science/article/pii/S0167947302000725
 * "A data based algorithm for the generation of random vectors" http://www.sciencedirect.com/science/article/pii/0167947386900137 (referenced here (with code!): http://stackoverflow.com/questions/19061997/simulating-correlated-multivariate-data)
 * "Correlated, Uniform, Random Values" http://www.acooke.org/random.pdf (also see email for hard copy)
+
+Email: "good description of Bonferroni-Hochberg Procedure
+* http://www.biostathandbook.com/multiplecomparisons.html
+* From Johanna: "this is really great -- i plan to try this with my correlation data (all other data have been corrected for multiple comparisons). it seems like even though my results may no longer be significant, i should likely report them anyway (without correction, but using terms such as 'possible effect') given that false negatives are costly in my case (?)..."
+* My response:
+  * I think you were instructed to do that precisely :)
+  * What are you planning to report exactly?  The correlations between your measurements and DR?  Or the differences in group means for your measurements, which have their own P stats?
+  * Note also that you want the Benjamini–Hochberg–Yekutieli procedure (http://en.wikipedia.org/wiki/False_discovery_rate) which attempts to control for dependency (Benjamini-Hochberg does not).
+* More from Johanna:
+  * i was going to report it all -- correlations between measures and DR, and differences in group means (with corresponding p values).
+  * will check out the B-H-Y procedure shortly -- does this version of the test essentially do the same thing as narrowing my dependent variable list by choosing the most representative variable for a set of inter-dependent variables (i.e. those variables which i know vary together either biologically, or numerically) as per our discussion? what do you mean by controlling for dependency? maybe i should read first. yes, i'll do that.
+* And me again:
+  * yes, that's what BHY does. BH isn't exactly what you want because it assumes complete independence between the tests so BH it too conservative (i.e. it thinks you have more tests than you really do).  for example, consider the case where all of the tests are perfectly correlated (i.e. all the same), that's the same thing as one test, not many.  then there's the case where there isn't any dependence, that's when you use BH.  then there are all the cases in between (i.e. yours) so you have to control for that dependence by either using BHY or using permutations or using simulated data (hence the Vale-Maurelli article) to determine the percentiles of the distribution that you're dealing with.
