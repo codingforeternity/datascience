@@ -18,5 +18,9 @@ Psychology
 * Email: (no subject)
   * Study Can't Confirm Results of Many Psychology Experiments http://rss.nytimes.com/c/34625/f/640377/s/4959c683/sc/28/l/0L0Snytimes0N0Caponline0C20A150C0A80C270Cscience0Cap0Eus0Esci0Everifying0Escience0Bhtml0Dpartner0Frss0Gemc0Frss/story01.htm
 
+Email: "When search for 'reproducibility'"
+* RetractionWatch does not come up
+* Also "journals lawyer-up"
+
 Email: "mentions reproducibility"
 * http://davegiles.blogspot.com/2015/04/introductory-statistics-for-data-science.html
