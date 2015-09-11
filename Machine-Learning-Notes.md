@@ -34,4 +34,7 @@ Email: "The Model Complexity Myth"
 * Gaussian Processes for Machine Learning (free technical book) http://www.gaussianprocess.org/gpml/
 * Fill in the Blanks: Using Math to Turn Lo-Res Datasets Into Hi-Res Samples http://www.wired.com/2010/02/ff_algorithm/
 
+Benchmarking Nearest Neighbor Searches in Python
+* https://jakevdp.github.io/blog/2013/04/29/benchmarking-nearest-neighbor-searches-in-python/
+
 https://www.kaggle.com/
