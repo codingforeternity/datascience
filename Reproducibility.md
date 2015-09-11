@@ -34,6 +34,10 @@ Psychology
 * Email: (no subject)
   * Study Can't Confirm Results of Many Psychology Experiments http://rss.nytimes.com/c/34625/f/640377/s/4959c683/sc/28/l/0L0Snytimes0N0Caponline0C20A150C0A80C270Cscience0Cap0Eus0Esci0Everifying0Escience0Bhtml0Dpartner0Frss0Gemc0Frss/story01.htm
 
+Email: "example patents and other patent info"
+* Improving reproducibility specifically: http://www.google.com/patents/US7517977
+* Another improving reproducibility specifically: http://www.google.com/patents/US20150017669
+
 Email: "When search for 'reproducibility'"
 * RetractionWatch does not come up
 * Also "journals lawyer-up"
