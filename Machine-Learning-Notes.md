@@ -29,4 +29,9 @@ Email: "Deep learning to understand..."
 * E.g. the inner workings of the brain. Which would be very meta, b/c it would be like a machine learning a machine that learns a machine.
 * E.g. machine learning to learn the structure of a neural net.  A neural net learning a neural net.  What if it could learn what the outputs and inputs are rather than being programmed to know them.
 
+Email: "The Model Complexity Myth"
+* The Model Complexity Myth https://jakevdp.github.io/blog/2015/07/06/model-complexity-myth/
+* Gaussian Processes for Machine Learning (free technical book) http://www.gaussianprocess.org/gpml/
+* Fill in the Blanks: Using Math to Turn Lo-Res Datasets Into Hi-Res Samples http://www.wired.com/2010/02/ff_algorithm/
+
 https://www.kaggle.com/
