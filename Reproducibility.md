@@ -7,6 +7,19 @@ Email: "Irreprodicibility crisis"
 Email: "good article on reproducibility and statistical power"
 * http://www.economist.com/news/briefing/21588057-scientists-think-science-self-correcting-alarming-degree-it-not-trouble
 
+Email: "Improve reproducibility through open notebook science"
+* The problem of irreproducibility is one which covers the health sciences, as well as a variety of other sciences, and demands attention. https://www.causes.com/actions/1767172-sign-the-petition-to-united-states-patent-and-trademark-office-the-office-of-science-and-technology-policy  (Lots of references at this link.)
+* Here are 2 more links, which are also linked to from the above.
+  * https://www.whitehouse.gov/administration/eop/ostp
+  * https://www.whitehouse.gov/blog/2013/05/16/introducing-project-open-data
+* Science Magazine on Reproducibility: http://www.sciencemag.org/content/343/6168/229.summary
+* http://www.nature.com/ng/journal/v41/n2/fig_tab/ng.295_T3.html
+* Generally, see the links at the bottom of https://www.causes.com/actions/1767172-sign-the-petition-to-united-states-patent-and-trademark-office-the-office-of-science-and-technology-policy
+  * Too much success in recent experiments: http://www.genetics.org/content/198/2/449.abstract
+  * When are results too good to be true: http://www.genetics.org/content/198/2/449.abstract
+  * Unreliable research: Trouble at the lab: http://www.economist.com/news/briefing/21588057-scientists-think-science-self-correcting-alarming-degree-it-not-trouble
+  * Improving Scientific Reproducibility in an Age of International Competition and Big Data: [cited link doesn't work]
+
 Email: "sometimes i'm wrong, reproducibility"
 * http://sometimesimwrong.typepad.com/
 
