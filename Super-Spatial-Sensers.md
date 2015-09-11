@@ -14,3 +14,4 @@ Email: "Super recognizers, drivers, diagnosers?"
 * Do You Have a Face-Finding Superpower for Fighting Crime? http://phenomena.nationalgeographic.com/2015/09/01/do-you-have-a-face-finding-superpower-for-fighting-crime/
 * "differential brain activity" like differential gene expression? 
 * I scored 12 out of 14--got the last 2 wrong which are presumably the hardest.  They say that anything above 10/14 could make you a super-recognizer.
+* It's odd that these sorts of things aren't ever tested for in interviews.  E.g. test peoples perception abilities.
