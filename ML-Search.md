@@ -1,0 +1,4 @@
+Email: "Internet decay"
+* http://www.vox.com/2015/8/6/9099357/internet-dead-end
+* "What links these seemingly dissimilar stories is a very basic fear — the idea that the internet as we knew it, the internet of five or 10 or 20 years ago, is going away as surely as print media, replaced by a new internet that reimagines personal identity as something easily commodified, that plays less on the desire for information or thoughtfulness than it does the desire for a quick jolt of emotion."
+* I.e. like reality TV.  So why can't machine learning (e.g. Watson) correct the internet back to it's previous state?  People experience the internet through search.  If the searching mechanism doesn't point to reality TV, then [reality TV] might as well not exist, as far as a user is concerned.
