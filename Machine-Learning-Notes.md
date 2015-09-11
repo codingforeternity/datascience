@@ -1,4 +1,6 @@
-
+Email: "projections onto nonlinear subspaces (k-RBMs)"
+* "Non-Linear Manifolds" - https://www.google.com/search?q=projection+onto+curved+subspaces&ie=utf-8&oe=utf-8#q=projection+onto+nonlinear+subspaces
+* RBMs - http://deeplearning.net/tutorial/rbm.html
 
 Email: "restricted boltzman machines, introduction"
 * http://blog.echen.me/2011/07/18/introduction-to-restricted-boltzmann-machines/
