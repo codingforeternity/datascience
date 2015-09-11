@@ -14,3 +14,5 @@ Email: "can you get this paper too?"
   * http://link.springer.com/article/10.1007/BF02294317
   * http://epm.sagepub.com/content/early/2014/09/12/0013164414548894.abstract
   * http://www.sciencedirect.com/science/article/pii/S0167947302000725
+* "A data based algorithm for the generation of random vectors" http://www.sciencedirect.com/science/article/pii/0167947386900137 (referenced here (with code!): http://stackoverflow.com/questions/19061997/simulating-correlated-multivariate-data)
+* "Correlated, Uniform, Random Values" http://www.acooke.org/random.pdf (also see email for hard copy)
