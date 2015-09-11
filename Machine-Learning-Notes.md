@@ -1,4 +1,4 @@
-Email: "projections onto nonlinear subspaces (k-RBMs)"
+Email: "projections onto nonlinear subspaces (k-RBMs)" (the email contains hard copies of these papers)
 * "Non-Linear Manifolds" - https://www.google.com/search?q=projection+onto+curved+subspaces&ie=utf-8&oe=utf-8#q=projection+onto+nonlinear+subspaces
 * RBMs - http://deeplearning.net/tutorial/rbm.html
 
