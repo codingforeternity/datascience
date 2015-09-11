@@ -4,6 +4,9 @@ Email: "Irreprodicibility crisis"
 * A massive study quantifies psychology’s reproducibility problem. By me at the Atlantic.
   * http://www.theatlantic.com/health/archive/2015/08/psychology-studies-reliability-reproducability-nosek/402466/
 
+Email: "sometimes i'm wrong, reproducibility"
+* http://sometimesimwrong.typepad.com/
+
 Email: "Extraordinary laboratories, reproducibility, scientific method, astronomy vs chemistry"
 * Extraordinary Laboratories http://www.ribbonfarm.com/2015/08/18/extraordinary-laboratories/
 
