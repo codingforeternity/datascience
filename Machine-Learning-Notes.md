@@ -26,3 +26,5 @@ Email: "Deep learning to understand..."
 * ...anything we don't. Anything we can observe effect and input, but not transmission mechanism.
 * E.g. the inner workings of the brain. Which would be very meta, b/c it would be like a machine learning a machine that learns a machine.
 * E.g. machine learning to learn the structure of a neural net.  A neural net learning a neural net.  What if it could learn what the outputs and inputs are rather than being programmed to know them.
+
+https://www.kaggle.com/
