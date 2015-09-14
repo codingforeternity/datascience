@@ -19,6 +19,13 @@ Email: "Super recognizers, drivers, diagnosers?"
 Email: Top scientists are more artistic
 * http://marginalrevolution.com/marginalrevolution/2015/09/top-scientists-are-more-artistic.html
 
+Email: Watch this ted talk
+* A community for those who like to be alone, grown out of a blockbuster TED Talk http://blog.ted.com/a-community-for-those-who-like-to-be-alone/
+* The Power of Introverts - http://www.ted.com/talks/susan_cain_the_power_of_introverts
+* "made self negating choices so reflexively that i wasn't even aware that i was making them" - e.g. going to bars rather than quiet dinners w/ friends
+* went to become a wall st lawyer rather than the reader she'd always wanted to be
+* western society has always "favored the man of action over the man of contemplation"
+
 Email: "NYTimes: Learning to See Data"
 * http://nyti.ms/1IDHfaN
 * "perceptual learning"
