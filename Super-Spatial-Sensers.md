@@ -16,6 +16,9 @@ Email: "Super recognizers, drivers, diagnosers?"
 * I scored 12 out of 14--got the last 2 wrong which are presumably the hardest.  They say that anything above 10/14 could make you a super-recognizer.
 * It's odd that these sorts of things aren't ever tested for in interviews.  E.g. test peoples perception abilities.
 
+Email: Top scientists are more artistic
+* http://marginalrevolution.com/marginalrevolution/2015/09/top-scientists-are-more-artistic.html
+
 Email: "NYTimes: Learning to See Data"
 * http://nyti.ms/1IDHfaN
 * "perceptual learning"
