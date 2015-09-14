@@ -12,4 +12,6 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Reproducibility]]
 
+[[JoNR: Journal of Negative Results]]
+
 [[Multiple Comparisons]]
