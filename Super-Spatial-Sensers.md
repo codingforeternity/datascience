@@ -25,6 +25,7 @@ Email: Watch this ted talk
 * "made self negating choices so reflexively that i wasn't even aware that i was making them" - e.g. going to bars rather than quiet dinners w/ friends
 * went to become a wall st lawyer rather than the reader she'd always wanted to be
 * western society has always "favored the man of action over the man of contemplation"
+* this wiki is my "suitcase," my "courage to speak softly"
 
 Email: "NYTimes: Learning to See Data"
 * http://nyti.ms/1IDHfaN
