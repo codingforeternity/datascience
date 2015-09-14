@@ -4,7 +4,8 @@ Email: "Irreprodicibility crisis"
 * A massive study quantifies psychology’s reproducibility problem. By me at the Atlantic.
   * http://www.theatlantic.com/health/archive/2015/08/psychology-studies-reliability-reproducability-nosek/402466/
 
-Email: If You Can't Make Predictions, You're Still in a Crisis
+Email: So much wrong w this article
+* If You Can't Make Predictions, You're Still in a Crisis
 * http://slatestarcodex.com/2015/09/05/if-you-cant-make-predictions-youre-still-in-a-crisis/
 
 Email: "good article on reproducibility and statistical power"
