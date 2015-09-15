@@ -46,4 +46,8 @@ Email: "The Model Complexity Myth"
 Benchmarking Nearest Neighbor Searches in Python
 * https://jakevdp.github.io/blog/2013/04/29/benchmarking-nearest-neighbor-searches-in-python/
 
+Email: ML
+* Codementor: Building Data Products with Python: Using Machine Learning to Provide Recommendations https://www.codementor.io/python/tutorial/build-data-products-django-machine-learning-clustering-user-preferences
+* "using K-means clustering as a machine learning model that makes use of user similarity in order to provide better wine recommendations"
+
 https://www.kaggle.com/
