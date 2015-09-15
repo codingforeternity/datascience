@@ -11,6 +11,7 @@ Email: "Scary machine learning"
   * "RNNs combine the input vector with their state vector with a fixed (but learned) function to produce a new state vector"
   * "If training vanilla neural nets is optimization over functions, training recurrent nets is optimization over programs."
   * "crucially this output vector's contents are influenced not only by the input you just fed in, but also on the entire history of inputs you've fed in in the past."  I.e. this links back to learning in stages (pixels, lines, shapes, faces; or regimes, sectors, instruments).
+  * SEQUENCES - "model the probability distribution of the next character in the sequence given a sequence of previous characters"
 
 Email: "What is the difference between convolutional neural networks, restricted Boltzmann machines, and auto-encoders? - Cross Validated"
 * http://stats.stackexchange.com/questions/114385/what-is-the-difference-between-convolutional-neural-networks-restricted-boltzma
