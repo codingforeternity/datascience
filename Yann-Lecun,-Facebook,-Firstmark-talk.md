@@ -49,4 +49,4 @@ FirstMark Capital is a NYC venture capital firm.  Attendees included a dude from
   * a bird specialist would talk a lot about feathers, if asked, but that doesn't figure at all into planes
 * Jeff Inten has a Coursera course on ML, but it doesn't cover NLP (negative according to Yann)
 * Yosho Benjo has a free text book online co-authored w/ Aaron Coveil and Ian Goodfellow
-* Yann has an NVidia Webinar (watch it)
+* Yann has an [NVidia Webinar](https://www.facebook.com/yann.lecun/posts/10152290017742143) (watch it) and also see [these](http://on-demand-gtc.gputechconf.com/gtcnew/on-demand-gtc.php)
