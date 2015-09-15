@@ -19,3 +19,5 @@ Welcome to the fcrimins.github.io wiki!
 [[Quantitative Healthcare]]
 
 [[Java Notes]]
+
+[[Agile Notes]]
