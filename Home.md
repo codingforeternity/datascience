@@ -17,3 +17,5 @@ Welcome to the fcrimins.github.io wiki!
 [[Multiple Comparisons]]
 
 [[Quantitative Healthcare]]
+
+[[Java Notes]]
