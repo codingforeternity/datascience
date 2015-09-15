@@ -8,7 +8,7 @@ Email: Diagnosis and prescription biases (no subject)
 Email: Thiel on drugs
 * [A Biotech Education, In Progress ](http://blogs.sciencemag.org/pipeline/archives/2015/09/14/a-biotech-education-in-progress)
 * http://blogs.sciencemag.org/pipeline/archives/2015/09/14/a-biotech-education-in-progress
-* "so what does he think of drug research? Not much."
+* "so what does he think of drug research? [Not much](http://blogs.sciencemag.org/pipeline/archives/2014/09/19/peter_thiels_uncomplimentary_views_of_big_pharma)."
 
 Email: The New Old Age: Chronic Kidney Disease Can Be Dubious Diagnosis
 * gist: pretty much all older adults have kidney disease, but is it a disease or are they just old?
