@@ -8,6 +8,8 @@ Welcome to the fcrimins.github.io wiki!
 
 [[ML Search]]
 
+[[ML Finance]]
+
 [[Differential Gene Expression]]
 
 [[Reproducibility]]
