@@ -5,6 +5,11 @@ Email: "projections onto nonlinear subspaces (k-RBMs)" (the email contains hard 
 Email: "restricted boltzman machines, introduction"
 * http://blog.echen.me/2011/07/18/introduction-to-restricted-boltzmann-machines/
 
+Email: "Scary machine learning"
+* Why You Should be a Little Scared of Machine Learning http://www.reddit.com/r/programming/comments/3l0qek/why_you_should_be_a_little_scared_of_machine/
+* This link on Recurrent Neural Networks was linked to from the above: http://karpathy.github.io/2015/05/21/rnn-effectiveness/
+  * "RNNs combine the input vector with their state vector with a fixed (but learned) function to produce a new state vector"
+
 Email: "What is the difference between convolutional neural networks, restricted Boltzmann machines, and auto-encoders? - Cross Validated"
 * http://stats.stackexchange.com/questions/114385/what-is-the-difference-between-convolutional-neural-networks-restricted-boltzma
 * "So, if we already had PCA, why the hell did we come up with autoencoders and RBMs? It turns out that PCA only allows linear transformation of a data vectors."
