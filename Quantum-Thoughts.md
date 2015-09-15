@@ -14,3 +14,6 @@ Email: "If stuff like..."
 Email: (no subject)
 * Everything is made from something http://kottke.org/15/08/everything-is-made-from-something
 * primer on quantum field theory
+
+Email: (no subject)
+* Researchers Report Milestone in Developing Quantum Computer http://rss.nytimes.com/c/34625/f/640377/s/4409dbaa/sc/21/l/0L0Snytimes0N0C20A150C0A30C0A50Cscience0Cquantum0Ecomputing0Enature0Egoogle0Euc0Esanta0Ebarbara0Bhtml0Dpartner0Frss0Gemc0Frss/story01.htm
