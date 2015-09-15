@@ -17,3 +17,6 @@ Email: (no subject)
 
 Email: (no subject)
 * Researchers Report Milestone in Developing Quantum Computer http://rss.nytimes.com/c/34625/f/640377/s/4409dbaa/sc/21/l/0L0Snytimes0N0C20A150C0A30C0A50Cscience0Cquantum0Ecomputing0Enature0Egoogle0Euc0Esanta0Ebarbara0Bhtml0Dpartner0Frss0Gemc0Frss/story01.htm
+
+Email: (no subject)
+* Books: ‘The Quantum Moment’ Recounts the End of Determinism http://rss.nytimes.com/c/34625/f/640377/s/437389f8/sc/10/l/0L0Snytimes0N0C20A150C0A20C170Cscience0Cthe0Equantum0Emoment0Erecounts0Ethe0Eend0Eof0Edeterminism0Bhtml0Dpartner0Frss0Gemc0Frss/story01.htm
