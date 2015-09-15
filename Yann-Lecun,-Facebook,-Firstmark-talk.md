@@ -39,7 +39,7 @@ FirstMark Capital is a NYC venture capital firm.  Attendees included a dude from
   * there was a gold rush over 2014, but that window is closing
 * Q: as a startup, better to provide a vertical (general) or horizontal (specific) solution?
   * A: vertical, b/c specifics like image recognition already solved
-* Yann is a co-founder of MuseME - DL for music related stuff
+* Yann is a co-founder of [MuseAmi](http://www.museami.com/) - DL for music related stuff
 * medical imaging not very well explored and there are still opportunities for small companies
 * the major undiscovered DL principle is unsupervised learning -- e.g. learning how the brain really works
 * NNs are very weakly inspired by neuroscience
