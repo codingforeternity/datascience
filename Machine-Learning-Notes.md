@@ -5,6 +5,11 @@ Email: "projections onto nonlinear subspaces (k-RBMs)" (the email contains hard 
 Email: "restricted boltzman machines, introduction"
 * http://blog.echen.me/2011/07/18/introduction-to-restricted-boltzmann-machines/
 
+Email from Bart: Fwd: Yann at Firstmark
+* "Although quite long (~45 min), it's a good snapshot of where AI / deep learning is today and where it came from and why it's winning."
+* [Yann Lecun, Facebook // Artificial Intelligence // Data Driven #32 (Hosted by FirstMark Capital)] (https://www.youtube.com/watch?v=AbjVdBKfkO0)
+* More notes [[Yann Lecun, Facebook, Firstmark talk|here]]
+
 Email: "Scary machine learning"
 * Why You Should be a Little Scared of Machine Learning http://www.reddit.com/r/programming/comments/3l0qek/why_you_should_be_a_little_scared_of_machine/
 * This link on Recurrent Neural Networks was linked to from the above: http://karpathy.github.io/2015/05/21/rnn-effectiveness/
