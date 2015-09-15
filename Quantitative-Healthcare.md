@@ -1,0 +1,2 @@
+Email: Google Healthcare
+* Is Healthcare Google’s Next Big Business After Search? This Investment Bank Thinks So. http://recode.net/2015/09/13/analyst-investment-bank-cowen-report-google-healthcare-next-multi-billion-business/
