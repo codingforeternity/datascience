@@ -4,9 +4,9 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Machine Learning Notes]]
 
-[[ML Search]]
+[[Quantitative Healthcare]]
 
-[[Drug Discovery]]
+[[ML Search]]
 
 [[Differential Gene Expression]]
 
@@ -16,7 +16,6 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Multiple Comparisons]]
 
-[[Quantitative Healthcare]]
 
 [[Java Notes]]
 
