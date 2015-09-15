@@ -18,7 +18,8 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Multiple Comparisons]]
 
-
 [[Java Notes]]
 
 [[Agile Notes]]
+
+[[Quantum Thoughts]]
