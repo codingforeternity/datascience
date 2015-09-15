@@ -29,3 +29,24 @@ FirstMark Capital is a NYC venture capital firm.  Attendees included a dude from
       * this is a specific technique
       * compositional properties, e.g. <Paris> - <UK> = <London>
 * "We cease to be the lunatic fringe.  We're now the lunatic core."
+* Industry picked up on DL faster than academia due to resistance
+* Facebook AI code is mostly open source
+* Yann is teaching (or taught) a course at NYU this past spring (?) that is supposedly freely available w/ lectures on the web
+* the window is going to close very quickly for startups in DL due to a few reasons
+  * not easy to get data
+  * good people already hired by Google/FB
+  * good companies already sold to Google/FB
+  * there was a gold rush over 2014, but that window is closing
+* Q: as a startup, better to provide a vertical (general) or horizontal (specific) solution?
+  * A: vertical, b/c specifics like image recognition already solved
+* Yann is a co-founder of MuseME - DL for music related stuff
+* medical imaging not very well explored and there are still opportunities for small companies
+* the major undiscovered DL principle is unsupervised learning -- e.g. learning how the brain really works
+* NNs are very weakly inspired by neuroscience
+  * akin to how airplanes are inspired by birds
+  * need yet to discover the underlying principles of intelligence
+  * just like aerodynamics are the underlying principles of birds/planes/flight
+  * a bird specialist would talk a lot about feathers, if asked, but that doesn't figure at all into planes
+* Jeff Inten has a Coursera course on ML, but it doesn't cover NLP (negative according to Yann)
+* Yosho Benjo has a free text book online co-authored w/ Aaron Coveil and Ian Goodfellow
+* Yann has an NVidia Webinar (watch it)
