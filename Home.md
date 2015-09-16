@@ -22,6 +22,8 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Agile Notes]]
 
+[[Python Notes]]
+
 [[Quantum Thoughts]]
 
 [[Assorted Ideas]]
