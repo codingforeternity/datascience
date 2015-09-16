@@ -9,3 +9,7 @@ Email: ML for myths
 * Eg diets
 * Things with tons of unproven "knowledge"
 * Can myths/diets be debunked using ML?
+
+Email: ML for understanding babies
+* How many theories are there?  How many don't have any supporting evidence, like psychology.
+* Understand what their cries and motions mean
