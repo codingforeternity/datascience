@@ -14,3 +14,4 @@ Idea: Anomaly Detection
 * use it to identify stocks with future (in the expected holding horizon window) 1-day large returns, cases where getting it wrong would be really bad (or just really risky)
 * the trick would of course be to have the features engineer themselves
 * Andrew Ng - "unusual combinations of values of features"
+* of course this might be better learned w/ a neural net because there are a lot of examples, but on the other hand, they all happen for different reasons
