@@ -55,4 +55,8 @@ Email: ML
 * Codementor: Building Data Products with Python: Using Machine Learning to Provide Recommendations https://www.codementor.io/python/tutorial/build-data-products-django-machine-learning-clustering-user-preferences
 * "using K-means clustering as a machine learning model that makes use of user similarity in order to provide better wine recommendations"
 
+Email: New method of learning
+* 3. Chess-playing computer with an entirely new method of learning, and more here.  It is International Master strength (for now).
+* http://www.technologyreview.com/view/541276/deep-learning-machine-teaches-itself-chess-in-72-hours-plays-at-international-master/
+
 https://www.kaggle.com/
