@@ -8,7 +8,7 @@ Email: Rather than learning...
 * ...optimal stocks to trade and then learning how to predict those, instead learn optimal factors (risk and forecast), and tcosts, and residual stock positions.
 * Can the factor model be learned also?
 
-Idea: Anomaly Detection
+Idea: Anomaly Detection (9/16/15)
 * had this idea while watching https://www.coursera.org/learn/machine-learning/lecture/LSpXm/choosing-what-features-to-use
 * perhaps anomaly detection can be used to red-flag stocks w/ something weird going on (e.g. accounting irregularities)
 * use it to identify stocks with future (in the expected holding horizon window) 1-day large returns, cases where getting it wrong would be really bad (or just really risky)
