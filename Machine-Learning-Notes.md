@@ -32,6 +32,7 @@ Coursera Machine Learning Course Notes
 * http://cs229.stanford.edu/materials.html
 * Email: "octave/matlab resources"
 ** https://www.coursera.org/learn/machine-learning/supplement/Mlf3e/more-octave-matlab-resources
+* http://www.forbes.com/sites/anthonykosner/2013/12/29/why-is-machine-learning-cs-229-the-most-popular-course-at-stanford/
 
 Email: (no subject)
 * Welcome to the AI Conspiracy: The ‘Canadian Mafia’ Behind Tech’s Latest Craze http://recode.net/2015/07/15/ai-conspiracy-the-scientists-behind-deep-learning/
