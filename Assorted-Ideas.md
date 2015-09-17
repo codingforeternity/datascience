@@ -1,3 +1,5 @@
+IDEA: http://www.data.gov/
+
 Email: Create a company...
 * ...that rather than trying to always make things better, like google, tries to prevent things from becoming worse, by stifling innovation for example.  Every cost against rent seeking
 
