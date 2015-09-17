@@ -12,4 +12,6 @@ Email: Java sites
 Email: C++ to Java
 * This tutorial is intended for students who are already familiar with C++ and with data structures, and are interested in learning Java.  http://pages.cs.wisc.edu/~hasti/cs368/JavaTutorial/
 * Difference between Java and C++ Constructor - Interview Question http://javarevisited.blogspot.com/2015/09/difference-between-java-and-c-constructor.html
+  * [Why multiple inheritances are not supported in Java](http://javarevisited.blogspot.sg/2011/07/why-multiple-inheritances-are-not.html)
+  * [Why String is Immutable or Final in Java](http://javarevisited.blogspot.com/2010/10/why-string-is-immutable-in-java.html)
 * BTW, if you are from C++ background and looking for a good book to learn Java then check out [Core Java, Volume 1](http://www.amazon.com/Core-Volume-I-Fundamentals-Edition-Series/dp/0137081898) by Cay S. Horstmann.
