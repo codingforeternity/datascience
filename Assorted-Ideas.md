@@ -5,6 +5,9 @@ Email: ML for aggregated knowledge
 * On the Web for example. How many sites support a particular point of view
 * Internetal Consensus!
 
+Email: data support via ML for spoken/written words
+* People say all sorts of shit, but its very rarely backed up by data.  It would be really cool if given some statement, one could use ML to look for support for that statement in all the data.
+
 Email: ML for myths
 * Eg diets
 * Things with tons of unproven "knowledge"
