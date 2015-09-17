@@ -5,8 +5,12 @@ Email: ML for aggregated knowledge
 * On the Web for example. How many sites support a particular point of view
 * Internetal Consensus!
 
-Email: data support via ML for spoken/written words
+Email: data support via ML for spoken/written words (9/17/15)
 * People say all sorts of shit, but its very rarely backed up by data.  It would be really cool if given some statement, one could use ML to look for support for that statement in all the data.
+
+Email: back data out of published results (9/17/15)
+* just like in the ML course where features are backed out of ratings (low rank matrix factorization)
+* if data could be backed out of published results, then the data could be combined with data from other studies and "meta-data studies" could be born
 
 Email: ML for myths
 * Eg diets
