@@ -12,7 +12,7 @@ FirstMark Capital is a NYC venture capital firm.  Attendees included a dude from
   * blocks of pixels are correlated  => there's a more efficient way to represent blocks
   * pixels -> patches/blocks -> motifs -> parts of objects -> objects -> etc.
   * a hierarchical structure!
-* "back propagation is a practical application of the chain rule [obviously--FWC], but it took til the 80s to realize this [obviously--FWC]"
+* "back propagation is a practical application of the [chain rule](https://en.wikipedia.org/wiki/Chain_rule), but it took til the 80s to realize this [obviously--FWC]"
 * size of typical NNs
   * hundreds of thousands of inputs
   * 1-10 billion multiply-accumulate operations (can't do this on CPUs--need GPUs)
