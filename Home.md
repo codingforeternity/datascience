@@ -18,6 +18,8 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Multiple Comparisons]]
 
+[[Web Annotation]]
+
 [[Java Notes]]
 
 [[Agile Notes]]
