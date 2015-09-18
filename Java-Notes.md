@@ -4,6 +4,7 @@ Coursera Java
 
 [Java Design Patterns](http://javarevisited.blogspot.sg/2012/06/20-design-pattern-and-software-design.html)
 * abstract class vs. interface: "Interface are used to represent adjective or behavior e.g. Runnable, Clonable, Serializable etc"
+* "classes to provide Market Data": "MarketData should be composed with a MarketDataProvider by using dependency injection. So when you change your MarketData provider Client won't get affected because they access method form MarketData interface or class."
 
 Email: Java
 * Top 40 Core Java Interview Questions Answers from Telephonic Round http://www.reddit.com/r/programming/comments/3kvoy9/top_40_core_java_interview_questions_answers_from/
