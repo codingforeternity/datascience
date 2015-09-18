@@ -28,5 +28,5 @@ Email: Newest cyber threat will be data manipulation, US intelligence chief says
 * http://www.theguardian.com/technology/2015/sep/10/cyber-threat-data-manipulation-us-intelligence-chief
 
 Email: Did the Chinese stock market crash BECAUSE US unemployment has dropped so low? Ie risk of rising rates? (9/17/15)
-* Why the Federal Reserve Decided to Wait a Few Months Before Messing With the Economy
-* http://www.slate.com/blogs/moneybox/2015/09/17/federal_reserve_september_decision_janet_yellen_decides_not_to_mess_with.html
+* I.e. contrary to what the following post suggests
+* [Why the Federal Reserve Decided to Wait a Few Months Before Messing With the Economy](http://www.slate.com/blogs/moneybox/2015/09/17/federal_reserve_september_decision_janet_yellen_decides_not_to_mess_with.html)
