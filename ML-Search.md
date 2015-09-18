@@ -17,3 +17,12 @@ Idea: Watson seems to have required rules to play _Jeopardy!_
 * But wouldn't this be the similar to learning faces with a hierarchical network?
   * pixels -> lines -> motifs-> sub-objects -> objects
   * spatial relations -> rows/columns -> categories -> question hints
+
+Email: Is there a watson search engine (6/12/15)
+* And if not why? It should be configurable along any dimension, eg trustworthiness, that it's user specifies
+* http://searchengineland.com/goodbye-blekko-search-engine-joins-ibms-watson-team-217633
+* http://searchengineland.com/google-forecloses-on-content-farms-with-farmer-algorithm-update-66071
+* Google has a "search quality team"
+* Reliability of results isn't exactly what this would want to target, but rather it should target "scientific basis."  Which content has basis in science vs. not?  Can this be assessed using NLP?  AI?  Comparison to scientific research? Can NLP be used to distinguish between what is science and what is hearsay?
+* Also see: FactCheck.org and SciCheck.org, the first (and maybe the second) of which has a page that lists "trusted sources" such as the CBO.
+* Such a search engine could be constructed to _cross-check_ (potential name?) against any set of sources.  Scientific sources could be one thing to cross-check against.  PDFs could be another.  Religious sources could be another. (set-differences between sources might be interesting: <science> - <religion> = <?>)
