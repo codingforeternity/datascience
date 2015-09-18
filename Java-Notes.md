@@ -45,3 +45,4 @@ Functional Programming in Java
 
 Singleton in Java
 * http://javarevisited.blogspot.in/2012/12/how-to-create-thread-safe-singleton-in-java-example.html
+* http://javarevisited.blogspot.gr/2012/07/why-enum-singleton-are-better-in-java.html
