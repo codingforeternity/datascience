@@ -25,3 +25,4 @@ Functional Programming in Java
 * "After decades of progress in making programming languages easier for humans to read and understand, functional programming syntax turns back the clock."
 * [Lambda Expressions in Java 8](http://www.drdobbs.com/jvm/lambda-expressions-in-java-8/240166764)
   * "Recently, functional programming has risen in importance because it is well suited for concurrent and event-driven (or "reactive") programming."
+  * "You can supply a lambda expression whenever an object of an interface with a single abstract method is expected. Such an interface is called a _functional interface_."
