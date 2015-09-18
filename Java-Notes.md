@@ -41,6 +41,7 @@ jOOQ (Java 8 Streams and Functional Programming)
 * [Comparing Imperative and Functional Algorithms in Java 8](http://blog.jooq.org/2015/09/17/comparing-imperative-and-functional-algorithms-in-java-8/)
 * [How to Use Java 8 Streams to Swiftly Replace Elements in a List](http://blog.jooq.org/2015/04/02/how-to-use-java-8-streams-to-swiftly-replace-elements-in-a-list/)
 * [Common SQL Clauses and Their Equivalents in Java 8 Streams](http://blog.jooq.org/2015/08/13/common-sql-clauses-and-their-equivalents-in-java-8-streams/)
+* [How to use Java 8 Functional Programming to Generate an Alphabetic Sequence](http://blog.jooq.org/2015/09/09/how-to-use-java-8-functional-programming-to-generate-an-alphabetic-sequence/)
 
 [Lambda Expressions in Java 8](http://www.drdobbs.com/jvm/lambda-expressions-in-java-8/240166764)
 * "Recently, functional programming has risen in importance because it is well suited for concurrent and event-driven (or "reactive") programming."
