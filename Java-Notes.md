@@ -17,3 +17,7 @@ Email: C++ to Java
   * [Top 20 Core Java Interview Questions and Answers asked on Investment Banks](http://javarevisited.blogspot.sg/2011/04/top-20-core-java-interview-questions.html)
   * [When a class is loaded and initialized in JVM - Java](http://javarevisited.blogspot.sg/2012/07/when-class-loading-initialization-java-example.html)
 * BTW, if you are from C++ background and looking for a good book to learn Java then check out [Core Java, Volume 1](http://www.amazon.com/Core-Volume-I-Fundamentals-Edition-Series/dp/0137081898) by Cay S. Horstmann.
+
+Functional Programming in Java
+* [Functional programming: A step backward](http://www.javaworld.com/article/2078610/java-concurrency/functional-programming--a-step-backward.html)
+* "The better argument for functional programming is that, in modern applications involving highly concurrent computing on multicore machines, state is the problem. All imperative languages, including object-oriented languages, involve multiple threads changing the shared state of objects. This is where deadlocks, stack traces, and low-level processor cache misses all take place. If there is no state, there is no problem."
