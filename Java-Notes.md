@@ -28,3 +28,7 @@ Functional Programming in Java
   * "You can supply a lambda expression whenever an object of an interface with a single abstract method is expected. Such an interface is called a _functional interface_."
   * "In fact, conversion to a functional interface is the only thing that you can do with a lambda expression in Java."
   * "The expression `System.out::println` is a _method reference_ that is equivalent to the lambda expression `x -> System.out.println(x)`."
+  * "A lambda expression has three ingredients:"
+    # "A block of code"
+    # "Parameters"
+    # "Values for the free variables; that is, the variables that are not parameters and not defined inside the code... We say that these values have been _captured_ by the lambda expression."
