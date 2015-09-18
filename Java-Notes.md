@@ -36,6 +36,9 @@ Functional Programming in Java
 * "The better argument for functional programming is that, in modern applications involving highly concurrent computing on multicore machines, state is the problem. All imperative languages, including object-oriented languages, involve multiple threads changing the shared state of objects. This is where deadlocks, stack traces, and low-level processor cache misses all take place. If there is no state, there is no problem."
 * "Unlike imperative code, functional code doesn't map to simple language constructs. Rather, it maps to mathematical constructs."
 * "After decades of progress in making programming languages easier for humans to read and understand, functional programming syntax turns back the clock."
+  * This goes along with Josh's oft stated point about premature optimization.
+  * "premature optimization is the root of all evil" because it leads to less maintainable code
+  * For example, how maintainable does this look? http://sebastian-millies.blogspot.de/2015/09/cartesian-products-with-kleisli.html
 
 jOOQ (Java 8 Streams and Functional Programming)
 * [Comparing Imperative and Functional Algorithms in Java 8](http://blog.jooq.org/2015/09/17/comparing-imperative-and-functional-algorithms-in-java-8/)
