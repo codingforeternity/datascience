@@ -23,5 +23,5 @@ Functional Programming in Java
 * "The better argument for functional programming is that, in modern applications involving highly concurrent computing on multicore machines, state is the problem. All imperative languages, including object-oriented languages, involve multiple threads changing the shared state of objects. This is where deadlocks, stack traces, and low-level processor cache misses all take place. If there is no state, there is no problem."
 * "Unlike imperative code, functional code doesn't map to simple language constructs. Rather, it maps to mathematical constructs."
 * "After decades of progress in making programming languages easier for humans to read and understand, functional programming syntax turns back the clock."
-  * [Lambda Expressions in Java 8](http://www.drdobbs.com/jvm/lambda-expressions-in-java-8/240166764)
+* [Lambda Expressions in Java 8](http://www.drdobbs.com/jvm/lambda-expressions-in-java-8/240166764)
   * "Recently, functional programming has risen in importance because it is well suited for concurrent and event-driven (or "reactive") programming."
