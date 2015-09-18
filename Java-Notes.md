@@ -27,3 +27,4 @@ Functional Programming in Java
   * "Recently, functional programming has risen in importance because it is well suited for concurrent and event-driven (or "reactive") programming."
   * "You can supply a lambda expression whenever an object of an interface with a single abstract method is expected. Such an interface is called a _functional interface_."
   * "In fact, conversion to a functional interface is the only thing that you can do with a lambda expression in Java."
+  * "The expression `System.out::println` is a method reference that is equivalent to the lambda expression `x -> System.out.println(x)`."
