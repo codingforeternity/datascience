@@ -23,12 +23,14 @@ Functional Programming in Java
 * "The better argument for functional programming is that, in modern applications involving highly concurrent computing on multicore machines, state is the problem. All imperative languages, including object-oriented languages, involve multiple threads changing the shared state of objects. This is where deadlocks, stack traces, and low-level processor cache misses all take place. If there is no state, there is no problem."
 * "Unlike imperative code, functional code doesn't map to simple language constructs. Rather, it maps to mathematical constructs."
 * "After decades of progress in making programming languages easier for humans to read and understand, functional programming syntax turns back the clock."
-* [Lambda Expressions in Java 8](http://www.drdobbs.com/jvm/lambda-expressions-in-java-8/240166764)
-  * "Recently, functional programming has risen in importance because it is well suited for concurrent and event-driven (or "reactive") programming."
-  * "You can supply a lambda expression whenever an object of an interface with a single abstract method is expected. Such an interface is called a _functional interface_."
-  * "In fact, conversion to a functional interface is the only thing that you can do with a lambda expression in Java."
-  * "The expression `System.out::println` is a _method reference_ that is equivalent to the lambda expression `x -> System.out.println(x)`."
-  * "A lambda expression has three ingredients:"
-    1. "A block of code"
-    2. "Parameters"
-    3. "Values for the free variables; that is, the variables that are not parameters and not defined inside the code... We say that these values have been _captured_ by the lambda expression."
+
+[Lambda Expressions in Java 8](http://www.drdobbs.com/jvm/lambda-expressions-in-java-8/240166764)
+* "Recently, functional programming has risen in importance because it is well suited for concurrent and event-driven (or "reactive") programming."
+* "You can supply a lambda expression whenever an object of an interface with a single abstract method is expected. Such an interface is called a _functional interface_."
+* "In fact, conversion to a functional interface is the only thing that you can do with a lambda expression in Java."
+* "The expression `System.out::println` is a _method reference_ that is equivalent to the lambda expression `x -> System.out.println(x)`."
+* "A lambda expression has three ingredients:"
+  1. "A block of code"
+  2. "Parameters"
+  3. "Values for the free variables; that is, the variables that are not parameters and not defined inside the code... We say that these values have been _captured_ by the lambda expression."
+* "interface methods with concrete implementations (called default methods). Those methods can be safely added to existing interfaces."
