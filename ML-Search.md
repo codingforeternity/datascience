@@ -9,3 +9,11 @@ Email: Phonetics search and spellcheck (9/17/15)
 * This might be a poor example, but I was searching for the Neue Gallerie, but I couldn't remember how it was spelled: Noye Gallery?
 * Also, suggested spelling don't seem to go beyond having a single character mispelled, nor do they seem to know about how close characters are to each other on the (phone) keyboard.
 * Spellcheck should work the same way, using phonetics.
+
+Idea: Watson seems to have required rules to play _Jeopardy!_
+* I.e. rules had to be programmed such as the relationship of the category headings to the questions.
+* Why couldn't the relationship have been learned?
+* I suppose spatial relatedness (rows/columns) would have to be learned first.
+* But wouldn't this be the similar to learning faces with a hierarchical network?
+  * pixels -> lines -> motifs-> sub-objects -> objects
+  * spatial relations -> rows/columns -> categories -> question hints
