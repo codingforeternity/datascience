@@ -18,6 +18,10 @@ Email: C++ to Java
   * [When a class is loaded and initialized in JVM - Java](http://javarevisited.blogspot.sg/2012/07/when-class-loading-initialization-java-example.html)
 * BTW, if you are from C++ background and looking for a good book to learn Java then check out [Core Java, Volume 1](http://www.amazon.com/Core-Volume-I-Fundamentals-Edition-Series/dp/0137081898) by Cay S. Horstmann.
 
+Java Exceptions
+* https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html
+* "Here's the bottom line guideline: If a client can reasonably be expected to recover from an exception, make it a checked exception. If a client cannot do anything to recover from the exception, make it an unchecked exception."
+
 Functional Programming in Java
 * [Functional programming: A step backward](http://www.javaworld.com/article/2078610/java-concurrency/functional-programming--a-step-backward.html)
 * "The better argument for functional programming is that, in modern applications involving highly concurrent computing on multicore machines, state is the problem. All imperative languages, including object-oriented languages, involve multiple threads changing the shared state of objects. This is where deadlocks, stack traces, and low-level processor cache misses all take place. If there is no state, there is no problem."
