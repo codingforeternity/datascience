@@ -34,3 +34,4 @@ Functional Programming in Java
   2. "Parameters"
   3. "Values for the free variables; that is, the variables that are not parameters and not defined inside the code... We say that these values have been _captured_ by the lambda expression."
 * "interface methods with concrete implementations (called default methods). Those methods can be safely added to existing interfaces."
+* https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
