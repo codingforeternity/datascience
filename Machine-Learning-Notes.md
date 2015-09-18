@@ -5,6 +5,10 @@ Email: "projections onto nonlinear subspaces (k-RBMs)" (the email contains hard 
 Email: "restricted boltzman machines, introduction"
 * http://blog.echen.me/2011/07/18/introduction-to-restricted-boltzmann-machines/
 
+Deep Learning Book
+* http://www.iro.umontreal.ca/~bengioy/dlbook/ (no pdf available, only online for now)
+* Bibliography: http://www.iro.umontreal.ca/~bengioy/dlbook/front_matter.pdf (also in Downloads directory)
+
 Email from Bart: Fwd: Yann at Firstmark
 * "Although quite long (~45 min), it's a good snapshot of where AI / deep learning is today and where it came from and why it's winning."
 * [Yann Lecun, Facebook // Artificial Intelligence // Data Driven #32 (Hosted by FirstMark Capital)] (https://www.youtube.com/watch?v=AbjVdBKfkO0)
