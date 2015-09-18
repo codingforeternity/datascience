@@ -42,3 +42,6 @@ Functional Programming in Java
   3. "Values for the free variables; that is, the variables that are not parameters and not defined inside the code... We say that these values have been _captured_ by the lambda expression."
 * "interface methods with concrete implementations (called default methods). Those methods can be safely added to existing interfaces."
 * https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
+
+Singleton in Java
+* http://javarevisited.blogspot.in/2012/12/how-to-create-thread-safe-singleton-in-java-example.html
