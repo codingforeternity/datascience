@@ -6,6 +6,7 @@ Coursera Java
 * abstract class vs. interface: "Interface are used to represent adjective or behavior e.g. Runnable, Clonable, Serializable etc"
 * "classes to provide Market Data": "MarketData should be composed with a MarketDataProvider by using dependency injection. So when you change your MarketData provider Client won't get affected because they access method form MarketData interface or class."
 * "What is main benefit of using factory pattern ? Where do you use it? Factory pattern’s main benefit is increased level of encapsulation while creating objects. If you use Factory to create object you can later replace original implementation of Products or classes with more advanced and high performance implementation without any change on client layer. See my post on [Factory pattern](http://javarevisited.blogspot.com/2011/12/factory-design-pattern-java-example.html) for more detailed explanation and benefits."
+  * "The factory methods are typically implemented as virtual methods, so this pattern is also referred to as the 'Virtual Constructor'."
 
 Email: Java
 * Top 40 Core Java Interview Questions Answers from Telephonic Round http://www.reddit.com/r/programming/comments/3kvoy9/top_40_core_java_interview_questions_answers_from/
