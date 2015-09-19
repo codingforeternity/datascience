@@ -11,6 +11,10 @@ Idea: EMR
 * From a large set of primary care patient records, identify individuals who might have unusual health conditions. (this idea was taken from this quiz https://www.coursera.org/learn/machine-learning/exam/Dx28I/anomaly-detection)
 * Perhaps we want to flag such patients in addition to the 8 maladies
 
+Email: Do EMRs include prescribed treatment? (9/17/15)
+* If so, use that to infer the disease rather than trying to predict the disease.
+* Just like collaborative filtering where parameters and features are learned simultaneously.
+
 Email: Diagnosis and prescription biases (no subject)
 * Decisions, decisions, … http://theincidentaleconomist.com/wordpress/decisions-decisions/
 * "How do physicians make them? To what extent are they prone to the same cognitive biases and errors that plague the rest of us? Here’s some literature on these questions."
