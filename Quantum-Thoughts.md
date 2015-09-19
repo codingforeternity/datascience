@@ -11,6 +11,11 @@ Email: "If stuff like..."
 * ...light and radio can travel through space, that must mean that consecutive chunks of space can pass the waves from chunk to the next, which means they must be nonempty. Perhaps particles that have twins are chunks of space that have been separated, ie noncontiguous space.
 * is space is discreet, just like quantum leaps, b/c this would also suggest the discrete chunks could be separated
 
+Idea: the Big Bang as a finely tuned boundary condition
+* "If our universe began at the Big Bang, it is burdened with a finely tuned boundary condition for which we have no good explanation.  But if the observed universe is part of a bigger ensemble--the multiverse--then we might be able to explain why a tiny part of that ensemble witnesses such a dramatic change in entropy from one end of time to the other."
+* But what if the beginning of time is like Absolute 0 temperature, which is another "finely tuned boundary condition?
+* An odd thing about this is that temperature is related to pressure, and so this might relate to my _space pressure_ idea where matter is the absence of space, i.e. low space pressure, the source of gravitational fields (objects being attracted towards each other due to low space pressure).
+
 Email: (no subject)
 * Everything is made from something http://kottke.org/15/08/everything-is-made-from-something
 * primer on quantum field theory
