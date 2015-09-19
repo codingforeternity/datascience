@@ -16,6 +16,10 @@ Idea: the Big Bang as a finely tuned boundary condition
 * But what if the beginning of time is like Absolute 0 temperature, which is another "finely tuned boundary condition?
 * An odd thing about this is that temperature is related to pressure, and so this might relate to my _space pressure_ idea where matter is the absence of space, i.e. low space pressure, the source of gravitational fields (objects being attracted towards each other due to low space pressure).
 
+Email: Time, gravity, and the curvature of space (7/10/15)
+* https://en.m.wikipedia.org/wiki/Gravitational_wave
+* Are gravity and time duals of each other? They both seem to have something to do with the curvature of space.
+
 Email: (no subject)
 * Everything is made from something http://kottke.org/15/08/everything-is-made-from-something
 * primer on quantum field theory
