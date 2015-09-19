@@ -38,6 +38,16 @@ Coursera Machine Learning Course Notes
 ** https://www.coursera.org/learn/machine-learning/supplement/Mlf3e/more-octave-matlab-resources
 * http://www.forbes.com/sites/anthonykosner/2013/12/29/why-is-machine-learning-cs-229-the-most-popular-course-at-stanford/
 
+Interview with Cloudera CEO Mike Olson (2010)
+* http://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning.html
+* People still use relational databases - great if you have predictable queries over structured data
+* But the data people want to work with is becoming more complex and bigger
+  * Free text, unstructured data doesn't fit will into tables
+  * Do sentiment analysis in SQL isn't really that good
+  * So to do new kinds of processing need a new type of architecture
+* Hadoop lets you do data processing - not transactional processing - on the big scale
+* Increasingly things like NoSQL is being used
+
 Email: (no subject)
 * Welcome to the AI Conspiracy: The ‘Canadian Mafia’ Behind Tech’s Latest Craze http://recode.net/2015/07/15/ai-conspiracy-the-scientists-behind-deep-learning/
 * "Deep-Learning AI Is Taking Over Tech. What Is It?"
