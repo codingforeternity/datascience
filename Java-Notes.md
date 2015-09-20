@@ -1,6 +1,6 @@
 Java Resources
 * https://github.com/cxxr/better-java
-* And reproduced [here|Better Java]
+* And reproduced [[here|Better Java]]
 
 Coursera Java
 * https://www.coursera.org/course/algs4partI and https://www.coursera.org/course/algs4partII
