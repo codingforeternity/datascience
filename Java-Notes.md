@@ -1,3 +1,6 @@
+Java Resources
+* https://github.com/cxxr/better-java
+
 Coursera Java
 * https://www.coursera.org/course/algs4partI and https://www.coursera.org/course/algs4partII
 * Java book: http://introcs.cs.princeton.edu/java/home/
