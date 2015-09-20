@@ -1,3 +1,5 @@
+This page was copied from [here](https://github.com/cxxr/better-java)
+
 Java is one of the most popular programming languages around, but no one seems
 to enjoy using it. Well, Java is actually an alright programming language, and
 since Java 8 came out recently, I decided to compile a list of libraries, 
