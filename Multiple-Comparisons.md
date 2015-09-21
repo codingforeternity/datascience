@@ -59,3 +59,10 @@ General Statistics ("for hackers")
       xbar[i] = mean(sample)
     mean(xbar), std(xbar)
     ```
+  * Cross Validation
+    1. Randomly split data
+    2. Find the best model for each subset (e.g. by comparing different functional forms)
+    3. Compare models across subsets (swap models w/ subsets)
+    4. Compute RMS error for each
+    5. Compare cross-validated RMS for models (plot degrees of freedom vs. RMS)
+      * Best model minimizes the cross-validated error
