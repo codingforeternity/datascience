@@ -37,3 +37,7 @@ Email: "multiple comparisons (Bonferroni and Benjamini-Hochberg)"
 * BH vs BHY (which controls for dependence) vs Storey's pFDR, which says that BH is still too conservative when there is dependence: http://stats.stackexchange.com/questions/63441/what-are-the-practical-differences-between-the-benjamini-hochberg-1995-and-t
 * "THE CONTROL OF THE FALSE DISCOVERY RATE INMULTIPLE TESTING UNDER DEPENDENCY" http://www.math.tau.ac.il/~ybenja/MyPapers/benjamini_yekutieli_ANNSTAT2001.pdf
 * "The control of FDR assumes that when many of the tested hypotheses are rejected it may be preferable to control the proportion of errors rather than the probability of making even one error." http://www.math.tau.ac.il/~ybenja/MyPapers/benjamini_yekutieli_ANNSTAT2001.pdf
+
+General Statistics
+* Statistics for Hackers (slides) http://www.reddit.com/r/programming/comments/3lk5y6/statistics_for_hackers_slides/
+  * "In general, computing the sampling distribution is hard, but simulating the sampling distribution is easy."  E.g. P(>22 heads out of 30 tosses) => just write a for loop: `randint(2, size=30).sum() >= 22`
