@@ -53,7 +53,7 @@ General Statistics ("for hackers")
     * For more discussion & references see: _Statistics is Easy_ by Shasha & Wilson
   * Bootstrapping
     * We need a way to simulate samples, but we don't have a generating model. Solution: Bootstrap Resampling (with replacement)
-          for i in range(10000):
-            sample = N[randint(20, size=20)]
-            xbar[i] = mean(sample)
-          mean(xbar), std(xbar)   
+            for i in range(10000):
+              sample = N[randint(20, size=20)]
+              xbar[i] = mean(sample)
+            mean(xbar), std(xbar)   
