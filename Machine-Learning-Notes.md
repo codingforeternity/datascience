@@ -74,4 +74,6 @@ Email: New method of learning
 * 3. Chess-playing computer with an entirely new method of learning, and more here.  It is International Master strength (for now).
 * http://www.technologyreview.com/view/541276/deep-learning-machine-teaches-itself-chess-in-72-hours-plays-at-international-master/
 
+[A baseline C++ neural network library, with genetic algorithm and backpropagation training](https://github.com/SullyChen/FFANN) [X-Post from r/MachineLearning] http://www.reddit.com/r/programming/comments/3lnna7/a_baseline_c_neural_network_library_with_genetic/ 
+
 https://www.kaggle.com/
