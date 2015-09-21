@@ -20,6 +20,8 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Web Annotation]]
 
+[[Functional Programming]]
+
 [[Java Notes]]
 
 [[Agile Notes]]
