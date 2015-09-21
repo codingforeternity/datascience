@@ -4,6 +4,8 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Machine Learning Notes]]
 
+[[NLP Notes]]
+
 [[Quantitative Healthcare]]
 
 [[ML Search]]
