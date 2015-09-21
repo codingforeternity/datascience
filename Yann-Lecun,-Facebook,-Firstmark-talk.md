@@ -13,8 +13,8 @@ FirstMark Capital is a NYC venture capital firm.  Attendees included a dude from
   * pixels -> patches/blocks -> motifs -> parts of objects -> objects -> etc.
   * a hierarchical structure!
 * "back propagation is a practical application of the [chain rule](https://en.wikipedia.org/wiki/Chain_rule), but it took til the 80s to realize this"
-  * FWC - the derivative of f(g(x) is f'(g(x)) * g'(x)
-  * i.e. you can take the derivatives from the last layer of a NN (g') and use them to compute the derivatives of the second to last layer (f') ... and so on and so on backwards through the layers
+  * FWC - the derivative of `f(g(x)` is `f'(g(x)) * g'(x)`
+  * i.e. you can take the derivatives from the last layer of a NN (`g'`) and use them to compute the derivatives of the second to last layer (`f'`) ... and so on and so on backwards through the layers
 * size of typical NNs
   * hundreds of thousands of inputs
   * 1-10 billion multiply-accumulate operations (can't do this on CPUs--need GPUs)
