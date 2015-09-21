@@ -7,6 +7,11 @@ Email: ML for aggregated knowledge
 * On the Web for example. How many sites support a particular point of view
 * Internetal Consensus!
 
+Idea: Feature Engineering for input and output features
+* Not only do we want systems to learn the input features automatically, we should also want them to learn the output features automatically.
+* We want them to learn what types of questions might be asked.  They should act as a sort of database query language.
+* E.g. given data.gov, we should be able to ask questions about any entity (the economy, specific companies or countries) that might have a relationship to that sort of data
+
 Email: data support via ML for spoken/written words (9/17/15)
 * People say all sorts of shit, but its very rarely backed up by data.  It would be really cool if given some statement, one could use ML to look for support for that statement in all the data.
 
