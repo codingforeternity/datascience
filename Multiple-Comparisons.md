@@ -38,7 +38,7 @@ Email: "multiple comparisons (Bonferroni and Benjamini-Hochberg)"
 * "THE CONTROL OF THE FALSE DISCOVERY RATE INMULTIPLE TESTING UNDER DEPENDENCY" http://www.math.tau.ac.il/~ybenja/MyPapers/benjamini_yekutieli_ANNSTAT2001.pdf
 * "The control of FDR assumes that when many of the tested hypotheses are rejected it may be preferable to control the proportion of errors rather than the probability of making even one error." http://www.math.tau.ac.il/~ybenja/MyPapers/benjamini_yekutieli_ANNSTAT2001.pdf
 
-General Statistics
+General Statistics ("for hackers")
 * Statistics for Hackers (slides) http://www.reddit.com/r/programming/comments/3lk5y6/statistics_for_hackers_slides/
   * "In general, computing the sampling distribution is hard, but simulating the sampling distribution is easy."  E.g. P(>22 heads out of 30 tosses) => just write a for loop: `randint(2, size=30).sum() >= 22`
   * Four Recipes for Hacking Statistics
@@ -51,3 +51,9 @@ General Statistics
     * "Works when the _Null Hypothesis_ assumes two groups are equivalent"
     * "Like all methods, it will only work if your samples are representative--always beware selection biases"
     * For more discussion & references see: _Statistics is Easy_ by Shasha & Wilson
+  * Bootstrapping
+    * We need a way to simulate samples, but we don't have a generating model. Solution: Bootstrap Resampling (with replacement)
+        for i in range(10000):
+          sample = N[randint(20, size=20)]
+          xbar[i] = mean(sample)
+        mean(xbar), std(xbar)   
