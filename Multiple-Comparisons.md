@@ -41,3 +41,8 @@ Email: "multiple comparisons (Bonferroni and Benjamini-Hochberg)"
 General Statistics
 * Statistics for Hackers (slides) http://www.reddit.com/r/programming/comments/3lk5y6/statistics_for_hackers_slides/
   * "In general, computing the sampling distribution is hard, but simulating the sampling distribution is easy."  E.g. P(>22 heads out of 30 tosses) => just write a for loop: `randint(2, size=30).sum() >= 22`
+  * Four Recipes for Hacking Statistics
+    1. Direct Simulation
+    2. Shuffling
+    3. Bootstrapping
+    4. Cross Validation
