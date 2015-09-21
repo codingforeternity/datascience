@@ -35,33 +35,6 @@ Exceptions
 Java Varargs
 * http://docs.oracle.com/javase/1.5.0/docs/guide/language/varargs.html
 
-Functional Programming in Java
-* [Functional programming: A step backward](http://www.javaworld.com/article/2078610/java-concurrency/functional-programming--a-step-backward.html)
-* "The better argument for functional programming is that, in modern applications involving highly concurrent computing on multicore machines, state is the problem. All imperative languages, including object-oriented languages, involve multiple threads changing the shared state of objects. This is where deadlocks, stack traces, and low-level processor cache misses all take place. If there is no state, there is no problem."
-* "Unlike imperative code, functional code doesn't map to simple language constructs. Rather, it maps to mathematical constructs."
-* "After decades of progress in making programming languages easier for humans to read and understand, functional programming syntax turns back the clock."
-  * This goes along with Josh's oft stated point about premature optimization.
-  * "premature optimization is the root of all evil" because it leads to less maintainable code
-  * For example, how maintainable does this look? http://sebastian-millies.blogspot.de/2015/09/cartesian-products-with-kleisli.html
-
-jOOQ (Java 8 Streams and Functional Programming)
-* [Comparing Imperative and Functional Algorithms in Java 8](http://blog.jooq.org/2015/09/17/comparing-imperative-and-functional-algorithms-in-java-8/)
-* [How to Use Java 8 Streams to Swiftly Replace Elements in a List](http://blog.jooq.org/2015/04/02/how-to-use-java-8-streams-to-swiftly-replace-elements-in-a-list/)
-* [Common SQL Clauses and Their Equivalents in Java 8 Streams](http://blog.jooq.org/2015/08/13/common-sql-clauses-and-their-equivalents-in-java-8-streams/)
-* [How to use Java 8 Functional Programming to Generate an Alphabetic Sequence](http://blog.jooq.org/2015/09/09/how-to-use-java-8-functional-programming-to-generate-an-alphabetic-sequence/)
-
-[Lambda Expressions in Java 8](http://www.drdobbs.com/jvm/lambda-expressions-in-java-8/240166764)
-* "Recently, functional programming has risen in importance because it is well suited for concurrent and event-driven (or "reactive") programming."
-* "You can supply a lambda expression whenever an object of an interface with a single abstract method is expected. Such an interface is called a _functional interface_."
-* "In fact, conversion to a functional interface is the only thing that you can do with a lambda expression in Java."
-* "The expression `System.out::println` is a _method reference_ that is equivalent to the lambda expression `x -> System.out.println(x)`."
-* "A lambda expression has three ingredients:"
-  1. "A block of code"
-  2. "Parameters"
-  3. "Values for the free variables; that is, the variables that are not parameters and not defined inside the code... We say that these values have been _captured_ by the lambda expression."
-* "interface methods with concrete implementations (called default methods). Those methods can be safely added to existing interfaces."
-* https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
-
 Singleton in Java
 * http://javarevisited.blogspot.in/2012/12/how-to-create-thread-safe-singleton-in-java-example.html
 * http://javarevisited.blogspot.gr/2012/07/why-enum-singleton-are-better-in-java.html
