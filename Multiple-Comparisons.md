@@ -66,4 +66,4 @@ General Statistics ("for hackers")
     4. Compute RMS error for each
     5. Compare cross-validated RMS for models (plot degrees of freedom vs. RMS)
       * Best model minimizes the cross-validated error
-    * CV is the go-to method for model evaluation in machine learning, as the statistics of the models are not typically known in the classical sense.
+  * CV is the go-to method for model evaluation in machine learning, as the statistics of the models are not typically known in the classical sense.
