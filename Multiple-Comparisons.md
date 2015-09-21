@@ -46,3 +46,4 @@ General Statistics
     2. Shuffling
     3. Bootstrapping
     4. Cross Validation
+  * Shuffling: "Simulate the distribution by shuffling the labels repeatedly and computing the desired statistic.  If the labels really don't matter, then switching them shouldn't change the result."
