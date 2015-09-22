@@ -1,6 +1,8 @@
 Java Resources
 * https://github.com/cxxr/better-java
 * And reproduced [[here|Better Java]]
+* Tutorial (not very good/advanced): http://introcs.cs.princeton.edu/java/home/
+* Tutorial: http://pages.cs.wisc.edu/~hasti/cs368/JavaTutorial/
 
 Coursera Java
 * https://www.coursera.org/course/algs4partI and https://www.coursera.org/course/algs4partII
