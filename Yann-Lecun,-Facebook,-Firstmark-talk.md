@@ -18,9 +18,9 @@ FirstMark Capital is a NYC venture capital firm.  Attendees included a dude from
   * [specifically](http://www.willamette.edu/~gorr/classes/cs449/linear2.html) we want the partial derivative of the cost function, J, w.r.t. the weights/parameters, W/Theta:
     * dJ/dW
     * using the chain rule, this can be decomposed into dJ/dy * dy/dW
-    * d/dy J = d/dy 0.5*sum((a-y)^2) = sum(-(a-y)) (where a = h(x), the hidden/previous layer activations)
+    * d/dy J = d/dy 0.5*sum((Wa-y)^2) = sum(-(Wa-y)) (where Wa = h(x), the hidden/previous layer activations)
     * d/dW y = d/dW Wa = a
-    * so dJ/dW = sum(-(a-y)) * a
+    * so dJ/dW = sum(-(Wa-y)) * a
 * size of typical NNs
   * hundreds of thousands of inputs
   * 1-10 billion multiply-accumulate operations (can't do this on CPUs--need GPUs)
