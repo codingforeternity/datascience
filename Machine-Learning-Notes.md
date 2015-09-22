@@ -12,7 +12,7 @@ Deep Learning Book
 Email from Bart: Fwd: Yann at Firstmark
 * "Although quite long (~45 min), it's a good snapshot of where AI / deep learning is today and where it came from and why it's winning."
 * [Yann Lecun, Facebook // Artificial Intelligence // Data Driven #32 (Hosted by FirstMark Capital)] (https://www.youtube.com/watch?v=AbjVdBKfkO0)
-* More notes [[here|Yann Lecun, Facebook, Firstmark talk]]
+* My notes [[here|Yann Lecun, Facebook, Firstmark talk]]
 
 Email: "Scary machine learning"
 * Why You Should be a Little Scared of Machine Learning http://www.reddit.com/r/programming/comments/3l0qek/why_you_should_be_a_little_scared_of_machine/
