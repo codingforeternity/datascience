@@ -9,7 +9,10 @@ Deep Learning Book
 * http://www.iro.umontreal.ca/~bengioy/dlbook/ (no pdf available, only online for now)
 * Bibliography: http://www.iro.umontreal.ca/~bengioy/dlbook/front_matter.pdf (also in Downloads directory)
 
-Online Courses
+Deep Learning Resources (http://deeplearning.net/software_links/)
+* [Torch](http://torch.ch/) – provides a Matlab-like environment for state-of-the-art machine learning algorithms in lua
+
+Online Courses (YouTube)
 * MIT OpenCourseWare
 * Deep Learning at Oxford, 2015
 
