@@ -9,6 +9,10 @@ Deep Learning Book
 * http://www.iro.umontreal.ca/~bengioy/dlbook/ (no pdf available, only online for now)
 * Bibliography: http://www.iro.umontreal.ca/~bengioy/dlbook/front_matter.pdf (also in Downloads directory)
 
+Online Courses
+* MIT OpenCourseWare
+* Deep Learning at Oxford, 2015
+
 Email from Bart: Fwd: Yann at Firstmark
 * "Although quite long (~45 min), it's a good snapshot of where AI / deep learning is today and where it came from and why it's winning."
 * [Yann Lecun, Facebook // Artificial Intelligence // Data Driven #32 (Hosted by FirstMark Capital)] (https://www.youtube.com/watch?v=AbjVdBKfkO0)
