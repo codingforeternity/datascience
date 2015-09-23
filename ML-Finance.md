@@ -15,3 +15,10 @@ Idea: Anomaly Detection (9/16/15)
 * the trick would of course be to have the features engineer themselves
 * Andrew Ng - "unusual combinations of values of features"
 * of course this might be better learned w/ a neural net because there are a lot of examples, but on the other hand, they all happen for different reasons
+
+Regimes
+* 
+
+Email: how to use news data (8/25/15)
+* don't look for "sentiment", look for multi-year trends, starting and stopping.  e.g. china has been hot shit for ever since the last downturn.  but now it's crashing and so you'd expect that to effect us markets.  last time around it was housing, and the time before that it was the internet.  in all of these cases the prevailing trend came to an end, which i'm sure is detectable in news
+* again, these sorts of trends can probably be discovered using neural nets.  you only need to discover the regime.  let the forecasters decide what happens in what regime
