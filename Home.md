@@ -22,6 +22,8 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Web Annotation]]
 
+[[Tech Hiring]]
+
 [[Functional Programming]]
 
 [[Java Notes]]
