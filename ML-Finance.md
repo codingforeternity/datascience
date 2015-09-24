@@ -32,6 +32,8 @@ Email: How would u get a neural net... (8/14/15)
 * See the hierarchy in [this post](http://stats.stackexchange.com/questions/114385/what-is-the-difference-between-convolutional-neural-networks-restricted-boltzma) for how multi-layer RBMs are used to identify pixels, then lines, then shapes, then faces (see the graphics)
 * "The apparent randomness of the markets, unlike a strong pseudo-random number generator, appear to be affected by time dimension. In other words, certain window sizes cause markets to appear less random. This may indicate the presence of cyclical non-random behaviours in the markets e.g. regimes." http://www.turingfinance.com/hacking-the-random-walk-hypothesis/
 
+Email: Use ML for identifier mapping and corporate actions
+
 Email: how to use news data (8/25/15)
 * don't look for "sentiment", look for multi-year trends, starting and stopping.  e.g. china has been hot shit for ever since the last downturn.  but now it's crashing and so you'd expect that to effect us markets.  last time around it was housing, and the time before that it was the internet.  in all of these cases the prevailing trend came to an end, which i'm sure is detectable in news
 * again, these sorts of trends can probably be discovered using neural nets.  you only need to discover the regime.  let the forecasters decide what happens in what regime
