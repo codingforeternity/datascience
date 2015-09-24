@@ -16,6 +16,11 @@ Idea: Anomaly Detection (9/16/15)
 * Andrew Ng - "unusual combinations of values of features"
 * of course this might be better learned w/ a neural net because there are a lot of examples, but on the other hand, they all happen for different reasons
 
+Idea: learning trades
+* The problem with training a NN is that there is no "right" answer--there is a range of good answers--so computing a differential vs. the "correct" value is difficult.
+* One solution to this might be along the lines of deciding whether a trade (consisting of a direction and holding period) is a buy or a sell.  I.e. boiling the problem down to binary.
+* That aside, at the root of the issue, perhaps, this is a problem for Lagrange multipliers: maximizing a (utility) function in the presence of (e.g. factor exposure) constraints
+
 Email: How would u get a neural net... (8/14/15)
 * ...to consider time. To evolve with time. Both regime breaks, as well as slow transitions, as well as nothing.
 * Multiple nets. One for each possible regime. And a regime is defined by which strategies work well for prediction during that time.
