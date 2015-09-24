@@ -19,7 +19,11 @@ Idea: Anomaly Detection (9/16/15)
 Idea: learning trades
 * The problem with training a NN is that there is no "right" answer--there is a range of good answers--so computing a differential vs. the "correct" value is difficult.
 * One solution to this might be along the lines of deciding whether a trade (consisting of a direction and holding period) is a buy or a sell.  I.e. boiling the problem down to binary.
+* The benefit of learning trades is that the problem can be thought of as a sequence-to-sequenc translation problem (translation of financial data to trades) so [LSTMs](file:///home/fred/Documents/oxford_deep_learning_course_2015/lecture11.pdf) could be used.
 * That aside, at the root of the issue, perhaps, this is a problem for Lagrange multipliers: maximizing a (utility) function in the presence of (e.g. factor exposure) constraints
+
+Email: Where are we relative to wwii in the current crisis in europe
+* studying finance is really the study of events through time.  in how many different other contexts does that apply?  e.g. weather, politics, warfare.  how is finance similar?  how can sequences of events be matched up with other sequences?  how can the dynamics be modeled?
 
 Email: How would u get a neural net... (8/14/15)
 * ...to consider time. To evolve with time. Both regime breaks, as well as slow transitions, as well as nothing.
