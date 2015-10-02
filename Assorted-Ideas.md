@@ -34,6 +34,9 @@ Email: ML for understanding babies
 * How many theories are there?  How many don't have any supporting evidence--like psychology?
 * Understand what their cries and motions mean
 
+Email: Babies whack themselves in their faces (10/1/15)
+* Because they're learning, just like back propagation.
+
 Email: Newest cyber threat will be data manipulation, US intelligence chief says | Technology | The Guardian
 * ML cyber security. All data must be publicly confirmable--like with Bitcoin.
 * http://www.theguardian.com/technology/2015/sep/10/cyber-threat-data-manipulation-us-intelligence-chief
