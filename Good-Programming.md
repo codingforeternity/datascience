@@ -4,7 +4,8 @@ Also see: [[Better Java]]
 
 [10 Principles for Good Code](http://blog.d3in.org/post/130288777151/10-principles-for-good-code)
 
-[If I had to pick a single article for a new git user to read: Git Reset Demystified](https://www.reddit.com/r/programming/comments/3mp5ok/if_i_had_to_pick_a_single_article_for_a_new_git/): https://git-scm.com/blog/2011/07/11/reset.html
+[If I had to pick a single article for a new git user to read: Git Reset Demystified](https://www.reddit.com/r/programming/comments/3mp5ok/if_i_had_to_pick_a_single_article_for_a_new_git/)
+* https://git-scm.com/blog/2011/07/11/reset.html
 
 Context Switching Costs: [Why Developers Hate Being Interrupted](http://thetomorrowlab.com/2015/01/why-developers-hate-being-interrupted/)
 
