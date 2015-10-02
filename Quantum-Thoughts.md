@@ -1,4 +1,4 @@
-*_Time = Gravity_*
+**Time = Gravity**
 
 Email: Gravity and universe expansion are related (9/29/15)
 * The hypothesis (prior to dark energy) was that gravity would slow it down. But what if cause and effect are wrong. What if universe expansion causes gravity. At the moment of the BB there was no gravity.
