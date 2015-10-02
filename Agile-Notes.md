@@ -1,4 +1,4 @@
-Email: [If it hurts, do it more often: Frequency Reduces Difficulty](If it hurts, do it more often: Frequency Reduces Difficulty) (9/28/15)
+Email: [If it hurts, do it more often: Frequency Reduces Difficulty](https://www.reddit.com/r/programming/comments/3mmei5/if_it_hurts_do_it_more_often_frequency_reduces/) (9/28/15)
 * [Frequency Reduces Difficulty](http://martinfowler.com/bliki/FrequencyReducesDifficulty.html)
 * "if it hurts, do it more often"
 * Continuous Integration in Agile
