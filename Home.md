@@ -36,6 +36,6 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Quantum Thoughts]]
 
-[[Assorted Ideas]]
+[[Assorted Ideas]] (kws: random)
 
 [[Fred Refs]]
