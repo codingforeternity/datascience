@@ -4,6 +4,8 @@ Also see: [[Better Java]]
 
 [10 Principles for Good Code](http://blog.d3in.org/post/130288777151/10-principles-for-good-code)
 
+Context Switching Costs: [Why Developers Hate Being Interrupted](http://thetomorrowlab.com/2015/01/why-developers-hate-being-interrupted/)
+
 [Three Laws of Programs](http://jeremymikkola.com/posts/2015_08_28_warming_up_to_go.html):
   1. A program must not be hard for a human to understand, nor though lack of clarification allow a misunderstanding to take place.
   2. A program must be fast and concise, unless it conflicts with the first law.
