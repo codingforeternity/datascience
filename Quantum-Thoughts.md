@@ -1,3 +1,7 @@
+Email: On pg 81 (or on a piece of paper inserted) of Sean Carroll's book (9/29/15)
+* Draw 3 2d squares representing space at different points in time. And make a circle move across the space, changing position at each. This is a massive object moving through time.
+* Below this, draw another series of squares, but this time put the 3 locations of the circle all in the same square. This can't happen of course, but this is what it would look like to move through space while time stands still. This is outside the light cone.
+
 Email: "Bumpiness and randomness"
 * Create smoothness. Things work better when they are disorganized. Perhaps this applies to quantum mechanics
 
