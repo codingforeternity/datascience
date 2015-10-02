@@ -24,6 +24,8 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Tech Hiring]]
 
+[[Good Programming]]
+
 [[Functional Programming]]
 
 [[Java Notes]]
