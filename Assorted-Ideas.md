@@ -1,4 +1,10 @@
-IDEA: http://www.data.gov/
+Email: The only way to learn is to mess up (10/1/15)
+* Even theory-based learning requires the testing of theories
+* i.e. using controls where on one side of the "line of control" lies the theory and the other side is "messed up" (i.e. the anti-theory)
+
+9/25/15
+DATA!
+* IDEA: http://www.data.gov/
 
 Email: Create a company...
 * ...that rather than trying to always make things better, like google, tries to prevent things from becoming worse, by stifling innovation for example.  Every cost against rent seeking
