@@ -40,3 +40,4 @@ Java Varargs
 Singleton in Java
 * http://javarevisited.blogspot.in/2012/12/how-to-create-thread-safe-singleton-in-java-example.html
 * http://javarevisited.blogspot.gr/2012/07/why-enum-singleton-are-better-in-java.html
+* http://www.ayp-sd.blogspot.com/2013/01/singleton-design-pattern-in-java.html
