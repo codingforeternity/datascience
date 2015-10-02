@@ -1,3 +1,6 @@
+Email: [[A Few Notes on Systematic Trading]] - CXO Advisory (9/30/15)
+* http://www.cxoadvisory.com/27652/big-ideas/a-few-notes-on-systematic-trading/
+
 Email: 2 things
 * Just like image recognition starts with pixels, then lines, then shapes, then objects.
 * Stock forecasting should happen in the same granular/machine to general/human sort of way.
