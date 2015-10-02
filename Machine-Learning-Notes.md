@@ -1,3 +1,10 @@
+Email: Nns are only being applied to trivial problems (9/25/15)
+* e.g. Image recognition, NLP
+* This is because lots of people understand the goals of those problems.
+* I'm in a unique position to understand the goals of financial forecasting.
+* Thus suggests to get good at doing a problem the hard way first to learn how it's done, and then switch to ML
+* It's almost like there's another dimension to the supervised/unsupervised dimension of ML: understanding the output/y's/range/meaning vs. not understanding--maybe this is "domain knowledge"
+
 Email: "projections onto nonlinear subspaces (k-RBMs)" (the email contains hard copies of these papers)
 * "Non-Linear Manifolds" - https://www.google.com/search?q=projection+onto+curved+subspaces&ie=utf-8&oe=utf-8#q=projection+onto+nonlinear+subspaces
 * RBMs - http://deeplearning.net/tutorial/rbm.html
