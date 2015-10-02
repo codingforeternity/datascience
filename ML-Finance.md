@@ -1,3 +1,8 @@
+Email: Convolution in finance (9/28/15)
+* A "line" is adjacent pixels of the same color. A "line" with financial data is a segment of space, as defined by a segmentation variable (eg market cap), over which the relationship between two or more other variables is linear.
+* These lines can then be combined to form exponential relationships and general multivariate distributions, etc.
+* So the trick is to find *filters* that match this pattern of local linear relationships.  Then, via the magic of BackProp, only those relationships that form into larger non-linear relationships will be kept/learned.
+
 Email: [[A Few Notes on Systematic Trading]] - CXO Advisory (9/30/15)
 * http://www.cxoadvisory.com/27652/big-ideas/a-few-notes-on-systematic-trading/
 
