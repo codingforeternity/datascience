@@ -8,6 +8,8 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Quantitative Healthcare]]
 
+(Awesome Open Source Documents)[https://github.com/nacyot/awesome-opensource-documents)
+
 [[ML Search]]
 
 [[ML Finance]]
