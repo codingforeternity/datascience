@@ -2,6 +2,8 @@ Also see: [[Better Java]]
 
 [Code Reviews Can Make or Break Your Team](https://medium.com/swlh/code-reviews-can-make-or-break-your-team-a3cfdcc15de1)
 
+[Preventing burnout for programmers](https://medium.com/@karolisram/preventing-burnout-for-programmers-12b4968adbaa)
+
 [10 Principles for Good Code](http://blog.d3in.org/post/130288777151/10-principles-for-good-code)
 
 [If I had to pick a single article for a new git user to read: Git Reset Demystified](https://www.reddit.com/r/programming/comments/3mp5ok/if_i_had_to_pick_a_single_article_for_a_new_git/)
