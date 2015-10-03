@@ -5,3 +5,5 @@ The first article links to the second.  The text of both of these can also be fo
 * [Why Hiring is So Hard in Tech](https://medium.com/javascript-scene/why-hiring-is-so-hard-in-tech-c462c3230017)
 
 Why We Work: [Rethinking Work](https://www.nytimes.com/2015/08/30/opinion/sunday/rethinking-work.html)
+
+[Preventing burnout for programmers](https://medium.com/@karolisram/preventing-burnout-for-programmers-12b4968adbaa)
