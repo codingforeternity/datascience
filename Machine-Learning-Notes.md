@@ -12,6 +12,8 @@ Email: "projections onto nonlinear subspaces (k-RBMs)" (the email contains hard 
 Email: "restricted boltzman machines, introduction"
 * http://blog.echen.me/2011/07/18/introduction-to-restricted-boltzmann-machines/
 
+Paper: [A Convolutional Neural Net for Modeling Sentences](http://nal.co/papers/Kalchbrenner_DCNN_ACL14)
+
 [The Man Who Would Teach Machines to Think](http://www.theatlantic.com/magazine/archive/2013/11/the-man-who-would-teach-machines-to-think/309529/)
 * Why conquer a task if there’s no insight to be had from the victory? “Okay,” he says, “Deep Blue plays very good chess—so what? Does that tell you something about how we play chess? No. Does it tell you about how Kasparov envisions, understands a chessboard?” A brand of AI that didn’t try to answer such questions—however impressive it might have been—was, in Hofstadter’s mind, a diversion.
 * “Nobody is a very reliable guide concerning activities in their mind that are, by definition, subconscious,” he once wrote. “This is what makes vast collections of errors so important. In an isolated error, the mechanisms involved yield only slight traces of themselves; however, in a large collection, vast numbers of such slight traces exist, collectively adding up to strong evidence for (and against) particular mechanisms.” Correct speech isn’t very interesting; it’s like a well-executed magic trick—effective because it obscures how it works.
