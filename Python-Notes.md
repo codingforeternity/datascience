@@ -1,3 +1,5 @@
+[Learn Python interactively with IPython - A Complete Tutorial!](https://github.com/rajathkumarmp/Python-Lectures)
+
 [Probability, Paradox, and the Reasonable Person Principle](http://nbviewer.ipython.org/url/norvig.com/ipython/Probability.ipynb) (in iPython Notebook, by Peter Norvig)
 
 [Straightening Loops: How to Vectorize Data Aggregation with pandas and NumPy](http://blog.datascience.com/straightening-loops-how-to-vectorize-data-aggregation-with-pandas-and-numpy/)
