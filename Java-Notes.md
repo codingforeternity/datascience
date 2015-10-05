@@ -1,3 +1,5 @@
+[Java on GPGPUs](https://medium.com/@jmaxg3/java-on-gpgpus-845d9ba58533)
+
 Java Resources
 * https://github.com/cxxr/better-java
 * And reproduced [[here|Better Java]]
