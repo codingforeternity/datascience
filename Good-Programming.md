@@ -17,3 +17,5 @@ Context Switching Costs: [Why Developers Hate Being Interrupted](http://thetomor
   3. A program must be easy for the computer to understand, unless it conflicts with first two laws.
 
   Others have [stated this better](https://mitpress.mit.edu/sicp/front/node3.html) as “programs must be written for people to read, and only incidentally for machines to execute.”
+
+[Path to a free self-taught graduation in Computer Science](https://github.com/open-source-society/computer-science-and-engineering)
