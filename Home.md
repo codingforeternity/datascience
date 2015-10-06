@@ -34,6 +34,8 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Agile Notes]]
 
+[[SQL Notes]]
+
 [[Python Notes]]
 
 [[Quantum Thoughts]]
