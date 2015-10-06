@@ -1,0 +1,1 @@
+[You Probably don’t Use SQL INTERSECT or EXCEPT Often Enough](http://blog.jooq.org/2015/10/06/you-probably-dont-use-sql-intersect-or-except-often-enough)
