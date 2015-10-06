@@ -15,12 +15,12 @@ FirstMark Capital is a NYC venture capital firm.  Attendees included a dude from
 * "back propagation is a practical application of the [chain rule](https://en.wikipedia.org/wiki/Chain_rule), but it took til the 80s to realize this"
   * FWC - the derivative of `f(g(x)` is `f'(g(x)) * g'(x)`
   * i.e. you can take the derivatives from the last layer of a NN (`g'`) and use them to compute the derivatives of the second to last layer (`f'`) ... and so on and so on backwards through the layers
-  * [specifically](http://www.willamette.edu/~gorr/classes/cs449/linear2.html) we want the partial derivative of the cost function, J, w.r.t. the weights/parameters, W/Theta:
-    * dJ/dW
-    * using the chain rule, this can be decomposed into dJ/dy * dy/dW
-    * d/dy J = d/dy 0.5*sum((Wa-y)^2) = sum(-(Wa-y)) (where Wa = h(x), the hidden/previous layer activations)
-    * d/dW y = d/dW Wa = a
-    * so dJ/dW = sum(-(Wa-y)) * a
+  * [specifically](http://www.willamette.edu/~gorr/classes/cs449/linear2.html) we want the partial derivative of the cost function, `J`, w.r.t. the weights/parameters, `W` or `Theta`:
+    * `dJ/dW`
+    * using the chain rule, this can be decomposed into `dJ/dy * dy/dW`
+    * `d/dy J = d/dy 0.5*sum((Wa-y)^2) = sum(-(Wa-y))` (where `Wa = h(x)`, the hidden/previous layer activations)
+    * `d/dW y = d/dW Wa = a`
+    * so `dJ/dW = sum(-(Wa-y)) * a`
 * size of typical NNs
   * hundreds of thousands of inputs
   * 1-10 billion multiply-accumulate operations (can't do this on CPUs--need GPUs)
