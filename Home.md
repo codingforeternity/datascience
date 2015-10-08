@@ -18,6 +18,8 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Reproducibility]]
 
+[[Notebook Mining]]
+
 [[JoNR: Journal of Negative Results]]
 
 [[Multiple Comparisons]]
