@@ -1,6 +1,6 @@
 2 Problems with Maps Apps
-1. They aren't predictive.  E.g. what will the traffic be like on a summer Friday afternoon leaving the city.  I.e. they aren't forward looking.  But they're not backwards looking either.  If there's unexpected traffic (e.g. due to an accident) and all of a sudden traffic begins to flow freely again, that should be accounted for very quickly.
-2. The graph being traversed shouldn't have intersections as its nodes; rather nodes should be points before and after intersections because it might take longer to turn left than go straight.  Take for example, exiting off of Rte 91 North onto Rte 84 East.
+1 They aren't predictive.  E.g. what will the traffic be like on a summer Friday afternoon leaving the city.  I.e. they aren't forward looking.  But they're not backwards looking either.  If there's unexpected traffic (e.g. due to an accident) and all of a sudden traffic begins to flow freely again, that should be accounted for very quickly.
+2 The graph being traversed shouldn't have intersections as its nodes; rather nodes should be points before and after intersections because it might take longer to turn left than go straight.  Take for example, exiting off of Rte 91 North onto Rte 84 East.
 
 Email: The only way to learn is to mess up (10/1/15)
 * Even theory-based learning requires the testing of theories
