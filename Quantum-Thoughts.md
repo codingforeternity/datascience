@@ -1,5 +1,9 @@
 **Time = Gravity**
 
+Email: Another dimension (10/12/15)
+* If there were another dimension that we don't know about, that could explain why accelerated trajectories take less time. I.e., we aren't including all of the relevant dimensions in the spacetime equation.
+* Perhaps gravity/acceleration is that additional dimension. Just like in that MIT machine learning [video on SVMs](https://www.youtube.com/watch?v=_PwhiWxHK8o) (towards the end) where he adds another dimension to make large margin classifier work in the presence of noisy data.
+
 Email: Gravity and universe expansion are related (9/29/15)
 * The hypothesis (prior to dark energy) was that gravity would slow it down. But what if cause and effect are wrong. What if universe expansion causes gravity. At the moment of the BB there was no gravity.
 
