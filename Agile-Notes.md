@@ -1,3 +1,9 @@
+[Agile Is The New Waterfall](https://medium.com/@ayasin/agile-is-the-new-waterfall-f7baef5d026d)
+* Only add processes that reduce significant actual risk. Create process to help reduce a particular risk IF you can answer yes to one of these three questions:
+  1.     Did an actual problem occur that was systemic and not just a one off? _Example: Sally and Bob both repeatedly started working on the same feature, and don’t figure it out for 2 days because there’s no way for them to do so._
+  2. Is risk of a problem occurring very high? _Example: drives crash often enough that if your source isn’t checked into source control for a month, there’s a real risk of significant loss._
+  3. Would a problem have catastrophic consequences? _Example: if a wing falls off a plane in flight, it’s game over for everyone on board._
+
 Email: [If it hurts, do it more often: Frequency Reduces Difficulty](https://www.reddit.com/r/programming/comments/3mmei5/if_it_hurts_do_it_more_often_frequency_reduces/) (9/28/15)
 * http://martinfowler.com/bliki/FrequencyReducesDifficulty.html
 * "if it hurts, do it more often"
