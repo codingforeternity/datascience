@@ -1,3 +1,6 @@
+[Cancer drug development time halved thanks to artificial intelligence](http://blogs.sciencemag.org/pipeline/archives/2015/10/13/artificial-intelligence-you-say)
+* Berg Health’s team used a specialised form of artificial intelligence to compare samples taken from patients with the most aggressive strains of cancer, including pancreatic, bladder and brain, with those from non-cancerous individuals. The technology highlighted disparities between the corresponding biological profiles, selecting those it predicted would respond best to the drug.
+
 Email: "Idea: ignore drugs, they're all bs"
 * In that the rate of new drug discovery is massively slowing down.  The real gains to come are in genetics.
 * Another Alzheimer's IPO http://pipeline.corante.com/archives/2015/07/30/another_alzheimers_ipo.php
