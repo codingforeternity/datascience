@@ -1,4 +1,4 @@
-[Agile Is The New Waterfall](https://medium.com/@ayasin/agile-is-the-new-waterfall-f7baef5d026d)
+[Agile Is The New Waterfall](https://medium.com/@ayasin/agile-is-the-new-waterfall-f7baef5d026d) (10/13/15)
 * Only add processes that reduce significant actual risk. Create process to help reduce a particular risk IF you can answer yes to one of these three questions:
   1.     Did an actual problem occur that was systemic and not just a one off? _Example: Sally and Bob both repeatedly started working on the same feature, and don’t figure it out for 2 days because there’s no way for them to do so._
   2. Is risk of a problem occurring very high? _Example: drives crash often enough that if your source isn’t checked into source control for a month, there’s a real risk of significant loss._
