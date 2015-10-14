@@ -1,3 +1,5 @@
+[The Future of the Java Ecosystem ](https://dzone.com/articles/the-future-of-the-java-ecosystem) (10/14/15)
+
 [Streams in Java 8](https://www.voxxed.com/blog/2015/10/side-effects-and-java-8-streams/) (also see: [[Functional Programming]])
 
 [Java on GPGPUs](https://medium.com/@jmaxg3/java-on-gpgpus-845d9ba58533)
