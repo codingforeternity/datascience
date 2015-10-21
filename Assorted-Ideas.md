@@ -1,3 +1,9 @@
+Facial Biases (10/20/15)
+* Email: Thin upper lip bias
+* It seems like folks with thin upper lips are assumed to be more dishonest or shifty than others.  I had this idea while watching episode 39 of House of Cards.
+* What other kinds of facial feature biases are there?  Seems easy enough to learn.  Would mean understanding features more than lines though.
+* There are obviously race and sex biases.  And there are biases against age and height.  There are surely biases against all sorts of things we aren't aware of.
+
 2 Problems with Maps Apps
   1. They aren't predictive.  E.g. what will the traffic be like on a summer Friday afternoon leaving the city.  I.e. they aren't forward looking.  But they're not backwards looking either.  If there's unexpected traffic (e.g. due to an accident) and all of a sudden traffic begins to flow freely again, that should be accounted for very quickly.
   2. The graph being traversed shouldn't have intersections as its nodes; rather nodes should be points before and after intersections because it might take longer to turn left than go straight.  Take for example, exiting off of Rte 91 North onto Rte 84 East.
