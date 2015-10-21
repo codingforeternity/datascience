@@ -1,3 +1,9 @@
+Charter Prisons (Email: "Why don't", 10/17/15)
+* There are private prisons but are there non profit prisons?  Charter prisons?
+* Wouldn't it be possible to massively increase prisoner welfare by just attaching GPS and/or listening/recording devices to their ankles that would set off alarms if tampered with.
+* This could protect them against other prisoners and guards.
+* Could even make it voluntary, if prisoners objected on privacy grounds--not that there's any of that in prison--not that I know.
+
 Facial Biases (10/20/15)
 * Email: Thin upper lip bias
 * It seems like folks with thin upper lips are assumed to be more dishonest or shifty than others.  I had this idea while watching episode 39 of House of Cards.
