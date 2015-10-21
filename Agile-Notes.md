@@ -1,3 +1,5 @@
+[Agile Failure Patterns](https://age-of-product.com/agile-failure-patterns-in-organizations/)
+
 [Agile Is The New Waterfall](https://medium.com/@ayasin/agile-is-the-new-waterfall-f7baef5d026d) (10/13/15)
 * All successful processes are unique. You can’t read a book and go through it’s 12 steps to build great software any more than you can read a book, go through it’s 12 steps and come up with the next big thing.
 * Only add processes that reduce significant actual risk. Create process to help reduce a particular risk IF you can answer yes to one of these three questions:
