@@ -1,3 +1,5 @@
+On the PBS NewsHour last night (10/21/15) they profiled a family in Toronto who had 4 children--all boys--and one of them had autism.  They researchers are comparing the genomes of people with autism to close family members of people without autism and they say they're close to finding genes that are indicators for the disease.  Their goal is to either sequence 11k people's genomes or the genomes of 11k people with autism and their close family members.
+
 Adaptive Gene Expression (10/8/15)
 * Are all networks learned?  The network in the brain is learned.  A convolutional neural net (CNN) is learned.
 * And if so, what does it mean to "understand the brain"?  If it's anything similar to "understanding a CNN" then there doesn't seem to be much value in understanding how it does what it does as opposed to understanding how it learns what it learns.
