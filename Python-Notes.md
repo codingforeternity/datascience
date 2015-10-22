@@ -1,3 +1,6 @@
+[Machine Learning in Python](https://www.dataquest.io/blog/getting-started-with-machine-learning-python/)
+* Includes an intro to Pandas, Matplotlib, and Scikit-Learn
+
 [Learn Python interactively with IPython - A Complete Tutorial!](https://github.com/rajathkumarmp/Python-Lectures)
 
 [Probability, Paradox, and the Reasonable Person Principle](http://nbviewer.ipython.org/url/norvig.com/ipython/Probability.ipynb) (in iPython Notebook, by Peter Norvig)
