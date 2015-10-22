@@ -1,3 +1,5 @@
+[Do we really need user stories for effective Agile development?](https://medium.com/@frederik.kraus/do-we-really-need-user-stories-for-effective-software-development-22bb8e58d62d#.66dxge7tn)
+
 [Agile Failure Patterns](https://age-of-product.com/agile-failure-patterns-in-organizations/)
 
 [Agile Is The New Waterfall](https://medium.com/@ayasin/agile-is-the-new-waterfall-f7baef5d026d) (10/13/15)
