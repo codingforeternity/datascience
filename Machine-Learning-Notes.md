@@ -1,3 +1,5 @@
+[Visualizing popular ML algorithms](http://jsfiddle.net/wybiral/3bdkp5c0/embedded/result/) (10/25/15)
+
 [What a Deep Neural Network thinks about your #selfie](http://karpathy.github.io/2015/10/25/selfie/) (10/26/15)
 
 Email: Nns are only being applied to trivial problems (9/25/15)
