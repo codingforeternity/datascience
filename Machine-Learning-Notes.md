@@ -1,3 +1,5 @@
+[What a Deep Neural Network thinks about your #selfie](http://karpathy.github.io/2015/10/25/selfie/) (10/26/15)
+
 Email: Nns are only being applied to trivial problems (9/25/15)
 * e.g. Image recognition, NLP
 * This is because lots of people understand the goals of those problems.
