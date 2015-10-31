@@ -1,3 +1,8 @@
+Email: The Multiverse episode of the Astrophysics Yale class for beginners podcast (10/29/15)
+* MoND - Modification of Newtonian Dynamics, gravity is different at large vs small distances. FWC - makes sense, yes, because space is stretched differently at both
+* FWC, or how about this, the gravity of a black hole is different bc no electrons, like a neutron star, bc electrons can only get so close together, electron degeneracy
+* Anthromorphic Principle - if you choose a bunch of physics constants randomly you don't have what it takes for life to exist. This suggests that random choices aren't consistent w each other. Take Euler's equation for example. You can't just choose any values for pi and e and i. I wonder if given the values of the constants the equation could be computed using prolog or something.
+
 Email: Acceleration slows down clocks (10/26/15)
 * Because of the momentum of the vibrating/oscillating components, both of which take energy.
 * So do different trajectories with the same acceleration have different effects on clocks? Akin to constructive vs destructive interference?
