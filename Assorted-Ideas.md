@@ -1,3 +1,8 @@
+Email: Don't regulate pay (10/6/15)
+* It's been tried and it doesn't work.  Pay in finance just keeps going up.
+* Pay that's earned should be taxed less than pay that isn't.  Another way to think about this is pay that's acquired by chance should be taxed more than pay that isn't.
+* So then we just need a metric of chance for each industry/sector/other set of factors.  One idea: the ratio of successful to unsuccessful members of an industry.
+
 Book: [The Warmth of Other Suns](http://kottke.org/15/10/the-warmth-of-other-suns) (10/10/15)
 * "The Warmth of Other Suns is about the Great Migration, the mass movement of African Americans from the Southern US to the Northeast, Midwest, and West between 1910 and 1970. During that time, roughly 6 million African Americans moved north and west to escape Jim Crow laws, discrimination, low wages, the threat of physical violence & death, and everyday humiliation & lack of freedom in the South."
 * Sound like anything going on today, e.g. Mexicans perhaps.  So why isn't it being celebrated like it is in this book?
