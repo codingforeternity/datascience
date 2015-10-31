@@ -1,3 +1,8 @@
+Book: [The Warmth of Other Suns](http://kottke.org/15/10/the-warmth-of-other-suns) (10/10/15)
+* "The Warmth of Other Suns is about the Great Migration, the mass movement of African Americans from the Southern US to the Northeast, Midwest, and West between 1910 and 1970. During that time, roughly 6 million African Americans moved north and west to escape Jim Crow laws, discrimination, low wages, the threat of physical violence & death, and everyday humiliation & lack of freedom in the South."
+* Sound like anything going on today, e.g. Mexicans perhaps.  So why isn't it being celebrated like it is in this book?
+* What's more, hasn't this been a constant in the history of America?
+
 Charter Prisons (Email: "Why don't", 10/17/15)
 * There are private prisons but are there non profit prisons?  Charter prisons?
 * Wouldn't it be possible to massively increase prisoner welfare by just attaching GPS and/or listening/recording devices to their ankles that would set off alarms if tampered with.
