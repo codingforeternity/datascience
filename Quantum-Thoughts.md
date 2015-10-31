@@ -1,3 +1,33 @@
+Email: From Here to Eternity (Sean Carrol's book) quote (9/30 - 10/23)
+* "An unaccelerated trajectory yields the greatest possible time a clock could measure between two events." (p. 85)
+* So acceleration effectively slows down time.  Either that, or time is linear and acceleration bends space.  I.e. the path of the accelerated object while seemingly longer in typical units of distance (such as kilometers) is actually shorter in acceleration-adjusted units (such as accelometers?).  So rather than acceleration slowing down time, perhaps it shrinks space.  (Also note that an "unaccelerated trajectory" is effective deceleration w.r.t. the acceleration of the expansion of the universe.)
+* It makes sense that duration (i.e. change in time) is shorter when something accelerates off into space and comes back.  If this occurs where one object does not accelerate and another goes off and comes back, both objects have traveled the same "distance" in spacetime.  They both started at the same location (in space) and at the same time, and they both ended at the same location and time.  One object traveled a longer distance though, so if spacetime "distance" is (reasonably) some monotonic function, f, of both space and time, say f(s, t) = sqrt(s^2 + t^2), then when s is larger for an accelerated object, t must be smaller.
+* This could also have something to do with why it's impossible to travel back in time.  If time is a sort of (non-directional) distance metric then that would be the case; distances can't be negative.  E.g. what if time actually does have multiple dimensions with a functional form similar to Euclidean distance: t = sqrt(t0^2+t1^2+t2^2)?  The value of t can't ever be negative.
+* As an aside: Doesn't velocity slow down time also, as in the "speed" of light?  Or maybe there's a 3rd derivative involved; something along the lines of: acceleration matters for low speeds while velocity matters for high speeds.  A 3rd derivative would perhaps relate to the 3 dimensions of space and/or explain why the speed of light is a limit.  In other words, does acceleration matter less (w.r.t. time) and velocity more as velocity increases?
+* Also, dark energy as the reason for the acceleration of the expansion of the universe seems improbable to me.  It seems like a correction factor for something wrong with the underlying model, which otherwise (in the absence of dark energy) implies contraction due to gravity.
+* Perhaps time doesn't increase if not for the acceleration of the universe.
+* Relativity says that gravity bends space; it redefines what is accelerating and what is not; e.g. something in orbit is not accelerating; it changes how distances should be computed from typical units of distance (like kilometers) to gravity-adjusted units of distance (like accelometers?).
+* Wasn't there massive acceleration at the beginning of the universe, just after the Big Bang?  If that's the case, then maybe that's why we observe it as having happened so quickly.  I.e. acceleration = space / time where time is near 0.  Or rather, if acceleration shrinks space, then perhaps that why we observe the Big Bang culminating from a single point.  Black holes with their massive acceleration/gravity could also just be larger areas of typical space shrunk down.
+* The speed of light shrinks space down to 0.  It's the inverse of space.  That's why nothing can travel faster.
+* **Time = Gravity** (which also can't be negative)
+* The universe is exponential; nothing is linear.  Anything with a limit (the Big Bang, the speed of light) is really the inverse of something else.  Prediction: the acceleration of the universe is exponential.
+* Gravity is acceleration and acceleration shrinks space. So why is gravity acceleration? Maybe because electrons spin around atomic nuclei. This would suggest, however, that electrons in different orbits generate different gravity and thus have different mass.
+* Acceleration of the universe = dark energy = gravity = shrinking of space = speedup of time
+* Disc galaxies = dark matter = not enough matter = lots of non accelerating objects in orbit = slow down of time
+* "The energy of an object at rest is proportional to its mass." (p 80)
+* "'relativistic mass,' which increases when an object is in motion." (p 80)
+* Future times of the universe are much longer durations, 10^90, than past, 10^-30; i.e. time is exponential. The beginning of the universe only looks like it happened so fast from our perspective.
+  * Dark matter = centrifical force
+  * Dark energy = linear acceleration
+  * Episode 26 Phil Plait - just after the big bang
+  * Think more about the inverse relationship between temperature and pressure. The universe started out very hot, and now it's only a few degrees (2.7?) above absolute zero.
+* Page 110: "how spacetime avoids making a time machine--it crunches to zero volume before the closed timelike curves are created."
+* Can 2 bodies of mass travel past each other at 3/4 the speed of light, thus their relative speed is 1.5 c?
+  * A: No, because of relativistic mass; they'd be pulled towards each other by gravity.
+  * Is this a fundamental limit on the stretchiness of space?
+* In response to what I wrote earlier: "Or maybe there's a 3rd derivative involved; something along the lines of: acceleration matters for low speeds while velocity matters for high speeds."
+  * Well, according to Astronomy Cast (episode 269) it looks like this is the case.  The concept is called Relativistic Velocity (https://en.wikipedia.org/wiki/Relativistic_speed), and it says that mass increases (not exactly, but that's a decent way to think about it; see https://en.wikipedia.org/wiki/Mass_in_special_relativity) as velocity approaches the speed of light.  Specifically, mass increases by 1 / (1 - (v/c)^2), so if v==c then the denominator is 0 and mass is infinite (FWC - and time stands still, right?).
+
 Email: The ice cube in the glass of water (10/22/15)
 * Is not an example of the irreversibility of time because it's not a closed system. Something had to put the ice cube there. So even though the resulting state after melting is a cold glass of water, the resulting state of the rest of the system is different than it would be if it had just begun as a cold glass of water. * The fact that something is different means that time may be predictive in reverse.
 * Counterpoint: take 2 causes and swap them with their effects.
