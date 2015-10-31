@@ -1,3 +1,7 @@
+Email: Perhaps the second law is backwards (10/21)
+* It's not that entropy increases with time, but rather that time increases with entropy.
+Acceleration, the second law, gravity, dark energy & matter, they all have time in the denominator. Perhaps they are all the same effect--i.e. movement through (dense) space over time.
+
 Email: 4d spacetime = "Cartesian spacetime" (10/14 - 10/21)
 * Except there's good evidence a f ain't Cartesian, so why try so hard to hold on to that concept? Trying to make everything agree is doomed from the start.
 * Evidence that time is different [from space] is in the paragraph at the bottom of p. 123 [of Sean Carrol's book].
