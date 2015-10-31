@@ -4,7 +4,7 @@ Email: ML is used to weigh and combine scores (in Watson) (10/7/15)
 * Perhaps it should be used to combine forecasts (in finance).  Or is that basically just a regression?  It could be a logistic regression though, or a neural net.  I.e. use ML to discover correlations/relationships between forecasts.
 * "Because machine learning is used to weigh and combine scores, evidence scoring algorithms can be easily introduced, revised, and reconfigured without the need for an error-prone manual effort to determine how to combine the various evidence scores.  In 'A Framework for Merging and Ranking of Answers in DeepQA,' Gondek et al. describe the machine learning framework used in DeepQA, explain the challenges, and evaluate the gains over a baseline ML approach."
 
-A Few Notes on Systematic Trading
+# A Few Notes on Systematic Trading
 
 September 30, 2015 • Posted in Big Ideas, Strategic Allocation
 
