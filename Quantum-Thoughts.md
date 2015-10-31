@@ -25,7 +25,8 @@ Email: If the expansion of the universe is accelerating (10/8/15)
 * Then we, our galaxy, must be accelerating in some direction, but why can't we feel it?
 * A: Because it's not that objects are accelerating through space; it's that space between objects is growing/stretching at an accelerating rate.
 * Podcast: Ep. 279 Hubble Constant | Astronomy Cast (10/21/15)
-** It's not that distant galaxies are accelerating away from us, it's that the space between us and distant galaxies is expanding causing them to appear like they're accelerating away.  This is why we, and they, don't feel the acceleration?
+  * It's not that distant galaxies are accelerating away from us; it's that the space between us and distant galaxies is expanding causing them to appear like they're accelerating away.
+  * This is why we, and they, don't feel the acceleration?
 
 Email: Gravity and universe expansion are related (9/29/15)
 * The hypothesis (prior to dark energy) was that gravity would slow it down. But what if cause and effect are wrong. What if universe expansion causes gravity. At the moment of the BB there was no gravity.
