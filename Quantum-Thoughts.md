@@ -1,3 +1,9 @@
+Email: Acceleration slows down clocks (10/26/15)
+* Because of the momentum of the vibrating/oscillating components, both of which take energy.
+* So do different trajectories with the same acceleration have different effects on clocks? Akin to constructive vs destructive interference?
+* Does a clock move slower in an accelerated path because there has to be something providing power to the vibration of the clock's crystal and that same "thing" is providing power to the accelerated path?  I.e. there's only so much power to go around so the accelerated path sucks power from the clock.  Is this "power" the dark energy?  What makes quartz crystals oscillate?  Is it dark energy?  If so, is dark energy responsible for quantum oscillations also?
+* Is the gravity of cold stuff less than that of hot?  Stuff moving near the speed of light has more gravity. Does Bose-Einstein condensate (BEC) have very little gravity? Do quantum fluctuations create gravity? 
+
 Email: the entropy of a state (p. 173) (10/23/15)
 * The entropy of a state shouldn't be defined as the precise state the system is at at a specific point in time.  It should be defined by the probability distribution of all possible future states.
 * The further in the future you go, the less likely the specific-point-in-time entropy will be smaller, just like the stochastic volatility grows with the square of time while drift grows linearly.
