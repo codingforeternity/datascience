@@ -5,6 +5,11 @@ Another problem with Google search (10/17/15)
 * This is a well read site.  But it's nothing but anecdotal.
 * It would be great to see a reliability score for it.
 
+Email: Watson for reviews (10/6/15)
+* Filter reviews and return a re-aggregated list of relevant ones, according to an individual's preferences and their validity.
+* Use collaborative filtering (CF) for ailments/problems rather than human-understandable problems.  I.e., use our 8 ailments and CF back to EMRA problems.
+* Use Watson for any user-specific record, like EMRs.
+
 Email: "Internet decay"
 * http://www.vox.com/2015/8/6/9099357/internet-dead-end
 * "What links these seemingly dissimilar stories is a very basic fear — the idea that the internet as we knew it, the internet of five or 10 or 20 years ago, is going away as surely as print media, replaced by a new internet that reimagines personal identity as something easily commodified, that plays less on the desire for information or thoughtfulness than it does the desire for a quick jolt of emotion."
