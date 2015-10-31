@@ -1,3 +1,10 @@
+Another problem with Google search (10/17/15)
+* It leads to a lot of anecdotal evidence.
+* Which just happens to be a massive percentage of the evidence for and against baby products of all kinds.
+* Take for example: http://www.candokiddo.com/news/rocknplay
+* This is a well read site.  But it's nothing but anecdotal.
+* It would be great to see a reliability score for it.
+
 Email: "Internet decay"
 * http://www.vox.com/2015/8/6/9099357/internet-dead-end
 * "What links these seemingly dissimilar stories is a very basic fear — the idea that the internet as we knew it, the internet of five or 10 or 20 years ago, is going away as surely as print media, replaced by a new internet that reimagines personal identity as something easily commodified, that plays less on the desire for information or thoughtfulness than it does the desire for a quick jolt of emotion."
