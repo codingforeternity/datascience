@@ -5,6 +5,9 @@ Email: Another dimension (10/12/15)
 * Perhaps gravity/acceleration is that additional dimension. Just like in that MIT machine learning [video on SVMs](https://www.youtube.com/watch?v=_PwhiWxHK8o) (towards the end) where he adds another dimension to make large margin classifier work in the presence of noisy data.
 * Perhaps "space density" is that other dimension, though this would clearly have to be dependent on gravity/acceleration.
 
+Email: Discrete Time (10/8/15)
+* Is there any reason to think that time is continuous? Is anything continuous? Particles? Fields? Why would time be? Maybe because gravity is? I.e. because time is a distance metric.
+
 Email: If the expansion of the universe is accelerating (10/8/15)
 * Then we, our galaxy, must be accelerating in some direction, but why can't we feel it?
 * A: Because it's not that objects are accelerating through space; it's that space between objects is growing/stretching at an accelerating rate.
