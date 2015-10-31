@@ -1,3 +1,9 @@
+Email: the entropy of a state (p. 173) (10/23/15)
+* The entropy of a state shouldn't be defined as the precise state the system is at at a specific point in time.  It should be defined by the probability distribution of all possible future states.
+* The further in the future you go, the less likely the specific-point-in-time entropy will be smaller, just like the stochastic volatility grows with the square of time while drift grows linearly.
+* Perhaps the past should be thought of the same way, as having been derived from a distribution of possible pasts.
+* This reminds me of light cones.
+
 Email: From Here to Eternity (Sean Carrol's book) quote (9/30 - 10/23)
 * "An unaccelerated trajectory yields the greatest possible time a clock could measure between two events." (p. 85)
 * So acceleration effectively slows down time.  Either that, or time is linear and acceleration bends space.  I.e. the path of the accelerated object while seemingly longer in typical units of distance (such as kilometers) is actually shorter in acceleration-adjusted units (such as accelometers?).  So rather than acceleration slowing down time, perhaps it shrinks space.  (Also note that an "unaccelerated trajectory" is effective deceleration w.r.t. the acceleration of the expansion of the universe.)
