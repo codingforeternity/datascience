@@ -9,9 +9,10 @@ Email: the entropy of a state (p. 173) (10/23/15)
 * The further in the future you go, the less likely the specific-point-in-time entropy will be smaller, just like the stochastic volatility grows with the square of time while drift grows linearly.
 * Perhaps the past should be thought of the same way, as having been derived from a distribution of possible pasts.
 * This reminds me of light cones.
-* Email: Oct 8 (which is mentioned as God's birthday) in star talk episode with God (10/27/15)
+* Email: Oct 8 (which is mentioned as God's birthday) in star talk episode with God (10/28/15)
   * Plus, perhaps entropy should be defined as the difference in the distribution of possible past entropies vs. that of possible future ones. Kinda like the derivative of an integral.
   * Or: make entropy the inverse of all the impossible microstates as opposed to the number of possible ones.
+  * Maybe the Time Reversal Hypothesis is true not because the past is fixed and the future is uncertain, but because the past is uncertain in just as many ways.
 
 Email: From Here to Eternity (Sean Carrol's book) quote (9/30 - 10/23)
 * "An unaccelerated trajectory yields the greatest possible time a clock could measure between two events." (p. 85)
