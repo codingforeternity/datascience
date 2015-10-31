@@ -1,3 +1,11 @@
+Email: 4d spacetime = "Cartesian spacetime" (10/14 - 10/21)
+* Except there's good evidence a f ain't Cartesian, so why try so hard to hold on to that concept? Trying to make everything agree is doomed from the start.
+* Evidence that time is different [from space] is in the paragraph at the bottom of p. 123 [of Sean Carrol's book].
+* Rather than having 3 dims of space and one of time, one could imagine having 3 of space and one of velocity, and then time can be derived from that. Then you probably need acceleration though also, etc. I.e. a single dimension of time isn't enough to describe the state of spacetime.
+* p. 130, momentum = mass * velocity; and in relativity momentum goes to infinity as v approaches c (relativistic mass/velocity)
+* Acceleration can't happen without adding energy so perhaps its energy that affects (ie speeds up) time.  E.g. what if you heat up a clock? Will that slow time down?
+* In physics, credit accrues not just to someone who makes an offhand suggestion, but... (p. 138)
+
 **Time = Gravity**
 
 Email: Another dimension (10/12/15)
@@ -16,6 +24,8 @@ Email: Discrete Time (10/8/15)
 Email: If the expansion of the universe is accelerating (10/8/15)
 * Then we, our galaxy, must be accelerating in some direction, but why can't we feel it?
 * A: Because it's not that objects are accelerating through space; it's that space between objects is growing/stretching at an accelerating rate.
+* Podcast: Ep. 279 Hubble Constant | Astronomy Cast (10/21/15)
+** It's not that distant galaxies are accelerating away from us, it's that the space between us and distant galaxies is expanding causing them to appear like they're accelerating away.  This is why we, and they, don't feel the acceleration?
 
 Email: Gravity and universe expansion are related (9/29/15)
 * The hypothesis (prior to dark energy) was that gravity would slow it down. But what if cause and effect are wrong. What if universe expansion causes gravity. At the moment of the BB there was no gravity.
