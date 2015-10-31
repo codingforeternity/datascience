@@ -1,5 +1,7 @@
 [Emotional Attachment to Code](http://www.codereadability.com/emotional-attachment-to-code/) (10/17/15)
 
+[Software Gardening](http://alecmunro.blogspot.com/2015/10/software-gardening-in-practice.html) (10/17/15)
+
 Also see: [[Better Java]]
 
 [Code Reviews Can Make or Break Your Team](https://medium.com/swlh/code-reviews-can-make-or-break-your-team-a3cfdcc15de1)
