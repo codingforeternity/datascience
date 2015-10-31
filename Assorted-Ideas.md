@@ -1,3 +1,6 @@
+Email: Use anomaly detection for SIDS (10/6/15)
+* SIDS is an anomaly detection scenario because there are very few cases (e.g. 0.1%).
+
 Email: Don't regulate pay (10/6/15)
 * It's been tried and it doesn't work.  Pay in finance just keeps going up.
 * Pay that's earned should be taxed less than pay that isn't.  Another way to think about this is pay that's acquired by chance should be taxed more than pay that isn't.
