@@ -1,3 +1,11 @@
+Email: The ice cube in the glass of water (10/22/15)
+* Is not an example of the irreversibility of time because it's not a closed system. Something had to put the ice cube there. So even though the resulting state after melting is a cold glass of water, the resulting state of the rest of the system is different than it would be if it had just begun as a cold glass of water. * The fact that something is different means that time may be predictive in reverse.
+* Counterpoint: take 2 causes and swap them with their effects.
+* Counterpoint #2: dropping ice cube in water and waiting 5 minutes, vs waiting 5 minutes and then dropping the cube in. Rearrange the order of causes. Resulting state an hour later is the same? Perhaps not: is the state of your arm the same? Is the amount of information the same? You had the thought of dropping the ice cube in for a longer amount of time, didn't you?
+* Conservation of information, p. 167
+* Is space referential to the observer? Or is it time? Or both?  Referentiality? Or relativity?
+* Multiple arrows of time, p. 171, bottom: These sentences show that time is self referential to the observer, the experiencer of the time.
+
 Email: Perhaps the second law is backwards (10/21)
 * It's not that entropy increases with time, but rather that time increases with entropy.
 Acceleration, the second law, gravity, dark energy & matter, they all have time in the denominator. Perhaps they are all the same effect--i.e. movement through (dense) space over time.
