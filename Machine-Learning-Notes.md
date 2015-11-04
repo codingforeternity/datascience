@@ -1,3 +1,7 @@
+[Weka 3: Data Mining Software in Java](http://www.cs.waikato.ac.nz/ml/weka/)
+* This software was mentioned by Desmond.
+* He sounded reluctant when he had to stop using it in favor of SPSS.
+
 [Smart Reply - Google's attempt at a deep NN that replies to an email](http://googleresearch.blogspot.com/2015/11/computer-respond-to-this-email.html) (11/3/15)
 
 [Dissecting Bias vs. Variance Tradeoff In Machine Learning](http://prateekvjoshi.com/2015/10/20/dissecting-bias-vs-variance-tradeoff-in-machine-learning) (10/29/15)
