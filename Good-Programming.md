@@ -1,3 +1,5 @@
+[Announcing Educational Plugin for PyCharm 5](http://blog.jetbrains.com/pycharm/2015/11/announcing-educational-plugin-for-pycharm-5/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Pycharm+%28JetBrains+PyCharm+Blog%29) (11/3/15)
+
 [Emotional Attachment to Code](http://www.codereadability.com/emotional-attachment-to-code/) (10/17/15)
 
 [Software Gardening](http://alecmunro.blogspot.com/2015/10/software-gardening-in-practice.html) (10/17/15)
