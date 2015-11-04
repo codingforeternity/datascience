@@ -1,3 +1,5 @@
+[Modern Agile](https://www.industriallogic.com/blog/modern-agile/) (11/3/15)
+
 [Managing Holidays, Time Off, and Meetings with a Distributed Team](https://www.cycligent.com/blog/managing-holidays-time-off-and-meetings-with-a-distributed-team/) (10/23/15)
 
 [Do we really need user stories for effective Agile development?](https://medium.com/@frederik.kraus/do-we-really-need-user-stories-for-effective-software-development-22bb8e58d62d#.66dxge7tn)
