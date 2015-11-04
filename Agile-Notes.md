@@ -1,3 +1,5 @@
+[Epics, stories, versions, and sprints](https://www.atlassian.com/agile/delivery-vehicles/) (11/4/15)
+
 [Modern Agile](https://www.industriallogic.com/blog/modern-agile/) (11/3/15)
 
 [Managing Holidays, Time Off, and Meetings with a Distributed Team](https://www.cycligent.com/blog/managing-holidays-time-off-and-meetings-with-a-distributed-team/) (10/23/15)
