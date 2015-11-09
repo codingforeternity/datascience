@@ -1,3 +1,5 @@
+[Synchronized java.util.HashMap vs. java.util.concurrent.ConcurrentHashMap ](http://vmlens.com/articles/synchronized-java-util-hashmap-vs-java-util-concurrent-concurrenthashmap/) (11/9/15)
+
 [The Future of the Java Ecosystem ](https://dzone.com/articles/the-future-of-the-java-ecosystem) (10/14/15)
 
 [Streams in Java 8](https://www.voxxed.com/blog/2015/10/side-effects-and-java-8-streams/) (also see: [[Functional Programming]])
