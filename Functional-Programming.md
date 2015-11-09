@@ -1,3 +1,5 @@
+[Google Guava (Java library): Functional Explained](https://github.com/google/guava/wiki/FunctionalExplained) (11/9/15)
+
 Also see [[Java Notes]] for functional programming in Java.
 
 Good Functional Programming Article
