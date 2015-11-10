@@ -1,3 +1,6 @@
+[The one weird trick to write clean code](http://www.hugotunius.se/clean-code/code/ci/2015/11/09/the-one-weird-trick-to-write-clean-code.html) (11/10/15)
+* Eclipse Java Linter plugin: https://www.google.com/search?q=linter+for+java&ie=utf-8&oe=utf-8#q=linter+java+eclipse
+
 [Announcing Educational Plugin for PyCharm 5](http://blog.jetbrains.com/pycharm/2015/11/announcing-educational-plugin-for-pycharm-5/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Pycharm+%28JetBrains+PyCharm+Blog%29) (11/3/15)
 
 [Emotional Attachment to Code](http://www.codereadability.com/emotional-attachment-to-code/) (10/17/15)
