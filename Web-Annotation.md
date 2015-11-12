@@ -1,3 +1,8 @@
+11/12/15 - Medium.com has this built in to their site somehow (Javascript?)
+* https://medium.com/the-engineering-team/keep-your-kitchen-clean-e39d692f8015
+* Scroll down to the "Choose a style guide..." paragraph which has been highlighted by 3 people.
+* A widget pops up when you highlight anything else.
+
 Email: idea: if user data is valuable (9/17/15)
 * but only the aggregate data for each user, then allow collections of companies to bid on collections of users' data ("data unions" akin to labor unions--data generators of the world unite!)
 * the problem is that companies have aggregations of users
