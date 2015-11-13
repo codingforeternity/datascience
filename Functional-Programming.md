@@ -1,3 +1,7 @@
+[Beware of Functional Programming in Java](http://blog.jooq.org/2015/11/10/beware-of-functional-programming-in-java/) (11/13/15)
+* The lambda style will encourage using higher-order functions in Java, all over the place. Which is generally good. But only when the higher-order function is a static method, whose resulting types will not enclose any state.
+* So, be careful, and follow this rule: (“Pure”) Higher order functions MUST be static methods in Java!
+
 [Google Guava (Java library): Functional Explained](https://github.com/google/guava/wiki/FunctionalExplained) (11/9/15)
 
 Also see [[Java Notes]] for functional programming in Java.
