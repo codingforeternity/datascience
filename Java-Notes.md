@@ -1,3 +1,5 @@
+[Even If Oracle Is Losing Interest In Java, Should You Worry?](http://www.jasonwhaley.com/post/java-evangelist-release-reaction/) (11/13/15)
+
 [Synchronized java.util.HashMap vs. java.util.concurrent.ConcurrentHashMap ](http://vmlens.com/articles/synchronized-java-util-hashmap-vs-java-util-concurrent-concurrenthashmap/) (11/9/15)
 
 [The Future of the Java Ecosystem ](https://dzone.com/articles/the-future-of-the-java-ecosystem) (10/14/15)
