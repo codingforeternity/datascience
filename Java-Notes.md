@@ -1,3 +1,6 @@
+[Cool Java 8 Features: To Use or not to Use](https://www.cqse.eu/en/blog/cool-new-java-8-features-to-use-or-not-to-use/) (11/16/15)
+* Includes a nice simple example comparing implementations of 2 functions written in both functional and imperative style--as well as a combined implementation of the 2 styles.
+
 [Even If Oracle Is Losing Interest In Java, Should You Worry?](http://www.jasonwhaley.com/post/java-evangelist-release-reaction/) (11/13/15)
 
 [Synchronized java.util.HashMap vs. java.util.concurrent.ConcurrentHashMap ](http://vmlens.com/articles/synchronized-java-util-hashmap-vs-java-util-concurrent-concurrenthashmap/) (11/9/15)
