@@ -1,3 +1,12 @@
+[Self Organizing Maps (SOMs) Tutorial](http://www.ai-junkie.com/ann/som/som1.html) (12/7/15)
+* Linked to from [SOMs with Google's TensorFlow](https://codesachin.wordpress.com/2015/11/28/self-organizing-maps-with-googles-tensorflow/)
+
+Machine Learning packages (12/4/15)
+* Prototyping - R, Python
+* IBM - Weka, SPSS (Desmond isn't quite sure why IBM uses these though)
+* Lua/Torch - like Python, 2 GB csv limit that might be fixed by now though
+* Big Data - Spark/mllib and Hadoop/Mahout, big bug less configurable, e.g. fewer metrics and less options for targeted batch GD (but this isn't really that important in practi
+
 [Weka 3: Data Mining Software in Java](http://www.cs.waikato.ac.nz/ml/weka/)
 * This software was mentioned by Desmond.
 * He sounded reluctant when he had to stop using it in favor of SPSS.
