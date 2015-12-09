@@ -1,3 +1,5 @@
+[Why use REST inside the company?](https://medium.com/@_reneweb_/why-rest-is-important-even-for-your-internal-api-ab08a40d01d3) (12/9/15)
+
 Email: Use anomaly detection for SIDS (10/6/15)
 * SIDS is an anomaly detection scenario because there are very few cases (e.g. 0.1%).
 
