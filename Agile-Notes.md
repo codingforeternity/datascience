@@ -1,3 +1,5 @@
+[Agile Negates the Most Important Benefits of Switching to Functional Programming](https://medium.com/@bryanedds/agile-negates-the-most-important-benefits-of-switching-to-functional-programming-354c867391e9) (12/10/15)
+
 [Epics, stories, versions, and sprints](https://www.atlassian.com/agile/delivery-vehicles/) (11/4/15)
 
 [Modern Agile](https://www.industriallogic.com/blog/modern-agile/) (11/3/15)
