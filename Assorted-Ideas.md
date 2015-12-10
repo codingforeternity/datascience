@@ -1,3 +1,5 @@
+[Why GNU grep is fast](https://lists.freebsd.org/pipermail/freebsd-current/2010-August/019310.html) (12/10/15)
+
 [Why use REST inside the company?](https://medium.com/@_reneweb_/why-rest-is-important-even-for-your-internal-api-ab08a40d01d3) (12/9/15)
 
 Email: Use anomaly detection for SIDS (10/6/15)
