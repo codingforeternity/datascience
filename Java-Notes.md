@@ -1,3 +1,5 @@
+[Programming Peculiarities: 6 Java Oddities](https://dzone.com/articles/programming-language-peculiarities-java-wat) (12/10/15)
+
 [Cool Java 8 Features: To Use or not to Use](https://www.cqse.eu/en/blog/cool-new-java-8-features-to-use-or-not-to-use/) (11/16/15)
 * Includes a nice simple example comparing implementations of 2 functions written in both functional and imperative style--as well as a combined implementation of the 2 styles.
 
