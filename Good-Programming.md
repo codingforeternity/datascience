@@ -1,3 +1,5 @@
+[Sovereign Software Development] (https://medium.com/@bryanedds/the-civilized-alternative-to-agile-tribalism-4c60d01428c0) (12/10/15)
+
 [The one weird trick to write clean code](http://www.hugotunius.se/clean-code/code/ci/2015/11/09/the-one-weird-trick-to-write-clean-code.html) (11/10/15)
 * [Eclipse Java Linter plugin](https://www.google.com/search?q=linter+for+java&ie=utf-8&oe=utf-8#q=linter+java+eclipse)
 
