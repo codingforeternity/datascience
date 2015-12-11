@@ -1,3 +1,6 @@
+[Sisyphus on Fire: The Coming Agile Dystopia](http://blog.cognitect.com/blog/2015/12/2/sisyphus-on-fire) (12/11/15)
+* Not much more than a rant, but a convincing one.
+
 [When Gitflow Stops Being Agile](https://www.isostech.com/blogs/gitflow-stops-agile/) (12/10/15)
 
 [Agile Negates the Most Important Benefits of Switching to Functional Programming](https://medium.com/@bryanedds/agile-negates-the-most-important-benefits-of-switching-to-functional-programming-354c867391e9) (12/10/15)
