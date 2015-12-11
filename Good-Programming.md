@@ -1,3 +1,5 @@
+[Seven Tips for Better Code](http://alesnosek.com/blog/2015/06/06/seven-tips-for-better-code/) (12/11/15)
+
 [Sovereign Software Development] (https://medium.com/@bryanedds/the-civilized-alternative-to-agile-tribalism-4c60d01428c0) (12/10/15)
 
 [The one weird trick to write clean code](http://www.hugotunius.se/clean-code/code/ci/2015/11/09/the-one-weird-trick-to-write-clean-code.html) (11/10/15)
