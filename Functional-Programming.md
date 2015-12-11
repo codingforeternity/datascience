@@ -1,3 +1,5 @@
+[3 Reasons why You Shouldn’t Replace Your for-loops by Stream.forEach()](http://blog.jooq.org/2015/12/08/3-reasons-why-you-shouldnt-replace-your-for-loops-by-stream-foreach/) (12/11/15)
+
 [From 2001: "I will eat a week's pay if OOP is still in vogue in 2015."](https://mobile.twitter.com/fernozzle/status/672133043037929472) (12/2/15)
 
 [Beware of Functional Programming in Java](http://blog.jooq.org/2015/11/10/beware-of-functional-programming-in-java/) (11/13/15)
