@@ -1,3 +1,5 @@
+[Agile vs Agility : Agile Is Dead (Long Live Agility) (PT008)](http://pythontesting.net/podcast/agile-vs-agility/) (12/16/15)
+
 [Two decades of Java: A timeline of the notable events](http://www.javaadvent.com/2015/12/340.html) (12/11/15)
 
 [Sisyphus on Fire: The Coming Agile Dystopia](http://blog.cognitect.com/blog/2015/12/2/sisyphus-on-fire) (12/11/15)
