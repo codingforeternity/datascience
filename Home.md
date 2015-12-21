@@ -34,6 +34,8 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Java Notes]]
 
+[[REST Notes]]
+
 [[Agile Notes]]
 
 [[SQL Notes]]
