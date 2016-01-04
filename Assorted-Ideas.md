@@ -1,3 +1,6 @@
+[Overconfidence](http://econlog.econlib.org/archives/2015/11/ram_on_overconf.html) (1/2/16)
+* RCTs for public policy. Why is introspection all that is currently required?  People accept that the human body is a complex system, requiring RCTs, but they don't accept that an economy is.
+
 [Why GNU grep is fast](https://lists.freebsd.org/pipermail/freebsd-current/2010-August/019310.html) (12/10/15)
 
 [Why use REST inside the company?](https://medium.com/@_reneweb_/why-rest-is-important-even-for-your-internal-api-ab08a40d01d3) (12/9/15)
