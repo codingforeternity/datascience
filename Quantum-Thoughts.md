@@ -1,3 +1,7 @@
+[Will Quantum Mechanics Swallow Relativity?](http://nautil.us/issue/29/scaling/will-quantum-mechanics-swallow-relativity) (1/3/16)
+* Great article on the tension between quantum mechanics and general relativity.
+* Plus some guys who have theories seemingly orthogonal to the prevailing consensuses.  One of which has to do with the possibility that space may be discrete--quantums of space.
+
 Email: The Multiverse episode of the Astrophysics Yale class for beginners podcast (10/29/15)
 * MoND - Modification of Newtonian Dynamics, gravity is different at large vs small distances. FWC - makes sense, yes, because space is stretched differently at both
 * FWC, or how about this, the gravity of a black hole is different bc no electrons, like a neutron star, bc electrons can only get so close together, electron degeneracy
