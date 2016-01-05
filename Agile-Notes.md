@@ -1,3 +1,5 @@
+[Does Scrum Work?](http://brianknapp.me/does-scrum-work/) (1/5/16)
+
 [Agile vs Agility : Agile Is Dead (Long Live Agility) (PT008)](http://pythontesting.net/podcast/agile-vs-agility/) (12/16/15)
 
 [Two decades of Java: A timeline of the notable events](http://www.javaadvent.com/2015/12/340.html) (12/11/15)
