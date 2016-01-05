@@ -1,3 +1,5 @@
+[12 resolutions for programmers](http://matt.might.net/articles/programmers-resolutions/) (1/3/16)
+
 [Seven Tips for Better Code](http://alesnosek.com/blog/2015/06/06/seven-tips-for-better-code/) (12/11/15)
 
 [Sovereign Software Development] (https://medium.com/@bryanedds/the-civilized-alternative-to-agile-tribalism-4c60d01428c0) (12/10/15)
