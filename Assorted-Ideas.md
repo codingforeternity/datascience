@@ -1,3 +1,5 @@
+[Nice git cheatsheet](http://luisbg.blogalia.com//historias/76017) (12/7/15)
+
 [Overconfidence](http://econlog.econlib.org/archives/2015/11/ram_on_overconf.html) (1/2/16)
 * RCTs for public policy. Why is introspection all that is currently required?  People accept that the human body is a complex system, requiring RCTs, but they don't accept that an economy is.
 
