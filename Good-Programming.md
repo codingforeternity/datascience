@@ -1,3 +1,5 @@
+[Best Curated List of Resources for Programmers](https://github.com/fcrimins/awesome) (1/11/16)
+
 [12 resolutions for programmers](http://matt.might.net/articles/programmers-resolutions/) (1/3/16)
 
 [Seven Tips for Better Code](http://alesnosek.com/blog/2015/06/06/seven-tips-for-better-code/) (12/11/15)
