@@ -1,3 +1,5 @@
+[How does Python compare to C#?](https://www.quora.com/How-does-Python-compare-to-C) (1/11/16)
+
 [Machine Learning in Python](https://www.dataquest.io/blog/getting-started-with-machine-learning-python/)
 * Includes an intro to Pandas, Matplotlib, and Scikit-Learn
 
