@@ -1,3 +1,6 @@
+Email: Is dark energy (1/11/16)
+* Equal to time? Eg if the universe stopped expanding would time stop?
+
 [Will Quantum Mechanics Swallow Relativity?](http://nautil.us/issue/29/scaling/will-quantum-mechanics-swallow-relativity) (1/3/16)
 * Great article on the tension between quantum mechanics and general relativity.
 * Plus some guys who have theories seemingly orthogonal to the prevailing consensuses.  One of which has to do with the possibility that space may be discrete--quantums of space.
