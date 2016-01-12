@@ -36,6 +36,7 @@
 [A Brief Introduction to REST](http://www.infoq.com/articles/rest-introduction) (12/21/15 and 1/8/16)
 
 [Dr. Dobb's - RESTful Web Services: A Tutorial](http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069) (1/8/16)
+* Don't use query parameters (except for "parameters to an operation that needs the data items")
 
 [Is REST Best in a Microservices Architecture?](http://capgemini.github.io/architecture/is-rest-best-microservices/) (12/21/15)
 
