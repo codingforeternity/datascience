@@ -1,3 +1,5 @@
+[Manager Strategies: People can read their manager's mind](http://yosefk.com/blog/people-can-read-their-managers-mind.html) (1/19/16)
+
 [Nice git cheatsheet](http://luisbg.blogalia.com//historias/76017) (12/7/15)
 
 [Overconfidence](http://econlog.econlib.org/archives/2015/11/ram_on_overconf.html) (1/2/16)
