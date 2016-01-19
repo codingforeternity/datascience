@@ -1,3 +1,5 @@
+[4 Reasons Why Java is Still #1](http://www.azul.com/4-reasons-java-still-1/) (1/19/16)
+
 [Programming Peculiarities: 6 Java Oddities](https://dzone.com/articles/programming-language-peculiarities-java-wat) (12/10/15)
 
 [Cool Java 8 Features: To Use or not to Use](https://www.cqse.eu/en/blog/cool-new-java-8-features-to-use-or-not-to-use/) (11/16/15)
