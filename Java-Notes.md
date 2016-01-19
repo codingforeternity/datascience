@@ -1,3 +1,5 @@
+[Lazy Evaluation in Java](http://minborgsjavapot.blogspot.com/2016/01/be-lazy-with-java-8.html) (1/19/16)
+
 [4 Reasons Why Java is Still #1](http://www.azul.com/4-reasons-java-still-1/) (1/19/16)
 
 [Programming Peculiarities: 6 Java Oddities](https://dzone.com/articles/programming-language-peculiarities-java-wat) (12/10/15)
