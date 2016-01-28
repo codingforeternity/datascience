@@ -1,3 +1,5 @@
+[https://ageofjava.blogspot.com/2016/01/using-traits-in-java-8.html](https://ageofjava.blogspot.com/2016/01/using-traits-in-java-8.html) (1/28/16)
+
 [Lazy Evaluation in Java](http://minborgsjavapot.blogspot.com/2016/01/be-lazy-with-java-8.html) (1/19/16)
 
 [4 Reasons Why Java is Still #1](http://www.azul.com/4-reasons-java-still-1/) (1/19/16)
