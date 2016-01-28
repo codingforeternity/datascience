@@ -1,3 +1,33 @@
+[OOP is bad](https://www.youtube.com/watch?v=QM1iUe6IofM) (1/26/16)
+* procedural programming is ideal
+* good discussion of 4 types of programming at beginning of talk (imperative, functional, procedural, and ?)
+* 18:08 - Why does OOP not work?  A: encapsulation
+* 23:00 - "half-assed encapsulation actually gets us something
+  * wrangling the object zoo
+  * sub-system hierarchies of objects -- the improper OOP way -- require introductiong "sub-god objects" [fwc - [sobjects"]
+* 25:00 - the proper OOP way and the improper OOP way both suck
+* 33:00 - Write methods only when the exclusive association with the data type is not in doubt -- main example of this: abstract data types (ADTs), e.g. lists and queues
+  * the minute you start hemming and hawing over whether a function has a primary association with a data type is the moment you say "screw it" and just make it a plain function
+  * because most things we tend do do in code are cross-cutting concerns-- they don't have special obvious relationships with particular data types
+* principles
+  # when in doubt, parameterize (no globals, or shared implicit state)
+    * want data access in our programs to flow through the call graph
+  # bundle globals into structs/records/classes
+  # favor pure functions (easier when efficiency is not a priority)
+  # encapsulate (loosely) at the level of namespaces/packages/modules
+  # don't be afraid of long functions (do be afraid of needlessly shared state)
+    * of course if you want to execute code from multiple places you have to break things into functions
+    * but don't break things into functions merely for documentation purposes -- too much code floating around, too much API to search through
+      * plus its tough to name functions/variables well
+      * next best thing: make it private or nested function
+      * constrain scope of local variables in sub-scopes or nested anonymous funcs
+      * what we really want though (that doesn't exist in any language) is an anonymous function that doesn't see any of its enclosing scope (FWC - write a language! or just check out Groovy)
+        * but this requires variables from local scope to be passed into functions as params
+        * what we really want is a scope-limiter like "use x, y { ... }" that restricts scope to a few local variables without having to pass them in
+        * such blocks should return a value also
+        * makes it clear that this is a piece of code used only in this one place (and don't have to give it a name)
+* 43:55 - books to not read
+
 [3 Reasons why You Shouldn’t Replace Your for-loops by Stream.forEach()](http://blog.jooq.org/2015/12/08/3-reasons-why-you-shouldnt-replace-your-for-loops-by-stream-foreach/) (12/11/15)
 
 [From 2001: "I will eat a week's pay if OOP is still in vogue in 2015."](https://mobile.twitter.com/fernozzle/status/672133043037929472) (12/2/15)
