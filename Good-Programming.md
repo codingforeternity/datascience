@@ -1,3 +1,5 @@
+[Fixing Spaghetti: How to Work With Legacy Code](http://www.ethode.com/blog/fixing-spaghetti-how-to-work-with-legacy-code) (1/28/16)
+
 [Best Curated List of Resources for Programmers](https://github.com/fcrimins/awesome) (1/11/16)
 
 [12 resolutions for programmers](http://matt.might.net/articles/programmers-resolutions/) (1/3/16)
