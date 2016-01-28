@@ -10,12 +10,12 @@
   * the minute you start hemming and hawing over whether a function has a primary association with a data type is the moment you say "screw it" and just make it a plain function
   * because most things we tend do do in code are cross-cutting concerns-- they don't have special obvious relationships with particular data types
 * principles
-  # when in doubt, parameterize (no globals, or shared implicit state)
+  1. when in doubt, parameterize (no globals, or shared implicit state)
     * want data access in our programs to flow through the call graph
-  # bundle globals into structs/records/classes
-  # favor pure functions (easier when efficiency is not a priority)
-  # encapsulate (loosely) at the level of namespaces/packages/modules
-  # don't be afraid of long functions (do be afraid of needlessly shared state)
+  2. bundle globals into structs/records/classes
+  3. favor pure functions (easier when efficiency is not a priority)
+  4. encapsulate (loosely) at the level of namespaces/packages/modules
+  5. don't be afraid of long functions (do be afraid of needlessly shared state)
     * of course if you want to execute code from multiple places you have to break things into functions
     * but don't break things into functions merely for documentation purposes -- too much code floating around, too much API to search through
       * plus its tough to name functions/variables well
