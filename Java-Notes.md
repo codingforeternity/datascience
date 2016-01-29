@@ -1,3 +1,5 @@
+[Java 8 Streams Cheatsheet](http://zeroturnaround.com/rebellabs/java-8-streams-cheat-sheet/) (1/29/16)
+
 [Using Traits in Java 8](https://ageofjava.blogspot.com/2016/01/using-traits-in-java-8.html) (1/28/16)
 
 [Lazy Evaluation in Java](http://minborgsjavapot.blogspot.com/2016/01/be-lazy-with-java-8.html) (1/19/16)
