@@ -1,3 +1,5 @@
+[http://blog.debugme.eu/dynamic-typing/](http://blog.debugme.eu/dynamic-typing/) (1/29/16)
+
 [Fixing Spaghetti: How to Work With Legacy Code](http://www.ethode.com/blog/fixing-spaghetti-how-to-work-with-legacy-code) (1/28/16)
 
 [Best Curated List of Resources for Programmers](https://github.com/fcrimins/awesome) (1/11/16)
