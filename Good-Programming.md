@@ -1,4 +1,4 @@
-[http://blog.debugme.eu/dynamic-typing/](http://blog.debugme.eu/dynamic-typing/) (1/29/16)
+[The Case Against Dynamic Typing](http://blog.debugme.eu/dynamic-typing/) (1/29/16)
 
 [Fixing Spaghetti: How to Work With Legacy Code](http://www.ethode.com/blog/fixing-spaghetti-how-to-work-with-legacy-code) (1/28/16)
 
