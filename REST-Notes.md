@@ -1,3 +1,9 @@
+[Rescuing REST From the API Winter](http://intercoolerjs.org/2016/01/18/rescuing-rest.html) (2/1/16)
+* Basically, JSON-based REST isn't REST because it doesn't have native support for links.
+* Schema/Structure needs to be discovered at runtime which is what HATEOS is for.
+* HATEOAS - Hypermedia as the Engine of Application State.
+* HATEOAS is a bigger part of REST than anyone ever really realized.
+
 [Testing REST clients](https://www.kenneth-truyers.net/2016/01/29/testing-rest-clients/) (2/1/16)
 
 [REST Introduction](http://www.infoq.com/articles/rest-introduction) 1/9/16
