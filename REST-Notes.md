@@ -1,3 +1,5 @@
+[Testing REST clients](https://www.kenneth-truyers.net/2016/01/29/testing-rest-clients/) (2/1/16)
+
 [REST Introduction](http://www.infoq.com/articles/rest-introduction) 1/9/16
 * The beauty of the link approach using URIs is that the links can point to resources that are provided by a different application, a different server, or even a different company on another continent
 * the representations of a resource should be in standard formats -- if a client "knows" both the HTTP application protocol and a set of data formats, it can interact with any RESTful HTTP application in the world in a very meaningful way
