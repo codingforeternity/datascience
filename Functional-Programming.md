@@ -1,3 +1,5 @@
+[Awk, Unix, and functional programming](http://trevorjim.com/awk-unix-and-functional-programming/) 2/6/16)
+
 [OOP is bad](https://www.youtube.com/watch?v=QM1iUe6IofM) (1/26/16)
 * procedural programming is ideal
 * good discussion of 4 types of programming at beginning of talk (imperative, functional, procedural, and ?)
