@@ -1,3 +1,12 @@
+Email: False vacua (p. 326) (2/6/16)
+* It is an optimization! A false vacua is a local minima in terms of energy
+
+Email: Inertial and Gravity... (1/31/16)
+* ...are the same thing. The same force that makes acceleration take energy is the force that controls gravity. Inertia is just curved spacetime in the presence of matter. So it's like gravity wrt one's self
+
+Email: When... (1/29/16)
+* ...in the history of the universe, has anything ever moved away from something else at a precisely accelerating pace? Never. Things move in spirals. Dust just doesn't move like that.
+
 Email: Is dark energy (1/11/16)
 * Equal to time? Eg if the universe stopped expanding would time stop?
 
