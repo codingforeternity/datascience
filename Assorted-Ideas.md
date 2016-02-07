@@ -1,6 +1,7 @@
 [Rust and the Blub Paradox](http://www.jonathanturner.org/2016/01/rust-and-blub-paradox.html) (1/28/16)
 
 [Manager Strategies: People can read their manager's mind](http://yosefk.com/blog/people-can-read-their-managers-mind.html) (1/19/16)
+
 [Finely-Grained Management](http://mikehadlow.blogspot.cl/2014/06/heisenberg-developers.html) (2/7/16)
 * Heisenberg Developers: You can not observe a developer without altering their behavior.
 
