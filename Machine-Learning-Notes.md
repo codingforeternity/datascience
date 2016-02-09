@@ -1,3 +1,5 @@
+[The Bias-Variance and Precision-Recall tradeoffs (simply) explained](https://cynml.wordpress.com/2016/01/18/the-bias-variance-and-precision-recall-tradeoffs-explained/) (2/9/16)
+
 Benefit of KNN: You can model the whole distribution, all the moments of it.  This is difficult to model with other techniques.  Ask Desmond, he might know others.
 
 [Neural GPUs Learn Algorithms](http://www.wikitract.com/neural-gpus-learn-algorithms-google/) (12/10/15)
