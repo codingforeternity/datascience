@@ -1,4 +1,5 @@
 [The Top 10 SQL Mistakes That Won't Scale](http://www.brentozar.com/archive/2010/06/the-top-10-developer-mistakes-that-wont-scale/) (2/10/16)
+
 1.  Triggers
 2.  SELECT *
 3.  User Defined Functions
