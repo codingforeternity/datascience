@@ -3,8 +3,6 @@
 1.  Triggers
 2.  SELECT *
 3.  User Defined Functions
-
-
 4.  Dynamic SQL
 5.  Big Fields
 6.  Binaries in the Database
