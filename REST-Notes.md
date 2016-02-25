@@ -1,3 +1,12 @@
+[RESTful API Best Practices and Common Pitfalls](https://medium.com/@schneidsDotNet/restful-api-best-practices-and-common-pitfalls-7a83ba3763b5#.sii1bf1qe) (2/25/16)
+* "Respect the change management process. Avoid introducing break changes to existing endpoints that people are using."
+* Also discusses asynchronous query response.
+
+[How RESTful is Your API?](http://www.bitnative.com/2012/08/26/how-restful-is-your-api/) (2/25/16)
+* "Pragmatic REST"
+* Really good, succinct article that specifically covers REST sans discovery and what that means for an API.
+* Also discusses pragmatic versioning in place of discovery.
+
 [Rescuing REST From the API Winter](http://intercoolerjs.org/2016/01/18/rescuing-rest.html) (2/1/16)
 * Basically, JSON-based REST isn't REST because it doesn't have native support for links.
 * Schema/Structure needs to be discovered at runtime which is what HATEOS is for.
