@@ -1,3 +1,5 @@
+[Getting Started with Git (Channel 9)](https://www.reddit.com/r/programming/comments/42n0s6/getting_started_with_git_channel_9/) (1/25/16)
+
 [Rust and the Blub Paradox](http://www.jonathanturner.org/2016/01/rust-and-blub-paradox.html) (1/28/16)
 
 [Manager Strategies: People can read their manager's mind](http://yosefk.com/blog/people-can-read-their-managers-mind.html) (1/19/16)
