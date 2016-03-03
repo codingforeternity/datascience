@@ -1,3 +1,5 @@
+[The UNIX School: awk & sed tutorial](https://www.reddit.com/r/programming/comments/44gnm1/the_unix_school_awk_sed_tutorial/) (1/25/16)
+
 [Getting Started with Git (Channel 9)](https://www.reddit.com/r/programming/comments/42n0s6/getting_started_with_git_channel_9/) (1/25/16)
 
 [Rust and the Blub Paradox](http://www.jonathanturner.org/2016/01/rust-and-blub-paradox.html) (1/28/16)
