@@ -1,3 +1,5 @@
+[Elasticsearch as a Time Series Database - Getting data in with StatsD](https://www.reddit.com/r/programming/comments/46pgpz/elasticsearch_as_a_time_series_database_getting/) (2/20/16)
+
 [The UNIX School: awk & sed tutorial](https://www.reddit.com/r/programming/comments/44gnm1/the_unix_school_awk_sed_tutorial/) (1/25/16)
 
 [Getting Started with Git (Channel 9)](https://www.reddit.com/r/programming/comments/42n0s6/getting_started_with_git_channel_9/) (1/25/16)
