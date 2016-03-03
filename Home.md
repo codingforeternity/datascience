@@ -32,6 +32,8 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Functional Programming]]
 
+[[Apache Spark]]
+
 [[Java Notes]]
 
 [[REST Notes]]
