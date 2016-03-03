@@ -1,5 +1,7 @@
 [A Catalog of Programming Languages Programmers Hate](http://motherboard.vice.com/read/a-catalog-of-programming-languages-that-programmers-hate?trk_source=recommended) (2/29/16)
 
+[5 Good Programming Books](https://www.reddit.com/user/javinpaul) (2/26/16)
+
 [The Case Against Dynamic Typing](http://blog.debugme.eu/dynamic-typing/) (1/29/16)
 
 [Fixing Spaghetti: How to Work With Legacy Code](http://www.ethode.com/blog/fixing-spaghetti-how-to-work-with-legacy-code) (1/28/16)
