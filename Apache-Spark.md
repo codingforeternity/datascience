@@ -1,0 +1,1 @@
+[How to check hypotheses with bootstrap and Apache Spark?](https://www.reddit.com/r/programming/comments/43fnb4/how_to_check_hypotheses_with_bootstrap_and_apache/) (1/30/16)
