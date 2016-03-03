@@ -1,4 +1,10 @@
-[Awk, Unix, and functional programming](http://trevorjim.com/awk-unix-and-functional-programming/) 2/6/16)
+[MapReduce is not functional programming](https://medium.com/@jkff/mapreduce-is-not-functional-programming-39109a4ba7b2#.c42eic180) (3/2/16)
+* map is a trivial concept. It’s basically SELECT from SQL
+* reduce in MapReduce is a GROUPBY operator: it groups the output of map by key and applies a second, different map on each (key, [stream of values]) pair
+* I should also note that, though classical MapReduce consists of 3 stages (parallel apply, group-by a.k.a. shuffle, and another parallel apply), this is merely an arbitrary restriction of the original implementation.
+People quickly realized that you can assemble more complex networks of parallel applications and group-by’s, which you can see in the FlumeJava paper, Spark, Apache Crunch etc., and finally of course in Dataflow.
+
+[Awk, Unix, and functional programming](http://trevorjim.com/awk-unix-and-functional-programming/) (2/6/16)
 
 [OOP is bad](https://www.youtube.com/watch?v=QM1iUe6IofM) (1/26/16)
 * procedural programming is ideal
