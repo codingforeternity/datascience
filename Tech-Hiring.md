@@ -1,3 +1,5 @@
+[We Hire the Best, Just Like Everyone Else](http://blog.codinghorror.com/we-hire-the-best-just-like-everyone-else/) (3/4/16)
+
 [Core Java Interview Questions](http://www.tutorialspoint.com/articles/core-java-interview-questions)
 
 The first article links to the second.  The text of both of these can also be found in my email.
