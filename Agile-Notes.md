@@ -1,3 +1,7 @@
+[What are User Stories? ](http://specify.io/concepts/user-stories) (3/7/16)
+* "User stories are not requirements, they are a concept to communicate requirements."
+* FWC - If Agile is so effective, then why are there so many articles that try to explain it?  Does anyone really get it?  And even if there is a subset of people who do get it, how can it be effective given that there are so many people who don't.
+
 [Does Scrum Work?](http://brianknapp.me/does-scrum-work/) (1/5/16)
 
 [Agile vs Agility : Agile Is Dead (Long Live Agility) (PT008)](http://pythontesting.net/podcast/agile-vs-agility/) (12/16/15)
