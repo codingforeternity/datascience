@@ -1,3 +1,6 @@
+[OOP is embarrassing](https://www.youtube.com/watch?v=IRTfhkiAqPw&app=desktop) (3/7/16)
+* 2:50 - Let data just be data
+
 [MapReduce is not functional programming](https://medium.com/@jkff/mapreduce-is-not-functional-programming-39109a4ba7b2#.c42eic180) (3/2/16)
 * map is a trivial concept. It’s basically SELECT from SQL
 * reduce in MapReduce is a GROUPBY operator: it groups the output of map by key and applies a second, different map on each (key, [stream of values]) pair
