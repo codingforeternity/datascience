@@ -1,3 +1,8 @@
+[](https://www.linkedin.com/pulse/future-hadoop-misty-haifeng-li) (3/10/16)
+* Why use Hadoop when you can just spin up nodes on AWS?
+* Lots of the components of Hadoop have been surpassed by newer technologies, e.g. Spark.
+* Cloudera possibly in trouble.
+
 [Demystifying the complexities of Spark and Hadoop](https://www.reddit.com/r/programming/comments/46l6ao/demystifying_the_complexities_of_spark_and_hadoop/) (2/20/16)
 
 [Dataflow/Beam & Spark: A Programming Model Comparison](https://www.reddit.com/r/programming/comments/441qop/dataflowbeam_spark_a_programming_model_comparison/) (2/3/16)
