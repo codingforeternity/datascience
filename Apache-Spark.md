@@ -1,4 +1,4 @@
-[](https://www.linkedin.com/pulse/future-hadoop-misty-haifeng-li) (3/10/16)
+[The Future of Hadoop is Misty](https://www.linkedin.com/pulse/future-hadoop-misty-haifeng-li) (3/10/16)
 * Why use Hadoop when you can just spin up nodes on AWS?
 * Lots of the components of Hadoop have been surpassed by newer technologies, e.g. Spark.
 * Cloudera possibly in trouble.
