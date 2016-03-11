@@ -1,3 +1,8 @@
+[TensorFlow Machine Learning with Financial Data on Google Cloud Platform](http://www.reddit.com/r/MachineLearning/comments/49foem/tensorflow_machine_learning_with_financial_data/) (3/10/16)
+
+[TensorFlow in Python](http://blog.pythonanywhere.com/126/) (3/10/16)
+* Python Anywhere: Quickstart: TensorFlow-Examples on PythonAnywhere 
+
 [The Promise of Artificial Intelligence Unfolds in Small Steps](http://rss.nytimes.com/c/34625/f/640377/s/4de9b663/sc/13/l/0L0Snytimes0N0C20A160C0A20C290Ctechnology0Cthe0Epromise0Eof0Eartificial0Eintelligence0Eunfolds0Ein0Esmall0Esteps0Bhtml0Dpartner0Frss0Gemc0Frss/story01.htm)
 * R vs. Python
 
