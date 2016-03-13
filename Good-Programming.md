@@ -1,3 +1,5 @@
+[Every programming tutorial ever](http://theincidentaleconomist.com/wordpress/every-programming-tutorial-ever/) (1/16/16)
+
 [A Catalog of Programming Languages Programmers Hate](http://motherboard.vice.com/read/a-catalog-of-programming-languages-that-programmers-hate?trk_source=recommended) (2/29/16)
 
 [5 Good Programming Books](https://www.reddit.com/user/javinpaul) (2/26/16)
