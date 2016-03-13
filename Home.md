@@ -48,4 +48,6 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Assorted Ideas]] (kws: random)
 
+[[Data]]
+
 [[Fred Refs]]
