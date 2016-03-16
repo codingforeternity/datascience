@@ -1,6 +1,9 @@
-[TensorFlow Machine Learning with Financial Data on Google Cloud Platform](http://www.reddit.com/r/MachineLearning/comments/49foem/tensorflow_machine_learning_with_financial_data/) (3/10/16)
-
-[TensorFlow in Python](http://blog.pythonanywhere.com/126/) (3/10/16)
+TensorFlow
+* [Deep-Q learning Pong with Tensorflow and PyGame](http://www.reddit.com/r/MachineLearning/comments/4aanyu/deepq_learning_pong_with_tensorflow_and_pygame/) (3/16/16)
+* [Deep Learning Comparison Sheet: Deeplearning4j vs. Torch vs. Theano vs. Caffe vs. TensorFlow](http://www.reddit.com/r/MachineLearning/comments/4aama7/deep_learning_comparison_sheet_deeplearning4j_vs/) (3/16/16)
+* [How to combine CNN with CRF in python?](http://www.reddit.com/r/MachineLearning/comments/4aadvq/how_to_combine_cnn_with_crf_in_python/) (3/16/16)
+* [TensorFlow Machine Learning with Financial Data on Google Cloud Platform](http://www.reddit.com/r/MachineLearning/comments/49foem/tensorflow_machine_learning_with_financial_data/) (3/10/16)
+* [TensorFlow in Python](http://blog.pythonanywhere.com/126/) (3/10/16)
 * Python Anywhere: Quickstart: TensorFlow-Examples on PythonAnywhere 
 
 [The Promise of Artificial Intelligence Unfolds in Small Steps](http://rss.nytimes.com/c/34625/f/640377/s/4de9b663/sc/13/l/0L0Snytimes0N0C20A160C0A20C290Ctechnology0Cthe0Epromise0Eof0Eartificial0Eintelligence0Eunfolds0Ein0Esmall0Esteps0Bhtml0Dpartner0Frss0Gemc0Frss/story01.htm)
