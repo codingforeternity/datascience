@@ -36,7 +36,7 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Java Notes]]
 
-[[REST Notes]]
+[[REST Notes]] (kws: microservices)
 
 [[Agile Notes]]
 
