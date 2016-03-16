@@ -1,6 +1,6 @@
 TensorFlow
-* [Deep-Q learning Pong with Tensorflow and PyGame](http://www.reddit.com/r/MachineLearning/comments/4aanyu/deepq_learning_pong_with_tensorflow_and_pygame/) (3/16/16)
-* [Deep Learning Comparison Sheet: Deeplearning4j vs. Torch vs. Theano vs. Caffe vs. TensorFlow](http://www.reddit.com/r/MachineLearning/comments/4aama7/deep_learning_comparison_sheet_deeplearning4j_vs/) (3/16/16)
+* [Deep-Q learning Pong with Tensorflow and PyGame](http://www.danielslater.net/2016/03/deep-q-learning-pong-with-tensorflow.html) (3/16/16)
+* [Deep Learning Comparison Sheet: Deeplearning4j vs. Torch vs. Theano vs. Caffe vs. TensorFlow](http://deeplearning4j.org/compare-dl4j-torch7-pylearn.html) (3/16/16)
   * "Thirdly, Java’s lack of robust scientific computing libraries can be solved by writing them, which we’ve done with ND4J."
   * "By choosing Java, we excluded the fewest major programming communities possible."
   * "We have paid special attention to Scala in building Deeplearning4j and ND4J, because we believe Scala has the potential to become the dominant language in data science."
