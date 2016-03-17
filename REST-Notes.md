@@ -1,3 +1,5 @@
+[Microservices Theory](http://martinfowler.com/articles/microservices.html) (3/4/16)
+
 [Bruno Rocha: Microservices with Python, RabbitMQ and Nameko](http://brunorocha.org/python/microservices-with-python-rabbitmq-and-nameko.html) (3/4/16)
 
 [RESTful API Best Practices and Common Pitfalls](https://medium.com/@schneidsDotNet/restful-api-best-practices-and-common-pitfalls-7a83ba3763b5#.sii1bf1qe) (2/25/16)
