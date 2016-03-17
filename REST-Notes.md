@@ -1,5 +1,6 @@
 [Microservices Theory](http://martinfowler.com/articles/microservices.html) (3/4/16)
 * "To start explaining the microservice style it's useful to compare it to the monolithic style: a monolithic application built as a single unit. Enterprise Applications are often built in three main parts: a client-side user interface (consisting of HTML pages and javascript running in a browser on the user's machine) a database (consisting of many tables inserted into a common, and usually relational, database management system), and a server-side application"
+* "Design for Failure"
 
 [Bruno Rocha: Microservices with Python, RabbitMQ and Nameko](http://brunorocha.org/python/microservices-with-python-rabbitmq-and-nameko.html) (3/4/16)
 
