@@ -1,3 +1,6 @@
+[Machine "Un"-learning](http://m.phys.org/news/2016-03-machine-unlearning-technique-unwanted-quickly.html](http://m.phys.org/news/2016-03-machine-unlearning-technique-unwanted-quickly.html) (3/18/16)
+* Aggregate data at varying levels of granularity.  Then machine learn from a chosen level to speed things up.
+
 [Two Minute Papers - How DeepMind Conquered Go With Deep Learning (AlphaGo)](http://www.reddit.com/r/MachineLearning/comments/4a6udw/two_minute_papers_how_deepmind_conquered_go_with/) (3/16/16)
 
 TensorFlow
