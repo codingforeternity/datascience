@@ -50,4 +50,6 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Data]]
 
+[[Game Theory]]
+
 [[Fred Refs]]
