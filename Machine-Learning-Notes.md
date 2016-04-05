@@ -1,3 +1,5 @@
+[New technique for recommender systems](https://docs.google.com/presentation/d/19QDuPmxB9RzQWKXp_t3yqxCvMBSMaOQk19KNZqUUgYQ/edit#slide=id.g11a4ba0c5c_0_922) (4/5/16)
+
 [Machine "Un"-learning](http://m.phys.org/news/2016-03-machine-unlearning-technique-unwanted-quickly.html) (3/18/16)
 * Aggregate data at varying levels of granularity.  Then machine learn from a chosen level to speed things up.
 
