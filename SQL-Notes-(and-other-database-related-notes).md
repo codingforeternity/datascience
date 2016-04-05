@@ -1,3 +1,6 @@
+[To SQL or NoSQL? That’s the database question](http://arstechnica.com/information-technology/2016/03/to-sql-or-nosql-thats-the-database-question/) (3/5/16)
+* GREAT DB ARTICLE!!!
+
 [The Top 10 SQL Mistakes That Won't Scale](http://www.brentozar.com/archive/2010/06/the-top-10-developer-mistakes-that-wont-scale/) (2/10/16)
 
 1.  Triggers
