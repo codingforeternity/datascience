@@ -1,3 +1,5 @@
+[Efficiency of Functional Programming](http://stackoverflow.com/questions/1990464/efficiency-of-purely-functional-programming) (4/12/16)
+
 [OOP is embarrassing](https://www.youtube.com/watch?v=IRTfhkiAqPw&app=desktop) (3/7/16)
 * 2:50 - Let data just be data
   * Let actions just be actions (don't nounify verbs)
