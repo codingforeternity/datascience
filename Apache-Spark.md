@@ -1,3 +1,5 @@
+[Hadoop or AWS more useful for Machine Learning careers?](http://www.reddit.com/r/MachineLearning/comments/4e81ne/hadoop_or_aws_more_useful_for_machine_learning/) (4/13/16)
+
 [The Future of Hadoop is Misty](https://www.linkedin.com/pulse/future-hadoop-misty-haifeng-li) (3/10/16)
 * Why use Hadoop when you can just spin up nodes on AWS?
 * Lots of the components of Hadoop have been surpassed by newer technologies, e.g. Spark.
