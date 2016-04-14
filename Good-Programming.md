@@ -1,3 +1,5 @@
+[Code Reviews: why and how?](https://www.kenneth-truyers.net/2016/04/08/code-reviews-why-and-how/) (4/13/16)
+
 [Every programming tutorial ever](http://theincidentaleconomist.com/wordpress/every-programming-tutorial-ever/) (1/16/16)
 
 [A Catalog of Programming Languages Programmers Hate](http://motherboard.vice.com/read/a-catalog-of-programming-languages-that-programmers-hate?trk_source=recommended) (2/29/16)
