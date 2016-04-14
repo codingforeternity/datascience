@@ -50,6 +50,8 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Data]]
 
+[[Statistics and Statistical Techniques]] (kws: quant)
+
 [[Game Theory]]
 
 [[Fred Refs]]
