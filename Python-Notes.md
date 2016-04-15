@@ -1,3 +1,6 @@
+[A Speed Comparison Of C, Julia, Python, Numba, and Cython on LU Factorization](https://www.ibm.com/developerworks/community/blogs/jfp/entry/A_Comparison_Of_C_Julia_Python_Numba_Cython_Scipy_and_BLAS_on_LU_Factorization?lang=en) (4/15/16)
+* bottom line: use scipy
+
 [How does Python compare to C#?](https://www.quora.com/How-does-Python-compare-to-C) (1/11/16)
 
 [Machine Learning in Python](https://www.dataquest.io/blog/getting-started-with-machine-learning-python/)
