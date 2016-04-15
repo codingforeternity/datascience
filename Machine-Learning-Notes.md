@@ -20,6 +20,7 @@ TensorFlow
 * [TensorFlow in Python](http://blog.pythonanywhere.com/126/) (3/10/16)
 * Python Anywhere: Quickstart: TensorFlow-Examples on PythonAnywhere
 * [Do you think TensorFlow will eventually replace Theano and Torch?](http://www.reddit.com/r/MachineLearning/comments/4amr7p/askreddit_do_you_think_tensorflow_will_eventually/) (3/18/16)
+* [TensorFlow for "shallow learning" -- Implementations of Multilayer-Perceptron and Softmax Regression in a scikit-learn-like interface](http://www.reddit.com/r/MachineLearning/comments/4bk2jx/tensorflow_for_shallow_learning_implementations/) (3/22/16)
 
 [The Promise of Artificial Intelligence Unfolds in Small Steps](http://rss.nytimes.com/c/34625/f/640377/s/4de9b663/sc/13/l/0L0Snytimes0N0C20A160C0A20C290Ctechnology0Cthe0Epromise0Eof0Eartificial0Eintelligence0Eunfolds0Ein0Esmall0Esteps0Bhtml0Dpartner0Frss0Gemc0Frss/story01.htm)
 * R vs. Python
