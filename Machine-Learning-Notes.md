@@ -1,3 +1,5 @@
+[A Neural Network in 11 lines of Python (Part 1)](https://www.reddit.com/r/programming/comments/4ccpcm/a_neural_network_in_11_lines_of_python_part_1/) (3/28/16)
+
 [Faster convergence than SGD: L-BFGS and neural nets](http://www.reddit.com/r/MachineLearning/comments/4bys6n/lbfgs_and_neural_nets/) (3/25/16)
 
 [The Ultimate List of Machine Learning and Data Mining Books](http://www.reddit.com/r/MachineLearning/comments/4e79sp/the_ultimate_list_of_machine_learning_and_data/) (4/12/16)
