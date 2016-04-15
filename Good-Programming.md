@@ -1,3 +1,5 @@
+[Tips and Tricks for Competitive Programmers | Set 2 (Language to be used for Competitive Programming)](http://www.geeksforgeeks.org/tips-and-tricks-for-competitive-programmers-set-2-which-language-should-be-used-for-competitive-programming/) (3/20/16)
+
 [Code Reviews: why and how?](https://www.kenneth-truyers.net/2016/04/08/code-reviews-why-and-how/) (4/13/16)
 
 [Every programming tutorial ever](http://theincidentaleconomist.com/wordpress/every-programming-tutorial-ever/) (1/16/16)
