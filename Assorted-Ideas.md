@@ -1,3 +1,5 @@
+[*How the Internet Became Commercial* - Counter argument to government invented the internet](http://marginalrevolution.com/marginalrevolution/2015/10/how-the-internet-became-commercial.html) (4/15/16)
+
 [Elasticsearch as a Time Series Database - Getting data in with StatsD](https://www.reddit.com/r/programming/comments/46pgpz/elasticsearch_as_a_time_series_database_getting/) (2/20/16)
 
 [The UNIX School: awk & sed tutorial](https://www.reddit.com/r/programming/comments/44gnm1/the_unix_school_awk_sed_tutorial/) (1/25/16)
