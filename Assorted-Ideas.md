@@ -1,3 +1,10 @@
+All software should adapt
+* this means building on top of an *adaptive platform*
+* i go to 3 options in every eclipse pop-up menu
+* i only "share" from my phone to gmail and text messaging
+* when i type "joseph" i typically only mean one person
+* expected-next-word language modeling is where this might work correctly, but this should be a feature of something lower down than nlp that should percolate up to all these other places also
+
 [*How the Internet Became Commercial* - Counter argument to government invented the internet](http://marginalrevolution.com/marginalrevolution/2015/10/how-the-internet-became-commercial.html) (4/15/16)
 
 [Elasticsearch as a Time Series Database - Getting data in with StatsD](https://www.reddit.com/r/programming/comments/46pgpz/elasticsearch_as_a_time_series_database_getting/) (2/20/16)
