@@ -1,3 +1,5 @@
+[What is a good program?](http://engineering.theladders.com/2016/04/26/what-is-a-good-program/) (4/27/16)
+
 [Tips and Tricks for Competitive Programmers | Set 2 (Language to be used for Competitive Programming)](http://www.geeksforgeeks.org/tips-and-tricks-for-competitive-programmers-set-2-which-language-should-be-used-for-competitive-programming/) (3/20/16)
 
 [Code Reviews: why and how?](https://www.kenneth-truyers.net/2016/04/08/code-reviews-why-and-how/) (4/13/16)
