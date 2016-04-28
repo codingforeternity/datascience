@@ -1,3 +1,5 @@
+[Healthcare Triage: Health Services Research, Diabetes, and the YMCA](http://theincidentaleconomist.com/wordpress/healthcare-triage-health-services-research-diabetes-and-the-ymca/) (4/28/16)
+
 [Cancer drug development time halved thanks to artificial intelligence](http://blogs.sciencemag.org/pipeline/archives/2015/10/13/artificial-intelligence-you-say) (10/13/15)
 * Berg Health’s team used a specialised form of artificial intelligence to compare samples taken from patients with the most aggressive strains of cancer, including pancreatic, bladder and brain, with those from non-cancerous individuals. The technology highlighted disparities between the corresponding biological profiles, selecting those it predicted would respond best to the drug.
 
