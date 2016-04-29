@@ -1,5 +1,7 @@
 Welcome to the fcrimins.github.io wiki!
 
+[[Data Mining]] (kws: overfitting)
+
 [[Mistakes are how we/everything learns]] (kws: meme)
 
 [[Super Spatial Sensers]]
