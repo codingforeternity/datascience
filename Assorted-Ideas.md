@@ -1,3 +1,6 @@
+My reality show idea (4/27/16)
+* Talkshow is texting in public: http://kottke.org/16/04/talkshow-is-texting-in-public
+
 A programming language...
 * ...where every function can think for itself, decide when it wants to run based on patterns of use
 * every menu option can show itself when it wants (e.g. if the user navigates to it many times, then it can make itself easier to navigate to)
