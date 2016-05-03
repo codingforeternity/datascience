@@ -1,3 +1,5 @@
+[Advanced Web Scrapping with Scrapy: Scrapping ASP.net pages](https://blog.scrapinghub.com/2016/04/20/scrapy-tips-from-the-pros-april-2016-edition/) (4/26/16)
+
 11/12/15 - Medium.com has this built in to their site somehow (Javascript?)
 * https://medium.com/the-engineering-team/keep-your-kitchen-clean-e39d692f8015
 * Scroll down to the "Choose a style guide..." paragraph which has been highlighted by 3 people.
