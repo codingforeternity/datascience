@@ -1,3 +1,5 @@
+NLP "features" shouldn't be functions of text passages, but rather correlations to sets of terms (just like QELA).  The relationships/correlations between the pairwise text-QELA terms are the features.
+
 [State of the art models for anaphora/ coreference resolution?](https://www.reddit.com/r/MachineLearning/comments/4gptkp/state_of_the_art_models_for_anaphora_coreference/) (5/2/16)
 * Here's the paper: [Learning Anaphoricity and Antecedent Ranking Features for Coreference Resolution](http://people.seas.harvard.edu/~srush/acl15.pdf)
 
