@@ -1,3 +1,7 @@
+[A public health campaign to stop C/C++](http://trevorjim.com/a-public-health-campaign-to-stop-c-c++/) (5/2/16)
+* A probabilistic, procedure call language might be less vulnerable to security attacks b/c injected code would have been called very infrequently in the past--and thus have a very low probability of actually being called.
+* What are secure languages anyway?
+
 [What is a good program?](http://engineering.theladders.com/2016/04/26/what-is-a-good-program/) (4/27/16)
 
 [Tips and Tricks for Competitive Programmers | Set 2 (Language to be used for Competitive Programming)](http://www.geeksforgeeks.org/tips-and-tricks-for-competitive-programmers-set-2-which-language-should-be-used-for-competitive-programming/) (3/20/16)
