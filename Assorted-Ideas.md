@@ -1,7 +1,7 @@
 A programming language...
 * ...where every function can think for itself, decide when it wants to run based on patterns of use
 * every menu option can show itself when it wants (e.g. if the user navigates to it many times, then it can make itself easier to navigate to)
-* e.g. I so often send email messages w/out body but I don't want my phone to ask me every time
+* e.g. I so often send email messages w/out a body, and I don't want my phone to ask me if that's really what I want to do every time
 
 All software should adapt
 * this means building on top of an *adaptive platform*
