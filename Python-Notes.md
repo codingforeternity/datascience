@@ -1,3 +1,5 @@
+[Asynchronous Programming with Python 3](https://community.nitrous.io/tutorials/asynchronous-programming-with-python-3) (5/6/16)
+
 [Jamal Moir: An Introduction to Scientific Python (and a Bit of the Maths Behind It) - Matplotlib](http://feedproxy.google.com/~r/JamalMoirBlogPython/~3/J4BvLPu8J1g/scientific-python-matplotlib.html) (4/28/16)
 
 [A Speed Comparison Of C, Julia, Python, Numba, and Cython on LU Factorization](https://www.ibm.com/developerworks/community/blogs/jfp/entry/A_Comparison_Of_C_Julia_Python_Numba_Cython_Scipy_and_BLAS_on_LU_Factorization?lang=en) (4/15/16)
