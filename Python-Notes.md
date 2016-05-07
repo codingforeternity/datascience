@@ -1,5 +1,5 @@
 [Asynchronous Programming with Python 3](https://community.nitrous.io/tutorials/asynchronous-programming-with-python-3) (5/6/16)
-* Good explanation of <async> and <await> keywords introduced in Python 3.5
+* Good explanation of `async` and `await` keywords introduced in Python 3.5 (similar to `synchronized` and Future in Java)
 
 [Jamal Moir: An Introduction to Scientific Python (and a Bit of the Maths Behind It) - Matplotlib](http://feedproxy.google.com/~r/JamalMoirBlogPython/~3/J4BvLPu8J1g/scientific-python-matplotlib.html) (4/28/16)
 
