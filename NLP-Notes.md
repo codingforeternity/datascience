@@ -1,3 +1,5 @@
+[Google Has Open Sourced SyntaxNet, Its AI for Understanding Language](http://www.wired.com/2016/05/google-open-sourced-syntaxnet-ai-natural-language/) (5/13/16)
+
 NLP "features" shouldn't be functions of text passages, but rather correlations to sets of terms (just like QELA).  The relationships/correlations between the pairwise text-QELA terms are the features.
 
 [State of the art models for anaphora/ coreference resolution?](https://www.reddit.com/r/MachineLearning/comments/4gptkp/state_of_the_art_models_for_anaphora_coreference/) (5/2/16)
