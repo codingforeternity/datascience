@@ -48,6 +48,8 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Python Notes]]
 
+[[Linux Notes]] (kws: UNIX)
+
 [[Quantum Thoughts]]
 
 [[Assorted Ideas]] (kws: random)
