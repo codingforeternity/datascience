@@ -1,4 +1,5 @@
 [Google Has Open Sourced SyntaxNet, Its AI for Understanding Language](http://www.wired.com/2016/05/google-open-sourced-syntaxnet-ai-natural-language/) (5/13/16)
+* "According to Google, Parsey McParseface is about 94 percent accurate in identifying how a word relates the rest of a sentence, a rate the company believes is close to the performance of a human (96 to 97 percent)."
 
 NLP "features" shouldn't be functions of text passages, but rather correlations to sets of terms (just like QELA).  The relationships/correlations between the pairwise text-QELA terms are the features.
 
