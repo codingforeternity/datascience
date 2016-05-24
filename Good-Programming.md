@@ -1,3 +1,6 @@
+[To Write Better Code, Read Virginia Woolf](http://www.nytimes.com/2016/05/22/opinion/sunday/to-write-software-read-novels.html?_r=0) (5/24/16)
+* "one part training to three parts creative intuition"
+
 [A public health campaign to stop C/C++](http://trevorjim.com/a-public-health-campaign-to-stop-c-c++/) (5/2/16)
 * A probabilistic, procedure call language might be less vulnerable to security attacks b/c injected code would have been called very infrequently in the past--and thus have a very low probability of actually being called.
 * What are secure languages anyway?
