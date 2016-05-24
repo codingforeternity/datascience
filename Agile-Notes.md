@@ -1,3 +1,7 @@
+[Agile no longer addresses the fundamental bottleneck](http://www.loosecouplings.com/2016/05/agile-and-bottlenecks.html) (5/24/16)
+* "The first step in building the right thing is to avoid building wrong things along the way."
+* "In essence what is needed is the adoption of a Lean Startup mindset and the creation of a toolbox of techniques for (in)validation." -- i.e. optimal stopping point
+
 [What are User Stories? ](http://specify.io/concepts/user-stories) (3/7/16)
 * "User stories are not requirements, they are a concept to communicate requirements."
 * FWC - If Agile is so effective, then why are there so many articles that try to explain it?  Does anyone really get it?  And even if there is a subset of people who do get it, how can it be effective given that there are so many people who don't.
