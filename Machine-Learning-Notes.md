@@ -1,3 +1,5 @@
+"Understanding Machine Learning: From Theory to Algorithms" by Shai Shalev-Shwartz and Shai Ben-David. It's available for free at its website: http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf (6/28/16)
+
 ML "learns" by making mistakes, so one possible way to train it might be to make it compete against other ML.  Every time it loses, it should be able to "learn" something. (5/3/16)
 
 [A survey of cross-validation procedures for model selection](http://projecteuclid.org/euclid.ssu/1268143839) (4/22/16)
