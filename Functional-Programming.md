@@ -1,3 +1,6 @@
+[Structural Pattern Matching in Java](http://blog.higher-order.com/blog/2009/08/21/structural-pattern-matching-in-java/) (7/5/16)
+* "structural pattern matching on algebraic data types. Once you’ve used this feature, you don’t ever want to program without it. You will find this in languages like Haskell and Scala."
+
 [Efficiency of Functional Programming](http://stackoverflow.com/questions/1990464/efficiency-of-purely-functional-programming) (4/12/16)
 
 [OOP is embarrassing](https://www.youtube.com/watch?v=IRTfhkiAqPw&app=desktop) (3/7/16)
