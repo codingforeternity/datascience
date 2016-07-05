@@ -1,3 +1,5 @@
+[15 signs you’re doing agile wrong](http://www.infoworld.com/article/3074332/agile-development/15-signs-youre-doing-agile-wrong.html) (7/5/16)
+
 [Agile no longer addresses the fundamental bottleneck](http://www.loosecouplings.com/2016/05/agile-and-bottlenecks.html) (5/24/16)
 * "The first step in building the right thing is to avoid building wrong things along the way."
 * "In essence what is needed is the adoption of a Lean Startup mindset and the creation of a toolbox of techniques for (in)validation." -- i.e. optimal stopping point
