@@ -1,3 +1,6 @@
+[Why Python is Slow](http://blog.kevmod.com/2016/07/why-is-python-slow/) (7/5/16)
+* it's the C code that's slow, not the JIT interpreter
+
 [Asynchronous Programming with Python 3](https://community.nitrous.io/tutorials/asynchronous-programming-with-python-3) (5/6/16)
 * Good explanation of `async` and `await` keywords introduced in Python 3.5 (similar to `synchronized` and Future in Java)
 
