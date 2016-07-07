@@ -1,3 +1,5 @@
+[Question answering on the Facebook bAbi dataset using recurrent neural networks and 175 lines of Python + Keras](http://smerity.com/articles/2015/keras_qa.html) (7/7/16)
+
 [Google Has Open Sourced SyntaxNet, Its AI for Understanding Language](http://www.wired.com/2016/05/google-open-sourced-syntaxnet-ai-natural-language/) (5/13/16)
 * "According to Google, Parsey McParseface is about 94 percent accurate in identifying how a word relates the rest of a sentence, a rate the company believes is close to the performance of a human (96 to 97 percent)."
 * "people use language on the web in so many different ways. When Google trains its neural nets with this kind of dataset, the accuracy rate drops to about 90 percent"
