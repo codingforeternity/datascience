@@ -48,6 +48,10 @@ Welcome to the fcrimins.github.io wiki!
 
 [[Python Notes]]
 
+[[Go Notes]]
+
+[[Scala Notes]]
+
 [[Linux Notes]] (kws: UNIX)
 
 [[Quantum Thoughts]]
