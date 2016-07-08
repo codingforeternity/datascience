@@ -1,3 +1,5 @@
+[Inter-thread Communication in Java](http://www.geeksforgeeks.org/inter-thread-communication-java/) (7/7/16)
+
 [Java Concurrency Tutorials](http://tutorials.jenkov.com/java-concurrency/concurrency-models.html) (4/15/16)
 
 [Java 8 Streams Cheatsheet](http://zeroturnaround.com/rebellabs/java-8-streams-cheat-sheet/) (1/29/16)
