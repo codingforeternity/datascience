@@ -1,3 +1,5 @@
+[Best traits of a senior developer?](https://teamhunt.co/blog/best-traits-of-a-senior-developer-programmer/) (7/7/16)
+
 [To Write Better Code, Read Virginia Woolf](http://www.nytimes.com/2016/05/22/opinion/sunday/to-write-software-read-novels.html?_r=0) (5/24/16)
 * "one part training to three parts creative intuition"
 
