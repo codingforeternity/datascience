@@ -3,67 +3,44 @@ Welcome to the fcrimins.github.io wiki!
 Articles: https://web.kamihq.com/web/viewer.html
 
 [[Data Mining]] (kws: overfitting)
+[[Data]]
+[[Statistics and Statistical Techniques]] (kws: quant)
 
-[[Mistakes are how we/everything learns]] (kws: meme)
-
-[[Super Spatial Sensers]]
-
-[[Machine Learning Notes]]
-
+[[Machine Learning Notes]] and [[ML Examples]]
 [[NLP Notes]]
-
-[[Quantitative Healthcare]]
-
-[Awesome Open Source Documents](https://github.com/nacyot/awesome-opensource-documents)
+[[Game Theory]]
 
 [[ML Search]]
-
 [[ML Finance]]
 
+[[Quantitative Healthcare]]
 [[Differential Gene Expression]]
 
 [[Reproducibility]]
-
 [[Notebook Mining]]
-
 [[JoNR: Journal of Negative Results]]
-
 [[Multiple Comparisons]]
 
-[[Web Annotation]]
-
-[[Tech Hiring]]
-
 [[Good Programming]] (kws: education)
-
+[Awesome Open Source Documents](https://github.com/nacyot/awesome-opensource-documents)
+[[Tech Hiring]]
+[[Agile Notes]]
 [[Functional Programming]]
 
-[[Apache Spark]]
-
 [[Java Notes]]
-
 [[REST Notes]] (kws: microservices)
-
-[[Agile Notes]]
-
 [[SQL Notes]]
-
 [[Python Notes]]
-
 [[Go Notes]]
-
 [[Scala Notes]]
 
+[[Apache Spark]]
 [[Linux Notes]] (kws: UNIX)
 
 [[Quantum Thoughts]]
-
 [[Assorted Ideas]] (kws: random)
-
-[[Data]]
-
-[[Statistics and Statistical Techniques]] (kws: quant)
-
-[[Game Theory]]
+[[Web Annotation]]
+[[Super Spatial Sensers]]
+[[Mistakes are how we/everything learns]] (kws: meme)
 
 [[Fred Refs]]
