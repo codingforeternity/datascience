@@ -27,20 +27,20 @@ Articles: https://web.kamihq.com/web/viewer.html
 [[Agile Notes]]
 [[Functional Programming]]
 
-[[Java Notes]]
-[[REST Notes]] (kws: microservices)
-[[SQL Notes]]
-[[Python Notes]]
-[[Go Notes]]
-[[Scala Notes]]
+* [[Java Notes]]
+* [[REST Notes]] (kws: microservices)
+* [[SQL Notes]]
+* [[Python Notes]]
+* [[Go Notes]]
+* [[Scala Notes]]
 
-[[Apache Spark]]
-[[Linux Notes]] (kws: UNIX)
+* [[Apache Spark]]
+* [[Linux Notes]] (kws: UNIX)
 
-[[Quantum Thoughts]]
-[[Assorted Ideas]] (kws: random)
-[[Web Annotation]]
-[[Super Spatial Sensers]]
-[[Mistakes are how we/everything learns]] (kws: meme)
+* [[Quantum Thoughts]]
+* [[Assorted Ideas]] (kws: random)
+* [[Web Annotation]]
+* [[Super Spatial Sensers]]
+* [[Mistakes are how we/everything learns]] (kws: meme)
 
 [[Fred Refs]]
