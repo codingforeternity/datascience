@@ -1,56 +1,56 @@
 Welcome to the fcrimins.github.io wiki!
 
-* Articles: https://web.kamihq.com/web/viewer.html
+- Articles: https://web.kamihq.com/web/viewer.html
 <br>
 
-* [[Data Mining]] (kws: overfitting)
-* [[Data]]
-* [[Statistics and Statistical Techniques]] (kws: quant)
+- [[Data Mining]] (kws: overfitting)
+- [[Data]]
+- [[Statistics and Statistical Techniques]] (kws: quant)
 <br>
 
-* [[Machine Learning Notes]] and [[ML Examples]]
-* [[NLP Notes]]
-* [[Game Theory]]
+- [[Machine Learning Notes]] and [[ML Examples]]
+- [[NLP Notes]]
+- [[Game Theory]]
 <br>
 
-* [[ML Search]]
-* [[ML Finance]]
+- [[ML Search]]
+- [[ML Finance]]
 <br>
 
-* [[Quantitative Healthcare]]
-* [[Differential Gene Expression]]
+- [[Quantitative Healthcare]]
+- [[Differential Gene Expression]]
 <br>
 
-* [[Reproducibility]]
-* [[Notebook Mining]]
-* [[JoNR: Journal of Negative Results]]
-* [[Multiple Comparisons]]
+- [[Reproducibility]]
+- [[Notebook Mining]]
+- [[JoNR: Journal of Negative Results]]
+- [[Multiple Comparisons]]
 <br>
 
-* [[Good Programming]] (kws: education)
-* [Awesome Open Source Documents](https://github.com/nacyot/awesome-opensource-documents)
-* [[Tech Hiring]]
-* [[Agile Notes]]
-* [[Functional Programming]]
+- [[Good Programming]] (kws: education)
+- [Awesome Open Source Documents](https://github.com/nacyot/awesome-opensource-documents)
+- [[Tech Hiring]]
+- [[Agile Notes]]
+- [[Functional Programming]]
 <br>
 
-* [[Java Notes]]
-* [[REST Notes]] (kws: microservices)
-* [[SQL Notes]]
-* [[Python Notes]]
-* [[Go Notes]]
-* [[Scala Notes]]
+- [[Java Notes]]
+- [[REST Notes]] (kws: microservices)
+- [[SQL Notes]]
+- [[Python Notes]]
+- [[Go Notes]]
+- [[Scala Notes]]
 <br>
 
-* [[Apache Spark]]
-* [[Linux Notes]] (kws: UNIX)
+- [[Apache Spark]]
+- [[Linux Notes]] (kws: UNIX)
 <br>
 
-* [[Quantum Thoughts]]
-* [[Assorted Ideas]] (kws: random)
-* [[Web Annotation]]
-* [[Super Spatial Sensers]]
-* [[Mistakes are how we/everything learns]] (kws: meme)
+- [[Quantum Thoughts]]
+- [[Assorted Ideas]] (kws: random)
+- [[Web Annotation]]
+- [[Super Spatial Sensers]]
+- [[Mistakes are how we/everything learns]] (kws: meme)
 <br>
 
-* [[Fred Refs]]
+- [[Fred Refs]]
