@@ -1,31 +1,31 @@
 Welcome to the fcrimins.github.io wiki!
 
-Articles: https://web.kamihq.com/web/viewer.html
+* Articles: https://web.kamihq.com/web/viewer.html
 
-[[Data Mining]] (kws: overfitting)
-[[Data]]
-[[Statistics and Statistical Techniques]] (kws: quant)
+* [[Data Mining]] (kws: overfitting)
+* [[Data]]
+* [[Statistics and Statistical Techniques]] (kws: quant)
 
-[[Machine Learning Notes]] and [[ML Examples]]
-[[NLP Notes]]
-[[Game Theory]]
+* [[Machine Learning Notes]] and [[ML Examples]]
+* [[NLP Notes]]
+* [[Game Theory]]
 
-[[ML Search]]
-[[ML Finance]]
+* [[ML Search]]
+* [[ML Finance]]
 
-[[Quantitative Healthcare]]
-[[Differential Gene Expression]]
+* [[Quantitative Healthcare]]
+* [[Differential Gene Expression]]
 
-[[Reproducibility]]
-[[Notebook Mining]]
-[[JoNR: Journal of Negative Results]]
-[[Multiple Comparisons]]
+* [[Reproducibility]]
+* [[Notebook Mining]]
+* [[JoNR: Journal of Negative Results]]
+* [[Multiple Comparisons]]
 
-[[Good Programming]] (kws: education)
-[Awesome Open Source Documents](https://github.com/nacyot/awesome-opensource-documents)
-[[Tech Hiring]]
-[[Agile Notes]]
-[[Functional Programming]]
+* [[Good Programming]] (kws: education)
+* [Awesome Open Source Documents](https://github.com/nacyot/awesome-opensource-documents)
+* [[Tech Hiring]]
+* [[Agile Notes]]
+* [[Functional Programming]]
 
 * [[Java Notes]]
 * [[REST Notes]] (kws: microservices)
@@ -43,4 +43,4 @@ Articles: https://web.kamihq.com/web/viewer.html
 * [[Super Spatial Sensers]]
 * [[Mistakes are how we/everything learns]] (kws: meme)
 
-[[Fred Refs]]
+* [[Fred Refs]]
