@@ -1,3 +1,5 @@
+[Types: Negative Results](http://eneuro.org/information-for-authors#types) (7/21/16)
+
 The basic idea is to have a journal that only publishes negative results.  Results are selected for publication based on the quality of the application of the scientific method.
 
 Email: Graveyard database of negative results
