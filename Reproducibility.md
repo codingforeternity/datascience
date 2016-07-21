@@ -1,3 +1,5 @@
+[The 7 biggest problems facing science, according to 270 scientists](http://www.vox.com/2016/7/14/12016710/science-challeges-research-funding-peer-review-process) (7/21/16)
+
 Email: "Irreprodicibility crisis"
 * Christie Aschwanden synthesises the ongoing fraud and irreproducibility crises in science. http://phenomena.nationalgeographic.com/2015/08/29/ive-got-your-missing-links-right-here-29-august-2015/
   * http://fivethirtyeight.com/features/science-isnt-broken/
