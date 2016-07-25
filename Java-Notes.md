@@ -1,3 +1,5 @@
+[Stream in Java 8](http://www.geeksforgeeks.org/stream-in-java/) (7/25/16)
+
 [Inter-thread Communication in Java](http://www.geeksforgeeks.org/inter-thread-communication-java/) (7/7/16)
 
 [Java Concurrency Tutorials](http://tutorials.jenkov.com/java-concurrency/concurrency-models.html) (4/15/16)
