@@ -1,3 +1,6 @@
+[Separating Mutation from Computation](http://xen.garden/wp/?p=8) (7/28/16)
+* "computation is very much like mathematical functions, there is no sense of time or change; just a relationship between input parameters and a returned value. mutation on the other hand captures time, change, and the order of events."
+
 [Structural Pattern Matching in Java](http://blog.higher-order.com/blog/2009/08/21/structural-pattern-matching-in-java/) (7/5/16)
 * "structural pattern matching on algebraic data types. Once you’ve used this feature, you don’t ever want to program without it. You will find this in languages like Haskell and Scala."
 
