@@ -1,3 +1,4 @@
+[DCL FRED CHAR(10)](http://www.ibm.com/support/knowledgecenter/SSEPEK_11.0.0/sqlref/src/tpc/db2z_sql_declarevariable.html)
 
 In the Wild Krats episode on Crocodiles, the names of the baby crocs are: Crunch, Munch, Snapper and Fred.
 
