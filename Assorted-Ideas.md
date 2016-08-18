@@ -1,3 +1,7 @@
+Chem Collection (8/17/16)
+* There are tons of fertilizers flowing into the Gulf of Mexico out the mouth of the Mississippi River.
+* Harvest them to (1) remove the chemicals and (2) purify the Gulf.
+
 My reality show idea (4/27/16)
 * Talkshow is texting in public: http://kottke.org/16/04/talkshow-is-texting-in-public
 
