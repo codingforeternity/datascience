@@ -1,3 +1,8 @@
+[LabelImg: A graphical image annotation tool.](https://www.reddit.com/r/MachineLearning/comments/4w7me1/labelimg_a_graphical_image_annotation_tool/) (8/4/16)
+
+8/3/16 "Annotator tool" e-mail
+* Decompose Web pages into rectangles, then match the rectangles to identify similar future pages. CNN would be required as would text recog with rectangles with different text breaking points.
+
 [Advanced Web Scrapping with Scrapy: Scrapping ASP.net pages](https://blog.scrapinghub.com/2016/04/20/scrapy-tips-from-the-pros-april-2016-edition/) (4/26/16)
 
 11/12/15 - Medium.com has this built in to their site somehow (Javascript?)
