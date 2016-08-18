@@ -1,3 +1,5 @@
+[Vladimir Iakolev: Abusing annotations with dependency injection](https://nvbn.github.io/2016/08/07/annotations-injector/) (8/7/16)
+
 [Why Python is Slow](http://blog.kevmod.com/2016/07/why-is-python-slow/) (7/5/16)
 * it's the C code that's slow, not the JIT interpreter
 
