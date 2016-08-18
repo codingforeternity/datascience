@@ -1,3 +1,5 @@
+[A Derivation of Backpropagation in Matrix Form](http://sudeepraja.github.io/Neural/) (8/18/16)
+
 http://karpathy.github.io/neuralnets/
 
 "Understanding Machine Learning: From Theory to Algorithms" by Shai Shalev-Shwartz and Shai Ben-David. It's available for free at its website: http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf (6/28/16)
