@@ -1,4 +1,5 @@
 [Map, map, flatMap and filter in Scala](http://www.brunton-spall.co.uk/post/2011/12/02/map-map-and-flatmap-in-scala/) (8/30/16)
+* good short tutorial/description
 
 [Separating Mutation from Computation](http://xen.garden/wp/?p=8) (7/28/16)
 * "computation is very much like mathematical functions, there is no sense of time or change; just a relationship between input parameters and a returned value. mutation on the other hand captures time, change, and the order of events."
