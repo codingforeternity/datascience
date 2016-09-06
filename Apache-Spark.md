@@ -5,7 +5,7 @@ Scala IDE (Eclipse plugin)
 * "more than one scala library found in the build path" - http://stackoverflow.com/questions/13682349/how-to-use-just-one-scala-library-for-maven-eclipse-scala
 * "is cross-compiled with an incompatible version of Scala - http://scala-ide.org/docs/current-user-doc/faq/index.html
 * "plugin execution not covered by lifecycle configuration" - https://www.eclipse.org/m2e/documentation/m2e-execution-not-covered.html
-** this means that Eclipse's "lifecycle configuration" isn't going to run this Maven plugin because they aren't hooked up to each other
+  * this means that Eclipse's "lifecycle configuration" isn't going to run this Maven plugin because they aren't hooked up to each other
 
 [Flink vs. Spark](http://www.slideshare.net/sbaltagi/flink-vs-spark) (9/6/16)
 * and more here: http://sparkbigdata.com/
