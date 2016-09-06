@@ -1,5 +1,9 @@
 [Spark Tutorial](http://www.tutorialspoint.com/apache_spark/apache_spark_rdd.htm)(9/6/16)
-*
+* "There are two ways to create RDDs − parallelizing an existing collection in your driver program, or referencing a dataset in an external storage system, such as a shared file system"
+
+Scala
+* "more than one scala library found in the build path" - http://stackoverflow.com/questions/13682349/how-to-use-just-one-scala-library-for-maven-eclipse-scala
+* "is cross-compiled with an incompatible version of Scala - http://scala-ide.org/docs/current-user-doc/faq/index.html
 
 [Flink vs. Spark](http://www.slideshare.net/sbaltagi/flink-vs-spark) (9/6/16)
 * and more here: http://sparkbigdata.com/
