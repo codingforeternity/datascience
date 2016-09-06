@@ -1,3 +1,9 @@
+[Spark Tutorial](http://www.tutorialspoint.com/apache_spark/apache_spark_rdd.htm)(9/6/16)
+*
+
+[Flink vs. Spark](http://www.slideshare.net/sbaltagi/flink-vs-spark) (9/6/16)
+* and more here: http://sparkbigdata.com/
+
 [The Essential Guide to Streaming-first Processing with Apache Flink](https://www.mapr.com/blog/essential-guide-streaming-first-processing-apache-flink)
 * "Until now, data streaming technology was lacking in several areas, such as performance, correctness, and operability, forcing users to roll their own applications to ingest and analyze these continuous data streams, or (ab)use batch processing tools to simulate continuous ingestion and analysis pipelines."
 * Note the word "pipeline."  I wonder if this sentence hints at the origin of the term.  A pipeline, by definition (or originally intended definition) really means a streamed application.  The intent of UIMA may have been this originally, but it sure has diverged from that since then reverting back to more of a batch processing infrastructure.
