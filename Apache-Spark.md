@@ -1,4 +1,6 @@
-[Spark Tutorial](http://www.tutorialspoint.com/apache_spark/apache_spark_rdd.htm)(9/6/16)
+[[Official] Spark Programming Guide](http://spark.apache.org/docs/latest/programming-guide.html) (9/7/16)
+
+[[Very short] Spark Tutorial](http://www.tutorialspoint.com/apache_spark/apache_spark_rdd.htm) (9/6/16)
 * "There are two ways to create RDDs − parallelizing an existing collection in your driver program, or referencing a dataset in an external storage system, such as a shared file system"
 
 Scala IDE (Eclipse plugin)
