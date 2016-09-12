@@ -1,3 +1,6 @@
+[Spark Streaming DStream (Significance Testing)](http://spark.apache.org/docs/latest/mllib-statistics.html#streaming-significance-testing)
+* peacePeriod - The number of initial data points from the stream to ignore, used to mitigate novelty effects.  [This seems akin to a ramp-up period.]
+
 [[Official] Spark Programming Guide](http://spark.apache.org/docs/latest/programming-guide.html) (9/7/16)
 
 [[Very short] Spark Tutorial](http://www.tutorialspoint.com/apache_spark/apache_spark_rdd.htm) (9/6/16)
