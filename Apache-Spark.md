@@ -2,6 +2,7 @@
 [Implicit Conversions and Parameters](http://www.artima.com/pins1ed/implicit-conversions-and-parameters.html)
 * **Implicit Receiver Conversion**: "Implicit conversions also apply to the receiver of a method call, the object on which the method is invoked. This kind of implicit conversion has two main uses. First, receiver conversions allow smoother integration of a new class into an existing class hierarchy. And second, **they support writing domain-specific languages (DSLs)** within the language."
 * This "rich wrappers" pattern is common in libraries that provide syntax-like extensions to the language, so you should be ready to recognize the pattern when you see it. *Whenever you see someone calling methods that appear not to exist in the receiver class, they are probably using implicits.* Similarly, if you see a class named RichSomething, e.g., RichInt or RichString, that class is likely adding syntax-like methods to type Something.
+* As you can now see, these rich wrappers apply more widely, often letting you get by with an internal DSL defined as a library where programmers in other languages might feel the need to develop an external DSL.
 
 [Exception Handling in Apache Spark](https://www.nicolaferraro.me/2016/02/18/exception-handling-in-apache-spark/) (9/14/16)
 * import it.nerdammer.spark.additions._
