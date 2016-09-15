@@ -1,3 +1,6 @@
+Q: Why are the elements of [Scala tuples](http://www.scala-lang.org/files/archive/spec/2.11/03-types.html#tuple-types) indexed starting from 1 rather than 0?
+A: Because they aren't indexes.  They're elements in a basket--class members, fields--that just don't have names (yet).  Thinking about them as indexes is the wrong way of thinking about them.  So starting from 1 discourages this way of thinking. [FWC]
+
 [Scala Implicits](http://googlyadventures.blogspot.com/2016/03/today-i-taught-someone-scala-implicits.html) (9/14/16)
 [Implicit Conversions and Parameters](http://www.artima.com/pins1ed/implicit-conversions-and-parameters.html)
 * **Implicit Receiver Conversion**: "Implicit conversions also apply to the receiver of a method call, the object on which the method is invoked. This kind of implicit conversion has two main uses. First, receiver conversions allow smoother integration of a new class into an existing class hierarchy. And second, **they support writing domain-specific languages (DSLs)** within the language."
