@@ -13,6 +13,7 @@ A: Because they aren't indexes.  They're elements in a basket--class members, fi
 
 [A Tale of Three Apache Spark APIs: RDDs, DataFrames, and Datasets; When to use them and why](https://databricks.com/blog/2016/07/14/a-tale-of-three-apache-spark-apis-rdds-dataframes-and-datasets.html) (9/14/16)
 * "When to use RDDs? ...you want to manipulate your data with functional programming constructs than domain specific expressions"
+* "Dataset, by contrast, is a collection of strongly-typed JVM objects, dictated by a case class you define in Scala or a class in Java"
 * "Whereas the Dataset[T] typed API is optimized for data engineering tasks, the untyped Dataset[Row] (an alias of DataFrame) is even faster and suitable for interactive analysis."
 
 [Real-time data analysis using Spark](http://blog.scottlogic.com/2013/07/29/spark-stream-analysis.html)
