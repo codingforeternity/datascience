@@ -1,3 +1,6 @@
+[Ways to pattern match generic types in Scala](http://www.cakesolutions.net/teamblogs/ways-to-pattern-match-generic-types-in-scala) (9/21/16)
+* See [Type Tags](http://www.cakesolutions.net/teamblogs/ways-to-pattern-match-generic-types-in-scala#type-tags) section in particular
+
 [Scala Mixins](http://www.scala-lang.org/old/node/117) (9/21/16)
 * `class X extends B`
 * `class Y extends B`
