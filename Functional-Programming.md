@@ -1,3 +1,5 @@
+[Goodbye, Object Oriented Programming](https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53#.pioam6fd9) (9/27/16)
+
 [Dependency Injection (formerly known as: Inversion of Control)](http://www.javaworld.com/article/2071914/excellent-explanation-of-dependency-injection--inversion-of-control-.html) (8/31/16)
 
 [Map, map, flatMap and filter in Scala](http://www.brunton-spall.co.uk/post/2011/12/02/map-map-and-flatmap-in-scala/) (8/30/16)
