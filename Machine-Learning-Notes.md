@@ -1,5 +1,6 @@
 [Is Artificial Intelligence Permanently Inscrutable? Despite new biology-like tools, some insist interpretation is impossible.](http://nautil.us/issue/40/learning/is-artificial-intelligence-permanently-inscrutable)
 * "deep networks as the least understandable of modern methods. At the other end of the spectrum are decision trees, rule-based systems that tend to prize explanation over efficacy."  ([see image here](http://static.nautil.us/10301_b1f130b49d0fcfa2348098ee4467452f.png))
+* "Yosinski’s toolkit can, in part, counter these concerns by working backward, discovering what the network itself “wants” to be correct—a kind of artificial ideal. The program starts with raw static, then adjusts it, pixel by pixel, tinkering with the image using the reverse of the process that trained the network. Eventually it finds a picture that elicits the maximum possible response of a given neuron."
 
 [FastML: Deep learning made easy](http://fastml.com/deep-learning-made-easy/)
 * "Dropout is meant to reduce overfitting by randomly omitting half of the feature detectors on each training case."
