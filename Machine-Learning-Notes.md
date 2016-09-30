@@ -1,4 +1,4 @@
-[What We're Reading: 15 Favorite Data Science Resources](http://blog.kaggle.com/2016/09/13/what-were-reading-data-science-resources/) (9/29/16)
+[Kaggle: What We're Reading: 15 Favorite Data Science Resources](http://blog.kaggle.com/2016/09/13/what-were-reading-data-science-resources/) (9/29/16)
 
 [A Derivation of Backpropagation in Matrix Form](http://sudeepraja.github.io/Neural/) (8/18/16)
 
