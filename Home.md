@@ -6,6 +6,7 @@ Welcome to the fcrimins.github.io wiki!
 - [[Data Mining]] (kws: overfitting)
 - [[Data]]
 - [[Statistics and Statistical Techniques]] (kws: quant)
+- [[Big Data Architecture]] (kws: Hadoop, Spark, MongoDB, Cassandra)
 <br>
 
 - [[Machine Learning Notes]] and [[ML Examples]]
