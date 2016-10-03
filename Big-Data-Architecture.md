@@ -1,0 +1,2 @@
+Good YouTube talk describing all of the differences and the history of relational dbs (SQL) -> semi-structured -> document stores (NoSQL) along with a description of Hadoop (an architecture paradigm) along the way
+* https://www.youtube.com/watch?v=-N9i-YXoQBE
