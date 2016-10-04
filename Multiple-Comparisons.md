@@ -1,3 +1,5 @@
+[Find the best model (algorithm) for your dataset](http://andrewgelman.com/2016/09/28/28982/) (10/4/16)
+
 Email: "Average correlation..."
 * ...Of multiple comparisons can perhaps be used to determine little n's fraction of big N. One way to test this is with 3 variables of varying correlations and then 3 more with different corrs but same avg. Do they have the same FDRs? Then try w 4 vars, then 5, etc.
 * Or perhaps the distribution of the correlations matters, eg stdev 
