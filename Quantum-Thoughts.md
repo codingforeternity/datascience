@@ -1,3 +1,6 @@
+The universe is a partial function.
+* The holographic principle: http://physics.stackexchange.com/questions/46709/why-is-information-in-a-volume-proportional-to-its-surface-area
+
 Email: False vacua (p. 326) (2/6/16)
 * It is an optimization! A false vacua is a local minima in terms of energy
 
