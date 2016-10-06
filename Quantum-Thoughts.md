@@ -1,4 +1,4 @@
-The universe is a partial function.
+The universe is a partial function. (10/6/16)
 * The holographic principle: http://physics.stackexchange.com/questions/46709/why-is-information-in-a-volume-proportional-to-its-surface-area
 
 Email: False vacua (p. 326) (2/6/16)
