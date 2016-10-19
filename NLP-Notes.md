@@ -1,3 +1,6 @@
+Good lecture on word2vec and GloVe (10/19/16)
+* Slides from Mar 31 lecture http://cs224d.stanford.edu/syllabus.html (which are also in email)
+
 [Question answering on the Facebook bAbi dataset using recurrent neural networks and 175 lines of Python + Keras](http://smerity.com/articles/2015/keras_qa.html) (7/7/16)
 
 [Google Has Open Sourced SyntaxNet, Its AI for Understanding Language](http://www.wired.com/2016/05/google-open-sourced-syntaxnet-ai-natural-language/) (5/13/16)
