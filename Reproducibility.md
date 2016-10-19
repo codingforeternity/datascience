@@ -1,3 +1,5 @@
+[Gelman on the Replication Crisis and Social Media](http://marginalrevolution.com/marginalrevolution/2016/09/gelman-replication-crisis-social-media.html) (10/19/16)
+
 [A Skeptical View of the NSF](http://marginalrevolution.com/marginalrevolution/2016/08/a-skeptical-view-of-the-nsf.html) (8/25/16)
 
 [The 7 biggest problems facing science, according to 270 scientists](http://www.vox.com/2016/7/14/12016710/science-challeges-research-funding-peer-review-process) (7/21/16)
