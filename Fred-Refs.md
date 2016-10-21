@@ -1,4 +1,4 @@
-the vector of food is more similar to the vector of cat (as measures by their dot product) than the vectors of **several other randomly chosen words (e.g. democracy, greed, [freddy](https://www.quora.com/What-is-negative-sampling))**, instead of all other words in language. 
+the vector of food is more similar to the vector of cat (as measures by their dot product) than the vectors of **several other randomly chosen words** (e.g. democracy, greed, [freddy](https://www.quora.com/What-is-negative-sampling)), instead of all other words in language. 
 
 Freddy, the (former) BBQ joint owner in House of Cards
 
