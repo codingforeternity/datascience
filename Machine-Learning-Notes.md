@@ -1,3 +1,5 @@
+[Running things on a GPU](http://fastml.com/running-things-on-a-gpu/) (10/1/16)
+
 [Import AI: Issue 6: Amazon’s New UK AI Team, Baidu’s Frameworks, and an OpenAI Member’s Q&A](https://jack-clark.net/2016/09/07/import-ai-issue-6-amazons-new-uk-ai-team-baidus-frameworks-and-an-openai-members-qa/)
 * TensorFlow and Keras are (current) reigning champs
 
