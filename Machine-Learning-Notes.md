@@ -3,6 +3,7 @@ Can the structure of a neural net itself be learned?
 
 Negative Sampling
 * https://www.quora.com/What-is-negative-sampling
+  * The end result is that if cat appears in the context of food, then the vector of food is more similar to the vector of cat (as measures by their dot product) than the vectors of **several other randomly chosen words** (e.g. democracy, greed, Freddy), instead of **all other words in language**. This makes word2vec much much faster to train.
 * "In both cases, you want to contrast "correct" instances with things that look ever so slightly different."
 * i.e. my idea from 10 years ago wrt fitting models to bogus data
 * a place like AQR should, every once in a while, give its researchers bogus data (without them knowing) to see if they come up with something to calibrate how much they are overfitting
