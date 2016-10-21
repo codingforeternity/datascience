@@ -1,3 +1,6 @@
+Can the structure of a neural net itself be learned?
+* There seem to be a fairly finite number of constructs used to assemble NNs.
+
 Negative Sampling
 * https://www.quora.com/What-is-negative-sampling
 * "In both cases, you want to contrast "correct" instances with things that look ever so slightly different."
