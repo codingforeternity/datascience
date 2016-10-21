@@ -1,3 +1,10 @@
+Negative Sampling
+* https://www.quora.com/What-is-negative-sampling
+* "In both cases, you want to contrast "correct" instances with things that look ever so slightly different."
+* i.e. my idea from 10 years ago wrt fitting models to bogus data
+* a place like AQR should, every once in a while, give its researchers bogus data (without them knowing) to see if they come up with something to calibrate how much they are overfitting
+* i suppose this is sorta like permutation resampling as used wrt multiple comparisons
+
 [Running things on a GPU](http://fastml.com/running-things-on-a-gpu/) (10/1/16)
 
 [Import AI: Issue 6: Amazon’s New UK AI Team, Baidu’s Frameworks, and an OpenAI Member’s Q&A](https://jack-clark.net/2016/09/07/import-ai-issue-6-amazons-new-uk-ai-team-baidus-frameworks-and-an-openai-members-qa/)
