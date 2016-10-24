@@ -1,3 +1,6 @@
+[Practical Machine Learning Tutorial with Python Introduction](https://pythonprogramming.net/machine-learning-tutorial-python-introduction/)
+* From Reddit - [What is the best python based ML course available online?](https://www.reddit.com/r/MachineLearning/comments/4thirl/what_is_the_best_python_based_ml_course_available/)
+
 [Data Mining in Python: A Guide](https://www.springboard.com/blog/data-mining-python-tutorial/)
 * Good overview of the tools and IPython Notebook
 
