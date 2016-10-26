@@ -1,3 +1,7 @@
+[Bayesian Statistics Then and Now, Gelman](http://www.stat.columbia.edu/~gelman/research/published/gelman_discussion_of_efron.pdf) (10/26/16)
+* not a fan of false discovery rate, but acknowledges it works better in social sciences (with more normal distributions--everything related to everything else at some level) than genetics where some genes really do have 0 effect while others have large effects (classical hypothesis-testing model is plausible)
+* Type S and M errors rather than 1 and 2 (Gelman and Tuerlinckx, 2000... then 2009 and 2009 with other authors)
+
 [Find the best algorithm (program) [FWC: model] for your dataset](http://andrewgelman.com/2016/09/28/28982/) (10/4/16)
 
 [Why the garden-of-forking-paths criticism of p-values is not like a famous Borscht Belt comedy bit](http://andrewgelman.com/2016/09/30/why-the-garden-of-forking-paths-criticism-of-p-values-is-not-like-a-famous-borscht-belt-comedy-bit/) (10/4/16)
