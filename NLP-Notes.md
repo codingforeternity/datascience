@@ -1,3 +1,5 @@
+[On Word Embeddings, Part 3: The Secret Ingredients of Word2Vec](http://sebastianruder.com/secret-word2vec/index.html) (10/26/16, Sebastian Ruder)
+
 Good lecture on word2vec and GloVe (10/19/16)
 * Slides from Mar 31 lecture http://cs224d.stanford.edu/syllabus.html (which are also in email)
 
