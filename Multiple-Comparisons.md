@@ -1,3 +1,12 @@
+[Why We (Usually) Don't Have to Worry About Multiple Comparisons, Gelman](http://www.stat.columbia.edu/~gelman/research/published/multiple2f.pdf) (10/27/16)
+* "The Bonferroni correction directly targets the Type 1 error problem, but it does so at the
+expense of Type 2 error. By changing the p value needed to reject the null (or equivalently
+widening the uncertainty intervals) the number of claims of rejected null hypotheses will
+indeed decrease on average. Although this reduces the number of false rejections, it also
+increases the number of instances that the null is not rejected when in fact it should have
+been. Thus, the Bonferroni correction can severely reduce our power to detect an important
+effect."
+
 [Bayesian Statistics Then and Now, Gelman](http://www.stat.columbia.edu/~gelman/research/published/gelman_discussion_of_efron.pdf) (10/26/16)
 * not a fan of false discovery rate, but acknowledges it works better in social sciences (with more normal distributions--everything related to everything else at some level) than genetics where some genes really do have 0 effect while others have large effects (classical hypothesis-testing model is plausible)
 * Type S and M errors rather than 1 and 2 (Gelman and Tuerlinckx, 2000... then 2009 and 2009 with other authors)
