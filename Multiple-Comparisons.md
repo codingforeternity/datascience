@@ -13,6 +13,8 @@ Liu, & Stoeckert, 2005). They may be less useful in social science applications 
 are less likely to be testing thousands of hypotheses at a time and when there are less likely
 to be effects that are truly zero (or at least the distinction between zero and not-zero may be
 more blurry)"
+* "Alternatively, research organizations sometimes recommend-
+ing prespecifying the tests that will be performed in an officially sanctioned analysis."
 
 [Bayesian Statistics Then and Now, Gelman](http://www.stat.columbia.edu/~gelman/research/published/gelman_discussion_of_efron.pdf) (10/26/16)
 * not a fan of false discovery rate, but acknowledges it works better in social sciences (with more normal distributions--everything related to everything else at some level) than genetics where some genes really do have 0 effect while others have large effects (classical hypothesis-testing model is plausible)
