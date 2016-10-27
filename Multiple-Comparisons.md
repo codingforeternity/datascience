@@ -24,7 +24,7 @@ estimate gets “shrunk” or pulled toward the overall estimate (or, in a more 
 toward a group-level regression fit). The greater the uncertainty in a site, the more it will
 get pulled toward the overall estimate."
 * "**Partial pooling** tends to reduce the number of statistically significant com-
-parisons. To see this algebraically"
+parisons. To see this algebraically..."
 
 [Bayesian Statistics Then and Now, Gelman](http://www.stat.columbia.edu/~gelman/research/published/gelman_discussion_of_efron.pdf) (10/26/16)
 * not a fan of false discovery rate, but acknowledges it works better in social sciences (with more normal distributions--everything related to everything else at some level) than genetics where some genes really do have 0 effect while others have large effects (classical hypothesis-testing model is plausible)
