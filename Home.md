@@ -9,6 +9,12 @@ Welcome to the fcrimins.github.io wiki!
 - [[Big Data Architecture]] (kws: Hadoop, Spark, MongoDB, Cassandra)
 <br>
 
+- [[Reproducibility]]
+- [[Notebook Mining]]
+- [[JoNR: Journal of Negative Results]]
+- [[Multiple Comparisons]]
+<br>
+
 - [[Machine Learning Notes]] and [[ML Examples]]
 - [[NLP Notes]]
 - [[Game Theory]]
@@ -20,12 +26,6 @@ Welcome to the fcrimins.github.io wiki!
 
 - [[Quantitative Healthcare]]
 - [[Differential Gene Expression]]
-<br>
-
-- [[Reproducibility]]
-- [[Notebook Mining]]
-- [[JoNR: Journal of Negative Results]]
-- [[Multiple Comparisons]]
 <br>
 
 - [[Good Programming]] (kws: education)
