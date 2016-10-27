@@ -4,7 +4,7 @@ expense of Type 2 error. By changing the p value needed to reject the null (or e
 widening the uncertainty intervals) the number of claims of rejected null hypotheses will
 indeed decrease on average. Although this reduces the number of false rejections, it also
 increases the number of instances that the null is not rejected when in fact it should have
-been. Thus, the Bonferroni correction can severely reduce our power to detect an important
+been. Thus, the Bonferroni correction can severely reduce our *power* to detect an important
 effect."
 
 [Bayesian Statistics Then and Now, Gelman](http://www.stat.columbia.edu/~gelman/research/published/gelman_discussion_of_efron.pdf) (10/26/16)
