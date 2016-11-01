@@ -1,5 +1,6 @@
 [Deep or Shallow, NLP is Breaking Out](http://cacm.acm.org/magazines/2016/3/198856-deep-or-shallow-nlp-is-breaking-out/fulltext) (11/1/16)
 * "Yoav Goldberg and Omer Levy, researchers at Bar-Ilan University in Ramat-Gan, Israel, have concluded much of [word2vec's] power comes from tuning algorithmic elements such as dynamically sized context windows. Goldberg and Levy call those elements hyperparameters."
+* "Basically, where GloVe precomputes the large word x word co-occurrence matrix in memory and then quickly factorizes it, word2vec sweeps through the sentences in an online fashion, handling each co-occurrence separately," Rehurek, who created the open source modeling toolkit gensim and optimized it for word2vec, wrote. "So, there is a trade-off between taking more memory (GloVe) vs. taking longer to train (word2vec)."
 
 [On Word Embeddings, Part 3: The Secret Ingredients of Word2Vec](http://sebastianruder.com/secret-word2vec/index.html) (10/26/16, Sebastian Ruder)
 
