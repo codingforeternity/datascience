@@ -1,3 +1,5 @@
+[[Notes for Geoff Hinton's Coursera ML course]]
+
 The [original NTM paper](https://arxiv.org/pdf/1410.5401v2.pdf), key takeaways
 * There are limits to how well LSTMs generalize beyond their training size.  We've kinda seen this empirically, but Graves and company show this on a number of tasks.  NTMs seem to do better in this respect.
 * NTMs will converge much faster for some class of problems and the external memory allows them to use fewer parameters than an LSTM (which as we've seen, grows quadratically).
