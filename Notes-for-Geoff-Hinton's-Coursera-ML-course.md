@@ -13,3 +13,4 @@ Week 2: What perceptrons can't do
   * Minskey and Papert's "Group Invariance Theorem" says that the part of a perceptron that learns cannot do this if the transformations form a group (e.g. translations with wraparound).
   * This result is devastating for pattern recognition (PR) because the whole point of PR is to recognize patterns that undergo transformations, like translation.
   * To deal with such transformations, a perceptron needs to use multiple feature units to recognize transformations of informative sub-patterns.
+  * So the tricky part of PR must be solved by the hand-coded feature detectors, not the learning procedure.
