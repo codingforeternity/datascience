@@ -20,3 +20,5 @@ Week 3: Learning the weights of a linear neuron
 * Instead of showing the weights get closer to a good set of weights (i.e. perceptrons, which suffer from 2 good set of weights do not average to a good set) show that actual output values get closer to the target values.
   * In perceptron learning the outputs can get farther away from the targets, even though the weights are getting closer.
 * The "delta rule" for learning: delta w_i = epsilon * x_i * (t - y) ... where epsilon := "learning rate", t := target/true output, and y := estimated output
+  * Derivation: Error = 0.5 * Sum_{n in training} (t_n - y_n)^2 ... the 1/2 is only there to make the 2 in the derivative cancel
+  * del E / del w_i = 0.5 Sum_n (del y_n / del w_i * del E_n / del y_n) ... "chain rule" ... = -Sum_n (x_{i, n} * (t_n - y_n)
