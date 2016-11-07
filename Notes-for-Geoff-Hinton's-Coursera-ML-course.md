@@ -15,3 +15,8 @@ Week 2: What perceptrons can't do
   * To deal with such transformations, a perceptron needs to use multiple feature units to recognize transformations of informative sub-patterns.
   * So the tricky part of PR must be solved by the hand-coded feature detectors, not the learning procedure.
   * Networks without hidden units are very limited in what they can learn to model.
+
+Week 3: Learning the weights of a linear neuron
+* Instead of showing the weights get closer to a good set of weights (i.e. perceptrons, which suffer from 2 good set of weights do not average to a good set) show that actual output values get closer to the target values.
+  * In perceptron learning the outputs can get farther away from the targets, even though the weights are getting closer.
+* The "delta rule" for learning: delta w_i = epsilon * x_i * (t - y) ... where epsilon := "learning rate", t := target/true output, and y := estimated output
