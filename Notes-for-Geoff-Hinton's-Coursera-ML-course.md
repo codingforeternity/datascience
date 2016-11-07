@@ -20,8 +20,8 @@ Week 3: Learning the weights of a linear neuron
 * Instead of showing the weights get closer to a good set of weights (i.e. perceptrons, which suffer from 2 good set of weights do not average to a good set) show that actual output values get closer to the target values.
   * In perceptron learning the outputs can get farther away from the targets, even though the weights are getting closer.
 * The "delta rule" for learning: delta w_i = epsilon * x_i * (t - y) ... where epsilon := "learning rate", t := target/true output, and y := estimated output
-  * Derivation: Error = 0.5 * Sum_{n in training} (t_n - y_n)^2 ... the 1/2 is only there to make the 2 in the derivative cancel
-  * Differentiate the error wrt one of the weights, w_i: del E / del w_i = 0.5 * Sum_n (del y_n / del w_i * d E_n / d y_n) ... Chain Rule ("easy to remember, just cancel those 2 del y_ns ... but only when there aren't any mathematicians looking) ... = -Sum_n (x_{i,n} * (t_n - y_n)
+  * Derivation: Error = 0.5 * Sum_{n in training}[(t_n - y_n)^2] ... the 1/2 is only there to make the 2 in the derivative cancel
+  * Differentiate the error wrt one of the weights, w_i: del E / del w_i = 0.5 * Sum_n[del y_n / del w_i * d E_n / d y_n] ... Chain Rule ("easy to remember, just cancel those 2 del y_ns ... but only when there aren't any mathematicians looking) ... = -Sum_n[x_{i,n} * (t_n - y_n)]
     * del y_n / del w_i = x_{i,n} because y_n = w_i * x_{i,n}
     * d E_n / d y_n is just the derivative of the (squared) Error function
   * Therefore: delta w_i = -epsilon * del E / del w_i
@@ -44,6 +44,6 @@ Week 3: The backpropagation algorithm
   * Very inefficient--requires multiple forward passes on a set of training cases just to update one weight.  Backprop much better "by a factor of the number of weights in the network."
   * Could randomly perturb all the weights in parallel and correlate performance gain w/ weight changes, but not much better b/c requires lots of trials on each training case to "see" the effect of changing one weight through the noise created by changing all the others (FWC - reminds me of the Shapley optimization)
   * Better idea: randomly perturb the activities of the hidden units.  Once we know how we want a hidden activity to change on a training case, we can compute how to change the weights.  There are fewer activities than weights, but backprop still wins by a factor of the number of neurons.
-  * Finite Difference Approximation (compute +/- epsilon changes for each weight and move in that direction) works, but backprop finds the exact gradient much more quickly.
+  * Finite Difference Approximation (compute +/- epsilon changes for each weight and move in that direction) works, but backprop finds the exact gradient (del E / del w_{i,j} = Sum_j[del z_j / del w_{i,j} * del E / del z_j] = Sum_j[w_{i,j} * del E / del z_j]) much more quickly.
  * FWC - machine learning (backprop) is all about the learning rate!  So you can either be smart (and use backprop) or buy more computers.  You're only constrained if you need both.  Search Google for: "machine learning for the maximization of an arbitrary function"
   * *Instead of using pre-set coefficients (desired activities) to train engineered features, use error derivatives wrt hidden activities.*  We can compute error derivatives for all of the hidden units efficiently at the same time: Once we have the error derivatives for the hidden activities (hidden neuron output) it's easy to compute the (input) weights going into a hidden unit.
