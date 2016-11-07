@@ -24,3 +24,4 @@ Week 3: Learning the weights of a linear neuron
   * Differentiate the error wrt one of the weights, w_i: del E / del w_i = 0.5 * Sum_n (del y_n / del w_i * d E_n / d y_n) ... Chain Rule ("easy to remember, just cancel those 2 del y_ns ... but only when there aren't any mathematicians looking) ... = -Sum_n (x_{i,n} * (t_n - y_n)
     * del y_n / del w_i = x_{i,n} because y_n = w_i * x_{i,n}
     * d E_n / d y_n is just the derivative of the (squared) Error function
+  * Therefore: delta w_i = -epsilon * del E / del w_i
