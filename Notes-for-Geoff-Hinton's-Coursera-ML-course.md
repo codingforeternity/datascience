@@ -47,3 +47,7 @@ Week 3: The backpropagation algorithm
   * Finite Difference Approximation (compute +/- epsilon changes for each weight and move in that direction) works, but backprop finds the exact gradient (**del E / del w_{i,j}** = Sum_j[del z_j / del w_{i,j} * del E / del z_j] = Sum_j[w_{i,j} * del E / del z_j]) much more quickly.
  * FWC - machine learning (backprop) is all about the learning rate!  So you can either be smart (and use backprop) or buy more computers.  You're only constrained if you need both.  Search Google for: "machine learning for the maximization of an arbitrary function"
   * *Instead of using pre-set coefficients (desired activities) to train engineered features, use error derivatives wrt hidden activities.*  We can compute error derivatives for all of the hidden units efficiently at the same time: Once we have the error derivatives for the hidden activities (hidden neuron output) it's easy to compute the (input) weights going into a hidden unit.
+
+Week 3: Using the derivatives computed by backprop
+* 2 types of noise: unreliable target values (small worry), sampling error (big worry)
+* When we fit the model it cannot tell which regularities are real and which are caused by sampling error.  FWC - So are there methods then to distinguish between the two (besides e.g. cross validation)???
