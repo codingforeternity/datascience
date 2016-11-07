@@ -38,3 +38,4 @@ Week 3: The backpropagation algorithm
 * Adding a layer of hand-coded features (as in perceptron) makes them much more powerful, but the hard bit is designing the features
   * We would like to find good features without requiring insights into the task or repeated trial and error of different features
   * We need to automate the trial and error feature designing loop
+  * FWC - but again the trick here is to properly incorporate priors into this design
