@@ -50,4 +50,12 @@ Week 3: The backpropagation algorithm
 
 Week 3: Using the derivatives computed by backprop
 * 2 types of noise: unreliable target values (small worry), sampling error (big worry)
-* When we fit the model it cannot tell which regularities are real and which are caused by sampling error.  FWC - So are there methods then to distinguish between the two (besides e.g. cross validation)???
+* When we fit the model it cannot tell which regularities are real and which are caused by sampling error.  FWC - So are there methods then to distinguish between the two (besides e.g. cross validation)???  See week 7.
+  * Weight decay - keep weights near 0
+  * Weight sharing - keep some weights similar to each other
+  * Early stopping - peek at a fake test set while training and stop when performance gets decent
+  * Model averaging - train lots of NNs and average then
+  * Bayesian fitting - fancy averaging
+  * Dropout - randomly omitting hidden units when training
+  * Generative pre-training
+  * FWC idea - other constraints such as monotonicity and limits on distributions
