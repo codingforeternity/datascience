@@ -25,3 +25,15 @@ Week 3: Learning the weights of a linear neuron
     * del y_n / del w_i = x_{i,n} because y_n = w_i * x_{i,n}
     * d E_n / d y_n is just the derivative of the (squared) Error function
   * Therefore: delta w_i = -epsilon * del E / del w_i
+
+Week 3: The error surface for a linear neuron
+* Difference between "batch" and "on-line"
+  * Simplest batch learning does steepest gradient descent
+  * On-line/stochastic zig-zags between training case "lines" at each step moving perpendicularly to a line.  Imagine the intersection of 2 training case lines and moving perpendicularly back and forth perpendicularly to both while converging on their intersection point.
+    * This is very slow if the variables are highly correlated (very elongated ellipse) because the perpendicular updates (the gradients) are also perpendicular to the intersection.
+    * FWC idea - look at angle between consecutive gradients to detect correlated dimensions
+
+Week 3: The backpropagation algorithm
+* Networks without hidden layers are very limited in the input-output mappings they can model
+* Adding a layer of hand-coded features (as in perceptron) makes them much more powerful, but the hard bit is designing the features
+  * We would like to find good features without requiring insights into the task or repeated trial and error of different features
