@@ -42,3 +42,4 @@ Week 3: The backpropagation algorithm
 * Reinforcement learning: learning by perturbing weights (an idea that occurs to everyone)
   * Randomly perturb one weight and see if it improves performance--if so, save the change
   * Very inefficient--requires multiple forward passes on a set of training cases just to update one weight.  Backprop much better "by a factor of the number of weights in the network."
+  * Could randomly perturb all the weights in parallel and correlate performance gain w/ weight changes, but not much better b/c requires lots of trials on each training case to "see" the effect of changing one weight through the noise created by changing all the others (FWC - reminds me of the Shapley optimization)
