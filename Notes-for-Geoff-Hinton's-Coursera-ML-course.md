@@ -39,3 +39,6 @@ Week 3: The backpropagation algorithm
   * We would like to find good features without requiring insights into the task or repeated trial and error of different features
   * We need to automate the trial and error feature designing loop
   * FWC - but again the trick here is to properly incorporate priors into this design
+* Reinforcement learning: learning by perturbing weights (an idea that occurs to everyone)
+  * Randomly perturb one weight and see if it improves performance--if so, save the change
+  * Very inefficient--requires multiple forward passes on a set of training cases just to update one weight.  Backprop much better "by a factor of the number of weights in the network."
