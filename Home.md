@@ -13,6 +13,7 @@ Welcome to the fcrimins.github.io wiki!
 - [[Notebook Mining]]
 - [[JoNR: Journal of Negative Results]]
 - [[Multiple Comparisons]]
+- [[Patent Notes]]
 <br><br>
 
 - [[Machine Learning Notes]] and [[ML Examples]]
