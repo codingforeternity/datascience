@@ -1,3 +1,5 @@
+[Handy Statistical Lexicon, Gelman](http://andrewgelman.com/2009/05/24/handy_statistic/) (10/3/16)
+
 [A Curated List of Data Science Interview Questions](https://www.springboard.com/blog/data-science-interview-questions/) (11/8/16)
 
 [When Confounding Variables Are Out Of Control](http://slatestarcodex.com/2016/04/15/links-416-they-cant-link-our-dick/) (5/4/16)
