@@ -40,6 +40,10 @@ Patent Anatomy
   * define invention
   * specify what's specifically being asserted against an potential infringer
   * let the spec drive the claims
+  * e.g. "A method comprising..." "A computer software product comprising..."
+  * make them as broad as possible, but also include narrow claims in case broad ones are overturned
+  * Would there be a single party doing the infringing?  If not, create separate claims for each party.  Are there words or elements of the claims that are unnecessary?  Is the first claim small and concise as possible?  Are all terms well-defined in spec?  Typos?
+  * use the word "device", not "computer"
 
 Links
 * http://www.uspto.gov/web/offices/com/iip/index.htm
