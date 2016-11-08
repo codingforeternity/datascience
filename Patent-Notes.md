@@ -4,10 +4,10 @@ A patent is a description of *an idea* that is **novel or unique**, **useful**, 
 * non-obvious - must have a specific **inventive step** not obvious to others (a big enough step)
 
 Disclose
-1. novel features
-2. novel features that were considered but left on the drawing board
-3. future potential features (for me or others)
-4. any other related novel ideas
+# novel features
+# novel features that were considered but left on the drawing board
+# future potential features (for me or others)
+# any other related novel ideas
 
 3 Parts
 1. background & problem (and make sure the problem comes before the solution, not the other way around)
