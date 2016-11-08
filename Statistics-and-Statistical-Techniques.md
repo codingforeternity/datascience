@@ -1,3 +1,5 @@
+[A Curated List of Data Science Interview Questions](https://www.springboard.com/blog/data-science-interview-questions/) (11/8/16)
+
 [When Confounding Variables Are Out Of Control](http://slatestarcodex.com/2016/04/15/links-416-they-cant-link-our-dick/) (5/4/16)
 * http://blogs.discovermagazine.com/neuroskeptic/2016/04/02/confounding-variables/#.VynS9pStxuB
 * [Statistically Controlling for Confounding Constructs Is Harder than You Think](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0152719)
