@@ -4,21 +4,21 @@ A patent is a description of *an idea* that is **novel or unique**, **useful**, 
 * non-obvious - must have a specific **inventive step** not obvious to others (a big enough step)
 
 Disclose
-1 novel features
-2 novel features that were considered but left on the drawing board
-3 future potential features (for me or others)
-4 any other related novel ideas
+* novel features
+* novel features that were considered but left on the drawing board
+* future potential features (for me or others)
+* any other related novel ideas
 
 3 Parts
-1. background & problem (and make sure the problem comes before the solution, not the other way around)
+* background & problem (and make sure the problem comes before the solution, not the other way around)
   * invention domain - 1-2 paragraphs max, start broad, describe problem, not solution
   * concrete example (brief)
   * prior art table - clean and effective format (columns: keywords, prior art, citation, description & disadvantages)
   * known solutions and drawbacks to them (and why is an additional solution required)
-2. summary (including differentiating prior art, examples, figures)
+* summary (including differentiating prior art, examples, figures)
   * high level description (1-3 sentences)
   * 1-3 more sentences describing advantages of proposed solution
-3. implementation details
+* implementation details
   * preferred realization/embodiment - 3-5 sentences, concrete terms to be broadcasted throughout the patent, high level
   * impl details - most important section, vivid detail, numbered outline effective (8-12 items), can translate directly to attorney claims
   * example - 1-2 paragraphs or a list, concrete, perhaps reference earlier example
