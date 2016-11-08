@@ -16,7 +16,7 @@ Welcome to the fcrimins.github.io wiki!
 - [[Patent Notes]]
 <br><br>
 
-- [[Machine Learning Notes]] and [[ML Examples]]
+- [[Machine Learning Notes]]
 - [[NLP Notes]]
 - [[Game Theory]]
 <br><br>
