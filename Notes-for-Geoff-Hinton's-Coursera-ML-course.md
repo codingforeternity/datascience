@@ -89,4 +89,4 @@ Week 4: Neural nets for machine learning
     * We need many different types of relationship and the connections in a neural net do not have discrete labels.
     * We need ternary relationships as well as binary ones.  e.g. A is between B and C.
   * **The right way to implement relational knowledge in a neural net is still an open issue.**
-    * But many neurons are probably used for each concept and each neuron is probably involved in many concepts. This is called a “distributed representation”.  "A many-to-many mapping between concepts and neurons"
+    * But many neurons are probably used for each concept and each neuron is probably involved in many concepts. This is called a “distributed representation”.  "*A many-to-many mapping between concepts and neurons.*"
