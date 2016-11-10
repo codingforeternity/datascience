@@ -1,3 +1,5 @@
+[Introductory Statistics for Data Science](http://davegiles.blogspot.com/2015/04/introductory-statistics-for-data-science.html) (4/26/15)
+
 [Handy Statistical Lexicon, Gelman](http://andrewgelman.com/2009/05/24/handy_statistic/) (10/3/16)
 
 [A Curated List of Data Science Interview Questions](https://www.springboard.com/blog/data-science-interview-questions/) (11/8/16)
