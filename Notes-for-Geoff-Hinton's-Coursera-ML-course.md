@@ -97,3 +97,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   * If the desired output is 1 and the actual output is 0.00000001 there is almost no gradient for a logistic unit to fix up the error.
   * If we are trying to assign probabilities to mutually exclusive class labels, we know that the outputs should sum to 1, but we are depriving the network of this knowledge.
   * [FWC - **I wonder if the changes to the loss function that are about to be described are a *dual* of a representation of constraints as output neurons.  E.g. could the effects of this different loss function be obtained by changing the architecture of the output?**]
+* The output units in a softmax group use a non-local non-linearity:
+  * z_i input to final layer, Sum_i[z_i] != 1
+  * then scale "softmax group(s)" so that they sum to 1: y_i = e^(z_i) / Sum_j[e^(z_j)]
+  * del y_i / del z_i = y_i * (1 - y_i) ... not trivial to derive b/c of all the terms in the numerator above
