@@ -84,3 +84,9 @@ Week 4: Neural nets for machine learning
     * The net can “intuit” the answer in a forward pass.
   * We may use explicit rules for conscious, deliberate reasoning, but we do a lot of commonsense, analogical reasoning by just “seeing” the answer with no conscious intervening steps.
     * Even when we are using explicit rules, we need to just see which rules to apply.  [FWC - i.e. just "seeing" the answer is the same as just "seeing" which rules apply]
+* Localist and distributed representations of concepts
+  * The obvious way to implement a relational graph in a neural net is to treat a neuron as a node in the graph and a connection as a binary relationship. But this “localist” method will not work:
+    * We need many different types of relationship and the connections in a neural net do not have discrete labels.
+    * We need ternary relationships as well as binary ones.  e.g. A is between B and C.
+  * **The right way to implement relational knowledge in a neural net is still an open issue.**
+    * But many neurons are probably used for each concept and each neuron is probably involved in many concepts. This is called a “distributed representation”.
