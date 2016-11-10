@@ -59,3 +59,12 @@ Week 3: Using the derivatives computed by backprop
   * Dropout - randomly omitting hidden units when training
   * Generative pre-training
   * FWC idea - other constraints such as monotonicity and limits on distributions
+
+Week 4: Neural nets for machine learning
+* Obvious way to express regularities is as symbolic **rules**
+  * but finding the symbolic rules involves a difficult search through a large discreet space
+  * so model as a NN instead w/
+    * input := person1 + relationship (both 1-hot encodings)
+    * output := person2 (also 1-hot)
+* Instead of predicting the 3rd term in a relationship, [A R B], we could provide all 3 as input and predict P([A R B] is correct)
+  * for this we'd need a whole bunch of "correct" facts as well as "incorrect" ones (fwc - negative sampling)
