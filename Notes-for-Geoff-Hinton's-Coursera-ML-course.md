@@ -68,3 +68,13 @@ Week 4: Neural nets for machine learning
     * output := person2 (also 1-hot)
 * **Instead of predicting the 3rd term in a relationship, [A R B], we could provide all 3 as input and predict P([A R B] is correct)**
   * for this we'd need a whole bunch of "correct" facts as well as "incorrect" ones (fwc - **negative sampling**)
+
+4b: A brief diversion into cognitive science<br/>
+[probably not interesting if you're an engineer]
+* There has been a long debate in cognitive science between two rival theories of what it means to have a concept:
+  * The feature theory : A concept is a set of semantic features.
+    * This is good for explaining similarities between concepts.
+    * Its convenient: a concept is a vector of feature activities.
+  * The structuralist theory: The meaning of a concept lies in its relationships to other concepts.
+    * So conceptual knowledge is best expressed as a relational graph.
+    * Minsky used the limitations of perceptrons as evidence against feature vectors and in favor of relational graph representations.
