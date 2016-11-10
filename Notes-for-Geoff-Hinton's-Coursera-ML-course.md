@@ -78,3 +78,9 @@ Week 4: Neural nets for machine learning
   * The structuralist theory: The meaning of a concept lies in its relationships to other concepts.
     * So conceptual knowledge is best expressed as a relational graph.
     * Minsky used the limitations of perceptrons as evidence against feature vectors and in favor of relational graph representations.
+* Both sides are wrong
+  * These two theories need not be rivals. A neural net can use **vectors of semantic features to implement a relational graph**.
+    * In the neural network that learns family trees, no *explicit* inference is required to arrive at the intuitively obvious consequences of the facts that have been explicitly learned.
+    * The net can “intuit” the answer in a forward pass.
+  * We may use explicit rules for conscious, deliberate reasoning, but we do a lot of commonsense, analogical reasoning by just “seeing” the answer with no conscious intervening steps.
+    * Even when we are using explicit rules, we need to just see which rules to apply.  [FWC - i.e. just "seeing" the answer is the same as just "seeing" which rules apply]
