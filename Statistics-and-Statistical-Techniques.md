@@ -1,3 +1,5 @@
+[Scaling and Normalization with Naive Bayes in Python](http://sebastianraschka.com/Articles/2014_about_feature_scaling.html) (11/10/16)
+
 [Introductory Statistics for Data Science](http://davegiles.blogspot.com/2015/04/introductory-statistics-for-data-science.html) (4/26/15)
 
 [Handy Statistical Lexicon, Gelman](http://andrewgelman.com/2009/05/24/handy_statistic/) (10/3/16)
