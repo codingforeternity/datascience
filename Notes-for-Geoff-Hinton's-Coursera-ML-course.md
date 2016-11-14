@@ -1,6 +1,6 @@
 Octave source: https://ftp.gnu.org/gnu/octave/
 
-<h2>Week 2: Types of Neural Network Architectures</h2>
+<h3>Week 2: Types of Neural Network Architectures</h3>
 * Ilya Sutskever (2011) trained special type or RNN to predict next char in sequence
   * it generates text by predicting the probability distribution for the next char, not the highest likely next char (which would generate text like "the united states of the united states of the..."), and then sampling from that distribution
 * symmetric nets are much easier to analyze than RNNs (John Hopfield)
@@ -16,7 +16,7 @@ Octave source: https://ftp.gnu.org/gnu/octave/
   * So the tricky part of PR must be solved by the hand-coded feature detectors, not the learning procedure.
   * Networks without hidden units are very limited in what they can learn to model.
 
-Week 3: Learning the weights of a linear neuron
+<h3>Week 3: Learning the weights of a linear neuron</h3>
 * Instead of showing the weights get closer to a good set of weights (i.e. perceptrons, which suffer from 2 good set of weights do not average to a good set) show that actual output values get closer to the target values.
   * In perceptron learning the outputs can get farther away from the targets, even though the weights are getting closer.
 * The "delta rule" for learning: delta w_i = epsilon * x_i * (t - y) ... where epsilon := "learning rate", t := target/true output, and y := estimated output
@@ -26,14 +26,14 @@ Week 3: Learning the weights of a linear neuron
     * d E_n / d y_n is just the derivative of the (squared) Error function
   * Therefore: delta w_i = -epsilon * del E / del w_i
 
-Week 3: The error surface for a linear neuron
+<h3>Week 3: The error surface for a linear neuron</h3>
 * Difference between "batch" and "on-line"
   * Simplest batch learning does steepest gradient descent
   * On-line/stochastic zig-zags between training case "lines" at each step moving perpendicularly to a line.  Imagine the intersection of 2 training case lines and moving perpendicularly back and forth perpendicularly to both while converging on their intersection point.
     * This is very slow if the variables are highly correlated (very elongated ellipse) because the perpendicular updates (the gradients) are also perpendicular to the intersection.
     * FWC idea - look at angle between consecutive gradients to detect correlated dimensions
 
-Week 3: The backpropagation algorithm
+<h3>Week 3: The backpropagation algorithm</h3>
 * Networks without hidden layers are very limited in the input-output mappings they can model
 * Adding a layer of hand-coded features (as in perceptron) makes them much more powerful, but the hard bit is designing the features
   * We would like to find good features without requiring insights into the task or repeated trial and error of different features
@@ -48,7 +48,7 @@ Week 3: The backpropagation algorithm
  * FWC - machine learning (backprop) is all about the learning rate!  So you can either be smart (and use backprop) or buy more computers.  You're only constrained if you need both.  Search Google for: "machine learning for the maximization of an arbitrary function"
   * *Instead of using pre-set coefficients (desired activities) to train engineered features, use error derivatives wrt hidden activities.*  We can compute error derivatives for all of the hidden units efficiently at the same time: Once we have the error derivatives for the hidden activities (hidden neuron output) it's easy to compute the (input) weights going into a hidden unit.
 
-Week 3: Using the derivatives computed by backprop
+<h3>Week 3: Using the derivatives computed by backprop</h3>
 * 2 types of noise: unreliable target values (small worry), sampling error (big worry)
 * When we fit the model it cannot tell which regularities are real and which are caused by sampling error.  FWC - So are there methods then to distinguish between the two (besides e.g. cross validation)???  See week 7.
   * Weight decay - keep weights near 0
@@ -60,7 +60,7 @@ Week 3: Using the derivatives computed by backprop
   * Generative pre-training
   * FWC idea - other constraints such as monotonicity and limits on distributions
 
-Week 4: Neural nets for machine learning
+<h3>Week 4: Neural nets for machine learning</h3>
 * Obvious way to express regularities is as symbolic **rules**
   * but finding the symbolic rules involves a difficult search through a large discreet space
   * so model as a NN instead w/
@@ -69,7 +69,7 @@ Week 4: Neural nets for machine learning
 * **Instead of predicting the 3rd term in a relationship, [A R B], we could provide all 3 as input and predict P([A R B] is correct)**
   * for this we'd need a whole bunch of "correct" facts as well as "incorrect" ones (fwc - **negative sampling**)
 
-4b: A brief diversion into cognitive science<br/>
+<h3>4b: A brief diversion into cognitive science</h3>
 [probably not interesting if you're an engineer]
 * There has been a long debate in cognitive science between two rival theories of what it means to have a concept:
   * The feature theory : A concept is a set of semantic features.
@@ -91,7 +91,7 @@ Week 4: Neural nets for machine learning
   * **The right way to implement relational knowledge in a neural net is still an open issue.**
     * But many neurons are probably used for each concept and each neuron is probably involved in many concepts. This is called a “distributed representation”.  "*A many-to-many mapping between concepts and neurons.*"
 
-4c: The softmax output function<br/>
+<h3>4c: The softmax output function</h3>
 softmax a way of forcing the outputs to sum to 1 so that they can represent a probability distribution across discrete, mutually exclusive alternatives
 * The squared error measure has some drawbacks:
   * If the desired output is 1 and the actual output is 0.00000001 there is almost no gradient for a logistic unit to fix up the error.
@@ -109,7 +109,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     * Effectively, the steepness of dC/dy exactly balances the flatness of dy/dz
       * del C / del z_i = Sum_j[ del C / del y_i * del y_i / del z_i ] = y_i - t_i  .... (the chain rule again)
 
-<mark>Lecture 4d: Neuro-probabilistic language models</mark>
+<h3>Lecture 4d: Neuro-probabilistic language models</h3>
 * Information that the trigram model fails to use
   * Suppose we have seen the sentence: “the cat got squashed in the garden on friday”
   * This should help us predict words in the sentence: “the dog got flattened in the yard on monday”
