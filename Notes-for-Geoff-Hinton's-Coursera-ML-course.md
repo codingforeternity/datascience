@@ -125,6 +125,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
 * (for some reason I can't get numbered lists to work unless they are sublists)
   1. The cross-entropy cost function with an *n*-way softmax unit (a softmax unit with *n* different outputs) is equivalent to: (answer) the cross entropy cost function with n logistic units
     * FWC - reason: b/c softmax is just a scaling of logistic
+    * wrong - correct answer "None of the above"
   2. A 2-way softmax unit (a softmax unit with 2 elements) with the cross entropy cost function is equivalent to: (answer) a logistic unit with the cross-entropy cost function
     * FWC - reason: b/c -t log (z) - (1 - t) log (1 - z) is equivalent to 
   3. The output of a neuro-probabilistic language model is a large softmax unit and this creates problems if the vocabulary size is large. Andy claims that the following method solves this problem: At every iteration of training, train the network to predict the current learned feature vector of the target word (instead of using a softmax). Since the embedding dimensionality is typically much smaller than the vocabulary size, we don't have the problem of having many output weights any more. Which of the following are correct? Check all that apply.
