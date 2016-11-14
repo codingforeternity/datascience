@@ -131,3 +131,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   * (check) The serialized version of the model discussed in the slides is using the current word embedding for the output word, but it's optimizing something different than what Andy is suggesting.
   * (not checked) In theory there's nothing wrong with Andy's idea. However, the number of learnable parameters will be so far reduced that the network no longer has sufficient learning capacity to do the task well.
   * (not checked) Andy is correct: this is equivalent to the serialized version of the model discussed in the lecture.
+4. (a) optimal -> 4; (b) greedy -> 2
+5. No
+6. In the Collobert and Weston model, the problem of learning a feature vector from a sequence of words is turned into a problem of: Learning a binary classifier.
+  * FWC - (reason) kws: **dual** (see above for this word also)
