@@ -122,7 +122,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     * [Using a (lower dimensioned) feature representation also allows for a context that contains many more previous words (e.g. 10).]
 
 <h3>Week 3 Quiz<h3/>
-* list
+* (for some reason I can't get numbered lists to work unless they are sublists)
   1. The cross-entropy cost function with an *n*-way softmax unit (a softmax unit with *n* different outputs) is equivalent to: (answer) the cross entropy cost function with n logistic units
     * FWC - reason: b/c softmax is just a scaling of logistic
   2. A 2-way softmax unit (a softmax unit with 2 elements) with the cross entropy cost function is equivalent to: (answer) a logistic unit with the cross-entropy cost function
@@ -136,3 +136,4 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   5. No
   6. In the Collobert and Weston model, the problem of learning a feature vector from a sequence of words is turned into a problem of: Learning a binary classifier.
     * FWC - (reason) kws: **dual** (see above for this word also)
+  7. not worried - network doesn't care about ordering
