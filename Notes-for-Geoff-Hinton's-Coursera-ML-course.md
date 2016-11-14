@@ -138,3 +138,4 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   6. In the Collobert and Weston model, the problem of learning a feature vector from a sequence of words is turned into a problem of: Learning a binary classifier.
     * FWC - (reason) kws: **dual** (see above for this word also)
   7. not worried - network doesn't care about ordering
+    * 7 (take 2) - network loses the location
