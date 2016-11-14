@@ -104,6 +104,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
 * **Cross-entropy**: the *right* cost function to use with softmax
   * The right cost function is the **negative log probability of the right answer**.  [FWC - because the answer is a 1-hot vector with a 1 at the right answer]
     * C = -Sum_j[t_j * ln(y_j)] ... where t_j == 1 for only one j
+    * C = -ln( exp(y_i) / Sum_j[exp(y_j)] )  ... where i is the right answer (this is from Quiz 4, question 1)
   * C has a very big gradient when the target value is 1 and the output is almost zero.
     * A value of 0.000001 is much better than 0.000000001 (for a target value of 1)
     * Effectively, the steepness of dC/dy exactly balances the flatness of dy/dz
@@ -117,3 +118,6 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     * cat/dog squashed/flattened garden/yard friday/monday
   * To overcome this limitation, we need to use the semantic and syntactic features of previous words to predict the features of the next word.
     * [Using a (lower dimensioned) feature representation also allows for a context that contains many more previous words (e.g. 10).]
+
+<h3>Week 3 Quiz<h3/>
+1. The cross-entropy cost function with an *n*-way softmax unit (a softmax unit with *n* different outputs) is equivalent to: (answer) 
