@@ -122,16 +122,17 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     * [Using a (lower dimensioned) feature representation also allows for a context that contains many more previous words (e.g. 10).]
 
 <h3>Week 3 Quiz<h3/>
-1. The cross-entropy cost function with an *n*-way softmax unit (a softmax unit with *n* different outputs) is equivalent to: (answer) the cross entropy cost function with n logistic units
-  * FWC - reason: b/c softmax is just a scaling of logistic
-2. A 2-way softmax unit (a softmax unit with 2 elements) with the cross entropy cost function is equivalent to: (answer) a logistic unit with the cross-entropy cost function
-  * FWC - reason: b/c -t log (z) - (1 - t) log (1 - z) is equivalent to 
-3. The output of a neuro-probabilistic language model is a large softmax unit and this creates problems if the vocabulary size is large. Andy claims that the following method solves this problem: At every iteration of training, train the network to predict the current learned feature vector of the target word (instead of using a softmax). Since the embedding dimensionality is typically much smaller than the vocabulary size, we don't have the problem of having many output weights any more. Which of the following are correct? Check all that apply.
-  * (check) If we add in extra derivatives that change the feature vector for the target word to be more like what is predicted, it may find a trivial solution in which all words have the same feature vector.
-  * (check) The serialized version of the model discussed in the slides is using the current word embedding for the output word, but it's optimizing something different than what Andy is suggesting.
-  * (not checked) In theory there's nothing wrong with Andy's idea. However, the number of learnable parameters will be so far reduced that the network no longer has sufficient learning capacity to do the task well.
-  * (not checked) Andy is correct: this is equivalent to the serialized version of the model discussed in the lecture.
-4. (a) optimal -> 4; (b) greedy -> 2
-5. No
-6. In the Collobert and Weston model, the problem of learning a feature vector from a sequence of words is turned into a problem of: Learning a binary classifier.
-  * FWC - (reason) kws: **dual** (see above for this word also)
+* list
+  1. The cross-entropy cost function with an *n*-way softmax unit (a softmax unit with *n* different outputs) is equivalent to: (answer) the cross entropy cost function with n logistic units
+    * FWC - reason: b/c softmax is just a scaling of logistic
+  2. A 2-way softmax unit (a softmax unit with 2 elements) with the cross entropy cost function is equivalent to: (answer) a logistic unit with the cross-entropy cost function
+    * FWC - reason: b/c -t log (z) - (1 - t) log (1 - z) is equivalent to 
+  3. The output of a neuro-probabilistic language model is a large softmax unit and this creates problems if the vocabulary size is large. Andy claims that the following method solves this problem: At every iteration of training, train the network to predict the current learned feature vector of the target word (instead of using a softmax). Since the embedding dimensionality is typically much smaller than the vocabulary size, we don't have the problem of having many output weights any more. Which of the following are correct? Check all that apply.
+    * (check) If we add in extra derivatives that change the feature vector for the target word to be more like what is predicted, it may find a trivial solution in which all words have the same feature vector.
+    * (check) The serialized version of the model discussed in the slides is using the current word embedding for the output word, but it's optimizing something different than what Andy is suggesting.
+    * (not checked) In theory there's nothing wrong with Andy's idea. However, the number of learnable parameters will be so far reduced that the network no longer has sufficient learning capacity to do the task well.
+    * (not checked) Andy is correct: this is equivalent to the serialized version of the model discussed in the lecture.
+  4. (a) optimal -> 4; (b) greedy -> 2
+  5. No
+  6. In the Collobert and Weston model, the problem of learning a feature vector from a sequence of words is turned into a problem of: Learning a binary classifier.
+    * FWC - (reason) kws: **dual** (see above for this word also)
