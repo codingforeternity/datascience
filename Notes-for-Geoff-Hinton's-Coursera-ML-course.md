@@ -99,8 +99,8 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   * [FWC - **I wonder if the changes to the loss function that are about to be described are a *dual* of a representation of constraints as output neurons.  E.g. could the effects of this different loss function be obtained by changing the architecture of the output?**]
 * The output units in a softmax group use a non-local non-linearity:
   * z_i input to final layer, Sum_i[z_i] != 1
-  * then scale "softmax group(s)" so that they sum to 1: y_i = e^(z_i) / Sum_j[e^(z_j)]
-  * del y_i / del z_i = y_i * (1 - y_i) ... not trivial to derive b/c of all the terms in the numerator above
+  * then scale "softmax group(s)" so that they sum to 1: y_i = **e^**(z_i) / Sum_j[**e^**(z_j)] ... (**don't forget the e's!**)
+  * **del y_i / del z_i = y_i * (1 - y_i)** ... not trivial to derive b/c of all the terms in the numerator above
 * **Cross-entropy**: the right cost function to use with softmax
   * The right cost function is the **negative log probability of the right answer**.  [FWC - because the answer is a 1-hot vector with a 1 at the right answer]
     * C = -Sum_j[t_j * ln(y_j)] ... where t_j == 1 for only one j
