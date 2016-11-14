@@ -103,7 +103,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   * del y_i / del z_i = y_i * (1 - y_i) ... not trivial to derive b/c of all the terms in the numerator above
 * **Cross-entropy**: the right cost function to use with softmax
   * The right cost function is the **negative log probability of the right answer**.  [FWC - because the answer is a 1-hot vector with a 1 at the right answer]
-    * C = -Sum_j[t_j * ln y_j] ... where t_j == 1 for only one j
+    * C = -Sum_j[t_j * ln(y_j)] ... where t_j == 1 for only one j
   * C has a very big gradient when the target value is 1 and the output is almost zero.
     * A value of 0.000001 is much better than 0.000000001 (for a target value of 1)
     * Effectively, the steepness of dC/dy exactly balances the flatness of dy/dz
