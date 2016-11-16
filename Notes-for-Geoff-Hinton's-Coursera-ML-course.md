@@ -139,3 +139,12 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     * FWC - (reason) kws: **dual** (see above for this word also)
   7. not worried - network doesn't care about ordering
     * 7 (take 2) - network loses the location
+
+<h3>Week 4: see green Staples notebook<h3/>
+
+<h3>Week 5a: Why object recognition is difficult<h3/>
+* Segmentation
+* Lighting
+* Deformation
+* Affordances: Object classes are often defined by how they are used: Chairs are things designed for sitting on so they have a wide variety of physical shapes.
+  * FWC - this suggests videos of objects being used might be useful for image recognition
