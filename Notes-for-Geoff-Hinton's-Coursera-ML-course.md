@@ -154,3 +154,5 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
 * Deformation
 * Affordances: Object classes are often defined by how they are used: Chairs are things designed for sitting on so they have a wide variety of physical shapes.
   * FWC - this suggests videos of objects being used might be useful for image recognition
+* Viewpoint/transformation
+  * Imagine a medical database in which the age of the patient is sometimes labeled incorrectly as the patient's weight - this is called "dimension hopping" which needs to be eliminated before applying ML
