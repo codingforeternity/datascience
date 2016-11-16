@@ -181,5 +181,27 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     * A wide net that can cope with several characters at once even if they overlap.
     * A clever way of training a complete system, not just a recognizer.
   * This net was used for reading ~10% of the checks in North America.
-  * Look the impressive demos of LENET at hHp://yann.lecun.com 
+  * Look the impressive demos of LENET at **http://yann.lecun.com**
+  * Architecture of Le Net
+    * C1 features maps - 6 at 28x28 pixels each, each pixel in one of these maps is computed by applying 3x3 convolution function to original image, but all 3x3 pools are the same, so there are only 9 parameters per map
+    * S2 feature maps - "subsampling" == "pooling" to reduce each 28x28 down to 14x14
+    * C3 feature maps 16 @ 10x10
+    * S4 feature maps 16 @ 5x5
+    * C5 layer (i.e. no more feature map, just a straight layer) of 120 nodes
+    * F6 layer 84 (fully connected)
+    * output 10 (one for each digit, Gaussian(/softmax?) fully connected)
+* **Priors and Prejudice**
+  * We can put our prior knowledge about the task into the network by designing appropriate:
+    * Connectivity.
+    * Weight constraints.
+    * Neuron activation functions
+  * This is *less intrusive than hand-designing the features*.
+    * But it still prejudices the network towards the particular way of solving the problem that we had in mind.
+  * Alternatively, we can use our prior knowledge to create a whole lot more training data.
+    * This may require a lot of work, e.g. build a simulator (Hofman&Tresp, 1993)
+    * It may make learning take much longer.
+    * It allows optimization to discover clever ways of using the multi-layer network that we did not think of.
+    * *And we may never fully understand how it does it.*
+  
+  
 
