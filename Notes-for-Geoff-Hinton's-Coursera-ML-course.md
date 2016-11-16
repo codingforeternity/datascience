@@ -92,6 +92,8 @@ Also see accompanying green Staples notebook.
     * We need ternary relationships as well as binary ones.  e.g. A is between B and C.
   * **The right way to implement relational knowledge in a neural net is still an open issue.**
     * But many neurons are probably used for each concept and each neuron is probably involved in many concepts. This is called a “distributed representation”.  "*A many-to-many mapping between concepts and neurons.*"
+  * a "local" representation of a word is a 1-hot vector of length equal to the size of the vocab
+  * a "distributed" representation is a word embedding
 
 <h3>4c: The softmax output function</h3>
 softmax a way of forcing the outputs to sum to 1 so that they can represent a probability distribution across discrete, mutually exclusive alternatives
