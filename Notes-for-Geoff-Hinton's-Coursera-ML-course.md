@@ -113,6 +113,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
       * del C / del z_i = Sum_j[ del C / del y_i * del y_i / del z_i ] = y_i - t_i  .... (the chain rule again)
 
 <h3>Lecture 4d: Neuro-probabilistic language models</h3>
+* Bengio's NN for predicting the next word (see green Staples notebook or pdfs)
 * Information that the trigram model fails to use
   * Suppose we have seen the sentence: “the cat got squashed in the garden on friday”
   * This should help us predict words in the sentence: “the dog got flattened in the yard on monday”
@@ -121,7 +122,14 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   * To overcome this limitation, we need to use the semantic and syntactic features of previous words to predict the features of the next word.
     * [Using a (lower dimensioned) feature representation also allows for a context that contains many more previous words (e.g. 10).]
 
-<h3>Week 3 Quiz<h3/>
+<h3>Lecture 4e: Dealing with a large number of possible outputs</h3>
+* embed words in 2D, 2 approaches (see green Staples notebook or pdfs)
+  * NN to predict logit
+  * tree-based approach (Minih, Hinton 2009)
+* a simpler way to learn feature vectors of words (Collobert,  Weston, 2008)
+  * introduction to negative sampling
+* eventually apply dimension reduction (t-SNE) to display these vectors in a 2D map
+<h3>Week 4 Quiz<h3/>
 * (for some reason I can't get numbered lists to work unless they are sublists)
   1. The cross-entropy cost function with an *n*-way softmax unit (a softmax unit with *n* different outputs) is equivalent to: (answer) the cross entropy cost function with n logistic units
     * FWC - reason: b/c softmax is just a scaling of logistic
@@ -139,8 +147,6 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     * FWC - (reason) kws: **dual** (see above for this word also)
   7. not worried - network doesn't care about ordering
     * 7 (take 2) - network loses the location
-
-<h3>Week 4: see green Staples notebook<h3/>
 
 <h3>Week 5a: Why object recognition is difficult<h3/>
 * Segmentation
