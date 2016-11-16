@@ -156,3 +156,15 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   * FWC - this suggests videos of objects being used might be useful for image recognition
 * Viewpoint/transformation
   * Imagine a medical database in which the age of the patient is sometimes labeled incorrectly as the patient's weight - this is called "dimension hopping" which needs to be eliminated before applying ML
+
+<h3>5c: Convolutional neural networks for hand-written digit recognition<h3/>
+* The replicated feature approach (currently the dominant approach for NNs)
+  * Use many different copies of the same feature detector w/ diff positions
+    * Could also replicate across scale and orientation (tricky and expensive)
+  * Use several different features tyeps, each w/ its own map of replicated features (FWC - each with its own convolution function)
+* **Backpropagation with weight constraints**
+  * It's easy to modify backprop to incorporate linear constraints btw weights
+    * Start with w_1 = w_2, then at every iteration ensure that delta(w_1) = delta(w_2)
+  * Compute the gradients as usual, but then modify them so they satisfy constraints
+    * set del E / del w_1 (and the same for w_2) to the average of the two partial derivatives
+
