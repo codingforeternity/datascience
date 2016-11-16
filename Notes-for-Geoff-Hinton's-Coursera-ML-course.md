@@ -167,4 +167,19 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     * Start with w_1 = w_2, then at every iteration ensure that delta(w_1) = delta(w_2)
   * Compute the gradients as usual, but then modify them so they satisfy constraints
     * set del E / del w_1 (and the same for w_2) to the average of the two partial derivatives
+* Invariant knowledge: if a feature is useful in *some* locations during _training_, detectors for that feature will be available in all locations during *testing*.
+  * "equivariance in the activities and invariance in the weights"
+* Pooling
+  * Achieve a small amount of translational invariance at each level by pooling (averaging or taking the max, which is slightly better) four neighboring replicated detectors to give a single output to the next level
+  * Problem: after several levels of pooling, we've lost info about precise positioning of things
+  * allows us to recognize if the image is a face "but if you want to recognize *whose* face it is" you need precise spatial relationships between high-level parts, which has been lost by CNNs
+* Le Net
+  * Yann LeCun and his collaborators developed a really good recognizer for handwritten digits by using backpropagation in a feedforward net with:
+    * Many hidden layers
+    * Many maps of replicated units in each layer.
+    * Pooling of the outputs of nearby replicated units.
+    * A wide net that can cope with several characters at once even if they overlap.
+    * A clever way of training a complete system, not just a recognizer.
+  * This net was used for reading ~10% of the checks in North America.
+  * Look the impressive demos of LENET at hHp://yann.lecun.com 
 
