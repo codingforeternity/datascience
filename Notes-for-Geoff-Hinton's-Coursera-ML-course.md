@@ -219,6 +219,15 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     * Need to look at which errors first model got right but second got wrong and vice versa.
     * McNemar test: uses ratio of model_1_wrong_model_2_right to model_1_right_model_2_wrong
       * if 30 and 40 errors this could break down into [29 shared plus 1 vs. 11] or [15 shared plus 25 vs. 15]
+* A neural network for ImageNet (16% vs. 26% for all other participants in the 2012 competition)
+  * Alex Krizhevsky (NIPS 2012) developed a very deep CNN with the following architecture:
+    * 7 hidden layers ("deeper than usual") not counting some max pooling layers.
+    * The early layers were convolutional. "Could probably get away with using local receptive fields without tying any weights, but would need a much bigger computer.  By making them convolutional, you cut down on the number of parameters a lot, and you cut down on the amount of training data a lot."
+    * The last 2 layers were globally connected, which is where most parameters are ~16mm between those 2.
+      * These 2 layers are looking for combinations of the features extracted by the earlier layers--and obviously there is combinatorially l
+    * Activation functions:
+      * **Rectified linear units** in every hidden layer, which train much faster and more expressive than logistic units (nobody uses logistic anymore)
+      * **Competitive normalization** to suppress hidden activities when nearby units have stronger activities, which helps w/ variations in intensity.
   
   
 
