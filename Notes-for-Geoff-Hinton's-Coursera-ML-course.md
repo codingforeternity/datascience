@@ -209,8 +209,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
       * the pooling.
     * This achieves about 80 errors.
     * This can be reduced to about 40 errors by using many different transformations of the input and other tricks (Ranzato 2008)
-    * Ciresan et. al. (2010) inject knowledge of invariances by creating a huge amount of carefully
-designed extra training data:
+    * Ciresan et. al. (2010) **inject knowledge of invariances** by creating a huge amount of *carefully designed* extra training data:
       * For each training image, they produce many new training examples by applying many different transformations.
       * **They can then train a large, deep, dumb net on a GPU without much overfitting**. -- only because they have so much extra training data
       * They achieve about 35 errors.
