@@ -191,7 +191,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     * F6 layer 84 (fully connected)
     * output 10 (one for each digit, Gaussian(/softmax?) fully connected)
 * **Priors and Prejudice**
-  * We can put our prior knowledge about the task into the network by designing appropriate:
+  * **We can put our prior knowledge about the task into the network** by designing appropriate:
     * Connectivity.
     * Weight constraints.
     * Neuron activation functions
