@@ -230,7 +230,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
       * **Competitive normalization** to suppress hidden activities when nearby units have stronger activities, which helps w/ variations in intensity.
     * Train on random 224x224 patches of 256x256 images to get more data in addition to left-to-right reflections.
       * At test time, combine the opinions of 10 different 224x224 patches: 4 corners + center + 5 reflections
-    * Use "**dropout**" to regularize the weights in the globally connected layers
+    * Use "**dropout**" to regularize the weights in the globally connected layers (worth several percentage points of improvement)
       * half of hidden units are randomly removed for each training example -> units cannot learn to overly correct for each other (FWC - can't be too co-linear)
       * **prevents overfitting**
   
