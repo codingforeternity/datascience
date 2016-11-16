@@ -214,6 +214,11 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
         * FWC - e.g. risk factors, residual variance, and phantom factors -- allows computation of model sensitivity to assumptions
       * **They can then train a large, deep, dumb net on a GPU without much overfitting**. -- only because they have so much extra training data
       * They achieve about 35 errors.
+  * How to detect a significant drop in the error rate?
+    * Is 30 out of 10,000 significantly better than 40?
+    * Need to look at which errors first model got right but second got wrong and vice versa.
+    * McNemar test: uses ratio of model_1_wrong_model_2_right to model_1_right_model_2_wrong
+      * if 30 and 40 errors this could break down into [29 shared plus 1 vs. 11] or [15 shared plus 25 vs. 15]
   
   
 
