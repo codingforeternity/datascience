@@ -11,6 +11,8 @@ WeightCollection.scale(weights, 1F / numWorkers)
 val broadcastWeights = sc.broadcast(weights)
 workers.foreach(_ => net.setWeights(broadcastWeights.values))
 ```
+* Code: https://github.com/amplab/SparkNet
+* Paper: http://arxiv.org/abs/1511.06051
 
 [Performing Advanced Analytics on Relational Data with Spark SQL](https://www.safaribooksonline.com/library/view/performing-advanced-analytics/9781491908297/part00.html?autoStart=True)
 * "**Similar to typical ETL**, except doing it all in one program!"
