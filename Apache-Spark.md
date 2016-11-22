@@ -14,6 +14,14 @@ people.registerAsTable("people") // FWC - this is the key!  Spark already has re
   * scan only required columns
   * fewer allocated objects (GC) - same data in a Python RDD 4GB vs. 2GB for a Spark RDD
   * automatically select best compression
+* Disk caching
+```scala
+people.saveAsParquetFile("people.parquet")
+// Parquet files are self-describing so the schema is preserved
+val parquetFile = sqlContext.parquetFile("people.parquet")
+// parquet files can also be registered as tables (and then used in SQL statements)
+parquetFile.registerAsTable("parquetFile")
+```
 
 [Exception Handling in Apache Spark](https://www.nicolaferraro.me/2016/02/18/exception-handling-in-apache-spark/) (9/14/16)
 * import it.nerdammer.spark.additions._
