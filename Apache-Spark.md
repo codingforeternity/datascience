@@ -11,7 +11,7 @@
   * For performance
     * Increase the batch interval, if possible,
     * Incremental aggregations with inverse reduce function
-    * Checkpointing - e.g. if batch interval is 30 minutes, set up checkpoints every 10 to ensure that you don't have to go back 30 if there's a failure
+    * Checkpointing - e.g. if batch interval is 30 minutes, set up checkpoints every 10 to ensure that you don't have to go back 30 if there's a failure - `wordStream.checkpoint(checkpointInterval)`
 
 [Beyond shuffling: Tips and tricks for scaling Spark jobs - Holden Karau (IBM)](https://www.safaribooksonline.com/library/view/the-spark-video/9781491970355/video256090.html)
 * If using non-JVM language (Python or R), then you should really use DataFrames.  The cost of using RDDs in any non JVM language is quite high because the data needs to be copied from the JVM to worker processes (running Python or R) and then back to JVM.  The data has to be serialized twice, e.g. in Python it gets Pickled.
