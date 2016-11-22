@@ -3,7 +3,8 @@
 * Where does DataFrame explode?
   * Iterative algorithms - large execution plans
   * Default shuffle size is sometimes too small for big data (200 partitions)
-  * Default partition size when reading is also sad
+  * Default partition size when reading in data is also sad
+    * Can read in data using RDD API and then convert to DF afterwards ("known'ish thing")
 
 [SparkNet: Training deep networks in Spark - Robert Nishihara (UC Berkley)](https://www.safaribooksonline.com/library/view/the-spark-video/9781491970355/video256080.html) (11/22/16)
 * Why do we need SparkNet (built on top of Caffe and TensorFlow) when we already have MLLib?
