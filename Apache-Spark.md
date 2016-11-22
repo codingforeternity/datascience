@@ -1,3 +1,9 @@
+[Use cases and design patterns for Spark Streaming - Vida Ha (Databricks)](https://www.safaribooksonline.com/library/view/the-spark-video/9781491970355/video256086.html)
+* Receiving data
+  * Driver runs Receivers as long-running tasks
+  * Receiver divides stream into blocks and keeps in memory
+  * Blocks also replicated to other executors
+
 [Beyond shuffling: Tips and tricks for scaling Spark jobs - Holden Karau (IBM)](https://www.safaribooksonline.com/library/view/the-spark-video/9781491970355/video256090.html)
 * If using non-JVM language (Python or R), then you should really use DataFrames.  The cost of using RDDs in any non JVM language is quite high because the data needs to be copied from the JVM to worker processes (running Python or R) and then back to JVM.  The data has to be serialized twice, e.g. in Python it gets Pickled.
 * Where does DataFrame explode?
