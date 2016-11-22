@@ -1,3 +1,6 @@
+[Beyond shuffling: Tips and tricks for scaling Spark jobs - Holden Karau (IBM)](https://www.safaribooksonline.com/library/view/the-spark-video/9781491970355/video256090.html)
+* If using non-JVM language (Python or R), then you should really use DataFrames.  The cost of using RDDs in any non JVM language is quite high because the data needs to be copied from the JVM to worker processes (running Python or R) and then back to JVM.  The data has to be serialized twice, e.g. in Python it gets Pickled. 
+
 [SparkNet: Training deep networks in Spark - Robert Nishihara (UC Berkley)](https://www.safaribooksonline.com/library/view/the-spark-video/9781491970355/video256080.html) (11/22/16)
 * Why do we need SparkNet (built on top of Caffe and TensorFlow) when we already have MLLib?
   * Because MLLib doesn't support construction of different network architectures.
