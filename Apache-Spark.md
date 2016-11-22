@@ -3,6 +3,14 @@
   * Because MLLib doesn't support construction of different network architectures.
   * It only supports models where the model specification is the same every time, e.g. LogisticRegression, RandomForest.
   * Caffe and TensorFlow are C++ projects so they use JavaCPP to connect SparkNet to them.
+* How to average weights from models trained on different Spark nodes:
+```scala
+val weights = workers.map(_ => net.getWeights())
+  .reduce((a, b) => WeightCollection.add(a, b))
+WeightCollection.scale(weights, 1F / numWorkers)
+val broadcastWeights = sc.broadcast(weights)
+workers.foreach(_ => net.setWeights(broadcastWeights.values))
+```
 
 [Performing Advanced Analytics on Relational Data with Spark SQL](https://www.safaribooksonline.com/library/view/performing-advanced-analytics/9781491908297/part00.html?autoStart=True)
 * "**Similar to typical ETL**, except doing it all in one program!"
