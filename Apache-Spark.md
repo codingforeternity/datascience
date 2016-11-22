@@ -5,7 +5,7 @@
   * Default shuffle size is sometimes too small for big data (200 partitions)
   * Default partition size when reading in data is also sad
     * Can read in data using RDD API and then convert to DF afterwards ("known'ish thing")
-* Cut the lineage of a DataFrame that has too long of an execution plan.  "It's kinda silly that we have to do this, but this is where we are."
+* Avoid lineage explosions: Cut the lineage of a DataFrame that has too long of an execution plan.  "It's kinda silly that we have to do this, but this is where we are."  Don't want to do this in Python though (for same reasons mentioned above).
 ```scala
 def cutLineage(df: DataFrame): DataFrame = {
   val sqlCtx = df.sqlContext
