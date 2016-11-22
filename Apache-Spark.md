@@ -5,6 +5,15 @@
   * Default shuffle size is sometimes too small for big data (200 partitions)
   * Default partition size when reading in data is also sad
     * Can read in data using RDD API and then convert to DF afterwards ("known'ish thing")
+* Cut the lineage of a DataFrame that has too long of an execution plan.  "It's kinda silly that we have to do this, but this is where we are."
+```scala
+def cutLineage(df: DataFrame): DataFrame = {
+  val sqlCtx = df.sqlContext
+  val rdd = df.rdd
+  rdd.cache()
+  sqlContext.createDataFrame(rdd, df.schema)
+}
+```
 
 [SparkNet: Training deep networks in Spark - Robert Nishihara (UC Berkley)](https://www.safaribooksonline.com/library/view/the-spark-video/9781491970355/video256080.html) (11/22/16)
 * Why do we need SparkNet (built on top of Caffe and TensorFlow) when we already have MLLib?
