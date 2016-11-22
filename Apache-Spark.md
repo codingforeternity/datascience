@@ -14,6 +14,11 @@ def cutLineage(df: DataFrame): DataFrame = {
   sqlContext.createDataFrame(rdd, df.schema)
 }
 ```
+* Spark testing resources
+  * Scala: spark-testing-base (scalacheck & unit), sscheck (scalacheck), example-spark (unit)
+  * 'Unit Testing Spark with Java' by Jesse Anderson
+  * 'Making Apache Spark Testing Easy with Spark Testing Base'
+  * 'Unit Testing Apache Spark with py.test'
 
 [SparkNet: Training deep networks in Spark - Robert Nishihara (UC Berkley)](https://www.safaribooksonline.com/library/view/the-spark-video/9781491970355/video256080.html) (11/22/16)
 * Why do we need SparkNet (built on top of Caffe and TensorFlow) when we already have MLLib?
