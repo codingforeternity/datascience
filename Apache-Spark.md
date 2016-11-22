@@ -4,6 +4,10 @@
   * Receiver divides stream into _blocks_ and keeps in memory
   * Blocks also replicated to other executors
   * Every batch interval the driver launches tasks to process the blocks (and, e.g., write them to data store)
+* Word count over a time window
+  * `wordStream.reduceByKeyAndWindow((x: Int, y: Int) => x+y, windowSize, slidingInterval)`
+  * windowSize is a multiple of the batch size
+  * or you can use slidingInterval to do something like every 2 seconds rather than w/ windowSize
 
 [Beyond shuffling: Tips and tricks for scaling Spark jobs - Holden Karau (IBM)](https://www.safaribooksonline.com/library/view/the-spark-video/9781491970355/video256090.html)
 * If using non-JVM language (Python or R), then you should really use DataFrames.  The cost of using RDDs in any non JVM language is quite high because the data needs to be copied from the JVM to worker processes (running Python or R) and then back to JVM.  The data has to be serialized twice, e.g. in Python it gets Pickled.
