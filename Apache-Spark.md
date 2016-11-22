@@ -2,6 +2,7 @@
 * Why do we need SparkNet (built on top of Caffe and TensorFlow) when we already have MLLib?
   * Because MLLib doesn't support construction of different network architectures.
   * It only supports models where the model specification is the same every time, e.g. LogisticRegression, RandomForest.
+  * Caffe and TensorFlow are C++ projects so they use JavaCPP to connect SparkNet to them.
 
 [Performing Advanced Analytics on Relational Data with Spark SQL](https://www.safaribooksonline.com/library/view/performing-advanced-analytics/9781491908297/part00.html?autoStart=True)
 * "**Similar to typical ETL**, except doing it all in one program!"
