@@ -23,6 +23,11 @@ val parquetFile = sqlContext.parquetFile("people.parquet")
 parquetFile.registerAsTable("parquetFile")
 ```
 * Data from multiple sources--all join'able via SparkSQL
+* Conclusion: Big data analytics is evolving to include:
+  * more *complex* analytics (e.g. machine learning)
+  * more *interactive* ad-hoc queries, including SQL
+  * more *real-time* stream processing
+  * Spark is a fast platform that *unifies* these apps
 
 [Exception Handling in Apache Spark](https://www.nicolaferraro.me/2016/02/18/exception-handling-in-apache-spark/) (9/14/16)
 * import it.nerdammer.spark.additions._
