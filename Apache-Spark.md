@@ -1,10 +1,14 @@
 [Performing Advanced Analytics on Relational Data with Spark SQL](https://www.safaribooksonline.com/library/view/performing-advanced-analytics/9781491908297/part00.html?autoStart=True)
-* "Similar to typical ETL, except doing it all in one program!"
-  * `case class Person(name: String, age: Int`
-  * `val people = sc.textFile("examples/src/main/resources/people.txt")
-  *   `.map(_split(","))`
-  *   `map(p => Person(p(0), p(1).trim.toInt))`
-  * `people.registerAsTable("people")` // FWC - this is the key!  it already has registration!!!
+* "**Similar to typical ETL**, except doing it all in one program!"
+```scala
+// define schema using a case class (similar to POJO or Java Bean)
+case class Person(name: String, age: Int)
+// create RDD of person objects and register as a table
+val people = sc.textFile("examples/src/main/resources/people.txt")
+               .map(_split(","))
+               .map(p => Person(p(0), p(1).trim.toInt))
+people.registerAsTable("people") // FWC - this is the key!  Spark already has registration!!!
+```
 
 [Exception Handling in Apache Spark](https://www.nicolaferraro.me/2016/02/18/exception-handling-in-apache-spark/) (9/14/16)
 * import it.nerdammer.spark.additions._
