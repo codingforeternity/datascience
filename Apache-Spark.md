@@ -10,6 +10,10 @@ val people = sc.textFile("examples/src/main/resources/people.txt")
 // "invoking reflection at runtime to figure out the names and types of columns in this table"
 people.registerAsTable("people") // FWC - this is the key!  Spark already has registration!!!
 ```
+* SparkSQL caches tables using an in-memory columnar format (which is also the storage mechanism provided by Parquet)
+  * scan only required columns
+  * fewer allocated objects (GC) - same data in a Python RDD 4GB vs. 2GB for a Spark RDD
+  * automatically select best compression
 
 [Exception Handling in Apache Spark](https://www.nicolaferraro.me/2016/02/18/exception-handling-in-apache-spark/) (9/14/16)
 * import it.nerdammer.spark.additions._
