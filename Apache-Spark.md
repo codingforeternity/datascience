@@ -7,6 +7,7 @@ case class Person(name: String, age: Int)
 val people = sc.textFile("examples/src/main/resources/people.txt")
                .map(_split(","))
                .map(p => Person(p(0), p(1).trim.toInt))
+// "invoking reflection at runtime to figure out the names and types of columns in this table"
 people.registerAsTable("people") // FWC - this is the key!  Spark already has registration!!!
 ```
 
