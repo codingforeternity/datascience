@@ -236,5 +236,25 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
       * half of hidden units are randomly removed for each training example -> units cannot learn to overly correct for each other (FWC - can't be too co-linear)
       * **prevents overfitting**
   
-  
+<h3>Lecture 6a: Overview of mini-­batch gradient descent<h3/>
+* FWC - since the error surface lies in a space composed of pieces of quadratic bowls and the direction of steepest descent is only towards the minimum for perfect circle (cross sections), and for very skinny ellipses it is perpendicular, why not have a **normalization** procedure that attempts to make circles? (also see 'Shifting the inputs' slide in lecture 6b)
+* SGD
+  * mini-batches (10, 100, 1000) are usually better than online b/c less computation updating weights
+    * mini-batches need to be sampled in a way that they approx. the full distribution to prevent "sloshing" around in the quadratic bowl
+  * computing gradient for multiple cases simultaneously uses matrix mult which are very efficient on GPUs
+  * turn down the learning rate when the "error" stops decreasing
+    * measure the "error" on a separate validation set
+
+<h3>Lecture 6b: Bag of tricks for mini-batch GD<h3/>
+* break symmetry by initializing w/ small random values
+* shift inputs - demean each input component to prevent (101,101)->2 and (99,101)->0 (a skewed elliptical error surface)
+  * htan = 2 * logistic - 1
+* also helps to scale inputs to prevent (0.1,10)->1 and (0.1,-10)->0 (another skewed ellipse)
+* more thorough method: decorrelation (guaranteed circles every time)
+  * big win for linear neurons
+  * e.g. PCA
+* starting w/ big learning rate risks weights becoming all very large positive or negative while error derivatives become tiny
+  * people usually think they've reached a local minimum, but this usually isn't true, you're just stuck out on the plateau
+  * another plateau that looks like a local minumum is in classification nets to use the "best guessing strategy" - just guess 1 with P = the proportion of 1s that are seen in the data (FWC - this is like learning the intercept but nothing else so are there other local minima where say the intercept and one coefficient are learned?)
+
 
