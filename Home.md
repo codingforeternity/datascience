@@ -1,7 +1,6 @@
 Welcome to the fcrimins.github.io wiki!
 
 * Articles: https://web.kamihq.com/web/viewer.html
-
 <br><br>
 
 * [[Data Mining]] (kws: overfitting)
