@@ -1,4 +1,9 @@
-[Use cases and design patterns for Spark Streaming - Vida Ha (Databricks)](https://www.safaribooksonline.com/library/view/the-spark-video/9781491970355/video256086.html)
+<h3>3 Spark Links</h3>
+* https://spark.apache.org/docs/2.0.0-preview/mllib-linear-methods.html
+* http://spark.apache.org/docs/latest/ml-pipeline.html
+* http://spark.apache.org/docs/latest/ml-features.html#tf-idf
+
+<h3>[Use cases and design patterns for Spark Streaming - Vida Ha (Databricks)](https://www.safaribooksonline.com/library/view/the-spark-video/9781491970355/video256086.html)</h3>
 * Receiving data
   * Driver runs Receivers as long-running tasks
   * Receiver divides stream into _blocks_ and keeps in memory
