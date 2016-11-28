@@ -17,6 +17,7 @@ Welcome to the fcrimins.github.io wiki!
 <br><br>
 
 - [[Machine Learning Notes]]
+  -  [[Notes for Geoff Hinton's Coursera ML course]]
 - [[NLP Notes]]
 - [[Game Theory]]
 <br><br>
