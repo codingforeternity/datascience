@@ -17,28 +17,32 @@ Welcome to the fcrimins.github.io wiki!
 - [[Multiple Comparisons]]
 - [[Patent Notes]]
 
-<br><br>
+<br>
 
 - [[Machine Learning Notes]]
   - [[Notes for Geoff Hinton's Coursera ML course]]
 - [[NLP Notes]]
 - [[Game Theory]]
-<br><br>
+
+<br>
 
 - [[ML Search]]
 - [[ML Finance]]
-<br><br>
+
+<br>
 
 - [[Quantitative Healthcare]]
 - [[Differential Gene Expression]]
-<br><br>
+
+<br>
 
 - [[Good Programming]] (kws: education)
 - [Awesome Open Source Documents](https://github.com/nacyot/awesome-opensource-documents)
 - [[Tech Hiring]]
 - [[Agile Notes]]
 - [[Functional Programming]]
-<br><br>
+
+<br>
 
 - [[Java Notes]]
 - [[REST Notes]] (kws: microservices)
@@ -46,17 +50,20 @@ Welcome to the fcrimins.github.io wiki!
 - [[Python Notes]]
 - [[Go Notes]]
 - [[Scala Notes]]
-<br><br>
+
+<br>
 
 - [[Apache Spark]]
 - [[Linux Notes]] (kws: UNIX)
-<br><br>
+
+<br>
 
 - [[Quantum Thoughts]]
 - [[Assorted Ideas]] (kws: random)
 - [[Web Annotation]]
 - [[Super Spatial Sensers]]
 - [[Mistakes are how we/everything learns]] (kws: meme)
-<br><br>
+
+<br>
 
 - [[Fred Refs]]
