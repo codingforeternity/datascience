@@ -263,4 +263,8 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
 * better momentum (Sutskever, 2012 inspired by Nesterov, 1983) - first make a big jump in direction of previously accumulated gradient, then measure gradient again where you end up and make a small correction (sliding scale EAFP)
   * "much better to gamble then make a correction, than to make a correction then gamble"
 
-
+<h3>Lecture 6c: The momentum (viscosity) model to GD<h3/>
+* add 0.05 if consecutive gradient signs the same, multiply by 0.95 if opposite sign
+* can combine adaptive learning w/ momentum: use the agreement in sign between the current gradient for a weight and the velocity for that weight (Jacobs, 1989)
+* adaptive learning rates only deal with axis-aligned effects
+* momentum doesn't care about alignment of the axes, it can deal with diagonal ellipses (and going in diagonal direction quickly), which adaptive learning cannot do
