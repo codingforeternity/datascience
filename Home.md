@@ -1,12 +1,12 @@
 Welcome to the fcrimins.github.io wiki!
 
-- Articles: https://web.kamihq.com/web/viewer.html
+* Articles: https://web.kamihq.com/web/viewer.html
 <br><br>
 
-- [[Data Mining]] (kws: overfitting)
-- [[Data]]
-- [[Statistics and Statistical Techniques]] (kws: quant)
-- [[Big Data Architecture]] (kws: Hadoop, Spark, MongoDB, Cassandra)
+* [[Data Mining]] (kws: overfitting)
+* [[Data]]
+* [[Statistics and Statistical Techniques]] (kws: quant)
+* [[Big Data Architecture]] (kws: Hadoop, Spark, MongoDB, Cassandra)
 <br><br>
 
 - [[Reproducibility]]
@@ -17,7 +17,7 @@ Welcome to the fcrimins.github.io wiki!
 <br><br>
 
 - [[Machine Learning Notes]]
-  -  [[Notes for Geoff Hinton's Coursera ML course]]
+  - [[Notes for Geoff Hinton's Coursera ML course]]
 - [[NLP Notes]]
 - [[Game Theory]]
 <br><br>
