@@ -8,10 +8,11 @@
 
   Below are some resources to help you name your company and secure your domain:
 
-    * [Startup Company Name Generator](http://www.namemesh.com/company-name-generator) - Just enter your main keywords to quickly generate company names and check domain availability.
-    * [GoDaddy.com](https://www.godaddy.com/) - A domain registrar and web hosting company
-    * [HostGator](https://register.hostgator.com/) - A provider of shared, reseller, virtual private server, and dedicated web hosting.
-    * [Google Domains](https://domains.google.com/about/) - Register a domain, get hosting, and build a site.
+    [Startup Company Name Generator](http://www.namemesh.com/company-name-generator) - Just enter your main keywords to quickly generate company names and check domain availability.
+    [GoDaddy.com](https://www.godaddy.com/) - A domain registrar and web hosting company
+    [HostGator](https://register.hostgator.com/) - A provider of shared, reseller, virtual private server, and dedicated web hosting.
+    [Google Domains](https://domains.google.com/about/) - Register a domain, get hosting, and build a site.
+
   3. Design Your Company’s Logo: Your logo, like your startup’s name, should be simple and memorable that resonates with your target audience while clearly representing what you have offer.
   4. Unless you’re a designer, don’t create your startup’s logo by yourself. Treat your logo with respect and employ a designer to craft the ideal logo for your company. While you may have to spend some money for this, having a professional looking logo can separate you from the competition.
   5. Be original! It's way too easy to become infatuated with the iconic logos of other companies, but keep in mind that your logo is what should help make you stand out from the crowd and not to blend in with the rest. Also, think about posterity; will your company's logo be remembered 5, 10, or 20 years from now?
