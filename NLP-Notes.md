@@ -1,5 +1,5 @@
 [Deep Learning, NLP, and Representations](http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/) (11/29/16)
-* "This seems to be a great strength of neural networks: they learn better ways to represent data, automatically. Representing data well, in turn, seems to be essential to success at many machine learning problems. Word embeddings are just a particularly striking example of learning a representation."
+* "This seems to be a great strength of neural networks: they learn better ways to represent data, automatically. Representing data well, in turn, seems to be essential to success at many machine learning problems. Word embeddings are just a particularly striking example of learning a representation." [FWC idea - **compute company embeddings the same way, using negative sampling on company statistics, then use those embeddings to predict returns**]
 
 [CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/index.html)
 
