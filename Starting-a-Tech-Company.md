@@ -67,6 +67,8 @@
     * For a more detailed version of this process, below is a [Product Development Roadmap](http://fndri.com/yVKzvp) to get you started:
       * The map shows us the big picture of our product and allows us to modify our mindset. We are focused now on the overall vision and purpose behind the product and not solely on particular features we need to deliver. Then it is easier for us to answer the question: 'why are we building it?', which is probably the most important question one can ask while creating products."
 
+  ![alt text](http://fi.co/system/upload/Product_Development_Roadmap_blog.png "Product Development Roadmap")
+
   16. Create Wireframes and Mockups of Your Website: Provide detailed explanations and annotations for every aspect of your wireframe, especially if you are working with designers. Dummy boxes should also be filled with text, even if it’s only placeholder text, as this will give you an idea of how much text should actually exist on your site.
   17. Don’t shy away from coding earlier in the process if possible, as building a structure in HTML and then moving to CSS for the basic layout can streamline the entire development process.
   18. Create your website wireframes and mockups in high-fidelity to better replicate the look, feel, and functionality you're stiving for.
