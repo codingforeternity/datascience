@@ -1,3 +1,6 @@
+[Deep Learning, NLP, and Representations](http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/) (11/29/16)
+* "This seems to be a great strength of neural networks: they learn better ways to represent data, automatically. Representing data well, in turn, seems to be essential to success at many machine learning problems. Word embeddings are just a particularly striking example of learning a representation."
+
 [CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/index.html)
 
 [Deep or Shallow, NLP is Breaking Out](http://cacm.acm.org/magazines/2016/3/198856-deep-or-shallow-nlp-is-breaking-out/fulltext) (11/1/16)
