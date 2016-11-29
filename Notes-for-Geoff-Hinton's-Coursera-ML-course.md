@@ -279,3 +279,23 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     * O/w decrease multiplicatively (e.g. 0.5)
     * limit step sizes to in [1e-6, 50]
   * rprop doesn't work well (lots of people have tried) for mini-batches b/c weights can grow too much in the presence of consecutive equal sized & signed gradients (e.g. 0.1 0.1 0.1 0.1 0.1 0.1 -0.9).
+* rmsprop
+  * rprop is equivalent to dividing the gradient by the magnitude of the gradient: g/|g| or g/sqrt(g^2)
+    * the problem w/ mini-batch rprop is that we divide by a different # foreach mini-batch
+    * so why not fix the # we divide by
+  * rmsprop - keep a moving avg of the squared (RMS) gradient for each weight
+    * MeanSquare(w,t) = 0.9 MeanSquare(w,t-1) + 0.1 [del E / del w (t)]^2
+    * dividing gradient by MeanSquare(w,t) makes learning work much better (Tijmen Tieleman, unpublished)
+  * commentary on rmsprop combined w/ momentum (which doesn't seem to help as much)
+* **Summary of learning methods for NNs**
+  * For small datasets (e.g. 10k cases) or bigger *w/out* much redundancey, use full-batch
+    * Conjugate gradient, LBFGS (packaged versions, simple for writing papers, no explanation of hyperparameter tweaking necessary)
+    * adaptive learning rates, rprop
+  * For bit, redundant datasets use mini-batches
+    1. Try GD w/ momentum
+    2. Try **rmsprop** (with momentum?)
+    3. Try LeCun's latest recipe (e.g. "No more pesky learning rates" similar to rmsprop)
+  * **Why is there no single answer?**
+    * lots of different NNs: recurrent, wide/shallow
+    * some require accurate weights, some don't
+    * some have *many very rare cases* (e.g. words [FWC - stocks?])
