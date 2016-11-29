@@ -1,3 +1,6 @@
+#### [Ruby on Rails vs Groovy on Rails](https://acadgild.com/blog/ruby-on-rails-vs-groovy-on-rails/) (from 12/15)
+* "So choosing among the framework depends upon what skill set you have. If you want to maximize advantage of your existing Java skills or have developers experienced in Java than go for Grails. But if you are more accustomed with Ruby, HTML, CSS and JavaScript then go for Rails."
+
 [What are the Benefits of Ruby on Rails? After Two Decades of Programming, I Use Rails](https://www.toptal.com/ruby-on-rails/after-two-decades-of-programming-i-use-rails) (from 3 years ago)
 * "Rails has been around the block. In a hipster kind of way, it’s not even that cool anymore."
 
