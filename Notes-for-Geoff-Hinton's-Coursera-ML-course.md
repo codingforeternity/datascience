@@ -296,6 +296,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     2. Try **rmsprop** (with momentum?)
     3. Try LeCun's latest recipe (e.g. "No more pesky learning rates" similar to rmsprop)
   * **Why is there no single answer?**
-    * lots of different NNs: recurrent, wide/shallow
+    * lots of different NNs (*esp. ones w/ narrow bottlenecks*)
+    * recurrent, wide-shallow (can be optimized with not-very-accurate methods)
     * some require accurate weights, some don't
     * some have *many very rare cases* (e.g. words [FWC - stocks?])
