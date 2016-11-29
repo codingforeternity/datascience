@@ -1,7 +1,12 @@
+#### [](http://www.javaworld.com/article/2945136/scripting-jvm-languages/the-state-of-ruby-and-rails-opportunities-and-obstacles.html) (from 6/6/15)
+* FWC - **probably the best written and (seemingly) least biased article I've read**
+* "Few sites would experience the same extreme demand as Twitter, so not every Rails-driven site is a candidate for a ground-up rewrite."
+* "In light of this, one possible reason for the growth in demand for Ruby on Rails and Ruby is to preserve or maintain -- or even replace -- existing Ruby or Rails infrastructure, rather than building new objects with it."
+
 #### [Ruby on Rails vs Groovy on Rails](https://acadgild.com/blog/ruby-on-rails-vs-groovy-on-rails/) (from 12/15)
 * "So choosing among the framework depends upon what skill set you have. If you want to maximize advantage of your existing Java skills or have developers experienced in Java than go for Grails. But if you are more accustomed with Ruby, HTML, CSS and JavaScript then go for Rails."
 
-[What are the Benefits of Ruby on Rails? After Two Decades of Programming, I Use Rails](https://www.toptal.com/ruby-on-rails/after-two-decades-of-programming-i-use-rails) (from 3 years ago)
+#### [What are the Benefits of Ruby on Rails? After Two Decades of Programming, I Use Rails](https://www.toptal.com/ruby-on-rails/after-two-decades-of-programming-i-use-rails) (from 3 years ago)
 * "Rails has been around the block. In a hipster kind of way, it’s not even that cool anymore."
 
 #### [The Languages And Frameworks You Should Learn In 2016](http://tutorialzine.com/2015/12/the-languages-and-frameworks-you-should-learn-in-2016/)
