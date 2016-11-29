@@ -1,9 +1,9 @@
 #### [Play framework scalable, but Ruby on Rails isn't?](https://www.quora.com/Why-is-Play-framework-scalable-but-Ruby-on-Rails-isnt)
 * "Rails is a great prototyping application. It's fast, developers can build great applications on top of it. But you don't have to build your entire application on top of it. You're going to be able to build a lot faster with Rails than you would with Play."
 
-### [Why do people use Heroku when AWS is present? What's distinguishing about Heroku](http://stackoverflow.com/questions/9802259/why-do-people-use-heroku-when-aws-is-present-whats-distinguishing-about-heroku)
+#### [Why do people use Heroku when AWS is present? What's distinguishing about Heroku](http://stackoverflow.com/questions/9802259/why-do-people-use-heroku-when-aws-is-present-whats-distinguishing-about-heroku)
 
-### [How to Start a Tech Company: 21 Crucial Steps](https://fi.co/posts/18421)
+#### [How to Start a Tech Company: 21 Crucial Steps](https://fi.co/posts/18421)
   1. Name Your Company and Get Your Domain: Pick a name for your company that is simple to spell and easy to remember. While sticking to as few syllables as possible can be challenging, putting restrictions on the length of your company’s name can force you to be creative. If possible, stick to two syllables. Take a look at the names of the following companies with short names: Google, Twitter, Facebook, Foursquare, DropBox
   2. Having a matching domain name is inconsequential, so worry more about a name that emphasises what your company is and does, and less about how well it corresponds with the actual name of your company.
 
@@ -91,7 +91,7 @@
   > It's fine to celebrate success but it is more important to heed the lessons of failure. - Bill Gates
 
 
-### [From Idea to Successful Tech Company in 8 Steps](https://www.entrepreneur.com/article/234841) (11/29/16)
+#### [From Idea to Successful Tech Company in 8 Steps](https://www.entrepreneur.com/article/234841) (11/29/16)
   1. Build a product. It sounds obvious. When starting a cloud-technology company, **focus on building the product -- full stop**. Product is 30 percent of the total work required long term, but often other priorities take early focus away from a product. Once the product is solid, companies can shift their focus to the other 70 percent, which is sales, marketing, service and support.
   2. Hire sales staff and engineers. New companies need to hire salespeople for where they see their business in 12 to 18 months, not to meet their needs today, no matter what other pressures they may feel. **Many companies stump their own growth potential because they hire for current needs**, instead of hiring to the vision of the company they want to be.
   3. Focus. Every company has dual identities -- services and product. Successful companies clearly choose just one for their vision. That clear choice will define every decision you make moving forward.
