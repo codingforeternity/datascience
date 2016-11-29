@@ -7,11 +7,10 @@
   > Mint.com is quality, it’s a place where money is made, it’s short and spelled unambiguously. It’s a very good brand name for what we’re doing. We spent three months, hundreds of hours, and more money than I care to comment on for that domain - but it was worth it. Offhand, who do you trust more: Mint.com or MoneyAnalyzr.com? - Aaron Patzer (Founder, Mint.com)
 
   Below are some resources to help you name your company and secure your domain:
-    * asdf
-    * [Startup Company Name Generator](http://www.namemesh.com/company-name-generator) - Just enter your main keywords to quickly generate company names and check domain availability.
-    * [GoDaddy.com](https://www.godaddy.com/) - A domain registrar and web hosting company
-    * [HostGator](https://register.hostgator.com/) - A provider of shared, reseller, virtual private server, and dedicated web hosting.
-    * [Google Domains](https://domains.google.com/about/) - Register a domain, get hosting, and build a site.
+    1. [Startup Company Name Generator](http://www.namemesh.com/company-name-generator) - Just enter your main keywords to quickly generate company names and check domain availability.
+    2. [GoDaddy.com](https://www.godaddy.com/) - A domain registrar and web hosting company
+    3. [HostGator](https://register.hostgator.com/) - A provider of shared, reseller, virtual private server, and dedicated web hosting.
+    4. [Google Domains](https://domains.google.com/about/) - Register a domain, get hosting, and build a site.
 
   3. Design Your Company’s Logo: Your logo, like your startup’s name, should be simple and memorable that resonates with your target audience while clearly representing what you have offer.
   4. Unless you’re a designer, don’t create your startup’s logo by yourself. Treat your logo with respect and employ a designer to craft the ideal logo for your company. While you may have to spend some money for this, having a professional looking logo can separate you from the competition.
