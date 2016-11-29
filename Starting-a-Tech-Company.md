@@ -1,3 +1,5 @@
+#### [Which Technologies Do Startups Use? An Exploration of AngelList Data](https://codingvc.com/which-technologies-do-startups-use-an-exploration-of-angellist-data)
+
 #### [Rails vs Django vs Play: Battle of frameworks](http://www.diogonunes.com/blog/rails-vs-django-vs-play-frameworks/)
 * Python/Django - "developing on Django is an exhausting symphony of sighs"
 * "[Zentasks](http://www.playframework.com/documentation/2.3.x/JavaGuide1) is a tutorial that guides you on the process of creating a website for task management"
