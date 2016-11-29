@@ -7,7 +7,7 @@
   > Mint.com is quality, it’s a place where money is made, it’s short and spelled unambiguously. It’s a very good brand name for what we’re doing. We spent three months, hundreds of hours, and more money than I care to comment on for that domain - but it was worth it. Offhand, who do you trust more: Mint.com or MoneyAnalyzr.com? - Aaron Patzer (Founder, Mint.com)
 
   Below are some resources to help you name your company and secure your domain:
-    1. [Startup Company Name Generator](http://www.namemesh.com/company-name-generator) - Just enter your main keywords to quickly generate company names and check domain availability.
+    2. [Startup Company Name Generator](http://www.namemesh.com/company-name-generator) - Just enter your main keywords to quickly generate company names and check domain availability.
     2. [GoDaddy.com](https://www.godaddy.com/) - A domain registrar and web hosting company
     3. [HostGator](https://register.hostgator.com/) - A provider of shared, reseller, virtual private server, and dedicated web hosting.
     4. [Google Domains](https://domains.google.com/about/) - Register a domain, get hosting, and build a site.
