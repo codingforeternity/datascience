@@ -41,6 +41,7 @@ Welcome to the fcrimins.github.io wiki!
 - [[Tech Hiring]]
 - [[Agile Notes]]
 - [[Functional Programming]]
+- [[Starting a Tech Company]] (kws: business, entrepreneur)
 
 <br>
 
