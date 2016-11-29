@@ -288,10 +288,10 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     * dividing gradient by MeanSquare(w,t) makes learning work much better (Tijmen Tieleman, unpublished)
   * commentary on rmsprop combined w/ momentum (which doesn't seem to help as much)
 * **Summary of learning methods for NNs**
-  * For small datasets (e.g. 10k cases) or bigger *w/out* much redundancey, use full-batch
+  * For small datasets (e.g. 10k cases) or bigger *w/out* much redundancey, use *full-batch*
     * Conjugate gradient, LBFGS (packaged versions, simple for writing papers, no explanation of hyperparameter tweaking necessary)
     * adaptive learning rates, rprop
-  * For bit, redundant datasets use mini-batches
+  * For bit, redundant datasets use *mini-batches*
     1. Try GD w/ momentum
     2. Try **rmsprop** (with momentum?)
     3. Try LeCun's latest recipe (e.g. "No more pesky learning rates" similar to rmsprop)
@@ -300,3 +300,17 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     * recurrent, wide-shallow (can be optimized with not-very-accurate methods)
     * some require accurate weights, some don't
     * some have *many very rare cases* (e.g. words [FWC - stocks?])
+
+### Quiz 6
+  1. WWWwww---
+  2. 2 checks
+    * too small learning rate
+    * large scale inputs (i.e. plateaus at logistic extremes)
+    * (unchecked--wrong!) large weight inits -> this will result in large corrective gradients right away (which is wrong, i.e. should've been checked)
+  3. circular cloud
+  4. the two monotonically descending L shaped red curves that don't get as low as blue (one that is steep at first, crosses the blue, then levels off (correct); the other that just never gets there (wrong)) -- should have selected the one that converges at first, then diverges
+  5. 2 check
+    * object detection (1e6 training cases, large dataset, but maybe not redundant?)
+    * speech recognition (large and redundant)
+    * (unchecked) sentiment analysis w/ 100 cases (small dataset)
+    * (unchecked) disease prediction (small dataset)
