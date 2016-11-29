@@ -1,5 +1,12 @@
-#### [Play framework scalable, but Ruby on Rails isn't?](https://www.quora.com/Why-is-Play-framework-scalable-but-Ruby-on-Rails-isnt)
-* "Rails is a great prototyping application. It's fast, developers can build great applications on top of it. But you don't have to build your entire application on top of it. You're going to be able to build a lot faster with Rails than you would with Play."
+#### [Rails vs Django vs Play: Battle of frameworks](http://www.diogonunes.com/blog/rails-vs-django-vs-play-frameworks/)
+* Python/Django - "developing on Django is an exhausting symphony of sighs"
+* "[Zentasks](http://www.playframework.com/documentation/2.3.x/JavaGuide1) is a tutorial that guides you on the process of creating a website for task management"
+* "So on Play I had to inherit a base template and implement every empty block – hence, the 'baggage' of the base template always came attached. Rails uses composition"
+* Java/Play - "perfect if you know Java and want to develop web applications, it just works."
+* Ruby/Rails - "Rails enables fast development great for prototyping. The more you use it the more you love it."
+
+#### [Is Play framework scalable while Ruby on Rails isn't?](https://www.quora.com/Why-is-Play-framework-scalable-but-Ruby-on-Rails-isnt)
+* "Rails is a great prototyping application. It's fast, developers can build great applications on top of it. But you don't have to build your entire application on top of it. **You're going to be able to build a lot faster with Rails than you would with Play**. You're going to be able to convert processes that are slow in Rails into SOA's."
 
 #### [Why do people use Heroku when AWS is present? What's distinguishing about Heroku](http://stackoverflow.com/questions/9802259/why-do-people-use-heroku-when-aws-is-present-whats-distinguishing-about-heroku)
 
