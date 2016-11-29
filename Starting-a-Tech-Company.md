@@ -1,3 +1,4 @@
+[Why do people use Heroku when AWS is present? What's distinguishing about Heroku](http://stackoverflow.com/questions/9802259/why-do-people-use-heroku-when-aws-is-present-whats-distinguishing-about-heroku)
 
 [From Idea to Successful Tech Company in 8 Steps](https://www.entrepreneur.com/article/234841) (11/29/16)
   1. Build a product. It sounds obvious. When starting a cloud-technology company, **focus on building the product -- full stop**. Product is 30 percent of the total work required long term, but often other priorities take early focus away from a product. Once the product is solid, companies can shift their focus to the other 70 percent, which is sales, marketing, service and support.
