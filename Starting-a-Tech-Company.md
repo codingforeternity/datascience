@@ -1,3 +1,9 @@
+#### [The Languages And Frameworks You Should Learn In 2016](http://tutorialzine.com/2015/12/the-languages-and-frameworks-you-should-learn-in-2016/)
+
+#### [Spring vs. Rest of world](http://springtutorials.com/spring-framework-vs-rest-of-the-world/)
+* "Play builds on Scala and looks promising. You can use either Java or Scala to build with it. I am new to Scala as well as Play. I know that Play Framework versions aren’t backward compatible."
+* "Grails builds on Groovy and allows you to build your code fast. It is the groovy version of ruby on rails. I see that latest Grails builds on Spring 4 and Spring Boot. As a Java Developer, you will have to learn Groovy. You may need to understand GSP – groovy server pages vs JSP concept. You may need to understand  GORM – Groovy ORM vs Java ORM. This is not a steep learning curve but takes time regardless."
+
 #### [Which Technologies Do Startups Use? An Exploration of AngelList Data](https://codingvc.com/which-technologies-do-startups-use-an-exploration-of-angellist-data)
 
 #### [Rails vs Django vs Play: Battle of frameworks](http://www.diogonunes.com/blog/rails-vs-django-vs-play-frameworks/)
