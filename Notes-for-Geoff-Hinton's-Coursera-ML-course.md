@@ -271,10 +271,11 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
 
 ### Lecture 6e: rmsprop: Divide the gradient by a running average of its recent magnitude
 * rmsprop is an extension of rprop to tailor it for mini-batch learning (**Hinton's current favorite model**)
-  * rprop: Using only the sign of the gradient
+* rprop: Using only the sign of the gradient
   * The magnitude of the gradient can be very different for different weights and can change during learning, which makes it hard to choose a single global learning rate--and adaptive learning rates are tricky too.
     * This escapes from plateaus with tiny 
   * rprop combines the idea of only using the sign of the gradient with the idea of adapting the step size separately for each weight.
     * Increase the step size for a weight *multiplicatively* (e.g. times 1.2) if the signs of its last two gradients agree.
     * O/w decrease multiplicatively (e.g. 0.5)
     * limit step sizes to in [1e-6, 50]
+  * rprop doesn't work well (lots of people have tried) for mini-batches b/c weights can grow too much in the presence of consecutive equal sized & signed gradients (e.g. 0.1 0.1 0.1 0.1 0.1 0.1 -0.9).
