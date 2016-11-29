@@ -1,4 +1,4 @@
-#### [](http://www.javaworld.com/article/2945136/scripting-jvm-languages/the-state-of-ruby-and-rails-opportunities-and-obstacles.html) (from 6/6/15)
+#### [The state of Ruby and Rails: Opportunities and obstacles; Ruby on Rails still shines for Web development, but not for speed or scalability](http://www.javaworld.com/article/2945136/scripting-jvm-languages/the-state-of-ruby-and-rails-opportunities-and-obstacles.html) (from 6/6/15)
 * FWC - **probably the best written and (seemingly) least biased article I've read**
 * "Few sites would experience the same extreme demand as Twitter, so not every Rails-driven site is a candidate for a ground-up rewrite."
 * "In light of this, one possible reason for the growth in demand for Ruby on Rails and Ruby is to preserve or maintain -- or even replace -- existing Ruby or Rails infrastructure, rather than building new objects with it."
