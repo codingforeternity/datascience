@@ -1,14 +1,14 @@
 [Why do people use Heroku when AWS is present? What's distinguishing about Heroku](http://stackoverflow.com/questions/9802259/why-do-people-use-heroku-when-aws-is-present-whats-distinguishing-about-heroku)
 
-[How to Start a Tech Company: 21 Crucial Steps](https://fi.co/posts/18421)
+## [How to Start a Tech Company: 21 Crucial Steps](https://fi.co/posts/18421)
   1. Name Your Company and Get Your Domain: Pick a name for your company that is simple to spell and easy to remember. While sticking to as few syllables as possible can be challenging, putting restrictions on the length of your company’s name can force you to be creative. If possible, stick to two syllables. Take a look at the names of the following companies with short names: Google, Twitter, Facebook, Foursquare, DropBox
   2. Having a matching domain name is inconsequential, so worry more about a name that emphasises what your company is and does, and less about how well it corresponds with the actual name of your company.
-    "Mint.com is quality, it’s a place where money is made, it’s short and spelled unambiguously. It’s a very good brand name for what we’re doing. We spent three months, hundreds of hours, and more money than I care to comment on for that domain - but it was worth it. Offhand, who do you trust more: Mint.com or MoneyAnalyzr.com?" - Aaron Patzer (Founder, Mint.com)
+    > Mint.com is quality, it’s a place where money is made, it’s short and spelled unambiguously. It’s a very good brand name for what we’re doing. We spent three months, hundreds of hours, and more money than I care to comment on for that domain - but it was worth it. Offhand, who do you trust more: Mint.com or MoneyAnalyzr.com?" - Aaron Patzer (Founder, Mint.com)
   Below are some resources to help you name your company and secure your domain:
-    [Startup Company Name Generator](http://www.namemesh.com/company-name-generator) - Just enter your main keywords to quickly generate company names and check domain availability.
-    [GoDaddy.com](https://www.godaddy.com/) - A domain registrar and web hosting company
-    [HostGator](https://register.hostgator.com/) - A provider of shared, reseller, virtual private server, and dedicated web hosting.
-    [Google Domains](https://domains.google.com/about/) - Register a domain, get hosting, and build a site.
+    * [Startup Company Name Generator](http://www.namemesh.com/company-name-generator) - Just enter your main keywords to quickly generate company names and check domain availability.
+    * [GoDaddy.com](https://www.godaddy.com/) - A domain registrar and web hosting company
+    * [HostGator](https://register.hostgator.com/) - A provider of shared, reseller, virtual private server, and dedicated web hosting.
+    * [Google Domains](https://domains.google.com/about/) - Register a domain, get hosting, and build a site.
   3. Design Your Company’s Logo: Your logo, like your startup’s name, should be simple and memorable that resonates with your target audience while clearly representing what you have offer.
   4. Unless you’re a designer, don’t create your startup’s logo by yourself. Treat your logo with respect and employ a designer to craft the ideal logo for your company. While you may have to spend some money for this, having a professional looking logo can separate you from the competition.
   5. Be original! It's way too easy to become infatuated with the iconic logos of other companies, but keep in mind that your logo is what should help make you stand out from the crowd and not to blend in with the rest. Also, think about posterity; will your company's logo be remembered 5, 10, or 20 years from now?
