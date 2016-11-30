@@ -67,6 +67,15 @@ result.write.format("parquet").startStream("dest-path") // <- startStream!!!
 * Convert log messages into structured data
 
 ```scala
+// read files from a directory either once or as a stream!
+val input = sqlContext.read
+  .format("text")
+  .load("/logs") // <- change 'load' to 'stream' to convert to streaming dataset!
+  .as(String)
+input.isStreaming
+```
+
+```scala
 case class LogMessage(timeStamp: String, success: boolean, fullMsg: String)
 val parsed = input.flatMap(_.split(" ").toList match {
   case date :: time :: msg =>
