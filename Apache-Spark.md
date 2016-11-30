@@ -96,6 +96,15 @@ val stats = parsed
 ```
 
 * Plots/graphs in a notebook will be updated automatically when using streaming
+* `input` and `stats` are handles to running streams which can be stopped, status, get error or get terminated
+
+```scala
+stats.stop()
+stats.awaitTermination()
+stats.exception()
+stats.sourceStatuses()
+stats.sinkStatus()
+```
 
 #### 3 Spark Links
 * https://spark.apache.org/docs/2.0.0-preview/mllib-linear-methods.html
