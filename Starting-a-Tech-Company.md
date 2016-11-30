@@ -1,5 +1,7 @@
-[[Web Frameworks]]
+#### [Architecting Applications for Heroku](https://devcenter.heroku.com/articles/architecting-apps)
+* [The Twelve-Factor App](https://12factor.net/)
 
+#### [[Web Frameworks]]
 
 #### [How to Start a Tech Company: 21 Crucial Steps](https://fi.co/posts/18421)
   1. Name Your Company and Get Your Domain: Pick a name for your company that is simple to spell and easy to remember. While sticking to as few syllables as possible can be challenging, putting restrictions on the length of your company’s name can force you to be creative. If possible, stick to two syllables. Take a look at the names of the following companies with short names: Google, Twitter, Facebook, Foursquare, DropBox
