@@ -55,8 +55,10 @@ result.write.format("parquet").save("dest-path")
 * Streaming ETL with DataFrame
 
 ```scala
+// read from Kafka or json stream
 input = ctxt.read.format("json").stream("source-path") // <- stream!!!
 result = input.select("device", "signal").where("signal > 15")
+// write to parquet file stream (sequence of files)
 result.write.format("parquet").startStream("dest-path") // <- startStream!!!
 ```
 
