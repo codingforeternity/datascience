@@ -108,9 +108,7 @@ stats.sinkStatus()
 
 * End-to-end, exactly-once guarantees
   * **Fast**, *fault-tolerant*, **exactly-once** *stateful stream processing* without having to **reason** about streaming.
-  * offset tracking in WAL
-  * state management
-  * fault-tolerant sources and sinks
+  * offset tracking in WAL + state management + fault-tolerant sources and sinks
 
 #### 3 Spark Links
 * https://spark.apache.org/docs/2.0.0-preview/mllib-linear-methods.html
