@@ -1,4 +1,5 @@
 #### [Architecting Applications for Heroku](https://devcenter.heroku.com/articles/architecting-apps) (11/30/16)
+* "raise awareness of common systemic problems"
 * [The Twelve-Factor App](https://12factor.net/)
 
 #### [[Web Frameworks]] (11/29/16)
