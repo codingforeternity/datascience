@@ -44,6 +44,14 @@ val hist - ds.groupBy(_.type).mapGroups {
   }
 ```
 
+* Batch ETL with DataFrame
+
+```scala
+input = ctxt.read.format("json").load("source-path")
+result = input.select("device", "signal").where("signal > 15")
+result.write.format("parquet").save("dest-path")
+```
+
 #### 3 Spark Links
 * https://spark.apache.org/docs/2.0.0-preview/mllib-linear-methods.html
 * http://spark.apache.org/docs/latest/ml-pipeline.html
