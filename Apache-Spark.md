@@ -9,6 +9,7 @@
 * New Model
   * Think of the data coming in as being inserted into a database table.
   * Users can configure to receive the full table every interval, the deltas (new rows and modified rows), or appends (only new rows).
+  * Dataset, single unified API!
 
 #### 3 Spark Links
 * https://spark.apache.org/docs/2.0.0-preview/mllib-linear-methods.html
