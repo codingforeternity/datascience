@@ -101,7 +101,7 @@ val stats = parsed
 ```scala
 stats.stop()
 stats.awaitTermination()
-stats.exception()
+stats.exception() // if there was an exception, get it
 stats.sourceStatuses()
 stats.sinkStatus()
 ```
