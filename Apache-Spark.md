@@ -78,6 +78,14 @@ val parsed = input.flatMap(_.split(" ").toList match {
 }}
 ```
 
+```scala
+import org.apahce.spark.sql.functions._
+val stats = parsed
+  .groupBy(window($"timestamp", "10 seconds"), $successful")
+  .agg(count("*").as("counts"))
+  .select(date_format($"window.end", "hh:mm:ss").as("window"), $"counts", $"successful")
+```
+
 #### 3 Spark Links
 * https://spark.apache.org/docs/2.0.0-preview/mllib-linear-methods.html
 * http://spark.apache.org/docs/latest/ml-pipeline.html
