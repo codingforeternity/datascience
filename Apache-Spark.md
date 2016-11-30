@@ -1,4 +1,4 @@
-#### [The future of streaming in Spark: Structured Streaming](https://www.safaribooksonline.com/library/view/the-spark-video/9781491970355/video256085.html)
+#### [The future of streaming in Spark: *Structured Streaming* (new in Spark 2.0)](https://www.safaribooksonline.com/library/view/the-spark-video/9781491970355/video256085.html)
 * "The simplest way to perform streaming analytics is not having to **reason** about streaming at all."
   * Spark should be smart enough to do all that complicated reasoning about fault tolerance, end-to-end guarantees
   * DStream API exposes batch time, hard to incorporate event time
