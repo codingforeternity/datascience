@@ -95,6 +95,8 @@ val stats = parsed
   .select(date_format($"window.end", "hh:mm:ss").as("window"), $"counts", $"successful")
 ```
 
+* Plots/graphs in a notebook will be updated automatically when using streaming
+
 #### 3 Spark Links
 * https://spark.apache.org/docs/2.0.0-preview/mllib-linear-methods.html
 * http://spark.apache.org/docs/latest/ml-pipeline.html
