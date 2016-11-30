@@ -62,6 +62,8 @@ result = input.select("device", "signal").where("signal > 15")
 result.write.format("parquet").startStream("dest-path") // <- startStream!!!
 ```
 
+* [Structured Streaming Demo notebook](https://docs.databricks.com/spark/latest/structured-streaming/index.html)
+
 #### 3 Spark Links
 * https://spark.apache.org/docs/2.0.0-preview/mllib-linear-methods.html
 * http://spark.apache.org/docs/latest/ml-pipeline.html
