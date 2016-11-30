@@ -64,6 +64,20 @@ result.write.format("parquet").startStream("dest-path") // <- startStream!!!
 
 * [Structured Streaming Demo notebook](https://docs.databricks.com/spark/latest/structured-streaming/index.html)
 
+* Convert log messages into structured data
+
+```scala
+case class LogMessage(timeStamp: String, success: boolean, fullMsg: String)
+val parsed = input.flatMap(_.split(" ").toList match {
+  case date :: time :: msg =>
+    val fullMsg = msg.mkString(" ")
+    val success = fullMsg.contains("succsessful")
+    val timeStamp = s"$date $time"
+    LogMessage(timeStamp, success, fullMsg) :: Nil
+  case _ => Nil
+}}
+```
+
 #### 3 Spark Links
 * https://spark.apache.org/docs/2.0.0-preview/mllib-linear-methods.html
 * http://spark.apache.org/docs/latest/ml-pipeline.html
