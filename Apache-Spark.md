@@ -12,11 +12,13 @@
 * Dataset, single unified API!  (bounded or unbounded)
   * Based on (and interoperable with) R/Pandas
   * 2 interfaces:
+
 ```sql
 SELECT type, avg(signal)
 FROM devices
 GROUP BY type
 ```
+
 ```scala
 ctxt.table("device-data")
     .group_by("type")
@@ -24,7 +26,9 @@ ctxt.table("device-data")
     .map(lambda ...)
     .select
 ```
+
   * statically typed
+
 ```scala
 case class DeviceData(type: String, signal: Int)
 // convert data to Java objects
