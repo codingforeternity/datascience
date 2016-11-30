@@ -20,8 +20,8 @@ GROUP BY type
 ```
 
 ```scala
-ctxt.table("device-data")
-    .group_by("type")
+ctxt.table("devices")
+    .groupBy("type")
     .agg("type", avg("signal"))
     .map(lambda ...)
     .select
