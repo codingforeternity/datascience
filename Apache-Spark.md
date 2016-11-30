@@ -11,6 +11,7 @@
   * Users can configure to receive the full table every interval, the deltas (new rows and modified rows), or appends (only new rows).
 * Dataset, single unified API!  (bounded or unbounded)
   * Based on (and interoperable with) R/Pandas
+  * 2 interfaces:
 ```sql
 SELECT type, avg(signal)
 FROM devices
@@ -22,6 +23,21 @@ ctxt.table("device-data")
     .agg("type", avg("signal"))
     .map(lambda ...)
     .select
+```
+  * statically typed
+```scala
+case class DeviceData(type: String, signal: Int)
+// convert data to Java objects
+val ds: Dataset[DeviceData] = ctx.read.json("data.json").as[DeviceData]
+// compute histogram of age by name
+val hist - ds.groupBy(_.type).mapGroups {
+  case (type, data: Iter[DeviceData]) =>
+    val buckets = new Array[Int](10)
+    data.map(_.signal).foreach { a =>
+      buckets(a/10) += 1
+    }
+    (type, buckets)
+  }
 ```
 
 #### 3 Spark Links
