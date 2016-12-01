@@ -1,3 +1,6 @@
+[How to configure postgresql for the first time?](http://stackoverflow.com/questions/1471571/how-to-configure-postgresql-for-the-first-time)
+* "Note that if you do a mere psql, it will fail since it will try to connect you to a default database having the same name as you (ie. whoami). template1 is the admin database that is here from the start."
+
 #### [Pro Spark Streaming (Safari Books)](https://www.safaribooksonline.com/library/view/pro-spark-streaming/9781484214794/A367671_1_En_1_Chapter.html)
 * ACID to BASE
   * Old relational model: Atomicity, Consistency, Isolation, Durability
