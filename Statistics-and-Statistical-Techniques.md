@@ -1,3 +1,7 @@
+[Streaming Model for Linear Regression](http://koaning.io/bayesian-propto-streaming-algorithms.html) (12/1/16)
+* nice brief explanation of Bayesian Statistics
+* in Python and with reference to Apache Flink
+
 [Scaling and Normalization with Naive Bayes in Python](http://sebastianraschka.com/Articles/2014_about_feature_scaling.html) (11/10/16)
 
 [Introductory Statistics for Data Science](http://davegiles.blogspot.com/2015/04/introductory-statistics-for-data-science.html) (4/26/15)
