@@ -49,7 +49,7 @@ Welcome to the fcrimins.github.io wiki!
 
 - [[Java Notes]]
 - [[REST Notes]] (kws: microservices)
-- [[SQL Notes]]
+- [[SQL Notes]] (kws: relational, database)
 - [[Python Notes]]
 - [[Go Notes]]
 - [[Scala Notes]]
