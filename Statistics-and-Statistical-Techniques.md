@@ -1,5 +1,6 @@
 [Streaming Model for Linear Regression](http://koaning.io/bayesian-propto-streaming-algorithms.html) (12/1/16)
 * nice brief explanation of Bayesian Statistics
+* and really nice examples of Python plotting and likihood
 * in Python and with reference to Apache Flink and Spark
 * "if you've solved streaming then you've also solved batch"
 * "Batch is a subset of streaming and thinking like a bayesian helps when designing models."
