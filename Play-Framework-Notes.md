@@ -24,3 +24,13 @@
 * "A Controller is nothing more than an object that generates Action values. Controllers can be defined as classes to take advantage of Dependency Injection or as objects."
 * "Note: Keep in mind that defining controllers as objects will not be supported in future versions of Play. Using classes is the recommended approach."
 * Use the `Action` companion object to construct `Action` instances, all of which return `Result`s.
+* TODO
+  * `def fredtest(name: String) = TODO`
+* `Ok(out)` is equivalent to:
+
+```scala
+Result(
+  header = ResponseHeader(200, Map.empty),
+  body = HttpEntity.Strict(ByteString(out), Some("text/plain"))
+)
+```
