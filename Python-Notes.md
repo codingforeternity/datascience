@@ -1,4 +1,4 @@
-[](https://www.jeffknupp.com/blog/2016/11/13/how-python-makes-working-with-data-more-difficult-in-the-long-run/)
+[How Python Makes Working With Data More Difficult in the Long Run](https://www.jeffknupp.com/blog/2016/11/13/how-python-makes-working-with-data-more-difficult-in-the-long-run/)
 * "Let's consider two definitions of "good code" so we can be clear what we mean by better.
   1. Code that is short, concise, and can be written quickly
   2. Code that is maintainable
