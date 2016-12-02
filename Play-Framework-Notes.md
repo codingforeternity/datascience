@@ -1,6 +1,7 @@
 ### [Main Concepts for Scala](https://www.playframework.com/documentation/2.5.x/ScalaHome)
 
 #### [Forms](https://www.playframework.com/documentation/2.5.x/ScalaForms)
+* "In the success case, we’re sending a Redirect with a route to routes.Application.home here instead of rendering a view template. This pattern is called [Redirect after POST](https://en.wikipedia.org/wiki/Post/Redirect/Get), and is an excellent way to prevent duplicate form submissions."
 
 #### [Templates](https://www.playframework.com/documentation/2.5.x/ScalaTemplates)
 * "A template is like a function, so it needs parameters, which must be declared at the top of the template file."
