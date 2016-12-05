@@ -1,3 +1,7 @@
+[Reinforcement Learning course by David Silver](https://www.youtube.com/watch?v=2pWv7GOvuf0)
+* http://www.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html
+* http://groups.google.com/group/csml-advancted-topics
+
 [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) (11/17/16)
 * "LSTMs were a big step in what we can accomplish with RNNs. It’s natural to wonder: is there another big step? A common opinion among researchers is: “Yes! There is a next step and it’s attention!” The idea is to let every step of an RNN pick information to look at from some larger collection of information. For example, if you are using an RNN to create a caption describing an image, it might pick a part of the image to look at for every word it outputs."
 * **All of the other posts on this guy's blog seem to be really clear also.**
