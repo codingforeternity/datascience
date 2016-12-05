@@ -1,3 +1,7 @@
+[](https://www.quantamagazine.org/20161129-verlinde-gravity-dark-matter/)
+* "De Sitter space-times like ours stretch as you look far into the distance. For this to happen, space-time must be infused with a tiny amount of background energy — often called dark energy — which drives space-time apart from itself."
+* "disrupted by the presence of matter, which essentially removes dark energy from the region of space-time that it occupied. The dark energy then tries to move back into this space, exerting a kind of elastic response on the matter that is equivalent to a gravitational attraction." [FWC - this is similar to my idea that DM and DE are opposites of the same effect, one pushes on the other]
+
 The universe is a partial function. (10/6/16)
 * The holographic principle: http://physics.stackexchange.com/questions/46709/why-is-information-in-a-volume-proportional-to-its-surface-area
 
