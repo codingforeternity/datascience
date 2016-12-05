@@ -1,3 +1,7 @@
+[Quantum Gravity’s Time Problem](https://www.quantamagazine.org/20161201-quantum-gravitys-time-problem/)
+* "many leading physicists now consider space-time and gravity to be “emergent” phenomena: Bendy, curvy space-time and the matter within it are a hologram that arises out of a network of entangled qubits"
+* "time doesn’t exist globally, but an effective notion of time emerges for the subsystem."
+
 [The Case Against Dark Matter](https://www.quantamagazine.org/20161129-verlinde-gravity-dark-matter/) (12/5/16)
 * "A proposed theory of gravity does away with dark matter, even as new astrophysical findings challenge the need for galaxies full of the invisible mystery particles."
 * "De Sitter space-times like ours stretch as you look far into the distance. For this to happen, space-time must be infused with a tiny amount of background energy — often called dark energy — which drives space-time apart from itself."
