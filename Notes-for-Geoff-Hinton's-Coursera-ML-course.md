@@ -328,3 +328,9 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   1. distributed hidden states => efficiency
   2. non-linear => updating hidden state in complicated ways
 * RNNs are hard to train though because of their computational power
+
+### [7b: Training RNNs with backpropagation](https://www.coursera.org/learn/neural-networks/lecture/vxWDQ/training-rnns-with-back-propagation)
+* "backpropagation through time algorithm"
+* **feed-forward network with constrained weights*** - just "unroll" the network into a typical feed-forward net (with duplicated/constrained weights)
+* remember: it's easy to modify backprop to incorporate linear constraints (compute gradients as usual, then modify them to satisfy the constraints)
+* (1) forward pass to build up stack of activities at each time step followed by (2) backward pass to peel activities off the stack to compute error derivatives then (3) average derivatives from all different times to update weights
