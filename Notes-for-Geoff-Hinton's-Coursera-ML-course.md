@@ -324,3 +324,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     * "there's an easy solution, based on dynamic programming, to take the observations we've made and from those, compute the probability distribution across the hidden states"
     * fundamental limitation of HMMs: with only only N states, they can only remember log(N) bits about what has been generated thus far [FWC - they aren't big enough; it's not possible to enumerate enough hidden states]
       * e.g. given 300 syntactic forms, 100k semantic types, and 1k combinations of voice type & intonation => 30e9 hidden states
+* RNNs have a more efficient way of storing/representing information (they're also Turing-complete)
+  1. distributed hidden states => efficiency
+  2. non-linear => updating hidden state in complicated ways
+* RNNs are hard to train though because of their computational power
