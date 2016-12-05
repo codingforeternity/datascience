@@ -314,3 +314,13 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     * speech recognition (large and redundant)
     * (unchecked) sentiment analysis w/ 100 cases (small dataset)
     * (unchecked) disease prediction (small dataset)
+
+### [7a: Modeling sequences, a brief overview](https://www.coursera.org/learn/neural-networks/lecture/Fpa7y/modeling-sequences-a-brief-overview)
+* 2 standard models (not RNNs)
+  1. Kalman Filtering (engineers love them!) - efficient recursive way of updating your representation of the hidden state [e.g. covariance matrix] given a new observation
+    * given an output, we can't know for sure the hidden state, but we can estimate a Gaussian distribution over the possible hidden states
+  2. Hidden Markov Models (computer scientists love them) - have a discrete 1-of-N state, transitions btw states are stochastic and controlled by transition matrix, outputs are produced stochastically as well
+    * this is where the term "hidden" layer comes from (coined by Hinton himself)
+    * "there's an easy solution, based on dynamic programming, to take the observations we've made and from those, compute the probability distribution across the hidden states"
+    * fundamental limitation of HMMs: with only only N states, they can only remember log(N) bits about what has been generated thus far [FWC - they aren't big enough; it's not possible to enumerate enough hidden states]
+      * e.g. given 300 syntactic forms, 100k semantic types, and 1k combinations of voice type & intonation => 30e9 hidden states
