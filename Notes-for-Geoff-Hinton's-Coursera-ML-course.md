@@ -347,4 +347,4 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
 * We could train a *feedforward* net to do binary addition, but there are obvious regularities that it cannot capture *efficiently*
   * would have to decide in advance how many digits
   * the processing applied to the beginning of a # wouldn't generalize to the end b/c it'd be using different weights
-* **"A recurrent network can emulate a finite state automaton, but it is exponentially more powerful. With N hidden neurons it has 2^N possible binary activity vectors (but only N^2 weights)"**
+* "A recurrent network can emulate a finite state automaton, but it is **exponentially more powerful. With N hidden neurons it has 2^N possible binary activity vectors (but only N^2 weights)**"
