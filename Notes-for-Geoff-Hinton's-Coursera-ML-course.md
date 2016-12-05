@@ -334,3 +334,11 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
 * **feed-forward network with constrained weights*** - just "unroll" the network into a typical feed-forward net (with duplicated/constrained weights)
 * remember: it's easy to modify backprop to incorporate linear constraints (compute gradients as usual, then modify them to satisfy the constraints)
 * (1) forward pass to build up stack of activities at each time step followed by (2) backward pass to peel activities off the stack to compute error derivatives then (3) average derivatives from all different times to update weights
+* Specifying the states of the same subset of the units at every time step is the natural way to model most sequential data.
+* Specifying targets:
+  1. specify desired final activities of all units
+  2. activities for the last few time steps (good for learning *attractors*, i.e. to have the net "settle down" towards the end; it's easy to average in errors as we backpropagate through the final layers)
+  3. specify desired activity of a subset of the outputs: natural way to train a network that should be producing "continuous output" (the other units are hidden or input)
+* Q: Suppose we're training an RNN on a sequence of numbers.  After it has seen all the numbers in the sequence, we want it to tell us the sum of all the numbers in the sequence.  Which of the following statements are correct?
+  * A1: To provide input, we should specify the state of one unit (say unit #1) at every time step.  Reason: There's one input at each time step, the next number in the sequence.
+  * A2: We should specify a target for one unit (say unit #2) only at the final time step.  Reason: There's one output value, which occurs only at the last time step.  That's where the model is expected to produce the sum of the numbers in the sequence.
