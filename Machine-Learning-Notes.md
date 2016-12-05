@@ -1,4 +1,5 @@
 [Reinforcement Learning course by David Silver](https://www.youtube.com/watch?v=2pWv7GOvuf0)
+* RL == "the science of decision making"
 * http://www.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html
 * http://groups.google.com/group/csml-advancted-topics
 * The seminal book on RL: http://webdocs.cs.ualberta.ca/~sutton/book/the-book.html
