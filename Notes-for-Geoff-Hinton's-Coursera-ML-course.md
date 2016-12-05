@@ -354,3 +354,8 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
 * There is a big difference between the forward and backward passes
   * In the forward pass, we use squashing functions (like the logistic) to prevent the activity vectors from exploding [FWC - these squashing functions get applied at every single layer over and over]
   * The backward pass is completely linear (which most people find surprising).  If you double the error derivatives at the final layer, all the error derivatives [at all layers throughout the net] will double.
+    * backprop is a linear system which suffer from problem: when you iterate, the gradients explode or 
+die
+    * if small weights => they shrink exponentially [due to constraint averaging]; if big => they grow exponentially
+* Typical feedforward NNs can cope with these exponential effects b/c they only have a few hidden layers.
+  * In an RNN trained on long sequence (e.g. 100 time steps) the gradients can easily explode or vanish.
