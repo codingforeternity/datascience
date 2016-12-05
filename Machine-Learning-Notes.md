@@ -3,6 +3,10 @@
 * http://www.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html
 * http://groups.google.com/group/csml-advancted-topics
 * The seminal book on RL: http://webdocs.cs.ualberta.ca/~sutton/book/the-book.html
+* What makes RL different from other ML paradigms?
+  * There is no supervisor, only a reward signal.  There is nobody saying "that was the best thing to do in this scenario" -- [FWC - no labels, only relative rewards]
+  * Feedback is delayed [maybe many steps later, e.g. positive rewards for many steps followed by a catastrophic negative]
+  * Time really matters (sequential, non-i.i.d. data) e.g. robot moving through a world, in RL the agent gets to take actions, the agent influences the data [path dependencies] "optimize a sequence of decisions"
 
 [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) (11/17/16)
 * "LSTMs were a big step in what we can accomplish with RNNs. It’s natural to wonder: is there another big step? A common opinion among researchers is: “Yes! There is a next step and it’s attention!” The idea is to let every step of an RNN pick information to look at from some larger collection of information. For example, if you are using an RNN to create a caption describing an image, it might pick a part of the image to look at for every word it outputs."
