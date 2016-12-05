@@ -1,4 +1,5 @@
-[](https://www.quantamagazine.org/20161129-verlinde-gravity-dark-matter/)
+[The Case Against Dark Matter](https://www.quantamagazine.org/20161129-verlinde-gravity-dark-matter/) (12/5/16)
+* "A proposed theory of gravity does away with dark matter, even as new astrophysical findings challenge the need for galaxies full of the invisible mystery particles."
 * "De Sitter space-times like ours stretch as you look far into the distance. For this to happen, space-time must be infused with a tiny amount of background energy — often called dark energy — which drives space-time apart from itself."
 * "disrupted by the presence of matter, which essentially removes dark energy from the region of space-time that it occupied. The dark energy then tries to move back into this space, exerting a kind of elastic response on the matter that is equivalent to a gravitational attraction." [FWC - this is similar to my idea that DM and DE are opposites of the same effect, one pushes on the other]
 
