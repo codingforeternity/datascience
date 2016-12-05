@@ -348,3 +348,9 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   * would have to decide in advance how many digits
   * the processing applied to the beginning of a # wouldn't generalize to the end b/c it'd be using different weights
 * "A recurrent network can emulate a finite state automaton, but it is **exponentially more powerful. With N hidden neurons it has 2^N possible binary activity vectors (but only N^2 weights)**"
+
+### [7d: Why it is difficult to train an RNN](https://www.coursera.org/learn/neural-networks/lecture/kTsBP/why-it-is-difficult-to-train-an-rnn)
+* exploding and vanishing gradients
+* There is a big difference between the forward and backward passes
+  * In the forward pass, we use squashing functions (like the logistic) to prevent the activity vectors from exploding [FWC - these squashing functions get applied at every single layer over and over]
+  * The backward pass is completely linear (which most people find surprising).  If you double the error derivatives at the final layer, all the error derivatives [at all layers throughout the net] will double.
