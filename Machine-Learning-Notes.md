@@ -1,3 +1,6 @@
+[Neural Networks, Manifolds, and Topology](http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/)
+* "As mentioned previously, classification with a sigmoid unit or a softmax layer is equivalent to trying to find a hyperplane (or in this case a line) that separates A and B in the final represenation. With only two hidden units, a network is topologically incapable of separating the data in this way, and doomed to failure on this dataset."
+
 [Deep learning, model checking, AI, the no-homunculus principle, and the unitary nature of consciousness](http://andrewgelman.com/2016/11/21/deep-learning-model-checking-ai-no-homunculus-principle-unitary-nature-consciousness/)
 * "Lots has been written on 'machine learning' but in practice this often captures just part of the process. Here I want to discuss the possibilities for automating the entire process."
 * "posterior distribution—the conditional probability distribution of the unobserved quantities of ultimate interest, given the observed data."
