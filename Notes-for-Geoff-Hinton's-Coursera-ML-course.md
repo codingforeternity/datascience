@@ -342,3 +342,9 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
 * Q: Suppose we're training an RNN on a sequence of numbers.  After it has seen all the numbers in the sequence, we want it to tell us the sum of all the numbers in the sequence.  Which of the following statements are correct?
   * A1: To provide input, we should specify the state of one unit (say unit #1) at every time step.  Reason: There's one input at each time step, the next number in the sequence.
   * A2: We should specify a target for one unit (say unit #2) only at the final time step.  Reason: There's one output value, which occurs only at the last time step.  That's where the model is expected to produce the sum of the numbers in the sequence.
+
+### [7c: A toy example of training an RNN](https://www.coursera.org/learn/neural-networks/lecture/44MXw/a-toy-example-of-training-an-rnn)
+* We could train a *feedforward* net to do binary addition, but there are obvious regularities that it cannot capture *efficiently*
+  * would have to decide in advance how many digits
+  * the processing applied to the beginning of a # wouldn't generalize to the end b/c it'd be using different weights
+* "A recurrent network can emulate a finite state automaton, but it is exponentially more powerful. With N hidden neurons it has 2^N possible binary activity vectors (but only N^2 weights)"
