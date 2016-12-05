@@ -359,3 +359,21 @@ die
     * if small weights => they shrink exponentially [due to constraint averaging]; if big => they grow exponentially
 * Typical feedforward NNs can cope with these exponential effects b/c they only have a few hidden layers.
   * In an RNN trained on long sequence (e.g. 100 time steps) the gradients can easily explode or vanish.
+* 4 effective ways to learn an RNN
+  1. LSTMs - compose RNN out of little modules designed to remember for long periods
+  2. Hessian Free Optimization - a fancy optimizer to detect directions w/ tiny gradient but even smaller curvature (The HF Optimizer, Martens and Sutskever, 2011, is good at this)
+  3. Echo State Networds - work around the problem via careful initialization, weakly coupled oscillators
+  4. Good init w/ momentum - ESN initialization, but then learn w/ momentum
+
+### [7e: Long Short-Term Memory](https://www.coursera.org/learn/neural-networks/lecture/Nk2p6/long-term-short-term-memory)
+* The dynamic state of a RNN is its short term memory, but we want to make the short term memory last for a long time.
+* LSTMs have been successful for cursive handwriting recognition (Graves & Schmidhuber, 2009) - input: (x,y,p) coordinates for pen tip (where p is boolean = pen up/down) - output: seq of chars
+* "keep"/forget, "write" (cell influences rest of net), and "read" (rest of net influences cell) gates - all logistics (**logistics are used because they have nice derivatives**)
+
+### Quiz 7
+  1. 16 logistic hidden units can model 16 bits of information (WRONG, correct answer is ">16 bits")
+  2. RNN and FFNN, both w/ 200ms (WRONG, RNN w/ 30ms of input should also be selected)
+  3. see (green) notebook, A: -0.355 (CORRECT)
+  4. see (green) notebook, A: 0.01392 (CORRECT)
+  5. exploding (WRONG, correct "vanishing")
+  6. see (green) notebook, A: c (CORRECT)
