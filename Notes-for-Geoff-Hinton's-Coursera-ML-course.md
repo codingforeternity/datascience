@@ -377,3 +377,8 @@ die
   4. see (green) notebook, A: 0.01392 (CORRECT)
   5. exploding (WRONG, correct "vanishing")
   6. see (green) notebook, A: c (CORRECT)
+
+* take 2 & 3
+  1. 16 HMM units -> 16 bits (WRONG, correct answer is "4 bits" for an HMM)
+  3. (WRONG) asked this time for T=2 (T=1 was asked the last 2 times)
+
