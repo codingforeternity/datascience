@@ -1,4 +1,4 @@
-### [Streaming Model for Linear Regression](http://koaning.io/bayesian-propto-streaming-algorithms.html) (12/1/16)
+### * [Streaming Model for Linear Regression](http://koaning.io/bayesian-propto-streaming-algorithms.html) (12/1/16)
 * **iterative, on-line/streaming approach to linear regression** (convergence of a posterior distribution--"the conditional probability distribution of the unobserved quantities of ultimate interest, given the observed data" [see [[Machine Learning Notes]]])
 * nice brief explanation of Bayesian Statistics
 * and really nice examples of Python plotting and likihood
@@ -10,7 +10,7 @@
 
 #### [Introductory Statistics for Data Science](http://davegiles.blogspot.com/2015/04/introductory-statistics-for-data-science.html) (4/26/15)
 
-#### [Handy Statistical Lexicon, Gelman](http://andrewgelman.com/2009/05/24/handy_statistic/) (10/3/16)
+### * [Handy Statistical Lexicon, Gelman](http://andrewgelman.com/2009/05/24/handy_statistic/) (10/3/16)
 
 #### [A Curated List of Data Science Interview Questions](https://www.springboard.com/blog/data-science-interview-questions/) (11/8/16)
 
