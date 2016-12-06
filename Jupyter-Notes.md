@@ -1,0 +1,2 @@
+#### [Jupyter Notebook Tutorial: The Definitive Guide](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook?utm_campaign=Data%2BElixir&utm_medium=email&
+utm_source=Data_Elixir_107#gs.JClrSzA)
