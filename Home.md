@@ -61,6 +61,7 @@ Welcome to the fcrimins.github.io wiki!
 
 - [[Apache Spark]]
 - [[Linux Notes]] (kws: UNIX)
+- [[Jupyter Notes]] (kws: IPython)
 
 <br>
 
