@@ -5,6 +5,7 @@
 
 #### [Python Data Science Handbook from O'Reilly by Jake VanderPlas](https://github.com/jakevdp/PythonDataScienceHandbook)
 * Run `jupyter notebook` inside `~/code/PythonDataScienceHandbook/notebooks/` to see the book
+  * Local version here: http://localhost:8888/notebooks/01.00-IPython-Beyond-Normal-Python.ipynb
 * First chapter is a nice background on Jupyter
 
 #### [Jupyter Notebook Tutorial: The Definitive Guide](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook?utm_campaign=Data%2BElixir&utm_medium=email&utm_source=Data_Elixir_107#gs.JClrSzA)
