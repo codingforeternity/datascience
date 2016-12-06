@@ -1,3 +1,9 @@
+#### [Attention and Memory in Deep Learning and NLP](http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/)
+* "In theory, architectures like LSTMs should be able to deal with this, but in practice long-range dependencies are still problematic."
+* "A big advantage of attention is that it gives us the ability to interpret and visualize what the model is doing"
+* "An alternative approach to attention is to use Reinforcement Learning to predict an approximate location to focus to.  That sounds a lot more like human attention, and that’s what’s done in Recurrent Models of Visual Attention."
+* "In Show, Attend and Tell the authors apply attention mechanisms to the problem of generating image descriptions. They use a Convolutional Neural Network to “encode” the image, and a Recurrent Neural Network with attention mechanisms to generate a description" [FWC - this is my stock encoding -> forecast idea]
+
 ### [Attention and Augmented Recurrent Neural Networks](http://distill.pub/2016/augmented-rnns/)
 * Neural Turing Machines - "The *challenge is that we want to make them differentiable*. In particular, we want to make them differentiable with respect to the location we read from or write to, so that we can learn where to read and write."  "There are a number of *open source implementations* of these models..."
 * Attention Interfaces - "We’d like attention to be differentiable, so that we can learn where to focus. To do this, we use the same trick Neural Turing Machines use: we focus everywhere, just to different extents." **[FWC - Just like unsupervised learning has been applied to images (e.g. recognition of a concept called "cat") has it been applied to text?  E.g. recognition of parts of speech, verbs, nouns, etc.  If this could be performed on a known language perhaps it could be performed on the voynich manuscript]**
