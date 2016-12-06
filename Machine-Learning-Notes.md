@@ -1,3 +1,8 @@
+[Understanding Convolutions](http://colah.github.io/posts/2014-07-Understanding-Convolutions/) (12/6/16)
+* "Max-pooling layers kind of 'zoom out'. They allow later convolutional layers to work on larger sections of the data, because a small patch after the pooling layer corresponds to a much larger patch before it. They also make us invariant to some very small transformations of the data."
+* "For us, convolution will provide a number of benefits. Firstly, it will allow us to create much more efficient implementations of convolutional layers than the naive perspective might suggest."
+* "In fact, the use of highly-efficient parallel convolution implementations on GPUs has been essential to recent progress in computer vision."
+
 [Neural Networks, Manifolds, and Topology](http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/) (12/5/16) (and this similar demo from Karpathy: [ConvnetJS](http://cs.stanford.edu/people/karpathy/convnetjs//demo/classify2d.html))
 * "As mentioned previously, classification with a sigmoid unit or a softmax layer is equivalent to trying to find a hyperplane (or in this case a line) that separates A and B in the final represenation. With only two hidden units, a network is topologically incapable of separating the data in this way, and doomed to failure on this dataset."
 * "The **manifold hypothesis is that natural data forms lower-dimensional manifolds in its embedding space**. There are both theoretical3 and experimental4 reasons to believe this to be true. If you believe this, then the task of a classification algorithm is fundamentally to separate a bunch of tangled manifolds."
