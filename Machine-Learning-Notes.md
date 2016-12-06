@@ -1,3 +1,10 @@
+[Neural Networks and Deep Learning book by Michael Nielsen](http://neuralnetworksanddeeplearning.com/chap2.html)
+* chapter 1 of this "book" was my first real exposure to NNs, just as I was leaving HBK
+
+[](http://colah.github.io/posts/2015-08-Backprop/) (12/6/16)
+* "But I think it was much more difficult than it might seem. You see, at the time backpropagation was invented, people weren’t very focused on the feedforward neural networks that we study. It also wasn’t obvious that derivatives were the right way to train them. Those are only obvious once you realize you can quickly calculate derivatives. There was a circular dependency."
+* "Worse, it would be very easy to write off any piece of the circular dependency as impossible on casual thought. Training neural networks with derivatives? Surely you’d just get stuck in local minima. And obviously it would be expensive to compute all those derivatives. It’s only because we know this approach works that we don’t immediately start listing reasons it’s likely not to."
+
 [Understanding Convolutions](http://colah.github.io/posts/2014-07-Understanding-Convolutions/) (12/6/16)
 * "Max-pooling layers kind of 'zoom out'. They allow later convolutional layers to work on larger sections of the data, because a small patch after the pooling layer corresponds to a much larger patch before it. They also make us invariant to some very small transformations of the data."
 * "For us, convolution will provide a number of benefits. Firstly, it will allow us to create much more efficient implementations of convolutional layers than the naive perspective might suggest."
