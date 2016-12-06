@@ -1,5 +1,6 @@
 #### Looks like someone's already done my 'fuzzy ESG' idea
 * In [Grammar as a Foreign Language](http://arxiv.org/abs/1412.7449), the authors use a Recurrent Neural Network with attention mechanisk to generate sentence parse trees. The visualized attention matrix gives insight into how the network generates those trees [http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/]
+* "Attention = (Fuzzy) Memory?"
 
 #### [Deep Learning, NLP, and Representations](http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/) (11/29/16)
 * "This seems to be a great strength of neural networks: they learn better ways to represent data, automatically. Representing data well, in turn, seems to be essential to success at many machine learning problems. Word embeddings are just a particularly striking example of learning a representation." [FWC idea - **Compute company embeddings the same way, using negative sampling on company statistics, then use those embeddings to predict returns.  This might be analogous to PCA, e.g. rather than running PCA to orthogonalize company characteristics (as mentioned in lecture 6 of Geoff Hinton's ML course), use embeddings to orthogonalize.  This might be a better approach than training LSTMs on raw data.**]
