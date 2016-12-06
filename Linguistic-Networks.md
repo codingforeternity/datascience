@@ -1,0 +1,5 @@
+Language is Turing complete.  Why is it difficult for neural nets to learn language?
+
+Perhaps language provides another, separate model of how to represent information that can be learned.  Rather than specific sorts of neurons (e.g. tanh, sigmoid) and operations (elementwise matrix multiplication), maybe we should model specific sorts of *words* (e.g. verbs, nouns, pronouns, adjectives).  Verbs are things that are performed by (or act on) nouns.  Pronouns are pointers/refs.  Adjectives and adverbs are both modifiers of different POS.
+
+Neural nets require continuous transformations that are applied in discrete steps (e.g. the layers of the network).  Language is different, it has discrete concepts (words) applied in continuous, *attention*-like steps.  Would *linguistic networks* be the dual or the transpose of a neural network?  Kinda like you can convert back and forth between time-domain and frequency-domain.  Given a sentence describing a program, could you represent that sentence in a matrix-like data structure, transpose that matrix, and end up with a NN?
