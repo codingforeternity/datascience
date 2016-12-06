@@ -1,7 +1,7 @@
 [Neural Networks and Deep Learning book by Michael Nielsen](http://neuralnetworksanddeeplearning.com/chap2.html)
 * chapter 1 of this "book" was my first real exposure to NNs, just as I was leaving HBK
 
-[](http://colah.github.io/posts/2015-08-Backprop/) (12/6/16)
+[Calculus on Computational Graphs: Backpropagation](http://colah.github.io/posts/2015-08-Backprop/) (12/6/16)
 * "But I think it was much more difficult than it might seem. You see, at the time backpropagation was invented, people weren’t very focused on the feedforward neural networks that we study. It also wasn’t obvious that derivatives were the right way to train them. Those are only obvious once you realize you can quickly calculate derivatives. There was a circular dependency."
 * "Worse, it would be very easy to write off any piece of the circular dependency as impossible on casual thought. Training neural networks with derivatives? Surely you’d just get stuck in local minima. And obviously it would be expensive to compute all those derivatives. It’s only because we know this approach works that we don’t immediately start listing reasons it’s likely not to."
 
