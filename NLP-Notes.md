@@ -6,6 +6,8 @@
   * differentiated softmax - not all words require the same number of parameters so use a sparse matrix arranged in blocks sorted by frequency **[FWC - this could be a useful way of representing company data, some sets of company stats are much more likely than others]** In contrast to H-Softmax, this speed-up persists during testing (the fastest method during testing)
   * CNN-softmax - instead of storing an embedding matrix of dx|V|, we now only need to keep track of the parameters of the CNN [FWC - like factorizing the matrix] - difficult to differentiate between similarly spelled words with different meanings
 * Sampling-based Approaches - only useful at training time -- during inference (at test time) the full softmax still needs to be computed to obtain a normalised probability.
+  * Importance Sampling - approximate the expected value of any probability distribution using the Monte Carlo method
+  * #### Noise Contrastive Estimation (NCE) - **train a model to differentiate the target word from noise** - reduce the problem of predicting the correct word to a binary classification task, where the model tries to distinguish positive, genuine data from noise samples - use **logistic regression to minimize the negative log-likelihood, i.e. cross-entropy of our training examples against the noise**
 
 ### [Sebastian Ruder, On word embeddings, Part 1](http://sebastianruder.com/word-embeddings-1/index.html)
 * Bengio (2003): "the final softmax layer (more precisely: the normalization term) as the network's main bottleneck, as the cost of computing the softmax is proportional to the number of words in V [FWC - the vocabulary], which is typically on the order of hundreds of thousands or millions."
