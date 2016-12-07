@@ -429,7 +429,7 @@ die
   * best single model for character prediction (combinations of many models do better)
   * start w/ model in default hidden state, give it a "burn-in" (FWC - ramp-in) sequence of chars and let it update its hiddens state after each char
   * See: 'How to generate character strings from the model' slide to see what it "knows" **(FWC - to generate ideas from it)**
-    * tell it that whatever char it predicts is correct and let it go on generating **(FWC - this could be used to generate scenarios for monte carlo simulation)**
+    * tell it that whatever char it predicts is correct and let it go on generating **(FWC - this could be used to generate scenarios for monte carlo simulation.  the analogy to character learning might be learning a mean and a stdev (and skew)--the moments of a distribution--rather than different buckets of means which wouldn't have any represented order to them)**
   * Also see: 'Some completions produced by the model' slide
     * "The meaning of life is *literary recognition.*" (6th try)
   * it learns loose semantics, but humans learn these things too
