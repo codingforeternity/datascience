@@ -382,7 +382,22 @@ die
   1. 16 HMM units -> 16 bits (WRONG, correct answer is "4 bits" for an HMM)
   3. (WRONG) asked this time for T=2 (T=1 was asked the last 2 times)
 
-### [8a: A brief overview of "Hessian-Free" optimization](https://www.coursera.org/learn/neural-networks/lecture/qGmdv/modeling-character-strings-with-multiplicative-connections-14-mins)
+### 8A: A breif overview of "Hessian-Free" optimization (no video, but lecture slides are in lec8.pdf)
+* **Good explanation of why (efficient) optimization involves multiplying by the inverse of a covariance matrix**
+  * "maximum error reduction depends on the ratio of the gradient to the curvature, so a good direction to move in is one w/ high ratio of gradient to curvature, even if the gradient itself is small"
+    * but if the error surface has circular cross-sections the gradient is fine
+    * so apply a linear transformation to turn ellipses into circles
+    * **Newton's method** multiplies the gradient vector by the **inverse of the curvature matrix (FWC - the covariance matrix?)**
+      * delta(w) = -epsilon * H(w)^-1 * del E / del w
+    * on a real quadratic surface this jumps to the minimum in one step
+    * there are too many terms in the curvature matrix H(w) to invert it though
+    * in the HF method, approximate the curvature matrix, then minimize error using *conjugate gradient*
+* **Conjugate gradient**
+  * ensure each next direction is "conjugate" to the previous so that you don't oscillate/thrash too much
+  * Also see 'non-linear conjugate gradient' for non-quadratic error surfaces (where it still works quite well)
+
+
+### [8b: Modeling character strings with multiplicative connections](https://www.coursera.org/learn/neural-networks/lecture/qGmdv/modeling-character-strings-with-multiplicative-connections-14-mins)
 * Modeling text: **Advantages of working with characters**
   * The web is composed of character strings.
   * Any learning method powerful enough to understand the world by reading the web ought to find it trivial to learn which strings make words (this turns out to be true, as we shall see).
