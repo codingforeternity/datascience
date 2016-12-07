@@ -424,4 +424,10 @@ die
    * a can be factored out : C = sum_f[(b'w_f)(u_f * v_f')] * a where the matrix sum multiplied by a is the transition matrix
    * see page 17 of lec8.pdf at file:///home/fred/Documents/articles/geoff_hinton's_machine_learning_coursera/lec8.pdf
 
-
+### [8c: Learning to predict the next character using HF](https://www.coursera.org/learn/neural-networks/lecture/buNl3/learning-to-predict-the-next-character-using-hf-12-mins)
+* Ilya Sutskever used 5 million strings of 100 characters taken from wikipedia. For each string he starts predicting at the 11th character. (**FWC - attempt to recreate this**)
+  * best single model for character prediction (combinations of many models do better)
+  * start w/ model in default hidden state, give it a "burn-in" (FWC - ramp-in) sequence of chars and let it update its hiddens tate after each char
+  * See: 'How to generate character strings from the model' slide to see what it "knows" **(FWC - to generate ideas from it)**
+  * Also see: 'Some completions produced by the model' slide
+    * "The meaning of life is *literary recognition.*" (6th try)
