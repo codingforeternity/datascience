@@ -398,5 +398,15 @@ die
       * e.g. if we arrive at a node "fix" the hidden state can encode that this is a verb and that 'i' or 'e' often follow ("fixed" or "fixing"), so <i-next> can operate on <is-a-verb>, which can be shared by all the verbs -- and <n-next> might follow the *conjunction* of <is-a-verb> followed by <i-previous>
 * Multiplicative connections
   * Use the current char to choose the whole 1500x1500 hidden-to-hidden weight matrix, but constrain the matrices to be similar for each char by using **factors**!!!
+  * 1000 hidden units & 86 character units => 2086 weights (1000 from previous hidden state, 86 from incoming char, plus 1000 outgoing for next hidden state)
+    * vector of inputs to group c for factor f: c_f = (b'w_f)(a'u_f)v_f
+      * b'w_f : scalar input to f from group b (e.g. 86 dim)
+      * a'u_f : scalar input to f from group a (e.g. 1000 dim)
+      * v_f : vector of output weights to be scaled by the 2 scalars above (1000 dim)
+    * rearrange: c_f = (b'w_f)(u_f * v_f')(a)
+      * u_f * v_f' : outer product transition matrix w/ rank 1
+      * a : current hidden state gets multiplied to determine the input that factor f gives to next hidden state
+   * a can be factored out : C = sum_f[(b'w_f)(u_f * v_f')] * a where the matrix sum multiplied by a is the transition matrix
+   * see page 17 of [lec8.pdf](file:///home/fred/Documents/articles/geoff_hinton's_machine_learning_coursera/lec8.pdf)
 
 
