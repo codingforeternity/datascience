@@ -432,3 +432,11 @@ die
     * tell it that whatever char it predicts is correct and let it go on generating **(FWC - this could be used to generate scenarios for monte carlo simulation)**
   * Also see: 'Some completions produced by the model' slide
     * "The meaning of life is *literary recognition.*" (6th try)
+  * it learns loose semantics, but humans learn these things too
+    * If you have to answer this question very quickly what do you answer "What do cows drink?"
+* RNNs for predicting next word (as opposed to next char)
+  * Tomas Mikov has recently trained quite large RNNs on large training sets using BPTT
+  * better than feed-forward NNs, better than best other models, and even better when averaged w/ others
+  * RNNs **require much less training data to reach the same level of performance**
+    * FWC - this is because of their constraints (& factors), the other models have too many degrees of freedom?
+  * RNNs also improve faster as the datasets get bigger
