@@ -382,3 +382,14 @@ die
   1. 16 HMM units -> 16 bits (WRONG, correct answer is "4 bits" for an HMM)
   3. (WRONG) asked this time for T=2 (T=1 was asked the last 2 times)
 
+### [8a: A brief overview of "Hessian-Free" optimization](https://www.coursera.org/learn/neural-networks/lecture/qGmdv/modeling-character-strings-with-multiplicative-connections-14-mins)
+* Modeling text: **Advantages of working with characters**
+  * The web is composed of character strings.
+  * Any learning method powerful enough to understand the world by reading the web ought to find it trivial to learn which strings make words (this turns out to be true, as we shall see).
+  * Pre-processing text to get words is a big hassle
+    * What about morphemes (prefixes, suffixes etc)
+    * What about subtle effects like “sn” words?  They often have something to do w/ upper lip or nose: snot, snarl, snog.  "Many people say, 'What about snow?' but ask yourself: why is 'snow' such a good word for cocaine?"
+    * What about New York?  One lexical item or 2?  "New Yorkminster Roof"?
+    * What about Finnish (and [Agglutinative Language](https://en.wikipedia.org/wiki/Agglutinative_language))? ymmartamattomyydellansakaan (FWC lots of umlaut's left off this "word")
+
+
