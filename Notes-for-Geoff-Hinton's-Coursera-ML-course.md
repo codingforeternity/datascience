@@ -390,6 +390,13 @@ die
     * What about morphemes (prefixes, suffixes etc)
     * What about subtle effects like “sn” words?  They often have something to do w/ upper lip or nose: snot, snarl, snog.  "Many people say, 'What about snow?' but ask yourself: why is 'snow' such a good word for cocaine?"
     * What about New York?  One lexical item or 2?  "New Yorkminster Roof"?
-    * What about Finnish (and [Agglutinative Language](https://en.wikipedia.org/wiki/Agglutinative_language))? ymmartamattomyydellansakaan (FWC lots of umlaut's left off this "word")
+    * What about Finnish (and [Agglutinative Language](https://en.wikipedia.org/wiki/Agglutinative_language))? This word takes 5 words in English to say the same thing: ymmartamattomyydellansakaan (FWC lots of umlaut's left off this "word")
+  * It's a lot easier to predict 86 chars than 100,000 words
+  * 2 ways to build a NN
+    1. 1500-hidden layer RNN; requires backprop to the beginning of the string
+    2. a tree where each node is a hidden state vector (exponentially many nodes), but different nodes can share structure b/c they use distributed representations
+      * e.g. if we arrive at a node "fix" the hidden state can encode that this is a verb and that 'i' or 'e' often follow ("fixed" or "fixing"), so <i-next> can operate on <is-a-verb>, which can be shared by all the verbs -- and <n-next> might follow the *conjunction* of <is-a-verb> followed by <i-previous>
+* Multiplicative connections
+  * Use the current char to choose the whole 1500x1500 hidden-to-hidden weight matrix, but constrain the matrices to be similar for each char by using **factors**!!!
 
 
