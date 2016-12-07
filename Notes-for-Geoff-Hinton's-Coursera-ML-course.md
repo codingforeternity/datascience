@@ -106,7 +106,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   * then scale "softmax group(s)" so that they sum to 1: y_i = **e^**(z_i) / Sum_j[**e^**(z_j)] ... (**don't forget the e's!**)
   * **del y_i / del z_i = y_i * (1 - y_i)** ... not trivial to derive b/c of all the terms in the numerator above
 * **Cross-entropy**: the *right* cost function to use with softmax
-  * The right cost function is the **negative log probability of the right answer**.  [FWC - because the answer is a 1-hot vector with a 1 at the right answer]
+  * The right cost function is the **negative log probability of the right answer**.  [FWC - because the answer is a 1-hot vector with a 1 at the right answer or this [from Sebastian Ruder](http://sebastianruder.com/word-embeddings-softmax/): "have a look at [Karpathy's explanation](http://cs231n.github.io/linear-classify/#softmax-classifier) to gain some more intuitions about the connection between softmax and cross-entropy"]
     * C = -Sum_j[t_j ln(y_j)] ... where t_j == 1 for only one j (note the multiplication of t_j and ln(y_j) not subtraction)
     * C = -log( exp(y_i) / Sum_j[exp(y_j)] )  ... where i is the right answer (this is from Quiz 4, question 1) ... = -y_i + log(Sum_j[exp(y_j)])
   * C has a very big gradient when the target value is 1 and the output is almost zero.
