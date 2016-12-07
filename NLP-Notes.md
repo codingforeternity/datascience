@@ -1,3 +1,15 @@
+### [Sebastian Ruder, On word embeddings, Part 2: Approximating the softmax](http://sebastianruder.com/word-embeddings-softmax/)
+* 
+
+### [Sebastian Ruder, On word embeddings, Part 1](http://sebastianruder.com/word-embeddings-1/index.html)
+* "the final softmax layer (more precisely: the normalization term) as the network's main bottleneck, as the cost of computing the softmax is proportional to the number of words in V [FWC - the vocabulary], which is typically on the order of hundreds of thousands or millions."
+* [C&W's "solution](http://sebastianruder.com/word-embeddings-1/index.html#fn:4) to avoid computing the expensive softmax is to use a different objective function: Instead of the cross-entropy criterion of Bengio et al., which maximizes the probability of the next word given the previous words, Collobert and Weston train a network to **output a higher score fθ for a correct word sequence** (a probable word sequence in Bengio's model) than for an incorrect one." ... but ... "they keep the intermediate fully-connected hidden layer (2.) of Bengio et al. around (the HardTanh layer in Figure 3), which constitutes another source of expensive computation"
+* "Technically however, **word2vec** is not be considered to be part of deep learning, as its architecture is neither deep nor uses non-linearities"
+  * continuous bag of words (CBOW): "use both the n words before and after the target word w_t to predict it"
+  * "**skip-gram** turns the language model objective on its head: Instead of using the surrounding words, v_{w_t+j} (or v_O, "o" for output), to predict the centre word, v_{w_t} (or v_I)  as with CBOW, skip-gram uses the centre word to predict the surrounding words"
+  * "As the skip-gram architecture does not contain a hidden layer that produces an intermediate state vector h, h is simply the word embedding v_{w_t} (or v_I) of the input word w_t (or I)"
+  * "In the next post [see above], we will discuss different ways to approximate the expensive softmax as well as key training decisions that account for much of skip-gram's success"
+
 #### Looks like someone's already done my 'fuzzy ESG' idea
 * In [Grammar as a Foreign Language](http://arxiv.org/abs/1412.7449), the authors use a Recurrent Neural Network with attention mechanisk to generate sentence parse trees. The visualized attention matrix gives insight into how the network generates those trees [http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/]
 * "Attention = (Fuzzy) Memory?"
