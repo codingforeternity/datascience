@@ -3,7 +3,7 @@
 
 [Scala by Example (Martin Odersky)](http://www.scala-lang.org/docu/files/ScalaByExample.pdf)
 * includes nice explanation of tail recursion (see gcd/factorial example)
-* "Scala uses call-by-value (FWC - parameters are evaluated before calling) by default, but it switches to call-by-name (FWC - unevaluated references to parameters are passed and only evaluated upon use) evaluation if the parameter type is preceded by =>"
+* "Scala uses call-by-value (FWC - parameters are evaluated before calling) by default, but it switches to call-by-name (FWC - unevaluated references to parameters are passed and only evaluated upon use) evaluation if the parameter type is preceded by =>" [p. 20]
 
 [Ways to pattern match generic types in Scala](http://www.cakesolutions.net/teamblogs/ways-to-pattern-match-generic-types-in-scala) (9/21/16)
 * See [Type Tags](http://www.cakesolutions.net/teamblogs/ways-to-pattern-match-generic-types-in-scala#type-tags) section in particular
