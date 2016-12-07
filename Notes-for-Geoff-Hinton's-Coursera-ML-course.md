@@ -435,7 +435,7 @@ die
   * it learns loose semantics, but humans learn these things too
     * If you have to answer this question very quickly what do you answer "What do cows drink?"
 * RNNs for predicting next word (as opposed to next char)
-  * Tomas Mikov has recently trained quite large RNNs on large training sets using BPTT
+  * Tomas Mikolov (word2vec!) has recently trained quite large RNNs on large training sets using BPTT
   * better than feed-forward NNs, better than best other models, and even better when averaged w/ others
   * RNNs **require much less training data to reach the same level of performance**
     * FWC - this is because of their constraints (& factors), the other models have too many degrees of freedom?
