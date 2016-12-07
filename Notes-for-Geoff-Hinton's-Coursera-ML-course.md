@@ -407,6 +407,6 @@ die
       * u_f * v_f' : outer product transition matrix w/ rank 1
       * a : current hidden state gets multiplied to determine the input that factor f gives to next hidden state
    * a can be factored out : C = sum_f[(b'w_f)(u_f * v_f')] * a where the matrix sum multiplied by a is the transition matrix
-   * see page 17 of [lec8.pdf](file:///home/fred/Documents/articles/geoff_hinton's_machine_learning_coursera/lec8.pdf)
+   * see page 17 of lec8.pdf at file:///home/fred/Documents/articles/geoff_hinton's_machine_learning_coursera/lec8.pdf
 
 
