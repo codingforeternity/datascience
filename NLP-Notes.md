@@ -47,6 +47,15 @@
 * "While GloVe is considered a "*predict*" model [FWC - as opposed to a "*count*" model, e.g. DS or LSA] by Levy et al. (2015), it is **clearly factorizing a word-context co-occurrence matrix**, which brings it close to traditional methods such as PCA and LSA. Even more, Levy et al. [4] demonstrate that word2vec implicitly factorizes a word-context PMI matrix"
 * "[Levy et al. 2015](https://transacl.org/ojs/index.php/tacl/article/view/570) find that SVD -- and not one of the word embedding algorithms -- performs best on similarity tasks, while SGNS performs best on analogy datasets"
   * "**Hyperparameter settings are often more important than algorithm choice.**"
+  * "SNGS [word2vec] outperforms GloVe on all tasks."
+* Recommendations -- and one of the things I like most about the paper -- we can give concrete practical recommendations:
+  * DON'T use shifted PPMI with SVD.
+  * **DON'T use SVD "correctly"**, i.e. without eigenvector weighting (performance drops 15 points compared to with eigenvalue weighting with p=0.5).
+  * DO use PPMI and SVD with short contexts (window size of 2).
+  * DO use many negative samples with SGNS.
+  * DO always use context distribution smoothing (raise unigram distribution to the power of α=0.75) for all methods.
+  * DO use SGNS as a baseline (robust, fast and cheap to train).
+  * DO try adding context vectors in SGNS and GloVe.
 
 #### Good lecture on word2vec and GloVe (10/19/16)
 * Slides from Mar 31 lecture http://cs224d.stanford.edu/syllabus.html (which are also in email)
