@@ -458,10 +458,10 @@ die
 * Sukskever (2012) used ESN initialization in a normal RNN (with rmsprop and momentum) - very efficient/effective
 
 ### Week 8 Quiz
-  1. (checked) can use model where input char chooses whole matrix; (unchecked) can't use additive/obvious model (not sufficiently flexible); (unchecked) too many factors b/c simply choosing a multiplicative matrix for each char is at least as flexible as a factor-constrained matrix for each char; can use additive with modification b/c the modification (one for each factor) acts like the multiplicative model
-  2. 1 - because still selecting a single matrix that connects each hidden->hidden
-  3. 3086 (1500*2 + 86) (see lecture notes above)
-  4. It should learn eventually, but that requires more compute power than is available today.
+  1. (checked) can use model where input char chooses whole matrix; (unchecked) can't use additive/obvious model (not sufficiently flexible); (unchecked) too many factors b/c simply choosing a multiplicative matrix for each char is at least as flexible as a factor-constrained matrix for each char; (checked WRONG - an additive model can't express a multiplicative one) can use additive with modification b/c the modification (one for each factor) acts like the multiplicative model
+  2. 1 - because still selecting a single matrix that connects each hidden->hidden (WRONG - 1 per factor, so the answer is 1000, b/c the hidden->hidden weights are only constrained by the factors in this scenario, not constrained to 1 like in the former scenario)
+  3. 3086000 (1500*2 + 86 for each of the 1000 factors) (see lecture notes above) (CORRECT)
+  4. It should learn eventually, but that requires more compute power than is available today (WRONG - that would be overfitting) Wrong: Basic calculations about the size of the hidden state vector show that the model can never learn to reliably generate any fixed string of text that's more than 38 chars long (38 is the sqrt of 1500, the number of hidden units) Correct: That would've been overfitting, which was carefully avoided.
   5. No - they aren't at risk of overfitting b/c the hidden->hidden weights are fixed
-  6. Don't always use the single most likely char next.  Do sample from the distribution.
-  7. In Echo State Networks, does it matter whether the hidden units are linear or logistic (or some other nonlinearity)? A: Yes. With linear hidden units, the output would become a linear function of the inputs, and we typically want to learn nonlinear functions of the input. Therefore, linear hidden units are a bad choice.
+  6. Don't always use the single most likely char next.  Do sample from the distribution.  A probability distribution is better visualized by samples from it.
+  7. **In Echo State Networks, does it matter whether the hidden units are linear or logistic (or some other nonlinearity)? A: Yes. With linear hidden units, the output would become a linear function of the inputs, and we typically want to learn nonlinear functions of the input. Therefore, linear hidden units are a bad choice.**
