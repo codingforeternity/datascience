@@ -398,6 +398,7 @@ die
 
 
 ### [8b: Modeling character strings with multiplicative connections](https://www.coursera.org/learn/neural-networks/lecture/qGmdv/modeling-character-strings-with-multiplicative-connections-14-mins)
+* The multiplicative factors described in the lecture are an alternative to simply letting the input character choose the hidden-to-hidden weight matrix.
 * Modeling text: **Advantages of working with characters**
   * The web is composed of character strings.
   * Any learning method powerful enough to understand the world by reading the web ought to find it trivial to learn which strings make words (this turns out to be true, as we shall see).
@@ -455,3 +456,12 @@ die
 * **Impressive modeling of 1-dimensional time series** very far into the future
   * but aren't very good for high-dimensional data like pre-processed audio or video b/c they need many more hidden units than an RNN that learns its hidden->hidden weights
 * Sukskever (2012) used ESN initialization in a normal RNN (with rmsprop and momentum) - very efficient/effective
+
+### Week 8 Quiz
+  1. (checked) can use model where input char chooses whole matrix; (unchecked) can't use additive/obvious model (not sufficiently flexible); (unchecked) too many factors b/c simply choosing a multiplicative matrix for each char is at least as flexible as a factor-constrained matrix for each char; can use additive with modification b/c the modification (one for each factor) acts like the multiplicative model
+  2. 1 - because still selecting a single matrix that connects each hidden->hidden
+  3. 3086 (1500*2 + 86) (see lecture notes above)
+  4. It should learn eventually, but that requires more compute power than is available today.
+  5. No - they aren't at risk of overfitting b/c the hidden->hidden weights are fixed
+  6. Don't always use the single most likely char next.  Do sample from the distribution.
+  7. In Echo State Networks, does it matter whether the hidden units are linear or logistic (or some other nonlinearity)? A: Yes. With linear hidden units, the output would become a linear function of the inputs, and we typically want to learn nonlinear functions of the input. Therefore, linear hidden units are a bad choice.
