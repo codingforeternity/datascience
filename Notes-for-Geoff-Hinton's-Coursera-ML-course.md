@@ -440,3 +440,18 @@ die
   * RNNs **require much less training data to reach the same level of performance**
     * FWC - this is because of their constraints (& factors), the other models have too many degrees of freedom?
   * RNNs also improve faster as the datasets get bigger
+
+#### [8d: Echo State Networks](https://www.coursera.org/learn/neural-networks/lecture/s1bdp/echo-state-networks-9-min)
+* Big random (fixed) expansion of input vector, then learn the output layer with a linear model.
+  * Similar to Support Vector Machines (SVMs) which just do this more efficiently
+* Equivalent idea for RNNs is to randomize & fix the input->hidden connections and hidden->hidden connections and just learn the hidden->output
+  * Will only work if you set the random connections very carefully so that the RNN doesn't explode or die
+  * Set them so that the length (L2 norm) of the activity vector stays about the same length after each iteration aka so that the spectral radius is 1 (the biggest eigenvalue of the hidden->hidden matrix is 1 or it would be 1 if it were a linear system - we want to achieve the same property in a nonlinear system)
+  * This allows the input to *echo* around the network for a long time
+  * Also important to use sparse connectivity (lots of 0 weights and some big weights rather than lots of medium sized weights) - this creates lots of loosely coupled oscillators (information can hang around in one part of the net and not propagate to other parts too quickly)
+  * Choose input->hidden scale very carefully which need to drive the loosely coupled oscillators w/out wiping out the information from the past that they already contain
+  * Learning is very fast (fortunately) so we can experiment with the scales of these connections and level of sparseness (hyperparameter tuning)
+* Example - predict a sine wave from its frequency
+* **Impressive modeling of 1-dimensional time series** very far into the future
+  * but aren't very good for high-dimensional data like pre-processed audio or video b/c they need many more hidden units than an RNN that learns its hidden->hidden weights
+* Sukskever (2012) used ESN initialization in a normal RNN (with rmsprop and momentum) - very efficient/effective
