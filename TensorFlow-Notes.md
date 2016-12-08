@@ -1,0 +1,1 @@
+https://www.tensorflow.org/extras/candidate_sampling.pdf
