@@ -1,9 +1,9 @@
-#### [CS231n Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/linear-classify/#softmax-classifier)
+#### [CS231n Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/linear-classify/#softmax-classifier) (12/8/16)
 * "If you’ve heard of the binary Logistic Regression classifier before, the Softmax classifier is its generalization to multiple classes"
 * "we are therefore minimizing the negative log likelihood of the correct class, which can be interpreted as performing Maximum Likelihood Estimation (MLE)"
 * "the Softmax classifier is never fully happy with the scores it produces: the correct class could always have a higher probability and the incorrect classes always a lower probability and the loss would always get better. However, the SVM is happy once the margins are satisfied and it does not micromanage the exact scores beyond this constraint. This can intuitively be thought of as a feature: For example, a car classifier which is likely spending most of its “effort” on the difficult problem of separating cars from trucks should not be influenced by the frog examples"
 
-### [Sebastian Ruder, On word embeddings, Part 2: Approximating the softmax](http://sebastianruder.com/word-embeddings-softmax/)
+### [Sebastian Ruder, On word embeddings, Part 2: Approximating the softmax](http://sebastianruder.com/word-embeddings-softmax/) (12/18/16)
 * In the following we will discuss different strategies that have been proposed to approximate the softmax.
   * hierarchical softmax (h-softmax) - words are leaves of a binary tree - speedups for word prediction tasks of at least 50x and is thus critical for low-latency tasks - Notably, we are only able to obtain this speed-up during training, when we know the word we want to predict (and consequently its path) in advance
   * Recall that the information content I(w) of a word w is the negative logarithm of its probability p(w): I(w)=−log_2[p(w)].  The entropy H of all words in a corpus is then the expectation of the information content of all words in the vocabulary.  If we manage to encode more information into the tree, we can get away with taking shorter paths for less informative words [FWC - Huffman]
