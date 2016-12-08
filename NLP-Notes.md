@@ -45,6 +45,7 @@
 
 #### [On Word Embeddings, Part 3: The Secret Ingredients of Word2Vec](http://sebastianruder.com/secret-word2vec/index.html) (10/26/16, Sebastian Ruder)
 * "While GloVe is considered a "*predict*" model [FWC - as opposed to a "*count*" model, e.g. DS or LSA] by Levy et al. (2015), it is **clearly factorizing a word-context co-occurrence matrix**, which brings it close to traditional methods such as PCA and LSA. Even more, Levy et al. [4] demonstrate that word2vec implicitly factorizes a word-context PMI matrix"
+* "[Levy et al. 2015](https://transacl.org/ojs/index.php/tacl/article/view/570) find that SVD -- and not one of the word embedding algorithms -- performs best on similarity tasks, while SGNS performs best on analogy datasets"
 
 #### Good lecture on word2vec and GloVe (10/19/16)
 * Slides from Mar 31 lecture http://cs224d.stanford.edu/syllabus.html (which are also in email)
