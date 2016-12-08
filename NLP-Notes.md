@@ -18,7 +18,7 @@
 * See [TensorFlow Documentation](https://www.tensorflow.org/extras/candidate_sampling.pdf) for another comparison
 * if you are looking to actually use the described methods, [TensorFlow](https://www.tensorflow.org/versions/master/api_docs/python/nn.html#candidate-sampling) has implementations for a few sampling-based approaches and also explains the differences between some of them [here](https://www.tensorflow.org/extras/candidate_sampling.pdf).
 
-### [Sebastian Ruder, On word embeddings, Part 1](http://sebastianruder.com/word-embeddings-1/index.html)
+### [Sebastian Ruder, On word embeddings, Part 1](http://sebastianruder.com/word-embeddings-1/index.html) (12/7/16)
 * Bengio (2003): "the final softmax layer (more precisely: the normalization term) as the network's main bottleneck, as the cost of computing the softmax is proportional to the number of words in V [FWC - the vocabulary], which is typically on the order of hundreds of thousands or millions."
 * [C&W's "solution](http://sebastianruder.com/word-embeddings-1/index.html#fn:4) to avoid computing the expensive softmax is to use a different objective function: Instead of the cross-entropy criterion of Bengio et al., which maximizes the probability of the next word given the previous words, Collobert and Weston train a network to **output a higher score fθ for a correct word sequence** (a probable word sequence in Bengio's model) than for an incorrect one." ... but ... "they keep the intermediate fully-connected hidden layer (2.) of Bengio et al. around (the HardTanh layer in Figure 3), which constitutes another source of expensive computation"
 * "Technically however, **word2vec** is not be considered to be part of deep learning, as its architecture is neither deep nor uses non-linearities"
