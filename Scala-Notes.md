@@ -30,6 +30,7 @@ problem by using a polymorphic method with a *lower* type parameter bound." (p. 
     * "Using lower bounds, we can generalize the push method in `Stack` as follows."
       * `class Stack[+A] { def push[B >: A](x: B): Stack[B] = new NonEmptyStack(x,this)`
       * "Technically, this solves our variance problem since now the type parameter `A` appears no longer as a parameter type of method `push`.
+      * "Now, we can push also elements of a supertype of this type, but the type of the returned stack will change accordingly.  For instance, we can now push an `AnyRef` onto a stack of `String`s, but the resulting stack will be a stack of `AnyRef`s instead of a stack of `String`s!"
 
 [Ways to pattern match generic types in Scala](http://www.cakesolutions.net/teamblogs/ways-to-pattern-match-generic-types-in-scala) (9/21/16)
 * See [Type Tags](http://www.cakesolutions.net/teamblogs/ways-to-pattern-match-generic-types-in-scala#type-tags) section in particular
