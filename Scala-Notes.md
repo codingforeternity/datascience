@@ -19,6 +19,8 @@ is not just superficial.   Indeed,  Scala represents every function value as an 
   * "This also affects the implementation of == and !=, which are implemented in terms of `equals` in Scala. So, `Sum(Number(1), Number(2)) == Sum(Number(1), Number(2))` will yield `true`.   If `Sum` or `Number` were not case classes, the same expression would be `false`, since the standard implementation of `equals` in class `AnyRef` always  treats  objects  created  by  different  constructor  calls  as  being  different."
   * `{ case P1 => E1 ... case Pn => En }` is shorthand for the following function `(x => x match { case P1 => E1 ... case Pn => En })`
 * "The  parameter  declaration `A <: Ordered[A]` introduces `A` as  a  type  parameter which must be a subtype of `Ordered[A]`." (p. 54)
+  * "One problem with type parameter bounds is that they require forethought: if we had not  declared
+`Num` a  subclass  of `Ordered`,  we  would  not  have  been  able  to  use `Num` elements in sets. By the same token, types inherited from Java, such as `Int`, `Double`, or `String` are not subclasses of `Ordered`, so values of these types cannot be used as set elements. ... View bounds `<%` are weaker than plain bounds `<:`.  A view bounded type parameter clause `[A <% T]` only specifies that the bounded type `A` must be convertible to the bound type `T`, using an implicit conversion." (p. 55)
 
 [Ways to pattern match generic types in Scala](http://www.cakesolutions.net/teamblogs/ways-to-pattern-match-generic-types-in-scala) (9/21/16)
 * See [Type Tags](http://www.cakesolutions.net/teamblogs/ways-to-pattern-match-generic-types-in-scala#type-tags) section in particular
