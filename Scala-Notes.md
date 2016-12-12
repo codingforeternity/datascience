@@ -2,7 +2,7 @@
 * unions, like in C++ or like Either[A,B] in Scala (which is apparently considered "boxed"), not like tuples
 
 [Scala by Example (Martin Odersky)](http://www.scala-lang.org/docu/files/ScalaByExample.pdf)
-* includes nice explanation of tail recursion (see gcd/factorial example, p. 18)
+* includes nice explanation of tail recursion (see gcd/factorial example, p. 18) (12/2/16 - 12/12/16)
   * "A production quality Scala implementation is therefore only required to re-use the stack frame of a directly tail-recursive function whose last action is a call to itself."
 * "Scala uses call-by-value (FWC - parameters are evaluated before calling) by default, but it switches to call-by-name (FWC - unevaluated references to parameters are passed and only evaluated upon use) evaluation if the parameter type is preceded by =>" (p. 14)
 * Indeed, the anonymous function `(x1: T1, ..., xn: Tn) => E` is equivalent to the block `{ def f (x1: T1, .., xn: Tn) = E ; f _ }` where `f` is  fresh  name  which  is  used  nowhere  else  in  the  program.   We  also  say, anonymous functions are 'syntactic sugar'.
