@@ -17,6 +17,7 @@ is not just superficial.   Indeed,  Scala represents every function value as an 
 (see Section 8.6)." (p. 36)
 * Injector/extractor - "Taking a closer look,  one observes that the only purpose of the classification and access functions is to reverse the data construction process.  They let us determine, first, which sub-class of an abstract base class was used and, second, what were the constructor arguments.  Since this situation is quite common,  Scala has a way to automate it with case classes." (p. 46)
   * "This also affects the implementation of == and !=, which are implemented in terms of `equals` in Scala. So, `Sum(Number(1), Number(2)) == Sum(Number(1), Number(2))` will yield `true`.   If `Sum` or `Number` were not case classes, the same expression would be `false`, since the standard implementation of `equals` in class `AnyRef` always  treats  objects  created  by  different  constructor  calls  as  being  different."
+  * `{ case P1 => E1 ... case Pn => En }` is shorthand for the following function `(x => x match { case P1 => E1 ... case Pn => En })`
 
 [Ways to pattern match generic types in Scala](http://www.cakesolutions.net/teamblogs/ways-to-pattern-match-generic-types-in-scala) (9/21/16)
 * See [Type Tags](http://www.cakesolutions.net/teamblogs/ways-to-pattern-match-generic-types-in-scala#type-tags) section in particular
