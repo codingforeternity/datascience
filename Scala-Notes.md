@@ -21,6 +21,15 @@ is not just superficial.   Indeed,  Scala represents every function value as an 
 * "The  parameter  declaration `A <: Ordered[A]` introduces `A` as  a  type  parameter which must be a subtype of `Ordered[A]`." (p. 54)
   * "One problem with type parameter bounds is that they require forethought: if we had not  declared
 `Num` a  subclass  of `Ordered`,  we  would  not  have  been  able  to  use `Num` elements in sets. By the same token, types inherited from Java, such as `Int`, `Double`, or `String` are not subclasses of `Ordered`, so values of these types cannot be used as set elements. ... View bounds `<%` are weaker than plain bounds `<:`.  A view bounded type parameter clause `[A <% T]` only specifies that the bounded type `A` must be convertible to the bound type `T`, using an implicit conversion." (p. 55)
+* "In Scala, generic types have by default non-variant subtyping", not co-variant subtyping: if `T` is a subtype of `S`, then `Stack[T]` is a subtype of `Stack[S]` (p. 56)
+  * But co-variant is possible w/ `+`: `class Stack[+A] {`
+  * "Scala uses a conservative approximation to verify soundness of variance annotations.   A covariant  type  parameter  of  a  class  may  only  appear  in  co-variant  positions inside the class. Among the co-variant positions are (1) the types of values in the class, (2) the result types of methods in the class, and (3) type arguments to other covariant types." The types of formal method parameters are not co-variant! (p. 57)
+  * "However, there are also methods which do not mutate state, but where a type parameter still appears contra-variantly.  An example is `push` in type `Stack`. ... there is a a way to solve the
+problem by using a polymorphic method with a *lower* type parameter bound." (p. 57)
+    * "`T >: S`, the type parameter `T` is restricted to range only over *supertypes* of type `S`"
+    * "Using lower bounds, we can generalize the push method in `Stack` as follows."
+      * `class Stack[+A] { def push[B >: A](x: B): Stack[B] = new NonEmptyStack(x,this)`
+      * "Technically, this solves our variance problem since now the type parameter `A` appears no longer as a parameter type of method `push`.
 
 [Ways to pattern match generic types in Scala](http://www.cakesolutions.net/teamblogs/ways-to-pattern-match-generic-types-in-scala) (9/21/16)
 * See [Type Tags](http://www.cakesolutions.net/teamblogs/ways-to-pattern-match-generic-types-in-scala#type-tags) section in particular
