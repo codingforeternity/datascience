@@ -9,7 +9,7 @@
 * Currying (FWC - multiple parameter lists reduce to curried functions) "The style of function-returning functions is so useful that Scala has special syntax for it." (p. 24)
   * "Generally, a curried function definition `def f (args_1) ... (args_n) = E` expands to `def f args_1) ... (args_{n-1}) = (args_n) => E`"
 * Really neat example of _fixed point functions_: the square root function can be expressed as follows `def sqrt(x: Double) = fixedPoint(averageDamp(y => x/y))(1.0)` (p. 27)
-* Note that, unlike in Java, redefining definitions need to be preceded by an **override** modifier. (p. 33)
+* "Note that, unlike in Java, redefining definitions need to be preceded by an **override** modifier." (p. 33) [FWC - this is something that a lot of OO languages are missing; it prevents bugs]
 
 [Ways to pattern match generic types in Scala](http://www.cakesolutions.net/teamblogs/ways-to-pattern-match-generic-types-in-scala) (9/21/16)
 * See [Type Tags](http://www.cakesolutions.net/teamblogs/ways-to-pattern-match-generic-types-in-scala#type-tags) section in particular
