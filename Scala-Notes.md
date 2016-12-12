@@ -11,6 +11,10 @@
   * Also note, that functions that do not take any parameters are a special case of this.
 * Really neat example of _fixed point functions_: the square root function can be expressed as follows `def sqrt(x: Double) = fixedPoint(averageDamp(y => x/y))(1.0)` (p. 27)
 * "Note that, unlike in Java, redefining definitions need to be preceded by an **override** modifier." (p. 33) [FWC - this is something that a lot of OO languages are missing; it prevents bugs]
+* "Dynamic  method  dispatch  is  analogous  to  higher-order  function  calls.    In  both
+cases, the identity of code to be executed is known only at run-time. This similarity
+is not just superficial.   Indeed,  Scala represents every function value as an object
+(see Section 8.6)." (p. 36)
 
 [Ways to pattern match generic types in Scala](http://www.cakesolutions.net/teamblogs/ways-to-pattern-match-generic-types-in-scala) (9/21/16)
 * See [Type Tags](http://www.cakesolutions.net/teamblogs/ways-to-pattern-match-generic-types-in-scala#type-tags) section in particular
