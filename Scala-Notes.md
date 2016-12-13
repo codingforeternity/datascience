@@ -1,6 +1,8 @@
 [Dependency Injection in Scala: the guide](https://di-in-scala.github.io/)
 * "Services need to expose information on what dependencies they need. Instead of creating dependent service implementations inside the service itself, *references* to dependent services are '*injected*'."
 * "The means of injecting the dependencies ... we will be using here is passing dependencies through constructor parameters."
+* "The dependencies form an object graph, which needs to be wired."
+* "Note that we can declare all abstract members as `def`s, as they can be later implemented as `val`s, `lazy val`s, or left as `def`s. Using a `def` keeps all options possible."
 
 [Unboxed union types via the Curry-Howard isomorphism](http://milessabin.com/blog/2011/06/09/scala-union-types-curry-howard/) (12/2/16)
 * unions, like in C++ or like Either[A,B] in Scala (which is apparently considered "boxed"), not like tuples
