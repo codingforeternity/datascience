@@ -1,4 +1,4 @@
-[Dependency Injection in Scala: the guide](https://di-in-scala.github.io/)
+[Dependency Injection in Scala: MacWire](https://di-in-scala.github.io/) (12/13/16)
 * "Services need to expose information on what dependencies they need. Instead of creating dependent service implementations inside the service itself, *references* to dependent services are '*injected*'."
 * "The means of injecting the dependencies ... we will be using here is passing dependencies through constructor parameters."
 * "The dependencies form an object graph, which needs to be wired."
