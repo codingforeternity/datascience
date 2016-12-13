@@ -3,6 +3,7 @@
 * "The means of injecting the dependencies ... we will be using here is passing dependencies through constructor parameters."
 * "The dependencies form an object graph, which needs to be wired."
 * "Note that we can declare all abstract members as `def`s, as they can be later implemented as `val`s, `lazy val`s, or left as `def`s. Using a `def` keeps all options possible."
+* "DI in Akka - Akka is a very popular toolkit for bulding concurrent, 'reactive' applications. The main building block used in Akka-based systems are actors. A common question when using Akka is "how do I do dependency injection with actors?"; typical use-case is passing a datasource to an actor."
 
 [Unboxed union types via the Curry-Howard isomorphism](http://milessabin.com/blog/2011/06/09/scala-union-types-curry-howard/) (12/2/16)
 * unions, like in C++ or like Either[A,B] in Scala (which is apparently considered "boxed"), not like tuples
