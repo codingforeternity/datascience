@@ -56,6 +56,7 @@ Welcome to the fcrimins.github.io wiki!
 - [[Go Notes]]
 - [[Scala Notes]]
 - [[Haskell Notes]]
+- [[R Notes]]
 
 <br>
 
