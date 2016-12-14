@@ -1,3 +1,6 @@
+#### [Dependency-Based Word Embeddings](https://levyomer.wordpress.com/2014/04/25/dependency-based-word-embeddings/) (12/14/16)
+* "While continuous word embeddings are gaining popularity, current models are based solely on linear contexts. In this work, we generalize the skip-gram model with negative sampling introduced by Mikolov et al. to include arbitrary contexts."
+
 #### [CS231n Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/linear-classify/#softmax-classifier) (12/8/16)
 * "If you’ve heard of the binary Logistic Regression classifier before, the Softmax classifier is its generalization to multiple classes"
 * "we are therefore minimizing the negative log likelihood of the correct class, which can be interpreted as performing Maximum Likelihood Estimation (MLE)"
