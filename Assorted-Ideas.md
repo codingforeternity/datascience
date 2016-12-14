@@ -2,7 +2,7 @@
 * Eg detect the effectiveness of individual nodes, and allow them to die off or multiply based on how effective they are.
 * Allow tumors to form similar to how LSTMs have cell state plus regular CNN. How might a CNN detect that it needs a cell state for example?
 * This all still requires a predefined cost function. ie, what to learn. How could that be learned? seems like theres a finite set of these tho, squared error, cross entropy, logisti
-* This idea seems similar to dropout, but deletion is only one of the forms of mutation
+* This idea seems similar to dropout, but deletion is only one of the forms of mutation, and plus its mainly done to prevent overfitting, not to learn the architecture of the net
 
 #### [[Linguistic Networks]]
 
