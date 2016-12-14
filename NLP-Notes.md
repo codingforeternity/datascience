@@ -1,3 +1,7 @@
+#### Alternative to 1-hot encodings
+* in NLP they don't learn misspellings very well
+* so, instead, use (normalized) Levenshtein (edit) distance instead; for each word in the 1-hot vector, compute LD from a given word to each of those
+
 #### [Dependency-Based Word Embeddings](https://levyomer.wordpress.com/2014/04/25/dependency-based-word-embeddings/) (12/14/16)
 * "While continuous word embeddings are gaining popularity, current models are based solely on linear contexts. In this work, we generalize the skip-gram model with negative sampling introduced by Mikolov et al. to include arbitrary contexts."
 
