@@ -1,3 +1,11 @@
+### [Conformal Prediction](https://scottlocklin.wordpress.com/2016/12/05/predicting-with-confidence-the-best-machine-learning-idea-you-never-heard-of/) (12/14/16)
+* machine learning with confidence intervals
+* 2 flavors:
+  1. "transductive conformal prediction"; leave one out; not computationally efficient
+  2. "inductive conformal prediction"; split the dataset in 2, train on first have and estimate confidence interval given the residuals from the second half
+* **FWC idea: predict stdev-neutralized forecasts so that what is being predicted is homoskedastic (i.e. predict stdev first, then neurtralize outcomes wrt it)**
+* the applications and extensions of the idea are what really tantalizes me about the subject. New forms of feature selection, **new forms of loss function which integrate the confidence region**, new forms of optimization to deal with conformal loss functions, completely new and different machine learning algorithms, new ways of thinking about data and probabilistic prediction in general
+
 #### [Attention and Memory in Deep Learning and NLP](http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/)
 * "In theory, architectures like LSTMs should be able to deal with this, but in practice long-range dependencies are still problematic."
 * "A big advantage of attention is that it gives us the ability to interpret and visualize what the model is doing"
