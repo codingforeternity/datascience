@@ -1,6 +1,7 @@
 #### [AdaBoost](https://en.wikipedia.org/wiki/AdaBoost) (12/14/16)
 * mentioned in the Conformal Prediction article below
 * "information gathered at each stage of the AdaBoost algorithm about the relative 'hardness' of each training sample is fed into the tree growing algorithm such that later trees tend to focus on harder-to-classify examples"
+* "The individual learners can be weak, but as long as the performance of each one is slightly better than random guessing (e.g., their error rate is smaller than 0.5 for binary classification), the final model can be proven to converge to a strong learner."
 
 ### [Conformal Prediction](https://scottlocklin.wordpress.com/2016/12/05/predicting-with-confidence-the-best-machine-learning-idea-you-never-heard-of/) (12/14/16)
 * machine learning with confidence intervals
