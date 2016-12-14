@@ -1,0 +1,1 @@
+One Page R: A Survival Guide to Data Science with R https://www.r-bloggers.com/one-page-r-a-survival-guide-to-data-science-with-r/ (12/14/16)
