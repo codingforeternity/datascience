@@ -3,7 +3,7 @@
 * "In contrast, classical statistical methods avoid prior distributions. In classical statistics, you might include in your model a predictor (for example), or you might exclude it, or you might pool it as part of some larger set of predictors in order to get a more stable estimate."
 
 ### * [Streaming Model for Linear Regression](http://koaning.io/bayesian-propto-streaming-algorithms.html) (12/1/16)
-* **iterative, on-line/streaming approach to linear regression** (convergence of a posterior distribution--"the conditional probability distribution of the unobserved quantities of ultimate interest, given the observed data" [see [[Machine Learning Notes]]])
+* **iterative, on-line/streaming approach to linear regression** (convergence of a posterior distribution--"the conditional probability distribution of the unobserved quantities of ultimate interest, given the observed data" [see [[Machine Learning Notes]]]) (kws: prior)
 * nice brief explanation of Bayesian Statistics
 * and really nice examples of Python plotting and likihood
 * in Python and with reference to Apache Flink and Spark
