@@ -146,7 +146,7 @@
   * "We have paid special attention to Scala in building Deeplearning4j and ND4J, because we believe Scala has the potential to become the dominant language in data science."
 * [How to combine CNN with CRF in python?](http://www.reddit.com/r/MachineLearning/comments/4aadvq/how_to_combine_cnn_with_crf_in_python/) (3/16/16)
 * [TensorFlow Machine Learning with Financial Data on Google Cloud Platform](http://www.reddit.com/r/MachineLearning/comments/49foem/tensorflow_machine_learning_with_financial_data/) (3/10/16)
-* [TensorFlow in Python](http://blog.pythonanywhere.com/126/) (3/10/16)
+* [TensorFlow in Python](http://blog.pythonanywhere.com/126/) (3/10/16 and 12/15/16; FWC - great pointer)
 * Python Anywhere: Quickstart: TensorFlow-Examples on PythonAnywhere
 * [Do you think TensorFlow will eventually replace Theano and Torch?](http://www.reddit.com/r/MachineLearning/comments/4amr7p/askreddit_do_you_think_tensorflow_will_eventually/) (3/18/16)
 * [TensorFlow for "shallow learning" -- Implementations of Multilayer-Perceptron and Softmax Regression in a scikit-learn-like interface](http://www.reddit.com/r/MachineLearning/comments/4bk2jx/tensorflow_for_shallow_learning_implementations/) (3/22/16)
