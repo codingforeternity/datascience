@@ -1,6 +1,7 @@
 #### [Bayesian statistics: What’s it all about?](http://andrewgelman.com/2016/12/13/bayesian-statistics-whats/) (12/15/16)
 * "Bayesian statistics uses the mathematical rules of probability to combine data with prior information to yield inferences which (if the model being used is correct) are more precise than would be obtained by either source of information alone."
 * "In contrast, classical statistical methods avoid prior distributions. In classical statistics, you might include in your model a predictor (for example), or you might exclude it, or you might pool it as part of some larger set of predictors in order to get a more stable estimate."
+* "Except in simple problems, Bayesian inference requires difficult mathematical calculations--high-dimensional integrals--which are often most practically computed using stochastic simulation, that is, computation using random numbers. This is the so-called Monte Carlo method, which was developed systematically by the mathematician Stanislaw Ulam and others when trying out designs for the hydrogen bomb"
 
 ### * [Streaming Model for Linear Regression](http://koaning.io/bayesian-propto-streaming-algorithms.html) (12/1/16)
 * **iterative, on-line/streaming approach to linear regression** (convergence of a posterior distribution--"the conditional probability distribution of the unobserved quantities of ultimate interest, given the observed data" [see [[Machine Learning Notes]]]) (kws: prior)
