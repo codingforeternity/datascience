@@ -1,3 +1,7 @@
+#### Why don't we seem to care about local minima so much anymore?
+* http://stats.stackexchange.com/questions/90874/how-can-stochastic-gradient-descent-avoid-the-problem-of-a-local-minimum
+* Especially see section 4.2 of this [nimes-1991.pdf](http://leon.bottou.org/publications/pdf/nimes-1991.pdf) which is linked to from the above.
+
 #### [AdaBoost](https://en.wikipedia.org/wiki/AdaBoost) (12/14/16)
 * mentioned in the Conformal Prediction article below
 * "information gathered at each stage of the AdaBoost algorithm about the relative 'hardness' of each training sample is fed into the tree growing algorithm such that later trees tend to focus on harder-to-classify examples"
