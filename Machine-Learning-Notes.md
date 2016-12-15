@@ -1,3 +1,7 @@
+#### LSTMs don't do well at transitive reasoning problems
+* *John picked up the ball and handed it to Mary.  Mary walked into the room.  Where is the ball?*
+* Traditional NNs combine memory and processing in the same structure.  [**FWC - they combine mutation and computation!!!**] A new paper out a few months ago tries to separate the two.
+
 #### Why don't we seem to care about local minima so much anymore?
 * http://stats.stackexchange.com/questions/90874/how-can-stochastic-gradient-descent-avoid-the-problem-of-a-local-minimum
 * Especially see section 4.2 of this [nimes-1991.pdf](http://leon.bottou.org/publications/pdf/nimes-1991.pdf) which is linked to from the above.
