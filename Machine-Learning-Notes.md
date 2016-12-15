@@ -1,6 +1,8 @@
 #### Why don't we seem to care about local minima so much anymore?
 * http://stats.stackexchange.com/questions/90874/how-can-stochastic-gradient-descent-avoid-the-problem-of-a-local-minimum
 * Especially see section 4.2 of this [nimes-1991.pdf](http://leon.bottou.org/publications/pdf/nimes-1991.pdf) which is linked to from the above.
+* [Learning Polynomials with Neural Nets](http://theory.stanford.edu/~valiant/papers/andoni14.pdf)
+  * "we can not use this theorem to conclude that gradient descent plus random perturbation will always converge to the global optima from any initial neural network initialization; nevertheless, this provides a rigorous, and conceptually compelling explanation for why the existence of local optima do not deter the usage of neural networks in practice."
 
 #### [AdaBoost](https://en.wikipedia.org/wiki/AdaBoost) (12/14/16)
 * mentioned in the Conformal Prediction article below
