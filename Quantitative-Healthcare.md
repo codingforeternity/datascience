@@ -1,3 +1,5 @@
+[In five years, machine learning will be a part of every doctor’s job, Vic Gundotra says](http://www.recode.net/2016/12/5/13837908/machine-learning-doctors-vic-gundotra-recode-podcast)
+
 [Healthcare Triage: Health Services Research, Diabetes, and the YMCA](http://theincidentaleconomist.com/wordpress/healthcare-triage-health-services-research-diabetes-and-the-ymca/) (4/28/16)
 
 [Cancer drug development time halved thanks to artificial intelligence](http://blogs.sciencemag.org/pipeline/archives/2015/10/13/artificial-intelligence-you-say) (10/13/15)
