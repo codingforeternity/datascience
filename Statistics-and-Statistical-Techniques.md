@@ -1,3 +1,6 @@
+#### [Measuring The Memory Of Time Series Data](https://prateekvjoshi.com/2016/11/30/measuring-the-memory-of-time-series-data/)
+* "Hurst exponent is basically a measure of long term memory of a given time series variable. It is also referred to as the index of dependence. It tells us how strongly the given time series data will regress to the mean."
+
 #### [Bayesian statistics: What’s it all about?](http://andrewgelman.com/2016/12/13/bayesian-statistics-whats/) (12/15/16)
 * "Bayesian statistics uses the mathematical rules of probability to combine data with prior information to yield inferences which (if the model being used is correct) are more precise than would be obtained by either source of information alone."
 * "In contrast, classical statistical methods avoid prior distributions. In classical statistics, you might include in your model a predictor (for example), or you might exclude it, or you might pool it as part of some larger set of predictors in order to get a more stable estimate."
