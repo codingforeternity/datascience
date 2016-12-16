@@ -1,3 +1,6 @@
+#### train a NN to predict a word based on its definition (from a dictionary)
+* or use such a mapping with negative sampling, to construct word embeddings
+
 #### Machine Learning of Neural Net Architecture
 * Eg detect the effectiveness of individual nodes, and allow them to die off or multiply based on how effective they are.
 * Allow tumors to form similar to how LSTMs have cell state plus regular CNN. How might a CNN detect that it needs a cell state for example?
