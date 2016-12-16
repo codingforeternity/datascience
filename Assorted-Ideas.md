@@ -1,3 +1,19 @@
+#### Record my life; supplement my brain
+* everything I read, I may want to go back to it and search (e.g. in the fall of last year i had a conversation with someone about a band)
+* [The Great AI Awakening (at Google)](http://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html?_r=0) (12/17/16)
+  * "One is not what he is for what he writes, but for what he has read."
+  * "If you wanted to translate from English to Japanese, for example, you would program into the computer all of the grammatical rules of English, and then the entirety of definitions contained in the Oxford English Dictionary, and then all of the grammatical rules of Japanese, as well as all of the words in the Japanese dictionary, and only after all of that feed it a sentence in a source language and ask it to tabulate a corresponding sentence in the target language. You would give the machine a language map that was, as Borges would have had it, the size of the territory. This perspective is usually called 'symbolic A.I.' — because its definition of cognition is based on symbolic logic — or, disparagingly, 'good old-fashioned A.I.'"
+    * FWC - so the question is then, can "loose" symbolic rules, like in language, be *efficiently* incorporated into learned systems to make them better?  perhaps simply by inputting them as features and then letting the system "learn" how helpful they are.  this would perhaps take pressure off the rest of the network.  but would we then want to tell the network that these inputs are "different" and not to get rid of them as easily as others perhaps?
+  * "The neuronal 'voters' will recognize a happy cat dozing in the sun ... as long as they have been exposed to millions of diverse cat scenes."
+    * FWC - **but then why don't humans need millions of such exposures to cats to understand what a cat looks like?  => there is still something fundamentally different between current AI and human I.  perhaps it has to do with all the pictures of things humans see that *aren't cats*.  humans see millions of things, they're just of all sorts of different things, and they learn negation, "not a cat"** .... or maybe humans do see millions of pictures of cats, they're just all streamed together over time, like frames in a video.... this suggests that there should be a time dimension to hidden NN layers
+    * FWC - can an algorithm fed with video of a single cat learn to identify other cats?  this algorithm would be closer to the human brain -- many different dimensions of a single item lead to understanding of what makes that item what it is
+  * "Another was that he wasn’t at all embarrassed to say sincere things like 'if we put our minds to it.'"
+  * "The benchmark metric to evaluate machine translation is called a BLEU score"
+  * "The team had in their storehouse about 97 million unique English 'words.' But once they removed the emoticons, and the misspellings, and the redundancies, they had a working vocabulary of only around 160,000."
+  * FWC - this article makes me want to implement a summarizer - remove the most irrelevant or duplicated piece of this article --one sentence at a time (similar to my summarizer idea for redundant (reality) tv shows) -- similar to my idea to "dedup the web" - though different readers might have different opinions of which sentences are important!
+
+There are two main problems with the old-fashioned approach. The first is that it’s awfully time-consuming on the human end. The second is that it only really works in domains where rules and definitions are very clear: in mathematics, for example, or chess
+
 #### Train a NN to predict a word based on its definition (from a dictionary)
 * or use such a mapping with negative sampling, to construct word embeddings
 * aren't such things already trained on Wikipedia though?
