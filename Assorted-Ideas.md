@@ -1,5 +1,6 @@
-#### train a NN to predict a word based on its definition (from a dictionary)
+#### Train a NN to predict a word based on its definition (from a dictionary)
 * or use such a mapping with negative sampling, to construct word embeddings
+* aren't such things already trained on Wikipedia though?
 
 #### Machine Learning of Neural Net Architecture
 * Eg detect the effectiveness of individual nodes, and allow them to die off or multiply based on how effective they are.
