@@ -8,6 +8,7 @@
 * Especially see section 4.2 of this [nimes-1991.pdf](http://leon.bottou.org/publications/pdf/nimes-1991.pdf) which is linked to from the above.
 * [Learning Polynomials with Neural Nets](http://theory.stanford.edu/~valiant/papers/andoni14.pdf)
   * "we can not use this theorem to conclude that gradient descent plus random perturbation will always converge to the global optima from any initial neural network initialization; nevertheless, this provides a rigorous, and conceptually compelling explanation for why the existence of local optima do not deter the usage of neural networks in practice."
+  * "While a more common `phi_activation_fn` is the sigmoid function, the particular form of `phi_activation_fn` is not that important as long as it has 'good' coverage of all the degrees in its Taylor series"
 
 #### [AdaBoost](https://en.wikipedia.org/wiki/AdaBoost) (12/14/16)
 * mentioned in the Conformal Prediction article below
