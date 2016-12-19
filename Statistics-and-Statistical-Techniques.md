@@ -1,4 +1,4 @@
-#### [](http://stats.stackexchange.com/questions/48072/is-the-logit-function-always-the-best-for-regression-modeling-of-binary-data)
+#### [Is the logit function always the best for regression modeling of binary data?](http://stats.stackexchange.com/questions/48072/is-the-logit-function-always-the-best-for-regression-modeling-of-binary-data)
 * "Andrew Gelman [says](http://arxiv.org/pdf/0901.4011.pdf) (in a mostly unrelated context) that t7 is roughly like the logistic curve. Lowering the degrees of freedom gives you fatter tails and a broader range of intermediate values in your regression. When the degrees of freedom go to infinity, you're back to the probit model."
 
 #### [Measuring The Memory Of Time Series Data](https://prateekvjoshi.com/2016/11/30/measuring-the-memory-of-time-series-data/)
