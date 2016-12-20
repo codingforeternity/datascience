@@ -1,3 +1,8 @@
+#### [This AI Boom Will Also Bust](http://www.overcomingbias.com/2016/12/this-ai-boom-will-also-bust.html) (Robin Hanson, 12/20/16)
+* "Most firms that think they want advanced AI/ML really just need linear regression on cleaned-up data."
+* "A hedge fund tried to hire me on the spot when I suggested a regression instead of using IBM Watson on their dataset."
+* "Statistically speaking, you and your company really [don't need machine learning](http://ericbrown.com/you-probably-dont-need-machine-learning.htm)."
+
 #### LSTMs don't do well at transitive reasoning problems
 * *John picked up the ball and handed it to Mary.  Mary walked into the room.  Where is the ball?*
 * Traditional NNs combine memory and processing in the same structure.  [**FWC - they combine mutation and computation!!!**] A new paper out a few months ago tries to separate the two.
