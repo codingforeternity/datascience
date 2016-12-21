@@ -1,3 +1,9 @@
+#### [Where priors come from](http://www.zinkov.com/posts/2015-06-09-where-priors-come-from/)
+* Overview of various distributions, e.g. Bernoulli, Gamma
+* "we can also do exp(x) and x2 to get distributions over positive numbers. These are the Lognormal and χ2 distributions."
+* Poisson distribution "can be thought of as a discrete analog to the gamma distribution."
+* "Student-T or t can be interpreted as the distribution over a subsampled population from the normal distribution. What’s going on here is that because our sample size is so small, atypical values can occur more often than they do in the general population"
+
 #### [Bayesian Machine Learning](http://fastml.com/bayesian-machine-learning/) (12/21/16)
 * Good explanation of the components of the Bayes rule, priors and posteriors and such.
 * "Compare with classifiers, which usually model `P( y | x )` to discriminate between classes based on x. A generative model is concerned with joint distribution of y and x, `P( y, x )`. It’s more difficult to estimate that distribution, but it allows sampling and of course one can get `P( y | x )` from `P( y, x )`."
@@ -6,6 +12,15 @@
   * "automatic differentiation variational inference (ADVI). The user only provides a Bayesian model and a dataset; nothing else."
   * "In Python, the most popular package is [PyMC](https://pymc-devs.github.io/pymc3/). It is not as advanced or polished (the developers seem to be playing catch-up with Stan), but still good. PyMC has NUTS and ADVI - here’s a notebook with a [minibatch ADVI example](https://gist.github.com/taku-y/b4da34be310718a6ea02). The software uses Theano as a backend, so it’s faster than pure Python."
 * "MCMC is good not just for computing probabilities but for integrating any function. Without it, scientists were limited to functions they could integrate analytically" [http://fastml.com/an-excerpt-from-the-master-algorithm/]
+* "The crux of the model selection question is this: how we can quantify the difference between these models and decide which model better describes our data?" [https://jakevdp.github.io/blog/2015/08/07/frequentism-and-bayesianism-5-model-selection/]
+  * "you can view the model selection question as fundamentally about comparing models while correcting for over-fitting of more complicated models. Let's see how this is done within the frequentist and Bayesian approaches."
+  * "Frequentists consider probabilities as frequencies: that is, a probability is only meaningful in the context of repeated experiments"
+  * "Bayesians consider probabilities as degrees-of-belief: that is, a probability is a way of quantifying our certainty about a particular statement: *model parameters* are uncertain quantities and thus subject to probabilistic description"
+    * Frequentists look at the likelihood: `P(D | θ,M)`
+    * Bayesians look at the posterior: `P(θ | D,M)`
+  * Thus the sum of squares of normalized residuals about the best-fit model should follow the χ2 distribution, and so we construct our χ2 statistic: χ2(D;θ,M) = ∑n[yn−yM(xn;θ)σy,n]2
+  * generally, this post is a nice IPython notebook with some nice plots (including shaded distributions)
+  * Other Frequentist Approaches: [Cross-Validation](https://en.wikipedia.org/wiki/Cross-validation_%28statistics%29)
 
 #### [Is the logit function always the best for regression modeling of binary data?](http://stats.stackexchange.com/questions/48072/is-the-logit-function-always-the-best-for-regression-modeling-of-binary-data)
 * "Andrew Gelman [says](http://arxiv.org/pdf/0901.4011.pdf) (in a mostly unrelated context) that t7 is roughly like the logistic curve. Lowering the degrees of freedom gives you fatter tails and a broader range of intermediate values in your regression. When the degrees of freedom go to infinity, you're back to the probit model."
