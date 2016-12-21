@@ -1,3 +1,12 @@
+#### [Bayesian Machine Learning](http://fastml.com/bayesian-machine-learning/) (12/21/16)
+* Good explanation of the components of the Bayes rule, priors and posteriors and such.
+* "Compare with classifiers, which usually model `P( y | x )` to discriminate between classes based on x. A generative model is concerned with joint distribution of y and x, `P( y, x )`. It’s more difficult to estimate that distribution, but it allows sampling and of course one can get `P( y | x )` from `P( y, x )`."
+* "A relatively popular application of Gaussian Processes is hyperparameter optimization for machine learning algorithms."
+* "The most conspicuous piece of Bayesian software these days is probably [Stan](http://mc-stan.org/). Stan is a probabilistic programming language, meaning that it allows you to specify and train whatever Bayesian models you want."
+  * "automatic differentiation variational inference (ADVI). The user only provides a Bayesian model and a dataset; nothing else."
+  * "In Python, the most popular package is [PyMC](https://pymc-devs.github.io/pymc3/). It is not as advanced or polished (the developers seem to be playing catch-up with Stan), but still good. PyMC has NUTS and ADVI - here’s a notebook with a [minibatch ADVI example](https://gist.github.com/taku-y/b4da34be310718a6ea02). The software uses Theano as a backend, so it’s faster than pure Python."
+* "MCMC is good not just for computing probabilities but for integrating any function. Without it, scientists were limited to functions they could integrate analytically" [http://fastml.com/an-excerpt-from-the-master-algorithm/]
+
 #### [Is the logit function always the best for regression modeling of binary data?](http://stats.stackexchange.com/questions/48072/is-the-logit-function-always-the-best-for-regression-modeling-of-binary-data)
 * "Andrew Gelman [says](http://arxiv.org/pdf/0901.4011.pdf) (in a mostly unrelated context) that t7 is roughly like the logistic curve. Lowering the degrees of freedom gives you fatter tails and a broader range of intermediate values in your regression. When the degrees of freedom go to infinity, you're back to the probit model."
 
