@@ -1,3 +1,24 @@
+#### [An overview of gradient descent optimization algorithms](http://sebastianruder.com/optimizing-gradient-descent/) (12/21/16)
+* "the same learning rate applies to all parameter updates. If our data is sparse and our features have very different frequencies, we might not want to update all of them to the same extent, but perform a larger update for rarely occurring features"
+* "Another key challenge of minimizing highly non-convex error functions common for neural networks is avoiding getting trapped in their numerous suboptimal local minima. Dauphin et al. [19](https://arxiv.org/abs/1406.2572) argue that the difficulty arises in fact not from local minima but from saddle points"
+  * FWC - It seems that this depends on the "coarseness" of the optimal surface.  The relative size of the jumps provided by the stochastic walk compared to the size of the local minima "pools."  I wonder if there's a way to estimate the number of local minima in a surface; e.g. how many convex surfaces need to be combined to construct the bumpy surface.
+* "We will not discuss algorithms that are infeasible to compute in practice for high-dimensional data sets, e.g. second-order methods such as Newton's method."
+* Nesterov accelerated gradient
+  * "We know that we will use our momentum term γ*v_{t−1} to move the parameters θ. Computing θ−γ*v_{t−1} thus gives us an approximation of the next position of the parameters (the gradient is missing for the full update), a rough idea where our parameters are going to be. We can now effectively look ahead by calculating the gradient not w.r.t. to our current parameters θ but w.r.t. the approximate future position of our parameters"
+  * "significantly increased the performance of RNNs on a number of tasks [8]"
+* Adagrad
+  * "well-suited for dealing with sparse data" (e.g. word-vectors which have frequent and infrequent words)
+  * "eliminates the need to manually tune the learning rate"
+  * Adadelta - "seeks to reduce [Adagrad's] aggressive, monotonically decreasing learning rate"
+  * "RMSprop in fact is identical to the first update vector of Adadelta"
+  * "[Adam](https://www.tensorflow.org/api_docs/python/train/optimizers#AdamOptimizer) also keeps an exponentially decaying average of past gradients mt, similar to momentum"
+* "In summary, RMSprop is an extension of Adagrad that deals with its radically diminishing learning rates. It is identical to Adadelta, except that Adadelta uses the RMS of parameter updates in the numinator update rule. Adam, finally, adds bias-correction and momentum to RMSprop. Insofar, RMSprop, Adadelta, and Adam are very similar algorithms that do well in similar circumstances. Kingma et al. [15] show that its bias-correction helps Adam slightly outperform RMSprop towards the end of optimization as gradients become sparser. Insofar, **Adam might be the best overall choice**."
+* "The following are algorithms and architectures that have been proposed to optimize parallelized and distributed SGD."
+  * A distributed version of TensorFlow [has been released](http://googleresearch.blogspot.ie/2016/04/announcing-tensorflow-08-now-with.html).
+* "Generally, we want to avoid providing the training examples in a meaningful order to our model as this may bias the optimization algorithm. Consequently, it is often a good idea to shuffle the training data after every epoch."
+* "According to Geoff Hinton: "Early stopping (is) beautiful free lunch" ([NIPS 2015 Tutorial slides](http://www.iro.umontreal.ca/~bengioy/talks/DL-Tutorial-NIPS2015.pdf), slide 63). You should thus always monitor error on a validation set during training and stop (with some patience) if your validation error does not improve enough."
+* Gradient Noise - "added noise gives the model more chances to escape and find new local minima, which are more frequent for deeper models"
+
 #### [This AI Boom Will Also Bust](http://www.overcomingbias.com/2016/12/this-ai-boom-will-also-bust.html) (Robin Hanson, 12/20/16)
 * "Most firms that think they want advanced AI/ML really just need linear regression on cleaned-up data."
 * "A hedge fund tried to hire me on the spot when I suggested a regression instead of using IBM Watson on their dataset."
