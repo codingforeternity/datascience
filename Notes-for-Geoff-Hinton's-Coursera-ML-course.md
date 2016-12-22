@@ -501,4 +501,5 @@ die
     * In the forward pass choose 0 or 1 based on the "probabiliy" value of the logistic function.
   * This does worse on the training set (and trains considerably slower), but performance on the test set is significantly better (unpublished result)
     * [FWC - **so train with positive or negative returns, -1 or 1, but then compute cost (and propagate errors) with real-return-computed cost** -- and also note that not just tcosts, but liq constraints also, and all other *phantom* constraints will get baked into the learned function]
+* [FWC - So adding noise to inputs, weights, and activations reduces overfitting (adds regularization), but what's the real mechanism for why?  Does the added noise effectively dampen actual noise, making it more difficult to overfit?  But then if you add too much noise, does it make real effects difficult to detect?  Seems like you could slowly increase the amount of noise and measure validation performance along the way]
 
