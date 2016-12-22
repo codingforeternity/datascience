@@ -469,10 +469,24 @@ die
 #### [Lecture 9a: Overview of ways to improve generalization](https://www.coursera.org/learn/neural-networks/lecture/R1OLs/overview-of-ways-to-improve-generalization-12-min)
 * Network capacity can be controlled in several ways
   1. Architecture - limit # of hidden neurons
-  2. Early stopping - assumes real relationships are learned before spurious ones
+  2. Early stopping - assumes real relationships are learned before spurious ones; start w/ very small weights (important!) and stop training when (you're sure) validation error performance starts getting worse (and then go back to when things were best)
   3. Weight-decay - penalize large weights
   4. Noise - add noise to weights or activities
 * Cross-validation - a better way to choose meta parameters
   * 3 sets of data: training, validation, test (only used once)
+* Why early stopping works
+  * A network with small weights has lower capacity, but why? [FWC - this is kinda like degrees of freedom.  Is there a way to combine the number of weights with their sizes to come up with a DF metric?]
+  * When weights are small, if the hidden units are logistic units, they are in the linear range of the logistic function (slope = 0.25), so they behave very similarly to linear units.
+  * So a small weight logistic network has no more capacity than a linear net.
+  * [FWC - so then there is another point on the logistic curve where it is quadratic, cubic, etc.  The average (and stdev) across all units of this metric might be a good measure of DF.  [Sigmoid/Logistic Power Series](https://www.quora.com/Can-the-sigmoid-function-be-express-as-a-power-series)]
+    * [FWC - we limit the weights when using other statistical approaches as well, e.g. SVD variants, but this seems to be a more intuitive reason for doing so.]
+
+#### [Lecture 9b: Limiting the size of the weights](https://www.coursera.org/learn/neural-networks/lecture/CD4PO/limiting-the-size-of-the-weights-6-min)
+* Standard approach is to add a (constant times the) sum of the squared weights (L2) into the cost function.
+* Large weights to occur only when there are large error derivatives (see slides)
+* Using L1 (absolute value) penalty is sometimes better b/c lots of weights are then 0, which makes a network easier to understand.  Or even more extreme, sqrt(abs), makes escape from 0 difficult but then negligible effect on really large weights (allows for a few big weights).
+* Better idea: constrain the squared length of the weight vector.
+  * FWC - this is similar to mean-variance optimization with flat-bottomed parabolas
+
 
 
