@@ -482,11 +482,23 @@ die
     * [FWC - we limit the weights when using other statistical approaches as well, e.g. SVD variants, but this seems to be a more intuitive reason for doing so.]
 
 #### [Lecture 9b: Limiting the size of the weights](https://www.coursera.org/learn/neural-networks/lecture/CD4PO/limiting-the-size-of-the-weights-6-min)
-* Standard approach is to add a (constant times the) sum of the squared weights (L2) into the cost function.
-* Large weights to occur only when there are large error derivatives (see slides)
-* Using L1 (absolute value) penalty is sometimes better b/c lots of weights are then 0, which makes a network easier to understand.  Or even more extreme, sqrt(abs), makes escape from 0 difficult but then negligible effect on really large weights (allows for a few big weights).
-* Better idea: constrain the squared length of the weight vector.
+* Standard approach is to add a (constant times the) sum of the squared weights (L2) into the cost function--a penalty.
+  * Large weights to occur only when there are large error derivatives (see slides)
+  * Using L1 (absolute value) penalty is sometimes better b/c lots of weights are then 0, which makes a network easier to understand.  Or even more extreme, sqrt(abs), makes escape from 0 difficult but then negligible effect on really large weights (allows for a few big weights).
+* Better idea: constrain the squared length of the weight vector
+  * If an update violates the constraints, then scale down the weight vector to the allowed length [FWC - this could be used for across-the-board constraints, rather than penalties, on risk factor exposures]
+  * This is much more effective at pushing irrelevant weights towards 0 b/c big weights, via the scaling, cause the small weights to get smaller.  "The penalties are then just the LaGrange multipliers required to keep the constraints satisfied."
+  * Hinton finds such constraints to work "noticeably" better than penalties
   * FWC - this is similar to mean-variance optimization with flat-bottomed parabolas
+  * It's much easier to set a sensible constraint than a sensible weight penalty
 
-
+#### [Lecture 9c: Using noise as a regularizer](https://www.coursera.org/learn/neural-networks/lecture/wbw7b/using-noise-as-a-regularizer-7-min)
+* L2-weight penalty is equivalent to adding noise to the inputs (in a *linear* network)
+  * Minimizing the squared error also minimizes the squared weights (because the noise *variance* gets scaled by the square of the weights), the second operand of this sum: y_j + N(0, w_i^2 * sigma_i^2)
+  * E[(y - sum_i(w_i*e_i) - t)^2] = (y - t)^2 + sum_i(w_i^2 * sigma_i^2)
+* Using noise in the activities as a regularizer
+  * Make the units binary and stochastic on the forward pass, but then do the backward pass as if we had done the forward pass "properly"
+    * In the forward pass choose 0 or 1 based on the "probabiliy" value of the logistic function.
+  * This does worse on the training set (and trains considerably slower), but performance on the test set is significantly better (unpublished result)
+    * [FWC - **so train with positive or negative returns, -1 or 1, but then compute cost (and propagate errors) with real-return-computed cost** -- and also note that not just tcosts, but liq constraints also, and all other *phantom* constraints will get baked into the learned function]
 
