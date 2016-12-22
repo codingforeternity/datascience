@@ -457,7 +457,7 @@ die
   * but aren't very good for high-dimensional data like pre-processed audio or video b/c they need many more hidden units than an RNN that learns its hidden->hidden weights
 * Sukskever (2012) used ESN initialization in a normal RNN (with rmsprop and momentum) - very efficient/effective
 
-### Week 8 Quiz
+#### Week 8 Quiz
   1. (checked) can use model where input char chooses whole matrix; (unchecked) can't use additive/obvious model (not sufficiently flexible); (unchecked) too many factors b/c simply choosing a multiplicative matrix for each char is at least as flexible as a factor-constrained matrix for each char; (checked WRONG - an additive model can't express a multiplicative one) can use additive with modification b/c the modification (one for each factor) acts like the multiplicative model
   2. 1 - because still selecting a single matrix that connects each hidden->hidden (WRONG - 1 per factor, so the answer is 1000, b/c the hidden->hidden weights are only constrained by the factors in this scenario, not constrained to 1 like in the former scenario)
   3. 3086000 (1500*2 + 86 for each of the 1000 factors) (see lecture notes above) (CORRECT)
@@ -465,3 +465,14 @@ die
   5. No - they aren't at risk of overfitting b/c the hidden->hidden weights are fixed
   6. Don't always use the single most likely char next.  Do sample from the distribution.  A probability distribution is better visualized by samples from it.
   7. **In Echo State Networks, does it matter whether the hidden units are linear or logistic (or some other nonlinearity)? A: Yes. With linear hidden units, the output would become a linear function of the inputs, and we typically want to learn nonlinear functions of the input. Therefore, linear hidden units are a bad choice.**
+
+#### [Lecture 9a: Overview of ways to improve generalization](https://www.coursera.org/learn/neural-networks/lecture/R1OLs/overview-of-ways-to-improve-generalization-12-min)
+* Network capacity can be controlled in several ways
+  1. Architecture - limit # of hidden neurons
+  2. Early stopping - assumes real relationships are learned before spurious ones
+  3. Weight-decay - penalize large weights
+  4. Noise - add noise to weights or activities
+* Cross-validation - a better way to choose meta parameters
+  * 3 sets of data: training, validation, test (only used once)
+
+
