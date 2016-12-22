@@ -1,3 +1,5 @@
+Another idea: Separate the collection of data from its analysis.  Those who collect the data should hold back some of the data as 'test' data to confirm the analyses, just like they do in data science competitions.  [2 possible companies here: Data Collection companies and Data Analysis companies, both of which are under the broad heading of Data Handling]
+
 [fMRI clusterf******](http://andrewgelman.com/2016/12/10/fmri-clusterf/) (12/22/16)
 
 [NIH Plan to Fix Social Science](http://marginalrevolution.com/marginalrevolution/2016/11/nih-plan-fix-social-science.html) (12/22/16)
