@@ -1,3 +1,5 @@
+[NIH Plan to Fix Social Science](http://marginalrevolution.com/marginalrevolution/2016/11/nih-plan-fix-social-science.html)
+
 [Gelman on the Replication Crisis and Social Media](http://marginalrevolution.com/marginalrevolution/2016/09/gelman-replication-crisis-social-media.html) (10/19/16)
 
 [A Skeptical View of the NSF](http://marginalrevolution.com/marginalrevolution/2016/08/a-skeptical-view-of-the-nsf.html) (8/25/16)
