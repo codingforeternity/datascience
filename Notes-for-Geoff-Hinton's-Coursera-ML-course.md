@@ -546,7 +546,7 @@ die
     * i.e. use the data itself to decide what your prior is!
     * "This really violates a lot of the presuppositions of the Bayesian approach.  We're using our *data* to decide what our beliefs are."
     * Fit a zero-mean Gaussian to the 1-dimensional distribution of the learned weight vals
-    * => we could easily learn different variances for diff sets of wgts (a benefit!)
+    * => **we could easily learn different variances for diff sets of wgts (a benefit!)**
   * We don't need a validation set!  which, to use it, would be very time consuming
 * MacKay’s quick and dirty method of choosing the ratio of the noise variance, sigma_D^2, to the weight prior variance, sigma_W^2
   * Start with guesses for both the noise variance and the weight prior variance (really just guess their ratio)
@@ -554,4 +554,8 @@ die
     1. Do some learning using the ratio of the variances as the weight penalty coefficient
     2. Reset the noise variance to be the variance of the residual errors
     3. Reset the weight prior variance to be the variance of the distribution of the actual learned weights
-  * This works quite well in practice and MacKay won several competitions this way.
+  * **This works quite well in practice and MacKay won several competitions this way.**
+* Q: Suppose we're using MacKay's method for setting weight costs.  For one particular input unit, we decide to use the same prior variance for all of its outgoing weights to the hidden layer.  Now suppose that the state of that input unit does not contain any useful information for getting the output right.  Assuming we start with weights drawn from the prior distribution, which of the following statements is true?
+  * FALSE (b/c weights are known to be 0 so variance shrinks) - After training the weights for a while without updating the weight prior variance, we expect the actual variance of the outgoing weights of that unit to be bigger than the prior variance.
+  * TRUE - Every time we update the prior variance after doing some more learning, it will get smaller.
+    * correct - Since that input unit contains no useful information, we expect the *error derivative to be small.  The Gaussian weight prior will always push the weights towards 0 unless it is opposed by the error derivative.*
