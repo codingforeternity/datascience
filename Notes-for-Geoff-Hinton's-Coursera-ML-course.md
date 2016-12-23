@@ -539,3 +539,19 @@ die
     * Cost = MSE + sigma_D^2 / sigma_W^2 * sum_i[w_i]
     * so we have a specific number for the weight penalty, the ratio of 2 variances (FWC - like a [beta](https://en.wikipedia.org/wiki/Beta_(finance))!), it's not an arbitrary choice as in previous lecture
 
+#### [Lecture 9f: MacKay’s quick and dirty method of fixing weight costs](https://www.coursera.org/learn/neural-networks/lecture/7Q9LC/mackays-quick-and-dirty-method-of-setting-weight-costs-4-min)
+* Estimating the variance of the Gaussian prior on the weights
+  * After learning a model with some initial choice of variance for the weight prior, sigma_W^2, we could do a dirty trick called "empirical Bayes"
+  * Set the variance of the Gaussian prior, sigma_W^2, to be whatever makes the weights that the model learned most likely.
+    * i.e. use the data itself to decide what your prior is!
+    * "This really violates a lot of the presuppositions of the Bayesian approach.  We're using our *data* to decide what our beliefs are."
+    * Fit a zero-mean Gaussian to the 1-dimensional distribution of the learned weight vals
+    * => we could easily learn different variances for diff sets of wgts (a benefit!)
+  * We don't need a validation set!  which, to use it, would be very time consuming
+* MacKay’s quick and dirty method of choosing the ratio of the noise variance, sigma_D^2, to the weight prior variance, sigma_W^2
+  * Start with guesses for both the noise variance and the weight prior variance (really just guess their ratio)
+  * Loop/repeat:
+    1. Do some learning using the ratio of the variances as the weight penalty coefficient
+    2. Reset the noise variance to be the variance of the residual errors
+    3. Reset the weight prior variance to be the variance of the distribution of the actual learned weights
+  * This works quite well in practice and MacKay won several competitions this way.
