@@ -112,7 +112,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   * C has a very big gradient when the target value is 1 and the output is almost zero.
     * A value of 0.000001 is much better than 0.000000001 (for a target value of 1)
     * Effectively, the steepness of dC/dy exactly balances the flatness of dy/dz
-      * del C / del z_i = Sum_j[ del C / del y_i * del y_i / del z_i ] = y_i - t_i  .... (the chain rule again)
+      * del C / del z_i = Sum_j[ del C / del y_i * del y_i / del z_i ] = [y_i - t_i](http://peterroelants.github.io/posts/neural_network_implementation_intermezzo02/)  .... (the chain rule again)
 
 <h3>Lecture 4d: Neuro-probabilistic language models</h3>
 * Bengio's NN for predicting the next word (see green Staples notebook or pdfs)
