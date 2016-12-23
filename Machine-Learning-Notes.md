@@ -1,3 +1,6 @@
+#### [World’s largest hedge fund to replace managers with artificial intelligence](https://www.theguardian.com/technology/2016/dec/22/bridgewater-associates-ai-artificial-intelligence-management) (12/23/16)
+* "Automated decision-making is appealing to businesses as it can save time and **eliminate human emotional volatility**.  People have a bad day and it then colors their perception of the world and they make different decisions."
+
 #### [An overview of gradient descent optimization algorithms](http://sebastianruder.com/optimizing-gradient-descent/) (12/21/16)
 * "the same learning rate applies to all parameter updates. If our data is sparse and our features have very different frequencies, we might not want to update all of them to the same extent, but perform a larger update for rarely occurring features"
 * "Another key challenge of minimizing highly non-convex error functions common for neural networks is avoiding getting trapped in their numerous suboptimal local minima. Dauphin et al. [19](https://arxiv.org/abs/1406.2572) argue that the difficulty arises in fact not from local minima but from saddle points"
