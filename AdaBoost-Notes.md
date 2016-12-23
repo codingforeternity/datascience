@@ -2,6 +2,9 @@
 * **Using complex methods such as SVMs in Boosting usually leads to [overfitting](https://en.wikipedia.org/wiki/Overfitting).**
 * To improve the bias/variance characteristics of Boosting, bagging is generally employed. What this essentially does is train each weak learner on a subset of the overall dataset (rather than the whole training set). This causes a good decrease in variance and tends to **reduce overfitting**.
 * The biggest criticism for Boosting comes from its sensitivity to noisy data. Think of it this way. At each iteration, Boosting tries to improve the output for data points that haven't been predicted well 'til now. If your dataset happens to have some (or a lot) of misclassified/outlier points, the meta-algorithm will try very hard to fit subsequent weak learners to these noisy samples. As a result, **overfitting is likely to occur**. The exponential loss function used in AdaBoost is particularly vulnerable to this issue (since the error from an outlier will get an exponentially-weighed importance for future learners).
+* Implementation in Scikit-Learn
+  * [AdaBoost implementation](http://scikit-learn.org/stable/modules/ensemble.html#adaboost)
+  * [Gradient Tree Boosting implementation](http://scikit-learn.org/stable/modules/ensemble.html#gradient-tree-boosting)
 
 #### [AdaBoost with neural networks](http://stackoverflow.com/questions/35691636/adaboost-with-neural-networks) (12/23/16)
   1. Train your first weak classifier by using the training data
