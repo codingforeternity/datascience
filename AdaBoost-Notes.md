@@ -1,5 +1,7 @@
-#### [Adaboost with neural networks](http://stackoverflow.com/questions/35691636/adaboost-with-neural-networks) (12/23/16)
+#### [AdaBoost with neural networks](http://stackoverflow.com/questions/35691636/adaboost-with-neural-networks) (12/23/16)
   1. Train your first weak classifier by using the training data
   2. The 1st trained classifier makes mistake on some samples and correctly classifier others. Increase the weight of those samples that are wrongly been classified and decrease the weight of others. Retrain your classifier with these weights to get your 2nd classifier. In your case, you first have to resample with replacement from your data with these updated weights, create a new training data and then train your classifier over these new data.
   3. Repeat the 2nd step T times and at the end of each round, calculate the alpha weight for the classifier according to the formula. 4- The final classifier is the weighted sum of the decisions of the T classifiers.
 * PS: There is no guarantee that boosting increases the accuracy. In fact, so far **all the boosting methods that I'm aware of were unsuccessful to improve the accuracy with NN as weak learners** (The reason is because of the way that boosting works and needs a lengthier discussion).
+
+#### [AdaBoost on Wikipedia](https://en.wikipedia.org/wiki/AdaBoost)
