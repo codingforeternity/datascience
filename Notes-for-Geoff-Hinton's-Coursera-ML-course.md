@@ -485,12 +485,12 @@ die
 * Standard approach is to add a (constant times the) sum of the squared weights (L2) into the cost function--a penalty.
   * Large weights to occur only when there are large error derivatives (see slides)
   * Using L1 (absolute value) penalty is sometimes better b/c lots of weights are then 0, which makes a network easier to understand.  Or even more extreme, sqrt(abs), makes escape from 0 difficult but then negligible effect on really large weights (allows for a few big weights).
-* Better idea: constrain the squared length of the weight vector
+* **Better idea: constrain the squared length of the weight vector**
   * If an update violates the constraints, then scale down the weight vector to the allowed length [FWC - this could be used for across-the-board constraints, rather than penalties, on risk factor exposures]
   * This is much more effective at pushing irrelevant weights towards 0 b/c big weights, via the scaling, cause the small weights to get smaller.  "The penalties are then just the LaGrange multipliers required to keep the constraints satisfied."
-  * Hinton finds such constraints to work "noticeably" better than penalties
+  * Hinton finds such **constraints to work "noticeably" better than penalties**
   * FWC - this is similar to mean-variance optimization with flat-bottomed parabolas
-  * It's much easier to set a sensible constraint than a sensible weight penalty
+  * It's *much easier to set a sensible constraint than a sensible weight penalty*
 
 #### [Lecture 9c: Using noise as a regularizer](https://www.coursera.org/learn/neural-networks/lecture/wbw7b/using-noise-as-a-regularizer-7-min)
 * L2-weight penalty is equivalent to adding noise to the inputs (in a *linear* network)
@@ -559,3 +559,15 @@ die
   * FALSE (b/c weights are known to be 0 so variance shrinks) - After training the weights for a while without updating the weight prior variance, we expect the actual variance of the outgoing weights of that unit to be bigger than the prior variance.
   * TRUE - Every time we update the prior variance after doing some more learning, it will get smaller.
     * correct - Since that input unit contains no useful information, we expect the *error derivative to be small.  The Gaussian weight prior will always push the weights towards 0 unless it is opposed by the error derivative.*
+
+#### Week 9 Quiz
+  1. the one where the training error reaches 0 is an overfit (not checked)
+  2. INCORRECT - "adding weight noise" is equivalent to "L2 regularization" so it's not either of those.  it must be "L1 regularization" b/c something was used, though it should really be that a constraint on the size of the weight vector was used because a few large values happened
+  3. selected the "mustache" shape in order to have lot of weights close to 0 but a few a long way from 0
+  4. E = SSE, C = student-t cost = lambda/2 * sum_i[log(1 + w_i^2_], E_tot = E + C, what is d/dw E_tot
+    * A: lambda * w_i in the numerator of the C derivative
+  5. Different regularization methods have different effects on the learning process. For example (a) L2 regularization penalizes high weight values. (b) L1 regularization penalizes weight values that do not equal zero. Adding noise (c) to the weights during learning ensures that the learned hidden representations take extreme values. Sampling (d) the hidden representations regularizes the network by pushing the hidden representation to be binary during the forward pass which limits the modeling capacity of the network.
+    * Q: Given the shown [bimodal at -10 and 10] histogram of activations (just before the nonlinear logistic nonlinearity) for a Neural Network, what is the regularization method that has been used (check all that apply)?
+    * checked - 'adding noise to the weights' and 'sampling the hidden repr'
+    * unchecked - L1 and L2
+  6. INCORRECT - better on both training and test (the correct answer is worse on training and better on test)
