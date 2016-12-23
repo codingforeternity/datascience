@@ -503,3 +503,39 @@ die
     * [FWC - **so train with positive or negative returns, -1 or 1, but then compute cost (and propagate errors) with real-return-computed cost** -- and also note that not just tcosts, but liq constraints also, and all other *phantom* constraints will get baked into the learned function]
 * [FWC - So adding noise to inputs, weights, and activations reduces overfitting (adds regularization), but what's the real mechanism for why?  Does the added noise effectively dampen actual noise, making it more difficult to overfit?  But then if you add too much noise, does it make real effects difficult to detect?  Seems like you could slowly increase the amount of noise and measure validation performance along the way]
 
+#### [Lecture 9d: Introduction to the Bayesian Approach](https://www.coursera.org/learn/neural-networks/lecture/nPahR/introduction-to-the-full-bayesian-approach-12-min)
+* "The main idea behind the Bayesian Approach is that instead of looking for the most likely setting of the parameters of a model, we should consider all possible settings of the parameters and try to figure out for each of those possible settings how probable [FWC - likely] it is, given the data we observed."
+* POSTERIOR = PRIOR * DATA_LIKELIHOOD
+  * With enough data, the likelihood term always "wins."
+* If we flip a coin 100 times and see 53 heads then what is P(head)?
+  * Frequentist answer (aka maximum likelihood) = 0.53
+    * Set derivative d/dp of P(D) where P(D) = p^53 * (1-p)^47 to 0 (which is where p is *maximized*) => p = 0.53
+    * Problems w/ MLE
+      * If we only flip the coin once and get a head, then p = 1?  No, 0.5 is still a better answer.
+      * It's unreasonable to give a single answer.  Instead lets say we're unsure about p.
+  * See slide 24 (of 39) of lec9.pdf 'Using a distribution over parameter values' for how the posterior is updated after one coin flip given a uniform prior.
+* Bayes
+  * P(W|D) = P(W) * P(D|W) / P(D)
+  * P(D) is a normalizing term (to ensure the distribution integral sums to 1) equal to integral_W[P(W) * P(D|W)] but for any P(W|D) in the equation above this is the same value--it doesn't depend on W b/c it's an integral over all possible Ws
+
+#### [The Bayesian interpresation of weight decay/penalties](https://www.coursera.org/learn/neural-networks/lecture/n6TUy/the-bayesian-interpretation-of-weight-decay-11-min)
+* Maximum a Posteriori Learning
+  * Gives us a nice explanation of what's really going on when we use weight decay to control the capacity of a model
+* Supervised Maximum Likelihood Learning
+  * Finding the weight vector that minimizes the squared residuals is equivalent to finding a weight vector that *maximizes the log probability density of the correct answer*
+  * see slide 30 of lec9.pdf for mathematical derivation
+    * -log(P(t|y)) = k + (t-y)^2 / (2 * sigma^2)
+      * note this is where the 2*sigma^2 in the denominator comes from
+    * if -log(P(t|y)) is our cost function, this turns into minimizing a squared distance (the RHS)
+    * *Minimizing squared error is the same as maximizing log probability under Gaussian distribution!* ("helpful to know" b/c when you're minimizing sq error you can make a probabilistic interpretation of what's going on)
+* MAP: Maximum a Posteriori
+  * P(W|D) = P(W) * P(D|W) / P(D)
+  * Cost = -log P(W|D) = -log P(W) - log P(D|W) + log P(D)
+    * log P(D) doesn't depend on W, so doesn't affect the minimization
+    * log P(D|W) is the log prob of target values given weights, W (normalized by 2*sigma_D^2 of the errors, the data)
+    * log P(W) is the log prob of W under the prior (normalized by 2*sigma_W^2 of the weights)
+  * Minimizing the squared weights is equivalent to maximizing the log probability of the weights under a *zero-mean* Gaussian prior (the same as for minimizing the squared error!)
+  * multiply through by 2*sigma_D^2 gives us:
+    * Cost = MSE + sigma_D^2 / sigma_W^2 * sum_i[w_i]
+    * so we have a specific number for the weight penalty, the ratio of 2 variances (FWC - like a [beta](https://en.wikipedia.org/wiki/Beta_(finance))!), it's not an arbitrary choice as in previous lecture
+
