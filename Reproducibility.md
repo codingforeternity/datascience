@@ -1,3 +1,7 @@
+#### [Academic signaling and the post-truth world](http://noahpinionblog.blogspot.com/2016/12/academic-signaling-and-post-truth-world.html) (12/23/16)
+* "The incentives for academic researchers seem like they encourage a large volume of well-publicized spurious results."
+* "Which means there is an ever-increasing army of people out there trying to find and report interesting results. But there's no guarantee that the supply of interesting results is infinite."
+
 Another idea: Separate the collection of data from its analysis.  Those who collect the data should hold back some of the data as 'test' data to confirm the analyses, just like they do in data science competitions.  [2 possible companies here: Data Collection companies and Data Analysis companies, both of which are under the broad heading of Data Handling]
 
 [fMRI clusterf******](http://andrewgelman.com/2016/12/10/fmri-clusterf/) (12/22/16)
