@@ -1,3 +1,7 @@
+#### Selective HTTP (12/23/16)
+* Once a page has been served to a client, the thing doing the serving (e.g. the browser) should know what the important components of the page are (e.g. by what users choose to highlight, or ?) such that future requests can be for only the important components.
+* This may be useful for low bandwidth connections: [How to Share Your Phone’s Internet Connection](http://time.com/4437987/how-to-use-iphone-mobile-hotspot/)
+
 #### Record my life; supplement my brain
 * everything I read, I may want to go back to it and search (e.g. in the fall of last year i had a conversation with someone about a band)
 * [The Great AI Awakening (at Google)](http://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html?_r=0) (12/17/16)
