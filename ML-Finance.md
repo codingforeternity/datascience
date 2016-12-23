@@ -1,3 +1,6 @@
+#### Every trade has a distribution of holding periods
+* Rather than using 10-days in the cost fn, why not regress against an Expectation weighted average over the distribution of holding days?  The mean of this distribution may be at 10, but that value will only contribute in small part to the weighted average.
+
 Email: Convolution in finance (9/28/15)
 * A "line" is adjacent pixels of the same color. A "line" with financial data is a segment of space, as defined by a segmentation variable (eg market cap), over which the relationship between two or more other variables is linear.
 * These lines can then be combined to form exponential relationships and general multivariate distributions, etc.
