@@ -5,6 +5,7 @@
 * Implementation in Scikit-Learn
   * [AdaBoost implementation](http://scikit-learn.org/stable/modules/ensemble.html#adaboost)
   * [Gradient Tree Boosting implementation](http://scikit-learn.org/stable/modules/ensemble.html#gradient-tree-boosting)
+* FWC - Reweighting based on error (e.g. PnL) will lead to fitting subsequent models to large positions with large returns.  But reweighting based on only large positions multiplied by binary, 1 or -1, for correct or incorrect, will remove the sensitivity to large returns.
 
 #### [AdaBoost with neural networks](http://stackoverflow.com/questions/35691636/adaboost-with-neural-networks) (12/23/16)
   1. Train your first weak classifier by using the training data
