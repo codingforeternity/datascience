@@ -5,3 +5,5 @@
 * PS: There is no guarantee that boosting increases the accuracy. In fact, so far **all the boosting methods that I'm aware of were unsuccessful to improve the accuracy with NN as weak learners** (The reason is because of the way that boosting works and needs a lengthier discussion).
 
 #### [AdaBoost on Wikipedia](https://en.wikipedia.org/wiki/AdaBoost)
+* AdaBoost is adaptive in the sense that subsequent weak learners are tweaked in favor of those instances misclassified by previous classifiers
+* AdaBoost (with [decision trees](https://en.wikipedia.org/wiki/Decision_tree_learning) as the weak learners) is often referred to as the best out-of-the-box classifier.[1](https://en.wikipedia.org/wiki/AdaBoost#cite_note-1)[2](https://en.wikipedia.org/wiki/AdaBoost#cite_note-2)
