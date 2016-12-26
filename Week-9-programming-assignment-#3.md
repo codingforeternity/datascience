@@ -17,15 +17,13 @@ We're using Octave. You probably already have that working well, because you als
 Ready to Begin? (Please select a response. This question is Reflective and answering a certain option will not count against the final grade)
 
 Yes
-
 No
-1
-point
-2. 
+1 point
 
+2. 
 What is the loss on the training data for that test run? Write your answer with at least 5 digits after the decimal point.
-1
-point
+1 point
+
 3. 
 Part 2: Programming
 
@@ -55,10 +53,9 @@ While we're investigating how the optimization works best, we'll only look at th
 Let's do an initial run with with learning rate 0.005 and no momentum: run a3(0, 10, 70, 0.005, 0, false, 4)
 
 What is the training data loss that that run reports at the end? Use at least 5 digits after the decimal point.
-1
-point
-4. 
+1 point
 
+4. 
 In the plot you'll see that training data loss and validation data loss are both decreasing, but they're still going down steadily after those 70 optimization iterations. We could run it longer, but for now we won't. We'll see what we can do with 70 iterations. If we would run our optimization for an hour (i.e. many iterations), then when we get a bigger task and bigger network, the program might take a lot longer than an hour to do the same number of optimization iterations.
 
 Let's try a bigger learning rate: LR=0.5, and still no momentum. You'll see that this works better.
@@ -70,84 +67,64 @@ Let's try a variety of learning rates, to find out which works best. We'll try 0
 Which of those 14 worked best?
 
 Was the best run a run with momentum or without momentum?
+* The best of those 14 runs was with momentum.
+* The best of those 14 runs was without momentum.
+1 point
 
-The best of those 14 runs was with momentum.
-
-The best of those 14 runs was without momentum.
-1
-point
 5. 
-
 What was the learning rate for the best of those 14 runs?
-
 0.002
-
 0.01
-
 0.05
-
 0.2
-
 1.0
-
 5.0
-
 20.0
-1
-point
+
+1 point
+
 6. 
 Part 4: Generalization
 
 Now that we found good optimization settings, we're switching to a somewhat bigger task, and there we'll investigate generalization. Now we're interested mostly in the classification loss on the validation data: if that's good, then we have good generalization, regardless whether the loss on the training data is small or large. Notice that we're measuring only the classification loss: we're not interested in the weight decay loss. The classification loss is what shows how well we generalize. When we don't use weight decay, the classification loss and the final loss are the same, because the weight decay loss is zero. We'll start with zero weight decay, 200 hidden units, 1000 optimization iterations, a learning rate of 0.35, momentum of 0.9, no early stopping, and mini-batch size 100, i.e. run a3(0, 200, 1000, 0.35, 0.9, false, 100). This run will take more time.
 
 What is the validation data classification loss now? Write your answer with at least 5 digits after the decimal point.
-1
-point
-7. 
+1 point
 
-The simplest form of regularization is early stopping: we use the weights as they were when validation data loss was lowest. You'll see in the plot that that is not at the end of the 1000 optimization iterations, but quite a bit earlier. The script has an option for early stopping. Run the experiment with the early stopping parameter set to true. Now the generalization should be better.
+7. 
+**The simplest form of regularization is early stopping**: we use the weights as they were when validation data loss was lowest. You'll see in the plot that that is not at the end of the 1000 optimization iterations, but quite a bit earlier. The script has an option for early stopping. Run the experiment with the early stopping parameter set to true. Now the generalization should be better.
 
 What is the validation data classification loss now, i.e. with early stopping?
-1
-point
-8. 
+1 point
 
+8. 
 Another regularization method is weight decay. Let's turn off early stopping, and instead investigate weight decay. The script has an option for L2 weight decay. As long as the coefficient is 0, in effect there is no weight decay, but let's try some different coefficients.
 
 We've already run the experiment with WD=0. Run additional experiments with the other WD coefficients listed below, and indicate which of them gave the best generalization. Be careful to focus on the classification loss (i.e. without the weight decay loss), as opposed to the final loss (which does include the weight decay loss).
 
 0.1
-
 0.0001
-
 0
-
 0.001
-
 10
+1
 
-1
-1
-point
+1 point
+
 9. 
-
 Yet another regularization strategy is reducing the number of model parameters, so that the model simply doesn't have the brain capacity to overfit a lot by learning too many details of the training set. In our case, we can vary the number of hidden units. Since it's clear that our model is overfitting, we'll look into reducing the number of hidden units.
 
 Turn off the weight decay, and instead try the following hidden layer sizes. Indicate which one worked best.
 
 130
-
 100
-
 10
-
 30
-
 200
-1
-point
-10. 
 
+1 point
+
+10. 
 Most regularization methods can be combined quite well. Let's combine early stopping with a carefully chosen hidden layer size. Which number of hidden units works best that way, i.e. with early stopping? Remember, best, here, is based on only the validation data loss.
 
 37
