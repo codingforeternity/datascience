@@ -56,7 +56,7 @@ Let's do an initial run with with learning rate 0.005 and no momentum: run a3(0,
 
 What is the training data loss that that run reports at the end? Use at least 5 digits after the decimal point.
 
-2.304861 - INCORRECT
+2.304861 - INCORRECT<br>
 2.30486 - INCORRECT
 2.303441 - CORRECT
 
