@@ -58,6 +58,7 @@ What is the training data loss that that run reports at the end? Use at least 5 
 
 2.304861 - INCORRECT
 2.30486 - INCORRECT
+2.303441 - CORRECT
 
 1 point
 #### 4. 
@@ -81,7 +82,7 @@ What was the learning rate for the best of those 14 runs?
 * 0.002
 * 0.01
 * 0.05
-* 0.2
+* 0.2 - CORRECT
 * 1.0
 * 5.0 - INCORRECT
 * 20.0 - INCORRECT
@@ -96,6 +97,7 @@ What is the validation data classification loss now? Write your answer with at l
 
 0.330507 - INCORRECT
 0.33051 - INCORRECT
+0.430185 - CORRECT
 
 1 point
 #### 7. 
@@ -105,6 +107,7 @@ What is the validation data classification loss now, i.e. with early stopping?
 
 0.330500 - INCORRECT
 0.33050 - INCORRECT
+0.334505 - CORRECT
 
 1 point
 #### 8. 
@@ -149,9 +152,12 @@ Most regularization methods can be combined quite well. Let's combine early stop
 Of course, we could explore a lot more, such as maybe combining all 3 regularization methods, and that might work a little better. If you want to, you can play with the code all you want. You could even try to modify it to have 2 hidden layers, to add dropout, or anything else. The code is a reasonably well-written starting point for Neural Network experimentation. All of that, however, is beyond the scope of this assignment; here, we have only one question left.Now that we've quite carefully established a good optimization strategy as well as a good regularization strategy, it's time to see how well our model does on the task that we really cared about: reading handwritten digits.
 
 For the settings that you chose on the previous question, what is the test data classification error rate?
+a3(0, 37, 1000, 0.35, 0.9, true, 100)
 
 0.287752 - INCORRECT
 0.28775 - INCORRECT
+0.282510 - INCORRECT (loss not error rate)
+0.084333 - CORRECT
 
 I understand that submitting work that isn’t my own may result in permanent failure of this course or deactivation of my Coursera account. 
 9 questions unanswered
