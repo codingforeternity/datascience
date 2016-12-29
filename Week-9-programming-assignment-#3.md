@@ -57,8 +57,8 @@ Let's do an initial run with with learning rate 0.005 and no momentum: run a3(0,
 What is the training data loss that that run reports at the end? Use at least 5 digits after the decimal point.
 
 2.304861 - INCORRECT<br>
-2.30486 - INCORRECT
-2.303441 - CORRECT
+2.30486 - INCORRECT<br>
+2.303441 - CORRECT<br>
 
 1 point
 #### 4. 
@@ -95,9 +95,9 @@ Now that we found good optimization settings, we're switching to a somewhat bigg
 
 What is the validation data classification loss now? Write your answer with at least 5 digits after the decimal point.
 
-0.330507 - INCORRECT
-0.33051 - INCORRECT
-0.430185 - CORRECT
+0.330507 - INCORRECT<br>
+0.33051 - INCORRECT<br>
+0.430185 - CORRECT<br>
 
 1 point
 #### 7. 
@@ -105,9 +105,9 @@ What is the validation data classification loss now? Write your answer with at l
 
 What is the validation data classification loss now, i.e. with early stopping?
 
-0.330500 - INCORRECT
-0.33050 - INCORRECT
-0.334505 - CORRECT
+0.330500 - INCORRECT<br>
+0.33050 - INCORRECT<br>
+0.334505 - CORRECT<br>
 
 1 point
 #### 8. 
@@ -154,10 +154,10 @@ Of course, we could explore a lot more, such as maybe combining all 3 regulariza
 For the settings that you chose on the previous question, what is the test data classification error rate?
 a3(0, 37, 1000, 0.35, 0.9, true, 100)
 
-0.287752 - INCORRECT
-0.28775 - INCORRECT
-0.282510 - INCORRECT (loss not error rate)
-0.084333 - CORRECT
+0.287752 - INCORRECT<br>
+0.28775 - INCORRECT<br>
+0.282510 - INCORRECT (loss not error rate)<br>
+0.084333 - CORRECT<br>
 
 I understand that submitting work that isn’t my own may result in permanent failure of this course or deactivation of my Coursera account. 
 9 questions unanswered
