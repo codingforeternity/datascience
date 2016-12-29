@@ -76,13 +76,13 @@ Was the best run a run with momentum or without momentum?
 1 point
 5. 
 What was the learning rate for the best of those 14 runs?
-0.002
-0.01
-0.05
-0.2
-1.0
-5.0
-20.0 - INCORRECT
+* 0.002
+* 0.01
+* 0.05
+* 0.2
+* 1.0
+* 5.0
+* 20.0 - INCORRECT
 
 1 point
 6. 
@@ -108,12 +108,12 @@ Another regularization method is weight decay. Let's turn off early stopping, an
 
 We've already run the experiment with WD=0. Run additional experiments with the other WD coefficients listed below, and indicate which of them gave the best generalization. Be careful to focus on the classification loss (i.e. without the weight decay loss), as opposed to the final loss (which does include the weight decay loss).
 
-0.1
-0.0001 - INCORRECT
-0
-0.001
-10
-1
+* 0.1
+* 0.0001 - INCORRECT
+* 0
+* 0.001
+* 10
+* 1
 
 1 point
 9. 
@@ -121,21 +121,21 @@ Yet another regularization strategy is reducing the number of model parameters, 
 
 Turn off the weight decay, and instead try the following hidden layer sizes. Indicate which one worked best.
 
-130
-100
-10
-30 - CORRECT
-200
+* 130
+* 100
+* 10
+* 30 - CORRECT
+* 200
 
 1 point
 10. 
 Most regularization methods can be combined quite well. Let's combine early stopping with a carefully chosen hidden layer size. Which number of hidden units works best that way, i.e. with early stopping? Remember, best, here, is based on only the validation data loss.
 
-37 - CORRECT
-113
-18
-236
-189
+* 37 - CORRECT
+* 113
+* 18
+* 236
+* 189
 
 1 point
 11. 
