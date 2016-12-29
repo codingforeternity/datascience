@@ -1,10 +1,9 @@
 Programming assignment 3: Optimization and generalization
 
 11 questions
-1
-point
-1. 
 
+1 point
+1. 
 In this assignment, you're going to train a simple Neural Network, for recognizing handwritten digits. You'll be programming, looking into efficient optimization, and looking into effective regularization.
 
 The dataset for this assignment is the USPS collection of handwritten digits. It consists of scans (images) of digits that people wrote. The input is a 16 by 16 image of greyscale pixels, showing an image of a handwritten digit. The output is simply which of the 10 different digits it is, so we're using a 10-way softmax as the output layer of our Neural Network. The input layer is simply 256 units, i.e. one for each pixel. We use one hidden layer of logistic units. One of the issues we'll be investigating is what number of hidden units works best for generalization. To keep things as simple as possible, we're not including biases in our model. In the diagram you can see that this model is significantly simpler than the model that we used in programming assignment 2.
@@ -18,12 +17,14 @@ Ready to Begin? (Please select a response. This question is Reflective and answe
 
 Yes
 No
-1 point
 
+1 point
 2. 
 What is the loss on the training data for that test run? Write your answer with at least 5 digits after the decimal point.
-1 point
 
+2.302585 - CORRECT
+
+1 point
 3. 
 Part 2: Programming
 
@@ -33,16 +34,16 @@ The program checks your gradient computation for you, using a finite difference 
 
 Take a good look at the loss computation, and make sure that you understand it.
 
-    Notice that there's classification loss and weight decay loss, which are added together to make the loss.
-    Also notice that the loss function is an average over training cases, as opposed to a sum. Of course, that affects the gradient as well.
+*Notice that there's classification loss and weight decay loss, which are added together to make the loss.
+*Also notice that the loss function is an average over training cases, as opposed to a sum. Of course, that affects the gradient as well.
 
 Now take a pen & paper, figure out how to compute the gradient, and implement it in Octave.
 
 Here are some step-by-step suggestions, but you don't need to use them, as long as you get that gradient computation right.
 
-    After you figured out the math on paper, start with the weight decay loss, and do a run with huge weight decay, so that the weight decay loss overshadows the classification loss. Run a3(1e7, 7, 10, 0, 0, false, 4), i.e. 7 hidden units. If the gradient check passes, then you probably did this right. If it doesn't, take a close look at the error message, and try to figure out where you may have made a mistake.
-    After you have the weight decay loss gradient working, turn off weight decay, i.e. go to a3(0, 7, 10, 0, 0, false, 4), and you'll see the gradient error message coming back.
-    Then implement the classification loss gradient, and if you get any error message from the gradient checker, look closely at the numbers in that error message. When you have a correct implementation, proceed to the next part.
+* After you figured out the math on paper, start with the weight decay loss, and do a run with huge weight decay, so that the weight decay loss overshadows the classification loss. Run a3(1e7, 7, 10, 0, 0, false, 4), i.e. 7 hidden units. If the gradient check passes, then you probably did this right. If it doesn't, take a close look at the error message, and try to figure out where you may have made a mistake.
+* After you have the weight decay loss gradient working, turn off weight decay, i.e. go to a3(0, 7, 10, 0, 0, false, 4), and you'll see the gradient error message coming back.
+* Then implement the classification loss gradient, and if you get any error message from the gradient checker, look closely at the numbers in that error message. When you have a correct implementation, proceed to the next part.
 
 Part 3: Optimization
 
@@ -53,8 +54,10 @@ While we're investigating how the optimization works best, we'll only look at th
 Let's do an initial run with with learning rate 0.005 and no momentum: run a3(0, 10, 70, 0.005, 0, false, 4)
 
 What is the training data loss that that run reports at the end? Use at least 5 digits after the decimal point.
-1 point
 
+2.304861 - INCORRECT
+
+1 point
 4. 
 In the plot you'll see that training data loss and validation data loss are both decreasing, but they're still going down steadily after those 70 optimization iterations. We could run it longer, but for now we won't. We'll see what we can do with 70 iterations. If we would run our optimization for an hour (i.e. many iterations), then when we get a bigger task and bigger network, the program might take a lot longer than an hour to do the same number of optimization iterations.
 
@@ -67,10 +70,10 @@ Let's try a variety of learning rates, to find out which works best. We'll try 0
 Which of those 14 worked best?
 
 Was the best run a run with momentum or without momentum?
-* The best of those 14 runs was with momentum.
+* The best of those 14 runs was with momentum. - CORRECT
 * The best of those 14 runs was without momentum.
-1 point
 
+1 point
 5. 
 What was the learning rate for the best of those 14 runs?
 0.002
@@ -79,38 +82,40 @@ What was the learning rate for the best of those 14 runs?
 0.2
 1.0
 5.0
-20.0
+20.0 - INCORRECT
 
 1 point
-
 6. 
 Part 4: Generalization
 
 Now that we found good optimization settings, we're switching to a somewhat bigger task, and there we'll investigate generalization. Now we're interested mostly in the classification loss on the validation data: if that's good, then we have good generalization, regardless whether the loss on the training data is small or large. Notice that we're measuring only the classification loss: we're not interested in the weight decay loss. The classification loss is what shows how well we generalize. When we don't use weight decay, the classification loss and the final loss are the same, because the weight decay loss is zero. We'll start with zero weight decay, 200 hidden units, 1000 optimization iterations, a learning rate of 0.35, momentum of 0.9, no early stopping, and mini-batch size 100, i.e. run a3(0, 200, 1000, 0.35, 0.9, false, 100). This run will take more time.
 
 What is the validation data classification loss now? Write your answer with at least 5 digits after the decimal point.
-1 point
 
+0.330507 - INCORRECT
+
+1 point
 7. 
 **The simplest form of regularization is early stopping**: we use the weights as they were when validation data loss was lowest. You'll see in the plot that that is not at the end of the 1000 optimization iterations, but quite a bit earlier. The script has an option for early stopping. Run the experiment with the early stopping parameter set to true. Now the generalization should be better.
 
 What is the validation data classification loss now, i.e. with early stopping?
-1 point
 
+0.330500 - INCORRECT
+
+1 point
 8. 
 Another regularization method is weight decay. Let's turn off early stopping, and instead investigate weight decay. The script has an option for L2 weight decay. As long as the coefficient is 0, in effect there is no weight decay, but let's try some different coefficients.
 
 We've already run the experiment with WD=0. Run additional experiments with the other WD coefficients listed below, and indicate which of them gave the best generalization. Be careful to focus on the classification loss (i.e. without the weight decay loss), as opposed to the final loss (which does include the weight decay loss).
 
 0.1
-0.0001
+0.0001 - INCORRECT
 0
 0.001
 10
 1
 
 1 point
-
 9. 
 Yet another regularization strategy is reducing the number of model parameters, so that the model simply doesn't have the brain capacity to overfit a lot by learning too many details of the training set. In our case, we can vary the number of hidden units. Since it's clear that our model is overfitting, we'll look into reducing the number of hidden units.
 
@@ -119,29 +124,26 @@ Turn off the weight decay, and instead try the following hidden layer sizes. Ind
 130
 100
 10
-30
+30 - CORRECT
 200
 
 1 point
-
 10. 
 Most regularization methods can be combined quite well. Let's combine early stopping with a carefully chosen hidden layer size. Which number of hidden units works best that way, i.e. with early stopping? Remember, best, here, is based on only the validation data loss.
 
-37
-
+37 - CORRECT
 113
-
 18
-
 236
-
 189
-1
-point
-11. 
 
+1 point
+11. 
 Of course, we could explore a lot more, such as maybe combining all 3 regularization methods, and that might work a little better. If you want to, you can play with the code all you want. You could even try to modify it to have 2 hidden layers, to add dropout, or anything else. The code is a reasonably well-written starting point for Neural Network experimentation. All of that, however, is beyond the scope of this assignment; here, we have only one question left.Now that we've quite carefully established a good optimization strategy as well as a good regularization strategy, it's time to see how well our model does on the task that we really cared about: reading handwritten digits.
 
 For the settings that you chose on the previous question, what is the test data classification error rate?
+
+0.287752 - INCORRECT
+
 I understand that submitting work that isn’t my own may result in permanent failure of this course or deactivation of my Coursera account. 
 9 questions unanswered
