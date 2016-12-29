@@ -57,6 +57,7 @@ Let's do an initial run with with learning rate 0.005 and no momentum: run a3(0,
 What is the training data loss that that run reports at the end? Use at least 5 digits after the decimal point.
 
 2.304861 - INCORRECT
+2.30486 - INCORRECT
 
 1 point
 #### 4. 
@@ -82,7 +83,7 @@ What was the learning rate for the best of those 14 runs?
 * 0.05
 * 0.2
 * 1.0
-* 5.0
+* 5.0 - INCORRECT
 * 20.0 - INCORRECT
 
 1 point
@@ -94,6 +95,7 @@ Now that we found good optimization settings, we're switching to a somewhat bigg
 What is the validation data classification loss now? Write your answer with at least 5 digits after the decimal point.
 
 0.330507 - INCORRECT
+0.33051 - INCORRECT
 
 1 point
 #### 7. 
@@ -102,6 +104,7 @@ What is the validation data classification loss now? Write your answer with at l
 What is the validation data classification loss now, i.e. with early stopping?
 
 0.330500 - INCORRECT
+0.33050 - INCORRECT
 
 1 point
 #### 8. 
@@ -112,13 +115,15 @@ We've already run the experiment with WD=0. Run additional experiments with the 
 * 0.1
 * 0.0001 - INCORRECT
 * 0
-* 0.001
+* 0.001 - CORRECT
 * 10
 * 1
+* 5
+* 0.01
 
 1 point
 #### 9. 
-Yet another regularization strategy is reducing the number of model parameters, so that the model simply doesn't have the brain capacity to overfit a lot by learning too many details of the training set. In our case, we can vary the number of hidden units. Since it's clear that our model is overfitting, we'll look into reducing the number of hidden units.
+Yet another regularization strategy is reducing the number of model parameters, so that the model simply doesn't have the brain capacity to overfit a lot by learning too many details of the training set. In our case, we can vary the number of hidden units. Since it's clear that our model is overfitting, we'll look into *reducing* the number of hidden units.
 
 Turn off the weight decay, and instead try the following hidden layer sizes. Indicate which one worked best.
 
@@ -127,6 +132,7 @@ Turn off the weight decay, and instead try the following hidden layer sizes. Ind
 * 10
 * 30 - CORRECT
 * 200
+* 170
 
 1 point
 #### 10. 
@@ -145,6 +151,7 @@ Of course, we could explore a lot more, such as maybe combining all 3 regulariza
 For the settings that you chose on the previous question, what is the test data classification error rate?
 
 0.287752 - INCORRECT
+0.28775 - INCORRECT
 
 I understand that submitting work that isn’t my own may result in permanent failure of this course or deactivation of my Coursera account. 
 9 questions unanswered
