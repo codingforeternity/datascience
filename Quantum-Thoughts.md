@@ -1,3 +1,7 @@
+[Grand Unification Dream Kept at Bay](https://www.quantamagazine.org/20161215-proton-decay-grand-unification/)
+* Physicists have failed to find disintegrating protons, throwing into limbo the beloved theory that the forces of nature were unified at the beginning of time.
+* Over the past four decades, physicists have proposed a variety of GUT models that describe possible initial symmetric arrangements of the particles. Finding out which model is correct would reveal not only the underlying mathematical structure of nature’s laws (and how they might square with the fourth force, gravity), but also what other particles might exist besides the known ones. This in turn could potentially solve other deep mysteries of physics, such as the universe’s matter-antimatter imbalance and the unexplained masses of neutrinos.
+
 [Quantum Gravity’s Time Problem](https://www.quantamagazine.org/20161201-quantum-gravitys-time-problem/)
 * "many leading physicists now consider space-time and gravity to be “emergent” phenomena: Bendy, curvy space-time and the matter within it are a hologram that arises out of a network of entangled qubits"
 * "time doesn’t exist globally, but an effective notion of time emerges for the subsystem."
