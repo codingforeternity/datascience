@@ -1,4 +1,5 @@
 #### [XGBoost: The algorithm that wins every competition](http://www.slideshare.net/JaroslawSzymczak1/xgboost-the-algorithm-that-wins-every-competition)
+* eXtreme Gradient Boosting
 * bias related errors handled by
   * adaptive boosting (adaboost)
   * gradient boosting
