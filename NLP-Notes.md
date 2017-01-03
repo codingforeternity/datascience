@@ -1,3 +1,6 @@
+#### Distributional Semantics in R: Part 2 Entity Recognition w. {openNLP}
+* https://www.r-bloggers.com/distributional-semantics-in-r-part-2-entity-recognition-w-opennlp/
+
 #### Alternative to 1-hot encodings (FWC idea, 12/14/16)
 * in NLP they don't learn misspellings very well
 * so, instead, use (normalized) Levenshtein (edit) distance instead; for each word in the 1-hot vector, compute LD from a given word to each of those
