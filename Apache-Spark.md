@@ -171,6 +171,7 @@ workers.foreach(_ => net.setWeights(broadcastWeights.values))
 ```
 * Code: https://github.com/amplab/SparkNet
 * Paper: http://arxiv.org/abs/1511.06051
+* Update 1/3/17 - Or here may be an alternative: [BigDL: Distributed Deep learning Library for Apache Spark](https://github.com/intel-analytics/BigDL)
 
 #### [Performing Advanced Analytics on Relational Data with Spark SQL](https://www.safaribooksonline.com/library/view/performing-advanced-analytics/9781491908297/part00.html?autoStart=True)
 * "**Similar to typical ETL**, except doing it all in one program!"
