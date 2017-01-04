@@ -579,7 +579,7 @@ die
 * "If we have a single model we have to choose some capacity for it.  If we choose too little capacity, it won't be able to fit the regularities in the training data.  If we choose too much capacity, it will be able to fit the sampling error in the training set data.  By averaging many models we can get a better tradeoff between fitting too few regularities and overfitting the sampling error in the data.  This effect is largest when the models make very different predictions from each other."
 * Combining networks: the bias-variance tradeoff
   * When the amount of training data is limited, we get overfitting.
-    * Averaging the predictions of many different models is a good way to reduce overfitting.
+    * Averaging the predictions of many different (kinds of) models (e.g. SVM, AdaBoost, NN) is a good way to reduce overfitting.
     * It helps most when the models make very different predictions.
   * For regression, the squared error can be decomposed into a "bias" term and a "variance" term.
     * The bias term is big if the model has too little capacity to fit the data.
