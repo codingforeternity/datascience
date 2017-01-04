@@ -6,7 +6,7 @@ Dark matter == constructive interference
 * "Dark matter" should be called "Dark space-time curvature" b/c it's not clear what's causing the curvature--saying that it's "matter" is an assumption.
 
 Quora: [What is dark matter?](https://www.quora.com/What-is-dark-matter-8/answer/Erik-Anson) (1/4/17)
-* Galactic rotation curves.
+* Galactic rotation curves: https://www.hindawi.com/journals/aa/2009/752439/fig1/
 * https://en.wikipedia.org/wiki/Galaxy_rotation_curve
 * So what if stuff towards the edges of universes just burns out quicker?  I.e. less light.  Someone would've already thought of this.
 
