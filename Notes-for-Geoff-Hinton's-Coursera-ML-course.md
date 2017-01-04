@@ -584,7 +584,7 @@ die
   * For regression, the squared error can be decomposed into a "bias" term and a "variance" term.
     * The bias term is big if the model has too little capacity to fit the data.
     * The variance term is big if the model has so much capacity that it is good at fitting the sampling error in each particular training set.
-      * It's called "variance" because if we were to get another training set of the same size from our distribution, our model would fit differently to that training set because it has different sampling error, so we'll get **variance in the way the model's fit to different training sets.**
+      * It's called "variance" because if we were to get another training set of the same size from our distribution, our model would fit differently to that training set because it has different sampling error, so we'll get **variance in the way the models fit to different training sets [FWC - e.g. variance in R^2].**
     * By averaging away the variance we can use individual models with high capacity. These models have high variance but low bias.
     * We can get low bias without getting high **variance [FWC - overfitting]** by using averaging to get rid of the high variance.
 * How the combined predictor compares with the individual predictors
