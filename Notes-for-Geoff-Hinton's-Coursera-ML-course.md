@@ -574,3 +574,25 @@ die
 
 #### [[Week 9 programming assignment #3]]
 * "The program checks your gradient computation for you, using a finite difference approximation to the gradient. If that finite difference approximation results in an approximate gradient that's very different from what your gradient computation procedure produced, then the program prints an error message. This is hugely helpful debugging information. Imagine that you have the gradient computation done wrong, but you don't have such a sanity check: your optimization would probably fail in many weird and wonderful ways, and you'd be worrying that perhaps you picked a bad learning rate or so. (In fact, that's exactly what happened to me when I was preparing this assignment, before I had the **gradient checker** working.) With a finite difference gradient checker, at least you'll know that you probably got the gradient right. It's all approximate, so the checker can never know for sure that you did it right, but if your gradient computation is seriously wrong, the checker will probably notice."
+
+#### [Lecture 10a: Why it helps to combine models](https://www.coursera.org/learn/neural-networks/lecture/pZKOF/why-it-helps-to-combine-models-13-min)
+* Also see XGBoost notes on Machine Learning wiki page
+* "If we have a single model we have to choose some capacity for it.  If we choose too little capacity, it won't be able to fit the regularities in the training data.  If we choose too much capacity, it will be able to fit the sampling error in the training set data.  By averaging many models we can get a better tradeoff between fitting too few regularities and overfitting the sampling error in the data.  This effect is largest when the models make very different predictions from each other."
+* Combining networks: the bias-variance tradeoff
+  * When the amount of training data is limited, we get overfitting.
+    * Averaging the predictions of many different models is a good way to reduce overfitting.
+    * It helps most when the models make very different predictions.
+  * For regression, the squared error can be decomposed into a "bias" term and a "variance" term.
+    * The bias term is big if the model has too little capacity to fit the data.
+    * The variance term is big if the model has so much capacity that it is good at fitting the sampling error in each particular training set.
+      * It's called "variance" because if we were to get another training set of the same size from our distribution, our model would fit differently to that training set because it has different sampling error, so we'll get **variance in the way the model's fit to different training sets.**
+    * By averaging away the variance we can use individual models with high capacity. These models have high variance but low bias.
+    * We can get low bias without getting high **variance [FWC - overfitting]** by using averaging to get rid of the high variance.
+* How the combined predictor compares with the individual predictors
+  * On any one test case, some individual predictors may be better than the combined predictor.
+    * But different individual predictors will be better on different cases.
+  * If the individual predictors *disagree* a lot, the combined predictor is typically better than all of the individual predictors when we average over test cases.
+    * So we should try to make the individual predictors disagree (without making them much worse individually) [FWC - make individual predictors them uncorrelated with each other]
+* Combining two networks reduces variance
+  * The expected squared error we get, by picking a [single] model at random, is greater than the squared error we get by averaging the models by the *variance of the outputs of the models*
+  * E_i[(t-y_i)^2] = (t-E[y])^2 + *E[(y-E[y])^2]* - 2(t-E[y])(y-E[y])  [<- this last term vanishes because we expect the errors to be uncorrelated]
