@@ -788,14 +788,12 @@ dropped out models (in a multi-layer net), but it’s a pretty good approximatio
   2. Which data set can not be classified perfectly with a linear classifier but can be classified perfectly with a mixture of two experts where each expert is a linear classifier ?
   Assume that the manager is also linear, i.e., it can decide which expert to use based on a linear criterion only. (In other words, the manager has a linear function f and given any input case x, it must decide to apply expert 1 with probability 1 if f(x)>0 and expert 2 with probability 1 if f(x)≤0.
   3. Andy has a dataset of points that he wishes to classify. This set is shown below.
-  Being knowledgable about bagging, he samples this data set and creates 3 separate ones. He then uses a neural net to learn separate classifiers on each data set. The learned classifier boundaries are shown below. Note that each data set is a subset of the complete dataset.
-  Which of the following statements is true ?
+  Being knowledgable about bagging, he samples this data set and creates 3 separate ones. He then uses a neural net to learn separate classifiers on each data set. The learned classifier boundaries are shown below. Note that each data set is a subset of the complete dataset.  Which of the following statements is true?
     * All the learned models make a lot of errors ("high-bias"), so model averaging is unlikely to help in generalization.
     * All the learned models make a lot of errors ("high-bias"), so model averaging is likely to help in generalization.
     * The learned models are different ("high-variance") and do well on their training sets, so model averaging is unlikely to help in generalization.
     * CHECKED - The learned models are different ("high-variance") and do well on their training sets, so model averaging is likely to help in generalization.
 Correct - The classifiers are fairly different, but overfitted to their training sets. Averaging them could lead to a more generalizable model.
-
   4. In Bayesian learning, we learn a probability distribution over parameters of the model. Then at test time, how should this distribution be used to get predictions with the highest possible accuracy?
     * Sample the distribution once to get a parameter setting and use it to make a prediction.
     * Pick the parameter setting that has maximum probability and use it to make a prediction.
