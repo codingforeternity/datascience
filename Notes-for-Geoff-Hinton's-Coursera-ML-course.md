@@ -662,5 +662,39 @@ of the gating network (wrt the input to the softmax, which is called the "logit"
   * P(t_c | MoE) = sum_i[ p_ic exp(-0.5(t_c-y_ic)^2) / sqrt(2pi) ]
 
 ### [Lecture 10c: The idea of full Bayesian learning](https://www.coursera.org/learn/neural-networks/lecture/9MEsM/the-idea-of-full-bayesian-learning-7-min)
-* 
+* Full Bayesian Learning
+  * Instead of trying to find the best single setting of the parameters (as in Maximum Likelihood or MAP) compute the full posterior distribution over all possible parameter settings.
+    * This is extremely computationally intensive for all but the simplest models (its feasible for a biased coin, as shown in a previous lecture).
+  * To make predictions, let each different setting of the parameters make its own prediction and then combine all these predictions by weighting each of them by the posterior probability of that setting of
+the parameters.
+    * This is also very computationally intensive.
+  * The full Bayesian approach allows us to use complicated models even when we do not have much data.
+* Overfitting: A frequentist illusion?
+  * **A frequentist would say: If you do not have much data, you should use a simple model, because a complex one will overfit.** [FWC - financial people are all frequentists]
+    * This is true.
+    * But **only if you assume that fitting a model means choosing a single best setting of the parameters.**
+  * **If you use the full posterior distribution over parameter settings, overfitting disappears.**
+    * When there is very little data, you get very vague predictions because many different parameters
+settings have significant posterior probability.
+  * Bayesian learning means learning the posterior distribution: **P(omega | data)**.  The kind of learning we saw earlier in this course is called Maximum Liklihood (ML) learning where we learn a set of parameters, omega, that maximizes P(data | omega)
+* A classic example of overfitting
+  * Which model do you believe, a line or a 5th order polynomial?  Clearly the line b/c the complicated model, even though it fits the training data better, is not economical and it makes silly predictions.
+  * But what if we start with a reasonable prior over all fifth-order polynomials and use the full posterior distribution.
+  * Now we get vague and sensible predictions.
+  * From a Bayesian perspective, **there is no reason why the amount of data should influence our prior beliefs about the complexity of the model.** [FWC - there is no reason why a low signal-to-noise ratio should influence our prior beliefs...etc...]
+* Approximating full Bayesian learning in a neural net
+  * If the neural net only has a few parameters we could put a grid over the parameter space and evaluate p( W | D ) at each grid-point.
+    * This is expensive, but it does not involve any gradient descent and there are no local optimum issues.  We're not following a path, we're only evaluating points.
+  * After evaluating each grid point we use all of them to make predictions on *test data*
+    * This is also expensive, but it works much better than Maximum Liklihood learning (or MAP) when the posterior is vague or multimodal (this happens when data is scarce).
+  * [FWC - This seems to be a dual/transpose of a grid over the input space with a distribution for each input.  Both approaches yield a (or can be used to estimate the) distribution of outputs.  Could the two approaches be combined?  A simultaneous co-grid over both input and parameter space.  But how would one use that?]
+  * p(t_test | input_test) = sum_{g in grid}[ p(W_g | D) p(t_test | input_test, W_g) ]
+* An example of full Bayesian learning
+  * A neural net with 2 inputs, 1 output and 6 parameters
+  * Allow each of the 6 weights or biases to have the 9 possible values => 9^6 grid-points (lots but not impossible [FWC - but yeah, lots!])
+  * For each grid point, compute the P of the observed outputs over all *training cases*
+  * Multiply prior for each grid point by the liklihood term and renormalize to get the posterior P for each
+  * Make predictions (on test data) by using the *posterior Ps* to average the predictions made by the different grid points
 
+### [Lecture 10d: Making full Bayesian learning practical](https://www.coursera.org/learn/neural-networks/lecture/PcT3Q/making-full-bayesian-learning-practical-7-min)
+* 
