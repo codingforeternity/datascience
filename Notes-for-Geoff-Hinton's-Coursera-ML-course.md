@@ -614,7 +614,7 @@ die
   * Maybe we can look at the input data for a particular case to help us decide which model to rely on.
   * This may allow particular models to *specialize in a subset of the training cases* [FWC - **regimes**]
   * They do not learn on cases for which they are not picked. So they can ignore stuff they are not good at modeling. Hurray for nerds!
-  * The key idea is to make each expert focus on predicting the right answer for the cases where it is already doing better than the other experts.  This causes specialization.  [FWC - this is similar to k-means clustering where the clusters drift away from each other over time]
+  * The key idea is to make each expert focus on predicting the right answer for the cases where it is already doing better than the other experts.  This causes specialization.  [FWC - this is similar to k-means clustering where the clusters separate from each other over time]
 * Spectrum of models
   * Very local models (e.g. nearest neighbors)
     * very fast to fit (e.g. just store training cases)
