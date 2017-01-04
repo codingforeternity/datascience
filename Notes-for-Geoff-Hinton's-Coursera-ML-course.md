@@ -658,7 +658,7 @@ of the gating network (wrt the input to the softmax, which is called the "logit"
   * Think of each expert as making a prediction that is a Gaussian distribution around its output (with variance 1)
   * Think of the manager as deciding on a scale for each of these Gaussians. The scale is called a "mixing proportion". e.g {0.4 0.6}
   * Maximize the log probability of the target value under this mixture [FWC - sum] of Gaussians model (i.e. the sum of the two scaled Gaussians).
-  * <P of target val on case c given Mixture of Experts> = 
+  * <<P of target val on case c given Mixture of Experts>> = 
     * sum_i[ <mixing proportion i for case c, p_ic> exp(-0.5(t_c-y_ic)^2) / <normalization term for Gaussian w/ sig^2=1, sqrt(2pi)> ]
   * P(t_c | MoE) = sum_i[ p_ic exp(-0.5(t_c-y_ic)^2) / sqrt(2pi) ]
 
