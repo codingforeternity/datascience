@@ -752,7 +752,7 @@ dropped out models (in a multi-layer net), but it’s a pretty good approximatio
 * What about the input layer?
   * It helps to use dropout there too, but with a higher probability of keeping an input unit.
   * This trick is already used by the "**denoising autoencoders**" developed by Pascal Vincent, Hugo Larochelle and Yoshua Bengio "and it works very well."
-    * Presentation: [Denoising Autoencoders](file:///home/fred/Documents/articles/overfitting/denoising_autoencoder_presentation_pascal_vincent_part_2.pdf)
+    * Presentation: Denoising Autoencoders (file:///home/fred/Documents/articles/overfitting/denoising_autoencoder_presentation_pascal_vincent_part_2.pdf)
     * Think of classical autoencoder in overcomplete case: d'>=d
     * *Perfect reconstruction is possible without having learnt anything useful!*
     * Denoising autoencoder learns useful representation in this case.
