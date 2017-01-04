@@ -787,8 +787,7 @@ dropped out models (in a multi-layer net), but it’s a pretty good approximatio
     * We uniformly average the predictions of each expert.
   2. Which data set can not be classified perfectly with a linear classifier but can be classified perfectly with a mixture of two experts where each expert is a linear classifier ?
   Assume that the manager is also linear, i.e., it can decide which expert to use based on a linear criterion only. (In other words, the manager has a linear function f and given any input case x, it must decide to apply expert 1 with probability 1 if f(x)>0 and expert 2 with probability 1 if f(x)≤0.
-  3. Andy has a dataset of points that he wishes to classify. This set is shown below.
-  Being knowledgable about bagging, he samples this data set and creates 3 separate ones. He then uses a neural net to learn separate classifiers on each data set. The learned classifier boundaries are shown below. Note that each data set is a subset of the complete dataset.  Which of the following statements is true?
+  3. Andy has a dataset of points that he wishes to classify. This set is shown below. Being knowledgable about bagging, he samples this data set and creates 3 separate ones. He then uses a neural net to learn separate classifiers on each data set. The learned classifier boundaries are shown below. Note that each data set is a subset of the complete dataset.  Which of the following statements is true?
     * All the learned models make a lot of errors ("high-bias"), so model averaging is unlikely to help in generalization.
     * All the learned models make a lot of errors ("high-bias"), so model averaging is likely to help in generalization.
     * The learned models are different ("high-variance") and do well on their training sets, so model averaging is unlikely to help in generalization.
@@ -800,10 +799,8 @@ Correct - The classifiers are fairly different, but overfitted to their training
     * Sample a lot of parameters using some sampling procedure (such as MCMC) and average the parameters. Then use the averaged parameter setting to obtain a prediction.
     * CHECKED - Sample a lot of parameters using some sampling procedure (such as MCMC) and average the predictions obtained by using each parameter setting separately.
       * Correct - This method makes sure that we use a lot of models and also choose the models in proportion to how much we can trust them.
-
   5. Amy is trying different MCMC samplers to sample from a probability distribution. Each option shows a few samples obtained by running a sampler. It is known that the distribution is multimodal and peaked. Which among the following is the best sampler ?
   Correct - This sampler can access multiple modes and does not give a lot of samples from low probability regions. This is what a good sampler is expected to do.
-
   6. Brian wants to learn a classifier to predict if a movie is "good" or "bad" given its review. He has a lot of computational power and wants to use a very powerful model. However, he only has a small dataset of labelled movie reviews. He tried learning a massive neural net and found that it achieves zero training error very easily, but its test performance is much worse. He then trained a small neural net and found that it does not get zero training error, but still the test performance is no better than what the big model got. Neither a big nor a small model works for him! He is completely disappointed with neural nets now. He is willing to spend as much computational power as needed during training and testing. What suggestion can you give to help him?
     * CHECKED - Train the big neural net with dropout in the hidden units.
       * Correct - Adding drop out helps prevent overfitting in large nets.
