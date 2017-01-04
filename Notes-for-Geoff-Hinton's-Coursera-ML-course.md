@@ -591,7 +591,7 @@ die
   * On any one test case, some individual predictors may be better than the combined predictor.
     * But different individual predictors will be better on different cases.
   * If the individual predictors *disagree* a lot, the combined predictor is typically better than all of the individual predictors when we average over test cases.
-    * So we should try to make the individual predictors disagree (without making them much worse individually) [FWC - make individual predictors them uncorrelated with each other]
+    * So we should try to make the individual predictors disagree (without making them much worse individually) [FWC - make individual predictors uncorrelated with each other]
 * Combining two networks reduces variance
   * The expected squared error we get, by picking a [single] model at random, is greater than the squared error we get by averaging the models by [exactly] the **variance of the outputs of the models**
   * E_i[(t-y_i)^2] = (t-E[y])^2 + **E[(y-E[y])^2]** - 2(t-E[y])(y-E[y])  [<- this last term vanishes because we expect the errors to be uncorrelated]
