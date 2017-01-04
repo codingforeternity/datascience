@@ -54,11 +54,14 @@
 * "The basic idea is that one classifies images [FWC - or written text, a research article or a news story] by outputting a vector in a word embedding [FWC - based on structured data used to write the article or produce the news story].  The interesting part is what happens when you test the model on new classes of images [FWC - new future scenarios never before seen]."
 * "These results all exploit a sort of “these words are similar” reasoning. But it seems like much stronger results should be possible based on relationships between words. In our word embedding space, there is a consistent difference vector between male and female version of words. Similarly, in image space, there are consistent features distinguishing between male and female. Beards, mustaches, and baldness are all strong, highly visible indicators of being male. Breasts and, less reliably, long hair, makeup and jewelery, are obvious indicators of being female. **Even if you’ve never seen a king before, if the queen, determined to be such by the presence of a crown, suddenly has a beard, it’s pretty reasonable to give the male version**."
 * "The **representation perspective** of deep learning is a powerful view that seems to answer why deep neural networks are so effective. Beyond that, I think there’s something extremely beautiful about it: **why are neural networks effective? Because better ways of representing data can pop out of optimizing layered models**."
-* FWC - so here's the model:
+* ************** FWC - so here's the model: **************
   1. collect together a bunch of related input variables, say 10-20
   2. neutralize all of them to each other using a scatter-plot-smoother-like NN (don't just take ratios b/c of problems with non-linear ratio distributions)
+    * consider the "banana correction" (rotation of non-linear/exponential s.t. errors are less heteroskedastic)
   3. use these ratio-like, neutralized variables as input to a negative sampling, word2vec-like algorithm to generate embeddings
+    * see "denoising autoencoder" note on Hinton's Coursera notes wiki page
   4. use the embeddings in a forecasting model
+    * use Bayesian MCMC approach to sample parameter space (or, if using NNs, use dropout; again see Hinton's Coursera notes wiki page)
 
 #### [CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/index.html)
 
