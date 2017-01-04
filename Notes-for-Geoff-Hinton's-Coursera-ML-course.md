@@ -754,6 +754,20 @@ dropped out models (in a multi-layer net), but it’s a pretty good approximatio
   * This trick is already used by the "**denoising autoencoders**" developed by Pascal Vincent, Hugo Larochelle and Yoshua Bengio "and it works very well."
     * Presentation: [Denoising Autoencoders](file:///home/fred/Documents/articles/overfitting/denoising_autoencoder_presentation_pascal_vincent_part_2.pdf)
     * Think of classical autoencoder in overcomplete case: d'>=d
-    * Perfect reconstruction is possible without having learnt anything useful!
+    * *Perfect reconstruction is possible without having learnt anything useful!*
     * Denoising autoencoder learns useful representation in this case.
     * Being good at denoising requires capturing structure in the input.
+    * Denoising autoencoder can be seen as a way to learn a manifold (p. 31) [FWC - scatterplot smoother]
+    * *Intermediate/hidden representation Y can be interpreted as a coordinate system for points on (FWC - or w.r.t.?) the manifold* [FWC - a better solution to the "banana problem"]
+    * It can be shown that *minimizing the expected reconstruction error* amounts to *maximizing a lower bound on mutual information*
+    * Denoising autoencoder training can thus be justified by the objective that hidden representation Y captures as much information as possible about X even as Y  is a function of corrupted input.
+    * Unsupervised initialization of layers with an explicit denoising criterion appears to help capture interesting structure in the input distribution.
+    * This leads to **intermediate representations much better suited for subsequent learning tasks such as supervised classification**.
+    * Resulting algorithm for learning deep networks is simple and improves on state-of-the-art on benchmark problems.
+    * We are currently investigating the effect of different types of corruption process, and applying the technique to recurrent nets.
+* How well does dropout work?
+  * The record breaking object recognition net developed by Alex Krizhevsky (see lecture 5) uses dropout and it helps a lot.
+  * **If your deep neural net is significantly overfitting, dropout will usually reduce the number of errors by a lot.**
+  * Any net that uses “early stopping” can do better by using dropout (at the cost of taking quite a lot longer to train).
+  * If your deep neural net is not overfitting you should be using a bigger one!
+
