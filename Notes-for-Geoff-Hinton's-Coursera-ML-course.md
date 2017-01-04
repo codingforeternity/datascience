@@ -625,7 +625,7 @@ die
     * Good if the dataset contains several different regimes which have different relationships between input and output.
     * e.g. financial data which depends on the state of the economy. **"But we might not know in advance what defines 'different states of the economy'--we'll have to learn that too."**
     * So how do we partition the data into regimes?
-* **Partitioning based on input alone versus partitioning based on the input-output relationship**
+* **Partitioning based on input alone versus partitioning based on the input-output relationship** [FWC - I tried this once at HBK in an Excel spreadsheet but didn't get anywhere]
   * We need to cluster the training cases into subsets, one for each local model.
   * The aim of the clustering is NOT to find clusters of similar input vectors.
   * We want each cluster to have a relationship between input and output that can be well-modeled by one local model.
