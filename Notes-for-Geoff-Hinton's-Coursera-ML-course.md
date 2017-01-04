@@ -711,7 +711,7 @@ settings have significant posterior probability.
 * One method for sampling weight vectors
   * Suppose we add some Gaussian noise to the weight vector after each update.
   * So the weight vector never settles down.
-  * It keeps wandering around, but it tends to prefer low cost regions of the weight space.
+  * It keeps wandering around, but it **tends to prefer low cost regions of the weight space**.
   * Can we say anything about how often it will visit each possible setting of the weights?
   * Save the weights after every 10,000 steps.
 * The wonderful property of Markov Chain Monte Carlo
