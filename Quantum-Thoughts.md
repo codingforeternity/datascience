@@ -3,6 +3,7 @@ Dark matter == constructive interference
 * This doesn't happen nearer galaxy centers because there is stuff nearby moving in different trajectories. 
 * There either needs to be more matter or more spacetime curvature, which would typically be due to matter. But if there is constructive interference then maybe that extra curvature can come from there instead.
 * https://www.reddit.com/r/pbsspacetime/comments/4ejgs6/could_dark_matter_be_the_constructive/
+* "Dark matter" should be called "Dark space-time curvature" b/c it's not clear what's causing the curvature--saying that it's "matter" is an assumption.
 
 Quora: [What is dark matter?](https://www.quora.com/What-is-dark-matter-8/answer/Erik-Anson) (1/4/17)
 * Galactic rotation curves.
