@@ -24,7 +24,7 @@ Welcome to the fcrimins.github.io wiki!
   - [[Notes for Geoff Hinton's Coursera ML course]]
   - [[Computer Vision]] (kws: CNNs)
   - [[AdaBoost Notes]]
-  - [[ML Noted Strengths]]
+  - [[ML Noted Strengths]] (kws: principles of ML)
 - [[NLP Notes]]
 - [[Game Theory]]
 
