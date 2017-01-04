@@ -757,7 +757,7 @@ dropped out models (in a multi-layer net), but it’s a pretty good approximatio
     * *Perfect reconstruction is possible without having learnt anything useful!*
     * Denoising autoencoder learns useful representation in this case.
     * Being good at denoising requires capturing structure in the input.
-    * Denoising autoencoder can be seen as a way to learn a manifold (p. 31) [FWC - scatterplot smoother]
+    * **Denoising autoencoder can be seen as a way to learn a manifold** (p. 31) [FWC - scatterplot smoother]
     * *Intermediate/hidden representation Y can be interpreted as a coordinate system for points on (FWC - or w.r.t.?) the manifold* [FWC - a better solution to the "banana problem"]
     * It can be shown that *minimizing the expected reconstruction error* amounts to *maximizing a lower bound on mutual information*
     * Denoising autoencoder training can thus be justified by the objective that hidden representation Y captures as much information as possible about X even as Y  is a function of corrupted input.
