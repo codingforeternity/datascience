@@ -596,3 +596,39 @@ die
 * Combining two networks reduces variance
   * The expected squared error we get, by picking a [single] model at random, is greater than the squared error we get by averaging the models by [exactly] the **variance of the outputs of the models**
   * E_i[(t-y_i)^2] = (t-E[y])^2 + **E[(y-E[y])^2]** - 2(t-E[y])(y-E[y])  [<- this last term vanishes because we expect the errors to be uncorrelated]
+   * This only works if the noise is Gaussian
+     * Don't try averaging a bunch of clocks because some may be approximately correct, but some may have stopped and be wildly wrong [skew and kurtosis matter]
+     * Same applies to discrete distributions over class labels
+       * if we have 2 models, i and j, that give the correct label probabilities, p_i and p_j
+       * log((p_i+p_j)/2) >= (log(p_i)+log(p_j))/2 [think of the plot of the log function]
+* Lots of ways to make predictors/models differ
+* Making models differ by changing their training data
+  * Bagging - Train diff models on diff subsets of the data (with replacement) ["bootstrapping"?]
+  * Random forests - Use lots of different decision trees trained using bagging.  They work well.
+  * We could use bagging w/ NNs but its *very* expensive to train
+  * Boosting - Train a seq of low capacity models.  Weight the training cases differently for each model in the seq.  Up-weight cases the previous models got wrong.  [FWC - prone to overfitting]
+
+#### [Lecture 10b: Mixture of Experts](https://www.coursera.org/learn/neural-networks/lecture/stzor/mixtures-of-experts-13-min)
+* **Multi-regime**, train a net on each regime
+* In boosting, the mixture of models depends on particular input cases.
+* Can we do better that just averaging models in a way that does *not* depend on the particular training case?
+  * Maybe we can look at the input data for a particular case to help us decide which model to rely on.
+  * This may allow particular models to *specialize in a subset of the training cases* [FWC - **regimes**]
+  * They do not learn on cases for which they are not picked. So they can ignore stuff they are not good at modeling. Hurray for nerds!
+  * The key idea is to make each expert focus on predicting the right answer for the cases where it is already doing better than the other experts.  This causes specialization.  [FWC - this is similar to k-means clustering where the clusters drift away from each other over time]
+* Spectrum of models
+  * Very local models (e.g. nearest neighbors)
+    * very fast to fit (e.g. just store training cases)
+  * Fully global models (e.g. polynomial)
+    * may be slow to fit and also unstable (each param depends on all the data, so small changes to data can cause big changes to the fit)
+* Multiple local models
+  * Instead of using a single global model or lots of very local models, use several models of intermediate complexity.
+    * Good if the dataset contains several different regimes which have different relationships between input and output.
+    * e.g. financial data which depends on the state of the economy. **"But we might not know in advance what defines 'different states of the economy'--we'll have to learn that too."**
+    * So how do we partition the data into regimes?
+* **Partitioning based on input alone versus partitioning based on the input-output relationship**
+  * We need to cluster the training cases into subsets, one for each local model.
+  * The aim of the clustering is NOT to find clusters of similar input vectors.
+  * We want each cluster to have a relationship between input and output that can be well-modeled by one local model.
+* An error function that encourages cooperation
+
