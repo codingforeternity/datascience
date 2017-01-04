@@ -630,5 +630,38 @@ die
   * We need to cluster the training cases into subsets, one for each local model.
   * The aim of the clustering is NOT to find clusters of similar input vectors.
   * We want each cluster to have a relationship between input and output that can be well-modeled by one local model.
-* An error function that encourages cooperation
+* An error function that encourages *cooperation*
+  * Loss = (t-E[y_i])^2
+  * This will overfit badly because models will learn to "fix up" errors that other models make.
+  * Averaging models *during training* causes cooperation, not specialization
+  * If there's a model that disagrees with the average (e.g. underestimates the target while the average overestimates) then do we really want to move the disagreeing model away from the target in order to "compensate" for all of the other models (to make the average model closer to the target)?  Intuitively it seems better to move the disagreeing model towards the target.
+* An error function that encourages *specialization*
+  * If we want to encourage specialization we compare each predictor/model separately with the target.
+  * We also use a "manager" to determine the probability of picking each expert (aka weight each model)
+  * Loss = E[ p_i (t-E[y_i)^2 ]
+  * Most experts/models/predictors end up ignoring most targets (due to fitted p_i)
+* The mixture of experts architecture (*almost*)
+  * The obvious/intuitive architecture: p_i and y_i as outputs
+    * The p_i can be chosen with their very own sub-network, the manager, a *gating* network
+  * p_i = exp(x_i) / sum_j[exp(x_j)]
+  * Loss = E[ p_i (t-E[y_i)^2 ]
+  * del Loss / del y_i = p_i (t-E[y_i)
+  * If the manager, p_i, decides that there's a small probability of picking that expert for that training case, we get a very small gradient (and parameters inside that expert won't get disturbed)
+  * *We want to increase p_i for all experts that give below average (weighted by p_i) squared error across all i* [see del Loss / del x_i below]
+  * If we differentiate w.r.t. the outputs
+of the gating network (wrt the input to the softmax, which is called the "logit") we get a signal for training the gating net.
+    * del Loss / del x_i = p_i ((t-y_i)^2 - Loss)
+      * This gradient will increase p_i for all experts that produce below avg SE
+      * This is what causes specialization.
+  * There's a better cost fn though.
+* **A better cost function for mixtures of experts (Jacobs, Jordan, Nowlan & Hinton, 1991)**
+  * Think of each expert as making a prediction that is a Gaussian distribution around its output (with variance 1)
+  * Think of the manager as deciding on a scale for each of these Gaussians. The scale is called a "mixing proportion". e.g {0.4 0.6}
+  * Maximize the log probability of the target value under this mixture [FWC - sum] of Gaussians model (i.e. the sum of the two scaled Gaussians).
+  * <P of target val on case c given Mixture of Experts> = 
+    * sum_i[ <mixing proportion i for case c, p_ic> exp(-0.5(t_c-y_ic)^2) / <normalization term for Gaussian w/ sig^2=1, sqrt(2pi)> ]
+  * P(t_c | MoE) = sum_i[ p_ic exp(-0.5(t_c-y_ic)^2) / sqrt(2pi) ]
+
+#### [Lecture 10c: The idea of full Bayesian learning](https://www.coursera.org/learn/neural-networks/lecture/9MEsM/the-idea-of-full-bayesian-learning-7-min)
+* 
 
