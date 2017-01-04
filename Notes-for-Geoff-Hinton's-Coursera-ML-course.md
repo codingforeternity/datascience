@@ -8,7 +8,7 @@ Also see accompanying green Staples notebook.
 * symmetric nets are much easier to analyze than RNNs (John Hopfield)
   * but they're more restricted, e.g. can't learn cycles
 
-<h3>Week 2: What perceptrons can't do</h3>
+### Week 2: What perceptrons can't do
 * A perceptron cannot recognize patterns under translation if we allow wraparound.
   * E.g. 2 binary input vectors, A and B, each with 4 out of 10 activated "pixels."  Each of the 10 pixels will be activated by 4 translations of A and of B, so the total input received by the decision unit over all these patterns, in both cases, will be four times the sum of all the weights.  But to discriminate correctly, every single case of pattern A must provide more input to the decision unit than every single case of pattern B.
   * However, if we have 3 patterns assigned to two classes, A and B, and A contains a pattern with 4 pixels while B contains patterns with 1 and 3 pixels then a *binary* decision unit can classify if we allow translations and wraparound.  Weight = 1 from each pixel with bias of -3.5
@@ -18,7 +18,7 @@ Also see accompanying green Staples notebook.
   * So the tricky part of PR must be solved by the hand-coded feature detectors, not the learning procedure.
   * Networks without hidden units are very limited in what they can learn to model.
 
-<h3>Week 3: Learning the weights of a linear neuron</h3>
+### Week 3: Learning the weights of a linear neuron
 * Instead of showing the weights get closer to a good set of weights (i.e. perceptrons, which suffer from 2 good set of weights do not average to a good set) show that actual output values get closer to the target values.
   * In perceptron learning the outputs can get farther away from the targets, even though the weights are getting closer.
 * The "delta rule" for learning: delta w_i = epsilon * x_i * (t - y) ... where epsilon := "learning rate", t := target/true output, and y := estimated output
@@ -28,14 +28,14 @@ Also see accompanying green Staples notebook.
     * d E_n / d y_n is just the derivative of the (squared) Error function
   * Therefore: delta w_i = -epsilon * del E / del w_i
 
-<h3>Week 3: The error surface for a linear neuron</h3>
+### Week 3: The error surface for a linear neuron
 * Difference between "batch" and "on-line"
   * Simplest batch learning does steepest gradient descent
   * On-line/stochastic zig-zags between training case "lines" at each step moving perpendicularly to a line.  Imagine the intersection of 2 training case lines and moving perpendicularly back and forth perpendicularly to both while converging on their intersection point.
     * This is very slow if the variables are highly correlated (very elongated ellipse) because the perpendicular updates (the gradients) are also perpendicular to the intersection.
     * FWC idea - look at angle between consecutive gradients to detect correlated dimensions
 
-<h3>Week 3: The backpropagation algorithm</h3>
+### Week 3: The backpropagation algorithm
 * Networks without hidden layers are very limited in the input-output mappings they can model
 * Adding a layer of hand-coded features (as in perceptron) makes them much more powerful, but the hard bit is designing the features
   * We would like to find good features without requiring insights into the task or repeated trial and error of different features
@@ -50,7 +50,7 @@ Also see accompanying green Staples notebook.
  * FWC - machine learning (backprop) is all about the learning rate!  So you can either be smart (and use backprop) or buy more computers.  You're only constrained if you need both.  Search Google for: "machine learning for the maximization of an arbitrary function"
   * *Instead of using pre-set coefficients (desired activities) to train engineered features, use error derivatives wrt hidden activities.*  We can compute error derivatives for all of the hidden units efficiently at the same time: Once we have the error derivatives for the hidden activities (hidden neuron output) it's easy to compute the (input) weights going into a hidden unit.
 
-<h3>Week 3: Using the derivatives computed by backprop</h3>
+### Week 3: Using the derivatives computed by backprop
 * 2 types of noise: unreliable target values (small worry), sampling error (big worry)
 * When we fit the model it cannot tell which regularities are real and which are caused by sampling error.  FWC - So are there methods then to distinguish between the two (besides e.g. cross validation)???  See week 7.
   * Weight decay - keep weights near 0
@@ -62,7 +62,7 @@ Also see accompanying green Staples notebook.
   * Generative pre-training
   * FWC idea - other constraints such as monotonicity and limits on distributions
 
-<h3>Week 4: Neural nets for machine learning</h3>
+### Week 4: Neural nets for machine learning
 * Obvious way to express regularities is as symbolic **rules**
   * but finding the symbolic rules involves a difficult search through a large discreet space
   * so model as a NN instead w/
@@ -71,7 +71,7 @@ Also see accompanying green Staples notebook.
 * **Instead of predicting the 3rd term in a relationship, [A R B], we could provide all 3 as input and predict P([A R B] is correct)**
   * for this we'd need a whole bunch of "correct" facts as well as "incorrect" ones (fwc - **negative sampling**)
 
-<h3>4b: A brief diversion into cognitive science</h3>
+### 4b: A brief diversion into cognitive science
 [probably not interesting if you're an engineer]
 * There has been a long debate in cognitive science between two rival theories of what it means to have a concept:
   * The feature theory : A concept is a set of semantic features.
@@ -95,7 +95,7 @@ Also see accompanying green Staples notebook.
   * a "**local**" representation of a word is a 1-hot vector of length equal to the size of the vocab
   * a "**distributed**" representation is a word embedding which is distributed b/c it is based on all the other words
 
-<h3>4c: The softmax output function</h3>
+### 4c: The softmax output function
 softmax a way of forcing the outputs to sum to 1 so that they can represent a probability distribution across discrete, mutually exclusive alternatives
 * The squared error measure has some drawbacks:
   * If the desired output is 1 and the actual output is 0.00000001 there is almost no gradient for a logistic unit to fix up the error.
@@ -114,7 +114,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     * Effectively, the steepness of dC/dy exactly balances the flatness of dy/dz
       * del C / del z_i = Sum_j[ del C / del y_i * del y_i / del z_i ] = [**y_i - t_i**](http://peterroelants.github.io/posts/neural_network_implementation_intermezzo02/)  .... (the chain rule again)
 
-<h3>Lecture 4d: Neuro-probabilistic language models</h3>
+### Lecture 4d: Neuro-probabilistic language models
 * Bengio's NN for predicting the next word (see green Staples notebook or pdfs)
 * Information that the trigram model fails to use
   * Suppose we have seen the sentence: “the cat got squashed in the garden on friday”
@@ -124,7 +124,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   * To overcome this limitation, we need to use the semantic and syntactic features of previous words to predict the features of the next word.
     * [Using a (lower dimensioned) feature representation also allows for a context that contains many more previous words (e.g. 10).]
 
-<h3>Lecture 4e: Dealing with a large number of possible outputs</h3>
+### Lecture 4e: Dealing with a large number of possible outputs
 * embed words in 2D, 2 approaches (see green Staples notebook or pdfs)
   * NN to predict logit
   * tree-based approach (Minih, Hinton 2009)
@@ -150,7 +150,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   7. not worried - network doesn't care about ordering
     * 7 (take 2) - network loses the location
 
-<h3>Week 5a: Why object recognition is difficult<h3/>
+### Week 5a: Why object recognition is difficult
 * Segmentation
 * Lighting
 * Deformation
@@ -159,7 +159,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
 * Viewpoint/transformation
   * Imagine a medical database in which the age of the patient is sometimes labeled incorrectly as the patient's weight - this is called "dimension hopping" which needs to be eliminated before applying ML
 
-<h3>5c: Convolutional neural networks for hand-written digit recognition<h3/>
+### 5c: Convolutional neural networks for hand-written digit recognition
 * The replicated feature approach (currently the dominant approach for NNs)
   * Use many different copies of the same feature detector w/ diff positions
     * Could also replicate across scale and orientation (tricky and expensive)
@@ -236,7 +236,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
       * half of hidden units are randomly removed for each training example -> units cannot learn to overly correct for each other (FWC - can't be too co-linear)
       * **prevents overfitting**
   
-<h3>Lecture 6a: Overview of mini-­batch gradient descent<h3/>
+### Lecture 6a: Overview of mini-­batch gradient descent
 * FWC - since the error surface lies in a space composed of pieces of quadratic bowls and the direction of steepest descent is only towards the minimum for perfect circle (cross sections), and for very skinny ellipses it is perpendicular, why not have a **normalization** procedure that attempts to make circles? (also see 'Shifting the inputs' slide in lecture 6b; also see 'separate adaptive learning rates' lecture 6d)
 * SGD
   * mini-batches (10, 100, 1000) are usually better than online b/c less computation updating weights
@@ -245,7 +245,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   * turn down the learning rate when the "error" stops decreasing
     * measure the "error" on a separate validation set
 
-<h3>Lecture 6b: Bag of tricks for mini-batch GD<h3/>
+### Lecture 6b: Bag of tricks for mini-batch GD
 * break symmetry by initializing w/ small random values
 * shift inputs - demean each input component to prevent (101,101)->2 and (99,101)->0 (a skewed elliptical error surface)
   * htan = 2 * logistic - 1
@@ -257,13 +257,13 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   * people usually think they've reached a local minimum, but this usually isn't true, you're just stuck out on the plateau
   * another plateau that looks like a local minumum is in classification nets to use the "best guessing strategy" - just guess 1 with P = the proportion of 1s that are seen in the data (FWC - this is like learning the intercept but nothing else so are there other local minima where say the intercept and one coefficient are learned?)
 
-<h3>Lecture 6c: The momentum (viscosity) model to GD<h3/>
+### Lecture 6c: The momentum (viscosity) model to GD
 * if the error surface is a tilted plane the ball rolling down the plane will reach a terminal velocity when the incoming error gradient exactly balances the decay/viscosity/alpha of the previous gradients
 * a big learning rate by itself towards the end of learning generates big divergent oscillations across the ravine (sloshing), momentum dampens this sloshing allowing for larger learning rates
 * better momentum (Sutskever, 2012 inspired by Nesterov, 1983) - first make a big jump in direction of previously accumulated gradient, then measure gradient again where you end up and make a small correction (sliding scale EAFP)
   * "much better to gamble then make a correction, than to make a correction then gamble"
 
-<h3>Lecture 6c: The momentum (viscosity) model to GD<h3/>
+### Lecture 6c: The momentum (viscosity) model to GD
 * add 0.05 if consecutive gradient signs the same, multiply by 0.95 if opposite sign
 * can combine adaptive learning w/ momentum: use the agreement in sign between the current gradient for a weight and the velocity for that weight (Jacobs, 1989)
 * adaptive learning rates only deal with axis-aligned effects
@@ -396,7 +396,6 @@ die
   * ensure each next direction is "conjugate" to the previous so that you don't oscillate/thrash too much
   * Also see 'non-linear conjugate gradient' for non-quadratic error surfaces (where it still works quite well)
 
-
 ### [8b: Modeling character strings with multiplicative connections](https://www.coursera.org/learn/neural-networks/lecture/qGmdv/modeling-character-strings-with-multiplicative-connections-14-mins)
 * The multiplicative factors described in the lecture are an alternative to simply letting the input character choose the hidden-to-hidden weight matrix.
 * Modeling text: **Advantages of working with characters**
@@ -442,7 +441,7 @@ die
     * FWC - this is because of their constraints (& factors), the other models have too many degrees of freedom?
   * RNNs also improve faster as the datasets get bigger
 
-#### [8d: Echo State Networks](https://www.coursera.org/learn/neural-networks/lecture/s1bdp/echo-state-networks-9-min)
+### [8d: Echo State Networks](https://www.coursera.org/learn/neural-networks/lecture/s1bdp/echo-state-networks-9-min)
 * Big random (fixed) expansion of input vector, then learn the output layer with a linear model.
   * Similar to Support Vector Machines (SVMs) which just do this more efficiently
 * Equivalent idea for RNNs is to randomize & fix the input->hidden connections and hidden->hidden connections and just learn the hidden->output
@@ -457,7 +456,7 @@ die
   * but aren't very good for high-dimensional data like pre-processed audio or video b/c they need many more hidden units than an RNN that learns its hidden->hidden weights
 * Sukskever (2012) used ESN initialization in a normal RNN (with rmsprop and momentum) - very efficient/effective
 
-#### Week 8 Quiz
+### Week 8 Quiz
   1. (checked) can use model where input char chooses whole matrix; (unchecked) can't use additive/obvious model (not sufficiently flexible); (unchecked) too many factors b/c simply choosing a multiplicative matrix for each char is at least as flexible as a factor-constrained matrix for each char; (checked WRONG - an additive model can't express a multiplicative one) can use additive with modification b/c the modification (one for each factor) acts like the multiplicative model
   2. 1 - because still selecting a single matrix that connects each hidden->hidden (WRONG - 1 per factor, so the answer is 1000, b/c the hidden->hidden weights are only constrained by the factors in this scenario, not constrained to 1 like in the former scenario)
   3. 3086000 (1500*2 + 86 for each of the 1000 factors) (see lecture notes above) (CORRECT)
@@ -466,7 +465,7 @@ die
   6. Don't always use the single most likely char next.  Do sample from the distribution.  A probability distribution is better visualized by samples from it.
   7. **In Echo State Networks, does it matter whether the hidden units are linear or logistic (or some other nonlinearity)? A: Yes. With linear hidden units, the output would become a linear function of the inputs, and we typically want to learn nonlinear functions of the input. Therefore, linear hidden units are a bad choice.**
 
-#### [Lecture 9a: Overview of ways to improve generalization](https://www.coursera.org/learn/neural-networks/lecture/R1OLs/overview-of-ways-to-improve-generalization-12-min)
+### [Lecture 9a: Overview of ways to improve generalization](https://www.coursera.org/learn/neural-networks/lecture/R1OLs/overview-of-ways-to-improve-generalization-12-min)
 * Network capacity can be controlled in several ways
   1. Architecture - limit # of hidden neurons
   2. Early stopping - assumes real relationships are learned before spurious ones; start w/ very small weights (important!) and stop training when (you're sure) validation error performance starts getting worse (and then go back to when things were best)
@@ -481,7 +480,7 @@ die
   * [FWC - so then there is another point on the logistic curve where it is quadratic, cubic, etc.  The average (and stdev) across all units of this metric might be a good measure of DF.  [Sigmoid/Logistic Power Series](https://www.quora.com/Can-the-sigmoid-function-be-express-as-a-power-series)]
     * [FWC - we limit the weights when using other statistical approaches as well, e.g. SVD variants, but this seems to be a more intuitive reason for doing so.]
 
-#### [Lecture 9b: Limiting the size of the weights](https://www.coursera.org/learn/neural-networks/lecture/CD4PO/limiting-the-size-of-the-weights-6-min)
+### [Lecture 9b: Limiting the size of the weights](https://www.coursera.org/learn/neural-networks/lecture/CD4PO/limiting-the-size-of-the-weights-6-min)
 * Standard approach is to add a (constant times the) sum of the squared weights (L2) into the cost function--a penalty.
   * Large weights to occur only when there are large error derivatives (see slides)
   * Using L1 (absolute value) penalty is sometimes better b/c lots of weights are then 0, which makes a network easier to understand.  Or even more extreme, sqrt(abs), makes escape from 0 difficult but then negligible effect on really large weights (allows for a few big weights).
@@ -492,7 +491,7 @@ die
   * FWC - this is similar to mean-variance optimization with flat-bottomed parabolas
   * It's *much easier to set a sensible constraint than a sensible weight penalty*
 
-#### [Lecture 9c: Using noise as a regularizer](https://www.coursera.org/learn/neural-networks/lecture/wbw7b/using-noise-as-a-regularizer-7-min)
+### [Lecture 9c: Using noise as a regularizer](https://www.coursera.org/learn/neural-networks/lecture/wbw7b/using-noise-as-a-regularizer-7-min)
 * L2-weight penalty is equivalent to adding noise to the inputs (in a *linear* network)
   * Minimizing the squared error also minimizes the squared weights (because the noise *variance* gets scaled by the square of the weights), the second operand of this sum: y_j + N(0, w_i^2 * sigma_i^2)
   * E[(y - sum_i(w_i*e_i) - t)^2] = (y - t)^2 + sum_i(w_i^2 * sigma_i^2)
@@ -503,7 +502,7 @@ die
     * [FWC - **so train with positive or negative returns, -1 or 1, but then compute cost (and propagate errors) with real-return-computed cost** -- and also note that not just tcosts, but liq constraints also, and all other *phantom* constraints will get baked into the learned function]
 * [FWC - So adding noise to inputs, weights, and activations reduces overfitting (adds regularization), but what's the real mechanism for why?  Does the added noise effectively dampen actual noise, making it more difficult to overfit?  But then if you add too much noise, does it make real effects difficult to detect?  Seems like you could slowly increase the amount of noise and measure validation performance along the way]
 
-#### [Lecture 9d: Introduction to the Bayesian Approach](https://www.coursera.org/learn/neural-networks/lecture/nPahR/introduction-to-the-full-bayesian-approach-12-min)
+### [Lecture 9d: Introduction to the Bayesian Approach](https://www.coursera.org/learn/neural-networks/lecture/nPahR/introduction-to-the-full-bayesian-approach-12-min)
 * "The main idea behind the Bayesian Approach is that instead of looking for the most likely setting of the parameters of a model, we should consider all possible settings of the parameters and try to figure out for each of those possible settings how probable [FWC - likely] it is, given the data we observed."
 * POSTERIOR = PRIOR * DATA_LIKELIHOOD
   * With enough data, the likelihood term always "wins."
@@ -518,7 +517,7 @@ die
   * P(W|D) = P(W) * P(D|W) / P(D)
   * P(D) is a normalizing term (to ensure the distribution integral sums to 1) equal to integral_W[P(W) * P(D|W)] but for any P(W|D) in the equation above this is the same value--it doesn't depend on W b/c it's an integral over all possible Ws
 
-#### [The Bayesian interpresation of weight decay/penalties](https://www.coursera.org/learn/neural-networks/lecture/n6TUy/the-bayesian-interpretation-of-weight-decay-11-min)
+### [The Bayesian interpresation of weight decay/penalties](https://www.coursera.org/learn/neural-networks/lecture/n6TUy/the-bayesian-interpretation-of-weight-decay-11-min)
 * Maximum a Posteriori Learning
   * Gives us a nice explanation of what's really going on when we use weight decay to control the capacity of a model
 * Supervised Maximum Likelihood Learning
@@ -539,7 +538,7 @@ die
     * Cost = MSE + sigma_D^2 / sigma_W^2 * sum_i[w_i]
     * so we have a specific number for the weight penalty, the ratio of 2 variances (FWC - like a [beta](https://en.wikipedia.org/wiki/Beta_(finance))!), it's not an arbitrary choice as in previous lecture
 
-#### [Lecture 9f: MacKay’s quick and dirty method of fixing weight costs](https://www.coursera.org/learn/neural-networks/lecture/7Q9LC/mackays-quick-and-dirty-method-of-setting-weight-costs-4-min)
+### [Lecture 9f: MacKay’s quick and dirty method of fixing weight costs](https://www.coursera.org/learn/neural-networks/lecture/7Q9LC/mackays-quick-and-dirty-method-of-setting-weight-costs-4-min)
 * Estimating the variance of the Gaussian prior on the weights
   * After learning a model with some initial choice of variance for the weight prior, sigma_W^2, we could do a dirty trick called "empirical Bayes"
   * Set the variance of the Gaussian prior, sigma_W^2, to be whatever makes the weights that the model learned most likely.
@@ -560,7 +559,7 @@ die
   * TRUE - Every time we update the prior variance after doing some more learning, it will get smaller.
     * correct - Since that input unit contains no useful information, we expect the *error derivative to be small.  The Gaussian weight prior will always push the weights towards 0 unless it is opposed by the error derivative.*
 
-#### Week 9 Quiz
+### Week 9 Quiz
   1. the one where the training error reaches 0 is an overfit (not checked)
   2. INCORRECT - "adding weight noise" is equivalent to "L2 regularization" so it's not either of those.  it must be "L1 regularization" b/c something was used, though it should really be that a constraint on the size of the weight vector was used because a few large values happened
   3. selected the "mustache" shape in order to have lot of weights close to 0 but a few a long way from 0
@@ -572,10 +571,10 @@ die
     * unchecked - L1 and L2
   6. INCORRECT - better on both training and test (the correct answer is worse on training and better on test)
 
-#### [[Week 9 programming assignment #3]]
+### [[Week 9 programming assignment #3]]
 * "The program checks your gradient computation for you, using a finite difference approximation to the gradient. If that finite difference approximation results in an approximate gradient that's very different from what your gradient computation procedure produced, then the program prints an error message. This is hugely helpful debugging information. Imagine that you have the gradient computation done wrong, but you don't have such a sanity check: your optimization would probably fail in many weird and wonderful ways, and you'd be worrying that perhaps you picked a bad learning rate or so. (In fact, that's exactly what happened to me when I was preparing this assignment, before I had the **gradient checker** working.) With a finite difference gradient checker, at least you'll know that you probably got the gradient right. It's all approximate, so the checker can never know for sure that you did it right, but if your gradient computation is seriously wrong, the checker will probably notice."
 
-#### [Lecture 10a: Why it helps to combine models](https://www.coursera.org/learn/neural-networks/lecture/pZKOF/why-it-helps-to-combine-models-13-min)
+### [Lecture 10a: Why it helps to combine models](https://www.coursera.org/learn/neural-networks/lecture/pZKOF/why-it-helps-to-combine-models-13-min)
 * Also see XGBoost notes on Machine Learning wiki page
 * "If we have a single model we have to choose some capacity for it.  If we choose too little capacity, it won't be able to fit the regularities in the training data.  If we choose too much capacity, it will be able to fit the sampling error in the training set data.  By averaging many models we can get a better tradeoff between fitting too few regularities and overfitting the sampling error in the data.  This effect is largest when the models make very different predictions from each other."
 * Combining networks: the bias-variance tradeoff
@@ -608,7 +607,7 @@ die
   * We could use bagging w/ NNs but its *very* expensive to train
   * Boosting - Train a seq of low capacity models.  Weight the training cases differently for each model in the seq.  Up-weight cases the previous models got wrong.  [FWC - prone to overfitting]
 
-#### [Lecture 10b: Mixture of Experts](https://www.coursera.org/learn/neural-networks/lecture/stzor/mixtures-of-experts-13-min)
+### [Lecture 10b: Mixture of Experts](https://www.coursera.org/learn/neural-networks/lecture/stzor/mixtures-of-experts-13-min)
 * **Multi-regime**, train a net on each regime
 * In boosting, the mixture of models depends on particular input cases.
 * Can we do better that just averaging models in a way that does *not* depend on the particular training case?
@@ -659,9 +658,9 @@ of the gating network (wrt the input to the softmax, which is called the "logit"
   * Think of the manager as deciding on a scale for each of these Gaussians. The scale is called a "mixing proportion". e.g {0.4 0.6}
   * Maximize the log probability of the target value under this mixture [FWC - sum] of Gaussians model (i.e. the sum of the two scaled Gaussians).
   * \<P of target val on case c given Mixture of Experts\> = 
-    * sum_i[ <mixing proportion i for case c, p_ic> exp(-0.5(t_c-y_ic)^2) / <normalization term for Gaussian w/ sig^2=1, sqrt(2pi)> ]
+    * sum_i[ \<mixing proportion i for case c, p_ic\> exp(-0.5(t_c-y_ic)^2) / \<normalization term for Gaussian w/ sig^2=1, sqrt(2pi)\> ]
   * P(t_c | MoE) = sum_i[ p_ic exp(-0.5(t_c-y_ic)^2) / sqrt(2pi) ]
 
-#### [Lecture 10c: The idea of full Bayesian learning](https://www.coursera.org/learn/neural-networks/lecture/9MEsM/the-idea-of-full-bayesian-learning-7-min)
+### [Lecture 10c: The idea of full Bayesian learning](https://www.coursera.org/learn/neural-networks/lecture/9MEsM/the-idea-of-full-bayesian-learning-7-min)
 * 
 
