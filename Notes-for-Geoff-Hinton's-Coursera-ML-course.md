@@ -770,4 +770,10 @@ dropped out models (in a multi-layer net), but it’s a pretty good approximatio
   * **If your deep neural net is significantly overfitting, dropout will usually reduce the number of errors by a lot.**
   * Any net that uses “early stopping” can do better by using dropout (at the cost of taking quite a lot longer to train).
   * If your deep neural net is not overfitting you should be using a bigger one!
-
+* Another way to think about dropout
+  * FWC idea - pairwise dropout, let certain pairs of neurons always exist or be dropped out together to allow *some* complex relationships
+  * If a hidden unit knows which other hidden units are present, it can co-adapt to them on the training data.
+  * But complex co-adaptations are likely to go wrong on new test data.
+  * Big, complex conspiracies (with lots of players) are not robust (someone's going to tell--better to have lots of little conspiracies)
+  * **If a hidden unit has to work well with combinatorially many sets of co-workers, it is more likely to do something that is individually useful.**
+  * *But it will also tend to do something that is marginally useful given what its co-workers achieve.*
