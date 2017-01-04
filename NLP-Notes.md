@@ -59,9 +59,9 @@
   2. representation: neutralize all of them to each other using a scatter-plot-smoother-like NN (don't just take ratios b/c of problems with non-linear ratio distributions)
     * consider the "banana correction" (rotation of non-linear/exponential s.t. errors are less heteroskedastic)
   3. use these ratio-like, neutralized variables as input to a negative sampling, word2vec-like algorithm to generate embeddings
-    * see "denoising autoencoder" note on Hinton's Coursera notes wiki page
+    * see "denoising autoencoder" note on [[Notes for Geoff Hinton's Coursera ML course]]
   4. use the embeddings in a forecasting model
-    * use Bayesian MCMC approach to sample parameter space (or, if using NNs, use dropout; again see Hinton's Coursera notes wiki page)
+    * use Bayesian MCMC approach to sample parameter space (or, if using NNs, use dropout; again see [[Notes for Geoff Hinton's Coursera ML course]])
 
 #### [CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/index.html)
 
