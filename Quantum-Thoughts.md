@@ -1,3 +1,9 @@
+Dark matter == constructive interference
+* Caused by regular matter all moving in tandem with itself? Thus causing a moving "static" miniverse?
+* This doesn't happen nearer galaxy centers because there is stuff nearby moving in different trajectories. 
+* There either needs to be more matter or more spacetime curvature, which would typically be due to matter. But if there is constructive interference then maybe that extra curvature can come from there instead.
+* https://www.reddit.com/r/pbsspacetime/comments/4ejgs6/could_dark_matter_be_the_constructive/
+
 Quora: [What is dark matter?](https://www.quora.com/What-is-dark-matter-8/answer/Erik-Anson) (1/4/17)
 * Galactic rotation curves.
 * https://en.wikipedia.org/wiki/Galaxy_rotation_curve
