@@ -1,3 +1,12 @@
+[What is dark matter?](https://www.quora.com/What-is-dark-matter-8/answer/Erik-Anson)
+* Galactic rotation curves.
+* https://en.wikipedia.org/wiki/Galaxy_rotation_curve
+* So what if stuff towards the edges of universes just burns out quicker?  I.e. less light.  Someone would've already thought of this.
+
+[How come the stars at the outer edge of the galaxy are rotating at the same speed as the stars towards the center?](https://www.quora.com/How-come-the-stars-at-the-outer-edge-of-the-galaxy-are-rotating-at-the-same-speed-as-the-stars-towards-the-center)
+* However, even  though we have not yet had direct detection of dark matter particles, there is now a mountain of evidence pointing towards its existence; in other words, in this case, it's #1 (Maybe there's matter we can't see, e.g. Neptune), not #2 (Maybe our theory of gravity isn't quite right, e.g. Mercury).
+* FWC - so we've experienced both #1 and #2 right here in our solar system--with only 8/9 planets--huh?  Given that, what are the chances that these concepts aren't enormously more complex than we might find by chance right here at home.
+
 [Grand Unification Dream Kept at Bay](https://www.quantamagazine.org/20161215-proton-decay-grand-unification/)
 * Physicists have failed to find disintegrating protons, throwing into limbo the beloved theory that the forces of nature were unified at the beginning of time.
 * Over the past four decades, physicists have proposed a variety of GUT models that describe possible initial symmetric arrangements of the particles. Finding out which model is correct would reveal not only the underlying mathematical structure of nature’s laws (and how they might square with the fourth force, gravity), but also what other particles might exist besides the known ones. This in turn could potentially solve other deep mysteries of physics, such as the universe’s matter-antimatter imbalance and the unexplained masses of neutrinos.
