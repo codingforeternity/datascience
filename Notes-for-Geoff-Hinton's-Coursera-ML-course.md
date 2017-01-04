@@ -697,4 +697,58 @@ settings have significant posterior probability.
   * Make predictions (on test data) by using the *posterior Ps* to average the predictions made by the different grid points
 
 ### [Lecture 10d: Making full Bayesian learning practical](https://www.coursera.org/learn/neural-networks/lecture/PcT3Q/making-full-bayesian-learning-practical-7-min)
-* 
+* Markov Chain Monte Carlo biased in the direction of the gradient
+* Sample weight vectors in proportion to their probability in the posterior distribution
+* What can we do if there are too many parameters for a grid?
+  * Only a tiny fraction of the grid points make a significant contribution to the predictions--lots of 0 posterior Ps.
+  * An idea that makes Bayesian learning feasible: It might be good enough to just sample weight vectors according to their posterior probabilities.
+  * \<P output_test given D\> = sum_{i in weight space}[ \<posterior P_i\> \<probability distribution of output_test given W_i\>]
+  * p(y_test | input_test, D) = sum_i[ p(W_i | D) p(y_test | input_test, W_i) ]
+  * Instead of adding up all terms in this sum, sample weight vectors according to p(W_i | D)
+* Sampling weight vectors
+  * In standard backpropagation we keep moving the weights in the direction that decreases the cost.
+  * Eventually, the weights settle into a local minimum (or get stuck on plateau, or just move so slowly we run out of patience)
+* One method for sampling weight vectors
+  * Suppose we add some Gaussian noise to the weight vector after each update.
+  * So the weight vector never settles down.
+  * It keeps wandering around, but it tends to prefer low cost regions of the weight space.
+  * Can we say anything about how often it will visit each possible setting of the weights?
+  * Save the weights after every 10,000 steps.
+* The wonderful property of Markov Chain Monte Carlo
+  * *Amazing fact:* If we use just the right amount of noise, and if we let the weight vector wander around for long enough before we take a sample, we will get an unbiased sample from the true posterior over weight vectors.
+  * This is called a "**Markov Chain Monte Carlo**" (MCMC) method.
+  * **MCMC makes it feasible to use full Bayesian learning with thousands of parameters.**
+  * L'orangian (sp?) Method, not the most efficient
+  * There are related MCMC methods that are more complicated but more efficient: We don’t need to let the weights wander around for so long before we get samples from the posterior.
+* Full Bayesian learning with mini-batches
+  * If we compute the gradient of the cost function on a random mini-batch we will get an unbiased estimate with sampling noise.
+  * Maybe we can **use the sampling noise to provide the noise that an MCMC method needs!** (very clever) 
+  * Ahn, Korattikara & Welling (ICML 2012) showed how to do this fairly efficiently.
+  * So full Bayesian learning is now possible with lots of parameters.
+
+### [Lecture 10e: Dropout: an efficient way to combine neural nets](https://www.coursera.org/learn/neural-networks/lecture/Sc5AW/dropout-9-min)
+* Method of combining a very large number of NN models w/out having to train them all.
+* Two ways to average models: (1) mixture (arithmetic mean) and (2) product (geometric mean renormalized to sum to 1)
+* **Dropout**: An efficient way to average many large neural nets (http://arxiv.org/abs/1207.0580)
+  * **An alternative to doing the correct Bayesian thing**.  Probably doens't work quite as well, but much more practical [FWC - assuming we're starting with NNs to begin with]
+  * Consider a neural net with one hidden layer.
+  * Each time we present a training example, we randomly omit each hidden unit with probability 0.5.
+  * So we are randomly sampling from 2^H different architectures. All architectures share weights.
+* Dropout as a form of model averaging
+  * We sample from 2^H models. So *only a few of the models ever get trained, and they only get one training example*.  This is as *extreme as bagging can get*.
+  * The sharing of the weights means that every model is very strongly regularized.
+    * It’s a *much better regularizer than L2 or L1 penalties that pull the weights towards zero*.
+* But what do we do at test time?
+  * We could sample many different architectures and take the geometric mean of their output distributions.
+  * It better to use all of the hidden units, but to *halve their outgoing weights.*
+  * This exactly computes the geometric mean of the predictions of all 2^H models (provided we're using a softmax output group).
+* What if we have more hidden layers?
+  * Use dropout of 0.5 in every layer.
+  * At test time, use the "mean net" that has all the outgoing weights halved.
+  * This is not exactly the same as averaging all the separate
+dropped out models (in a multi-layer net), but it’s a pretty good approximation, and it's fast.
+  * Alternatively, run the (lots of) stochastic model several times on the same input (with dropout and then average across those stochastic models). [FWC - does he mean this is similar to "sampling many different architectures and taking the geometric mean" as mentioned above?]
+    * **Benefit: This gives us an idea of the uncertainty in the answer.**
+* What about the input layer?
+  * It helps to use dropout there too, but with a higher probability of keeping an input unit.
+  * This trick is already used by the "**denoising autoencoders**" developed by Pascal Vincent, Hugo Larochelle and Yoshua Bengio "and it works very well."
