@@ -46,6 +46,7 @@ Welcome to the fcrimins.github.io wiki!
 - [[Agile Notes]]
 - [[Functional Programming]]
 - [[Starting a Tech Company]] (kws: business, entrepreneur)
+  - [[WordPress Notes]]
   - [[Web Frameworks]]
   - [[Play Framework Notes]]
 
