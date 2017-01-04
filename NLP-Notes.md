@@ -61,7 +61,7 @@
   3. use these ratio-like, neutralized variables as input to a negative sampling, word2vec-like algorithm to generate embeddings
     * see "denoising autoencoder" note on [[Notes for Geoff Hinton's Coursera ML course]]
   4. use the embeddings in a forecasting model
-    * use (mini-batch-induced-randomization) Bayesian MCMC approach to sample parameter space (or, if using NNs, use dropout; again see [[Notes for Geoff Hinton's Coursera ML course]])
+    * use (mini-batch-induced-randomization) Bayesian MCMC approach to sample parameter space (or, if using NNs, use dropout ("An alternative to doing the correct Bayesian thing. Probably doens't work quite as well, but much more practical"); again see [[Notes for Geoff Hinton's Coursera ML course]])
 
 #### [CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/index.html)
 
