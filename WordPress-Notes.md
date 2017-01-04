@@ -1,0 +1,1 @@
+[Getting Started with WordPress](https://ithemes.com/wp-content/uploads/downloads/2015/10/getting-started-with-WordPress-ebook.pdf) eBook from iThemes
