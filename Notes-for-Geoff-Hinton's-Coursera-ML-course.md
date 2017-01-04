@@ -737,7 +737,7 @@ settings have significant posterior probability.
 * Dropout as a form of model averaging
   * We sample from 2^H models. So *only a few of the models ever get trained, and they only get one training example*.  This is as *extreme as bagging can get*.
   * The sharing of the weights means that every model is very strongly regularized.
-    * It’s a *much better regularizer than L2 or L1 penalties that pull the weights towards zero*.
+    * It’s a **much better regularizer than L2 or L1 penalties that pull the weights towards zero**.
 * But what do we do at test time?
   * We could sample many different architectures and take the geometric mean of their output distributions.
   * It better to use all of the hidden units, but to *halve their outgoing weights.*
