@@ -1,4 +1,6 @@
-[Getting Started with WordPress](https://ithemes.com/wp-content/uploads/downloads/2015/10/getting-started-with-WordPress-ebook.pdf) eBook from iThemes
+#### Simple [Custom Form creation](https://www.inkthemes.com/how-you-can-easily-create-customized-form-in-wordpress/) with code
+
+#### [Getting Started with WordPress](https://ithemes.com/wp-content/uploads/downloads/2015/10/getting-started-with-WordPress-ebook.pdf) eBook from iThemes
 * *Some* WordPress themes include page templates that change the way your pages are formatted on the front end of the site. By using page templates, your WordPress theme can give you some flexibility for how your pages look and where certain page elements are located.
   * look for the "full-width-template" tag when choosing a theme
 * *One of the primary advantages of using the self-hosted version of WordPress from WordPress.org is the ability to upload and use plugins on your WordPress site*
