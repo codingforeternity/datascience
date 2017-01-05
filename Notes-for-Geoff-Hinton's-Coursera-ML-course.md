@@ -718,7 +718,7 @@ settings have significant posterior probability.
   * *Amazing fact:* If we use just the right amount of noise, and if we let the weight vector wander around for long enough before we take a sample, we will get an unbiased sample from the true posterior over weight vectors.
   * This is called a "**Markov Chain Monte Carlo**" (MCMC) method. [FWC - "markov chain" because it has discrete states but "monte carlo" because it only has a sampling of them]
   * **MCMC makes it feasible to use full Bayesian learning with thousands of parameters.**
-  * L'orangian (sp?) Method, not the most efficient
+  * L'orangian or Langevin (sp?) Method, not the most efficient
   * There are related MCMC methods that are more complicated but more efficient: We don’t need to let the weights wander around for so long before we get samples from the posterior.
 * Full Bayesian learning with mini-batches
   * If we compute the gradient of the cost function on a random mini-batch we will get an unbiased estimate with sampling noise.
