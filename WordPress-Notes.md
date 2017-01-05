@@ -1,3 +1,5 @@
+#### [This article](https://codex.wordpress.org/CSS) briefly describes the use of CSS in WordPress, and lists some references for further information.
+
 #### Simple [Custom Form creation](https://www.inkthemes.com/how-you-can-easily-create-customized-form-in-wordpress/) with code
 
 #### [Getting Started with WordPress](https://ithemes.com/wp-content/uploads/downloads/2015/10/getting-started-with-WordPress-ebook.pdf) eBook from iThemes
