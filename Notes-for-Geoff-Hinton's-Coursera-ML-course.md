@@ -724,6 +724,11 @@ settings have significant posterior probability.
   * If we compute the gradient of the cost function on a random mini-batch we will get an unbiased estimate with sampling noise.
   * Maybe we can **use the sampling noise to provide the noise that an MCMC method needs!** (very clever) 
   * Ahn, Korattikara & Welling (ICML 2012) showed how to do this fairly efficiently.
+    * file:///home/fred/Documents/articles/bayesian_posterior_sampling_via_mini_batch_ahn_krattikara_welling_2012_782.pdf
+    * "an algorithm as simple as stochastic gradient descent is almost optimally efficient. We therefore argue that for Bayesian methods to remain useful in an age when the datasets grow at an exponential rate, they need to embrace the ideas of the stochastic optimization literature."
+    * "Our main claim is therefore that we can trade-in a usually small bias in our estimate of the posterior distribution against a potentially very large computational gain, which could in turn be used to draw more samples and reduce sampling variance."
+    * "it is an efficient optimization algorithm that smoothly turns into a sampler when the correct
+(statistical) scale of precision is reached."
   * So full Bayesian learning is now possible with lots of parameters.
 
 ### [Lecture 10e: Dropout: an efficient way to combine neural nets](https://www.coursera.org/learn/neural-networks/lecture/Sc5AW/dropout-9-min)
