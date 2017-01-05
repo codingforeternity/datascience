@@ -14,7 +14,6 @@
 
 #### [Session and Flash scopes](https://www.playframework.com/documentation/2.5.x/ScalaSessionFlash)
 * "keep data across multiple HTTP requests"
-* 
 
 #### [Cookies](https://www.playframework.com/documentation/2.5.x/ScalaResults#setting-and-discarding-cookies)
 
