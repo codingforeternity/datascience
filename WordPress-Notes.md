@@ -4,3 +4,4 @@
 * *One of the primary advantages of using the self-hosted version of WordPress from WordPress.org is the ability to upload and use plugins on your WordPress site*
   * Plugins can do things like improve your search engine optimization, display related posts in your sidebar, do complete backups of your WordPress site (BackupBuddy) or create stunning web forms quickly and easily (Gravity Forms)
 * Note: if you are registering your domain name at GoDaddy, don’t sign up for anything except the domain registration ignore the hosting offers, etc. that they’ll show you.
+* You can also use plugins to further boost your SEO juice. Our highly recommended plugins are WordPress SEO by Yoast or All in One SEO Pack.
