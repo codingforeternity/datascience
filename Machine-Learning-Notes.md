@@ -1,3 +1,6 @@
+#### [Game Theory Reveals the Future of Deep Learning](http://www.kdnuggets.com/2016/12/game-theory-reveals-future-deep-learning.html)
+* What we see in these 3 players are 3 different ways game theory plays in Deep Learning. (1) As a means of describing and analyzing new DL architectures. (2) As a way to construct a learning strategy and (3) A way to predict behavior of human participants. The last application can make your skin crawl!
+
 #### [XGBoost: The algorithm that wins every competition](http://www.slideshare.net/JaroslawSzymczak1/xgboost-the-algorithm-that-wins-every-competition)
 * eXtreme Gradient Boosting
 * bias related errors handled by
