@@ -2,6 +2,7 @@
 * Flattening JSON w/ complex types: http://stackoverflow.com/questions/28332494/querying-spark-sql-dataframe-with-complex-types
 * Reading JSON data in Spark DataFrames: http://xinhstechblog.blogspot.com/2016/05/reading-json-nested-array-in-spark.html (and older: http://xinhstechblog.blogspot.be/2015/06/reading-json-data-in-spark-dataframes.html)
 * Match case with regex: https://www.safaribooksonline.com/library/view/scala-cookbook/9781449340292/ch01s09.html
+* Use [java.time](http://stackoverflow.com/questions/3614380/whats-the-standard-way-to-work-with-dates-and-times-in-scala-should-i-use-java) (formerly JodaTime) for date-times in Java/Scala
 
 #### [Pro Spark Streaming: The Zen or Real-time Analytics Using Spark](https://www.safaribooksonline.com/library/view/pro-spark-streaming/9781484214794/A367671_1_En_1_Chapter.html)
 * In reference to Hadoop/MapReduce (not Spark): "*Iterative applications that perform the same computation multiple times are also a bad fit for Hadoop. Many machine-learning algorithms belong to this class of applications*. For example, k-means clustering in Mahout refines its centroid location in every iteration. This process continues until a threshold of iterations or a convergence criterion is reached. It runs a driver program on the user’s local machine, which performs the convergence test and schedules iterations. This has two main limitations: the output of each iteration needs to be materialized to HDFS, and the driver program resides in the user’s local machine at an I/O cost and with weaker fault tolerance."
