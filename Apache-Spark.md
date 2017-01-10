@@ -184,6 +184,7 @@ val people = sc.textFile("examples/src/main/resources/people.txt")
                .map(p => Person(p(0), p(1).trim.toInt))
 // "invoking reflection at runtime to figure out the names and types of columns in this table"
 people.registerAsTable("people") // FWC - this is the key!  Spark already has registration!!!
+// note that `registerAsTable` has been replaced by `createOrReplaceTempView` in newer versions of Spark
 ```
 * SparkSQL caches tables using an in-memory columnar format (which is also the storage mechanism provided by Parquet)
   * scan only required columns
