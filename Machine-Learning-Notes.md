@@ -1,4 +1,5 @@
-#### Semantics, Representations, and Grammars for Deep Learning (file:///home/fred/Documents/articles/game_theory/semantics_reprs_and_grammars_for_DL_Balduzzi_1509.08627.pdf) (1/10/16)
+#### Semantics, Representations, and Grammars for Deep Learning (1/10/16)
+* file:///home/fred/Documents/articles/game_theory/semantics_reprs_and_grammars_for_DL_Balduzzi_1509.08627.pdf
 * "Game theory provides tools for analyzing distributed optimization problems where a set of players aim to minimizes losses that depend not only on their actions, but also the actions of all other players in the game [30,31]"
 
 #### [Game Theory Reveals the Future of Deep Learning](http://www.kdnuggets.com/2016/12/game-theory-reveals-future-deep-learning.html)
