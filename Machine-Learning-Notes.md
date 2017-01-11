@@ -5,6 +5,7 @@
 #### [Neural Ficticious Self-Play](https://arxiv.org/pdf/1603.01121.pdf) (NFSP)
 * Deep Reinforcement Learning from Self-Play in Imperfect-Information Games
 * FWC - One thing that's unique about financial markets is that "memory" isn't necessarily short-term.  Regimes can switch and, all of a sudden, memories from the past can come flooding back while recent memory can become instantly irrelevant.  Think Poisson jumps layerd on top of a Gaussian distribution.
+* "FSP replaces the best response computation and the average strategy updates with reinforcement and supervised learning respectively"
 
 #### [RI Seminar: Yann LeCun : The Next Frontier in AI: Unsupervised Learning](https://www.youtube.com/watch?v=IbjF5VjniVE) (YouTube)
 
