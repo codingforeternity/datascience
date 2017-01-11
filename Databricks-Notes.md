@@ -1,3 +1,6 @@
+#### Field Engineer Coding Test
+* file:///home/fred/Documents/code/fcrimins.github.io.wiki/databricksFieldEngineerCodingTest.html
+
 #### Logging into Databricks
   1. Create a Community account
   2. Goto: https://databricks.com/
