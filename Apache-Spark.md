@@ -1,3 +1,9 @@
+#### Problem w/ Spark
+* Assumes everything is embarrassingly parallel
+* Path dependence is an issue (e.g. back-test simulations or anything w/ ramp-up required for each datapoint)
+* But what if many sims could be accomplished in the same proc?  Each variable computed simultaneously for all sims, then merely different rollups at the end (or at the point of divergence)
+* Still, how do subequest sims benefit from prev? Parquet file caching? 
+
 #### Links
 * Flattening JSON w/ complex types: http://stackoverflow.com/questions/28332494/querying-spark-sql-dataframe-with-complex-types
 * Reading JSON data in Spark DataFrames: http://xinhstechblog.blogspot.com/2016/05/reading-json-nested-array-in-spark.html (and older: http://xinhstechblog.blogspot.be/2015/06/reading-json-data-in-spark-dataframes.html)
