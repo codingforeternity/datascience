@@ -3,6 +3,7 @@
 * "Game theory provides tools for analyzing distributed optimization problems where a set of players aim to minimizes losses that depend not only on their actions, but also the actions of all other players in the game [30,31]"
 * "Definition 4 proposes that a *representation* is a function that is a *local* solution to an optimization problem.... Indeed, recent experience shows that global solutions are often not necessary practice [1-5]. The local solution has similar semantics to--that is, it represents--the ideal solution."
   * "a function is a representation if[f] it is selected to optimize an objective"
+  * "In short, representations are functions with useful semantics, where usefulness is quantifed using a specific objective"
   * FWC - you optimize until (local) convergence and the output is a representation (by definition 4 at least)
   * FWC - Take for example the number of solutions to 'NN vs. Exponential'--they're all good solutions even though none are global.  An important point, perhaps, is that the exact solution manifold isn't the piece of interest; distance from the solution manifold is what's important and all solutions provide approximately that.
 
