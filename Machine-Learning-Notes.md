@@ -1,6 +1,8 @@
 #### Semantics, Representations, and Grammars for Deep Learning (1/10/16)
 * file:///home/fred/Documents/articles/game_theory/semantics_reprs_and_grammars_for_DL_Balduzzi_1509.08627.pdf
 * "Game theory provides tools for analyzing distributed optimization problems where a set of players aim to minimizes losses that depend not only on their actions, but also the actions of all other players in the game [30,31]"
+* "Definition 4 proposes that a *representation* is a function that is a *local* solution to an optimization problem."
+  * FWC - you optimize until (local) convergence and the output is a representation (by definition 4 at least)
 
 #### [Game Theory Reveals the Future of Deep Learning](http://www.kdnuggets.com/2016/12/game-theory-reveals-future-deep-learning.html)
 * Adversarial networks consists of competing neural networks, a generator and discriminator, the former tries to generate fake images while the later tries to identify real images. The interesting feature of these systems is that a closed form loss function is not required. In fact, some systems have the **surprising capability of discovering its own loss function**! A disadvantage of adversarial networks are they are difficult to train. Adversarial learning consists in finding a Nash equilibrium to a two-player non-cooperative game. Yann Lecun, in a recent lecture on unsupervised learning, calls adversarial networks the "[the coolest idea in machine learning in the last twenty years](https://www.youtube.com/watch?v=IbjF5VjniVE)."
