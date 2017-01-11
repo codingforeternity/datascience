@@ -2,6 +2,9 @@
 [colah's blog](http://colah.github.io/) (todo: read more here)
 ***
 
+#### [Neural Ficticious Self-Play](https://arxiv.org/pdf/1603.01121.pdf) (NFSP)
+* Deep Reinforcement Learning from Self-Play in Imperfect-Information Games
+
 #### [RI Seminar: Yann LeCun : The Next Frontier in AI: Unsupervised Learning](https://www.youtube.com/watch?v=IbjF5VjniVE) (YouTube)
 
 #### Semantics, Representations, and Grammars for Deep Learning (1/10/16)
