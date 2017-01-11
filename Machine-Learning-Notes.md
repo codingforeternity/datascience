@@ -10,6 +10,11 @@
   * "In short, representations are functions with useful semantics, where usefulness is quantifed using a specific objective"
   * FWC - you optimize until (local) convergence and the output is a representation (by definition 4 at least)
   * FWC - Take for example the number of solutions to 'NN vs. Exponential'--they're all good solutions even though none are global.  An important point, perhaps, is that the exact solution manifold isn't the piece of interest; distance from the solution manifold is what's important and all solutions provide approximately that.
+* Guarantees fall under the following broad categories:
+  1. Exact gradients. Under error backpropagation the Response graph implements the chain rule, which guarantees that Players receive the gradients of their loss functions; see section 2.1.
+  2. Surrogate objectives. The variational autoencoder uses a surrogate objective: the variational lower bound. Maximizing the surrogate is guaranteed to also maximize the true objective, which is computational intractable.
+  3. Learned objectives. In the case of generative adversarial network and the DAC-model, **some of the players learn a loss that is guaranteed to align with the true objective, which is unknown**.
+  4. Estimated gradient. In the DAC-model and kickback, gradient estimates are substituted for the true gradient.
 
 #### [Game Theory Reveals the Future of Deep Learning](http://www.kdnuggets.com/2016/12/game-theory-reveals-future-deep-learning.html)
 * Adversarial networks consists of competing neural networks, a generator and discriminator, the former tries to generate fake images while the later tries to identify real images. The interesting feature of these systems is that a closed form loss function is not required. In fact, some systems have the **surprising capability of discovering its own loss function**! A disadvantage of adversarial networks are they are difficult to train. Adversarial learning consists in finding a Nash equilibrium to a two-player non-cooperative game. Yann Lecun, in a recent lecture on unsupervised learning, calls adversarial networks the "[the coolest idea in machine learning in the last twenty years](https://www.youtube.com/watch?v=IbjF5VjniVE)."
