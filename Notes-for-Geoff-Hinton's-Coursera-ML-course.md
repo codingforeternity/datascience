@@ -817,3 +817,64 @@ Correct - The classifiers are fairly different, but overfitted to their training
       * Correct - Model averaging with different kinds of models is useful because each model is likely to be different and make different errors.
     * Train lots of small neural nets of the same architecture on the whole data and average their predictions.
     * Look for a better optimization algorithm to help the large neural net.
+
+#### [Lecture 11a: Hopfield Nets](https://www.coursera.org/learn/neural-networks/lecture/9ZOr2/hopfield-nets-13-min)
+* Sometimes called "energy based models" b/c their properties derive from a global energy function
+  * One of the main reasons for the resurgence in machine learning
+* A Hopfield net is composed of binary threshold units with recurrent connections between them.
+  * if the connections are *symmetric*, there is a global energy function
+  * The global energy is the sum of many contributions. Each contribution depends on *one connection weight* and the binary states of *two neurons*:
+    * "energy is bad, hence the upcoming negative signs"
+    * E = -sum_i(s_i*b_i) - sum_{i<j}(s_i*s_j*w_ij)
+    * The s'es are all binary, 0 or 1 (so the state can be thought of as the corners of a hypercube).  The w's are not.
+  * This simple quadratic energy function makes it possible for each unit to compute *locally* how it’s state affects the global energy
+    * Energy gap "is the difference in the global configuration depending whether or not i is on"
+    * Energy gap = delta E_i = E(s_i=0) - E(s_i=1) = b_i + sum_j(s_j*w_ij)
+    * It's just a derivative (which, yes, seems like a silly thing to do b/c s'es are binary): del E / del s_i = b_i + sum_j(s_j*w_ij)  -- without the negative signs b/c they're for going downhill
+* Settling to an energy minimum
+  * For each unit, chosen randomly, one at a time, figure out which of its two states gives a lower global energy, and put it in that state.  This is equivalent to saying "use the binary threshold decision rule."
+  * "easier to think about negative energies, -E, which I'll call 'goodness'"
+* Example with a net containing 2 triangles that "hate" each other, both are minima, but one is local and one global.
+* Why do the decisions need to be sequential?
+  * If units make *simultaneous* decisions the energy could go up.
+  * However, if the updates occur in parallel but with random timing, the oscillations are usually destroyed.
+* Hopfield (1982) proposed that memories could be energy minima of a neural net.
+  * The binary threshold decision rule can then be used to “clean up” incomplete or corrupted memories.
+  * Using energy minima to represent memories gives a content-addressable memory
+    * An item can be accessed by just knowing part of its content.
+    * This was really amazing in the year 16 BG (Before Google)... i.e. because "search" is knowing only part of the content
+  * Robust against hardware damage
+  * Like reconstructing a dinosaur from a few fossils (psychology analogy)
+    * Solving for variables in a series of equations (FWC)
+* Storing memories in a Hopfield net
+  * If we use activities of 1 and -1, as opposed to 0 and 1, we can *store a binary state vector* by incrementing the weight between any two units by the product of their activities:
+    * delta w_ij = s_i * s_j
+  * Slightly more complicated w/ 0 and 1:
+    * delta w_ij = 4(s_i-0.5)(s_j-0.5)
+  * Very simple rule that is not error-driven: both its strength (can be computed in true online fashion) and its weakness (not very efficient storage [FWC - lots of redundant info])
+  * We treat biases as weights from a permanently on unit.
+
+#### [Lecture 11b: Dealing with spurious minima in Hopfield Nets](https://www.coursera.org/learn/neural-networks/lecture/3FmJ8/dealing-with-spurious-minima-11-min)
+* Storage capacity of Hopfield nets limited by spurious minima
+* Using Hopfield’s storage rule the capacity of a totally connected net with N units is only about 0.15N memories.
+  * At N bits per memory this is only 0.15*N^2 bits, which does not make efficient use of the bits required to store the weights.
+  * After storing M memories, each connection *weight* has an integer value in the range [-M, M] (*because we increase it by 1 or decrease it by 1 each time we store a memory, assuming we use states of -1/1), so the number of bits required to store the weights and biases is: N^2 log(2M+1) -- assuming all weights are equi-probable (i.e. no compression)
+* Spurious minima limit capacity
+  * Each time we memorize a configuration, we hope to create a new energy minimum.
+  * But what if two nearby minima merge to create a minimum at an intermediate location?
+  * This merging is what limits the capacity.
+* Avoiding spurious minima by unlearning
+  * Hopfield, Feinstein and Palmer suggested the following strategy:
+    * Let the net settle from a random initial state and then do unlearning (the opposite of the storage rule) [**FWC - this is like my "container-not" learning theory where you start out with a new concept being represented by everything it's not**]
+    * This will get rid of deep, spurious minima and increase memory capacity
+    * They showed this worked, but they had no analysis (couldn't explain)
+  * Crick and Mitchison proposed **unlearning** as a model of what dreams (REM sleep) are for.
+    * That’s why you don’t remember them (unless you wake up during the dream)
+    * So we're simply not storing what we're dreaming about, but why?
+  * How much unlearning should we do? (a more mathematical problem)
+    * Can we derive unlearning as the right way to minimize some cost function?
+* Increasing the capacity of a Hopfield net
+  * Physicists love the idea that the math they already know might explain how the brain works.  I.e. postdoc physicists can get a job in neuroscience if they can't find one in physics.
+  * Instead of trying to store vectors in one shot, cycle through training set multiple times
+    * Use the perceptron convergence procedure to train each unit given the states of all the other units in that vector
+    * Statisticians call this technique "pseudo-likelihood" -- "get one thing right, given all the other things" -- main difference: in Hopfield Net, weights are symmetric, so we need to get 2 sets of weights and avg them
