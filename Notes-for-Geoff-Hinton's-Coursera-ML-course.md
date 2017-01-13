@@ -818,7 +818,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
     * Train lots of small neural nets of the same architecture on the whole data and average their predictions.
     * Look for a better optimization algorithm to help the large neural net.
 
-#### [Lecture 11a: Hopfield Nets](https://www.coursera.org/learn/neural-networks/lecture/9ZOr2/hopfield-nets-13-min)
+### [Lecture 11a: Hopfield Nets](https://www.coursera.org/learn/neural-networks/lecture/9ZOr2/hopfield-nets-13-min)
 * Sometimes called "energy based models" b/c their properties derive from a global energy function
   * One of the main reasons for the resurgence in machine learning
 * A Hopfield net is composed of binary threshold units with recurrent connections between them.
@@ -854,7 +854,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
   * Very simple rule that is not error-driven: both its strength (can be computed in true online fashion) and its weakness (not very efficient storage [FWC - lots of redundant info])
   * We treat biases as weights from a permanently on unit.
 
-#### [Lecture 11b: Dealing with spurious minima in Hopfield Nets](https://www.coursera.org/learn/neural-networks/lecture/3FmJ8/dealing-with-spurious-minima-11-min)
+### [Lecture 11b: Dealing with spurious minima in Hopfield Nets](https://www.coursera.org/learn/neural-networks/lecture/3FmJ8/dealing-with-spurious-minima-11-min)
 * Storage capacity of Hopfield nets limited by spurious minima
 * Using Hopfield’s storage rule the capacity of a totally connected net with N units is only about 0.15N memories.
   * At N bits per memory this is only 0.15*N^2 bits, which does not make efficient use of the bits required to store the weights.
@@ -879,7 +879,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
     * Use the perceptron convergence procedure to train each unit given the states of all the other units in that vector
     * Statisticians call this technique "pseudo-likelihood" -- "get one thing right, given all the other things" -- main difference: in Hopfield Net, weights are symmetric, so we need to get 2 sets of weights and avg them
 
-#### [Lecture 11c: Hopfield Nets with hidden units]()
+### [Lecture 11c: Hopfield Nets with hidden units]()
 * Weights on connections represent constraints on good interpretations, and by finding a low energy state, we find a good interpretation of the input vector.
 * A different computational role for Hopfield nets
   * see picture on slide 17 of file:///home/fred/Documents/articles/geoff_hinton's_machine_learning_coursera/lec11.pdf
@@ -901,7 +901,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
   * Learning (lecture 12) How do we learn the weights on the connections to the hidden units and between the hidden units?
   * Notice we don't have a supervisor anywhere, we're just showing it inputs and asking it to construct sensible interpretations.
 
-#### [Lecture 11d: Using stochastic units to improve search](https://www.coursera.org/learn/neural-networks/lecture/x0aji/using-stochastic-units-to-improv-search-11-min)
+### [Lecture 11d: Using stochastic units to improve search](https://www.coursera.org/learn/neural-networks/lecture/x0aji/using-stochastic-units-to-improv-search-11-min)
 * Explain how adding noise can let systems escape from local minima
 * Noisy networks find better energy minima
   * A Hopfield net always makes decisions that reduce the energy, which makes it impossible to escape from local minima.
@@ -954,7 +954,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
   * The only thing wrong with this analogy is that all the configurations have equal energy, so they all end up with the same probability.
     * In general we're interested in understanding systems where some configurations have lower energy than others.
 
-#### [Lecture 11e: How a Boltzmann Machine models data](https://www.coursera.org/learn/neural-networks/lecture/RAy0A/how-a-boltzmann-machine-models-data-12-min)
+### [Lecture 11e: How a Boltzmann Machine models data](https://www.coursera.org/learn/neural-networks/lecture/RAy0A/how-a-boltzmann-machine-models-data-12-min)
 * It models binary data vectors [**FWC - models truths, true/falses**]
 * Boltzmann Machines == Stochastic Hopfield nets with hidden units
 * Modeling binary data
@@ -1004,7 +1004,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
     * Each hidden configuration is an "explanation" of an observed visible configuration. Better explanations have lower energy
   * The reason we want to get samples from the posterior distribution, given a data vector, is we might want to know a good explanation for the observed data (anomaly?) and we might want to base our actions on that good explanation [FWC - p(info)?] but we also need to know this for learning.
 
-#### Lecture 11 Quiz
+### Lecture 11 Quiz
   1. If ΔE=3, then:
     * P(s=1) increases when T increases.
     * P(s=1) decreases when T increases. - CHECKED (b/c increasing T will increase ΔE which is P(s=0)-P(s=1) so decreasing in P(s=1))
