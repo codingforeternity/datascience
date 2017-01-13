@@ -878,3 +878,30 @@ Correct - The classifiers are fairly different, but overfitted to their training
   * Instead of trying to store vectors in one shot, cycle through training set multiple times
     * Use the perceptron convergence procedure to train each unit given the states of all the other units in that vector
     * Statisticians call this technique "pseudo-likelihood" -- "get one thing right, given all the other things" -- main difference: in Hopfield Net, weights are symmetric, so we need to get 2 sets of weights and avg them
+
+#### [Lecture 11c: Hopfield Nets with hidden units]()
+* Weights on connections represent constraints on good interpretations, and by finding a low energy state, we find a good interpretation of the input vector.
+* A different computational role for Hopfield nets
+  * see picture on slide 17 of file:///home/fred/Documents/articles/geoff_hinton's_machine_learning_coursera/lec11.pdf
+  * Instead of using the net to store memories, use it to construct interpretations [FWC - representations?] of sensory input.
+  * The input is represented by the visible units.
+  * The interpretation is represented by the states of the hidden units.
+  * The badness of the interpretation is represented by the energy.
+* What can we infer [FWC - interpret] about 3D edges from 2D lines in an image?
+  * A 2D line in an image could have been caused by many different (a family of) 3-D edges in the world.
+  * There are 2 degrees of freedom missing in the image that exist in the world, namely the depth of the 2 endpoints of the line.
+  * How can we use the low energy states of binary units to find interpretations of sensory input?
+* Analogy to physics
+  * There are only O(n^2) possible configurations of a volume of size O(n^3).  [Entropy is proportional to the horizon area.](http://www.scholarpedia.org/article/Bekenstein-Hawking_entropy)
+  * This is because there are linkages/relationships between the various 3D configurations that must be satisfied (but what are they?)
+  * If we have one "2D line" unit for each line in a picture, and one "3D line" unit for each possible interpretation of each "2D line" unit, then we can make the "3D line" interpretations *support* each other if their endpoints match in the picture (and *strongly support* if they join at right angles because we have knowledge about our world).
+  * A [Necker Cube](https://en.wikipedia.org/wiki/Necker_cube) thus has 2 low energy states, one for each front/back of the cube being in either the front or the back.
+* Two difficult computational issues
+  * Search (lecture 11) How do we avoid getting trapped in poor local minima of the energy function? Poor minima represent sub-optimal interpretations.
+  * Learning (lecture 12) How do we learn the weights on the connections to the hidden units and between the hidden units?
+  * Notice we don't have a supervisor anywhere, we're just showing it inputs and asking it to construct sensible interpretations.
+
+#### [Lecture 11d: Using stochastic units to improve search](https://www.coursera.org/learn/neural-networks/lecture/x0aji/using-stochastic-units-to-improv-search-11-min)
+* Explain how adding noise can let systems escape from local minima
+* Noisy networks find better energy minima
+  * 
