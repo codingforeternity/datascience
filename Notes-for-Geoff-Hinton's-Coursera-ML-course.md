@@ -829,7 +829,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
     * The s'es are all binary, 0 or 1 (so the state can be thought of as the corners of a hypercube).  The w's are not.
   * This simple quadratic energy function makes it possible for each unit to compute *locally* how it’s state affects the global energy
     * Energy gap "is the difference in the global configuration depending whether or not i is on"
-    * Energy gap = delta E_i = E(s_i=0) - E(s_i=1) = b_i + sum_j(s_j*w_ij)
+    * Energy gap = ΔE_i = E(s_i=0) - E(s_i=1) = b_i + sum_j(s_j*w_ij)
     * It's just a derivative (which, yes, seems like a silly thing to do b/c s'es are binary): del E / del s_i = b_i + sum_j(s_j*w_ij)  -- without the negative signs b/c they're for going downhill
 * Settling to an energy minimum
   * For each unit, chosen randomly, one at a time, figure out which of its two states gives a lower global energy, and put it in that state.  This is equivalent to saying "use the binary threshold decision rule."
@@ -848,9 +848,9 @@ Correct - The classifiers are fairly different, but overfitted to their training
     * Solving for variables in a series of equations (FWC)
 * Storing memories in a Hopfield net
   * If we use activities of 1 and -1, as opposed to 0 and 1, we can *store a binary state vector* by incrementing the weight between any two units by the product of their activities:
-    * delta w_ij = s_i * s_j
+    * Δw_ij = s_i * s_j
   * Slightly more complicated w/ 0 and 1:
-    * delta w_ij = 4(s_i-0.5)(s_j-0.5)
+    * Δw_ij = 4(s_i-0.5)(s_j-0.5)
   * Very simple rule that is not error-driven: both its strength (can be computed in true online fashion) and its weakness (not very efficient storage [FWC - lots of redundant info])
   * We treat biases as weights from a permanently on unit.
 
@@ -920,10 +920,10 @@ Correct - The classifiers are fairly different, but overfitted to their training
   * Replace the binary threshold units by binary stochastic units that make biased random decisions.
   * The "temperature" controls the amount of noise
   * Raising the noise level is equivalent to decreasing all the energy gaps between configurations.
-  * p(s_i=1) = 1 / (1 + exp(-delta(E)/T))
+  * p(s_i=1) = 1 / (1 + exp(-ΔE/T))
     * so when temperature, T, is high, these probabilities are all about 1/2
-    * as we lower the temperature, depending on the sign of delta(E), the unit will become more and more firmly on or off
-    * at T=0, which is what we use in a Hopfield net, the sign of delta(E) determines if the RHS goes to 0 or 1
+    * as we lower the temperature, depending on the sign of ΔE, the unit will become more and more firmly on or off
+    * at T=0, which is what we use in a Hopfield net, the sign of ΔE determines if the RHS goes to 0 or 1
 * Simulated annealing is a distraction
   * It was one of the ideas that led to Boltzmann machines but it’s a big distraction from the main ideas behind Boltzmann machines (so not be covered in this course).
   * From now on, we will use binary stochastic units that have a temperature of T=1
@@ -1004,11 +1004,10 @@ Correct - The classifiers are fairly different, but overfitted to their training
     * Each hidden configuration is an "explanation" of an observed visible configuration. Better explanations have lower energy
   * The reason we want to get samples from the posterior distribution, given a data vector, is we might want to know a good explanation for the observed data (anomaly?) and we might want to base our actions on that good explanation [FWC - p(info)?] but we also need to know this for learning.
 
-#### Quiz 11
-Lecture 11 Quiz
+#### Lecture 11 Quiz
   1. If ΔE=3, then:
     * P(s=1) increases when T increases.
-    * P(s=1) decreases when T increases. - CHECKED (b/c increasing T will increase delta(E) which is P(s=0)-P(s=1) so decreasing in P(s=1))
+    * P(s=1) decreases when T increases. - CHECKED (b/c increasing T will increase ΔE which is P(s=0)-P(s=1) so decreasing in P(s=1))
   2. The Hopfield network shown below has two visible units: V1 and V2. It has a connection between the two units, and each unit has a bias. Let W12=-10, b1=1, and b2=1 and the initial states of V1=0 and V2=0. If the network always updates both units simultaneously, then what is the lowest energy value that it will encounter (given those initial states)? If the network always updates the units one at a time, i.e. it alternates between updating V1 and updating V2, then what is the lowest energy value that it will encounter (given those initial states)? Write those two numbers with a comma between them. For example, if you think that the answer to that first question is 4, and that the answer to the second question is -7, then write this: 4, -7
     * A: 0,-1 (INCORRECT, needs a space after the comma
   3. This question is about Boltzmann Machines, a.k.a. a stochastic Hopfield networks. Recall from the lecture that when we pick a new state si for unit i, we do so in a stochastic way: p(si=1)=11+exp(−ΔE/T), and p(si=0)=1−p(si=1). Here, ΔE is the energy gap, i.e. the energy when the unit is off, minus the energy when the unit is on. T is the temperature. We can run our system with any temperature that we like, but the most commonly used temperatures are 0 and 1. When we want to explore the configurations of a Boltzmann Machine, we initialize it in some starting configuration, and then repeatedly choose a unit at random, and pick a new state for it, using the probability formula described above. Consider two small Boltzmann Machines with 10 units, with the same weights, but with different temperatures. One, the "cold" one, has temperature 0. The other, the "warm" one, has temperature 1. We run both of them for 1000 iterations (updates), as described above, and then we look at the configuration that we end up with after those 1000 updates. Which of the following statements are true? (Note that an "energy minimum" is what could also reasonably be called a "local energy minimum")
