@@ -955,4 +955,54 @@ Correct - The classifiers are fairly different, but overfitted to their training
     * In general we're interested in understanding systems where some configurations have lower energy than others.
 
 #### [Lecture 11e: How a Boltzmann Machine models data](https://www.coursera.org/learn/neural-networks/lecture/RAy0A/how-a-boltzmann-machine-models-data-12-min)
-* 
+* It models binary data vectors [**FWC - models truths, true/falses**]
+* Boltzmann Machines == Stochastic Hopfield nets with hidden units
+* Modeling binary data
+  * Given a training set of binary vectors, fit a model that will assign a probability to every possible binary vector.
+  * Useful for deciding if other binary vectors come from the same distribution
+    * E.g. documents represented by binary features that represents the occurrence of a particular word
+    * E.g. if you have a nuclear power plant and you want to detect if it's in an abnormal state (and thus a chance of blowing up) you want to be able to detect that w/out supervised learning (b/c you don't have any examples of blowing up)
+    * **FWC - wouldn't really be necessary for anomaly detection of company characteristics b/c we have supervised learning for that (we know when there's an anomaly based on trading volume/p(info))... but perhaps that's actually not true; perhaps this could be a better early warning signal before information is known to the market**
+  * If we have models of several different distributions it can be used to compute the posterior probability that a particular distribution produced the observed data.
+    * p(model_i | data) = p(data | model_i) / sum_j[p(data | model_j)]
+* How a causal model generates data
+  * First generate states of some latent (hidden) variables and then use those to generate the binary data
+  * In a causal-generative model we generate data in two sequential steps
+    * First pick the latent/hidden, h, states from their prior distribution
+    * Then pick the visible states from their conditional distribution given the hidden states.
+  * The probability of generating a visible vector, v, is computed by summing over all possible hidden states. Each hidden state is an "explanation" of v.
+    * p(v) = sum_h[ p(h) * p(v|h) ]
+  * "Factor analysis, for example, is a causal model that uses continuous variables"
+* How a Boltzmann Machine generates data
+  * A different generative model; *not* a causal-generative model
+  * Instead, everything is defined in terms of the energies of joint configurations of the visible and hidden units.
+  * The energies of joint configurations are related to their probabilities in 2 ways (that both agree w/ each other).
+    1. Simply define the probability as follows: p(v,h) <proportional-to> exp(-E(v,h))
+    2. Or define the probability to be the probability of finding the network in that joint configuration after we have updated all of the stochastic binary units many times
+* The (negative) Energy of a joint configuration
+  * -E(v,h) = <visible-biases> + <hidden-biases> + <vis-vis-weights> + <vis-hid-weights> + <hid-hid-weights> 
+  * -E(v,h) = sum_i[v_i*b_i] + sum_k[h_k*b_k] + sum_{i<j}[v_i*v_j*w_ij] + sum_{i,k}[v_i*h_k*w_ik] + sum_{k<l}[h_k*h_l*w_kl]
+* Using energies to define probabilities
+  * The probability of a *joint* configuration over *both visible and hidden units* depends on the energy of that joint configuration compared with the energy of all other joint configurations.
+    * p(v,h) = exp(-E(v,h)) / sum_{u,g}[exp(-E(u,g))] ... physicists call the denominator the "partition function" (note that it has exponential number of terms)
+  * The probability of a configuration of the *visible units* [only] is the sum of the probabilities of all the joint configurations that contain it.
+    * p(v) = sum_h[exp(-E(v,h))) / sum_{u,g}[exp(-E(u,g))]
+* An example of how weights define a distribution
+  * example shows how to, given all possible v-h pairs -> compute -E -> compute exp(-E) -> p(v,h) -> p(v)
+  * slide 35 of lec11.pdf
+* Getting a (global, v & h) sample from the model
+  * If there are more than a few hidden units, we cannot compute the normalizing term (the partition function) because it has exponentially many terms.
+  * So we use Markov Chain Monte Carlo (MCMC) to get samples from the model starting from a random global configuration and keep picking units at random allowing them to stochastically update their states based on energy gaps
+  * Run the Markov chain until it reaches its stationary distribution (thermal equilibrium at a temperature of 1).
+  * The probability of a global configuration is then related to its energy by the Boltzmann distribution
+    * p(v,h) <proportional-to> exp(-E(v,h))
+* Getting a sample from the posterior distribution over hidden configurations *for a given (visible) data vector* (which is needed for learning)
+  * The number of possible hidden configurations is exponential so we need MCMC to sample from the posterior.
+    * It is just the same as getting a sample from the model, except that we keep the *visible units clamped* [FWC - b/c they are given] to the given data vector.
+    * Only the hidden units are allowed to change states
+  * Samples from the posterior are required for learning the weights.
+    * Each hidden configuration is an "explanation" of an observed visible configuration. Better explanations have lower energy
+  * The reason we want to get samples from the posterior distribution, given a data vector, is we might want to know a good explanation for the observed data (anomaly?) and we might want to base our actions on that good explanation [FWC - p(info)?] but we also need to know this for learning.
+
+#### Quiz 11
+
