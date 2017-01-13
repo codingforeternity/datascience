@@ -904,4 +904,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
 #### [Lecture 11d: Using stochastic units to improve search](https://www.coursera.org/learn/neural-networks/lecture/x0aji/using-stochastic-units-to-improv-search-11-min)
 * Explain how adding noise can let systems escape from local minima
 * Noisy networks find better energy minima
-  * 
+  * A Hopfield net always makes decisions that reduce the energy, which makes it impossible to escape from local minima.
+  * We can use random noise to escape from poor minima.
+    * Start with a lot of noise so its easy to cross energy barriers.
+    * Slowly reduce the noise so that the system ends up in a deep minimum. This is "simulated annealing" (Kirkpatrick et.al. 1981)
