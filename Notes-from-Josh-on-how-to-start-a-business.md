@@ -16,6 +16,9 @@ What follows are some notes based on a conversation I had with Josh on 1/12/17.
       2. by buying the shares w/ cash (good - former employers can't assert ownership of my $)
     * (even though it's not true) don't tell lawyer just want to be a small business (b/c then not worth his while)... tell him I'm going for a Series A (VC financing)
     * todo: lookup what a "cap table" is
+    * Phil says:
+      * LLC if you're just running a company -- too difficult to have VC investors (they have to become members
+      * C Corp if you're considering taking future investments -- easy to sell (preferred) shares to VC
   2. Employees/Advisors
     * have every person sign an agreement, no matter how small (recall: Facebook)
     * don't give out more than a 1/4 point of equity to anyone (it would still need to vest, and you can let people go before vesting)
