@@ -908,3 +908,51 @@ Correct - The classifiers are fairly different, but overfitted to their training
   * We can use random noise to escape from poor minima.
     * Start with a lot of noise so its easy to cross energy barriers.
     * Slowly reduce the noise so that the system ends up in a deep minimum. This is "simulated annealing" (Kirkpatrick et.al. 1981)
+  * Effectively, temperature flattens the energy landscape making it easier to escape local minima
+  * Example:
+    * A := local minima, B := global minima
+    * High temperature transition probabilities: p(A->B)=0.2, p(B->A)=0.1
+    * Low temperature: p(A->B)=0.001, p(B->A)=0.000001
+      * probability gets smaller, but ratio gets better (2 to 1000)
+    * But if we run for a long time at low temperature, convergence will take forever.
+      * Good compromise: start high and gradually reduce (simulated annealing)
+* Stochastic binary units
+  * Replace the binary threshold units by binary stochastic units that make biased random decisions.
+  * The "temperature" controls the amount of noise
+  * Raising the noise level is equivalent to decreasing all the energy gaps between configurations.
+  * p(s_i=1) = 1 / (1 + exp(-delta(E)/T))
+    * so when temperature, T, is high, these probabilities are all about 1/2
+    * as we lower the temperature, depending on the sign of delta(E), the unit will become more and more firmly on or off
+    * at T=0, which is what we use in a Hopfield net, the sign of delta(E) determines if the RHS goes to 0 or 1
+* Simulated annealing is a distraction
+  * It was one of the ideas that led to Boltzmann machines but it’s a big distraction from the main ideas behind Boltzmann machines (so not be covered in this course).
+  * From now on, we will use binary stochastic units that have a temperature of T=1
+* Thermal equilibrium at a temperature of 1
+  * Difficult concept!
+    * Does NOT mean that the system has settled down into the lowest energy config
+    * The thing that settles down is the *probability distribution* over configurations
+    * Which settles to the *stationary distribution*
+  * Nice intuitive way to think about it
+    * Imagine a huge ensemble of systems that all have exactly the same energy fn (a very large number of stochastic Hopfield nets, all with the same weights)
+    * The probability of a configuration is just the fraction of the systems that have that config
+    * FWC - this is, again, like the difference between a grid over inputs vs. a (Bayesian) grid over parameters (configs)
+    * FWC - like in Sean Carroll's book: at a given energy in a box how many configs of the particles in that box are there?
+* Approaching thermal equilibrium
+  * We start with any distribution we like over all the identical systems.
+    * We could start with all the systems in the same configuration (PDF: all 0s except for one 1)
+    * Or with an equal number of systems in each possible configuration (PDF: uniform)
+  * Then we keep applying our stochastic update rule to pick the next configuration for each individual system.
+  * After running the systems stochastically in the right way, we *may* eventually reach a situation where *the fraction of systems in each configuration remains constant*.
+    * This is the stationary distribution that physicists call thermal equilibrium.
+    * Any given system keeps changing its configuration, but the fraction of systems in each configuration does not change (because we have many, many more systems than configs)
+* An analogy
+  * Imagine a casino in Las Vegas that is full of card dealers (we need many more than 52! of them).
+  * We start with all the card packs in standard order (A, K, Q, etc.) and then the dealers all start shuffling their packs.
+    * After a few time steps, the king of spades still has a good chance of being next to the queen of spades. The packs have not yet forgotten where they started.
+    * After prolonged shuffling, the packs will have forgotten where they started. There will be an equal number of packs in each of the 52! possible orders.
+    * Once equilibrium has been reached, the number of packs that leave a configuration at each time step will be equal to the number that enter the configuration.
+  * The only thing wrong with this analogy is that all the configurations have equal energy, so they all end up with the same probability.
+    * In general we're interested in understanding systems where some configurations have lower energy than others.
+
+#### [Lecture 11e: How a Boltzmann Machine models data](https://www.coursera.org/learn/neural-networks/lecture/RAy0A/how-a-boltzmann-machine-models-data-12-min)
+* 
