@@ -28,7 +28,7 @@ What follows are some notes based on a conversation I had with Josh on 1/12/17.
       * used to be $1k up-front and then 10 later on, but companies were taking advantage of the system and filing definition-less, TBD disclosures so that they could use them to assert retroactive ownership of ideas
   4. Marketing
     * hand out hats with company logo to everyone
-    * market up the wazoo -- really important
+    * market up the wazoo -- biz cards, shirts, etc. -- really important
   5. Other jobs / future directions
     * count on this being a 5 year thing
     * if go and get a job then having a company allows for a place to carve out IP
