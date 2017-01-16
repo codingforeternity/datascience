@@ -1127,3 +1127,24 @@ configuration.
     * Once the weights grow, the Markov chain mixes more slowly so we use CD3.
     * Once the weights have grown more we use CD10.
   * By increasing the number of steps as the weights grow, we can keep the learning working well, even as the mixing rate of the Markov chain is going down
+
+### [Lecture 12d: An example of Contrastive Divergence Learning](https://www.coursera.org/learn/neural-networks/lecture/jwcX5/an-example-of-rbm-learning-7-mins)
+* How to learn a set of features that are good for reconstructing images of the digit '2'
+  1. real data (reality): 16x16 pixel image
+  2. -> 50 binary neurons that learn features
+    * *increment* weights between pixels and an active (real) feature, v_i0 (i.e. increment w_ij0 if v_i0 and h_j0 are both 'on') when the network is looking at data, which will lower the energy of the data (and any hidden pattern that went with it)
+  3. -> reconstructed data (better than reality): 16x16 pixel image
+  4. -> 50 binary neurons that learn features
+    * *decrement* weights between an active (reconstructed) pixel, v_i1, and an active feature, h_j1 (which will raise the energy of a reconstruction)
+    * Near the beginning of learning, when the weights are random, the reconstruction will almost surely have lower weights than the real data b/c the reconstruction is what the network likes to reproduce on the visible units, given the hidden pattern of activity
+* The weights of the 50 feature detectors
+  * Initially, after only a few steps, global feature vectors are learned
+  * Specialization happens eventually (e.g. features to recognize the top of a '2')
+* How well can we reconstruct digit images from the binary feature activations?
+  * Compare reconstruction of a '2' which yields something that looks like a '2' vs. reconstruction of a '3' which also yields something that looks like a garbled '2'.  The network tries to see every image as a '2'.
+* Some features learned in the *first hidden layer* of a model of all 10 digit classes using 500 hidden units.
+  * *Feature detectors* can pick up on long-range irregularities (e.g. pixel 1 on while 237 is off)
+  * See slide 41 of lec12.pdf
+    * 2nd row, 6th column
+    * shows pairs of side-by-side pixels that cannot be both on or both off
+    * sorta like the least significant digit in a binary number that alternates between 0 and 1
