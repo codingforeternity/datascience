@@ -135,7 +135,8 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
 * a simpler way to learn feature vectors of words (Collobert,  Weston, 2008)
   * introduction to negative sampling
 * eventually apply dimension reduction (t-SNE) to display these vectors in a 2D map
-<h3>Week 4 Quiz<h3/>
+
+### Week 4 Quiz
 * (for some reason I can't get numbered lists to work unless they are sublists)
   1. The cross-entropy cost function with an *n*-way softmax unit (a softmax unit with *n* different outputs) is equivalent to: (answer) the cross entropy cost function with n logistic units
     * FWC - reason: b/c softmax is just a scaling of logistic
@@ -972,7 +973,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
     * Then pick the visible states from their conditional distribution given the hidden states.
   * The probability of generating a visible vector, v, is computed by summing over all possible hidden states. Each hidden state is an "explanation" of v.
     * p(v) = sum_h[ p(h) * p(v|h) ]
-  * "Factor analysis, for example, is a causal model that uses continuous variables"
+  * "**Factor analysis, for example, is a causal model that uses continuous variables**"
 * How a Boltzmann Machine generates data
   * A different generative model; *not* a causal-generative model
   * Instead, everything is defined in terms of the energies of joint configurations of the visible and hidden units.
@@ -1032,7 +1033,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
   * to know how to change w1 or w5 we must know w3
 * A very surprising fact
   * Everything that one weight needs to know about the other weights and the data is contained in the difference of two correlations.
-  * del log(p(v)) / del w_ij = <s_i,s_j>_v - <s_i,s_j>_model
+  * del log(p(v)) / del w_ij = <s_i,s_j>_v - <s_i,s_j>_model ... using <> now to denote *expected value*
   * derivative of log P of one training vector, v, under the model: del log(p(v)) / del w_ij
   * expected value of product of states, i and j, when the network settles at thermal equilibrium when v is clamped on visible units: <s_i,s_j>_v
     * i.e. how often are i and j on together, when v is clamped
@@ -1075,3 +1076,54 @@ temperature of 1 (same as in Positive Phase)
   * If a mode has more fantasy particles than data, the energy surface is raised until the fantasy particles escape.
   * The energy surface is *being changed* to help mixing in addition to defining the model.  To have the effect of a faster mixing Markov chain.
   * Once the fantasy particles have filled in a hole, they rush off somewhere else to deal with the next problem.
+
+### [Lecture 12c: Restricted Boltzmann Machines](https://www.coursera.org/learn/neural-networks/lecture/TIqjI/restricted-boltzmann-machines-11-min)
+* Restrict the connectivity to make inference and learning easier.
+  * Only one layer of hidden units.
+  * No connections between hidden units.
+  * I.e. a bipartitie graph
+* In an RBM it only takes one step to reach thermal equilibrium when the visible units are clamped.
+  * So we can quickly get the exact value of <v_i, h_j>_v
+  * p(h_j=1) = 1 / (1 + exp(-b_j-sum_i[v_i * w_ij])) ... the logistic function
+* PCD: An efficient mini-batch learning procedure for Restricted Boltzmann Machines (Tieleman, 2008)
+  * Positive phase: Clamp a datavector on the visible units.
+    * Compute the exact value of <v_i, h_j> for all pairs of a visible and a hidden unit.
+    * For every connected pair of units, average <v_i, h_j> over all data in the mini-batch.
+  * Negative phase: Keep a set of "fantasy particles". Each particle has a value that is a global
+configuration.
+    * Update each fantasy particle a few times using alternating parallel updates.
+    * For every connected pair of units, average v_i->h_j over all the fantasy particles.
+  * Allows RBMs to build good density models of sets of binary vectors (i.e. to model their probability density functions)
+* A picture of an inefficient version of the Boltzmann machine learning algorithm for an RBM
+  * Use times now not to denote weight updates but to denote steps in a Markov chain
+  * t=0: start by clamping a datavector on the visible units
+    * update all hidden units (in parallel) given visible by computing <v_i, h_j>_0
+  * t=1: update all the visible units (in parallel) given the new hidden units (a "reconstruction" of v)
+    * update hidden again: <v_i, h_j>_1
+  * t=2... repeat until
+  * t=infinity: thermal equilibrium: <v_i, h_j>_infinity (a fantasy)
+  * then the learning rule is: Δw_ij = epsilon(<v_i, h_j>_0 - <v_i, h_j>_infinity)
+  * Of course the problem is that we have to run this for many repetitions to reach thermal equilibrium else the learning may go wrong.
+    * Actually this last statement is misleading. It turns out to still work, even if we only run the learning for a short time.
+* Contrastive divergence: A very surprising short-cut
+  * stop after computing <v_i, h_j>_1
+  * Instead of measuring the statistics at equilibrium, we measure after one full update of the Markov chain
+  * Δw_ij = epsilon(<v_i, h_j>_0 - <v_i, h_j>_1) ... this is CD1 (constrastive divergence, 1 step)
+  * Clearly this is not doing maximum likelihood learning b/c the term we're using for the negative statistics is wrong
+  * This is not following the gradient of the log likelihood. But it works well.
+* Why does the shortcut work?
+  * If we start at the data, the Markov chain wanders away from the data and towards things that it likes more--towards things it likes b/c of its initial weights, rather than b/c of the data
+    * We can see what direction it is wandering in after only a few steps
+    * When we know the weights are bad, it is a waste of time to let it go all the way to equilibrium
+  * All we need to do is lower the probability of the confabulations/reconstructions (the former is a psych term) it produces after one full step and raise the probability of the data.
+    * Then it will stop wandering away.
+    * The learning cancels out once the confabulations and the data have the same distribution.
+* When does the shortcut fail?
+  * We need to worry about regions of the data-space that the model likes but which are very far from any data.
+    * [FWC - because they won't be ever be affected by a negative phase b/c we're only going 1 step which doesn't move very far from positive phase / real datapoints]
+    * These low energy holes cause the normalization term (denominator) to be big and we cannot sense them if we use the shortcut.
+    * Persistent particles would eventually fall into a hole, cause it to fill up then move on to another hole.
+  * A good compromise between speed and correctness is to start with small weights and use CD1 (i.e. use one full step to get the “negative data”).
+    * Once the weights grow, the Markov chain mixes more slowly so we use CD3.
+    * Once the weights have grown more we use CD10.
+  * By increasing the number of steps as the weights grow, we can keep the learning working well, even as the mixing rate of the Markov chain is going down
