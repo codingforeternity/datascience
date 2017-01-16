@@ -656,10 +656,10 @@ of the gating network (wrt the input to the softmax, which is called the "logit"
     * del Loss / del x_i = p_i ((t-y_i)^2 - Loss)
       * This gradient will increase p_i for all experts that produce below avg SE
       * This is what causes specialization.
-  * There's a better cost fn though.
+  * There's a better cost function though.
 * **A better cost function for mixtures of experts (Jacobs, Jordan, Nowlan & Hinton, 1991)**
   * Think of each expert as making a prediction that is a Gaussian distribution around its output (with variance 1)
-  * Think of the manager as deciding on a scale for each of these Gaussians. The scale is called a "mixing proportion". e.g {0.4 0.6}
+  * Think of the manager as deciding on a scale for each of these Gaussians. The scale is called a "mixing proportion" e.g {0.4 0.6} or a "mixing rate"
   * Maximize the log probability of the target value under this mixture [FWC - sum] of Gaussians model (i.e. the sum of the two scaled Gaussians).
   * \<P of target val on case c given Mixture of Experts\> = 
     * sum_i[ \<mixing proportion i for case c, p_ic\> exp(-0.5(t_c-y_ic)^2) / \<normalization term for Gaussian w/ sig^2=1, sqrt(2pi)\> ]
@@ -1022,4 +1022,56 @@ Correct - The classifiers are fairly different, but overfitted to their training
   5. The figure below shows a Hopfield network with five binary threshold units: a, b, c, d, and e. The network has many connections, but no biases. Let Wac=Wbc=1, Wce=Wcd=2, Wbe=−3, Wad=−2, and Wde=3. What is the configuration that has the lowest energy? What is the configuration that has the second lowest energy (considering all configurations, not just those that are energy minima)? A configuration consists of a state for each unit. Write "1" for a unit that's on, and "0" for a unit that's off. To describe a configuration, first write the state of unit a, then the state of unit b, etc. For example, if you want to describe the configuration where units a and d are on and the other units are off, then write 10010. For this question you have to describe two configurations, and write them with a comma in between. For example, if you think that the lowest energy configuration is the one where only units a and d are on, and that the second lowest energy configuration is the one where only units b, d, and e are on, then you should write this: 10010, 01011
   * A: "00111, 10111" (with a space!)
 
+### [Lecture 12a: The Boltzmann Machine learning algorithm](https://www.coursera.org/learn/neural-networks/lecture/iitiK/boltzmann-machine-learning-12-min)
+* Unsupervised learning, learn an input vector "although it might make more sense to think of them as output vectors"
+* Goal: maximize the product of the probabilities that the Boltzmann machine assigns to the binary vectors in the training set.
+* What exactly is being learned by the Boltzmann Machine learning algorithm? A: Parameters that define a distribution over the visible vectors.
+* Why the learning could be difficult
+  * Consider a chain of units with visible units at the ends
+  * If the training set consists of (1,0) and (0,1) we want the product of all the weights to be negative (because need the change the sign from 1 to 0/-1 or from 0/-1 to 1 when traversing from visible to visible)
+  * to know how to change w1 or w5 we must know w3
+* A very surprising fact
+  * Everything that one weight needs to know about the other weights and the data is contained in the difference of two correlations.
+  * del log(p(v)) / del w_ij = <s_i,s_j>_v - <s_i,s_j>_model
+  * derivative of log P of one training vector, v, under the model: del log(p(v)) / del w_ij
+  * expected value of product of states, i and j, when the network settles at thermal equilibrium when v is clamped on visible units: <s_i,s_j>_v
+    * i.e. how often are i and j on together, when v is clamped
+  * expected value of product of states at thermal equilibrium with no clamping: <s_i,s_j>_model
+  * learning rule is then: Δw_ij ∝ <s_i,s_j>_data - <s_i,s_j>_model
+  * expected product of the activities averaged over all visible values in the training set: <s_i,s_j>_data
+  * 1st term: increase the weights in proportion to the product of activities units have when you're presenting data (simplest form of Hebian learning rule, Donald Heb)
+  * 2nd term: reducing weights in proportion to how often two units are on together when sampling from the model's distribution (w/out this adjustment/controlling term, the learning blows up and all weights become very positive)
+  * 1st term: storage term for Hopfield Net
+  * 2nd term: term for getting rid of suprious minima (i.e. how much unlearning to do)
+* Why is the derivative so simple?
+  * The probability of a global configuration *at thermal equilibrium* is an exponential function of its energy: exp(-E)
+    * So settling to equilibrium makes the log probability a linear function of the energy.
+  * The energy is a linear function of the weights and states, so:
+    * - del E / del w_ij = s_i * s_j
+  * The process of settling to thermal equilibrium propagates information about the weights.
+    * We don’t need backprop.
+    * We do need 2 stages: we need to settle with the data, and we need to settle with no data, but notice that the network is behaving approx. in the same way btw those 2 phases, the unit deep within the network is doing the same thing, just with different boundary conditions
+* Why do we need the negative phase?
+  * recall: p(v) = sum_h[exp(-E(v,h))] / sum_u[ sum_g[ exp(-E(u,g)) ] ]
+  * numerator: the positive phase (first term) finds hidden configurations that work well with v and lowers their energies
+  * denominator: the negative phase (second term) finds the joint configurations that are the best competitors and raises their energies
+  * First term is making the top line big, and second term is making the bottom line small
+* An inefficient way to collect the statistics required for learning (Hinton and Sejnowski (1983)
+  * *Positive phase*: Clamp a data vector on the visible units and set the hidden units to random binary states.
+    1. Update the *hidden units* one at a time until the network reaches thermal equilibrium at a temperature of 1
+    2. Sample <s_i,s_j> for every connected pair of units
+    3. Repeat for all data vectors in the training set and average
+  * *Negative phase*: Set all the units (h and v) to random binary states.
+    1. Update *all* the units one at a time until the network reaches thermal equilibrium at a
+temperature of 1 (same as in Positive Phase)
+    2. Sample <s_i,s_j> for every connected pair of units.
+    3. Repeat many times (how many?) and average to get good estimates.
+  * Especially in the Negative Phase expect the energy landscape to have many minima that are fairly separated and have about the same energy
+  * This is b/c we're going to be using Boltzmann Machines to do things like model a set of images, and we expect there to be reasonable images (w/ low energy, small fraction of the space) and unreasonable images (w/ much higher E, high fraction of the space).  If have multiple modes, it's very unclear how many times this process needs to be repeated to sample all those modes.
 
+### [Lecture 12b: More efficient ways to get the statistics](https://www.coursera.org/learn/neural-networks/lecture/wlELo/optional-video-more-efficient-ways-to-get-the-statistics-15-mins) ADVANCED MATERIAL: NOT ON QUIZZES OR FINAL TEST
+* One way to tell if you've learned a good model is after learning, remove all the input, and just generate samples.  Run the Markov Chain for a long time until it's burned in, and then look at the samples you get
+* How fantasy particles move between the model’s modes
+  * If a mode has more fantasy particles than data, the energy surface is raised until the fantasy particles escape.
+  * The energy surface is *being changed* to help mixing in addition to defining the model.  To have the effect of a faster mixing Markov chain.
+  * Once the fantasy particles have filled in a hole, they rush off somewhere else to deal with the next problem.
