@@ -632,7 +632,7 @@ die
 * **Partitioning based on input alone versus partitioning based on the input-output relationship** [FWC - I tried this sort of clustering once at HBK in an Excel spreadsheet wrt SRs but didn't get anywhere]
   * We need to cluster the training cases into subsets, one for each local model.
   * The aim of the clustering is NOT to find clusters of similar input vectors.
-  * We want each cluster to have a relationship between input and output that can be well-modeled by one local model.
+  * We want each cluster to have a relationship between input and output that can be well-modeled by one local model. [FWC - think scatterplot smoothing (one model per datapoint) or computing a different model for different buckets of the data]
 * An error function that encourages *cooperation*
   * Loss = (t-E[y_i])^2
   * This will overfit badly because models will learn to "fix up" errors that other models make.
