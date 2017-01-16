@@ -1,3 +1,11 @@
+#### Learn differences, not similarities
+* [Game Theory Reveals the Future of Deep Learning](http://www.kdnuggets.com/2016/12/game-theory-reveals-future-deep-learning.html)
+* Real learning happens by learning differences, not similarities.  Humans don't learn the difference between cats and dogs by looking at 1000 cats and 1000 dogs and building models of each.  A human may see a cat one day, then a dog a few days later, then a horse a few days after that, and then a picture of a cat again.  Yet somehow Cat, as a concept, is learned.
+* This starts with an empty container suited for holding the representation of a concept.  The empty concept container doesn't start out empty however, it gets initialized with the features of all other concepts negated--the "nots" of everything else.  These "nots," these differences, are removed (think: marble sculpting) when it is learned that they do not apply.  So, for example, when Cat is learned, the Cat Container starts out containing {not Dog, not Horse} as well as the negations of all of their accompanying characteristics.
+* Perhaps this is related to Bayesian fitting (as opposed to Frequentist).  An empty Concept Container starts out with every model and then learns which are more probable by whittling away those that don't fit the data well.
+* The grid search is through feature space (with 1000 different features/models to start), not through concept instance space (with 1000 different instances of cats to start).  I.e. search models, don't search data points.
+* "specifies a communication protocol that tracks how often an algorithm makes queries about the objective" [https://arxiv.org/pdf/1509.08627.pdf] i.e. learn Cat from {2 cats a dog and a horse}, not from {1000 cats}
+
 #### Selective HTTP (12/23/16)
 * Once a page has been served to a client, the thing doing the serving (e.g. the browser) should know what the important components of the page are (e.g. by what users choose to highlight, or ?) such that future requests can be for only the important components.
 * This may be useful for low bandwidth connections: [How to Share Your Phone’s Internet Connection](http://time.com/4437987/how-to-use-iphone-mobile-hotspot/)
