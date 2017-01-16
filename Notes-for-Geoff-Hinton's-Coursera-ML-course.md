@@ -1148,3 +1148,42 @@ configuration.
     * 2nd row, 6th column
     * shows pairs of side-by-side pixels that cannot be both on or both off
     * sorta like the least significant digit in a binary number that alternates between 0 and 1
+
+### [Lecture 12e: RBMs for collaborative filtering](https://www.coursera.org/learn/neural-networks/lecture/r4R4E/rbms-for-collaborative-filtering-8-mins)
+* "Not the type of thing that anybody at the time thought an RBM could deal with.  There's an important trick to get an RBM to deal" with the sparsity of the data.
+* Collaborative filtering: The Netflix competition
+  * You are given most of the ratings that half a million Users gave to 18,000 Movies on a scale from 1
+to 5.
+  * Each user only rates a small fraction of the movies.
+  * You have to predict the ratings users gave to the held out movies.
+  * If you win you get $1,000,000
+* Lets (start) by using a "language model"
+  * The data is strings of triples of the form: User, Movie, rating.
+    * U2 M1 5, U2 M3 1, U4 M1 4, U4 M3 ?
+  * All we have to do is to predict the next "word" well and we will get rich.
+  * Convert each user into a <user-feature-vector> and each movie into a <movie-feature-vector> and from those try to predict the rating
+  * Obvious way to do this is to put in a big hidden layer, which was tried, and no better than a very simple method: dot product of <ufv> and <mfv> (not even a softmax).
+    * This is exactly equivalent to doing matrix factorization: <users_x_features_matrix> * <features_x_movies_matrix>
+    * Matrix factorization model is most commonly used model for collaborative filtering like this, and it works pretty well.
+* An RBM alternative to matrix factorization
+  * treat each user as a training case
+    * A user is a vector of movie ratings.
+    * There is one visible unit per movie and its a 5-way softmax.
+    * The CD learning rule for a softmax is the same as for a binary unit.
+    * There are ~100 hidden units.
+  * One of the visible values is unknown.
+    * It needs to be filled in by the model.
+* How to avoid dealing with all those missing ratings
+  * We don't want an RBM to have to deal with 18,000 visible units, but with only a few missing values
+  * For each user, use an RBM that only has visible units for the movies the user rated.
+  * So instead of one RBM for all users, we have a different RBM for every user.
+    * All these RBMs use the same hidden units.
+    * The weights from each hidden unit to each movie are shared by all the users who rated that movie.
+  * Each user-specific RBM only gets one training case!
+    * But the weight-sharing makes this OK.
+  * The models are trained with CD1 then CD3, CD5 & CD9.
+* How well does it work? (Salakhutdinov et al. 2007)
+  * **RBMs [collaborative filtering] work about as well as matrix factorization methods, but they give very different errors.**
+    * So averaging the predictions of RBMs with the predictions of matrix-factorization is a big win.
+  * The winning group used multiple different RBM models in their average of over a hundred models.
+    * Their main models were matrix factorization and RBMs (I think).
