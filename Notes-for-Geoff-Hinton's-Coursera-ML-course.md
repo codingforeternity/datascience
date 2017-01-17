@@ -25,12 +25,12 @@ Also see accompanying green Staples notebook.
 ### Week 3: Learning the weights of a linear neuron
 * Instead of showing the weights get closer to a good set of weights (i.e. perceptrons, which suffer from 2 good set of weights do not average to a good set) show that actual output values get closer to the target values.
   * In perceptron learning the outputs can get farther away from the targets, even though the weights are getting closer.
-* The "delta rule" for learning: delta w_i = epsilon * x_i * (t - y) ... where epsilon := "learning rate", t := target/true output, and y := estimated output
+* The "delta rule" for learning: Δw_i = epsilon * x_i * (t - y) ... where epsilon := "learning rate", t := target/true output, and y := estimated output
   * Derivation: Error = 0.5 * Sum_{n in training}[(t_n - y_n)^2] ... the 1/2 is only there to make the 2 in the derivative cancel
-  * Differentiate the error wrt one of the weights, w_i: del E / del w_i = 0.5 * Sum_n[del y_n / del w_i * d E_n / d y_n] ... Chain Rule ("easy to remember, just cancel those 2 del y_ns ... but only when there aren't any mathematicians looking) ... = -Sum_n[x_{i,n} * (t_n - y_n)]
-    * del y_n / del w_i = x_{i,n} because y_n = w_i * x_{i,n}
-    * d E_n / d y_n is just the derivative of the (squared) Error function
-  * Therefore: delta w_i = -epsilon * del E / del w_i
+  * Differentiate the error wrt one of the weights, w_i: ∂E/∂w_i = 0.5 * Sum_n[∂y_n/∂w_i * ∂E_n/∂y_n] ... Chain Rule ("easy to remember, just cancel those 2 ∂y_ns ... but only when there aren't any mathematicians looking) ... = -Sum_n[x_{i,n} * (t_n - y_n)]
+    * ∂y_n/∂w_i = x_{i,n} because y_n = w_i * x_{i,n}
+    * dE_n/dy_n is just the derivative of the (squared) Error function
+  * Therefore: Δw_i = -epsilon * ∂E/∂w_i
 
 ### Week 3: The error surface for a linear neuron
 * Difference between "batch" and "on-line"
@@ -50,7 +50,7 @@ Also see accompanying green Staples notebook.
   * Very inefficient--requires multiple forward passes on a set of training cases just to update one weight.  Backprop much better "by a factor of the number of weights in the network."
   * Could randomly perturb all the weights in parallel and correlate performance gain w/ weight changes, but not much better b/c requires lots of trials on each training case to "see" the effect of changing one weight through the noise created by changing all the others (FWC - reminds me of the Shapley optimization)
   * Better idea: randomly perturb the activities of the hidden units.  Once we know how we want a hidden activity to change on a training case, we can compute how to change the weights.  There are fewer activities than weights, but backprop still wins by a factor of the number of neurons.
-  * Finite Difference Approximation (compute +/- epsilon changes for each weight and move in that direction) works, but backprop finds the exact gradient (**del E / del w_{i,j}** = Sum_j[del z_j / del w_{i,j} * del E / del z_j] = Sum_j[w_{i,j} * del E / del z_j]) much more quickly.
+  * Finite Difference Approximation (compute +/- epsilon changes for each weight and move in that direction) works, but backprop finds the exact gradient (**∂E/∂w_{i,j}** = Sum_j[∂z_j/∂w_{i,j} * ∂E/∂z_j] = Sum_j[w_{i,j} * ∂E/∂z_j]) much more quickly.
  * FWC - machine learning (backprop) is all about the learning rate!  So you can either be smart (and use backprop) or buy more computers.  You're only constrained if you need both.  Search Google for: "machine learning for the maximization of an arbitrary function"
   * *Instead of using pre-set coefficients (desired activities) to train engineered features, use error derivatives wrt hidden activities.*  We can compute error derivatives for all of the hidden units efficiently at the same time: Once we have the error derivatives for the hidden activities (hidden neuron output) it's easy to compute the (input) weights going into a hidden unit.
 
@@ -108,7 +108,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
 * The output units in a softmax group use a non-local non-linearity:
   * z_i input to final layer, Sum_i[z_i] != 1
   * then scale "softmax group(s)" so that they sum to 1: y_i = **e^**(z_i) / Sum_j[**e^**(z_j)] ... (**don't forget the e's!**)
-  * **del y_i / del z_i = y_i * (1 - y_i)** ... not trivial to derive b/c of all the terms in the numerator above
+  * **∂y_i/∂z_i = y_i * (1 - y_i)** ... not trivial to derive b/c of all the terms in the numerator above
 * **Cross-entropy**: the *right* cost function to use with softmax
   * The right cost function is the **negative log probability of the right answer**.  [FWC - because the answer is a 1-hot vector with a 1 at the right answer or this [from Sebastian Ruder](http://sebastianruder.com/word-embeddings-softmax/): "have a look at [Karpathy's explanation](http://cs231n.github.io/linear-classify/#softmax-classifier) to gain some more intuitions about the connection between softmax and cross-entropy"]
     * C = -Sum_j[t_j ln(y_j)] ... where t_j == 1 for only one j (note the multiplication of t_j and ln(y_j) not subtraction)
@@ -116,7 +116,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   * C has a very big gradient when the target value is 1 and the output is almost zero.
     * A value of 0.000001 is much better than 0.000000001 (for a target value of 1)
     * Effectively, the steepness of dC/dy exactly balances the flatness of dy/dz
-      * del C / del z_i = Sum_j[ del C / del y_i * del y_i / del z_i ] = [**y_i - t_i**](http://peterroelants.github.io/posts/neural_network_implementation_intermezzo02/)  .... (the chain rule again)
+      * ∂C/∂z_i = Sum_j[ ∂C/∂y_i * ∂y_i/∂z_i ] = [**y_i - t_i**](http://peterroelants.github.io/posts/neural_network_implementation_intermezzo02/)  .... (the chain rule again)
 
 ### Lecture 4d: Neuro-probabilistic language models
 * Bengio's NN for predicting the next word (see green Staples notebook or pdfs)
@@ -171,9 +171,9 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   * Use several different features tyeps, each w/ its own map of replicated features (FWC - each with its own convolution function)
 * **Backpropagation with weight constraints**
   * It's easy to modify backprop to incorporate linear constraints btw weights
-    * Start with w_1 = w_2, then at every iteration ensure that delta(w_1) = delta(w_2)
+    * Start with w_1 = w_2, then at every iteration ensure that Δw_1 = Δw_2
   * Compute the gradients as usual, but then modify them so they satisfy constraints
-    * set del E / del w_1 (and the same for w_2) to the average of the two partial derivatives
+    * set ∂E/∂w_1 (and the same for w_2) to the average of the two partial derivatives
 * Invariant knowledge: if a feature is useful in *some* locations during _training_, detectors for that feature will be available in all locations during *testing*.
   * "equivariance in the activities and invariance in the weights"
 * Pooling
@@ -289,7 +289,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     * the problem w/ mini-batch rprop is that we divide by a different # foreach mini-batch
     * so why not fix the # we divide by
   * rmsprop - keep a moving avg of the squared (RMS) gradient for each weight
-    * MeanSquare(w,t) = 0.9 MeanSquare(w,t-1) + 0.1 [del E / del w (t)]^2
+    * MeanSquare(w,t) = 0.9 MeanSquare(w,t-1) + 0.1 [∂E/∂w (t)]^2
     * dividing gradient by MeanSquare(w,t) makes learning work much better (Tijmen Tieleman, unpublished)
   * commentary on rmsprop combined w/ momentum (which doesn't seem to help as much)
 * **Summary of learning methods for NNs**
@@ -393,7 +393,7 @@ die
     * but if the error surface has circular cross-sections the gradient is fine
     * so apply a linear transformation to turn ellipses into circles
     * **Newton's method** multiplies the gradient vector by the **inverse of the curvature matrix (FWC - the covariance matrix?)**
-      * delta(w) = -epsilon * H(w)^-1 * del E / del w
+      * Δw = -epsilon * H(w)^-1 * ∂E/∂w
     * on a real quadratic surface this jumps to the minimum in one step
     * there are too many terms in the curvature matrix H(w) to invert it though
     * in the HF method, approximate the curvature matrix, then minimize error using *conjugate gradient*
