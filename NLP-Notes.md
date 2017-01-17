@@ -1,3 +1,5 @@
+#### [TensorFlow documentation on word embeddings](https://www.tensorflow.org/versions/master/tutorials/word2vec/) (1/17/17) (kws: representations)
+
 #### Simple feed forward and convolutional NNs for language modeling (email, 12/16/16)
 * FeeD forward - fast and slow weights implemented via varying degrees of momentum
 * CNN - via sliding windows over collections of words, with all the typical pooling and translation and learning of subfeatures that goes on in image recog. NNs 
