@@ -976,6 +976,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
   * "**Factor analysis, for example, is a causal model that uses continuous variables**"
 * How a Boltzmann Machine generates data
   * A different generative model; *not* a causal-generative model
+    * FWC - See slide 40 of lec12.pdf.  This must be how they generate Picasso-looking art from non-Picasso art.  Analogous to training on '2's and then applying to '3's.
   * Instead, everything is defined in terms of the energies of joint configurations of the visible and hidden units.
   * The energies of joint configurations are related to their probabilities in 2 ways (that both agree w/ each other).
     1. Simply define the probability as follows: p(v,h) <proportional-to> exp(-E(v,h))
@@ -993,7 +994,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
   * slide 35 of lec11.pdf
 * Getting a (global, v & h) sample from the model
   * If there are more than a few hidden units, we cannot compute the normalizing term (the partition function) because it has exponentially many terms.
-  * So we use Markov Chain Monte Carlo (MCMC) to get samples from the model starting from a random global configuration and keep picking units at random allowing them to stochastically update their states based on energy gaps
+  * **So we use Markov Chain Monte Carlo (MCMC) to get samples from the model starting from a random global configuration and keep picking units at random allowing them to stochastically update their states based on energy gaps**
   * Run the Markov chain until it reaches its stationary distribution (thermal equilibrium at a temperature of 1).
   * The probability of a global configuration is then related to its energy by the Boltzmann distribution
     * p(v,h) <proportional-to> exp(-E(v,h))
@@ -1117,6 +1118,7 @@ configuration.*
   * So we can quickly get the exact value of <v_i, h_j>_v
   * p(h_j=1) = 1 / (1 + exp(-b_j-sum_i[v_i * w_ij])) ... the logistic function
 * PCD: An efficient mini-batch learning procedure for Restricted Boltzmann Machines (Tieleman, 2008)
+  * PCD == Persistent Contrastive Divergence
   * Positive phase: Clamp a datavector on the visible units.
     * Compute the exact value of <v_i, h_j> for all pairs of a visible and a hidden unit.
     * For every connected pair of units, average <v_i, h_j> over all data in the mini-batch.
@@ -1226,10 +1228,10 @@ to 5.
     1. \<s_i,s_j\>_data: Expected value of sisj at equilibrium when the visible units are fixed to be the data.
     2. \<s_i,s_j\>_model: Expected value of sisj at equilibrium when the visible units are not fixed.
   When applied to a general Boltzmann Machine (not a Restricted one), this is an approximate learning algorithm because
-    * CHECKED [lec12.pdf, p. 22] - There is no efficient way to compute the first expectation exactly.
-    * CHECKED - There is no efficient way to compute the second expectation exactly.
-    * UNCHECKED - The first expectation can be computed exactly, but the second one cannot be.
-    * UNCHECKED - The first expectation cannot be computed exactly, but the second one can be.
+      * CHECKED [lec12.pdf, p. 22] - There is no efficient way to compute the first expectation exactly.
+      * CHECKED - There is no efficient way to compute the second expectation exactly.
+      * UNCHECKED - The first expectation can be computed exactly, but the second one cannot be.
+      * UNCHECKED - The first expectation cannot be computed exactly, but the second one can be.
   2. Throughout the lecture, when talking about Boltzmann Machines, why do we talk in terms of computing the expected value of sisj and not the value of sisj ?
     * It does not make sense to talk in terms of a unique value of sisj because si and sj are random variables and the Boltzmann Machine defines a probability distribution over them.
     * It is not possible to compute the exact value no matter how much computation time is provided. So all we can do is compute an approximation.
@@ -1238,81 +1240,25 @@ to 5.
   3. When learning an RBM, we decrease the energy of data particles and increase the energy of fantasy particles [FWC - see slide 26 of lec12.pdf]. Brian insists that the latter is not needed. He claims that it is should be sufficient to just decrease the energy of data particles and the energy of all other regions of state space would have increased relatively. This would also save us the trouble of sampling from the model distribution. What is wrong with this intuition ?
     * There is nothing wrong with the intuition. This method is an alternative way of learning a Boltzmann Machine.
     * Since total energy is constant, some particles must loose energy for others to gain energy.
-    * The model could decrease the energy of data particles in ways such that the energy of negative particles also gets decreased. If this happens there will be no net learning and energy of all particles will keep going down without bounds.
+    * CHECKED - The model could decrease the energy of data particles in ways such that the energy of negative particles also gets decreased. If this happens there will be no net learning and energy of all particles will keep going down without bounds.
     * The sum of all updates must be zero so we need to increase the energy of negative particles to balance things out.
   4. Restricted Boltzmann Machines are easier to learn than Boltzmann Machines with arbitrary connectivity. Which of the following is a contributing factor ?
-
-In RBMs, there are no connections among hidden units or among visible units.
-
-It is possible to run a persistent Markov chain in RBMs but not in general BMs.
-
-RBMs are more powerful models, i.e., they can model more probability distributions than general BMs.
-
-The energy of any configuration of an RBM is a linear function of its states. This is not true for a general BM.
-1
-point
-5. 
-
-PCD a better algorithm than CD1 when it comes to training a good generative model of the data. This means that samples drawn from a freely running Boltzmann Machine which was trained with PCD (after enough time) are likely to look more realistic than those drawn from the same model trained with CD1. Why does this happen ?
-
-In PCD, the persistent Markov chain can remember the state of the positive particles across mini-batches and show them when sampling. However, CD1 resets the Markov chain in each update so it cannot retain information about the data for a long time.
-
-In PCD, only a single Markov chain is used throughout learning, whereas CD1 starts a new one in each update. Therefore, PCD is a more consistent algorithm.
-
-In PCD, many Markov chains are used throughout learning, whereas CD1 uses only one. Therefore, samples from PCD are an average of samples from several models. Since model averaging helps, PCD generates better samples.
-
-In PCD, the persistent Markov chain explores different regions of the state space. However, CD1 lets the Markov chain run for only one step. So CD1 cannot explore the space of possibilities much and can miss out on increasing the energy of some states which ought to be improbable. These states might be reached when running the machine for a long time leading to unrealistic samples.
-1
-point
-6. 
-
-It's time for some math now!
-
-In RBMs, the energy of any configuration is a linear function of the state.
-
-E(v,h)=−∑iaivi−∑jbjhj−∑i,jvihjWij
-
-and this eventually leads to
-
-ΔWij∝⟨vihj⟩data−⟨vihj⟩model
-
-If the energy was non-linear, such as
-
-E(v,h)=−∑iaif(vi)−∑jbjg(hj)−∑i,jf(vi)g(hj)Wij
-
-for some non-linear functions f and g, which of the following would be true.
-
-ΔWij∝⟨f(vi)⟩data⟨g(hj)⟩data−⟨f(vi)⟩model⟨g(hj)⟩model
-
-ΔWij∝⟨f(vi)g(hj)⟩data−⟨f(vi)g(hj)⟩model
-
-ΔWij∝⟨vihj⟩data−⟨vihj⟩model
-
-ΔWij∝f(⟨vi⟩data)g(⟨hj⟩data)−f(⟨vi⟩model)g(⟨hj⟩model)
-1
-point
-7. 
-
-In RBMs, the energy of any configuration is a linear function of the state.
-
-E(v,h)=−∑iaivi−∑jbjhj−∑i,jvihjWij
-
-and this eventually leads to
-
-P(hj=1|v)=11+exp⁡(−∑iWijvi−bj)
-
-If the energy was non-linear, such as
-
-E(v,h)=−∑iaif(vi)−∑jbjg(hj)−∑i,jf(vi)g(hj)Wij
-
-for some non-linear functions f and g, which of the following would be true.
-
-P(hj=1|v)=11+exp⁡(−∑iWijf(vi)−bj)
-
-P(hj=1|v)=11+exp⁡((g(0)−g(1))(∑iWijf(vi)+bj))
-
-P(hj=1|v)=11+exp⁡(−∑iWijvi−bj)
-
-None of these is correct.
-I understand that submitting work that isn’t my own may result in permanent failure of this course or deactivation of my Coursera account. 
-6 questions unanswered
+    * CHECKED - In RBMs, there are no connections among hidden units or among visible units.
+    * It is possible to run a persistent Markov chain in RBMs but not in general BMs.
+    * RBMs are more powerful models, i.e., they can model more probability distributions than general BMs.
+    * The energy of any configuration of an RBM is a linear function of its states. This is not true for a general BM.
+  5. **PCD is a better algorithm than CD1 when it comes to training a good generative model of the data.** This means that samples drawn from a freely running Boltzmann Machine which was trained with PCD (after enough time) are likely to look more realistic than those drawn from the same model trained with CD1. Why does this happen ?
+    * In PCD, the persistent Markov chain can remember the state of the positive particles across mini-batches and show them when sampling. However, CD1 resets the Markov chain in each update so it cannot retain information about the data for a long time.
+    * In PCD, only a single Markov chain is used throughout learning, whereas CD1 starts a new one in each update. Therefore, PCD is a more consistent algorithm.
+    * In PCD, many Markov chains are used throughout learning, whereas CD1 uses only one. Therefore, samples from PCD are an average of samples from several models. Since model averaging helps, PCD generates better samples.
+    * CHECKED - **In PCD, the persistent Markov chain explores different regions of the state space. However, CD1 lets the Markov chain run for only one step. So CD1 cannot explore the space of possibilities much and can miss out on increasing the energy of some states which ought to be improbable. These states might be reached when running the machine for a long time leading to unrealistic samples.**
+  6. It's time for some math now! In RBMs, the energy of any configuration is a linear function of the state. E(v,h) = -∑_i[a_i*v_i] - ∑_j[b_j*h_j] - ∑_ij[v_i*h_j*w_ij] and this eventually leads to Δw_ij ∝ \<v_i,h_j\>_data - \<v_i,h_j\>_model. If the energy was non-linear, such as E(v,h) = -∑_i[a_i*f(v_i)] - ∑_j[b_j*g(h_j)] - ∑_ij[f(v_i)*g(h_j)*w_ij] for some non-linear functions f and g, which of the following would be true.
+    * ΔWij∝⟨f(vi)⟩data⟨g(hj)⟩data−⟨f(vi)⟩model⟨g(hj)⟩model
+    * CHECKED (b/c the energy function is still linear in the weights, which makes the derivative easy--just remove the w_ij) - Δw_ij ∝ \<f(v_i),g(h_j)\>_data - \<f(v_i),g(h_j)\>_model
+    * ΔWij∝⟨vihj⟩data−⟨vihj⟩model
+    * ΔWij∝f(⟨vi⟩data)g(⟨hj⟩data)−f(⟨vi⟩model)g(⟨hj⟩model)
+  7. In RBMs, the energy of any configuration is a linear function of the state. E(v,h) = −∑iaivi − ∑jbjhj − ∑i,jvihjWij and this eventually leads to P(hj=1|v) = 1/(1+exp⁡(−∑iWijvi−bj)). If the energy was non-linear, such as E(v,h) = −∑iaif(vi) − ∑jbjg(hj) − ∑i,jf(vi)g(hj)Wij for some non-linear functions f and g, which of the following would be true.
+    * P(hj=1|v)=11+exp⁡(−∑iWijf(vi)−bj)
+    * P(hj=1|v)=11+exp⁡((g(0)−g(1))(∑iWijf(vi)+bj))
+    * P(hj=1|v)=11+exp⁡(−∑iWijvi−bj)
+    * CHECKED (the *h* function needs to appear somewhere in the answer) - None of these is correct.
