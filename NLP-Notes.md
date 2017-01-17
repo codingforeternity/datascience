@@ -1,4 +1,5 @@
 #### [TensorFlow documentation on word embeddings](https://www.tensorflow.org/versions/master/tutorials/word2vec/) (1/17/17) (kws: representations)
+* all methods depend in some way or another on the [Distributional Hypothesis](https://en.wikipedia.org/wiki/Distributional_semantics#Distributional_Hypothesis), which states that words that appear in the same contexts share semantic meaning. The different approaches that leverage this principle can be divided into two categories: count-based methods (e.g. [Latent Semantic Analysis](https://en.wikipedia.org/wiki/Latent_semantic_analysis)), and predictive methods (e.g. [neural probabilistic language models](http://www.scholarpedia.org/article/Neural_net_language_models)).
 
 #### Simple feed forward and convolutional NNs for language modeling (email, 12/16/16)
 * FeeD forward - fast and slow weights implemented via varying degrees of momentum
