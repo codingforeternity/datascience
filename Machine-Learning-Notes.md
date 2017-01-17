@@ -20,6 +20,35 @@
 * Cake analogy (in terms of the amount of information per environment): Reinforcement learning (cherry) < Supervised learning (icing) < Unsupervised (cake)
   * All the successes in RI are in games but it falls on its face in the real world.
   * Intelligence: We want the cherry on top of our cake, but it's not going to solve the problem by itself.
+* Personal definition of Unsupervised Learning, contrast functions
+  * learning a manifold, and distance from that manifold [FWC - this is why RBMs are involved]
+    1. pick a point on the manifold and lower its energy (push down)
+    2. pick a point away from the manifold and increase its energy (push up)
+  * **You can reformulate a lot of classical learning algorithsm in terms of a contrast function where you want to take low values on the [real] data and high values everywhere else** (41:03)
+    1. build the machine so that the volume of low energy stuff is constant
+      * PCA, K-means (doesn't work well in high dim), GMM, square ICA
+    2. push down of the energy of data points, push up everywhere else
+      * max likelihood (needs tractable partition function)
+    3. push down of the energy of data points, push up on chosen locations
+      * contrastive divergence, Ratio Matching, Noise Contrastive Estimation, Minimum Probability Flow
+    4. minimize the gradient and maximize the curvature around data points
+      * score matching
+    5. train a dynamical system so that the dynamics goes to the manifold
+      * denoising auto-encoder
+    6. use a regularizer that limits the volume of space that has low energy
+      * sparse coding (union of planes), sparse auto-encoder, PSD
+    7. if E(Y) = |Y-G(Y)|^2, make G(Y) as "constant" as possible
+      * contracting [sic?] auto-encoder, saturating auto-encoder
+    8. **"but the best idea ever: Adversarial Training"**
+      * **"the coolest idea in machine learning in the last 20 years"**
+      * tell the machine that it got an answer wrong, but don't punish it too much for selecting something on the set/manifold of plausible outputs (future states) ... manifold of possible futures
+      * classical supervised learning that trains to produce a specific point is not sufficient, because in a circular/shell/ribbon manifold the *average* point won't be on the manifold -- so how do you characterize such a manifold
+      * answer: train a second NN to figure out what the manifold looks like
+      * energy based view of adversarial training (Goodfellow et al NIPS 2014): *generator* picks points to push up
+        * generator generates points closer and closer to manifold until the *discriminator* can't tell the difference (sort of a Nash equilibrium)
+        * eventually generator generates the manifold
+      * **holy grail: give me a way to parameterize a very complex surface in a high dimensional space**
+      * GANs use auto-encoders to generate negative samples
 
 #### [Break the Markov Chains of Oppression: Modeling without MCMC](http://www.databozo.com/break-the-markov-chains-of-oppression-modeling-without-mcmc) (1/16/17)
 * "we really don't care about these values. We will call a and k our *nuisance parameters* as a result. We will end up including them in our model but only so we can get to the value of h."
