@@ -50,7 +50,16 @@
       * **holy grail: give me a way to parameterize a very complex surface in a high dimensional space**
       * GANs use auto-encoders to generate negative samples
         * file:///home/fred/Documents/articles/adversarial_training/unsupervised_repr_learning_with_GANs_1511.06434v2.pdf
-* LeCun - Why aren't machines capable of learning the concept of depth?  => There must be something missing in our understanding of learning.
+      * FWC - distance from the manifold (the "energy") is the information that's desired for finance perhaps?  
+* "Why aren't machines capable of learning the concept of depth?  => There must be something missing in our understanding of learning."
+* "I could retire if I could train a net with a bunch of physical processes and come up with Newton's Law."
+* Combine networks when possible: It's better to train a single network with multiple heads than 2 separate networks, e.g. one to translate to one of each of 2 different languages.
+* GANs not clearly useful in language models where the (discrete) distribution over next words can relatively easily be represented.
+  * They don't work so well in discrete spaces for one reason because it's easy to discriminate between a real input (one-hot vector) and a fake/generated input (softmax), but there are fixes
+* w/in 3s of uploading an image to Facebook it gets run through 3 CNNs
+  1. object recognition
+  2. face recognition (turned off in Europe)
+  3. content filtering
 
 #### [Break the Markov Chains of Oppression: Modeling without MCMC](http://www.databozo.com/break-the-markov-chains-of-oppression-modeling-without-mcmc) (1/16/17)
 * "we really don't care about these values. We will call a and k our *nuisance parameters* as a result. We will end up including them in our model but only so we can get to the value of h."
