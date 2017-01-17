@@ -159,7 +159,8 @@
 
 #### [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) (11/17/16)
 * "LSTMs were a big step in what we can accomplish with RNNs. It’s natural to wonder: is there another big step? A common opinion among researchers is: “Yes! There is a next step and it’s attention!” The idea is to let every step of an RNN pick information to look at from some larger collection of information. For example, if you are using an RNN to create a caption describing an image, it might pick a part of the image to look at for every word it outputs."
-* **All of the other posts on this guy's blog seem to be really clear also.**
+* **All of the other posts on this guy's (colah!) blog seem to be really clear also.**
+* Yes, this particular post is referenced from everywhere including IBM and [TensorFlow documenation](https://www.tensorflow.org/versions/master/tutorials/recurrent/).
 
 #### [Have You Tried Using a 'Nearest Neighbor Search'?](http://www.reddit.com/r/MachineLearning/comments/4eg9eh/have_you_tried_using_a_nearest_neighbor_search/) (7/27/16)
 * [–]kkastner 3 points 3 months ago - KNN, K=1 is a great benchmark and also a good way to detect if you have accidentally had overlap between train and test sets. Downside is that KNN scales horribly in number of samples without a lot of custom work to do the search part, and also doesn't work well in high dimensional spaces. If you engineer a small feature space and have limited data it can be very useful, though.
