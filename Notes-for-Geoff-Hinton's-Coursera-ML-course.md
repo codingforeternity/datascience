@@ -1033,13 +1033,13 @@ Correct - The classifiers are fairly different, but overfitted to their training
   * to know how to change w1 or w5 we must know w3
 * A very surprising fact
   * Everything that one weight needs to know about the other weights and the data is contained in the difference of two correlations.
-  * del log(p(v)) / del w_ij = <s_i,s_j>_v - <s_i,s_j>_model ... using <> now to denote *expected value*
+  * del log(p(v)) / del w_ij = \<s_i,s_j\>_v - \<s_i,s_j\>_model ... using \<\> now to denote *expected value*
   * derivative of log P of one training vector, v, under the model: del log(p(v)) / del w_ij
-  * expected value of product of states, i and j, when the network settles at thermal equilibrium when v is clamped on visible units: <s_i,s_j>_v
+  * expected value of product of states, i and j, when the network settles at thermal equilibrium when v is clamped on visible units: \<s_i,s_j\>_v
     * i.e. how often are i and j on together, when v is clamped
-  * expected value of product of states at thermal equilibrium with no clamping: <s_i,s_j>_model
-  * learning rule is then: Δw_ij ∝ <s_i,s_j>_data - <s_i,s_j>_model
-  * expected product of the activities averaged over all visible values in the training set: <s_i,s_j>_data
+  * expected value of product of states at thermal equilibrium with no clamping: \<s_i,s_j\>_model
+  * learning rule is then: Δw_ij ∝ \<s_i,s_j\>_data - \<s_i,s_j\>_model
+  * expected product of the activities averaged over all visible values in the training set: \<s_i,s_j\>_data
   * 1st term: increase the weights in proportion to the product of activities units have when you're presenting data (simplest form of Hebian learning rule, Donald Heb)
   * 2nd term: reducing weights in proportion to how often two units are on together when sampling from the model's distribution (w/out this adjustment/controlling term, the learning blows up and all weights become very positive)
   * 1st term: storage term for Hopfield Net
@@ -1060,12 +1060,12 @@ Correct - The classifiers are fairly different, but overfitted to their training
 * An inefficient way to collect the statistics required for learning (Hinton and Sejnowski (1983)
   * *Positive phase*: Clamp a data vector on the visible units and set the hidden units to random binary states.
     1. Update the *hidden units* one at a time until the network reaches thermal equilibrium at a temperature of 1
-    2. Sample <s_i,s_j> for every connected pair of units
+    2. Sample \<s_i,s_j\> for every connected pair of units
     3. Repeat for all data vectors in the training set and average
   * *Negative phase*: Set all the units (h and v) to random binary states.
     1. Update *all* the units one at a time until the network reaches thermal equilibrium at a
 temperature of 1 (same as in Positive Phase)
-    2. Sample <s_i,s_j> for every connected pair of units.
+    2. Sample \<s_i,s_j\> for every connected pair of units.
     3. Repeat many times (how many?) and average to get good estimates.
   * Especially in the Negative Phase expect the energy landscape to have many minima that are fairly separated and have about the same energy
   * This is b/c we're going to be using Boltzmann Machines to do things like model a set of images, and we expect there to be reasonable images (w/ low energy, small fraction of the space) and unreasonable images (w/ much higher E, high fraction of the space).  If have multiple modes, it's very unclear how many times this process needs to be repeated to sample all those modes.
@@ -1087,7 +1087,7 @@ temperature of 1 (same as in Positive Phase)
 configuration.*
     * Sequentially update all the units [FWC - keeping weights fixed] in each fantasy particle a few times.
     * For every connected pair of units, average s_i,s_j over all the fantasy particles.
-  3. Learn: Δw_ij ∝ <s_i,s_j>_data - <s_i,s_j>_model
+  3. Learn: Δw_ij ∝ \<s_i,s_j\>_data - \<s_i,s_j\>_model
 * FWC - this is all very much like negative sampling again, positive phase (real data), negative phase (fake/negative data--or at least a higher probability of being so)
 * One way to tell if you've learned a good model is after learning, remove all the input, and just generate samples.  Run the Markov Chain for a long time until it's burned in, and then look at the samples you get
 * A puzzle
@@ -1223,8 +1223,8 @@ to 5.
 
 ### Lecture 12 Quiz
   1. The Boltzmann Machine learning algorithm involves computing two expectations
-    1. <s_i,s_j>_data: Expected value of sisj at equilibrium when the visible units are fixed to be the data.
-    2. <s_i,s_j>_model: Expected value of sisj at equilibrium when the visible units are not fixed.
+    1. \<s_i,s_j\>_data: Expected value of sisj at equilibrium when the visible units are fixed to be the data.
+    2. \<s_i,s_j\>_model: Expected value of sisj at equilibrium when the visible units are not fixed.
   When applied to a general Boltzmann Machine (not a Restricted one), this is an approximate learning algorithm because
     * CHECKED [lec12.pdf, p. 22] - There is no efficient way to compute the first expectation exactly.
     * CHECKED - There is no efficient way to compute the second expectation exactly.
