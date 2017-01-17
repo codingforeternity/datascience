@@ -50,6 +50,7 @@
       * **holy grail: give me a way to parameterize a very complex surface in a high dimensional space**
       * GANs use auto-encoders to generate negative samples
         * file:///home/fred/Documents/articles/adversarial_training/unsupervised_repr_learning_with_GANs_1511.06434v2.pdf
+* LeCun - Why aren't machines capable of learning the concept of depth?  There must be something missing.
 
 #### [Break the Markov Chains of Oppression: Modeling without MCMC](http://www.databozo.com/break-the-markov-chains-of-oppression-modeling-without-mcmc) (1/16/17)
 * "we really don't care about these values. We will call a and k our *nuisance parameters* as a result. We will end up including them in our model but only so we can get to the value of h."
