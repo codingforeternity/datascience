@@ -1070,12 +1070,43 @@ temperature of 1 (same as in Positive Phase)
   * Especially in the Negative Phase expect the energy landscape to have many minima that are fairly separated and have about the same energy
   * This is b/c we're going to be using Boltzmann Machines to do things like model a set of images, and we expect there to be reasonable images (w/ low energy, small fraction of the space) and unreasonable images (w/ much higher E, high fraction of the space).  If have multiple modes, it's very unclear how many times this process needs to be repeated to sample all those modes.
 
-### [Lecture 12b: More efficient ways to get the statistics](https://www.coursera.org/learn/neural-networks/lecture/wlELo/optional-video-more-efficient-ways-to-get-the-statistics-15-mins) ADVANCED MATERIAL: NOT ON QUIZZES OR FINAL TEST
+### [Lecture 12b: More efficient ways to get the statistics](https://www.coursera.org/learn/neural-networks/lecture/wlELo/optional-video-more-efficient-ways-to-get-the-statistics-15-mins)
+* ADVANCED MATERIAL: NOT ON QUIZZES OR FINAL TEST
+* A better way of collecting the statistics
+  * If we start [the weights] from a random state [in either phase, positive or negative], it may take a long time to reach thermal equilibrium.
+    * Also, its very hard to tell when we get there.
+  * Why not start from whatever state you ended up in last time you saw that datavector?
+    * This stored state is called a "*particle*".
+  * Using particles that persist to get a "warm start" has a big advantage:
+    * If we were at equilibrium last time and we only changed the weights a little, we should only need a few updates to get back to equilibrium.
+* Neal’s method for collecting the statistics (Neal 1992)
+  1. Positive phase: Keep a set of "data-specific particles", *one per training case*. Each particle has a current value that is a configuration of the hidden units.
+    * Sequentially update all the hidden units [FWC - keeping weights fixed] a few times in each particle with the relevant datavector clamped.
+    * For every connected pair of units, average s_i,s_j over all the data-specific particles.
+  2. Negative phase: Keep a set of "fantasy particles". *Each particle has a value that is a global
+configuration.*
+    * Sequentially update all the units [FWC - keeping weights fixed] in each fantasy particle a few times.
+    * For every connected pair of units, average s_i,s_j over all the fantasy particles.
+  3. Learn: Δw_ij ∝ <s_i,s_j>_data - <s_i,s_j>_model
+* FWC - this is all very much like negative sampling again, positive phase (real data), negative phase (fake/negative data--or at least a higher probability of being so)
 * One way to tell if you've learned a good model is after learning, remove all the input, and just generate samples.  Run the Markov Chain for a long time until it's burned in, and then look at the samples you get
+* A puzzle
+  * Why can we estimate the [MNIST data] "negative phase statistics" well with only 100 negative examples to characterize the whole space of possible configurations?
+  * **For all interesting problems the GLOBAL configuration space is highly multi-modal.**
+  * How does it manage to find and represent all the modes with only 100 particles?
+* The learning raises the effective mixing rate
+  * The learning interacts with the Markov chain that is being used to gather the "negative statistics" (i.e. the data-independent statistics).
+    * We cannot analyze the learning by viewing it as an outer loop and the gathering of statistics as an inner loop.
+  * Wherever the fantasy particles outnumber the positive data, the energy surface is raised.
+    * This makes the fantasies rush around hyperactively.
+    * They move around MUCH faster than the mixing rate of the Markov chain defined by the static current weights
 * How fantasy particles move between the model’s modes
-  * If a mode has more fantasy particles than data, the energy surface is raised until the fantasy particles escape.
-  * The energy surface is *being changed* to help mixing in addition to defining the model.  To have the effect of a faster mixing Markov chain.
+  * **see picture on slide 19 of lec12.pdf**
+  * If a mode has more fantasy particles than data, the energy surface is raised [FWC - local minima is pushed upwards so that it's not so much of a minima, like pushing up a blanket holding balls] until the fantasy particles escape.
+    * This can overcome energy barriers that would be too high for the Markov chain to jump in a reasonable time
+  * The energy surface is being changed to help *mixing* in addition to defining the model.
   * Once the fantasy particles have filled in a hole, they rush off somewhere else to deal with the next problem.
+    * (They are like investigative journalists.)
 
 ### [Lecture 12c: Restricted Boltzmann Machines](https://www.coursera.org/learn/neural-networks/lecture/TIqjI/restricted-boltzmann-machines-11-min)
 * Restrict the connectivity to make inference and learning easier.
@@ -1106,6 +1137,7 @@ configuration.
   * Of course the problem is that we have to run this for many repetitions to reach thermal equilibrium else the learning may go wrong.
     * Actually this last statement is misleading. It turns out to still work, even if we only run the learning for a short time.
 * Contrastive divergence: A very surprising short-cut
+  * [FWC - like negative sampling again? just change the input so that it's a little wrong, the reconstruction, not the global "wrong"]
   * stop after computing <v_i, h_j>_1
   * Instead of measuring the statistics at equilibrium, we measure after one full update of the Markov chain
   * Δw_ij = epsilon(<v_i, h_j>_0 - <v_i, h_j>_1) ... this is CD1 (constrastive divergence, 1 step)
@@ -1114,7 +1146,8 @@ configuration.
 * Why does the shortcut work?
   * If we start at the data, the Markov chain wanders away from the data and towards things that it likes more--towards things it likes b/c of its initial weights, rather than b/c of the data
     * We can see what direction it is wandering in after only a few steps
-    * When we know the weights are bad, it is a waste of time to let it go all the way to equilibrium
+    * When we know *the weights are bad*, it is a waste of time to let it go all the way to equilibrium
+    * FWC - the weights are bad b/c they haven't been learned yet early in the procedure
   * All we need to do is lower the probability of the confabulations/reconstructions (the former is a psych term) it produces after one full step and raise the probability of the data.
     * Then it will stop wandering away.
     * The learning cancels out once the confabulations and the data have the same distribution.
@@ -1122,9 +1155,9 @@ configuration.
   * We need to worry about regions of the data-space that the model likes but which are very far from any data.
     * [FWC - because they won't be ever be affected by a negative phase b/c we're only going 1 step which doesn't move very far from positive phase / real datapoints]
     * These low energy holes cause the normalization term (denominator) to be big and we cannot sense them if we use the shortcut.
-    * Persistent particles would eventually fall into a hole, cause it to fill up then move on to another hole.
-  * A good compromise between speed and correctness is to start with small weights and use CD1 (i.e. use one full step to get the “negative data”).
-    * Once the weights grow, the Markov chain mixes more slowly so we use CD3.
+    * Persistent particles [weight configurations] would eventually fall into a hole, cause it to fill up then move on to another hole.
+  * A good compromise between speed and correctness is to start with small weights and use CD1 (i.e. use one full step to get the "negative data").
+    * Once the weights grow, the Markov chain mixes more slowly so we use CD3 [FWC - since the weights will have meaning now, we'll be getting into regions of the global state space we haven't visited before so that they can be "disproven"]
     * Once the weights have grown more we use CD10.
   * By increasing the number of steps as the weights grow, we can keep the learning working well, even as the mixing rate of the Markov chain is going down
 
@@ -1187,3 +1220,99 @@ to 5.
     * So averaging the predictions of RBMs with the predictions of matrix-factorization is a big win.
   * The winning group used multiple different RBM models in their average of over a hundred models.
     * Their main models were matrix factorization and RBMs (I think).
+
+### Lecture 12 Quiz
+  1. The Boltzmann Machine learning algorithm involves computing two expectations
+    1. <s_i,s_j>_data: Expected value of sisj at equilibrium when the visible units are fixed to be the data.
+    2. <s_i,s_j>_model: Expected value of sisj at equilibrium when the visible units are not fixed.
+  When applied to a general Boltzmann Machine (not a Restricted one), this is an approximate learning algorithm because
+    * CHECKED [lec12.pdf, p. 22] - There is no efficient way to compute the first expectation exactly.
+    * CHECKED - There is no efficient way to compute the second expectation exactly.
+    * UNCHECKED - The first expectation can be computed exactly, but the second one cannot be.
+    * UNCHECKED - The first expectation cannot be computed exactly, but the second one can be.
+  2. Throughout the lecture, when talking about Boltzmann Machines, why do we talk in terms of computing the expected value of sisj and not the value of sisj ?
+    * It does not make sense to talk in terms of a unique value of sisj because si and sj are random variables and the Boltzmann Machine defines a probability distribution over them.
+    * It is not possible to compute the exact value no matter how much computation time is provided. So all we can do is compute an approximation.
+    * It is possible to compute the exact value but it is computationally inefficient.
+    * CHECKED - The expectation only refers to an average over all training cases.
+  3. When learning an RBM, we decrease the energy of data particles and increase the energy of fantasy particles [FWC - see slide 26 of lec12.pdf]. Brian insists that the latter is not needed. He claims that it is should be sufficient to just decrease the energy of data particles and the energy of all other regions of state space would have increased relatively. This would also save us the trouble of sampling from the model distribution. What is wrong with this intuition ?
+    * There is nothing wrong with the intuition. This method is an alternative way of learning a Boltzmann Machine.
+    * Since total energy is constant, some particles must loose energy for others to gain energy.
+    * The model could decrease the energy of data particles in ways such that the energy of negative particles also gets decreased. If this happens there will be no net learning and energy of all particles will keep going down without bounds.
+    * The sum of all updates must be zero so we need to increase the energy of negative particles to balance things out.
+  4. Restricted Boltzmann Machines are easier to learn than Boltzmann Machines with arbitrary connectivity. Which of the following is a contributing factor ?
+
+In RBMs, there are no connections among hidden units or among visible units.
+
+It is possible to run a persistent Markov chain in RBMs but not in general BMs.
+
+RBMs are more powerful models, i.e., they can model more probability distributions than general BMs.
+
+The energy of any configuration of an RBM is a linear function of its states. This is not true for a general BM.
+1
+point
+5. 
+
+PCD a better algorithm than CD1 when it comes to training a good generative model of the data. This means that samples drawn from a freely running Boltzmann Machine which was trained with PCD (after enough time) are likely to look more realistic than those drawn from the same model trained with CD1. Why does this happen ?
+
+In PCD, the persistent Markov chain can remember the state of the positive particles across mini-batches and show them when sampling. However, CD1 resets the Markov chain in each update so it cannot retain information about the data for a long time.
+
+In PCD, only a single Markov chain is used throughout learning, whereas CD1 starts a new one in each update. Therefore, PCD is a more consistent algorithm.
+
+In PCD, many Markov chains are used throughout learning, whereas CD1 uses only one. Therefore, samples from PCD are an average of samples from several models. Since model averaging helps, PCD generates better samples.
+
+In PCD, the persistent Markov chain explores different regions of the state space. However, CD1 lets the Markov chain run for only one step. So CD1 cannot explore the space of possibilities much and can miss out on increasing the energy of some states which ought to be improbable. These states might be reached when running the machine for a long time leading to unrealistic samples.
+1
+point
+6. 
+
+It's time for some math now!
+
+In RBMs, the energy of any configuration is a linear function of the state.
+
+E(v,h)=−∑iaivi−∑jbjhj−∑i,jvihjWij
+
+and this eventually leads to
+
+ΔWij∝⟨vihj⟩data−⟨vihj⟩model
+
+If the energy was non-linear, such as
+
+E(v,h)=−∑iaif(vi)−∑jbjg(hj)−∑i,jf(vi)g(hj)Wij
+
+for some non-linear functions f and g, which of the following would be true.
+
+ΔWij∝⟨f(vi)⟩data⟨g(hj)⟩data−⟨f(vi)⟩model⟨g(hj)⟩model
+
+ΔWij∝⟨f(vi)g(hj)⟩data−⟨f(vi)g(hj)⟩model
+
+ΔWij∝⟨vihj⟩data−⟨vihj⟩model
+
+ΔWij∝f(⟨vi⟩data)g(⟨hj⟩data)−f(⟨vi⟩model)g(⟨hj⟩model)
+1
+point
+7. 
+
+In RBMs, the energy of any configuration is a linear function of the state.
+
+E(v,h)=−∑iaivi−∑jbjhj−∑i,jvihjWij
+
+and this eventually leads to
+
+P(hj=1|v)=11+exp⁡(−∑iWijvi−bj)
+
+If the energy was non-linear, such as
+
+E(v,h)=−∑iaif(vi)−∑jbjg(hj)−∑i,jf(vi)g(hj)Wij
+
+for some non-linear functions f and g, which of the following would be true.
+
+P(hj=1|v)=11+exp⁡(−∑iWijf(vi)−bj)
+
+P(hj=1|v)=11+exp⁡((g(0)−g(1))(∑iWijf(vi)+bj))
+
+P(hj=1|v)=11+exp⁡(−∑iWijvi−bj)
+
+None of these is correct.
+I understand that submitting work that isn’t my own may result in permanent failure of this course or deactivation of my Coursera account. 
+6 questions unanswered
