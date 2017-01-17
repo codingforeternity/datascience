@@ -32,6 +32,8 @@ What follows are some notes based on a conversation I had with Josh on 1/12/17.
   4. Marketing
     * hand out hats with company logo to everyone
     * market up the wazoo -- biz cards, shirts, etc. -- really important
+    * [The Only 10 Slides You Need in Your Pitch](http://guykawasaki.com/the-only-10-slides-you-need-in-your-pitch/)
+    * [The 11 Slides You Need to Have in Your Pitch Deck](http://articles.bplans.com/what-to-include-in-your-pitch-deck/)
   5. Other jobs / future directions
     * count on this being a 5 year thing
     * if go and get a job then having a company allows for a place to carve out IP
