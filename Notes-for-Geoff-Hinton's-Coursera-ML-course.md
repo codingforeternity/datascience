@@ -1271,7 +1271,7 @@ to 5.
     * P(hj=1|v)=1/(1+exp⁡(−∑iWijvi−bj))
     * CHECKED (incorrect) - None of these is correct.
   8. A Boltzmann Machine is different from a Feed Forward Neural Network in the sense that:
-    * CHECKED - A Boltzmann Machine defines a probability distribution over the data, but a Neural Net defines a deterministic transformation of the data.
+    * CHECKED - **A Boltzmann Machine defines a probability distribution over the data, but a Neural Net defines a deterministic transformation of the data.**
     * UNCHECKED - The state of a hidden unit in a Boltzmann Machine is a deterministic function of the inputs and is hard to compute exactly, but in a Neural Net it is easy to compute just by doing a forward pass.
     * UNCHECKED - Boltzmann Machines do not have hidden units but Neural Nets do.
     * CHECKED - **The state of a hidden unit in a Boltzmann Machine is a random variable [FWC - b/c they are updated in response to the visible units (given the function defined by the weights), which are also random variables], but in a Neural Net it is a deterministic function of the inputs.**
