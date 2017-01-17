@@ -2,6 +2,13 @@
 [colah's blog](http://colah.github.io/) (todo: read more here)
 ***
 
+#### [RI Seminar: Yann LeCun : The Next Frontier in AI: Unsupervised Learning ](https://www.youtube.com/watch?v=IbjF5VjniVE) (1/17/16)
+* CNN is merely a NN where the operations performed by each layer is a discreet convolution.  Architecture is inspiried (imprecisely) by neuroscience (Hubel & Wiesel, 1962 and Fukushima, 1982, Neocognitron)
+* 3 main revolutionary ideas: ReLUs (instead of sigmoid), dropout regularization, and GPUs
+* Overfitting used to be a big word, but all of those ideas, that the network should be relatively small if you don't have a lot of data, were essentially wrong. (kws: Bayesian, Frequentist)
+* The world is compositional: pixels combine to form edges, edges combine to form motifs, motifs assemble to form parts of objects, parts of objects -> objects, etc.
+  * Johns Hopkins dude: The reason it's good that the world is compositional is because it is understandable.  The world is either compositional, or there is a God.
+
 #### [Break the Markov Chains of Oppression: Modeling without MCMC](http://www.databozo.com/break-the-markov-chains-of-oppression-modeling-without-mcmc) (1/16/17)
 * "we really don't care about these values. We will call a and k our *nuisance parameters* as a result. We will end up including them in our model but only so we can get to the value of h."
 * "What did we gain from MCMC? While we kept the hypothesis ranges the same we could expand the ranges if we wanted. We also were able to look at all of the values in each range and not just a discrete list of values. If you tried to tackle this with the naive solution, your code would never finish. Relative to that benchmark, PyMC3 runs extremely quickly."
