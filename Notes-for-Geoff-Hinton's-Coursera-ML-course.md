@@ -1115,13 +1115,13 @@ configuration.*
   * No connections between hidden units.
   * I.e. a bipartitie graph
 * In an RBM it only takes one step to reach thermal equilibrium when the visible units are clamped.
-  * So we can quickly get the exact value of <v_i, h_j>_v
+  * So we can quickly get the exact value of \<v_i*h_j\>_v
   * p(h_j=1) = 1 / (1 + exp(-b_j-sum_i[v_i * w_ij])) ... the logistic function
 * PCD: An efficient mini-batch learning procedure for Restricted Boltzmann Machines (Tieleman, 2008)
   * PCD == Persistent Contrastive Divergence
   * Positive phase: Clamp a datavector on the visible units.
-    * Compute the exact value of <v_i, h_j> for all pairs of a visible and a hidden unit.
-    * For every connected pair of units, average <v_i, h_j> over all data in the mini-batch.
+    * Compute the exact value of \<v_i*h_j\> for all pairs of a visible and a hidden unit.
+    * For every connected pair of units, average \<v_i*h_j\> over all data in the mini-batch.
   * Negative phase: Keep a set of "fantasy particles". Each particle has a value that is a global
 configuration.
     * Update each fantasy particle a few times using alternating parallel updates.
@@ -1130,19 +1130,19 @@ configuration.
 * A picture of an inefficient version of the Boltzmann machine learning algorithm for an RBM
   * Use times now not to denote weight updates but to denote steps in a Markov chain
   * t=0: start by clamping a datavector on the visible units
-    * update all hidden units (in parallel) given visible by computing <v_i, h_j>_0
+    * update all hidden units (in parallel) given visible by computing \<v_i*h_j\>_0
   * t=1: update all the visible units (in parallel) given the new hidden units (a "reconstruction" of v)
-    * update hidden again: <v_i, h_j>_1
+    * update hidden again: \<v_i*h_j\>_1
   * t=2... repeat until
-  * t=infinity: thermal equilibrium: <v_i, h_j>_infinity (a fantasy)
-  * then the learning rule is: Δw_ij = epsilon(<v_i, h_j>_0 - <v_i, h_j>_infinity)
+  * t=infinity: thermal equilibrium: \<v_i*h_j\>_infinity (a fantasy)
+  * then the learning rule is: Δw_ij = epsilon(\<v_i*h_j\>_0 - \<v_i*h_j\>_infinity)
   * Of course the problem is that we have to run this for many repetitions to reach thermal equilibrium else the learning may go wrong.
     * Actually this last statement is misleading. It turns out to still work, even if we only run the learning for a short time.
 * Contrastive divergence: A very surprising short-cut
   * [FWC - like negative sampling again? just change the input so that it's a little wrong, the reconstruction, not the global "wrong"]
-  * stop after computing <v_i, h_j>_1
+  * stop after computing \<v_i*h_j\>_1
   * Instead of measuring the statistics at equilibrium, we measure after one full update of the Markov chain
-  * Δw_ij = epsilon(<v_i, h_j>_0 - <v_i, h_j>_1) ... this is CD1 (constrastive divergence, 1 step)
+  * Δw_ij = epsilon(\<v_i*h_j\>_0 - \<v_i*h_j\>_1) ... this is CD1 (constrastive divergence, 1 step)
   * Clearly this is not doing maximum likelihood learning b/c the term we're using for the negative statistics is wrong
   * This is not following the gradient of the log likelihood. But it works well.
 * Why does the shortcut work?
@@ -1252,7 +1252,7 @@ to 5.
     * In PCD, only a single Markov chain is used throughout learning, whereas CD1 starts a new one in each update. Therefore, PCD is a more consistent algorithm.
     * In PCD, many Markov chains are used throughout learning, whereas CD1 uses only one. Therefore, samples from PCD are an average of samples from several models. Since model averaging helps, PCD generates better samples.
     * CHECKED - **In PCD, the persistent Markov chain explores different regions of the state space. However, CD1 lets the Markov chain run for only one step. So CD1 cannot explore the space of possibilities much and can miss out on increasing the energy of some states which ought to be improbable. These states might be reached when running the machine for a long time leading to unrealistic samples.**
-  6. It's time for some math now! In RBMs, the energy of any configuration is a linear function of the state. E(v,h) = -∑_i[a_i*v_i] - ∑_j[b_j*h_j] - ∑_ij[v_i*h_j*w_ij] and this eventually leads to Δw_ij ∝ \<v_i,h_j\>_data - \<v_i,h_j\>_model. If the energy was non-linear, such as E(v,h) = -∑_i[a_i*f(v_i)] - ∑_j[b_j*g(h_j)] - ∑_ij[f(v_i)*g(h_j)*w_ij] for some non-linear functions f and g, which of the following would be true.
+  6. It's time for some math now! In RBMs, the energy of any configuration is a linear function of the state. E(v,h) = -∑_i[a_i*v_i] - ∑_j[b_j*h_j] - ∑_ij[v_i*h_j*w_ij] and this eventually leads to Δw_ij ∝ \<v_i*h_j\>_data - \<v_i*h_j\>_model. If the energy was non-linear, such as E(v,h) = -∑_i[a_i*f(v_i)] - ∑_j[b_j*g(h_j)] - ∑_ij[f(v_i)*g(h_j)*w_ij] for some non-linear functions f and g, which of the following would be true.
     * ΔWij∝⟨f(vi)⟩data⟨g(hj)⟩data−⟨f(vi)⟩model⟨g(hj)⟩model
     * CHECKED (b/c the energy function is still linear in the weights, which makes the derivative easy--just remove the w_ij) - Δw_ij ∝ \<f(v_i),g(h_j)\>_data - \<f(v_i),g(h_j)\>_model
     * ΔWij∝⟨vihj⟩data−⟨vihj⟩model
