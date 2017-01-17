@@ -1229,21 +1229,21 @@ to 5.
     2. \<s_i,s_j\>_model: Expected value of sisj at equilibrium when the visible units are not fixed.
   When applied to a general Boltzmann Machine (not a Restricted one), this is an approximate learning algorithm because
       * CHECKED [lec12.pdf, p. 22] - There is no efficient way to compute the first expectation exactly.
-      * CHECKED - There is no efficient way to compute the second expectation exactly.
+      * CHECKED (all correct: Computing \<s_i*sj\>_data and \<s_i*sj\>_model are hard in general. They usually involves sampling from the model conditioned on the data.) - There is no efficient way to compute the second expectation exactly.
       * UNCHECKED - The first expectation can be computed exactly, but the second one cannot be.
       * UNCHECKED - The first expectation cannot be computed exactly, but the second one can be.
   2. Throughout the lecture, when talking about Boltzmann Machines, why do we talk in terms of computing the expected value of sisj and not the value of sisj ?
-    * It does not make sense to talk in terms of a unique value of sisj because si and sj are random variables and the Boltzmann Machine defines a probability distribution over them.
+    * SHOULD'VE BEEN CHECKED - It does not make sense to talk in terms of a unique value of sisj because si and sj are random variables and the Boltzmann Machine defines a probability distribution over them.
     * It is not possible to compute the exact value no matter how much computation time is provided. So all we can do is compute an approximation.
     * It is possible to compute the exact value but it is computationally inefficient.
-    * CHECKED - The expectation only refers to an average over all training cases.
+    * CHECKED (incorrect) - The expectation only refers to an average over all training cases.
   3. When learning an RBM, we decrease the energy of data particles and increase the energy of fantasy particles [FWC - see slide 26 of lec12.pdf]. Brian insists that the latter is not needed. He claims that it is should be sufficient to just decrease the energy of data particles and the energy of all other regions of state space would have increased relatively. This would also save us the trouble of sampling from the model distribution. What is wrong with this intuition ?
     * There is nothing wrong with the intuition. This method is an alternative way of learning a Boltzmann Machine.
     * Since total energy is constant, some particles must loose energy for others to gain energy.
-    * CHECKED - The model could decrease the energy of data particles in ways such that the energy of negative particles also gets decreased. If this happens there will be no net learning and energy of all particles will keep going down without bounds.
+    * CHECKED (The network might update its weights to lower the energy of large regions of space surrounding the data particles and these regions and the decrease could be as large as possible. Another way to see this is to look at the weight update equation and notice that the gradient would never go to zero unless there are negative particles.) - The model could decrease the energy of data particles in ways such that the energy of negative particles also gets decreased. If this happens there will be no net learning and energy of all particles will keep going down without bounds.
     * The sum of all updates must be zero so we need to increase the energy of negative particles to balance things out.
   4. Restricted Boltzmann Machines are easier to learn than Boltzmann Machines with arbitrary connectivity. Which of the following is a contributing factor ?
-    * CHECKED - In RBMs, there are no connections among hidden units or among visible units.
+    * CHECKED (This makes it possible to update all hidden units in parallel given the visible units (and vice-versa). Moreover, only one such update gives the exact value of the expectation that is being computing.) - In RBMs, there are no connections among hidden units or among visible units.
     * It is possible to run a persistent Markov chain in RBMs but not in general BMs.
     * RBMs are more powerful models, i.e., they can model more probability distributions than general BMs.
     * The energy of any configuration of an RBM is a linear function of its states. This is not true for a general BM.
@@ -1257,8 +1257,21 @@ to 5.
     * CHECKED (b/c the energy function is still linear in the weights, which makes the derivative easy--just remove the w_ij) - Δw_ij ∝ \<f(v_i),g(h_j)\>_data - \<f(v_i),g(h_j)\>_model
     * ΔWij∝⟨vihj⟩data−⟨vihj⟩model
     * ΔWij∝f(⟨vi⟩data)g(⟨hj⟩data)−f(⟨vi⟩model)g(⟨hj⟩model)
+    * above is CORRECT and here's why
+      * p(v) = exp⁡(-E(v,h)) / Z
+      * ⇒ log⁡(p(v)) = -E(v,h) - log⁡(Z)
+      * ⇒ ∂log⁡(p(v)) / ∂w_ij = f(vi)g(hj) - ∑_{v′,h′}[P(vi′,hj′)*f(vi′)*g(hj′)]
+      * Averaging over all data points,
+      * ∂log⁡(p(v)) / ∂w_ij = \<f(vi)*g(hj)\>_data - \<f(vi)*g(hj)\>_model
+      * Δw_ij ∝ ∂log⁡(p(v)) / ∂w_ij
+      * ⇒ Δw_ij ∝ \<f(vi)*g(hj)\>_data - \<f(vi)*g(hj)\>_model
   7. In RBMs, the energy of any configuration is a linear function of the state. E(v,h) = −∑iaivi − ∑jbjhj − ∑i,jvihjWij and this eventually leads to P(hj=1|v) = 1/(1+exp⁡(−∑iWijvi−bj)). If the energy was non-linear, such as E(v,h) = −∑iaif(vi) − ∑jbjg(hj) − ∑i,jf(vi)g(hj)Wij for some non-linear functions f and g, which of the following would be true.
-    * P(hj=1|v)=11+exp⁡(−∑iWijf(vi)−bj)
-    * P(hj=1|v)=11+exp⁡((g(0)−g(1))(∑iWijf(vi)+bj))
-    * P(hj=1|v)=11+exp⁡(−∑iWijvi−bj)
-    * CHECKED (the *h* function needs to appear somewhere in the answer) - None of these is correct.
+    * P(hj=1|v)=1/(1+exp⁡(−∑iWijf(vi)−bj))
+    * SHOULD'VE BEEN CHECKED - P(hj=1|v)=1/(1+exp⁡((g(0)−g(1))(∑iWijf(vi)+bj)))
+    * P(hj=1|v)=1/(1+exp⁡(−∑iWijvi−bj))
+    * CHECKED (incorrect) - None of these is correct.
+  8. A Boltzmann Machine is different from a Feed Forward Neural Network in the sense that:
+    * CHECKED - A Boltzmann Machine defines a probability distribution over the data, but a Neural Net defines a deterministic transformation of the data.
+    * UNCHECKED - The state of a hidden unit in a Boltzmann Machine is a deterministic function of the inputs and is hard to compute exactly, but in a Neural Net it is easy to compute just by doing a forward pass.
+    * UNCHECKED - Boltzmann Machines do not have hidden units but Neural Nets do.
+    * CHECKED - **The state of a hidden unit in a Boltzmann Machine is a random variable [FWC - b/c they are updated in response to the visible units (given the function defined by the weights), which are also random variables], but in a Neural Net it is a deterministic function of the inputs.**
