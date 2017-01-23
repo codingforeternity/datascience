@@ -1,3 +1,7 @@
+#### [Marginal Revolution: When you get right down to it, who really cares?](http://marginalrevolution.com/marginalrevolution/2017/01/get-right-really-cares.html) (1/23/16)
+* "potentially useful tool is post-publication peer review."
+* "One of the biggest problems with “economics as a science” is that economists themselves cannot usually admit how irrelevant so much of the work — even the quality work — turns out to be.  I’m all for worrying about reproducibility, transparency, and the like, but sometimes I feel those micro-debates distract our attention from this bigger and broader problem and indeed help to obscure that problem."
+
 #### [Academic signaling and the post-truth world](http://noahpinionblog.blogspot.com/2016/12/academic-signaling-and-post-truth-world.html) (12/23/16)
 * "The incentives for academic researchers seem like they encourage a large volume of well-publicized spurious results."
 * "Which means there is an ever-increasing army of people out there trying to find and report interesting results. But there's no guarantee that the supply of interesting results is infinite."
