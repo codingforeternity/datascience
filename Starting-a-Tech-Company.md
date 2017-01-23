@@ -1,3 +1,7 @@
+#### Pitch Deck "how to" (1/23/17)
+* [The 11 Slides You Need to Have in Your Pitch Deck](http://articles.bplans.com/what-to-include-in-your-pitch-deck/)
+* [Guy Kawasaki, The only 10 slides you need in your pitch](http://guykawasaki.com/the-only-10-slides-you-need-in-your-pitch/)
+
 #### [Do startup names matter?](http://ideas.ted.com/do-startup-names-matter/) (1/23/17)
 
 #### [Architecting Applications for Heroku](https://devcenter.heroku.com/articles/architecting-apps) (11/30/16)
