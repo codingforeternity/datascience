@@ -2,6 +2,10 @@
 [colah's blog](http://colah.github.io/) (todo: read more here)
 ***
 
+#### Reinforcement Learning
+* Practical advice for getting started with RL: [Highlights of NIPS 2016: Adversarial learning, Meta-learning, and more](http://sebastianruder.com/highlights-nips-2016/) [Sebastian Ruder]
+* [Reinforcement Learning as a Service](http://www.machinedlearnings.com/2017/01/reinforcement-learning-as-service.html)
+
 #### [RI Seminar: Yann LeCun : The Next Frontier in AI: Unsupervised Learning ](https://www.youtube.com/watch?v=IbjF5VjniVE) (1/17/16)
 * CNN is merely a NN where the operations performed by each layer is a discreet convolution.  Architecture is inspiried (imprecisely) by neuroscience (Hubel & Wiesel, 1962 and Fukushima, 1982, Neocognitron)
 * 3 main revolutionary ideas: ReLUs (instead of sigmoid), dropout regularization, and GPUs
