@@ -7,7 +7,7 @@
 * [Reinforcement Learning as a Service](http://www.machinedlearnings.com/2017/01/reinforcement-learning-as-service.html)
 * [David Silver lectures](https://www.youtube.com/watch?v=2pWv7GOvuf0)
 
-#### [RI Seminar: Yann LeCun : The Next Frontier in AI: Unsupervised Learning ](https://www.youtube.com/watch?v=IbjF5VjniVE) (1/17/16)
+#### [RI Seminar: Yann LeCun : The Next Frontier in AI: Unsupervised Learning ](https://www.youtube.com/watch?v=IbjF5VjniVE) (1/17/17)
 * CNN is merely a NN where the operations performed by each layer is a discreet convolution.  Architecture is inspiried (imprecisely) by neuroscience (Hubel & Wiesel, 1962 and Fukushima, 1982, Neocognitron)
 * 3 main revolutionary ideas: ReLUs (instead of sigmoid), dropout regularization, and GPUs
 * Overfitting used to be a big word, but all of those ideas, that the network should be relatively small if you don't have a lot of data, were essentially wrong. (kws: Bayesian, Frequentist)
