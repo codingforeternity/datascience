@@ -25,6 +25,7 @@ Welcome to the fcrimins.github.io wiki!
   - [[Computer Vision]] (kws: CNNs)
   - [[AdaBoost Notes]]
   - [[ML Noted Strengths]] (kws: principles of ML)
+  - [[Machine Knowledge]] (kws: knowledge graphs)
 - [[NLP Notes]]
 - [[Game Theory]]
 
