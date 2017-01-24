@@ -71,6 +71,9 @@
     * scrap everything else mentioned: here is the **current best representation framework**, see notes on Generative Adversarial Networks (GANs) from LeCun's talk and read this paper: file:///home/fred/Documents/articles/adversarial_training/unsupervised_repr_learning_with_GANs_1511.06434v2.pdf (Q: Can one merely generate false outputs in a 1D output space (e.g. returns) and let the Discriminator decide between true and false?)
   4. use the embeddings in a forecasting model
     * use (mini-batch-induced-randomization) Bayesian MCMC approach to sample parameter space (or, if using NNs, use dropout ("An alternative to doing the correct Bayesian thing. Probably doens't work quite as well, but much more practical"); again see [[Notes for Geoff Hinton's Coursera ML course]])
+  5. alternatively, identify known models in learned relationships
+    * for example, CvsC works in the bottom 20% of the resid vol distribution, so it should be possible to identify a set of neurons, perhaps starting with Px and RV input neurons, that end up coding the model
+    * such models can possibly be used as jumping-off points from where to start searching for other hard-coded models (or learning posterior reasons to explore futher)
 
 #### [CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/index.html)
 
