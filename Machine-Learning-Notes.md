@@ -2,6 +2,8 @@
 [colah's blog](http://colah.github.io/) (todo: read more here)
 ***
 
+#### [Matrix Factorization with Tensorflow](http://katbailey.github.io/post/matrix-factorization-with-tensorflow/)
+
 #### Data Science Deployments with Docker (1/24/17)
 * since accessing hardware resources like GPUs from Docker was difficult and required hacky, driver specific workarounds, the machine learning community has shied away from this option
 * we ended up with a solution that was not portable and required that the host’s NVIDIA driver was identical to a second copy of the driver installed within the container
