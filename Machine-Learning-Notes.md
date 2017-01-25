@@ -2,6 +2,11 @@
 [colah's blog](http://colah.github.io/) (todo: read more here)
 ***
 
+#### Data Science Deployments with Docker (1/24/17)
+* since accessing hardware resources like GPUs from Docker was difficult and required hacky, driver specific workarounds, the machine learning community has shied away from this option
+* we ended up with a solution that was not portable and required that the host’s NVIDIA driver was identical to a second copy of the driver installed within the container
+* Thankfully, the nice folks at NVIDIA have rectified this problem by releasing **nvidia-docker**, a tool for configuring docker to allow GPU access from within containers.
+
 #### Reinforcement Learning
 * Practical advice for getting started with RL: [Highlights of NIPS 2016: Adversarial learning, Meta-learning, and more](http://sebastianruder.com/highlights-nips-2016/) [Sebastian Ruder]
 * [Reinforcement Learning as a Service](http://www.machinedlearnings.com/2017/01/reinforcement-learning-as-service.html)
