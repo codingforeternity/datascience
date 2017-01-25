@@ -3,6 +3,8 @@
 ***
 
 #### [Matrix Factorization with Tensorflow](http://katbailey.github.io/post/matrix-factorization-with-tensorflow/)
+  * ["People Who Like This Also Like ... " Part 1](http://www.benfrederickson.com/distance-metrics/)
+  * [Finding Similar Music using Matrix Factorization](http://www.benfrederickson.com/matrix-factorization/)
 
 #### Data Science Deployments with Docker (1/24/17)
 * since accessing hardware resources like GPUs from Docker was difficult and required hacky, driver specific workarounds, the machine learning community has shied away from this option
