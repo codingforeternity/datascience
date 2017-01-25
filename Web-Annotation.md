@@ -1,3 +1,5 @@
+### [Hamstoo: idea_notes.md](https://github.com/fcrimins/hamstoo/blob/master/docs/idea_notes.md)
+
 Announcing pdftools 1.0: https://www.r-bloggers.com/announcing-pdftools-1-0/ (12/14/16)
 
 [LabelImg: A graphical image annotation tool.](https://www.reddit.com/r/MachineLearning/comments/4w7me1/labelimg_a_graphical_image_annotation_tool/) (8/4/16)
