@@ -150,7 +150,7 @@ Acceleration, the second law, gravity, dark energy & matter, they all have time 
 * Below this, draw another series of squares, but this time put the 3 locations of the circle all in the same square. This can't happen of course, but this is what it would look like to move through space while time stands still. This is outside the light cone.
 
 #### Email: "Bumpiness and randomness"
-* Create smoothness. Things work better when they are disorganized. Perhaps this applies to quantum mechanics
+* Create smoothness. **Things work better when they are disorganized.** [just as with machine learning: randomization is the key (to optimization in high dimensions)] Perhaps this applies to quantum mechanics
 
 #### Email: "Randomness doesn't come up in nature"
 * It only comes up in stuff like markets and sports where sentient beings are competing. Perhaps it does in nature tho, eg when species compete. The point is that perhaps quantum mechanics is some sort of competition also, and if we understood it better we could predict it better
