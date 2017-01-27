@@ -1434,4 +1434,34 @@ puts half its mass on 1,1 or 0,0 (a quarter on each): very improbable (1e-18 for
 factorizes (if you're forced to have a factorial model)
   * In variational learning we're manipulating the true posterior to make it fit the approximation we're using.  Normally in learning, we're manipulating an approximation to fit the true thing.
     
+### Lecture 13 Quiz
+  1. This quiz is going to take you through the details of Sigmoid Belief Networks (SBNs). The most relevant videos are the second video ("Belief Nets", especially from 11:44) and third video ("Learning sigmoid belief nets") of lecture 13.
+  We'll be working with this network: two hidden units `h1` and `h2` connected by `w1` and `w2` to one visible unit `v`.  The network has no biases (or equivalently, the biases are always zero), so it has only two parameters: w1 (the weight on the connection from h1 to v) and w2 (the weight on the connection from h2 to v).
+  Remember, the units in an SBN are all binary, and the logistic function (also known as the sigmoid function) figures prominently in the definition of SBNs. **These binary units, with their logistic/sigmoid probability function, are in a sense the stochastic equivalent of the deterministic logistic hidden units that we've seen often in earlier lectures.**
+  Let's start with w1=−6.90675478 and w2=0.40546511. These numbers were chosen to ensure that the answer to many questions is a very simple answer, which might make it easier to understand more of what's going on. Let's also pick a complete configuration to focus on: h1=0,h2=1,v=1 (we'll call that configuration C011).
+  Ready to Begin? (Please select a response. This question is reflective and selecting a certain answer will not affect your grade.)
+  2. What is P(v=1|h1=0,h2=1)? Write your answer with four digits after the decimal point. Hint: the last three of those four digits are zeros. (If you're lost on this question, then I strongly recommend that you do whatever you need to do to figure it out, before proceeding with the rest of this quiz.)
+    * A: sigmoid(1 / (1 + exp(-0.40546511)) = 0.6000
+  3. What is the probability of that full configuration, i.e. P(h1=0,h2=1,v=1), which we called P(C011)? Write your answer with four digits after the decimal point. Hint: it's less than a half, and the last two of those four digits are zeros.
+    * A: P(h1=0,h2=1,v=1) = P(v=1 | h1=0,h2=1) * P(h1=0,h2=1) = 0.6 * 0.25 = 0.1500
+  4. What is ∂log⁡P(C011)/∂w1? Write your answer with at least three digits after the decimal point, and don't be too surprised if it's a very simple answer.
+1
+point
+5. 
+
+What is ∂log⁡P(C011)∂w2? Write your answer with at least three digits after the decimal point, and don't be too
+
+surprised if it's a very simple answer.
+1
+point
+6. 
+
+What is P(h2=1|v=1,h1=0)? Give your answer with at least four digits after the decimal point. Hint: it's a fairly small number (and not a round number like for the earlier questions); try to intuitively understand why it's small. Second hint: you might find Bayes' rule useful, but even with that rule, this still requires some thought.
+1
+point
+7. 
+
+What is P(h2=1|v=1,h1=1)? Give your answer with at least four digits after the decimal point. Hint: it's quite different from the answer to the previous question; try to understand why. The fact that those two are different shows that, conditional on the state of the visible units, the hidden units have a strong effect on each other, i.e. they're not independent. That is what we call explaining away, and the earthquake vs. truck network is another example of that.
+I understand that submitting work that isn’t my own may result in permanent failure of this course or deactivation of my Coursera account. 
+7 questions unanswered
 
