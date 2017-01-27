@@ -1284,18 +1284,18 @@ to 5.
   * Labeled datasets were hundreds of times too small
   * Deep networks were too small and not initialized sensibly (initialized with too small of weights that died out)
 * **A spectrum of machine learning tasks**
-* Typical Statistics ----------------------------- Artificial Intelligence
-  * Low-dimensional data (e.g. < 100D)
-  * Lots of noise in the data
-  * Not much structure in the data. The structure can be captured by a fairly simple model.
-  * The main problem is separating true structure from noise, not thinking that noise is really structure.
-    * *Not ideal for non-Bayesian neural nets*. Try SVM or GP.
-* AI
-  * High-dim (> 100D)
-  * The noise is not the main problem
-  * There is a huge amount of structure in the data, but it's too complicated to be represented by a simple model.
-  * The main problem is figuring out a way to represent the complicated structure so that it can be learned.
-    * The natural thing to do is to hand design the representation, but actually the better thing to do is to let backpropagation figure it out via multiple layers. and use a lot of computation power to let it decide what the representation should be.
+  * Typical Statistics ----------------------------- Artificial Intelligence
+    * Low-dimensional data (e.g. < 100D)
+    * Lots of noise in the data
+    * Not much structure in the data. The structure can be captured by a fairly simple model.
+    * The main problem is separating true structure from noise, not thinking that noise is really structure.
+      * *Not ideal for non-Bayesian neural nets*. Try SVM or GP.
+  * AI
+    * High-dim (> 100D)
+    * The noise is not the main problem
+    * There is a huge amount of structure in the data, but it's too complicated to be represented by a simple model.
+    * The main problem is figuring out a way to represent the complicated structure so that it can be learned.
+      * The natural thing to do is to hand design the representation, but actually the better thing to do is to let backpropagation figure it out via multiple layers. and use a lot of computation power to let it decide what the representation should be.
 * Why Support Vector Machines were never a good bet for Artificial Intelligence tasks that need good representations (2 views)
   * View 1: SVM’s are just a clever reincarnation of Perceptrons.
     * very efficient/clever way of fitting the weights that controls overfitting (max separating margin)
