@@ -4,6 +4,10 @@ Octave source: https://ftp.gnu.org/gnu/octave/
 
 Also see accompanying green Staples notebook.
 
+Also see the notes in lecture slides in file:///home/fred/Documents/articles/geoff_hinton's_machine_learning_coursera/
+
+Also see this other set of lecture notes: http://www.cs.toronto.edu/~tijmen/csc321/lecture_notes.shtml
+
 [[Machine Learning Notes]]
 
 ***
@@ -1345,4 +1349,25 @@ has been little linked in the past with logic. This is thermodynamics primarily 
     * Graphs were good for representing what depended on what.
     * Probabilities then had to be computed for nodes of the graph, given the states of other nodes.
   * Belief Nets: For sparsely connected, directed acyclic graphs, clever inference algorithms were discovered.
-* 
+* Belief Nets
+  * A belief net is a directed acyclic graph composed of stochastic variables.
+  * We get to observe some of the variables (generally the leaves) and we would like to solve two problems:
+    * The inference problem: Infer the states of the unobserved variables.
+    * The learning problem: Adjust the interactions between variables to make the network more likely to
+generate the training data.
+      * I.e. Decide both which nodes are affected by which other nodes and decide thes strengths of those effects.
+* Graphical Models vs. Neural Networks
+  * Early graphical models used experts to define the graph structure and the conditional probabilities.
+    * The graphs were sparsely connected.
+    * Researchers initially focused on doing correct inference, not on learning.
+  * For neural nets, learning was central. Hand-wiring the knowledge was not cool (OK, maybe a little bit, e.g. CNN architecture).
+    * Knowledge came from learning the training data.
+  * Neural networks did not aim for interpretability or sparse connectivity to make inference easy.
+    * Nevertheless, there are neural network versions of belief nets.
+* Two types of generative neural network composed of stochastic binary neurons
+  * Energy-based: We connect binary stochastic neurons using *symmetric* connections to get a Boltzmann Machine.
+    * If we restrict the connectivity in a special way (RBM), it is easy to learn a Boltzmann machine.
+    * But then we only have one hidden layer (and we've given up on the benefits of deep networks)
+  * Causal [b/c it's a DAG, no symmetric connections]: We connect binary stochastic neurons in a *directed acyclic graph* to get a Sigmoid Belief Net (Neal 1992).
+    * Neal showed these are slightly easier to learn then BMs
+    * in a Causal model, unlike a BM, it's easy to generate samples
