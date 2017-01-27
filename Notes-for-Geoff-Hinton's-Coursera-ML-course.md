@@ -1276,3 +1276,40 @@ to 5.
     * UNCHECKED - The state of a hidden unit in a Boltzmann Machine is a deterministic function of the inputs and is hard to compute exactly, but in a Neural Net it is easy to compute just by doing a forward pass.
     * UNCHECKED - Boltzmann Machines do not have hidden units but Neural Nets do.
     * CHECKED - **The state of a hidden unit in a Boltzmann Machine is a random variable [FWC - b/c they are updated in response to the visible units (given the function defined by the weights), which are also random variables], but in a Neural Net it is a deterministic function of the inputs.**
+
+### [Lecture 13a: The ups and downs of backpropagation](https://www.coursera.org/learn/neural-networks/lecture/X58Lk/the-ups-and-downs-of-back-propagation-10-min)
+* "In machine learning, in the 90s, people thought backpropagation had been supplanted by support vector machines."
+* Real reasons it failed:
+  * Computers were thousands of times too slow
+  * Labeled datasets were hundreds of times too small
+  * Deep networks were too small and not initialized sensibly (initialized with too small of weights that died out)
+* **A spectrum of machine learning tasks**
+* Typical Statistics ----------------------------- Artificial Intelligence
+  * Low-dimensional data (e.g. < 100D)
+  * Lots of noise in the data
+  * Not much structure in the data. The structure can be captured by a fairly simple model.
+  * The main problem is separating true structure from noise, not thinking that noise is really structure.
+    * *Not ideal for non-Bayesian neural nets*. Try SVM or GP.
+* AI
+  * High-dim (> 100D)
+  * The noise is not the main problem
+  * There is a huge amount of structure in the data, but it's too complicated to be represented by a simple model.
+  * The main problem is figuring out a way to represent the complicated structure so that it can be learned.
+    * The natural thing to do is to hand design the representation, but actually the better thing to do is to let backpropagation figure it out via multiple layers. and use a lot of computation power to let it decide what the representation should be.
+* Why Support Vector Machines were never a good bet for Artificial Intelligence tasks that need good representations (2 views)
+  * View 1: SVM’s are just a clever reincarnation of Perceptrons.
+    * very efficient/clever way of fitting the weights that controls overfitting (max separating margin)
+  * View 2: SVM’s are just a clever reincarnation of Perceptrons.
+    * use each input vec in training set to define a non-adaptive "pheature"
+    * the global match btw a 
+  * both views are essentially the same: in both cases SVMs are using non-adaptive features and 1 layer of adaptive weights
+  * can't learn multiple layers of representation with a SVM
+* Historical document (1995) from AT&T Adaptive Systems Research Dept., Bell Labs
+  * Jackel and Vapnik were both wrong
+  * the limitation wasn't that we didn't have good enough theory or that they were endlessly hopeless, it was that we didn't have big enough computers and big enough datasets (practical limitation, not theoretical)
+
+### [Lecture 13b, Belief Nets](https://www.coursera.org/learn/neural-networks/lecture/brogS/belief-nets-13-min)
+* "one of the reasons I abandoned backprop in the 90s was because it required too many labels, I was also influenced by the fact that people learn with very few explicit labels"
+* Answer: generative models where the goal is to match the input data rather than predicting a label
+* Graphical models: combine discrete graph structures w/ real valued computations
+* BMs undirected GMs; directed GMs: "sigmoid belief nets"
