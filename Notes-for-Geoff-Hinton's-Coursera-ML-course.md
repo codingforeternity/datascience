@@ -1505,3 +1505,6 @@ factorizes (if you're forced to have a factorial model)
     * P(C111) / [P(C111) + P(C101)]
     * 0.5999 (INCORRECT)
     * 0.4994 (CORRECT)
+
+### Week 13, Programming assignment 4
+* file:///home/fred/Documents/articles/geoff_hinton's_machine_learning_coursera/programming_assigments/assignment_4_week_13/README.txt
