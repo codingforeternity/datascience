@@ -1312,6 +1312,37 @@ to 5.
 
 ### [Lecture 13b, Belief Nets](https://www.coursera.org/learn/neural-networks/lecture/brogS/belief-nets-13-min)
 * "one of the reasons I abandoned backprop in the 90s was because it required too many labels, I was also influenced by the fact that people learn with very few explicit labels"
-* Answer: generative models where the goal is to match the input data rather than predicting a label
-* Graphical models: combine discrete graph structures w/ real valued computations
+* "I didn't want to abandon the advantages of doing GD learning to learn a whole bunch of weights, so the issue was: **was there another objective function we could do GD in? the obvious place to look was generative models [FWC - e.g. GANs?] where the goal is to match the input data rather than predicting a label**"
+* Graphical Models (GM): combine discrete graph structures for representing how variable depend on each other w/ real valued computations that infer one variable based on values of other vars
 * BMs undirected GMs; directed GMs: "sigmoid belief nets"
+* Second problem: for deep nets learning time doesn't scale well (b/c of poor initialization)
+  * back prop can get stuck in poor local optima
+  * for deep nets the local optima you get stuck in are due to poor weight init
+  * **possible to retreat to simpler models that allow convex opt "but i don't think that's a good idea. mathematicians like to do that because they can prove things, but in practice you're just running away from the complexity of real data**"
+* Overcoming the limitations of back-propagation by using unsupervised learning
+  * Keep the efficiency and simplicity of using a gradient method for adjusting the weights, but use it for modeling the structure of the sensory input.
+    * Adjust the weights to maximize the probability that a generative model would have generated the
+sensory input.
+    * If you want to do computer vision (hard), first learn computer graphics (easy).
+  * The learning objective for a generative model:
+    * Maximise p(x) [probability of generating the input] not p(y | x)
+  * What kind of generative model should we learn?
+    * An energy-based model like a Boltzmann machine?
+    * A causal model made of idealized neurons?
+    * A hybrid of the two?
+* Artificial Intelligence and Probability
+  * When Hinton was a graduate student you were regarded as "stupid" if you thought probability had anything to do with AI.  It would just muck up your deterministic/discrete equations.
+  * Old view: “Many ancient Greeks supported Socrates opinion that deep, inexplicable thoughts came from the gods. Today’s equivalent to those gods is the erratic, even probabilistic neuron. It is more likely that increased randomness of neural behavior is the problem of the epileptic and the drunk, not the
+advantage of the brilliant.” [P.H. Winston, “Artificial Intelligence”, 1977.] (The first AI textbook)
+  * New view: “All of this will lead to theories of computation which are much less rigidly of an all-or-none nature than past and present formal logic ... There are numerous indications to make us believe that this new system of formal logic will move closer to another discipline which
+has been little linked in the past with logic. This is thermodynamics primarily in the form it was received from Boltzmann.” [John von Neumann, “The Computer and the Brain”, 1958] (unfinished manuscript)
+* The marriage of graph theory and probability theory
+  * Probability eventually found its way into AI by way of graphical models.
+  * In the 1980’s there was a lot of work in AI that used bags of rules for tasks such as medical diagnosis and exploration for minerals.
+    * For practical problems, they had to deal with uncertainty.
+    * They made up ways of doing this that did not involve probabilities! "you can actually prove this is a bad bet"
+  * Graphical models: Pearl, Heckerman, Lauritzen, and many others showed that probabilities worked better.
+    * Graphs were good for representing what depended on what.
+    * Probabilities then had to be computed for nodes of the graph, given the states of other nodes.
+  * Belief Nets: For sparsely connected, directed acyclic graphs, clever inference algorithms were discovered.
+* 
