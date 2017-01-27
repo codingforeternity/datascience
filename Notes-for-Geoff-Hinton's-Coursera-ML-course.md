@@ -1496,8 +1496,12 @@ factorizes (if you're forced to have a factorial model)
   5. What is ∂log⁡P(C011)/∂w2? Write your answer with at least three digits after the decimal point, and don't be too surprised if it's a very simple answer.
     * A: 0.4000
     * see slide 17: h2(v-p) = 1*(1-0.6)
-  6. What is P(h2=1|v=1,h1=0)? Give your answer with at least four digits after the decimal point. Hint: it's a fairly small number (and not a round number like for the earlier questions); try to intuitively understand why it's small. Second hint: you might find Bayes' rule useful, but even with that rule, this still requires some thought.
-    * 0.5455 (INCORRECT)
-    * We can use Baye's rule to determine: P(h2=1|v=1,h1=0) = P(v=1|h1=0,h2=1)P(h2=1) / (P(v=1|h1=0,h2=1)P(h2=1) + P(v=1|h1=0,h2=0)P(h2=0))
+  6. *For questions 6 and 7 use: w1=10 and w2=-4 (this text was not in the actual quiz text)* What is P(h2=1|v=1,h1=0)? Give your answer with at least four digits after the decimal point. Hint: it's a fairly small number (and not a round number like for the earlier questions); try to intuitively understand why it's small. Second hint: you might find Bayes' rule useful, but even with that rule, this still requires some thought.
+    * P(C011) / [P(C011) + P(C001)]
+    * 0.5455 (INCORRECT due to change in weights that weren't mentioned in the quiz text)
+    * 0.03472 (CORRECT)
+    * We can use Bayes' rule to determine: P(h2=1|v=1,h1=0) = P(v=1|h1=0,h2=1)P(h2=1) / (P(v=1|h1=0,h2=1)P(h2=1) + P(v=1|h1=0,h2=0)P(h2=0))
   7. What is P(h2=1|v=1,h1=1)? Give your answer with at least four digits after the decimal point. Hint: it's quite different from the answer to the previous question; try to understand why. The fact that those two are different shows that, conditional on the state of the visible units, the hidden units have a strong effect on each other, i.e. they're not independent. That is what we call explaining away, and the earthquake vs. truck network is another example of that.
+    * P(C111) / [P(C111) + P(C101)]
     * 0.5999 (INCORRECT)
+    * 0.4994 (CORRECT)
