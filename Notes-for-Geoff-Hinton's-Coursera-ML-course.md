@@ -4,6 +4,8 @@ Octave source: https://ftp.gnu.org/gnu/octave/
 
 Also see accompanying green Staples notebook.
 
+[[Machine Learning Notes]]
+
 ***
 
 ### Week 2: Types of Neural Network Architectures
