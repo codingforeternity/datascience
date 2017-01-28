@@ -1172,6 +1172,8 @@ configuration.
     * Once the weights grow, the Markov chain mixes more slowly so we use CD3 [FWC - since the weights will have meaning now, we'll be getting into regions of the global state space we haven't visited before so that they can be "disproven"]
     * Once the weights have grown more we use CD10.
   * By increasing the number of steps as the weights grow, we can keep the learning working well, even as the mixing rate of the Markov chain is going down
+* From programming assignment 4
+  * If you go through the math (either on your own on with your fellow students on the forum), you'll see that *sampling the hidden state that results from the "reconstruction" visible state is useless: it does not change the expected value of the gradient estimate that CD-1 produces; it only increases its variance. More variance means that we have to use a smaller learning rate, and that means that it'll learn more slowly; in other words, we don't want more variance, especially if it doesn't give us anything pleasant to compensate for that slower learning. Let's modify the CD-1 implementation to simply no longer do that sampling at the hidden state that results from the "reconstruction" visible state*. **Instead of a sampled state, we'll simply use the conditional probabilities**.
 
 ### [Lecture 12d: An example of Contrastive Divergence Learning](https://www.coursera.org/learn/neural-networks/lecture/jwcX5/an-example-of-rbm-learning-7-mins)
 * How to learn a set of features that are good for reconstructing images of the digit '2'
