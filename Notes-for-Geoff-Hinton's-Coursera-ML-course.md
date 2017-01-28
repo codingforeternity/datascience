@@ -1103,7 +1103,7 @@ configuration.*
   * **For all interesting problems the GLOBAL configuration space is highly multi-modal.**
   * How does it manage to find and represent all the modes with only 100 particles?
 * The learning raises the effective mixing rate
-  * The learning interacts with the Markov chain that is being used to gather the "negative statistics" (i.e. the data-independent statistics).
+  * The learning interacts with the Markov chain that is being used to gather the **"negative statistics" (i.e. the data-independent statistics [FWC - as in "negative sampling").**
     * We cannot analyze the learning by viewing it as an outer loop and the gathering of statistics as an inner loop.
   * Wherever the fantasy particles outnumber the positive data, the energy surface is raised.
     * This makes the fantasies rush around hyperactively.
