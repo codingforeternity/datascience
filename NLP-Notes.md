@@ -1,6 +1,9 @@
 ***
-* [[Machine Learning Notes]]
-* [[Notes for Geoff Hinton's Coursera ML course]]
+
+[[Machine Learning Notes]]
+
+[[Notes for Geoff Hinton's Coursera ML course]]
+
 ***
 
 #### [Word embeddings; word2vec; king - man + woman is queen, but why?](http://p.migdal.pl/2017/01/06/king-man-woman-queen-why.html) (1/23/17)
