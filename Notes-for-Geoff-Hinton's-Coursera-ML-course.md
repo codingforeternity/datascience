@@ -832,8 +832,9 @@ Correct - The classifiers are fairly different, but overfitted to their training
   * if the connections are *symmetric*, there is a global energy function
   * The global energy is the sum of many contributions. Each contribution depends on *one connection weight* and the binary states of *two neurons*:
     * "energy is bad, hence the upcoming negative signs"
-    * E = -sum_i(s_i*b_i) - sum_{i<j}(s_i*s_j*w_ij)
+    * **E = -sum_i(s_i*b_i) - sum_{i<j}(s_i*s_j*w_ij)**
     * The s'es are all binary, 0 or 1 (so the state can be thought of as the corners of a hypercube).  The w's are not.
+    * **FWC - this is the formula for energy (or negative "goodness") of an RBM also except that in an RBM, with its bipartite graph, you cross product the hidden_state with the visible state and then dot product that with the weights matrix** (and then divide by the number of configurations/particles; see configuration_goodness.m in programming assignment 4)
   * This simple quadratic energy function makes it possible for each unit to compute *locally* how it’s state affects the global energy
     * Energy gap "is the difference in the global configuration depending whether or not i is on"
     * Energy gap = ΔE_i = E(s_i=0) - E(s_i=1) = b_i + sum_j(s_j*w_ij)
@@ -1123,7 +1124,7 @@ configuration.*
 * In an RBM it only takes one step to reach thermal equilibrium when the visible units are clamped.
   * So we can quickly get the exact value of \<v_i*h_j\>_v (and recall that \<\> is the expectation function)
   * **p(h_j=1) = 1 / (1 + exp(-b_j-sum_i[v_i * w_ij]))** ... the logistic function
-  * **FWC - per programming assignment 4 this function is how you compute both visible_state_to_hidden_probabilities and hidden_state_to_visible_probabilities (albeit with another dimension for the number of configurations/particles that are being handled in parallel)**
+  * **FWC - per programming assignment 4 this function is how you compute both visible_state_to_hidden_probabilities.m and hidden_state_to_visible_probabilities.m (albeit with another dimension for the number of configurations/particles that are being handled in parallel)**
     * also see slide 21 of lec12_boltzmann_machines.pdf
 * PCD: An efficient mini-batch learning procedure for Restricted Boltzmann Machines (Tieleman, 2008)
   * PCD == Persistent Contrastive Divergence
