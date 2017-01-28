@@ -1154,6 +1154,7 @@ configuration.
   * Δw_ij = epsilon(\<v_i*h_j\>_0 - \<v_i*h_j\>_1) ... this is CD1 (constrastive divergence, 1 step)
   * Clearly this is not doing maximum likelihood learning b/c the term we're using for the negative statistics is wrong
   * This is not following the gradient of the log likelihood. But it works well.
+  * from programming assignment 4: "we'll sample a binary state for the hidden units conditional on the data; we'll sample a binary state for the visible units conditional on that binary hidden state (this is sometimes called the 'reconstruction' for the visible units); and we'll sample a binary state for the hidden units conditional on that binary visible 'reconstruction' state"
 * Why does the shortcut work?
   * If we start at the data, the Markov chain wanders away from the data and towards things that it likes more--towards things it likes b/c of its initial weights, rather than b/c of the data
     * We can see what direction it is wandering in after only a few steps
