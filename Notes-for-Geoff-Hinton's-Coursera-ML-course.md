@@ -859,6 +859,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
     * Δw_ij = s_i * s_j
   * Slightly more complicated w/ 0 and 1:
     * Δw_ij = 4(s_i-0.5)(s_j-0.5)
+    * FWC - Does the 4 come from the fact that (1,1) occurs 1/4 of the time: (1,1), (0,1), (1,0), (0,0)?
   * Very simple rule that is not error-driven: both its strength (can be computed in true online fashion) and its weakness (not very efficient storage [FWC - lots of redundant info])
   * We treat biases as weights from a permanently on unit.
 
