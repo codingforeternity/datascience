@@ -832,7 +832,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
   * if the connections are *symmetric*, there is a global energy function
   * The global energy is the sum of many contributions. Each contribution depends on *one connection weight* and the binary states of *two neurons*:
     * "energy is bad, hence the upcoming negative signs"
-    * **E = -sum_i(s_i*b_i) - sum_{i<j}(s_i*s_j*w_ij)**
+    * **E = -sum_i(s_i\*b_i) - sum_{i<j}(s_i\*s_j\*w_ij)**
     * The s'es are all binary, 0 or 1 (so the state can be thought of as the corners of a hypercube).  The w's are not.
     * **FWC - this is the formula for energy (or negative "goodness") of an RBM also except that in an RBM, with its bipartite graph, you cross product the hidden_state with the visible state and then dot product that with the weights matrix** (and then divide by the number of configurations/particles; see configuration_goodness.m in programming assignment 4)
   * This simple quadratic energy function makes it possible for each unit to compute *locally* how it’s state affects the global energy
