@@ -1147,7 +1147,7 @@ configuration.
   * then the learning rule is: Δw_ij = epsilon(\<v_i*h_j\>_0 - \<v_i*h_j\>_infinity)
   * Of course the problem is that we have to run this for many repetitions to reach thermal equilibrium else the learning may go wrong.
     * Actually this last statement is misleading. It turns out to still work, even if we only run the learning for a short time.
-* Contrastive divergence: A very surprising short-cut
+* **Contrastive divergence: A very surprising short-cut**
   * [FWC - like negative sampling again? just change the input so that it's a little wrong, the reconstruction, not the global "wrong"]
   * stop after computing \<v_i*h_j\>_1
   * Instead of measuring the statistics at equilibrium, we measure after one full update of the Markov chain
@@ -1157,8 +1157,8 @@ configuration.
 * Why does the shortcut work?
   * If we start at the data, the Markov chain wanders away from the data and towards things that it likes more--towards things it likes b/c of its initial weights, rather than b/c of the data
     * We can see what direction it is wandering in after only a few steps
-    * When we know *the weights are bad*, it is a waste of time to let it go all the way to equilibrium
-    * FWC - the weights are bad b/c they haven't been learned yet early in the procedure
+    * **When we know *the weights are bad*, it is a waste of time to let it go all the way to equilibrium**
+    * **FWC - the weights are bad b/c they haven't been learned yet early in the procedure**
   * All we need to do is lower the probability of the confabulations/reconstructions (the former is a psych term) it produces after one full step and raise the probability of the data.
     * Then it will stop wandering away.
     * The learning cancels out once the confabulations and the data have the same distribution.
