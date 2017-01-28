@@ -68,7 +68,7 @@
     * consider the "banana correction" (rotation of non-linear/exponential s.t. errors are less heteroskedastic)
   3. use these ratio-like, neutralized variables as input to a negative sampling, word2vec-like algorithm to generate embeddings
     * see "denoising autoencoder" note on [[Notes for Geoff Hinton's Coursera ML course]]
-    * also see "constructive distraction" note for RBMs on the same page
+    * also see "constructive distraction" and "unsupervised pretraining" notes for RBMs on the same page
     * scrap everything else mentioned: here is the **current best representation framework**, see notes on Generative Adversarial Networks (GANs) from LeCun's talk and read this paper: file:///home/fred/Documents/articles/adversarial_training/unsupervised_repr_learning_with_GANs_1511.06434v2.pdf (Q: Can one merely generate false outputs in a 1D output space (e.g. returns) and let the Discriminator decide between true and false?)
   4. use the embeddings in a forecasting model
     * use (mini-batch-induced-randomization) Bayesian MCMC approach to sample parameter space (or, if using NNs, use dropout ("An alternative to doing the correct Bayesian thing. Probably doens't work quite as well, but much more practical"); again see [[Notes for Geoff Hinton's Coursera ML course]])
