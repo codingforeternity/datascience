@@ -1121,8 +1121,10 @@ configuration.*
   * No connections between hidden units.
   * I.e. a bipartitie graph
 * In an RBM it only takes one step to reach thermal equilibrium when the visible units are clamped.
-  * So we can quickly get the exact value of \<v_i*h_j\>_v
-  * p(h_j=1) = 1 / (1 + exp(-b_j-sum_i[v_i * w_ij])) ... the logistic function
+  * So we can quickly get the exact value of \<v_i*h_j\>_v (and recall that \<\> is the expectation function)
+  * **p(h_j=1) = 1 / (1 + exp(-b_j-sum_i[v_i * w_ij]))** ... the logistic function
+  * **FWC - per programming assignment 4 this function is how you compute both visible_state_to_hidden_probabilities and hidden_state_to_visible_probabilities (albeit with another dimension for the number of configurations/particles that are being handled in parallel)**
+    * also see slide 21 of lec12_boltzmann_machines.pdf
 * PCD: An efficient mini-batch learning procedure for Restricted Boltzmann Machines (Tieleman, 2008)
   * PCD == Persistent Contrastive Divergence
   * Positive phase: Clamp a datavector on the visible units.
