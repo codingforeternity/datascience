@@ -992,6 +992,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
   * -E(v,h) = <visible-biases> + <hidden-biases> + <vis-vis-weights> + <vis-hid-weights> + <hid-hid-weights> 
   * -E(v,h) = sum_i[v_i*b_i] + sum_k[h_k*b_k] + sum_{i<j}[v_i*v_j*w_ij] + sum_{i,k}[v_i*h_k*w_ik] + sum_{k<l}[h_k*h_l*w_kl]
 * Using energies to define probabilities
+  * from programming assignment 4: "formula for the Boltzmann distribution (the probabality [sic] of a particular configuration of an RBM)"
   * The probability of a *joint* configuration over *both visible and hidden units* depends on the energy of that joint configuration compared with the energy of all other joint configurations.
     * p(v,h) = exp(-E(v,h)) / sum_{u,g}[exp(-E(u,g))] ... physicists call the denominator the "partition function" (note that it has exponential number of terms)
   * The probability of a configuration of the *visible units* [only] is the sum of the probabilities of all the joint configurations that contain it.
