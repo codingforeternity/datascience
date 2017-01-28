@@ -829,7 +829,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
 * Sometimes called "energy based models" b/c their properties derive from a global energy function
   * One of the main reasons for the resurgence in machine learning
 * A Hopfield net is composed of binary threshold units with recurrent connections between them.
-  * if the connections are *symmetric*, there is a global energy function
+  * if the connections are *symmetric* (FWC - i.e. not directed, as in a DAG), there is a global energy function
   * The global energy is the sum of many contributions. Each contribution depends on *one connection weight* and the binary states of *two neurons*:
     * "energy is bad, hence the upcoming negative signs"
     * **E = -sum_i(s_i\*b_i) - sum_{i<j}(s_i\*s_j\*w_ij)**
