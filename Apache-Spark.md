@@ -1,3 +1,5 @@
+#### [Real-time Streaming ETL with Structured Streaming in Apache Spark 2.1](https://databricks.com/blog/2017/01/19/real-time-streaming-etl-structured-streaming-apache-spark-2-1.html)
+
 #### Problem w/ Spark
 * Assumes everything is embarrassingly parallel
 * Path dependence is an issue (e.g. back-test simulations or anything w/ ramp-up required for each datapoint)
