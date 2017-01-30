@@ -21,6 +21,7 @@ Welcome to the fcrimins.github.io wiki!
 <br>
 
 - [[Machine Learning Notes]]
+  - [[Recommender Systems]]
   - [[Notes for Geoff Hinton's Coursera ML course]]
   - [[Computer Vision]] (kws: CNNs)
   - [[AdaBoost Notes]]
