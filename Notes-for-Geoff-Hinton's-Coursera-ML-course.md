@@ -1119,6 +1119,7 @@ configuration.*
     * (They are like investigative journalists.)
 
 ### [Lecture 12c: Restricted Boltzmann Machines](https://www.coursera.org/learn/neural-networks/lecture/TIqjI/restricted-boltzmann-machines-11-min)
+* Also see this [nice RBM tutorial at DeepLearning4J](https://deeplearning4j.org/restrictedboltzmannmachine)
 * Restrict the connectivity to make inference and learning easier.
   * Only one layer of hidden units.
   * No connections between hidden units.
