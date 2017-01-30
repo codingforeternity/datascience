@@ -76,7 +76,7 @@
   3. content filtering
 
 #### [Break the Markov Chains of Oppression: Modeling without MCMC](http://www.databozo.com/break-the-markov-chains-of-oppression-modeling-without-mcmc) (1/16/17)
-* "we really don't care about these values. We will call a and k our *nuisance parameters* as a result. We will end up including them in our model but only so we can get to the value of h."
+* "we really don't care about these values. We will call a and k our [*nuisance parameters*](http://davegiles.blogspot.com/2017/01/hypothesis-testing-using-non.html) as a result. We will end up including them in our model but only so we can get to the value of h."
 * "What did we gain from MCMC? While we kept the hypothesis ranges the same we could expand the ranges if we wanted. We also were able to look at all of the values in each range and not just a discrete list of values. If you tried to tackle this with the naive solution, your code would never finish. Relative to that benchmark, PyMC3 runs extremely quickly."
 * "You don't need MCMC in the truest sense of the word. You almost certainly want it though. ... choose an MCMC library and start learning it."
 
