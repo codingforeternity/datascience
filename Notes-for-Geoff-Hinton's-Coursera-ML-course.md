@@ -1006,7 +1006,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
   * **So we use Markov Chain Monte Carlo (MCMC) to get samples from the model starting from a random global configuration and keep picking units at random allowing them to stochastically update their states based on energy gaps**
   * Run the Markov chain until it reaches its stationary distribution (thermal equilibrium at a temperature of 1).
   * The probability of a global configuration is then related to its energy by the Boltzmann distribution
-    * p(v,h) <proportional-to> exp(-E(v,h))
+    * p(v,h) ∝ exp(-E(v,h))
 * Getting a sample from the posterior distribution over hidden configurations *for a given (visible) data vector* (which is needed for learning)
   * The number of possible hidden configurations is exponential so we need MCMC to sample from the posterior.
     * It is just the same as getting a sample from the model, except that we keep the *visible units clamped* [FWC - b/c they are given] to the given data vector.
