@@ -1125,6 +1125,7 @@ configuration.*
   * While RBMs have many uses, proper initialization of weights to facilitate later learning and classification is one of their chief advantages. In a sense, they accomplish something similar to backpropagation: they push weights to model data well. You could say that pre-training and backprop are substitutable means to the same end.
   * A continuous restricted Boltzmann machine is a form of RBM that accepts continuous input (i.e. numbers cut finer than integers) via a different type of contrastive divergence sampling. This allows the CRBM to handle things like image pixels or word-count vectors that are normalized to decimals between zero and one.
     * Gaussian transformations do not work well on RBMs’ hidden layers. The rectified-linear-unit transformations used instead are capable of representing more features than binary transformations, which we employ on deep-belief nets.
+  * **It should be noted that RBMs do not produce the most stable, consistent results of all shallow, feedforward networks. In many situations, a dense-layer autoencoder works better.** Indeed, the industry is moving toward tools such as *variational autoencoders*.
 * Restrict the connectivity to make inference and learning easier.
   * Only one layer of hidden units.
   * No connections between hidden units.
