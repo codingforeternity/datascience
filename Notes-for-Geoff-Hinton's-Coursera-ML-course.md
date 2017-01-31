@@ -1703,3 +1703,71 @@ tight variances for the visible units** (see 0.69 example above)
   * Make many copies of a stochastic binary unit.
   * All copies have the same weights and the same adaptive bias, b, but they have different *fixed* offsets to the bias: b−0.5, b−1.5, b−2.5, b−3.5 , ....
   * As σ_i gets smaller, the number of units that get turned on gets bigger resulting in more top-down effect to drive the visible units that have small stdevs.
+* Fast approximations
+  * It's quite expensive to use a big population of binary stochastic units with offset biases b/c for each one we need to compute the logistic function.
+  * Contrastive divergence learning works well for the sum of stochastic logistic units with offset biases. The noise variance is sigmoid(y)
+  * It also works for rectified linear units (ReLUs). These are much faster to compute than the sum of many logistic units with different biases/offsets.
+  * \<y\> = ∑_{n=1 to ∞}[sigmoid(x+0.5−n) ≈ log(1+exp(x)) ≈ max(0, x+noise)
+* A nice property of rectified linear units
+  * If a RELU has a bias of zero, it exhibits scale-equivariance:
+    * This is a very nice property to have for images (e.g. to scale up the intensity of the image, just scale up the intensity of its repr)
+    * R(a*x) = a*R(x) but R(a + b) ≠ R(a) + R(b)
+  * It is like the translational equivariance exhibited by convolutional nets.
+    * R(shift(x)) = shift(R(x))
+    * The representation of a shifted image is just a shifted version of the representation of an unshifted image
+
+### [Lecture 14e: RBMs are Infinite Sigmoid Belief Nets](https://www.coursera.org/learn/neural-networks/lecture/8GoRA/optional-video-rbms-are-infinite-sigmoid-belief-nets-17-mins)
+* Another view of why layer-by-layer learning works (Hinton, Osindero & Teh 2006)
+  * There is an unexpected equivalence between RBMs and directed networks with many layers that all share the same weight matrix.
+    * This equivalence also gives insight into why contrastive divergence learning works.
+  * An RBM is actually just an infinitely deep sigmoid belief net with a lot of weight sharing (with alternating hidden-visible layers and a repeating weights matrix)
+    * The Markov chain we run when we want to sample from the equilibrium distribution of an RBM can
+be viewed as a sigmoid belief net.
+* An infinite sigmoid belief net is equivalent to an RBM
+* *Inference* in an infinite sigmoid belief net
+  * The variables in h0 are conditionally independent given v0.
+    * Inference is trivial. Just multiply v0 by W'
+    * The model above h0 (i.e. starting at v1) implements a *complementary prior*: a prior distribution over that exactly cancels out the correlations in "explaining away."
+    * Multiplying v0 by W' gives the *product* of the likelihood term and the prior term, not just the likelihood term and that's what you need to do to get the posterior.  It normally comes as a big surprise to people that when you multiply by W' it's the *product* of the posterior and the prior
+    * The complementary prior (everything above h0) cancels the explaining away and makes inference very simple.
+  * Inference in the directed net is exactly equivalent to letting an RBM settle to equilibrium starting at the data.
+  * We can do inference for each layer and get an unbiased sample at each layer simply by multiplying v0 by W'.  Then once we've computed the binary state of h0, we multiply that by W, put that through the logistic sigmoid and sample, and that will give us a binary state for v1, and so on, all the way up.
+  * So just *generate* from this model is equivalent to running the alternating Markov chain of a RBM to equilibrium.  Performing *inference* in this model is exactly the same process in the opposite direction.  This is a very special SBN in which inference is as easy as generation.
+  * The learning rule for a sigmoid belief net is:
+    * Δw_ij ∝ s_j(s_i − p_i) ... where j's are from hidden states and i's from visible
+    * s_i^1 is an unbiased sample from p_i^0
+  * The process that goes from h0 to v1 is exactly the same as that which goes from h0 to v0, which means that s_i^1 is an unbiased sample from p_i^0
+  * With replicated weights this rule becomes:
+      * sj0(si0-si1) + si1(sj0-sj1) + sj1(si1-si2) + ... - sj∞*si∞
+      * rather than using p's (e.g. pi0) we use a sample with those probabilities (e.g. si1)
+      * and so an unbiased estimate of the derivative can be gotten by plugging in si1 in that first term of the infinite sum learning rule
+      * then for the second term: sj1 is an unbiased estimate of pj0
+      * all of the terms except for the first and the last end up canceling out and you just end up with the Boltzmann machine learning rule
+* Learning a deep directed network
+  * First learn with all the weights tied. This is exactly equivalent to learning an RBM.
+    * Think of the (bidirectional) symmetric connections as a shorthand notation for an infinite directed
+net with tied weights.
+    * We ought to use maximum likelihood learning, but we use CD1 as a shortcut.
+  * Then freeze the first layer of weights in both directions and learn the remaining weights
+(still tied together).
+    * This is equivalent to learning another RBM, using the aggregated posterior distribution of h0 as the data.
+* What happens when the weights in higher layers become different from the weights in the first layer?
+  * The higher layers no longer implement a complementary prior.
+    * So performing *inference* using the frozen weights in the first layer is no longer correct.
+    * But its still pretty good.
+    * Using this incorrect inference procedure gives a variational lower bound on the log probability of the data.
+  * The higher layers learn a prior that is closer to the aggregated posterior distribution of the first
+hidden layer.
+    * This improves the network’s model of the data.
+    * Hinton, Osindero and Teh (2006) prove that **this improvement is always bigger than the loss in the variational bound caused by using less accurate inference.**
+  * Changing the weights makes the *inference* we're doing at the bottom layer incorrect, but gives us a better model.
+* What is really happening in contrastive divergence learning?
+  * Contrastive divergence learning in this RBM is equivalent to ignoring the small derivatives contributed by the tied weights in higher layers.
+* Why is it OK to ignore the derivatives in higher layers?
+  * When the weights are small, the Markov chain mixes fast.  If they're 0 it mixes in 1 step.
+    * So the higher layers will be close to the equilibrium distribution (i.e they will have
+"forgotten" the datavector).
+    * **At equilibrium the derivatives must average to zero, because the current weights are a perfect model of the equilibrium distribution!**  A minima has been reached => no more learning can be done => derivatives of 0.
+  * **As the weights grow we may need to run more iterations of CD (b/c it will take longer for the derivatives to fall to 0)**
+    * This allows CD to continue to be a good approximation to maximum likelihood.
+    * **If our purpose is to build a stack of RBMs for learning layers of features, it does not need to be a good approximation to maximum likelhood!  In fact, it's probably better than maximum likelihood.**
