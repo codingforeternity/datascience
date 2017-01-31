@@ -1,3 +1,6 @@
+#### [The truth is that people just don't dislike things online that often](http://www.benfrederickson.com/rating-set-distributions/)
+* even if they did offer a dislike button, people just wouldn't use it often enough to justify the precious screen real estate it would take up.
+
 #### Summary of techniques
   1. Information Retrival - based on various similarity metrics of word count (user) distributions for documents (purchased items)
   2. Latent Semantic Analysis - use SVD to factorize word x document (or user x item) matrix and then reconstruct with fewer dimensions
