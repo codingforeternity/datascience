@@ -1560,5 +1560,89 @@ factorizes (if you're forced to have a factorial model)
     * in the aggregated posterior, p(1,1,0,0) = 0.215.
     * If the aggregated posterior was factorial it would have p = 0.5^4 (which is much smaller)
     * I.e. averaging the two distributions has given us a mixture distribution, which is not factorial
+* Why does greedy learning work?
+  * Why is it a good idea to learn a RBM and then learn a second RBM that models the patterns of activity in the hidden units of the first one?
+  * The weights, W, in the bottom level RBM define many different distributions: p(v|h); p(h|v); p(v,h); p(h); p(v).
+  * p(v|h) & p(h|v) - the 2 distributions we use for learning our alternating Markov Chain
+  * p(v,h) - if we run that chain long enough, we get a sample from the joint distribution, and so the weights also define the joint distribution (they also define the joint distribution of exp(-E), but for large nets we can't compute that)
+  * p(h) & p(v) - if we ignore h, we have the prior distribution over v (and similarly vice versa)
+  * We can express the RBM model as: p(v) = ∑_h[ p(h) * p(v|h) ]
+  * (this seems like a silly thing to do b/c defining p(h) is just as difficult as defining p(v))
+  * If we leave p(v|h) alone and improve p(h), we will improve p(v).
+a prior over h that fits the agg post better: the avg of all vectors in the training set of the posterior dist over h
+  * To improve p(h), we need it to be a better model than p(h;W) of the *aggregated posterior* distribution over hidden vectors produced by applying W transpose to the data.
+    * use the first RBM< to get the aggregated posterior, then use the second RBM to build a better model of this aggregated posterior than the first (start the second model with the weights from the first upside down / transposed)
+    * **This explains what's happening when we stack up RBMs.**
+* Fine-tuning with a contrastive version of the wake-sleep algorithm
+  * After learning many layers of features, we can fine-tune the features to improve generation.
+    1. Do a stochastic bottom-up pass
+      * Then adjust the top-down weights of lower layers to be good at reconstructing the feature activities in the layer below.
+    2. Do a few iterations of sampling in the top level RBM
+      * Then adjust the weights in the top-level RBM using CD.
+    3. Do a stochastic top-down pass
+      * Then Adjust the bottom-up weights to be good at reconstructing the feature activities in the layer above (up to the input layer of the top level RBM--the second to last hidden layer)
+  * This is just the sleep phase.
+  * The difference from the standard wake-sleep algorithm is that **the top level RBM acts a much better prior over the top layers than just a layer of units which are assumed to be independent** (as in a SBN)
+  * Rather than generating data by sampling the prior, we take an input training case, work up to the top level RBM and alternate a few times before we generate data
+* The DBN used for modeling the joint distribution of MNIST digits and their labels
+  * The first two hidden layers (28x28 pixel image -> 500 hidden units -> 500 hidden units) are learned without using labels
+  * The top layer (2000 units) is learned as an RBM for modeling the labels (10-way softmax actually) *concatenated* with the (500) features in the second hidden layer.
+  * The weights are then fine-tuned to be a better generative model using contrastive wake-sleep.
+  * This is the model from the intro video of this course.  Go back and see what happens when you run this model.  Good at both recognition and generation!
+
+### [Lecture 14b: Discriminative fine-tuning for DBNs](https://www.coursera.org/learn/neural-networks/lecture/nLRJy/discriminative-learning-for-dbns-9-mins)
+* Instead of fine-tuning to be better at generation (as we did in previous video) we're going to fine-tune it to be better at discriminating classes--which works very well.  Major influence in speech recog.
+* **Fine-tuning for discrimination** (i.e. for supervised learning)
+  * First learn one layer at a time by stacking RBMs.
+  * Treat this as "pre-training" that finds a good initial set of weights which can then be fine-tuned by a local search procedure.
+    * Contrastive wake-sleep is a way of fine-tuning the model to be better at *generation*.
+    * Backpropagation can be used to fine-tune the model to be better at *discrimination*.
+      * This **overcomes many of the limitations of standard backpropagation**.
+      * It makes it easier to learn deep nets.
+      * It makes the nets **generalize better**.
+* Why backpropagation works better with greedy pre-training: The optimization view
+  * Greedily learning one layer at a time scales well to really big networks, especially if we have locality in each layer (such as w/ CNNs for image recognition; locality = convolution fn)
+  * We do not start backpropagation until we already have sensible feature detectors that should already be very helpful for the discrimination task.
+    * So the initial gradients are sensible and backpropagation only needs to perform a local search from a sensible starting point.
+* **Why backpropagation works better with greedy pre-training: The overfitting view**
+  * Most of the information in the final weights comes from modeling the distribution of input vectors.
+    * The input vectors generally contain a lot more information than the labels which contain on a few bits of information, not enough to constrain input->output function.
+    * The *precious* information in the labels is only used for the fine-tuning.
+  * The fine-tuning only modifies the features slightly to get the category boundaries right [FWC - i.e. shift / linearly transform]. It does not need to discover new features.
+  * This type of back-propagation *works well even if most of the training data is unlabeled*.
+    * The unlabeled data is still very useful for discovering good features. [**FWC - just like in most forecasting we construct good features first, then see how good they are at forecasting**]
+  * An objection: Surely, many of the features will be useless for any particular discriminative
+task (consider shape & pose).
+    * But the ones that are useful will be much more useful than the raw inputs.
+    * When computers were much smaller, this was a reasonable objection.
+* First, model the distribution of digit images
+  * The top two layers (2000-top and 500-2nd-to-top) form a RBM whose energy landscape should model the low dimensional manifolds of the digits.
+  * The network learns a density model for unlabeled digit images. When we generate from the model we
+get things that look like real digits of all classes.
+  * But do the hidden features really help with digit discrimination? Add a 10-way softmax at the top
+and do backpropagation.
+* Results on the permutation-invariant MNIST task
+  * (Permutation Invariant : If we were to apply a fixed permutation to all the pixels in every training case, the results of our algorithm wouldn't change.  (not true of a CNN))
+  * Backprop net with one or two hidden layers (Platt; Hinton) - 1.6% error rate
+  * Backprop with L2 constraints on incoming weights  - 1.5% error rate
+  * Support Vector Machines (Decoste & Schoelkopf, 2002) - 1.4% (this is one of the results that led SVMs to supplant NNs)
+  * Generative model of joint (concatenation) density of images and labels (+ generative fine-tuning) - 1.25%
+  * Generative model of unlabelled digits followed by gentle backpropagation (Generative pre-training, followed by discriminative fine-tuning; Hinton & Salakhutdinov, 2006) - 1.15% -> 1.0%
+* Unsupervised "pre-training" also helps for models that have more data and better priors
+  * Ranzato et. al. (NIPS 2006) used an additional 600,000 distorted digits.
+  * They also used convolutional multilayer neural networks.
+  * Back-propagation alone - 0.49%
+  * Unsupervised layer-by-layer pre-training followed by backprop - 0.39% (record at the time)
+* Phone recognition on the TIMIT benchmark (Mohamed, Dahl, & Hinton, 2009 & 2012)
+  * Architecture (top-to-bottom): 183 HMM-state labels (not pre-trained) <- 2000 logistic hidden units <- 6 more layers of pre-trained weights <- 2000 logistic hidden units <- 15 frames of 40 filterbank outputs & their temporal derivatives
+  * After standard post-processing using a bi-phone model, a deep net with 8 layers gets 20.7% error rate.
+  * The best previous speaker-independent result on TIMIT was 24.4% and this required averaging
+several models.
+  * Li Deng (at MSR) realised that this result could change the way speech recognition was done. It has!
+    * http://www.bbc.co.uk/news/technology-20266427
+
+
+
+
 
 
