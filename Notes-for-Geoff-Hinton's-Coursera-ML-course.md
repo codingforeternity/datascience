@@ -1641,6 +1641,40 @@ several models.
   * Li Deng (at MSR) realised that this result could change the way speech recognition was done. It has!
     * http://www.bbc.co.uk/news/technology-20266427
 
+### [Lecture 14c: What happens during discriminative fine-tuning?](https://www.coursera.org/learn/neural-networks/lecture/v4e2f/what-happens-during-discriminative-fine-tuning-8-mins)
+* Pre-training makes deep NNs more effective than shallower ones.  W/out pre-training it's the other way around.
+* Learning Dynamics of Deep Nets
+  * the next 4 slides describe work by Yoshua Bengio’s group
+  * pictures of the features before and after fine-tuning show no identifiable differences (but the results are better)
+* Effect of Unsupervised Pre-training
+  * Erhan et. al. AISTATS’2009
+  * Red - with pretraining; Blue - w/out
+  * With 1 layer - Red histogram of nets is almost completely below (less error) entire blue histogram (1.4% median vs. 1.8%)
+  * Wtih 4 layers - Red is much lower, and blue has much higher stdev (1.3% median vs. 2.1%)
+* Effect of network depth
+  * W/out pretraining, 2 layers best, but quickly degrades
+  * With pretraining, 4 layers best, but all more consistent and lower
+* Trajectories of the learning in function space
+  * (a 2-D visualization produced with t-SNE)
+  * Erhan et. al AISTATS’2009
+  * Each point is a model in *function space*
+    * In order to compare 2 networks you have to compare the functions that they're implementing (because you can't compare neurons as 2 neurons might get swapped).
+      * To do this you need a suite of test cases and look at the outputs produced on those test cases, and then concat outputs into 1 big long vector.
+  * Color = epoch
+  * Top: trajectories without pre-training. Each trajectory converges to a different local min.
+  * Bottom: Trajectories with pre-training.
+  * No overlap (in function space)!
+    * The kinds of networks you find are just different w/ pretraining.
+* Why unsupervised pre-training makes sense
+  * stuff-in-the-world/concept -> image -> label
+    * If image-label pairs were generated this way, it would make sense to try to go straight from images to labels. For example, do the pixels have even parity?
+  * stuff -> image & stuff -> label
+    * high bandwidth from stuff in world to image, and low from stuff -> label
+      * e.g. if I just say "cow" you don't know if the cow is upside down, alive/dead, facing towards/away; but if you see the image, you get much more information
+    * If image-label pairs are generated this way, it makes sense to first learn to recover the stuff that caused the image by inverting the high bandwidth pathway.
+  * It's more plausible that the reason an image has the name it has is because of the stuff in the world, not because of the pixels in the image.
+  * [FWC - **this totally makes sense**]
+
 
 
 
