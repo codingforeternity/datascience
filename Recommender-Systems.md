@@ -4,6 +4,7 @@
   * "Cosine distance succeeds in bringing up more relevant similar artists than the set based methods, but unfortunately there is also significantly more noise"
   * "While there are a bunch of more principled methods to overcome this ... one simple hack that I've seen used before is to smooth the cosine by the number of overlapping users
 * "BM25 usually produces much better results than TF-IDF ... between the step function used in the Jaccard distance (K1 = 0) and the linear weighting used in the Cosine distance (K1 = +infinity)"
+*  [Information Retrieval: Implementing and Evaluating Search Engines](https://www.amazon.ca/Information-Retrieval-Implementing-Evaluating-Engines/dp/0262026511): Learning to Rank, Relevance Feedback and Search Result Fusion. The Manning IR book is also decent and [freely available online](http://nlp.stanford.edu/IR-book/pdf/irbookonlinereading.pdf). [FWC - or just use [Lucene](http://lucene.apache.org/core/4_9_1/core/org/apache/lucene/search/similarities/TFIDFSimilarity.html#formula_tf)?]
 
 #### [Wikipedia: Netflix Prize](https://en.wikipedia.org/wiki/Netflix_Prize)
 
