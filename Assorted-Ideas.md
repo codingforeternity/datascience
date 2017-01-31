@@ -1,3 +1,6 @@
+#### 3-Star Sentiment
+* http://www.benfrederickson.com/rating-set-distributions/
+
 #### Learn differences, not similarities
 * [Game Theory Reveals the Future of Deep Learning](http://www.kdnuggets.com/2016/12/game-theory-reveals-future-deep-learning.html)
 * Real learning happens by learning differences, not similarities.  Humans don't learn the difference between cats and dogs by looking at 1000 cats and 1000 dogs and building models of each.  A human may see a cat one day, then a dog a few days later, then a horse a few days after that, and then a picture of a cat again.  Yet somehow Cat, as a concept, is learned.
