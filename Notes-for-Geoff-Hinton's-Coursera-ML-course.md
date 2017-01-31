@@ -1692,10 +1692,14 @@ several models.
     * simple to get gradient of last term wrt v_i--a constant, which implies last term is a line
     * The effect of the hidden units is to push the mean to one side.
 * Gaussian-Binary RBM’s
-  * Lots of people have failed to get these to work properly. Its extremely hard to learn
-tight variances for the visible units.
+  * Lots of people have failed to get these to work properly. **It's extremely hard to learn
+tight variances for the visible units** (see 0.69 example above)
     * It took a long time for us to figure out why it is so hard to learn the visible variances.
   * When sigma is much less than 1, the bottom-up effects (from v to h; w_ij/σ_i) are too big and the top-down effects (from h to v; σ_i*w_ij) are too small. [FWC - could a separate σ_i matrix be learned that gets applied oppositely in each phase?]
   * Solution: When sigma is small, we need many more hidden units than visible units.
     * This allows small weights to produce big top-down effects.
-    * Unfortunately, we really need the number of hidden units to change with σ_i.
+    * Unfortunately, we really need the number of hidden units to change with σ_i--cue Stepped sigmoid units
+* Stepped sigmoid units: A neat way to implement integer values
+  * Make many copies of a stochastic binary unit.
+  * All copies have the same weights and the same adaptive bias, b, but they have different *fixed* offsets to the bias: b−0.5, b−1.5, b−2.5, b−3.5 , ....
+  * As σ_i gets smaller, the number of units that get turned on gets bigger resulting in more top-down effect to drive the visible units that have small stdevs.
