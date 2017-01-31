@@ -1,3 +1,14 @@
+#### Summary of techniques
+  1. Information Retrival - based on various similarity metrics of word count (user) distributions for documents (purchased items)
+  2. Latent Semantic Analysis - use SVD to factorize word x document (or user x item) matrix and then reconstruct with fewer dimensions
+  3. Collaborative Filtering (aka Alternating Least Squares)
+  4. Restricted Boltzmann Machines (see Hinton course notes)
+
+#### ["People Who Like This Also Like ... " Part 2: Finding Similar Music using Matrix Factorization](http://www.benfrederickson.com/matrix-factorization/) (1/31/17)
+* "Matrix Factorization methods can generate matches that are impossible to find with the techniques in my original [IR] post [below]."
+* Covered techniques: Latent Semantic Analysis ([SVD](https://jeremykun.com/2016/04/18/singular-value-decomposition-part-1-perspectives-on-linear-algebra/) of BM25 weights), (Implicit) Alternating Least Squares (aka Collaborative Filtering (for implicit datasets))
+* Spotify uses a matrix factorization technique called [Logistic Matrix Factorization]() to generate their lists of related artists. This method has a similar idea to Implicit ALS: it's a confidence weighted factorization on binary preference data - but uses a logistic loss instead of a least squares loss
+
 #### ["People Who Like This Also Like ... " Part 1: Distance Metrics for Fun and Profit](http://www.benfrederickson.com/distance-metrics/) (1/30/17)
 * "most common way of dealing with this problem is [Jaccard distance](http://en.wikipedia.org/wiki/Jaccard_index), which normalizes the intersection size of the two sets by dividing by the total number of users that have listened to either artist."
 * "Cosine based methods: The set based methods throw away a ton of useful information: how often the user has listened to the artist."
