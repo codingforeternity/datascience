@@ -1,5 +1,7 @@
 #### [The truth is that people just don't dislike things online that often](http://www.benfrederickson.com/rating-set-distributions/)
 * even if they did offer a dislike button, people just wouldn't use it often enough to justify the precious screen real estate it would take up.
+* Most ratings are positive: more people watch good movies.
+  * 15% of ratings are negative, but 30% of items rated have negative ratings.
 
 #### Summary of techniques
   1. Information Retrival - based on various similarity metrics of word count (user) distributions for documents (purchased items)
