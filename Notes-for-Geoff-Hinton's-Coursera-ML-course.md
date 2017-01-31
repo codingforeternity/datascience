@@ -1528,3 +1528,37 @@ factorizes (if you're forced to have a factorial model)
 
 ### Week 13, Programming assignment 4
 * file:///home/fred/Documents/articles/geoff_hinton's_machine_learning_coursera/programming_assigments/assignment_4_week_13/README.txt
+
+### [Lecture 14a: Learning layers of features by stacking RBMs](https://www.coursera.org/learn/neural-networks/lecture/hvDfI/learning-layers-of-features-by-stacking-rbms-17-min)
+* Anybody sensible would expect if you combined a set of BMs together to make 1 model what you'd get is a multilayer BM (undirected), but you actually get something more like a SBN (directed)
+* Training a deep network by stacking RBMs
+  * First train a layer of features that receive input directly from the pixels.
+    * Then treat the activations of the trained features as if they were pixels and learn features of features in a second hidden layer.
+    * Then do it again.
+  * It can be proved that each time we add another layer of features we improve a variational lower bound on the log probability of generating the training data.
+    * The proof is complicated and only applies to unreal cases (only applicable if you do it just right, which we don't do in practice, but at least the proof is reassuring b/c it suggests something sensible is going on).
+    * It is based on a neat equivalence between an RBM and an infinitely deep belief net (see lecture 14b).
+* Combining two RBMs to make a Deep Belief Net (DBN; stacked BMs)
+  * see nice picture in lec14_stacking_RBMs.pdf
+  * note that if you start the second BM off with the transpose of the weights matrix learned by the first BM then you just get back your initial input (b/c that's what a BM is doing in the first place
+  * The lower (directed) layers are like a SBN while the top 2 layers (undirected) form an RBM--i.e. it's not a BM!
+* The generative model after learning 3 layers
+* To generate data:
+  1. Get an equilibrium sample from the top-level RBM by performing alternating Gibbs sampling for a long time.  (The top 2 layers BM is defining the prior distribution over the second to top layer.
+  2.  Starting from second-to-top-layer, perform a top-down pass to get states for all the other layers.
+  * The lower level bottom-up connections are not part of the generative model. They are just used for inference.
+* An aside: Averaging factorial distributions
+  * If you average some factorial distributions, you do NOT get a factorial distribution.
+    * What it means "to be factorial" is that the probability of the first 2 units turning on together from the (input vector) v1 distribution (below) is 0.9 * 0.9 = 0.81
+    * In an RBM, the posterior over 4 hidden units is factorial for each visible vector.
+    * Posterior for v1: 0.9, 0.9, 0.1, 0.1
+    * Posterior for v2: 0.1, 0.1, 0.9, 0.9
+    * Aggregated \= 0.5, 0.5, 0.5, 0.5
+  * Consider the binary vector 1,1,0,0.
+    * in the posterior for v1, p(1,1,0,0) = 0.9^4 = 0.43 = 0.9 * 0.9 * (1-.1) * (1-.1)
+    * in the posterior for v2, p(1,1,0,0) = 0.1^4 = .0001
+    * in the aggregated posterior, p(1,1,0,0) = 0.215.
+    * If the aggregated posterior was factorial it would have p = 0.5^4 (which is much smaller)
+    * I.e. averaging the two distributions has given us a mixture distribution, which is not factorial
+
+
