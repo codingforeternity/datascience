@@ -1675,8 +1675,27 @@ several models.
   * It's more plausible that the reason an image has the name it has is because of the stuff in the world, not because of the pixels in the image.
   * [FWC - **this totally makes sense**]
 
-
-
-
-
-
+### [Lecture 14d: Modeling real-valued data with an RBM](https://www.coursera.org/learn/neural-networks/lecture/v4e2f/what-happens-during-discriminative-fine-tuning-8-mins)
+* Make visible units linear w/ Gaussian noise, but this leads to problems w/ learning, which is solved by making the hidden units RELUs.
+* Modeling real-valued data
+  * For images of digits, intermediate intensities can be represented as if they were probabilities by using "mean-field" logistic units.
+    * We treat intermediate values as the probability that the pixel is inked.
+  * This will not work for real images.
+    * In a real image, the intensity of a pixel is almost always, almost exactly the average of the neighboring pixels.
+    * Mean-field logistic units cannot represent precise intermediate values. (e.g. very likely to be 0.69, but very unlikely to be 0.71 or 0.67)
+* A standard type of real-valued visible unit
+* Model pixels as Gaussian (linear) variables. Alternating Gibbs sampling is still easy, though learning needs to be much slower.
+  * E(v,h) = ∑_i[(v_i-b_i)^2/(2σ_i^2)] - ∑_j[b_j*h_j] - ∑_ij[v_i*h_j*w_ij / σ_i]
+  * first term on RHS is "parabolic containment function" that keeps v_i near b_i
+  * last term shifts that parabola away from b_i as determined by h
+    * last term: energy-gradient produced by the total input to a visible unit
+    * simple to get gradient of last term wrt v_i--a constant, which implies last term is a line
+    * The effect of the hidden units is to push the mean to one side.
+* Gaussian-Binary RBM’s
+  * Lots of people have failed to get these to work properly. Its extremely hard to learn
+tight variances for the visible units.
+    * It took a long time for us to figure out why it is so hard to learn the visible variances.
+  * When sigma is much less than 1, the bottom-up effects (from v to h; w_ij/σ_i) are too big and the top-down effects (from h to v; σ_i*w_ij) are too small. [FWC - could a separate σ_i matrix be learned that gets applied oppositely in each phase?]
+  * Solution: When sigma is small, we need many more hidden units than visible units.
+    * This allows small weights to produce big top-down effects.
+    * Unfortunately, we really need the number of hidden units to change with σ_i.
