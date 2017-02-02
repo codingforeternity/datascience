@@ -1,3 +1,5 @@
+#### [Docker Terminology](http://blog.thoward37.me/articles/where-are-docker-images-stored/)
+
 #### Running docker-compose
 * $ `sudo docker-compose up`
 * Error: `Unsupported config option for services service: 'web'`
