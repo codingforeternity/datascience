@@ -1,6 +1,7 @@
 #### [Docker Terminology](http://blog.thoward37.me/articles/where-are-docker-images-stored/)
 * "You can tag an image, and store multiple versions of that image with different GUIDs in a single named repository, access different tagged versions of an image with a special syntax like `username/image_name:tag`". For example: `crimzie/hamstoo:latest`
-  * Amazon EC2 Container Service says this: "Namespaces are optional, and they can be included in the repository name with a slash (for example, `namespace/repo`" 
+  * Amazon EC2 Container Service says this: "Namespaces are optional, and they can be included in the repository name with a slash (for example, `namespace/repo`"
+  * The Docker Terminology link above seems to confirm this interpretation: "So, this the confusing part: Suppose there's a Docker image called thoward/scooby_snacks. The official "repository name" is thoward/scooby_snacks, even though we would normally think of the repository as just being scooby_snacks (eg, in GitHub, or elsewhere). In fact, when the Docker documentation refers to a repository, it sometimes means the whole thing, username included, and sometimes only means the part after the username."
 
 #### Running docker-compose
 * $ `sudo docker-compose up`
