@@ -1,3 +1,9 @@
+#### Running docker-compose
+* $ `docker-compose up`
+* Error: `Unsupported config option for services service: 'web'`
+  * [StackOverflow says](http://stackoverflow.com/questions/36724948/docker-compose-unsupported-config-option-for-services-service-web) I need to be using 1.6 (or later) version of docker-compose.  I was running version 1.3 that I got from `apt-get`.
+  * For a list of versions, see the [Compose file format compatibility matrix](https://github.com/docker/compose/releases)
+
 #### Per crimzie:
 * You can see the docker compose setup in docker-compose.yml in root folder.  When used, it pulls two latest docker images from a repository (hamstoo backend and mongo db), runs them in a docker virtual machine and sets up their environment automatically.
 
