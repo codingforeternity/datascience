@@ -1,3 +1,8 @@
+#### [8 Things You Should Know Before Hiring a Foreign Independent Contractor](http://jiahkimlaw.com/business/eight-things-know-hiring-foreign-independent-contractor/) (2/1/17)
+* For example, a contractor who works full-time exclusively for one principal is a de facto employee in many countries. It also becomes harder to defend a contractor status when he/she is employed for a long time. On the other hand, a contractor who provides his or her own office and supplies is more likely seen as an independent contractor, instead of an employee.
+* Even though a principal does not have to report foreign contractor payments to the IRS in most cases, he should have a foreign contractor complete Form W-8BEN
+* Your company can prevent unfortunate incidents by having a clause to transfer the rights from a contractor to the principal. ... You might also consider adding clauses about how to resolve disputes when they arise.
+
 #### Pitch Deck "how to" (1/23/17)
 * [The 11 Slides You Need to Have in Your Pitch Deck](http://articles.bplans.com/what-to-include-in-your-pitch-deck/)
 * [Guy Kawasaki, The only 10 slides you need in your pitch](http://guykawasaki.com/the-only-10-slides-you-need-in-your-pitch/)
