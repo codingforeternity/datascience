@@ -53,6 +53,7 @@ Welcome to the fcrimins.github.io wiki!
   - [[Web Frameworks]]
   - [[Play Framework Notes]]
   - [[Docker Notes]]
+  - [[Web Hosting]]
 
 <br>
 
