@@ -6,5 +6,5 @@
   4. Continue on the same page through the 'Install Docker' section instructions, which will install `docker-engine` (version 1.12.6 at time of writing, 2/1/17)
   5. Per step #3-4 on [this](https://docs.docker.com/compose/install/) page, go to [here]() and run the following commands:
     * `$ sudo -i`
-    * `#curl -L https://github.com/docker/compose/releases/download/1.10.0/docker-compose-\`uname -s\`-\`uname -m\` > /usr/local/bin/docker-compose`
+    * `# curl -L https://github.com/docker/compose/releases/download/1.10.0/docker-compose-``uname -s\`-\`uname -m\` > /usr/local/bin/docker-compose`
     * `chmod +x /usr/local/bin/docker-compose`
