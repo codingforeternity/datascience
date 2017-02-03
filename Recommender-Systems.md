@@ -1,3 +1,5 @@
+#### [Mozilla Context Graph: A recommendation system for the web](http://venturebeat.com/2016/07/06/mozilla-is-building-context-graph-a-recommender-system-for-the-web/)
+
 #### [The truth is that people just don't dislike things online that often](http://www.benfrederickson.com/rating-set-distributions/)
 * even if they did offer a dislike button, people just wouldn't use it often enough to justify the precious screen real estate it would take up.
 * Most ratings are positive: more people watch good movies.
