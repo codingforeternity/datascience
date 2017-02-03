@@ -1,5 +1,6 @@
 #### [A more comprehensive Docker tutorial](https://www.codementor.io/jquacinella/docker-and-docker-compose-for-local-development-and-small-deployments-ph4p434gb) (2/3/17)
 * A [picture](https://cdn.filestackcontent.com/TTiK5t0SGS6ccM403PcQ) is worth a thousand words.
+  * A running container is simply a standard OS process, plus file system dependencies and network connections.
 
 #### [Docker Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04)
 * Includes a nice, seemingly comprehensive list of useful commands.
