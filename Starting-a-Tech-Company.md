@@ -1,3 +1,5 @@
+#### [Startup Metrics for Pirates](http://www.slideshare.net/dmc500hats/startup-metrics-for-pirates-long-version)
+
 #### [8 Things You Should Know Before Hiring a Foreign Independent Contractor](http://jiahkimlaw.com/business/eight-things-know-hiring-foreign-independent-contractor/) (2/1/17)
 * For example, a contractor who works full-time exclusively for one principal is a de facto employee in many countries. It also becomes harder to defend a contractor status when he/she is employed for a long time. On the other hand, a contractor who provides his or her own office and supplies is more likely seen as an independent contractor, instead of an employee.
 * Even though a principal does not have to report foreign contractor payments to the IRS in most cases, he should have a foreign contractor complete Form W-8BEN
