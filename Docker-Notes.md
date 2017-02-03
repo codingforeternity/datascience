@@ -2,6 +2,7 @@
 * A [picture](https://cdn.filestackcontent.com/TTiK5t0SGS6ccM403PcQ) is worth a thousand words.
   * "A running container is simply a standard OS process, plus file system dependencies and network connections."
 * "It prevents the 'it works for me' excuses for when things break."
+* "a Docker Compose script to mimic the `docker run` command, so we do not have to keep remembering the parameters."
 
 #### [Docker Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04)
 * Includes a nice, seemingly comprehensive list of useful commands.
