@@ -29,3 +29,5 @@
     * Here's the error: `bash: /usr/bin/docker-compose: No such file or directory`
     * Here was the fix: `sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose`
     * [Here](http://superuser.com/questions/787897/docker-hello-world-example-doesnt-work-no-such-file-or-directory/789480) was someone with a similar issue, which I commented on.
+  7. And then I wasn't able to run `docker info`--but only as myself--as root it worked fine.
+    * So I had to follow [these](https://docs.docker.com/engine/installation/linux/linux-postinstall/) steps (also referenced [here](http://stackoverflow.com/questions/33562109/docker-command-cant-connect-to-docker-daemon)), which I guess aren't so "optional."
