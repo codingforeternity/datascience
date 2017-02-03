@@ -4,6 +4,10 @@
 * Is there a way to see which image is currently running?
   * A: `docker-compose ps` should show the containers for the project and their status.
   * the last thing to look for is whether docker-compose recreates the hamstoo container from freshly compiled image — it should state "Recreating hamstoo_hamstoo_1" instead of "Starting hamstoo_hamstoo_1" on the first lines of program output for command `docker-compose up` (after a fresh `sbt docker:publishLocal`)
+* Seems like generated.keystore is being generated in /opt/docker/conf, but that's in the container right?  Not on my actual filesystem?
+  * Yes, it’s in the container, but also that is a linked volume, that syncs to [~/code/hamstoo/]conf/ on your local machine.
+* you can use `docker-compose exec hamstoo bash` to look inside. hamstoo is the name of the service you want to exec a command inside and bash obviously is that you want to run terminal inside the container
+  * the same way you can run mongo shell `docker-compose exec mongo mongo`
 
 #### [A more comprehensive Docker tutorial](https://www.codementor.io/jquacinella/docker-and-docker-compose-for-local-development-and-small-deployments-ph4p434gb) (2/3/17)
 * A [picture](https://cdn.filestackcontent.com/TTiK5t0SGS6ccM403PcQ) is worth a thousand words.
