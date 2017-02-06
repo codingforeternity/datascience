@@ -19,6 +19,8 @@
 
 #### [Docker Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04)
 * Includes a nice, seemingly comprehensive list of useful commands.
+* To remove a docker image (per [here](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes)):
+  * `$ docker rmi <sha12>`
 
 #### [Docker Terminology](http://blog.thoward37.me/articles/where-are-docker-images-stored/)
 * "You can tag an image, and store multiple versions of that image with different GUIDs in a single named repository, access different tagged versions of an image with a special syntax like `username/image_name:tag`". For example: `crimzie/hamstoo:latest`
