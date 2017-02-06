@@ -7,6 +7,7 @@
 * [AWS Docker Basics](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html)
 * The Amazon ECS [instance and service roles](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/get-set-up-for-amazon-ecs.html#create-an-iam-user) are automatically created for you in the console first run experience, so if you intend to use the Amazon ECS console, you can move ahead to Create a Key Pair. If you do not intend to use the Amazon ECS console, and instead plan to use the AWS CLI, complete the procedures in [Amazon ECS Container Instance IAM Role](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/instance_IAM_role.html) and [Amazon ECS Service Scheduler IAM Role](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/service_IAM_role.html) before launching container instances or using Elastic Load Balancing load balancers with services.
   * Note that if you plan to launch instances in multiple regions, you'll need to create a key pair in each region.
+  * To connect to your Linux instance from a computer running Mac or Linux, specify the .pem (in ~/keys) file to your SSH client with the -i option and the path to your private key.
 * [Amazon EC2 console](https://console.aws.amazon.com/ec2/)
 
 #### [Moving hosting from GoDaddy to AWS](http://serverfault.com/questions/611805/switching-hosting-from-godaddy-to-aws)
