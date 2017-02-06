@@ -1,8 +1,13 @@
 
-#### (Amazon Web Services)
-* Docker Container Registry (ECR) - Alternative to using DockerHub as a container registry.
-* Container Service (ECS) - Before you can run tasks in Amazon ECS, you need to launch container instances into your cluster. For more information about how to set up and launch container instances, see Setting Up with Amazon ECS and Getting Started with Amazon ECS.
+#### Amazon Web Services
+* EC2 (Docker) Container Registry (ECR) - Alternative to using DockerHub as a container registry.
+  * *Store container images securely* with Amazon ECR - Create and manage a new private image repository and use the Docker CLI to push and pull images. Access to the repository is managed through AWS Identity and Access Management. 
+* EC2 Container Service (ECS) - **Before you can run tasks in Amazon ECS, you need to launch container instances into your cluster**. For more information about how to set up and launch container instances, see Setting Up with Amazon ECS and Getting Started with Amazon ECS.
   * [Launching an Amazon ECS Container Instance](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_container_instance.html)
+* [AWS Docker Basics](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html)
+* The Amazon ECS [instance and service roles](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/get-set-up-for-amazon-ecs.html#create-an-iam-user) are automatically created for you in the console first run experience, so if you intend to use the Amazon ECS console, you can move ahead to Create a Key Pair. If you do not intend to use the Amazon ECS console, and instead plan to use the AWS CLI, complete the procedures in [Amazon ECS Container Instance IAM Role](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/instance_IAM_role.html) and [Amazon ECS Service Scheduler IAM Role](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/service_IAM_role.html) before launching container instances or using Elastic Load Balancing load balancers with services.
+  * Note that if you plan to launch instances in multiple regions, you'll need to create a key pair in each region.
+* [Amazon EC2 console](https://console.aws.amazon.com/ec2/)
 
 #### [Moving hosting from GoDaddy to AWS](http://serverfault.com/questions/611805/switching-hosting-from-godaddy-to-aws)
 * "In order to move from GoDaddy to AWS, you can a) *just move your code to AWS* (if you have a static website, move it to S3 instead of EC2), *and point your GoDaddy DNS records at your new host* (e.g. your EC2 instance's IP address). In EC2, your instance's IP address will change when the instance reboots, etc. As such it is a dynamic IP address, not well suited for hosting a website. Instead, *you need to allocate a static IP address, once that can be assigned to an instance - AWS call this an* **'Elastic IP'. This is what you will use for your A record**. (*The same holds true whether you use GoDaddy's DNS or Route53* - you need an A record that points to the IP address of your server - but *there is no requirement to use Route53 just because you are using AWS to host* your site - there are some exceptions - e.g. using an elastic load balancer)."
