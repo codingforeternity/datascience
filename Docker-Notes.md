@@ -15,6 +15,8 @@
   * "[For example](https://docs.docker.com/engine/tutorials/dockervolumes/), you can specify either `/foo` or `foo` for a `host-dir` value. If you supply the `/foo` value, the Docker Engine creates a bind-mount. If you supply the `foo` specification, the Docker Engine creates a named volume."
   * [This](https://github.com/docker/docker/issues/19029) shows how to create a docker volume: `$ docker volume create --name=foo`
   * [This](http://stackoverflow.com/questions/39685162/docker-compose-up-works-but-eb-local-run-does-not) explains how to create absolute paths.
+* Error message: "STOPPED ExitCode: 255  \<ip_addr\>:9090->8080/tcp  ecscompose-\<image\>:9"
+  * According to [this](https://github.com/docker/docker/issues/15713) it seems like 255 is caused by non-existent directories.
 
 #### [A more comprehensive Docker tutorial](https://www.codementor.io/jquacinella/docker-and-docker-compose-for-local-development-and-small-deployments-ph4p434gb) (2/3/17)
 * A [picture](https://cdn.filestackcontent.com/TTiK5t0SGS6ccM403PcQ) is worth a thousand words.
