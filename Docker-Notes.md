@@ -13,6 +13,7 @@
 * Error message: "236c6a10-c0d0-4522-ade8-7eb49b3ceda2/mongo    STOPPED Reason: CannotCreateContainerError: API error (500): create ./mongo/configdb: "./mongo/configdb" includes invalid characters for a local volume name, only "[a-zA-Z0-9][a-zA-Z0-9_.-]" are allowed          ecscompose-hamstoo:2"
   * This occurs because the `host-dir`, "./mongo/configdb", isn't an absolute path (doesn't start w/ a '/'), in which case it is assumed to be a volume name.  See [here](https://github.com/docker/docker/issues/17734) for a suggested improvement to this error message.
   * "[For example](https://docs.docker.com/engine/tutorials/dockervolumes/), you can specify either `/foo` or `foo` for a `host-dir` value. If you supply the `/foo` value, the Docker Engine creates a bind-mount. If you supply the `foo` specification, the Docker Engine creates a named volume."
+  * [This](https://github.com/docker/docker/issues/19029) shows how to create a docker volume: `$ docker volume create --name=foo`
 
 #### [A more comprehensive Docker tutorial](https://www.codementor.io/jquacinella/docker-and-docker-compose-for-local-development-and-small-deployments-ph4p434gb) (2/3/17)
 * A [picture](https://cdn.filestackcontent.com/TTiK5t0SGS6ccM403PcQ) is worth a thousand words.
