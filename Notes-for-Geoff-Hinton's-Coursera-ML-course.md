@@ -1827,3 +1827,37 @@ hidden layer.
   * The M hidden units will *span the same space* as the first M components found by PCA, but they may be a rotation/skewing of those axes.
     * Their weight vectors may not be orthogonal.
     * They will tend to have equal variances (unlike PCA).
+* Using backpropagation to generalize PCA
+  * With non-linear layers before and after the (bottleneck) code layer, it should be possible to efficiently represent data that lies on or near a non-linear manifold.
+    * input -> encoder (logistic units) -> code (linear) -> decoder (logistic) -> output (matching input)
+    * The encoder (between input and code) converts coordinates in the input space to coordinates on the manifold.
+    * The decoder (between code and output) does the inverse mapping.
+  * So we have a curious network in which we're using a supervised learning algorithm to do unsupervised learning.
+
+### [Lecture 15b: Deep Autoencoders](https://www.coursera.org/learn/neural-networks/lecture/812IZ/deep-auto-encoders-4-mins)
+* People thought of these in the 80s, but they couldn't train them to be better than PCA.
+* The [Semantic Hashing](file:///home/fred/Documents/articles/autoencoders/semantic_hashing_salakhutdinov_hinton_09.pdf) article was the first time we could get much better results out of them than from PCA.
+* Deep Autoencoders
+  * They always looked like a really nice way to do **non-linear dimensionality reduction**:
+    * They provide flexible mappings both ways.
+    * The learning time is linear (or better) in the number of training cases.
+    * The final encoding model is fairly compact and fast (i.e. matrix mult)
+  * But it turned out to be very difficult to optimize deep autoencoders using backpropagation.
+    * With small initial weights the backpropagated gradient dies.
+  * We now have a much better ways to optimize them.
+    * Use unsupervised layer-by-layer pre-training.
+    * Or just initialize the weights carefully as in Echo-State Nets.
+* The first really successful deep autoencoders (Hinton & Salakhutdinov, Science, 2006)
+  * MNIST 784 input pixels
+  * stacked RBMs
+  * 3 hidden encoding layers (1000, 500, 250)
+  * 30 linear (code layer) units
+  * 3 decoding layers (250 -> 500 -> 1000)
+  * 784-pixel output layer
+  * We train a stack of 4 RBM's (W1, W2, W3, W4) and then "unroll" them (transposes of Wi)
+  * Then we fine-tune with gentle backprop.
+    * So the weights for encoding diverged from those for decoding.
+* A comparison of methods for compressing digit images to 30 real numbers (with pictures)
+  * real data vs. 30-D deep auto vs. 30-D PCA
+  * A linear method cannot do nearly as good a job at representing the data.
+  * **FWC - i.e. don't use linear risk factors**
