@@ -1807,3 +1807,23 @@ hidden layer.
     * (UNCHECKED - INCORRECT) If the model assigns an energy e1 to state v1,h, and e2 to state v2,h, then it would assign energy (e1+e2)/2 to state (v1+v2)/2,h. This does not make sense for the kind of distributions we usually want to model.
     * (CHECKED - CORRECT it would just select huge positive vi's and hi's. Correct: If some bi<0, then if vi→−∞, then E→−∞. Similarly for bi>0 if vi→∞, then E→−∞. So the Boltzmann distribution based on this energy function would behave in weird ways.) If we continue to use the same one, then in general, there will be infinitely many v's and h's such that, E(v,h) will be infinitely small (close to −∞). The probability distribution resulting from such an energy function is not useful for modeling real data.
     * (UNCHECKED) If we use the old one, the real-valued vectors would end up being constrained to be binary.
+
+### [Lecture 15a: From Principal Components Analysis to Autoencoders](https://www.coursera.org/learn/neural-networks/lecture/JiT1i/from-pca-to-autoencoders-5-mins)
+* We can do PCA efficiently using standard methods, or we can do it inefficiently where both the hidden units and the output units are linear.  The advantage of doing with a NN is that we can generalize to deep NNs where the code is a non-linear function of the input and our reconstruction of the code is also a non-linear function of the code.  This enables us to deal with **curved manifolds** in the input space.
+* Principal Components Analysis
+  * This takes N-dimensional data and finds the M orthogonal directions in which the data have the most variance.
+    * These M principal directions form a lower-dimensional subspace.
+    * We can represent an N-dimensional datapoint by its projections onto the M principal directions.
+    * This loses all information about where the datapoint is located in the remaining orthogonal directions.
+  * We reconstruct by using the mean value (over all the data) on the N-M directions that are not represented.
+    * The reconstruction error is the sum over all these unrepresented directions of the squared differences of the datapoint from the mean.
+* A picture of PCA with N=2 and M=1
+* Using backpropagation to implement PCA *inefficiently* (although if there's a huge amount of data it may be more efficient)
+  * Try to make the output be the same as the input in a network with a central bottleneck.
+    * output vector <- code <- input vector
+  * The activities of the hidden units in the bottleneck form an efficient code.
+  * If the hidden and output layers are linear, it will learn hidden units that are a linear function of the data and minimize the squared reconstruction error.
+    * This is exactly what PCA does.
+  * The M hidden units will *span the same space* as the first M components found by PCA, but they may be a rotation/skewing of those axes.
+    * Their weight vectors may not be orthogonal.
+    * They will tend to have equal variances (unlike PCA).
