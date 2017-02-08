@@ -1,3 +1,6 @@
+#### [The top bestsellers of 1916](http://marginalrevolution.com/marginalrevolution/2017/01/top-bestsellers-1916.html)
+* But what are the bestsellers from 1916 with sales normalized by year after publication?
+
 #### [Ratings datasets are figuratively just lying around the web these days, begging for someone to take notice and analyze them.](http://www.benfrederickson.com/rating-set-distributions/)
 * Movie reviews from the Netflix Prize dataset
 * Business reviews from the Yelp Academic Dataset, as summarized here
