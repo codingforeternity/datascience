@@ -4,6 +4,11 @@ See also: [[Docker Notes]]
 
 ***
 
+#### AWS TODO
+* [AWS Certificate Manager](https://aws.amazon.com/blogs/aws/new-aws-certificate-manager-deploy-ssltls-based-apps-on-aws/) has free certs
+  * Supposedly they only work though with Elastic Load Balancing (and Amazon CloudFront)
+* [EC2 Guide: Hosting a website on Amazon EC2](http://www.paul-norman.co.uk/2011/02/hosting-a-website-on-amazon-ec2)
+
 #### Amazon Web Services
 * EC2 (Docker) Container Registry (ECR) - Alternative to using DockerHub as a container registry.
   * *Store container images securely* with Amazon ECR - Create and manage a new private image repository and use the Docker CLI to push and pull images. Access to the repository is managed through AWS Identity and Access Management. 
