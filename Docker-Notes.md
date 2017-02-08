@@ -4,6 +4,9 @@ See also: [[Web Hosting]]
 
 ***
 
+#### [Data-only containers and data persistence with Docker](https://learning-continuous-deployment.github.io/docker/container/volumes/2015/05/22/persistent-data-with-docker/)
+* Bottom line: use --volume-from into a data-only container that does nothing other than expose a volume
+
 #### [docker-compose CLI](https://docs.docker.com/compose/reference/overview/)
 
 #### Learning Docker
