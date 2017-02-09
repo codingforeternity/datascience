@@ -1740,7 +1740,7 @@ be viewed as a sigmoid belief net.
   * The learning rule for a sigmoid belief net is:
     * Δw_ij ∝ s_j(s_i − p_i) ... where j's are from hidden states and i's from visible
     * s_i^1 is an unbiased sample from p_i^0
-  * The (inference) process that goes from h0 to v1 (up) is exactly the same as that (the generative process) which goes from h0 to v0 (down), which means that s_i^1 (state of visible unit i in second visible layer, v1) is an unbiased sample from p_i^0 (probability of visible unit i in first visible layer, v0)
+  * The (inference) process that goes from h0 to v1 (up) is exactly the same as that (the generative process) which goes from h0 to v0 (down), which means that s_i^1 (**s**tate or **s**ample of visible unit i in second visible layer, v1) is an unbiased sample from p_i^0 (probability of visible unit i in first visible layer, v0)
   * With replicated weights this rule becomes:
       * sj0(si0-si1) + si1(sj0-sj1) + sj1(si1-si2) + ... - sj∞*si∞
       * rather than using p's (e.g. pi0) we use a sample with those probabilities (e.g. si1)
