@@ -1371,10 +1371,10 @@ has been little linked in the past with logic. This is thermodynamics primarily 
     * Probabilities then had to be computed for nodes of the graph, given the states of other nodes.
   * Belief Nets: For sparsely connected, directed acyclic graphs, clever inference algorithms were discovered.
 * Belief Nets
-  * A belief net is a directed acyclic graph composed of stochastic variables.
+  * A belief net is a directed acyclic graph composed of **stochastic** variables.
   * We get to observe some of the variables (generally the leaves) and we would like to solve two problems:
-    * The inference problem: Infer the states of the unobserved variables.
-    * The learning problem: Adjust the interactions between variables to make the network more likely to
+    * The **inference** problem: Infer the states of the unobserved variables.
+    * The **learning** problem: Adjust the interactions between variables to make the network more likely to
 generate the training data.
       * I.e. Decide both which nodes are affected by which other nodes and decide thes strengths of those effects.
 * Graphical Models vs. Neural Networks
