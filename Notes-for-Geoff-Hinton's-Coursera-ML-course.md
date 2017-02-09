@@ -1591,7 +1591,7 @@ factorizes (if you're forced to have a factorial model)
   * The weights are then fine-tuned to be a better generative model using contrastive wake-sleep.
   * This is the model from the intro video of this course.  Go back and see what happens when you run this model.  Good at both recognition and generation!
 
-### [Lecture 14b: Discriminative fine-tuning for DBNs](https://www.coursera.org/learn/neural-networks/lecture/nLRJy/discriminative-learning-for-dbns-9-mins)
+### [Lecture 14b: **Discriminative fine-tuning for DBNs**](https://www.coursera.org/learn/neural-networks/lecture/nLRJy/discriminative-learning-for-dbns-9-mins)
 * Instead of fine-tuning to be better at generation (as we did in previous video) we're going to fine-tune it to be better at discriminating classes--which works very well.  Major influence in speech recog.
 * **Fine-tuning for discrimination** (i.e. for supervised learning)
   * First learn one layer at a time by stacking RBMs.
@@ -1644,8 +1644,8 @@ several models.
   * Li Deng (at MSR) realised that this result could change the way speech recognition was done. It has!
     * http://www.bbc.co.uk/news/technology-20266427
 
-### [Lecture 14c: What happens during discriminative fine-tuning?](https://www.coursera.org/learn/neural-networks/lecture/v4e2f/what-happens-during-discriminative-fine-tuning-8-mins)
-* Pre-training makes deep NNs more effective than shallower ones.  W/out pre-training it's the other way around.
+### [Lecture 14c: What happens during **discriminative fine-tuning**?](https://www.coursera.org/learn/neural-networks/lecture/v4e2f/what-happens-during-discriminative-fine-tuning-8-mins)
+* **Pre-training makes deep NNs more effective than shallower ones.  W/out pre-training it's the other way around.**
 * Learning Dynamics of Deep Nets
   * the next 4 slides describe work by Yoshua Bengio’s group
   * pictures of the features before and after fine-tuning show no identifiable differences (but the results are better)
