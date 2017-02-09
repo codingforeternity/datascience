@@ -1601,7 +1601,7 @@ factorizes (if you're forced to have a factorial model)
       * This **overcomes many of the limitations of standard backpropagation**.
       * It makes it easier to learn deep nets.
       * It makes the nets **generalize better**.
-      * **[FWC - It would be odd for a learned feature to accurately predict labels, other than by extreme chance.  First the feature has to get learned, then it also would have to be good at predicting labels.  It has to get lucky twice!]**
+      * **[FWC - It would be odd for an *overfit* learned feature to accurately predict labels, other than by extreme chance.  First the feature has to get learned (which lowers the chance of it being overfit), then it also would have to be good at predicting labels (which lowers the chance even further).  It has to get lucky twice!]**
 * Why backpropagation works better with greedy pre-training: The optimization view
   * Greedily learning one layer at a time scales well to really big networks, especially if we have locality in each layer (such as w/ CNNs for image recognition; locality = convolution fn)
   * We do not start backpropagation until we already have sensible feature detectors that should already be very helpful for the discrimination task.
