@@ -1239,7 +1239,7 @@ to 5.
 * How to avoid dealing with all those missing ratings
   * We don't want an RBM to have to deal with 18,000 visible units, but with only a few missing values
   * For each user, use an RBM that only has visible units for the movies the user rated.
-  * So instead of one RBM for all users, we have a different RBM for every user.
+  * So **instead of one RBM for all users, we have a different RBM for every user**.
     * All these RBMs use the same hidden units.
     * The weights from each hidden unit to each movie are shared by all the users who rated that movie.
   * Each user-specific RBM only gets one training case!
