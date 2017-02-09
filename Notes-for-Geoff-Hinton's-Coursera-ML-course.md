@@ -1493,7 +1493,7 @@ the posterior. All the weights interact.
     * So the *recognition* weights will learn to produce (0.5, 0.5)
     * This represents a distribution that
 puts half its mass on 1,1 or 0,0 (a quarter on each): very improbable (1e-18 for 1,1 and 0,0 is improbable because the visible unit is on--the "house moved") hidden configurations.
-  * Its much better to just pick one mode.
+  * **It's much better to just pick one mode**.
     * This is the best recognition model you can get if you assume that the posterior over hidden states
 factorizes (if you're forced to have a factorial model)
   * In variational learning we're manipulating the true posterior to make it fit the approximation we're using.  Normally in learning, we're manipulating an approximation to fit the true thing.
