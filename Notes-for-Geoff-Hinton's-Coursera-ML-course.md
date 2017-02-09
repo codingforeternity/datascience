@@ -1039,6 +1039,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
 * What exactly is being learned by the Boltzmann Machine learning algorithm? A: Parameters that define a distribution over the visible vectors.
 * Why the learning could be difficult
   * Consider a chain of units with visible units at the ends
+    * v -> w1 -> h -> w2 -> h -> w3 -> h -> w4 -> h -> w5 -> v
   * If the training set consists of (1,0) and (0,1) we want the product of all the weights to be negative (because need the change the sign from 1 to 0/-1 or from 0/-1 to 1 when traversing from visible to visible)
   * to know how to change w1 or w5 we must know w3
 * A very surprising fact
