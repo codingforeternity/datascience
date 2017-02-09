@@ -1907,3 +1907,36 @@ is too slow (big vectors! 2000D in their case)
   * "A plot like this could be very useful.  For example if you saw one of those green (Accounts/Earnings) dots was for Enron, you probably wouldn't want to buy shares in a company nearby."
     * **FWC - similarly, if each of those points had a rating associated with it, you could select the nearest neighbors over a particular rating threshold** (think of the ratings as supervised labels)
   * **FWC - would be interesting to color the dots in one of these plots (wrt company characteristics) based on future returns** (This would be a good indicator of whether unsupervised pretraining can help with supervised prediction of some other variable.  I.e. (1) perform unsupervised factorization, (2) plot, (3) color points based on supervised labels)
+
+### [Lecture 15d: Semantic hashing](https://www.coursera.org/learn/neural-networks/lecture/s7bmT/semantic-hashing-9-mins)
+* It's easy to get a binary description of an image such as black-white vs. color or inside-scene vs. outside-scene, but it's much more difficult to get 30 orthogonal binary bits
+* Start by considering documents rather than images
+  * Finding binary codes for documents
+  * 200 word counts -> 500 -> 250 -> 30 -> 250 -> 500 -> 2000 reconstructed softmax counts
+  * Train an auto-encoder using 30 **logistic units for the code layer** (logistic units not sufficient b/c used in their middle ranges to convey as much information as possible--which the noise is added to prevent from happening)
+  * During the fine-tuning stage, add noise to the inputs to the code units.
+    * The noise forces their activities to become bimodal in order to resist the effects of the noise.
+    * Then we simply threshold the activities of the 30 code units to get a binary code.
+  * Krizhevsky discovered later that its easier to just use binary stochastic units in the code layer during training
+    * in forward pass use stochastic binary units for code layer
+    * in backward pass pretend we used logistic units to get a smooth value for the gradient
+  * To summarize:
+    1. first train stacked RBMs
+    2. then unroll by use transposes of RBM weight matrices for decoder
+    3. then fine-tune backpropagate
+    4. as we do that add additional Gaussian noise to the inputs to the code units (or easier way per Krizhevsky method above)
+      * in order to be resistant to that noise, the code units need to be either firmly on or firmly off, and so the noise will encourage the learning to avoid the middle region of the logistic where it conveys a lot of information but is very sensitive to noise in its inputs
+  * this allows us to convert the counts for a bag of words into a small number of binary values
+  * so we can now compare a single query document against a long list of known documents (perhaps billions)
+    * but there's a much faster thing we can do: we can treat the code as if it was a memory address (as in a hash)
+    * so just go to a query memory address and find the documents to which it points
+* Using a deep autoencoder as a hash-function for finding *approximate* matches
+  * "supermarket search" - like what you'd do in an unfamiliar super market where you ask someone where the cans of anchovies are and they tell you where to find cans of tuna -- of course if you're unlucky they might be near the other pizza toppings, which is the downside of this kind of search
+    * a supermarket though is only at most 2D - can't group by many different dimensions simultaneously (kosher, canned, out-of-date, vegetarian) -- but here we have a 30D supermarket
+* Another view of semantic hashing
+  * Fast retrieval methods typically work by **intersecting stored lists** that are associated with cues (e.g. a very rare word) extracted from the query.
+    * So Google for example, will have a list of all the documents that contain some particular rare word, and so when you use that rare word in your query, they'll immediately have access to that list [FWC - seems similar to a forest or [LSH](https://en.wikipedia.org/wiki/Locality-sensitive_hashing))
+    * FWC - couldn't you alternatively have a lot more code bits, say 10k, that are capable of representing all the possible intersections of such lists?  or is the former method more flexible?  or just easier to use the memory BUS?
+  * Computers have special hardware that can intersect 32 very long lists in one instruction (the memory BUS)
+    * Each bit in a 32-bit binary code specifies a list of half the addresses in the memory.
+  * Semantic hashing uses machine learning to map the retrieval problem onto the type of list intersection the computer is good at (with no search required at all)
