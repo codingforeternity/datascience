@@ -1497,7 +1497,7 @@ puts half its mass on 1,1 or 0,0 (a quarter on each): very improbable (1e-18 for
   * **It's much better to just pick one mode**.
     * This is the best recognition model you can get if you assume that the posterior over hidden states
 factorizes (if you're forced to have a factorial model)
-  * In variational learning we're manipulating the true posterior to make it fit the approximation we're using.  Normally in learning, we're manipulating an approximation to fit the true thing.
+  * In variational learning we're manipulating the true posterior (FWC - i.e. pick one mode and call that the mean of the distribution) to make it fit the approximation we're using.  Normally in learning, we're manipulating an approximation (FWC - i.e. select the mean of all the modes) to fit the true thing.
     
 ### Lecture 13 Quiz
   1. This quiz is going to take you through the details of Sigmoid Belief Networks (SBNs). The most relevant videos are the second video ("Belief Nets", especially from 11:44) and third video ("Learning sigmoid belief nets") of lecture 13.
