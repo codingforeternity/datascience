@@ -1147,7 +1147,7 @@ configuration.
     * For every connected pair of units, average v_i->h_j over all the fantasy particles.
   * Allows RBMs to build good density models of sets of binary vectors (i.e. to model their probability density functions)
 * A picture of an inefficient version of the Boltzmann machine learning algorithm for an RBM
-  * Use times now not to denote weight updates but to denote steps in a Markov chain
+  * Use times now not to denote weight updates but to denote **steps in a Markov chain**
   * t=0: start by clamping a datavector on the visible units
     * update all hidden units (in parallel) given visible by computing \<v_i*h_j\>_0
   * t=1: update all the visible units (in parallel) given the new hidden units (a "reconstruction" of v)
@@ -1160,7 +1160,7 @@ configuration.
 * **Contrastive divergence: A very surprising short-cut**
   * [FWC - like negative sampling again? just change the input so that it's a little wrong, the reconstruction, not the global "wrong"]
   * stop after computing \<v_i*h_j\>_1
-  * Instead of measuring the statistics at equilibrium, we measure after one full update of the Markov chain
+  * Instead of measuring the statistics at equilibrium, we **measure after one full update of the Markov chain**
   * Δw_ij = epsilon(\<v_i*h_j\>_0 - \<v_i*h_j\>_1) ... this is CD1 (constrastive divergence, 1 step)
   * Clearly this is not doing maximum likelihood learning b/c the term we're using for the negative statistics is wrong
   * This is not following the gradient of the log likelihood. But it works well.
