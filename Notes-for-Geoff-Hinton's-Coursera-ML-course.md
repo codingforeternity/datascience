@@ -1228,7 +1228,7 @@ to 5.
     * This is **exactly equivalent to doing matrix factorization**: \<users_x_features_matrix\> * \<features_x_movies_matrix\>
     * Matrix factorization model is most commonly used model for collaborative filtering like this, and it works pretty well.
       * FWC - update 1/23/16 - [Matrix Factorization with Tensorflow](http://katbailey.github.io/post/matrix-factorization-with-tensorflow/)
-* An RBM alternative to matrix factorization
+* ********** **An RBM alternative to matrix factorization** **********
   * treat each user as a training case
     * A user is a vector of movie ratings.
     * There is one visible unit per movie and its a 5-way softmax.
