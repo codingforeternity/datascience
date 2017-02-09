@@ -1836,7 +1836,7 @@ hidden layer.
 
 ### [Lecture 15b: Deep Autoencoders](https://www.coursera.org/learn/neural-networks/lecture/812IZ/deep-auto-encoders-4-mins)
 * People thought of these in the 80s, but they couldn't train them to be better than PCA.
-* The Semantic Hashing (file:///home/fred/Documents/articles/autoencoders/semantic_hashing_salakhutdinov_hinton_09.pdf) article was the first time we could get much better results out of them than from PCA (actually it might have been an earlier, 2006, version of the article)
+* The Semantic Hashing (file:///home/fred/Documents/articles/autoencoders/semantic_hashing_salakhutdinov_hinton_09.pdf) article was the first time we could get much better results out of them than from PCA (actually it's a 2006 article by the same authors on MNIST digits; search this page for "2006"; see slide 8 of lec15.pdf)
 * Deep Autoencoders
   * They always looked like a really nice way to do **non-linear dimensionality reduction**:
     * They provide flexible mappings both ways.
