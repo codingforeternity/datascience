@@ -1108,12 +1108,12 @@ configuration.*
 * The learning raises the effective mixing rate
   * The learning interacts with the Markov chain that is being used to gather the **"negative statistics" (i.e. the data-independent statistics [FWC - as in "negative sampling").**
     * We cannot analyze the learning by viewing it as an outer loop and the gathering of statistics as an inner loop.
-  * Wherever the fantasy particles outnumber the positive data, the energy surface is raised. [FWC - b/c the energy surface is defined as the difference between the the \<positive_data\>=\<si,sj\>_data and \<fantasy particles\>=\<random data\>=\<si,sj\>_model]
+  * **Wherever the fantasy particles outnumber the positive data, the energy surface is raised**. [FWC - b/c the energy surface is defined as the difference between the the \<positive_data\>=\<si,sj\>_data and \<fantasy particles\>=\<random data\>=\<si,sj\>_model]
     * This makes the fantasies rush around hyperactively. [FWC - b/c once they end up raising the energy surface in one area, \<si,sj\>_model makes them more likely to appear in another area with lower energy]
     * They move around MUCH faster than the mixing rate of the Markov chain defined by the static current weights
 * How fantasy particles move between the model’s modes
   * **see picture on slide 19 of lec12.pdf**
-  * If a mode has more fantasy particles than data, the energy surface is raised [FWC - local minima is pushed upwards so that it's not so much of a minima, like pushing up a blanket holding balls] until the fantasy particles escape.
+  * **If a mode (aka local minima) has more fantasy particles than data, the energy surface is raised** [FWC - local minima is pushed upwards so that it's not so much of a minima, like pushing up a blanket holding balls] until the fantasy particles escape.
     * This can overcome energy barriers that would be too high for the Markov chain to jump in a reasonable time
   * The energy surface is being changed to help *mixing* in addition to defining the model.
   * Once the fantasy particles have filled in a hole, they rush off somewhere else to deal with the next problem.
