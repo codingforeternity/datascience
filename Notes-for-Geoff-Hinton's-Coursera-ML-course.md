@@ -1688,10 +1688,10 @@ several models.
     * In a real image, the intensity of a pixel is almost always, almost exactly the average of the neighboring pixels.
     * Mean-field logistic units cannot represent precise intermediate values. (e.g. very likely to be 0.69, but very unlikely to be 0.71 or 0.67)
       * [FWC - so why not learn differentials between a pixel and its surrounding pixels instead]
-* A standard type of real-valued visible unit
+* **A standard type of real-valued visible unit**
 * Model pixels as Gaussian (linear) variables. Alternating Gibbs sampling is still easy, though learning needs to be much slower.
   * E(v,h) = ∑_i[(v_i-b_i)^2/(2σ_i^2)] - ∑_j[b_j*h_j] - ∑_ij[v_i*h_j*w_ij / σ_i]
-  * first term on RHS is "parabolic containment function" that keeps v_i near b_i
+  * first term on RHS is "**parabolic containment function**" that keeps v_i near b_i
   * last term shifts that parabola away from b_i as determined by h
     * last term: energy-gradient produced by the total input to a visible unit
     * simple to get gradient of last term wrt v_i--a constant, which implies last term is a line
