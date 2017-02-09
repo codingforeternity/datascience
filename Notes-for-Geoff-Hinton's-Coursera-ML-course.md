@@ -1861,3 +1861,49 @@ hidden layer.
   * real data vs. 30-D deep auto vs. 30-D PCA
   * A linear method cannot do nearly as good a job at representing the data.
   * **FWC - i.e. don't use linear risk factors**
+
+### [Lecture 15c: Deep autoencoders for document retrieval and visualization]
+* "10 components extracted with a DAE are worth as much as 50 components extracted with a linear method such as LSA" (file:///home/fred/Documents/articles/autoencoders/reducing_dimensionality_w_NNs_hinton_salakhutdinov_2006.pdf and also see Semantic Hashing. Salakhutdinov, Hinton, 2009)
+  * also showed that if you make the code vector very small (e.g. 2 components) you can use that for visualization in a 2D plot (which also works better than just extracting the first 2 principal components)
+* How to find documents that are similar to a query document
+  * Convert each document into a “bag of words”.
+    * This is a vector of word counts ignoring order.
+    * Ignore stop words (like “the” or “over”)--not much information
+  * We could compare the word counts of the query document and millions of other documents but this
+is too slow (big vectors! 2000D in their case)
+    * So we reduce each query vector to a much smaller vector that still contains most of the information about the content of the document.
+* How to compress the count vector
+  * 2000 word counts (bottom input vector) -> 500 neurons -> 250 neurons -> 10 numbers -> 250 neurons -> 500 neurons -> 2000 reconstructed counts (top output vector)
+  * We train the neural network to reproduce its input vector as its output
+  * This forces it to compress as much information as possible into the 10 numbers in the central bottleneck.
+  * These 10 numbers are then a good way to compare documents.
+* The non-linearity used for reconstructing bags of words (2 tricks)
+  * First trick: Divide the counts in a bag of words vector by N, where N is the total number of non-stop words in the document.
+    * The resulting *probability vector* gives the probability of getting a particular word if we pick a non-stop word at random from the document.
+    * At the output of the autoencoder, we use a softmax.
+    * The probability vector defines the desired outputs of the softmax.
+  * Second trick: When we train the first RBM in the stack we use the same trick.
+    * We treat the word counts as probabilities, but we make the visible to hidden weights N times bigger than the hidden to visible because we have N observations from the probability distribution.
+    * If we left them as probabilities, the input units would have very small activities (i.e. when multiplied by weights), and wouldn't provide much input to the first hidden layer.
+    * So we have this funny property that for the first RBM, the bottom-up weights are N times bigger than the top-down weights.
+* Performance of the autoencoder at document retrieval
+  * Train on bags of 2000 words for 400,000 training cases of business documents.
+    * First train a stack of RBM’s. Then fine-tune with backprop.
+  * Test on a separate 400,000 documents.
+    * Pick one test document as a query. Rank order all the other test documents by using the cosine of the angle between codes.
+    * Repeat this using each of the 400,000 test documents as the query (requires 0.16 trillion comparisons).
+  * Plot the number of retrieved documents (x) against the proportion that are in the same hand-labeled class as the query document (y).
+    * Compare with LSA (a version of PCA).
+* Retrieval performance on 400,000 Reuters business news stories
+  * see slide 15 of lec15.pdf for plot
+  * y = accuracy (proportional overlap wrt hand-labeled classes)
+  * x = number of retrieved documents
+* Slide 16 is a plot of all documents compressed to 2 numbers using *PCA* on log(1+count) (which supresses counds with very big numbers--and makes PCA work better), then colored for different (hand-labeled) categories.
+  * There is *some* (i.e. minimal) separation of the classes.
+* **Slide 17 is a plot of all documents compressed to 2 numbers using deep autoencoders (DAEs), then colored the same way.**
+  * The different classes are distinct spokes in a wheel.
+    * "We assume that the ones in the middle are documents that didn't have many words in them and therefore was hard to distinguish between the classes."
+  * **The separation between the regions is amazing! Holy crap!**
+  * "A plot like this could be very useful.  For example if you saw one of those green (Accounts/Earnings) dots was for Enron, you probably wouldn't want to buy shares in a company nearby."
+    * **FWC - similarly, if each of those points had a rating associated with it, you could select the nearest neighbors over a particular rating threshold** (think of the ratings as supervised labels)
+  * **FWC - would be interesting to color the dots in one of these plots (wrt company characteristics) based on future returns** (This would be a good indicator of whether unsupervised pretraining can help with supervised prediction of some other variable.  I.e. (1) perform unsupervised factorization, (2) plot, (3) color points based on supervised labels)
