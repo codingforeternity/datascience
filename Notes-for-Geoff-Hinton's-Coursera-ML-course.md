@@ -990,7 +990,7 @@ Correct - The classifiers are fairly different, but overfitted to their training
     1. Simply define the probability as follows: p(v,h) <proportional-to> exp(-E(v,h))
     2. Or define the probability to be the probability of finding the network in that joint configuration after we have updated all of the stochastic binary units many times
 * The (negative) Energy of a joint configuration
-  * -E(v,h) = <visible-biases> + <hidden-biases> + <vis-vis-weights> + <vis-hid-weights> + <hid-hid-weights> 
+  * -E(v,h) = \<visible-biases\> + \<hidden-biases\> + \<vis-vis-weights\> + \<vis-hid-weights\> + \<hid-hid-weights\> 
   * -E(v,h) = sum_i[v_i*b_i] + sum_k[h_k*b_k] + sum_{i<j}[v_i*v_j*w_ij] + sum_{i,k}[v_i*h_k*w_ik] + sum_{k<l}[h_k*h_l*w_kl]
 * Using energies to define probabilities
   * from programming assignment 4: "formula for the Boltzmann distribution (the probabality [sic] of a particular configuration of an RBM)"
