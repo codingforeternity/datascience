@@ -1940,3 +1940,45 @@ is too slow (big vectors! 2000D in their case)
   * Computers have special hardware that can intersect 32 very long lists in one instruction (the memory BUS)
     * Each bit in a 32-bit binary code specifies a list of half the addresses in the memory.
   * Semantic hashing uses machine learning to map the retrieval problem onto the type of list intersection the computer is good at (with no search required at all)
+
+### [Lecture 15e: Learning binary codes for image retrieval]
+* **For document retrieval, places like Google have such good algorithms already, that techniques like Semantic Hashing may not be very useful** but different story for retrieving images (256 bits)
+* Binary codes for image retrieval
+  * Image retrieval is typically done by using the captions. Why not use the images too?
+    * Pixels are not like words: individual pixels do not tell us much about the content.
+    * Extracting object classes from images is hard (this is out of date! now we can identify objects with deep nets)
+  * Maybe we should extract a real-valued vector that has information about the content of the image?
+    * **Matching real-valued vectors in a big database is slow and requires a lot of storage.**
+    * **Short binary codes are very easy to store and match.**
+* **A two-stage method (even faster)**
+  * First, use semantic hashing with 28-bit binary codes to get a long "shortlist" of promising images (constant time jump to shortlist in memory).
+    * Then use 256-bit binary codes to do a 1-by-1 serial search for good matches.
+    * This only requires a few (4 for 256 bits) words of storage per image and the serial search can be done using fast bit-operations.
+  * But how good are the 256-bit binary codes?
+    * Do they find images that *we think* are similar?
+* Krizhevsky’s deep autoencoder
+  * Start w/ 32x32x3 (=3076) concatenated RGB vector for 32x32 pixel image but then expand (b/c logistic units have less capacity than real-valued) that to 8192 logistic units
+  * Then halve the number of units in each layer until we get down to 256
+  * The encoder has about 67,000,000 parameters--quite big.
+    * It takes a few days on a Nvidia GTX 285 GPU to train on two million images.
+  * **There is no theory to justify this architecture.**
+    * We know we want to train a deep net, it makes sense to halve each layer, but interestingly a guess like this works quite well, and presumably there are others that will work better.
+* Reconstructions of 32x32 color images from 256-bit codes
+* Example retrievals (starting w/ a picture of Michael Jackson) using 256 bit codes
+  * Starting with 256 bits, differing by only 61 bits is extremely unlikely to happen by chance, if they were random images.
+  * Retrivals using euclidean distance on raw pixels picks up lots of non faces so obviously the autoencoder understands something about faces that's not picked up by Euclidean distance.
+  * If you can't match the high frequency variation in an image, it's must better to match its average than other high frequency variation that's out of phase.  **So when you've got a complicated image, Euclidean distance will typically find smooth images to match it** [FWC - kind of like linear vs. neural network based PCA]
+* How to make image retrieval more sensitive to objects and less sensitive to pixels
+  * First train a big net to recognize lots of different types of object in real images. [FWC - what about "semantic objects" in documents"
+    * We saw how to do that in lecture 5.
+  * Then use the activity vector in the last hidden layer as the representation of the image.
+    * This should be a much better representation to match than the pixel intensities.
+  * To see if this approach is likely to work, we can use the net described in lecture 5 that won the ImageNet competition.
+  * So far we have only tried using the Euclidian distance between the activity vectors in the last hidden layer (but obviously if it works for that then we can take those activity vectors and build an autoencoder on those)
+    * It works really well!
+    * Will it work with binary codes?
+* Example images
+  * Leftmost column is the search image.
+  * Other columns are the images that have the most similar feature activities in the last hidden layer.
+  * **These images would all have poor overlaps in pixel-space**
+  * We'll see in lecture 16 that we can combine the content of the image with the caption to get an even better repr.
