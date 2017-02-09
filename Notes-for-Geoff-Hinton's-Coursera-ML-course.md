@@ -1223,9 +1223,9 @@ to 5.
   * The data is strings of triples of the form: User, Movie, rating.
     * U2 M1 5, U2 M3 1, U4 M1 4, U4 M3 ?
   * All we have to do is to predict the next "word" well and we will get rich.
-  * Convert each user into a <user-feature-vector> and each movie into a <movie-feature-vector> and from those try to predict the rating
-  * Obvious way to do this is to put in a big hidden layer, which was tried, and no better than a very simple method: dot product of <ufv> and <mfv> (not even a softmax).
-    * This is exactly equivalent to doing matrix factorization: <users_x_features_matrix> * <features_x_movies_matrix>
+  * Convert each user into a \<user-feature-vector\> and each movie into a \<movie-feature-vector\> and from those try to predict the rating
+  * Obvious way to do this is to put in a big hidden layer, which was tried, and no better than a very simple method: dot product of \<ufv\> and \<mfv\> (not even a softmax).
+    * This is **exactly equivalent to doing matrix factorization**: \<users_x_features_matrix\> * \<features_x_movies_matrix\>
     * Matrix factorization model is most commonly used model for collaborative filtering like this, and it works pretty well.
       * FWC - update 1/23/16 - [Matrix Factorization with Tensorflow](http://katbailey.github.io/post/matrix-factorization-with-tensorflow/)
 * An RBM alternative to matrix factorization
