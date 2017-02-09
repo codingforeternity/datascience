@@ -1143,7 +1143,7 @@ configuration.*
     * For every connected pair of units, average \<v_i*h_j\> over all data in the mini-batch.
   * Negative phase: Keep a set of "fantasy particles". Each particle has a value that is a global
 configuration.
-    * Update each fantasy particle a few times using alternating parallel updates.
+    * Update each fantasy particle a few times using alternating parallel updates [FWC - you can only do *parallel* updates in an **R**BM b/c the it uses a bipartite graph)
     * For every connected pair of units, average v_i->h_j over all the fantasy particles.
   * Allows RBMs to build good density models of sets of binary vectors (i.e. to model their probability density functions)
 * A picture of an inefficient version of the Boltzmann machine learning algorithm for an RBM
