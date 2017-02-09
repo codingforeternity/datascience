@@ -1536,7 +1536,7 @@ factorizes (if you're forced to have a factorial model)
   * First train a layer of features that receive input directly from the pixels.
     * Then treat the activations of the trained features as if they were pixels and learn features of features in a second hidden layer.
     * Then do it again.
-  * It can be proved that each time we add another layer of features we improve a variational lower bound on the log probability of generating the training data.
+  * It can be proved that **each time we add another layer of features we improve a variational lower bound on the log probability of generating the training data**.
     * The proof is complicated and only applies to unreal cases (only applicable if you do it just right, which we don't do in practice, but at least the proof is reassuring b/c it suggests something sensible is going on).
     * It is based on a neat equivalence between an RBM and an infinitely deep belief net (see lecture 14b).
 * Combining two RBMs to make a Deep Belief Net (DBN; stacked BMs)
