@@ -1374,8 +1374,7 @@ has been little linked in the past with logic. This is thermodynamics primarily 
   * A belief net is a directed acyclic graph composed of **stochastic** variables.
   * We get to observe some of the variables (generally the leaves) and we would like to solve two problems:
     * The **inference** problem: Infer the states of the unobserved variables.
-    * The **learning** problem: Adjust the interactions between variables to make the network more likely to
-generate the training data.
+    * The **learning** problem: Adjust the interactions between variables to make the network more likely to generate the training data.
       * I.e. Decide both which nodes are affected by which other nodes and decide thes strengths of those effects.
 * Graphical Models vs. Neural Networks
   * Early graphical models used experts to define the graph structure and the conditional probabilities.
@@ -1729,7 +1728,7 @@ tight variances for the visible units** (see 0.69 example above)
     * The Markov chain we run when we want to sample from the equilibrium distribution of an RBM can
 be viewed as a sigmoid belief net.
 * An infinite sigmoid belief net is equivalent to an RBM
-* *Inference* in an infinite sigmoid belief net
+* *Inference* (recall: "infer the states of the unobserved variables") in an infinite sigmoid belief net
   * The variables in h0 are conditionally independent given v0.
     * Inference is trivial. Just multiply v0 by W'
     * The model above h0 (i.e. starting at v1) implements a *complementary prior*: a prior (top-down) distribution over that exactly cancels out the (bottom-up) correlations in "explaining away."
@@ -1737,7 +1736,7 @@ be viewed as a sigmoid belief net.
     * The complementary prior (everything above h0, computed top-down to v1) cancels the explaining away and makes inference very simple.
   * Inference in the directed net is exactly equivalent to letting an RBM settle to equilibrium starting at the data.
   * We can do inference for each layer and get an unbiased sample at each layer simply by multiplying v0 by W'.  Then once we've computed the binary state of h0, we multiply that by W, put that through the logistic sigmoid and sample, and that will give us a binary state for v1, and so on, all the way up.
-  * So just *generate* from this model is equivalent to running the alternating Markov chain of a RBM to equilibrium.  Performing *inference* in this model is exactly the same process in the opposite direction.  This is a very special SBN in which inference (bottom-up) is as easy as generation (top-down b/c data is at the bottom--i.e. we work top down to generate data).
+  * So just *generate* from this model is equivalent to running the alternating Markov chain of a RBM to equilibrium.  Performing *inference* (recall: "infer the states of the unobserved variables") in this model is exactly the same process in the opposite direction.  This is a very special SBN in which inference (bottom-up) is as easy as generation (top-down b/c data is at the bottom--i.e. we work top down to generate data).
   * The learning rule for a sigmoid belief net is:
     * Δw_ij ∝ s_j(s_i − p_i) ... where j's are from hidden states and i's from visible
     * s_i^1 is an unbiased sample from p_i^0
