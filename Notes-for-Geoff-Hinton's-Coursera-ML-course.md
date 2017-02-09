@@ -1108,8 +1108,8 @@ configuration.*
 * The learning raises the effective mixing rate
   * The learning interacts with the Markov chain that is being used to gather the **"negative statistics" (i.e. the data-independent statistics [FWC - as in "negative sampling").**
     * We cannot analyze the learning by viewing it as an outer loop and the gathering of statistics as an inner loop.
-  * Wherever the fantasy particles outnumber the positive data, the energy surface is raised.
-    * This makes the fantasies rush around hyperactively.
+  * Wherever the fantasy particles outnumber the positive data, the energy surface is raised. [FWC - b/c the energy surface is defined as the difference between the the \<positive_data\>=\<si,sj\>_data and \<fantasy particles\>=\<random data\>=\<si,sj\>_model]
+    * This makes the fantasies rush around hyperactively. [FWC - b/c once they end up raising the energy surface in one area, \<si,sj\>_model makes them more likely to appear in another area with lower energy]
     * They move around MUCH faster than the mixing rate of the Markov chain defined by the static current weights
 * How fantasy particles move between the model’s modes
   * **see picture on slide 19 of lec12.pdf**
