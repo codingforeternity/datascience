@@ -71,6 +71,7 @@ Also see this other set of lecture notes: http://www.cs.toronto.edu/~tijmen/csc3
   * Dropout - randomly omitting hidden units when training
   * Generative pre-training
   * FWC idea - other constraints such as monotonicity and limits on distributions
+    * FWC - **monotonicity could be enforced in an auto-encoder with skip connections from the units that are desired to be monotonic straight up to the cost function**
 
 ### Week 4: Neural nets for machine learning
 * Obvious way to express regularities is as symbolic **rules**
@@ -2062,4 +2063,83 @@ other ways.
     * Autoencoders cannot work with discrete-valued inputs.
     * CHECKED2 - There is no simple way to incorporate uncertainty in the hidden representation h=f(v). A probabilistic model *might* be able to express uncertainty better since it is being made to learn P(h|v).
 
-
+### Final Exam
+Final Exam
+  1. One regularization technique is to start with lots of connections in a neural network, and then remove those that are least useful to the task at hand (removing connections is the same as setting their weight to zero). Which of the following regularization techniques is best at removing connections that are least useful to the task that the network is trying to accomplish?
+    * Early stopping
+    * *CHECKED (correct) - L1 weight decay*
+    * (nope, same as L2) - Weight noise
+    * (nope, same as weight noise) - L2 weight decay
+  2. Why don't we usually train Restricted Boltzmann Machines by taking steps in the exact direction of the gradient of the objective function, like we do for other systems?
+    * (nope, there isn't an objective function, but there is an energy/loss function) - Because it's unsupervised learning (i.e. there are no targets), there is no objective function that we would like to optimize.
+    * *CHECKED (correct, this is why we aim for thermal equilibrium) - That gradient is intractable to compute exactly.*
+    * That would lead to severe overfitting, which is exactly what we're trying to avoid by using unsupervised learning.
+  3. When we want to train a Restricted Boltzmann Machine, we could try the following strategy. Each time we want to do a weight update based on some training cases, we turn each of those training cases into a full configuration by adding a sampled state of the hidden units (sampled from their distribution conditional on the state of the visible units as specified in the training case); and then we do our weight update in the direction that would most increase the goodness (i.e. decrease the energy) of those full configurations. This way, we expect to end up with a model where configurations that match the training data have high goodness (i.e. low energy). However, that's not what we do in practice. Why not?
+    * (this was my first incorrect answer) - The gradient of goodness for a configuration with respect to the model parameters is intractable to compute exactly.
+    * Correctly sampling the state of the hidden units, given the state of the visible units, is intractable.
+    * That would lead to severe overfitting, which is exactly what we're trying to avoid by using unsupervised learning.
+    * *CHECKED2 (CORRECT, this is true b/c the goodness/energy surface needs to be raised in places with low P data; only lowering it in places w/ high P data doesn't differentiate (aka contrastive divergence)) - High goodness (i.e. low energy) doesn't guarantee high probability.*
+  4. CD-1 and CD-10 both have their strong sides and their weak sides. Which is the main advantage of CD-10 over CD-1?
+    * The gradient estimate from CD-10 has more variance than the gradient estimate of CD-1.
+    * *CHECKED3 (CORRECT) - CD-10 gets its negative data (the configurations on which the negative part of the gradient estimate is based) from closer to the **model distribution** [FWC - the model distribution is that which is predicted by the model, the part of the energy surface we want to raise, as opposed to the data distribution!] than CD-1 does.*
+    * (my first incorrect answer) - The gradient estimate from CD-10 has less variance than the gradient estimate of CD-1.
+    * (my second incorrect answer) - CD-10 is less sensitive to small changes of the model parameters.
+    * The gradient estimate from CD-10 takes less time to compute than the gradient estimate of CD-1.
+  5. CD-1 and CD-10 both have their strong sides and their weak sides. Which are significant advantages of CD-1 over CD-10? Check all that apply.
+    * CHECKED1 (INCORRECT) - CD-1 gets its negative data (the configurations on which the negative part of the gradient estimate is based) from closer to the **model** distribution than CD-10 does.
+    * CHECKED2 (b/c it causes other regions of energy space to rise; true, but not a "significant advantage") - The gradient estimate from CD-1 has more variance than the gradient estimate of CD-10.
+    * [FWC - maybe this should be checked if what they mean by "variance" is E_data - E_model] The gradient estimate from CD-1 has less variance than the gradient estimate of CD-10.
+    * CHECKED(1&2&3) - The gradient estimate from CD-1 takes less time to compute than the gradient estimate from CD-10.
+  6. With a lot of training data, is the perceptron learning procedure more likely or less likely to converge than with just a little training data? Clarification: We're not assuming that the data is always linearly separable.
+    * *CHECKED (correct, because it's less likely to be linearly separable) - Less likely.*
+    * More likely.
+  7. You just trained a neural network for a classification task, using some weight decay for regularization. After training it for 20 minutes, you find that on the validation data it performs much worse than on the training data: on the validation data, it classifies 90% of the data cases correctly, while on the training data it classifies 99% of the data cases correctly. Also, you made a plot of the performance on the training data and the performance on the validation data, and that plot shows that at the end of those 20 minutes, the performance on the training data is improving while the performance on the validation data is getting worse.  What would be a reasonable strategy to try next? Check all that apply.
+    * Redo the training with more hidden units.
+    * Redo the training with more training time.
+    * *CHECKED - Redo the training with more weight decay.*
+    * *CHECKED - Redo the training with fewer hidden units.*
+    * Redo the training with less weight decay.
+  8. If the hidden units of a network are independent of each other, then it's easy to get a sample from the correct distribution (FWC - recall factorial distribution), which is a very important advantage. For which systems, and under which conditions, are the hidden units independent of each other? Check all that apply.
+    * [Answered this one incorrectly...twice...thrice...]
+    * CHECKED(1&2) (still think this is correct) - For a Sigmoid Belief Network where the only connections are from hidden units to visible units (i.e. no hidden-to-hidden or visible-to-visible connections), when we don't condition on anything, the hidden units are independent of each other.
+    * CHECKED2 (no b/c hiddens can never be independent when conditioned on visibles b/c of explaining away; perhaps should have been checked; nope, b/c an RBM is really an infinite SBN) - For a Restricted Boltzmann Machine, when we condition on the state of the visible units, the hidden units are independent of each other.
+    * (nope, b/c of explaining away) - For a Sigmoid Belief Network where the only connections are from hidden units to visible units (i.e. no hidden-to-hidden or visible-to-visible connections), when we condition on the state of the visible units, the hidden units are independent of each other.
+    * CHECKED(1&2&3) (still think this is correct) - For a Restricted Boltzmann Machine, when we don't condition on anything, the hidden units are independent of each other.
+  9. What is the purpose of momentum?
+    * *CHECKED (correct) - The primary purpose of momentum is to speed up the learning.*
+    * The primary purpose of momentum is to reduce the amount of overfitting.
+    * The primary purpose of momentum is to prevent oscillating gradient estimates from causing vanishing or exploding gradients.
+  10. Consider a Restricted Boltzmann Machine with 2 visible units v1,v2 and 1 hidden unit h. The visible units are connected to the hidden unit by weights w1,w2 and the hidden unit has a bias b. An illustration of this model is given below. The energy of this model is given by: E(v1,v2,h)=−w1v1h−w2v2h−bh. Recall that the joint probability P(v1,v2,h) is proportional to exp−E(v1,v2,h). Suppose that w1=1,w2=−1.5,b=−0.5. What is the conditional probability P(h=1|v1=0,v2=1)? Write down your answer with at least 3 digits after the decimal point.
+    * A: 0.119
+  11. Consider the following feed-forward neural network with one logistic hidden neuron and one linear output neuron. The input is given by x=1, the target is given by t=5, the input-to-hidden weight is given by w1=1.0986123, and the hidden-to-output weight is given by w2=4 (there are no bias parameters). What is the cost incurred by the network when we are using the squared error cost?  Remember that the squared error cost is defined by Error=12(y−t)2. Write down your answer with at least 3 digits after the decimal point.
+    * A: 2.000
+  12. Consider the following feed-forward neural network with one logistic hidden neuron and one linear output neuron. The input is given by x=1, the target is given by t=5, the input-to-hidden weight is given by w1=1.0986123, and the hidden-to-output weight is given by w2=4 (there are no bias parameters). If we are using the squared error cost then what is ∂Error/∂w1, the derivative of the error with respect to w1? Remember that the squared error cost is defined by Error=0.5*(y−t)^2. Write down your answer with at least 3 digits after the decimal point.
+    * A: -1.500
+  13. Suppose that we have trained a semantic hashing network on a large collection of images. We then present to the network four images: two dogs (one brown with brown background, one light brown on green grass), a cat (same light brown with green background), and a car (blue car on green grass). The network produces four binary vectors: (a)[0,1,1,1,0,0,1] (b)[1,0,0,0,1,0,1] (c)[1,0,0,0,1,1,1] (d)[1,0,0,1,1,0,0] One may wonder which of these codes was produced from which of the images. Below, we've written four possible scenarios, and it's your job to select the most plausible one. Remember what the purpose of a semantic hashing network is, and use your intuition to solve this question. If you want to quantitatively compare binary vectors, use the number of different elements, i.e., the Manhattan distance. That is, if two binary vectors are [1,0,1] and [0,1,1] then their Manhattan distance is 2.
+    * (a)Dog 2(b)Dog 1(c)Car(d)Cat
+    * (a)Cat(b)Car(c)Dog 2(d)Dog 1
+    * *CHECKED (correct) - (a)Car(b)Dog 1(c)Dog 2(d)Cat*
+    * (a)Dog 1(b)Cat(c)Car(d)Dog 2
+  14. The following plots show training and testing error as a neural network is being trained (that is, error per epoch). Which of the following plots is an obvious example of overfitting occurring as the learning progresses?
+    * A: Third plot where test/training both drop (and converge) until 40 iters, then test begins to increase while training continues to drop.
+  15. Throughout this course, we used optimization routines such as gradient descent and conjugate gradients in order to learn the weights of a neural network. Two principal methods for optimization are online methods, where we update the parameters after looking at a single example, and full batch methods, where we update the parameters only after looking at all of the examples in the training set. Which of the following statements about online versus full batch methods are true? Check all that apply.
+    * *CHECKED - Mini-batch optimization is where we use several examples for each update. This interpolates between online and full batch optimization.*
+    * *CHECKED - Online methods scale much more gracefully to large datasets.*
+    * Full batch methods require us to compute the Hessian matrix (the matrix of second derivatives), whereas online methods approximate the Hessian, and refine this approximation as the optimization proceeds.
+    * Online methods require the use of momentum, otherwise they will diverge. In full batch methods momentum is optional.
+    * Full batch methods scale much more gracefully to large datasets.
+  16. You have seen the concept of **weight sharing** or **weight tying** appear throughout this course. For example, in dropout we combine an exponential number of neural networks with shared weights. In a convolutional neural network, each filter map involves using the same set of weights over different regions of the image. In the context of these models, which of the following statements about weight sharing is true?
+    * Weight sharing introduces noise into the gradients of a network. This makes it equivalent to using a Bayesian model, which will help prevent overfitting.
+    * Weight sharing implicitly causes models to prefer smaller weights. This means that it is equivalent to using weight decay and is therefore a form of regularization.
+    * Since ordinary convolutional neural networks and non-convolutional networks with dropout both use weight sharing, we can infer that convolutional networks will generalize well to new data because they will randomly drop out hidden units with probability 0.5.
+    * *CHECKED - Weight sharing reduces the number of parameters that need to be learned and can therefore be seen as a form of regularization.*
+  17. In which case is unsupervised pre-training most useful?
+    * CHECKED - ***** **There is a lot of unlabeled data but very little labeled data. [FWC - or very noisy labels, i.e. labeled data with little information content, it's not about how much labeled data there is, it's about how much information content it has]** *****
+    * There is a lot of labeled data but very little unlabeled data.
+    * The data is real-valued.
+    * The data is linearly separable.
+  18. Consider a neural network which operates on images and has one hidden layer and a single output unit. There are a number of possible ways to connect the inputs to the hidden units. In which case does the network have the smallest number of parameters? Assume that all other things (like the number of hidden units) are same.
+    * *CHECKED - The hidden layer is a convolutional layer, i.e. it has local connections and weight sharing.*
+    * The hidden layer is locally connected, i.e. it's connected to local regions of the input image.
+    * The hidden layer is fully connected to the inputs and there are skip connections from inputs to output unit.
+    * The hidden layer is fully connected to the inputs.
