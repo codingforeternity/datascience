@@ -1,5 +1,7 @@
 ### [Main Concepts for Scala](https://www.playframework.com/documentation/2.5.x/ScalaHome)
 
+#### [Play, Anatomy of a web framework: The Web Server](http://jto.github.io/articles/play_anatomy_part1_bootstrap/)
+
 #### [SecureSocial](http://securesocial.ws/guide/getting-started.html) is an authentication module for Play Framework applications
 
 #### [Generating Play Framework 2 CRUD forms with Cato](http://alvinalexander.com/scala/crud-forms-play-framework-2-cato-crud-generator) (1/5/17)
