@@ -1982,3 +1982,49 @@ is too slow (big vectors! 2000D in their case)
   * Other columns are the images that have the most similar feature activities in the last hidden layer.
   * **These images would all have poor overlaps in pixel-space**
   * We'll see in lecture 16 that we can combine the content of the image with the caption to get an even better repr.
+
+### [Lecture 15f: Shallow autoencoders for pre-training](https://www.coursera.org/learn/neural-networks/lecture/cxXuG/shallow-autoencoders-for-pre-training-7-mins)
+* Alternative pre-training methods for deep neural nets
+* Pre-training was introduced w/ RBMs trained with CD, but after that people learned there are many other ways, and indeed if you initialize the weights correctly you may not need pre-training at all given enough labeled data.
+* **RBMs can be viewed as shallow autoencoders, particularly if they're trained w/ contrastive divergence (CD)**.
+* RBM’s as autoencoders
+  * When we train an RBM with one- step contrastive divergence, it tries to make the reconstructions look like data.
+    * It’s like an autoencoder, but it’s **strongly regularized** by using binary activities in the hidden layer.
+  * When trained with maximum likelihood (MLE), RBMs are not like autoencoders.
+    * One way to see that is if you have a purely noisy pixel, an autoencoder would try to reconstruct whatever noisy value it had, while a RBM trained w/ MLE would completely ignore that pixel and model it just using the bias for that input.  
+  * Maybe we can replace the stack of RBM’s used for pre-training by a stack of shallow autoencoders?
+    * Pre-training is not as effective (for subsequent discrimination [FWC - supervised learning]) if the shallow autoencoders are regularized by penalizing the squared weights, however, there's a different kind of AE that does work as well...
+* ****** **Denoising autoencoders** (Vincent et. al. 2008) ******
+  * Denoising autoencoders add noise to the input vector by setting many of its components to zero (like dropout, but for inputs rather than the hidden units).
+    * They are still required to reconstruct these components so they must extract features that capture correlations between inputs.
+    * The danger w/ a shallow AE is that, if you give it enough hidden units, it might just copy inputs to hidden units [FWC - too many degrees of freedom; over specification]
+  * Pre-training is very effective if we use a stack of denoising autoencoders.
+    * **It’s as good as or better than pre-training with RBMs.**
+    * It’s also simpler to evaluate the pre-training because we can easily compute the value of the objective function.
+      * Can't compute the value of the *real* objective function for an RBM w/ CD (so we actually just use the squared reconstruction error, which isn't actually what's being minimized)
+      * With a DAE we can print out the value of the thing we're trying to minimize--and that's very helpful.
+    * It lacks the nice variational bound we get with RBMs, but this is only of theoretical interest (b/c only applies if RBM is trained w/ MLE)
+* Contractive autoencoders (Rifai et. al. 2011)
+  * Another way to regularize an autoencoder is to try to make the activities of the hidden units as insensitive as possible to the inputs.
+    * Obviously they cannot just ignore the inputs because they must reconstruct them.
+  * We achieve this by penalizing the squared gradient of each hidden activity w.r.t. the inputs.
+  * Contractive autoencoders work very well for pre-training.
+    * The codes tend to have the property that only a small subset of the hidden units are sensitive to changes in the input.
+    * But for different parts of the input space, it's a different subset. The active set is sparse for each region of input space.
+    * RBMs behave similarly.
+* Conclusions about pre-training (Hinton's current thinking)
+  * There are now many different ways to do layer-by-layer pre-training of features.
+    * For datasets that do not have huge numbers of labeled cases, pre-training helps subsequent discriminative learning.
+      * Especially if there is extra data that is unlabeled but can be used for pretraining.
+  * For very large, labeled datasets, initializing the weights used in supervised learning by using
+unsupervised pre-training is not necessary, even for deep nets.
+    * Pre-training was the first good way to initialize the weights for deep nets, but now there are
+other ways.
+  * But if we make the nets much larger we will need pre-training again!
+    * FWC - This is assuming that large nets and small amounts of data (model/df size to data size ratio) are the only source of overfitting.  There are other sources, of course, such as low R^2s, e.g. consider finance.  Low R^2 only matters when predicting returns however, there is typically a lot of structure in other financial data, e.g. market cap vs. enterprise value.
+  * Argument from Google: We don't need pre-training because we have so much labeled data now.  Hinton: That's only because your nets are too small.  Make them much bigger and you'll need pre-training again.  FWC: Perhaps the Google people don't want pre-training b/c they don't think it's how the mind actually works. Hinton: The brain is clearly in the regime with huge amounts of data and very few labels.  FWC: But maybe this is b/c we only thing about *positive* labels, i.e. what something is; we don't often consider negative labels, i.e. all the things something isn't.
+
+
+
+
+
