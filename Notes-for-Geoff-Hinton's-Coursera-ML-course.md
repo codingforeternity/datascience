@@ -239,7 +239,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
     * The last 2 layers were globally connected, which is where most parameters are ~16mm between those 2.
       * These 2 layers are looking for combinations of the features extracted by the earlier layers--and obviously there is combinatorially l
     * Activation functions:
-      * **Rectified linear units** in every hidden layer, which train much faster and more expressive than logistic units (nobody uses logistic anymore)
+      * **Rectified linear units** (ReLUs) in every hidden layer, which **train much faster and more expressive than logistic units (nobody uses logistic anymore)**
       * **Competitive normalization** to suppress hidden activities when nearby units have stronger activities, which helps w/ variations in intensity.
     * Train on random 224x224 patches of 256x256 images to get more data in addition to left-to-right reflections.
       * At test time, combine the opinions of 10 different 224x224 patches: 4 corners + center + 5 reflections
