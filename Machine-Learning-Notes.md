@@ -2,6 +2,12 @@
 [colah's blog](http://colah.github.io/) (todo: read more here)
 ***
 
+#### [Generative Adversarial Networks](https://www.youtube.com/watch?v=lalg1CuNB30)
+* (12:28) generative network: \<man w/ glasses\> - \<man\> + \<woman\> = \<woman w/ glasses\>
+  * this all done in the latent/encoded vector space and then passed through the generator
+  * this could also be done for various stock/company characteristic scenarios
+    * company about to blow up in 1999 + company that didn't blow up in 99 + company in 2017 ... ???
+
 #### [Matrix Factorization with Tensorflow](http://katbailey.github.io/post/matrix-factorization-with-tensorflow/)
   * ["People Who Like This Also Like ... " Part 1](http://www.benfrederickson.com/distance-metrics/)
   * [Finding Similar Music using Matrix Factorization](http://www.benfrederickson.com/matrix-factorization/)
