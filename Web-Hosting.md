@@ -4,9 +4,14 @@ See also: [[Docker Notes]]
 
 ***
 
+#### SSL certificate signing request generation
+* https://www.godaddy.com/help/generating-a-certificate-signing-request-csr-tomcat-4x5x6x-5276
+* https://maxrohde.com/2013/09/07/setting-up-ssl-with-netty/
+
 #### AWS TODO
 * [AWS Certificate Manager](https://aws.amazon.com/blogs/aws/new-aws-certificate-manager-deploy-ssltls-based-apps-on-aws/) has free certs
   * Supposedly they only work though with Elastic Load Balancing (and Amazon CloudFront)
+  * We aren't using this because Play Framework is handling our encryption, not ELB.  We'll still probably need to use ELB though.  Here's the communication chain: user -> ELB -> ECS/EC2 -> Docker container -> Play
 * [EC2 Guide: Hosting a website on Amazon EC2](http://www.paul-norman.co.uk/2011/02/hosting-a-website-on-amazon-ec2)
 
 #### Amazon Web Services
