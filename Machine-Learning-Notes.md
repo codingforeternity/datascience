@@ -7,6 +7,7 @@
   * this all done in the latent/encoded vector space and then passed through the generator
   * this could also be done for various stock/company characteristic scenarios
     * company about to blow up in 1999 + company that didn't blow up in 99 + company in 2017 ... ???
+* "What's next is that we want to do **better prediction** of what happens next, and use that in supervised tasks." (as he showed an image of next frames in a movie, but **could just as well be future stock prices I suppose**, FWC)
 
 #### [Matrix Factorization with Tensorflow](http://katbailey.github.io/post/matrix-factorization-with-tensorflow/)
   * ["People Who Like This Also Like ... " Part 1](http://www.benfrederickson.com/distance-metrics/)
