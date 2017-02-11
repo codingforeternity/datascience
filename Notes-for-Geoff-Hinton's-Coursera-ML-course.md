@@ -2086,10 +2086,10 @@ Final Exam
     * (my second incorrect answer) - CD-10 is less sensitive to small changes of the model parameters.
     * The gradient estimate from CD-10 takes less time to compute than the gradient estimate of CD-1.
   5. CD-1 and CD-10 both have their strong sides and their weak sides. Which are significant advantages of CD-1 over CD-10? Check all that apply.
-    * CHECKED1 (INCORRECT) - CD-1 gets its negative data (the configurations on which the negative part of the gradient estimate is based) from closer to the **model** distribution than CD-10 does.
-    * CHECKED2 (b/c it causes other regions of energy space to rise; true, but not a "significant advantage") - The gradient estimate from CD-1 has more variance than the gradient estimate of CD-10.
-    * [FWC - maybe this should be checked if what they mean by "variance" is E_data - E_model] The gradient estimate from CD-1 has less variance than the gradient estimate of CD-10.
-    * CHECKED(1&2&3) - The gradient estimate from CD-1 takes less time to compute than the gradient estimate from CD-10.
+    * CD-1 gets its negative data (the configurations on which the negative part of the gradient estimate is based) from closer to the **model** distribution than CD-10 does.
+    * The gradient estimate from CD-1 has more variance than the gradient estimate of CD-10.
+    * *CHECKED4 [CORRECT FWC - maybe this should be checked if what they mean by "variance" is E_data - E_model] The gradient estimate from CD-1 has less variance than the gradient estimate of CD-10.*
+    * *CHECKED4 - The gradient estimate from CD-1 takes less time to compute than the gradient estimate from CD-10.*
   6. With a lot of training data, is the perceptron learning procedure more likely or less likely to converge than with just a little training data? Clarification: We're not assuming that the data is always linearly separable.
     * *CHECKED (correct, because it's less likely to be linearly separable) - Less likely.*
     * More likely.
@@ -2099,22 +2099,23 @@ Final Exam
     * *CHECKED - Redo the training with more weight decay.*
     * *CHECKED - Redo the training with fewer hidden units.*
     * Redo the training with less weight decay.
-  8. If the hidden units of a network are independent of each other, then it's easy to get a sample from the correct distribution (FWC - recall factorial distribution), which is a very important advantage. For which systems, and under which conditions, are the hidden units independent of each other? Check all that apply.
-    * [Answered this one incorrectly...twice...thrice...]
-    * CHECKED(1&2) (still think this is correct) - For a Sigmoid Belief Network where the only connections are from hidden units to visible units (i.e. no hidden-to-hidden or visible-to-visible connections), when we don't condition on anything, the hidden units are independent of each other.
-    * CHECKED2 (no b/c hiddens can never be independent when conditioned on visibles b/c of explaining away; perhaps should have been checked; nope, b/c an RBM is really an infinite SBN) - For a Restricted Boltzmann Machine, when we condition on the state of the visible units, the hidden units are independent of each other.
-    * (nope, b/c of explaining away) - For a Sigmoid Belief Network where the only connections are from hidden units to visible units (i.e. no hidden-to-hidden or visible-to-visible connections), when we condition on the state of the visible units, the hidden units are independent of each other.
-    * CHECKED(1&2&3) (still think this is correct) - For a Restricted Boltzmann Machine, when we don't condition on anything, the hidden units are independent of each other.
+  8. *If the hidden units of a network are independent of each other, then it's easy to get a sample from the correct distribution* (FWC - recall factorial distribution?), which is a very important advantage. For which systems, and under which conditions, are the hidden units independent of each other? Check all that apply.
+    * [Answered this one incorrectly...twice...thrice...frice?]
+    * 1:ad 2:abd 3:d 4:bd 5:b 6:none .... todo ..... 7:bc
+    * (a) SBN-NOTconditioned - CHECKED(1,2) (still think this is correct) - For a Sigmoid Belief Network where the only connections are from hidden units to visible units (i.e. no hidden-to-hidden or visible-to-visible connections), when we don't condition on anything, the hidden units are independent of each other.
+    * (b) RBM-conditioned CHECKED(2,4) (no b/c hiddens can never be independent when conditioned on visibles b/c of explaining away; perhaps should have been checked; nope, b/c an RBM is really an infinite SBN) - For a Restricted Boltzmann Machine, when we condition on the state of the visible units, the hidden units are independent of each other.
+    * (c) SBN-conditioned (nope, b/c of explaining away) - For a Sigmoid Belief Network where the only connections are from hidden units to visible units (i.e. no hidden-to-hidden or visible-to-visible connections), when we condition on the state of the visible units, the hidden units are independent of each other.
+    * (d) RBM-NOTconditioned CHECKED(1,2,3,4) (still think this is correct) - For a Restricted Boltzmann Machine, when we don't condition on anything, the hidden units are independent of each other.
   9. What is the purpose of momentum?
     * *CHECKED (correct) - The primary purpose of momentum is to speed up the learning.*
     * The primary purpose of momentum is to reduce the amount of overfitting.
     * The primary purpose of momentum is to prevent oscillating gradient estimates from causing vanishing or exploding gradients.
   10. Consider a Restricted Boltzmann Machine with 2 visible units v1,v2 and 1 hidden unit h. The visible units are connected to the hidden unit by weights w1,w2 and the hidden unit has a bias b. An illustration of this model is given below. The energy of this model is given by: E(v1,v2,h)=−w1v1h−w2v2h−bh. Recall that the joint probability P(v1,v2,h) is proportional to exp−E(v1,v2,h). Suppose that w1=1,w2=−1.5,b=−0.5. What is the conditional probability P(h=1|v1=0,v2=1)? Write down your answer with at least 3 digits after the decimal point.
-    * A: 0.119
+    * *A: 0.119*
   11. Consider the following feed-forward neural network with one logistic hidden neuron and one linear output neuron. The input is given by x=1, the target is given by t=5, the input-to-hidden weight is given by w1=1.0986123, and the hidden-to-output weight is given by w2=4 (there are no bias parameters). What is the cost incurred by the network when we are using the squared error cost?  Remember that the squared error cost is defined by Error=12(y−t)2. Write down your answer with at least 3 digits after the decimal point.
-    * A: 2.000
+    * *A: 2.000*
   12. Consider the following feed-forward neural network with one logistic hidden neuron and one linear output neuron. The input is given by x=1, the target is given by t=5, the input-to-hidden weight is given by w1=1.0986123, and the hidden-to-output weight is given by w2=4 (there are no bias parameters). If we are using the squared error cost then what is ∂Error/∂w1, the derivative of the error with respect to w1? Remember that the squared error cost is defined by Error=0.5*(y−t)^2. Write down your answer with at least 3 digits after the decimal point.
-    * A: -1.500
+    * *A: -1.500*
   13. Suppose that we have trained a semantic hashing network on a large collection of images. We then present to the network four images: two dogs (one brown with brown background, one light brown on green grass), a cat (same light brown with green background), and a car (blue car on green grass). The network produces four binary vectors: (a)[0,1,1,1,0,0,1] (b)[1,0,0,0,1,0,1] (c)[1,0,0,0,1,1,1] (d)[1,0,0,1,1,0,0] One may wonder which of these codes was produced from which of the images. Below, we've written four possible scenarios, and it's your job to select the most plausible one. Remember what the purpose of a semantic hashing network is, and use your intuition to solve this question. If you want to quantitatively compare binary vectors, use the number of different elements, i.e., the Manhattan distance. That is, if two binary vectors are [1,0,1] and [0,1,1] then their Manhattan distance is 2.
     * (a)Dog 2(b)Dog 1(c)Car(d)Cat
     * (a)Cat(b)Car(c)Dog 2(d)Dog 1
