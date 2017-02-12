@@ -2081,7 +2081,7 @@ Final Exam
     * *CHECKED2 (CORRECT, this is true b/c the goodness/energy surface needs to be raised in places with low P data; only lowering it in places w/ high P data doesn't differentiate (aka contrastive divergence)) - High goodness (i.e. low energy) doesn't guarantee high probability.*
   4. CD-1 and CD-10 both have their strong sides and their weak sides. Which is the main advantage of CD-10 over CD-1?
     * The gradient estimate from CD-10 has more variance than the gradient estimate of CD-1.
-    * *CHECKED3 (CORRECT) - CD-10 gets its negative data (the configurations on which the negative part of the gradient estimate is based) from closer to the **model distribution** [FWC - the model distribution is that which is predicted by the model, the part of the energy surface we want to raise, as opposed to the data distribution!] than CD-1 does.*
+    * *CHECKED3 (CORRECT) - CD-10 gets its negative data (the configurations on which the negative part of the gradient estimate is based) from closer to the* **model distribution** *[FWC - the model distribution is that which is predicted by the model, the part of the energy surface we want to raise, as opposed to the data distribution!] than CD-1 does.*
     * (my first incorrect answer) - The gradient estimate from CD-10 has less variance than the gradient estimate of CD-1.
     * (my second incorrect answer) - CD-10 is less sensitive to small changes of the model parameters.
     * The gradient estimate from CD-10 takes less time to compute than the gradient estimate of CD-1.
@@ -2101,9 +2101,21 @@ Final Exam
     * Redo the training with less weight decay.
   8. *If the hidden units of a network are independent of each other, then it's easy to get a sample from the correct distribution* (FWC - recall factorial distribution?), which is a very important advantage. For which systems, and under which conditions, are the hidden units independent of each other? Check all that apply.
     * [Answered this one incorrectly...twice...thrice...frice?]
-    * 1:ad 2:abd 3:d 4:bd 5:b 6:none .... todo ..... 7:bc
-    * (a) SBN-NOTconditioned - CHECKED(1,2) (still think this is correct) - For a Sigmoid Belief Network where the only connections are from hidden units to visible units (i.e. no hidden-to-hidden or visible-to-visible connections), when we don't condition on anything, the hidden units are independent of each other.
-    * (b) RBM-conditioned CHECKED(2,4) (no b/c hiddens can never be independent when conditioned on visibles b/c of explaining away; perhaps should have been checked; nope, b/c an RBM is really an infinite SBN) - For a Restricted Boltzmann Machine, when we condition on the state of the visible units, the hidden units are independent of each other.
+    * 1:ad 2:abd 3:d 4:bd 5:b 6:none .... todo ..... 7:bc 8:[ab](http://www.cs.toronto.edu/~tijmen/csc321/inclass/140327.txt)
+      * In-class Questions
+        * chapter 13 slide 24. What would be the gradient of the log probability of the data, for the recognition (red) weights?
+          * A: 0. They are not involved in the data generation process.
+        * What is the prior over the top hidden layer of an SBN like?
+          * A: the logistic of the biases. The units are independent.
+        * What is the prior over h of an RBM like?
+          * A: to find out the probability of a particular hidden layer configuration, we have to consider all possible visible layer configurations. Therefore, this prior is not simple (as in SBNs).
+        * **What is the posterior over h (given v) of an RBM? Simple or complex?**
+          * *A: easy. clamp visible configuration. Every hidden configuration has its own energy (together with the visible configuration), which is easy to calculate. The hidden units are independent of each other, in this CONDITIONAL distribution.*
+        * What is the posterior over h (given v) of an SBN with just one hidden layer? Simple or complex?
+          * A: Explaining away makes the hidden units (conditionally) dependent, and this makes the distribution complex.
+        * For getting an unbiased estimate of the gradient for an SBN, we need a sample from the posterior distribution over hidden units, given a visible units configuration from the training data. Do we need that, too, for getting an unbiased estimate of the gradient for a BM?
+    * (a) *SBN-NOTconditioned - CHECKED(1,2) (still think this is correct) - For a Sigmoid Belief Network where the only connections are from hidden units to visible units (i.e. no hidden-to-hidden or visible-to-visible connections), when we don't condition on anything, the hidden units are independent of each other.*
+    * (b) *RBM-conditioned CHECKED(2,4) (no b/c hiddens can never be independent when conditioned on visibles b/c of explaining away; perhaps should have been checked; nope, b/c an RBM is really an infinite SBN) - For a Restricted Boltzmann Machine, when we condition on the state of the visible units, the hidden units are independent of each other.*
     * (c) SBN-conditioned (nope, b/c of explaining away) - For a Sigmoid Belief Network where the only connections are from hidden units to visible units (i.e. no hidden-to-hidden or visible-to-visible connections), when we condition on the state of the visible units, the hidden units are independent of each other.
     * (d) RBM-NOTconditioned CHECKED(1,2,3,4) (still think this is correct) - For a Restricted Boltzmann Machine, when we don't condition on anything, the hidden units are independent of each other.
   9. What is the purpose of momentum?
