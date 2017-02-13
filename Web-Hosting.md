@@ -4,6 +4,8 @@ See also: [[Docker Notes]]
 
 ***
 
+#### [Getting Started with AWS](https://www.youtube.com/watch?v=bFc5Fg9YSQg)
+
 #### SSL certificate signing request generation
 * https://www.godaddy.com/help/generating-a-certificate-signing-request-csr-tomcat-4x5x6x-5276
 * https://maxrohde.com/2013/09/07/setting-up-ssl-with-netty/
