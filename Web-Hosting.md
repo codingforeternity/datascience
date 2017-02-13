@@ -5,6 +5,12 @@ See also: [[Docker Notes]]
 ***
 
 #### [Getting Started with AWS](https://www.youtube.com/watch?v=bFc5Fg9YSQg)
+* Set up multi factor identification (MFA) on root account and all IAM accounts
+* Common user access policies (distinct from security groups)
+  * AdministratorAccess - almost everything root can do
+  * PowerUserAccess - everything except IAM (i.e. except create new users & groups)
+* Security groups are firewalls for EC2 instances
+  * Choose who the ports are open to using CIDR notation (IP/#, e.g. IP/32 is a single IP)
 
 #### SSL certificate signing request generation
 * https://www.godaddy.com/help/generating-a-certificate-signing-request-csr-tomcat-4x5x6x-5276
