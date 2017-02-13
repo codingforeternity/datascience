@@ -1,3 +1,9 @@
+#### Think about multiple comparisons wrt NNs (email, 2/6/17)
+* In a typical MC problem you need to identify the number of independent variables. So then how do u count this number for a NN? The number of neural units is an upperbound. But does the complexity of a unit matter? What if there are different kinds of units? Can a correlation matrix of the inputs be "backed out" from the R^2 and the hidden unit interractions? Eg correlations in firing weights. 
+* Can dropout be optimized or pretrained by not allowing specific units to fire together? By studying the pattern of which inputs tend to get correlations via the GD process. Recall that pretraining an RBM puts you in completely different feature/weight/function space than supervised fitting w/out pretraining. Perhaps dropout can be tailored to explore different regions of function space by penalizing already explored regions in the loss function--eg penalize overfits. 
+* All of this falls under the umbrella of understanding what NNs are doing, how they are behaving and why.
+* Should pretraining be done with gradually growing hidden layers so that macro feature structure is learned first?
+
 [Why We (Usually) Don't Have to Worry About Multiple Comparisons, Gelman](http://www.stat.columbia.edu/~gelman/research/published/multiple2f.pdf) (10/27/16)
 * "The Bonferroni correction directly targets the Type 1 error problem, but it does so at the
 expense of Type 2 error. By changing the p value needed to reject the null (or equivalently
