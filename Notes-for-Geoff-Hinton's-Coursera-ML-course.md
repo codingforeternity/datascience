@@ -10,6 +10,8 @@ Also see this other set of lecture notes: http://www.cs.toronto.edu/~tijmen/csc3
 
 [[Machine Learning Notes]]
 
+[Hinton's Advanced Machine Learning](https://www.cs.toronto.edu/~hinton/csc2535/lectures.html)
+
 ***
 
 ### Week 2: Types of Neural Network Architectures
