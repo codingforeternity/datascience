@@ -2156,3 +2156,75 @@ Final Exam
     * The hidden layer is locally connected, i.e. it's connected to local regions of the input image.
     * The hidden layer is fully connected to the inputs and there are skip connections from inputs to output unit.
     * The hidden layer is fully connected to the inputs.
+
+### [Lecture 16a: Learning a Joint Model of Images and Captions](https://www.coursera.org/learn/neural-networks/lecture/F7uKV/optional-learning-a-joint-model-of-images-and-captions-10-min)
+* Deep Restricted Boltzmann Machine, 1 for images, 1 for captions, then join at top
+
+### [Lecture 16b: Hierarchical Coordinate Frames](https://github.com/fcrimins/fcrimins.github.io/wiki/Notes-for-Geoff-Hinton%27s-Coursera-ML-course/_edit)
+* 3 approaches to computer vision
+  * deep CNN (best)
+  * parts-based approach
+  * using histograms of hand engineered features
+* Why CNNs are doomed
+  * When we pool, we lose exact location, which is fatal for higher level parts, like noses and mouths
+  * Huge training sets with data at different transformations and scales -- clumsy
+* Better way: hierarchy of coordinate frames
+  * Use a group of neurons to repr the conjunction of the shape of a feature and its pose/orientation relative to the retina
+  * Recognize the larger features by using the consistency of the poses/orientations of their parts
+    * nose and mouth either make consistent or inconsistent prediction for "pose of face"
+* Two layers in a hierarchy of parts
+  * A higher level visual entity is present if several lower level visual entities can agree on their predictions for its pose (inverse computer graphics)
+  * nose-node and mouth-node make face-node prediction which is activated if they both agree
+  * in computer graphics we're going from poses of faces (larger things) to poses of their parts (components)
+* A crucial property of the pose vectors
+  * Allow spatial transformations to be modeled by linear ops
+  * The invariant geometric properties of a shape are in the weights, not the activities
+    * The activities are equivariant: As the pose of an object varies, the activities all vary
+    * The percept of an object changes as the viewpoint changes
+* Evidence that this is truly how the brain works (Irvin Rock)
+  * The square and the diamond are different percepts that make different properties obvious
+  * Percepts are different depending on what coordinate frame you impose
+
+*** [Lecture 16c: Bayesian optimization of neural network hyperparameters](https://www.coursera.org/learn/neural-networks/lecture/SzdS6/optional-bayesian-optimization-of-hyper-parameters-13-min)
+* Use machine learning to replace the graduate student who typically fiddles around with lots of different settings of the hyperparameters to figure out what works
+* When you're in a domain where you don't know much more than you expect similar inputs to have similar outputs, then Gaussian processes are ideal for finding good sets of hyperparameters
+* Let machine learning figure out the hyper-parameters (Snoek, Larochelle, Adams, NIPS 2012)
+  * One of the commonest reasons for not using NNs is that it requires a lot of skill to set hyperparameters
+    * number of layers
+    * # units / layer
+    * type of unit
+    * weight penalty
+    * learning rate
+    * momentum
+    * dropout
+  * One approach: naive grid search: Make list of alternative values for each hyperparameter and try all possible combos
+    * This is slow. Can we do better?
+  * Sampling random combinations
+    * This is much better if some hyperparameters have no effect
+    * It's a big waste to exactly repeat the settings of the other hyperparameters
+* Machine learning to the rescue
+  * Instead of using random combinations of values for the hyper-parameters, why not look at the results so far?
+    * Predict regions of the HP space that might give better results
+    * We need to predict how well a certain region will do, but we also need to model the uncertainty
+  * We assume the amount of computation needed to explore one region of HP space is huge
+    * Much more than the work involved in building a model that predicts the result from knowing previous results with different settings
+* Gaussian Process models
+  * Assume similar inputs give similar outputs
+    * Very weak, but sensible prior
+  * For each input dimension, they learn the approprate scale for measuring similarity
+    * Is 200 similar to 300?
+    * Look to see if they give similar results for the data so far
+  * GP models do more than predict the mean, they predict variance also, they predict a Gaussian distribution
+    * For test cases that are close to several consistent training cases the predictions are quite sharp
+* A sensible way to decide what to try
+  * Keep track of the best setting so far
+  * Pick a setting of the HPs st that the expected improvement in our best setting is big 
+    * don't worry about the downside (hedge funds! 2% performance fee if we make money, but 0% downside if we don't)
+    * big expected improvement means 2 things
+      1. a parameter is far from its expected best value
+      2. the parameter has high variance (i.e. changing it has a high P of helping)
+* How well does Bayesian optimization work?
+  * If you have a lot of resources to run lots of experiments, it's better than a human.
+  * This is not the kind of thing we are good at.
+  * Might fail to notice that all good results have small LRs while bads have high LRs
+  * They also don't cheat: no bias for a model a human likes (e.g. b/c he thought of it) vs. one he doesn't (b/c he didn't think of it)
