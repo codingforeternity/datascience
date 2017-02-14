@@ -15,6 +15,10 @@ See also: [[Docker Notes]]
 #### SSL certificate signing request generation
 * https://www.godaddy.com/help/generating-a-certificate-signing-request-csr-tomcat-4x5x6x-5276
 * https://maxrohde.com/2013/09/07/setting-up-ssl-with-netty/
+* Yes, the public and private keys were there [in the keystore file]!
+  * I’ve added the response from CSR and  updated the keystore with godaddy certs chain, so that now the keystore is  signed. The stage server will still show red lock because the host is not hamstoo.com, but it’ll turn green when browser will be visiting hamstoo.com
+  * Actually I thought I’d need to build the keystore from scratch, and having a keystore with keys already inside was half the job done. 
+  * You can use Keystore Explorer to look inside the keystore and get familiar with its structure
 
 #### AWS TODO
 * [AWS Certificate Manager](https://aws.amazon.com/blogs/aws/new-aws-certificate-manager-deploy-ssltls-based-apps-on-aws/) has free certs
