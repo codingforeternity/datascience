@@ -1,3 +1,9 @@
+#### MVC components
+* Model = data structure
+* DAO = data operations
+* View = display
+* Controller = tie everything together
+
 #### [Relationship between Model (in MVC) and DAO](https://coderanch.com/t/467978/Relationship-Model-MVC-DAO)
 * In the Model-View-Controller design pattern, the **Model represents business logic and business data. Data access objects (DAO) objects may be part of a Model, but they are not the only objects that make up a business object Model.**
   * If this web framework example has business logic coded in whatever the Controller is, then it is not accurate.
