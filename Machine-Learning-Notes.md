@@ -2,7 +2,7 @@
 [colah's blog](http://colah.github.io/) (todo: read more here)
 ***
 
-#### [Building Applications With Deep Learning: Expectations vs. Reality](http://126kr.com/article/8exlrboae6i)
+#### [Building Applications With Deep Learning: Expectations vs. Reality](http://126kr.com/article/8exlrboae6i) (2/14/17)
 * "The reality is very different. Someone willing to employ neural network technologies at the moment (as of January 2017) is forced to do scientific work or at least have an in-depth understanding of neural network methods, despite a number of publicly available technologies created by the brightest and most resourceful minds of our age."
 * "After two months of trial and error and parallel experiments with a well-known Python-based framework, we decided to switch to that Python framework and suspend work on the dl4j -based network implementation."
 * "At that time, a colleague of mine, Wolfgang Buchner , mentioned that he has recently saw that **dl4j had undergone a major re-vamp. We immediately attempted to build an experimental model with dl4j Version 0.7.2 , and within two weeks, we actually succeeded**."
