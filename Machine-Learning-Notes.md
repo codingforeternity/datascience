@@ -2,6 +2,14 @@
 [colah's blog](http://colah.github.io/) (todo: read more here)
 ***
 
+#### [Building Applications With Deep Learning: Expectations vs. Reality](http://126kr.com/article/8exlrboae6i)
+* "The reality is very different. Someone willing to employ neural network technologies at the moment (as of January 2017) is forced to do scientific work or at least have an in-depth understanding of neural network methods, despite a number of publicly available technologies created by the brightest and most resourceful minds of our age."
+* "After two months of trial and error and parallel experiments with a well-known Python-based framework, we decided to switch to that Python framework and suspend work on the dl4j -based network implementation."
+* "At that time, a colleague of mine, Wolfgang Buchner , mentioned that he has recently saw that **dl4j had undergone a major re-vamp. We immediately attempted to build an experimental model with dl4j Version 0.7.2 , and within two weeks, we actually succeeded**."
+* "Dl4j has two strengths when it comes to helping someone at the start: [documentation and community]."
+* "In general, I have the feeling that **the intention of the dl4j community is to build real applications**. Based on my experience with other deep learning communities I feel that their intention is to discuss topics of their PhD thesis, or prove this or that theorem."
+* "the **dl4j User Interface**, or UI. It is a web page automatically created by the framework (with minimal configuration, literally five lines of code) that shows graphs of some parameters during network training"
+
 #### [Generative Adversarial Networks](https://www.youtube.com/watch?v=lalg1CuNB30)
 * (12:28) generative network: \<man w/ glasses\> - \<man\> + \<woman\> = \<woman w/ glasses\>
   * this all done in the latent/encoded vector space and then passed through the generator
