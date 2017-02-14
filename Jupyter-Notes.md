@@ -1,3 +1,9 @@
+#### [Choose Spark/Scala kernel for Jupyter/IPython](http://stackoverflow.com/questions/32858203/choose-spark-scala-kernel-for-jupyter-ipython)
+* I can't speak for all of them, but I use Spark Kernel and it works very well for using both Scala and Spark.
+
+#### [6 points to compare Python and Scala for Data Science using Apache Spark](https://datasciencevademecum.wordpress.com/2016/01/28/6-points-to-compare-python-and-scala-for-data-science-using-apache-spark/)
+* Python is more analytical oriented while Scala is more engineering oriented
+
 #### Example Notebooks (12/6/16)
 * [Matplotlib Tutorial](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb)
 * [Nice basic data sciencey, data cleaning blog post generated from a notebook](http://danielfrg.com/blog/2013/03/07/kaggle-bulldozers-basic-cleaning/)
