@@ -8,6 +8,15 @@
   * [Scala Notebook](https://github.com/Bridgewater/scala-notebook) (last commit 2015; from Bridgewater) - An alternative to Jupyter.
   * [IScala](https://github.com/mattpap/IScala) (no commits since 2014)
   * [jupyter-scala](https://github.com/alexarchambault/jupyter-scala) - This looks like the one to use (last commit 1/17)
+    * [Installation](https://github.com/alexarchambault/jupyter-scala):
+      1. `cd ~/bin`
+      2. `curl -L -o coursier https://git.io/vgvpD && chmod +x coursier && ./coursier --help` per [here](https://github.com/alexarchambault/coursier)
+      3. `cd ~/code`
+      4. `git clone https://github.com/alexarchambault/jupyter-scala.git`
+      5. `cd jupyter-scala`
+      6. add `addSbtPlugin("io.get-coursier" % "sbt-coursier" % "1.0.0-M15")` to build.sbt per [here](https://github.com/alexarchambault/coursier)
+      7. `./jupyter-scala`
+        * Output: "Use this kernel from Jupyter notebook, running `jupyter notebook` and selecting the 'Scala' kernel."
 
 #### [6 points to compare Python and Scala for Data Science using Apache Spark](https://datasciencevademecum.wordpress.com/2016/01/28/6-points-to-compare-python-and-scala-for-data-science-using-apache-spark/)
 * Python is more analytical oriented while Scala is more engineering oriented
