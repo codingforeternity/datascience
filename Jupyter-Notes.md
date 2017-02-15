@@ -7,7 +7,7 @@
   * [This](https://developer.ibm.com/hadoop/2016/05/04/install-jupyter-notebook-spark/) IBM link says to use jupyter-scala
   * [Scala Notebook](https://github.com/Bridgewater/scala-notebook) (last commit 2015; from Bridgewater) - An alternative to Jupyter.
   * [IScala](https://github.com/mattpap/IScala) (no commits since 2014)
-  * [jupyter-scala](https://github.com/alexarchambault/jupyter-scala) - This looks like the one to use.
+  * [jupyter-scala](https://github.com/alexarchambault/jupyter-scala) - This looks like the one to use (last commit 1/17)
 
 #### [6 points to compare Python and Scala for Data Science using Apache Spark](https://datasciencevademecum.wordpress.com/2016/01/28/6-points-to-compare-python-and-scala-for-data-science-using-apache-spark/)
 * Python is more analytical oriented while Scala is more engineering oriented
