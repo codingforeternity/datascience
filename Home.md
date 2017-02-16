@@ -73,7 +73,7 @@ Welcome to the fcrimins.github.io wiki!
 - [[Apache Spark]]
   - [[Databricks Notes]]
 - [[Linux Notes]] (kws: UNIX)
-- [[Jupyter Notes]] (kws: IPython)
+- [[Jupyter Notes]] (kws: IPython, notebook)
 - [[TensorFlow Notes]]
 
 <br>
