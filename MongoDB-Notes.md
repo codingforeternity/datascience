@@ -4,4 +4,5 @@
   * I'm running Ubuntu version 15.10.  The above command is for version 14.04.  The equivalent command for 16.04 didn't work with step #4 below.
 3. `sudo apt-get update`
 4. `sudo apt-get install -y mongodb-org`
+  * This produced the following warning message, which the next step is meant to address: "invoke-rc.d: mongod.service doesn't exist but the upstart job does. Nothing to start or stop until a systemd or init job is present."
 5. follow these instructions: https://w0rldart.com/installing-mongodb-on-ubuntu-15-04/
