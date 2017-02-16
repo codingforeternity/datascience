@@ -1,5 +1,8 @@
-### Terminology
-* A "collection of documents" is analogous to a "table of rows"
+### Notes
+* Terminology: a "collection of documents" is analogous to a "table of rows."
+  * "The `grades` array contains embedded *documents* as its elements."  So a "document" is also analogous to a hash or a dict, if you will.
+* "If you attempt to add documents to a collection that does not exist, MongoDB will create the collection for you." [https://docs.mongodb.com/getting-started/shell/insert/]
+* "All queries in MongoDB have the scope of a single collection."
 
 ### [MongoDB Installation](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
 1. `sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6`
