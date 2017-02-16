@@ -16,6 +16,10 @@
   * this could also be done for various stock/company characteristic scenarios
     * company about to blow up in 1999 + company that didn't blow up in 99 + company in 2017 ... ???
 * "What's next is that we want to do **better prediction** of what happens next, and use that in supervised tasks." (as he showed an image of next frames in a movie, but **could just as well be future stock prices I suppose**, FWC)
+* "Identifying flavors is a process of elimination" [Conversations with Tyler: Mark Miller]
+  * "It's not about figuring out what flavors you taste; you always start with which flavors you don't taste." Just like learning starts from everything and works towards specifics.
+* Everything "learned" in nature is adversarial
+  * HMOs in breast milk act as decoys for pathogens to attach to thus preventing diseases even as severe as HIV [I Contain Multitudes, p. 96]. The previous page discusses the size of the brain. But why does *h. sapiens* have so many HMOs? Are they the cause or the effect? Generally speaking, our microbes are our biggest adversaries.
 
 #### [Matrix Factorization with Tensorflow](http://katbailey.github.io/post/matrix-factorization-with-tensorflow/)
   * ["People Who Like This Also Like ... " Part 1](http://www.benfrederickson.com/distance-metrics/)
