@@ -1,3 +1,11 @@
+#### Patent: Semantic bookmark search
+* Similar to gmail search, except rather than searching the contents of emails, you're searching the contents of Web pages.
+* The problem with the semantic Web is that different observers have different opinions of what things mean
+
+#### SellersPlace.com
+
+#### DopaBlocker
+
 #### 3-Star Sentiment
 * http://www.benfrederickson.com/rating-set-distributions/
 
