@@ -7,7 +7,7 @@
   * [This](https://developer.ibm.com/hadoop/2016/05/04/install-jupyter-notebook-spark/) IBM link says to use jupyter-scala
   * [Scala Notebook](https://github.com/Bridgewater/scala-notebook) (last commit 2015; from Bridgewater) - An alternative to Jupyter.
   * [IScala](https://github.com/mattpap/IScala) (no commits since 2014)
-  * [jupyter-scala](https://github.com/alexarchambault/jupyter-scala) - This looks like the one to use (last commit 1/17)
+  * [jupyter-scala](https://github.com/alexarchambault/jupyter-scala) - **This looks like the one to use (last commit 1/17)**
     * [Installation](https://github.com/alexarchambault/jupyter-scala):
       1. `cd ~/bin`
       2. `curl -L -o coursier https://git.io/vgvpD && chmod +x coursier && ./coursier --help` per [here](https://github.com/alexarchambault/coursier)
