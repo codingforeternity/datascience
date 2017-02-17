@@ -1,5 +1,6 @@
 ***
 [COlah's blog](http://colah.github.io/) (todo: read more here)
+
 [Perpetual Enigma blog](https://prateekvjoshi.com/)
 ***
 
