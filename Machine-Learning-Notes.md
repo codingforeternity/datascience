@@ -5,6 +5,8 @@
 ***
 
 #### [Understanding Xavier Initialization In Deep Neural Networks](https://prateekvjoshi.com/2016/03/29/understanding-xavier-initialization-in-deep-neural-networks/)
+* Gaussian initialization s.t. "With each passing layer, we want the variance to remain the same. This helps us keep the signal from exploding to a high value or vanishing to zero."
+* `var(w_i) = 1/N_in`
 
 #### [Building Applications With Deep Learning: Expectations vs. Reality](http://126kr.com/article/8exlrboae6i) (2/14/17)
 * "The reality is very different. Someone willing to employ neural network technologies at the moment (as of January 2017) is forced to do scientific work or at least have an in-depth understanding of neural network methods, despite a number of publicly available technologies created by the brightest and most resourceful minds of our age."
