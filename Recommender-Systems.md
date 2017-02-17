@@ -1,4 +1,4 @@
-#### [The WellDressed Recommendation Engine](https://deeplearning4j.org/welldressed-recommendation-engine)
+#### [The WellDressed Recommendation Engine](https://deeplearning4j.org/welldressed-recommendation-engine) (2/17/17)
 * "data feeds from merchants offer few categorization options, and on top of that, every data feed is very different from the other"
 * "I decided to focus on Title, Description and Category/Keyword fields. Title and Description tend to give valuable, specific hints on what a garment actually is. Category works as a broad identification.  I do not use image data for garment identification.... The copy of the text tends to be the only true identifier of a garment type."
 * "I use [word2vec](https://deeplearning4j.org/word2vec.html) to create vectors. A word needs to show at least 10 times, and I get 40 vectors for each wordset. I then proceed to sum all vectors per title, description and category, resulting in 120 vectors."
@@ -6,6 +6,8 @@
 * "The database has a lot of jeans and t-shirts, but very few tuxedoes and cummerbunds"
   * He has 84 garment types so he samples 1 from each of the 84 and he does this 1000 times to get an 84,000-point set.
   * So how does one count the number of URL/document types?  One possible way could be to treat each of the 120 dimensions of the item embeddings as a different type--and sample uniformly from each of those 120 *feature type* classes.
+* **The algorithm described here is more for classification than for recommendations/ratings**.  It seems to be used as input to a recommendation system (i.e. first classify garment type then recommend one of the garments of a given type--filter)  It seems to predict one of 84 labels/categories given a 120-dim vector.
+  * As noted, the author's first solution used "keywords with a complex rule-and weight-system" to predict category. "Title and Description tend to give valuable, specific hints on what a garment actually is."  This is the crux: figuring out what type of a garment is.
 
 #### [Mozilla Context Graph: A recommendation system for the web](http://venturebeat.com/2016/07/06/mozilla-is-building-context-graph-a-recommender-system-for-the-web/)
 
