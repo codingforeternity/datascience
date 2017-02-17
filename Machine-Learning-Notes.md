@@ -1,6 +1,9 @@
 ***
-[colah's blog](http://colah.github.io/) (todo: read more here)
+[COlah's blog](http://colah.github.io/) (todo: read more here)
+[Perpetual Enigma blog](https://prateekvjoshi.com/)
 ***
+
+#### [Understanding Xavier Initialization In Deep Neural Networks](https://prateekvjoshi.com/2016/03/29/understanding-xavier-initialization-in-deep-neural-networks/)
 
 #### [Building Applications With Deep Learning: Expectations vs. Reality](http://126kr.com/article/8exlrboae6i) (2/14/17)
 * "The reality is very different. Someone willing to employ neural network technologies at the moment (as of January 2017) is forced to do scientific work or at least have an in-depth understanding of neural network methods, despite a number of publicly available technologies created by the brightest and most resourceful minds of our age."
