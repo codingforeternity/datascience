@@ -4,6 +4,8 @@
 [Perpetual Enigma blog](https://prateekvjoshi.com/)
 ***
 
+#### [A gallery of interesting Jupyter and IPython Notebooks](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-and-IPython-Notebooks?utm_campaign=Data%2BElixir&utm_medium=email&utm_source=Data_Elixir_119)
+
 #### [Understanding Xavier Initialization In Deep Neural Networks](https://prateekvjoshi.com/2016/03/29/understanding-xavier-initialization-in-deep-neural-networks/)
 * Gaussian initialization s.t. "With each passing layer, we want the variance to remain the same. This helps us keep the signal from exploding to a high value or vanishing to zero."
 * The Xavier initialization formula: `var(w_i) = 1/N_in`
