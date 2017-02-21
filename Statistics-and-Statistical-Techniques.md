@@ -1,3 +1,6 @@
+#### [My Journey From Frequentist to Bayesian Statistics ](http://www.fharrell.com/2017/02/my-journey-from-frequentist-to-bayesian.html) (2/21/17)
+* "I realized that frequentist multiplicity problems came from the chances you give data to be more extreme, not from the chances you give assertions to be true."
+
 #### [Where priors come from](http://www.zinkov.com/posts/2015-06-09-where-priors-come-from/)
 * Overview of various distributions, e.g. Bernoulli, Gamma
 * "we can also do exp(x) and x2 to get distributions over positive numbers. These are the Lognormal and χ2 distributions."
