@@ -173,6 +173,7 @@ def cutLineage(df: DataFrame): DataFrame = {
   * 'Unit Testing Apache Spark with py.test'
 
 #### [SparkNet: Training deep networks in Spark - Robert Nishihara (UC Berkley)](https://www.safaribooksonline.com/library/view/the-spark-video/9781491970355/video256080.html) (11/22/16)
+* Also see: [Distributed Tensor Flow on Spark: Scaling Google's Deep Learning Library](https://spark-summit.org/east-2016/events/distributed-tensor-flow-on-spark-scaling-googles-deep-learning-library/)
 * Why do we need SparkNet (built on top of Caffe and TensorFlow) when we already have MLLib?
   * Because MLLib doesn't support construction of different network architectures.
   * It only supports models where the model specification is the same every time, e.g. LogisticRegression, RandomForest.
