@@ -1,3 +1,7 @@
+#### Hybrid Collaborative Filtering with Autoencoders (file:///home/fred/Documents/articles/recommender_systems/hybrid_collab_filt_w_AEs_1603.00806v3.pdf) (2/23/17)
+* Really nicely written, clear and short article.
+* Implements a denoising autoencoder that incorporates side information (by linking it into the autoencoder network) to hep with the cold start problem.
+
 #### [The WellDressed Recommendation Engine](https://deeplearning4j.org/welldressed-recommendation-engine) (2/17/17)
 * "data feeds from merchants offer few categorization options, and on top of that, every data feed is very different from the other"
 * "I decided to focus on Title, Description and Category/Keyword fields. Title and Description tend to give valuable, specific hints on what a garment actually is. Category works as a broad identification.  I do not use image data for garment identification.... The copy of the text tends to be the only true identifier of a garment type."
