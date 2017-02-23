@@ -4,6 +4,9 @@
 [Perpetual Enigma blog](https://prateekvjoshi.com/)
 ***
 
+#### [Awesome - Most Cited Deep Learning Papers](https://github.com/terryum/awesome-deep-learning-papers)
+* From Bart
+
 #### deeplearning.net: [Another RBM Tutorial](http://deeplearning.net/tutorial/rbm.html) (2/23/17)
 * "Because of the specific structure of RBMs, visible and hidden units are conditionally independent given one-another." i.e. `p(h|v) = product_i[p(h_i|v)]` and vice versa
 * "For RBMs, `S` consists of the set of visible and hidden units. However, since they are conditionally independent, one can perform block [FWC - alternating] Gibbs sampling. In this setting, visible units are sampled simultaneously given fixed values of the hidden units." `h_{n+1} ~ sigm(W'*v_{n} + b_v)` and `v_{n+1} ~ sigm(W*h_{n+1} + b_h)`
