@@ -1,6 +1,7 @@
-#### Hybrid Collaborative Filtering with Autoencoders (file:///home/fred/Documents/articles/recommender_systems/hybrid_collab_filt_w_AEs_1603.00806v3.pdf) (2/23/17)
-* Really nicely written, clear and short article.
-* Implements a denoising autoencoder that incorporates side information (by linking it into the autoencoder network) to hep with the cold start problem.
+#### [Hybrid Collaborative Filtering with Autoencoders](https://arxiv.org/abs/1603.00806) (2/23/17)
+* file:///home/fred/Documents/articles/recommender_systems/hybrid_collab_filt_w_AEs_1603.00806v3.pdf) 
+* Really nicely written, clear and short paper.
+* Implements a denoising autoencoder that incorporates side information (by linking representations into the autoencoder network) to help with the cold start problem.
 
 #### [The WellDressed Recommendation Engine](https://deeplearning4j.org/welldressed-recommendation-engine) (2/17/17)
 * "data feeds from merchants offer few categorization options, and on top of that, every data feed is very different from the other"
