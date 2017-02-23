@@ -4,6 +4,9 @@
 [Perpetual Enigma blog](https://prateekvjoshi.com/)
 ***
 
+#### deeplearning.net: [Another RBM Tutorial](http://deeplearning.net/tutorial/rbm.html)
+* "Because of the specific structure of RBMs, visible and hidden units are conditionally independent given one-another." i.e. `p(h|v) = product_i[p(h_i|v)]` and vice versa
+
 #### [A gallery of interesting Jupyter and IPython Notebooks](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-and-IPython-Notebooks?utm_campaign=Data%2BElixir&utm_medium=email&utm_source=Data_Elixir_119)
 
 #### [Understanding Xavier Initialization In Deep Neural Networks](https://prateekvjoshi.com/2016/03/29/understanding-xavier-initialization-in-deep-neural-networks/)
