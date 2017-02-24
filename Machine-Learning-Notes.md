@@ -4,6 +4,10 @@
 [Perpetual Enigma blog](https://prateekvjoshi.com/)
 
 [JMetzen's blog](https://jmetzen.github.io/2015-01-29/ml_advice.html)
+
+[Neural Network Zoo](http://www.asimovinstitute.org/wp-content/uploads/2016/09/neuralnetworks.png) (also in ~/Documents)
+
+Scikit-Learn Algorithm Cheatsheet (in ~/Documents)
 ***
 
 #### [Awesome - Most Cited Deep Learning Papers](https://github.com/terryum/awesome-deep-learning-papers)
