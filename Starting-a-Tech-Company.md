@@ -1,3 +1,10 @@
+#### [The Hierarchy of Engagement: The Fuel to Build an Enduring, Billion Dollar Business](https://news.greylock.com/the-hierarchy-of-engagement-5803bf4e6cfa) (2/24/17)
+* (another copy of the page is here: file:///home/fred/wiki/wget/startup_hierarchy_of_engagement/news.greylock.com/the-hierarchy-of-engagement-5803bf4e6cfa
+* **Fantastic set of slides containing much more than the notes I have here.**
+* Core Actions: Pinterest -> Pinning; Snapchat -> Snapping; Twitter -> Tweeting; YouTube -> Uploading a video; Hamstoo -> Hamming?/Marking?
+* How can you predict if engaged users will stick?
+  * Investors look for products that have **accruing benefits** as the user engages and **mounting losses** if the user leaves the product.
+
 #### [Startup Metrics for Pirates](http://www.slideshare.net/dmc500hats/startup-metrics-for-pirates-long-version)
 
 #### [8 Things You Should Know Before Hiring a Foreign Independent Contractor](http://jiahkimlaw.com/business/eight-things-know-hiring-foreign-independent-contractor/) (2/1/17)
