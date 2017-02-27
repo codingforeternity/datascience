@@ -1,3 +1,18 @@
+#### [Netflix Recommendations: Beyond the 5 stars (Part 1)](http://techblog.netflix.com/2012/04/netflix-recommendations-beyond-5-stars.html) (2/27/17)
+* "we can observe viewing statistics such as whether a video was watched fully or only partially"
+* "75% of what people watch is from some sort of recommendation"
+* "in many parts of our system we are not only optimizing for accuracy, but also for [**freshness** and] **diversity**"
+  * i.e. maximize stdev in addition to minimizing RMSE
+* "**awareness**. We want members to be aware of how we are adapting to their tastes. This not only promotes trust in the system, but encourages members to give feedback"
+* "**explanations** as to why we decide to recommend a given movie or show"
+* "different rows that rely mostly on your **social** circle to generate recommendations"
+* "**Similarity** ... can be between movies or between members, and can be in multiple dimensions such as metadata, ratings, or viewing data"
+* "**ranking**, the choice of what order to place the items in a row, is critical in providing an effective personalized experience"
+* [Part 2](http://techblog.netflix.com/2012/06/netflix-recommendations-beyond-5-stars.html)
+  * `frank(u,v) = w1*p(v) + w2*r(u,v) + b`, where u=user, v=video item, p=popularity and r=predicted rating
+  * "To measure model performance offline we track multiple metrics used in the machine learning community: from ranking measures such as normalized discounted cumulative gain, mean reciprocal rank, or fraction of concordant pairs, to classification metrics such as accuracy, precision, recall, or F-score."
+  * "**Over time we have reformulated the recommendation problem to the question of optimizing the probability a member chooses to watch a title and enjoys it enough to come back to the service.**"
+
 #### [Hybrid Collaborative Filtering with Autoencoders](https://arxiv.org/abs/1603.00806) (2/23/17)
 * file:///home/fred/Documents/articles/recommender_systems/hybrid_collab_filt_w_AEs_1603.00806v3.pdf) 
 * Really nicely written, clear and short paper.
