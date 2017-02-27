@@ -10,6 +10,9 @@
 Scikit-Learn Algorithm Cheatsheet (in ~/Documents)
 ***
 
+#### [Why Minimize Negative Log Likelihood?](https://quantivity.wordpress.com/2011/05/23/why-minimize-negative-log-likelihood/)
+* "'Why is minimizing the negative log likelihood equivalent to maximum likelihood estimation (MLE)?' or, equivalently, in Bayesian-speak: 'Why is minimizing the negative log likelihood equivalent to maximum a posteriori probability (MAP), given a uniform prior?'"
+
 #### [Awesome - Most Cited Deep Learning Papers](https://github.com/terryum/awesome-deep-learning-papers)
 * From Bart
 
