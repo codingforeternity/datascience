@@ -1,3 +1,5 @@
+"and Uncle Freddie said we did a good job / sent us home with a 9 pound blue / but I don't see a truckload for the market / what's old Carlisle gonna do?" [Carlisle's Haul by James McMurtry]
+
 Bloodline, season 2 episode 1.  Kevin sells his boat for $8k to a black guy named Freddy who always has good luck fishing with it.
 
 the vector of food is more similar to the vector of cat (as measures by their dot product) than the vectors of **several other randomly chosen words** (e.g. democracy, greed, [freddy](https://www.quora.com/What-is-negative-sampling)), instead of all other words in language. 
