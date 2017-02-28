@@ -1,3 +1,21 @@
+#### [Collaborative Filtering with Stacked Denoising AutoEncoders and Sparse Inputs](https://hal.inria.fr/hal-01256422v1/document). Strub and Mary, 2016 (2/28/17)
+* Three processes are described to corrupt data:
+  1. Gaussian Noise : Gaussian Noise is added to a subset of the input
+  2. Masking Noise : A fraction ν of the input is randomly forced to be zero.
+  3. Salt-and-Pepper Noise : A fraction ν of the input is randomly forced to be one of the input maximum/minimum.
+* Using masking noise has two great advantages in our current issue. First, it works as a
+strong regularizer. Second, it **trains the autoencoder to predict missing values**.
+* The first encoding layer is 1/10 th of the input size, the second layer is 1/12 th of the input size.
+  * They first train a order-1 AE (input -> 1/10 hidden -> input reconstruction)
+  * Then the train another order-1 AE (1/10 hidden -> 1/12 hidden -> 1/10 reconstruction
+  * Then they stack them into an order-2 and gently train
+* Even if DAE loss and sparsity already entail a strong regularization, a weight decay is required.
+  * FWC - but perhaps not in a VAE?
+* Vencoders (item AEs) performs poorly on jester while they are excellent on movieLens. More research must be done to check whether Uencoders (user AEs) and Vencoders have similar errors.
+  * FWC - kws: synthetic users
+* Whenever new items occurs, Vencoders need to be retrained since it changes the size of the input/ouput layer. Yet, Vencoders immediately provide additional estimates for new users. The situation is reversed for Uencoders.
+  * FWC - no Vencoder retraining necessary though if items are not discrete (e.g. Levenstein for words or some other "soft" similarity metric based on representations/embeddings for other things)
+
 #### [Netflix Recommendations: Beyond the 5 stars (Part 1)](http://techblog.netflix.com/2012/04/netflix-recommendations-beyond-5-stars.html) (2/27/17)
 * "we can observe viewing statistics such as whether a video was watched fully or only partially"
 * "75% of what people watch is from some sort of recommendation"
