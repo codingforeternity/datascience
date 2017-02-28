@@ -6,6 +6,9 @@
 
 ***
 
+#### [Extracting Relations between Non-Standard Entities using Distant Supervision and Imitation Learning](http://www.aclweb.org/anthology/D15-1086) (2/28/17)
+* "jointly training the named entity classifier and the relation extractor using imitation learning which reduces structured prediction learning to classification learning"
+
 #### [Word embeddings; word2vec; king - man + woman is queen, but why?](http://p.migdal.pl/2017/01/06/king-man-woman-queen-why.html) (1/23/17)
 * Often instead of working with conditional probabilities, we use the pointwise mutual information (PMI), defined as: PMI(a,b)=log[P(a,b)/(P(a)P(b))]=log[P(a|b)/P(a)]. Its direct interpretation is how much more likely we get a pair than if it were at random. The logarithm makes it easier to work with words appearing at frequencies of different orders of magnitude. We can approximate PMI as a scalar product: PMI(a,b)=v⃗_a⋅v⃗_b
 * [Matrix Factorization with TensorFlow - Katherine Bailey](http://katbailey.github.io/post/matrix-factorization-with-tensorflow/)
