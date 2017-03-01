@@ -1,3 +1,7 @@
+***
+[[Quantum Thoughts]]
+***
+
 We think redshift occurs because of how long it takes light to reach us from far away.  The assumption here is that the speed of light is constant, even through parts of the universe--between galaxies--that are experiencing accelerated expansion.  But what if they aren't experiencing acceleration and light just travels slower through these regions?  Or alternatively, perhaps the speed of light is indeed constant, but time moves faster in these regions.
 
 The same argument can be made w.r.t. dark matter.  The bodies rotating around the edges of galaxies are moving too fast.  It seems like they need to have more mass to keep them tethered to their galaxies.  Or maybe they aren't moving as fast as we think; maybe their velocities are lower.  A lower velocity could come about one of two ways, by less distance traveled or more time.  If time is moving faster for them, then they might be experiencing lower velocity even while we observe them at their higher velocities.  We know time is local to the observer, so why not?
