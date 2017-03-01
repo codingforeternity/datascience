@@ -143,7 +143,7 @@ softmax a way of forcing the outputs to sum to 1 so that they can represent a pr
   * tree-based approach (Minih, Hinton 2009)
 * a simpler way to learn feature vectors of words (Collobert,  Weston, 2008)
   * introduction to negative sampling
-* eventually apply dimension reduction (t-SNE) to display these vectors in a 2D map
+* eventually apply dimension reduction ([t-SNE](http://blog.datascienceheroes.com/playing-with-dimensions-from-clustering-pca-t-sne-to-carl-sagan/)) to display these vectors in a 2D map
 
 ### Week 4 Quiz
 * (for some reason I can't get numbered lists to work unless they are sublists)
