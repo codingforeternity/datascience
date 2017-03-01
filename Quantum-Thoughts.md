@@ -1,3 +1,7 @@
+***
+[[Quantum Thoughts Summarized in Prose]]
+***
+
 #### On entropy:
 * Has every makeable movie been made? No. In what domain is every configuration (equally) possible? I can't think of any that aren't artificial. Uniform distributions just don't happen.  So why would we expect physics, the universe, to be any different? Just because we can't see the order in a box of gas particles doesn't mean it's not there.
 
