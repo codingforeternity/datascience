@@ -68,6 +68,7 @@ Welcome to the fcrimins.github.io wiki!
 - [[Scala Notes]]
 - [[Haskell Notes]]
 - [[R Notes]]
+- [[Git Notes]]
 
 <br>
 
