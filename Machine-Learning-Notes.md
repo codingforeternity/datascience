@@ -10,6 +10,10 @@
 Scikit-Learn Algorithm Cheatsheet (in ~/Documents)
 ***
 
+#### [Entity Embeddings of Categorical Variables](https://arxiv.org/abs/1604.06737)
+* "Entity embedding not only reduces memory usage and speeds up neural networks compared with one-hot encoding, but more importantly by mapping similar values close to each other in the embedding space it reveals the intrinsic properties of the categorical variables"
+* "helps the neural network to generalize better when the data is sparse and statistics is unknown.  Thus it is especially useful for datasets with lots of high cardinality features, where other methods tend to **overfit**."
+
 #### [Why Minimize Negative Log Likelihood?](https://quantivity.wordpress.com/2011/05/23/why-minimize-negative-log-likelihood/)
 * "'Why is minimizing the negative log likelihood equivalent to maximum likelihood estimation (MLE)?' or, equivalently, in Bayesian-speak: 'Why is minimizing the negative log likelihood equivalent to maximum a posteriori probability (MAP), given a uniform prior?'"
 
