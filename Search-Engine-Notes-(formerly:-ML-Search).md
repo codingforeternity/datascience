@@ -4,6 +4,7 @@
   * "The formula uses a model of a random surfer who gets bored after several clicks and switches to a random page. The PageRank value of a page reflects the chance that the random surfer will land on that page by clicking on a link. It can be understood as a Markov chain in which the states are pages"
   * "When calculating PageRank, pages with no outbound links are assumed to link out to all other pages in the collection. Their PageRank scores are therefore divided evenly among all other pages. In other words, to be fair with pages that are not sinks, these random transitions are added to all nodes in the Web, with a residual probability usually set to **d = 0.85, estimated from the frequency that an average surfer uses his or her browser's bookmark feature**."
 * "Because of the large eigengap of the modified adjacency matrix above, the values of the PageRank eigenvector can be approximated to within a high degree of accuracy *within only a few [52] iterations*."
+* "The [search engine results page (SERP)](https://en.wikipedia.org/wiki/Search_engine_results_page) rank of a web page is a function not only of its PageRank, but of a relatively large and continuously adjusted set of factors (over 200)"
 
 #### [How to build a search engine from scratch](https://www.quora.com/How-to-build-a-search-engine-from-scratch) (2/2/17)
 * See Agapiev's answer in particular.
