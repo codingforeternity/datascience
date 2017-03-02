@@ -1,4 +1,6 @@
 #### [PageRank on Wikipedia](https://en.wikipedia.org/wiki/PageRank)
+* "The PageRank algorithm outputs a probability distribution used to represent the likelihood that a person randomly clicking on links will arrive at any particular page... It is assumed in several research papers that the distribution is evenly divided among all documents in the collection at the beginning of the computational process."  The algorithm iterates to update the distribution a bit in each pass.
+  * This still has the problem that it is based on "random clicking" as opposed to "clicking according to some prior distribution."  Could a MCMC approach be used here to improve the "random"/uniform prior?
 
 #### [How to build a search engine from scratch](https://www.quora.com/How-to-build-a-search-engine-from-scratch) (2/2/17)
 * See Agapiev's answer in particular.
