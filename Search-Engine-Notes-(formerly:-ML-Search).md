@@ -1,4 +1,6 @@
-#### [PageRank on Wikipedia](https://en.wikipedia.org/wiki/PageRank)
+#### [All About the New Google RankBrain Algorithm](http://searchengineland.com/faq-all-about-the-new-google-rankbrain-algorithm-234440) (3/2/17)
+
+#### [PageRank on Wikipedia](https://en.wikipedia.org/wiki/PageRank) (3/2/17)
 * "The PageRank algorithm outputs a probability distribution used to represent the likelihood that a person randomly clicking on links will arrive at any particular page... It is assumed in several research papers that the distribution is evenly divided among all documents in the collection at the beginning of the computational process."  The algorithm iterates to update the distribution a bit in each pass.
   * Problem: This still has the problem that it is based on "random clicking" as opposed to "clicking according to some prior distribution."  Could a MCMC approach be used here to improve the "random"/uniform prior?
     * Solution: "The original PageRank algorithm reflects the so-called random surfer model, meaning that the PageRank of a particular page is derived from the theoretical probability of visiting that page when clicking on links at random. A page ranking model that reflects the importance of a particular page as a function of how many actual visits it receives by real users is called the *intentional surfer model*."
@@ -6,6 +8,7 @@
   * "When calculating PageRank, pages with no outbound links are assumed to link out to all other pages in the collection. Their PageRank scores are therefore divided evenly among all other pages. In other words, to be fair with pages that are not sinks, these random transitions are added to all nodes in the Web, with a residual probability usually set to **d = 0.85, estimated from the frequency that an average surfer uses his or her browser's bookmark feature**."
 * "Because of the large eigengap of the modified adjacency matrix above, the values of the PageRank eigenvector can be approximated to within a high degree of accuracy *within only a few [52] iterations*."
 * "The [search engine results page (SERP)](https://en.wikipedia.org/wiki/Search_engine_results_page) rank of a web page is a function not only of its PageRank, but of a relatively large and continuously adjusted set of factors (over 200)"
+* "Google elaborated on the reasons for PageRank deprecation at Q&A #March and announced Links (#1) and Content (#2) as the Top Ranking Factors, **RankBrain** (#3) was announced as the #3 Ranking Factor in October 2015 so the Top 3 Factors are now confirmed officially by Google."
 
 #### [How to build a search engine from scratch](https://www.quora.com/How-to-build-a-search-engine-from-scratch) (2/2/17)
 * See Agapiev's answer in particular.
