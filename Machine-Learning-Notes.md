@@ -14,6 +14,9 @@ Scikit-Learn Algorithm Cheatsheet (in ~/Documents)
 * Mentioned on [slide 17](https://www.slideshare.net/HJvanVeen/feature-engineering-72376750)
   * "Category Embedding" (one-hot dimension reduction)
   * Faster model training.  Less memory overhead.  Better accuracy than 1-hot encoding.
+  * Slide 25 mentions Consolidation Encoding: map different categorical variables to the same varible (e.g. to handle spelling errors!)--real data is messy, free text especially
+  * Slide 46 mentions Projecting to a Circle: turn single features like <day_of_week> into two coordinates on a circle (FWC - brilliant!)
+  * Slide 56 NLP: Deep learning (automatic feature engineering) is increasingly eating this field but shallow learning with well-engineered features is still competitive.
 * "Entity embedding not only reduces memory usage and speeds up neural networks compared with one-hot encoding, but more importantly by mapping similar values close to each other in the embedding space it reveals the intrinsic properties of the categorical variables"
 * "helps the neural network to generalize better when the data is sparse and statistics is unknown.  Thus it is especially useful for datasets with lots of high cardinality features, where other methods tend to **overfit**."
 
