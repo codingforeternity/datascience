@@ -11,6 +11,9 @@ Scikit-Learn Algorithm Cheatsheet (in ~/Documents)
 ***
 
 #### [Entity Embeddings of Categorical Variables](https://arxiv.org/abs/1604.06737)
+* Mentioned on [slide 17](https://www.slideshare.net/HJvanVeen/feature-engineering-72376750)
+  * "Category Embedding" (one-hot dimension reduction)
+  * Faster model training.  Less memory overhead.  Better accuracy than 1-hot encoding.
 * "Entity embedding not only reduces memory usage and speeds up neural networks compared with one-hot encoding, but more importantly by mapping similar values close to each other in the embedding space it reveals the intrinsic properties of the categorical variables"
 * "helps the neural network to generalize better when the data is sparse and statistics is unknown.  Thus it is especially useful for datasets with lots of high cardinality features, where other methods tend to **overfit**."
 
