@@ -1,28 +1,34 @@
-Another problem with Google search (10/17/15)
+#### [PageRank on Wikipedia](https://en.wikipedia.org/wiki/PageRank)
+
+#### [How to build a search engine from scratch](https://www.quora.com/How-to-build-a-search-engine-from-scratch)
+* See Agapiev's answer in particular.
+* [CommonCrawl](http://commoncrawl.org/big-picture/frequently-asked-questions/) - the web, crawled for us
+
+#### Another problem with Google search (10/17/15)
 * It leads to a lot of anecdotal evidence.
 * Which just happens to be a massive percentage of the evidence for and against baby products of all kinds.
 * Take for example: http://www.candokiddo.com/news/rocknplay
 * This is a well read site.  But it's nothing but anecdotal.
 * It would be great to see a reliability score for it.
 
-Email: Watson for reviews (10/6/15)
+#### Email: Watson for reviews (10/6/15)
 * Filter reviews and return a re-aggregated list of relevant ones, according to an individual's preferences and their validity.
 * Use collaborative filtering (CF) for ailments/problems rather than human-understandable problems.  I.e., use our 8 ailments and CF back to EMRA problems.
 * Use Watson for any user-specific record, like EMRs.
 
-Email: "Internet decay"
+#### Email: "Internet decay"
 * http://www.vox.com/2015/8/6/9099357/internet-dead-end
 * "What links these seemingly dissimilar stories is a very basic fear — the idea that the internet as we knew it, the internet of five or 10 or 20 years ago, is going away as surely as print media, replaced by a new internet that reimagines personal identity as something easily commodified, that plays less on the desire for information or thoughtfulness than it does the desire for a quick jolt of emotion."
 * I.e. like reality TV.  So why can't machine learning (e.g. Watson) correct the internet back to it's previous state?  People experience the internet through search.  If the searching mechanism doesn't point to reality TV, then [reality TV] might as well not exist, as far as a user is concerned.
 
-Email: Phonetics search and spellcheck (9/17/15)
+#### Email: Phonetics search and spellcheck (9/17/15)
 * Why does typing into a search box only suggest word completions that have the same characters as I'm typing?
 * Why not suggest word completions that match the phonetics of what I'm typing?
 * This might be a poor example, but I was searching for the Neue Gallerie, but I couldn't remember how it was spelled: Noye Gallery?
 * Also, suggested spelling don't seem to go beyond having a single character mispelled, nor do they seem to know about how close characters are to each other on the (phone) keyboard.
 * Spellcheck should work the same way, using phonetics.
 
-Idea: Watson seems to have required rules to play _Jeopardy!_
+#### Idea: Watson seems to have required rules to play _Jeopardy!_
 * I.e. rules had to be programmed such as the relationship of the category headings to the questions.
 * Why couldn't the relationship have been learned?
 * I suppose spatial relatedness (rows/columns) would have to be learned first.
@@ -30,7 +36,7 @@ Idea: Watson seems to have required rules to play _Jeopardy!_
   * pixels -> lines -> motifs-> sub-objects -> objects
   * spatial relations -> rows/columns -> categories -> question hints
 
-Email: Is there a watson search engine (6/12/15)
+#### Email: Is there a watson search engine (6/12/15)
 * And if not why? It should be configurable along any dimension, eg trustworthiness, that it's user specifies
 * http://searchengineland.com/goodbye-blekko-search-engine-joins-ibms-watson-team-217633
 * http://searchengineland.com/google-forecloses-on-content-farms-with-farmer-algorithm-update-66071
