@@ -32,7 +32,6 @@ Welcome to the fcrimins.github.io wiki!
 
 <br>
 
-* [[ML Search]]
 * [[ML Finance]]
 
 <br>
@@ -56,7 +55,7 @@ Welcome to the fcrimins.github.io wiki!
   * [[Web Hosting]] (kws: AWS)
   * [[MVC Notes]]
   * [[MongoDB Notes]]
-  * [[Search Engine Notes]]
+  * [[ML Search]]
 * [[On Productivity]]
 
 <br>
