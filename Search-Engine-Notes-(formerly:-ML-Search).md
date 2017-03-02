@@ -12,6 +12,7 @@
 
 #### [How to build a search engine from scratch](https://www.quora.com/How-to-build-a-search-engine-from-scratch) (2/2/17)
 * See Agapiev's answer in particular.
+  * "For crawling, it does not make sense to bother doing your own as nowadays there are many good open source choices such as Nutch, Scrapy, Heritrix etc."
 * [CommonCrawl](http://commoncrawl.org/big-picture/frequently-asked-questions/) - the web, crawled for us
 
 #### Another problem with Google search (10/17/15)
