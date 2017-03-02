@@ -3,7 +3,7 @@
   * This still has the problem that it is based on "random clicking" as opposed to "clicking according to some prior distribution."  Could a MCMC approach be used here to improve the "random"/uniform prior?
   * "The formula uses a model of a random surfer who gets bored after several clicks and switches to a random page. The PageRank value of a page reflects the chance that the random surfer will land on that page by clicking on a link. It can be understood as a Markov chain in which the states are pages"
   * "When calculating PageRank, pages with no outbound links are assumed to link out to all other pages in the collection. Their PageRank scores are therefore divided evenly among all other pages. In other words, to be fair with pages that are not sinks, these random transitions are added to all nodes in the Web, with a residual probability usually set to **d = 0.85, estimated from the frequency that an average surfer uses his or her browser's bookmark feature**."
-* "Because of the large eigengap of the modified adjacency matrix above,[22] the values of the PageRank eigenvector can be approximated to within a high degree of accuracy *within only a few iterations*."
+* "Because of the large eigengap of the modified adjacency matrix above, the values of the PageRank eigenvector can be approximated to within a high degree of accuracy *within only a few [52] iterations*."
 
 #### [How to build a search engine from scratch](https://www.quora.com/How-to-build-a-search-engine-from-scratch) (2/2/17)
 * See Agapiev's answer in particular.
