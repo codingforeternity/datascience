@@ -12,7 +12,7 @@ Scikit-Learn Algorithm Cheatsheet (in ~/Documents)
 
 #### [Entity Embeddings of Categorical Variables](https://arxiv.org/abs/1604.06737)
 * Mentioned on [slide 17](https://www.slideshare.net/HJvanVeen/feature-engineering-72376750)
-  * "Category Embedding" (one-hot dimension reduction)
+  * "Category Embedding" (one-hot dimension reduction) of this Presentation on Feature Engineering
   * Faster model training.  Less memory overhead.  Better accuracy than 1-hot encoding.
   * Slide 25 mentions Consolidation Encoding: map different categorical variables to the same varible (e.g. to handle spelling errors!)--real data is messy, free text especially
   * Slide 46 mentions Projecting to a Circle: turn single features like <day_of_week> into two coordinates on a circle (FWC - brilliant!)
