@@ -1,3 +1,11 @@
+#### [SEO Basics: 8 Essentials When Optimizing Your Site](https://searchenginewatch.com/sew/how-to/2259693/seo-basics-8-essentials-when-optimizing-your-site)
+* **4. Know Your Business Model**
+  * While this is pretty obvious, so many people tend to not sit down and just focus on what their main goals are. Some questions you need to ask yourself are:
+    * What defines a **conversion** for you?
+    * Are you selling eyeballs (impressions) or what people click on?
+    * What are your goals?
+    * Do you know your assets and liabilities?
+
 #### [The Hierarchy of Engagement: The Fuel to Build an Enduring, Billion Dollar Business](https://news.greylock.com/the-hierarchy-of-engagement-5803bf4e6cfa) (2/24/17)
 * (another copy of the page is here: file:///home/fred/wiki/wget/startup_hierarchy_of_engagement/news.greylock.com/the-hierarchy-of-engagement-5803bf4e6cfa
 * **Fantastic set of slides containing much more than the notes I have here.**
