@@ -176,6 +176,7 @@ Scikit-Learn Algorithm Cheatsheet (in ~/Documents)
   * bagging
   * random forest
 * bottom line best: xgboost^0.65 * lasagne_nearest_neighbor^0.35 * 0.85 + adaboost_et * 0.15
+* [More on XGBoost](http://blog.kaggle.com/2017/01/23/a-kaggle-master-explains-gradient-boosting/) (3/3/17)
 
 #### [World’s largest hedge fund to replace managers with artificial intelligence](https://www.theguardian.com/technology/2016/dec/22/bridgewater-associates-ai-artificial-intelligence-management) (12/23/16)
 * "Automated decision-making is appealing to businesses as it can save time and **eliminate human emotional volatility**.  People have a bad day and it then colors their perception of the world and they make different decisions."
