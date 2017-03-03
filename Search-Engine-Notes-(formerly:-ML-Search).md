@@ -17,7 +17,7 @@
   * "When calculating PageRank, pages with no outbound links are assumed to link out to all other pages in the collection. Their PageRank scores are therefore divided evenly among all other pages. In other words, to be fair with pages that are not sinks, these random transitions are added to all nodes in the Web, with a residual probability usually set to **d = 0.85, estimated from the frequency that an average surfer uses his or her browser's bookmark feature**."
 * "Because of the large eigengap of the modified adjacency matrix above, the values of the PageRank eigenvector can be approximated to within a high degree of accuracy *within only a few [52] iterations*."
 * "The [search engine results page (SERP)](https://en.wikipedia.org/wiki/Search_engine_results_page) rank of a web page is a function not only of its PageRank, but of a relatively large and continuously adjusted set of factors (over 200)"
-* "Google elaborated on the reasons for PageRank deprecation at Q&A #March and announced Links (#1) and Content (#2) as the Top Ranking Factors, **RankBrain** (#3) was announced as the #3 Ranking Factor in October 2015 so the Top 3 Factors are now confirmed officially by Google."
+* "Google elaborated on the reasons for PageRank deprecation at Q&A #March and announced **Links** (#1) and **Content** (#2) as the Top Ranking Factors, **RankBrain** (#3) was announced as the #3 Ranking Factor in October 2015 so the Top 3 Factors are now confirmed officially by Google."
 
 #### [How to build a search engine from scratch](https://www.quora.com/How-to-build-a-search-engine-from-scratch) (2/2/17)
 * See Agapiev's answer in particular.
