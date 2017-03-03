@@ -1,5 +1,7 @@
 ***
 [[Quantum Thoughts]]
+
+The following was posted here: https://www.physicsforums.com/threads/on-what-dark-time-might-mean.906289/
 ***
 
 We think redshift occurs because of how long it takes light to reach us from far away.  The assumption here is that the speed of light is constant, even through regions of the universe--between galaxies--that are experiencing accelerated expansion.  But what if they aren't experiencing acceleration and light just travels slower through these regions?  Or alternatively, perhaps the speed of light is indeed constant, but *time moves faster* in these regions. [we observe: acceleration due to dark energy, they experience: faster time]
@@ -16,4 +18,4 @@ As an aside, would a rocketship zooming around like this for, let's say, a billi
 
 We think the initial inflation of the universe occurred very quickly, in a nearly infinitesimal amount of time, but that's only our perception, again because we're measuring time from our perspective.  If we think of the rocketship as bending or transforming the fabric of space via its acceleration, then we might say that time moves slower from the perspective of an object that is transforming said fabric.  If we think of inflation as 1e50 rockets (or whatever the really big number is) then there was a heck of a lot of this space transformation going on; and from the perspective of an observer who was there, it would have taken ~~a really, really long time~~ *even less time*. [also doesn't fit the theory--wrong sign]
 
-On the surface, all of these seem to point in the same direction of time being faster at larger scales and slower at smaller scales.  The scale might not be the operative variable however.  Rather, these all point in the direction of time being slower in the presence of accelerating matter and faster in its absence.
+On the surface, all of these seem to point in the same direction of time being faster at larger scales and slower at smaller scales.  Scale might not be the operative variable however.  Rather, these all point in the direction of time being slower in the presence of accelerating matter and faster in its absence.
