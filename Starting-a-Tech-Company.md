@@ -1,4 +1,4 @@
-#### [SEO Basics: 8 Essentials When Optimizing Your Site](https://searchenginewatch.com/sew/how-to/2259693/seo-basics-8-essentials-when-optimizing-your-site)
+#### [SEO Basics: 8 Essentials When Optimizing Your Site](https://searchenginewatch.com/sew/how-to/2259693/seo-basics-8-essentials-when-optimizing-your-site) (3/3/17)
 * **4. Know Your Business Model**
   * While this is pretty obvious, so many people tend to not sit down and just focus on what their main goals are. Some questions you need to ask yourself are:
     * What defines a **conversion** for you?
