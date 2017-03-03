@@ -6,7 +6,7 @@
 
 #### [Links: The Broken “Ballot Box” Used By Google & Bing](http://marketingland.com/links-the-broken-ballot-box-used-by-google-bing-17139)
 * Don’t forget, Google’s making all of these decisions in an environment where some publishers actively withhold their votes while other publishers sell them. Add into all that the fact that most people, as I’ve covered before, don’t actually vote at all. Most people don’t go out and ensure they’re linking to good content from their blogs. **Most people don’t have blogs.**
-  * FWC - **Right, but people do have bookmarks!**  How can bookmarks be translated into syhthetic links?  Use "incoming links" as y variable.  An incoming-outgoing link matrix could be factored just like a users-items ratings matrix.
+  * FWC - **Right, but people do have bookmarks!**  And most people read stuff.  How can bookmarks be translated into syhthetic links?  Use "incoming links" as y variable.  An incoming-outgoing link matrix could be factored just like a users-items ratings matrix.
 
 #### [Web ARChive (WARC) file format](https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/)
 
