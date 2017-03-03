@@ -1,3 +1,13 @@
+#### SEO (3/3/17)
+* These links seem really important.  Revisit them later.
+  * [The Periodic Table Of SEO Success Factors](http://searchengineland.com/seotable)
+  * [So… You Think SEO Has Changed?](https://searchenginewatch.com/sew/opinion/2334934/so-you-think-seo-has-changed)
+  * [SEO Basics: 8 Essentials When Optimizing Your Site](https://searchenginewatch.com/sew/how-to/2259693/seo-basics-8-essentials-when-optimizing-your-site)
+
+#### [Links: The Broken “Ballot Box” Used By Google & Bing](http://marketingland.com/links-the-broken-ballot-box-used-by-google-bing-17139)
+* Don’t forget, Google’s making all of these decisions in an environment where some publishers actively withhold their votes while other publishers sell them. Add into all that the fact that most people, as I’ve covered before, don’t actually vote at all. Most people don’t go out and ensure they’re linking to good content from their blogs. **Most people don’t have blogs.**
+  * FWC - **Right, but people do have bookmarks!**  How can bookmarks be translated into syhthetic links?  Use "incoming links" as y variable.  An incoming-outgoing link matrix could be factored just like a users-items ratings matrix.
+
 #### [Web ARChive (WARC) file format](https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/)
 
 #### [All About the New Google RankBrain Algorithm](http://searchengineland.com/faq-all-about-the-new-google-rankbrain-algorithm-234440) (3/2/17)
