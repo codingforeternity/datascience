@@ -182,6 +182,9 @@ Scikit-Learn Algorithm Cheatsheet (in ~/Documents)
     2. Fit a model to the residuals, `h_1(x) = y - F_1(x)`
     3. Create a new model, `F_2(x) = F_1(x) + h(x)`
   * Take a second to stand in awe of what we just did. We modified our gradient boosting algorithm so that it works with any differentiable loss function.
+  * The Code
+    * https://github.com/dmlc/xgboost
+    * https://github.com/Microsoft/LightGBM (similar, and gaining recent attention, from MSFT)
 
 #### [World’s largest hedge fund to replace managers with artificial intelligence](https://www.theguardian.com/technology/2016/dec/22/bridgewater-associates-ai-artificial-intelligence-management) (12/23/16)
 * "Automated decision-making is appealing to businesses as it can save time and **eliminate human emotional volatility**.  People have a bad day and it then colors their perception of the world and they make different decisions."
