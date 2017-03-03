@@ -8,6 +8,8 @@
 * The Bloomberg article did have a single example of a search where RankBrain is supposedly helping. Here it is:
   * "What's the title of the consumer at the highest level of a food chain?"
   * Imagine that RankBrain is connecting that original long and complicated query to this much shorter one: "highest level of a food chain"
+* In October 2015, Google told Bloomberg that a "very large fraction" of the 15 percent of queries it normally never sees before were processed by RankBrain. In short, 15 percent or less. In June 2016, news emerged that RankBrain was being used for every query that Google handles. See our story about that
+  * FWC - so RankBrain is mainly useful for translating from a set of search terms that's never been seen before to a set of terms that has been seen (i.e. **semantic search**)
 
 #### [PageRank on Wikipedia](https://en.wikipedia.org/wiki/PageRank) (3/2/17)
 * "The PageRank algorithm outputs a probability distribution used to represent the likelihood that a person randomly clicking on links will arrive at any particular page... It is assumed in several research papers that the distribution is evenly divided among all documents in the collection at the beginning of the computational process."  The algorithm iterates to update the distribution a bit in each pass.
