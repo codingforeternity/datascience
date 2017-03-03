@@ -185,6 +185,7 @@ Scikit-Learn Algorithm Cheatsheet (in ~/Documents)
   * The Code
     * https://github.com/dmlc/xgboost
     * https://github.com/Microsoft/LightGBM (similar, and gaining recent attention, from MSFT)
+  * Deep learning methods require a lot more training data than XGBoost ... we have large pre-existing research communities working on computer vision, speech recognition, and NLP. On the other hand, if you have a specialized/exotic problem, then it takes a lot more effort to come up with good deep architectures [which is why XGBoost is good]. On Kaggle competition kind of short timelines, there just isn't enough time to invest in exploring new deep architectures suited to an exotic problem
 
 #### [World’s largest hedge fund to replace managers with artificial intelligence](https://www.theguardian.com/technology/2016/dec/22/bridgewater-associates-ai-artificial-intelligence-management) (12/23/16)
 * "Automated decision-making is appealing to businesses as it can save time and **eliminate human emotional volatility**.  People have a bad day and it then colors their perception of the world and they make different decisions."
