@@ -177,6 +177,10 @@ Scikit-Learn Algorithm Cheatsheet (in ~/Documents)
   * random forest
 * bottom line best: xgboost^0.65 * lasagne_nearest_neighbor^0.35 * 0.85 + adaboost_et * 0.15
 * [More on XGBoost](http://blog.kaggle.com/2017/01/23/a-kaggle-master-explains-gradient-boosting/) (3/3/17)
+  *  In pseudocode:
+    1. Fit a model to the data, `F_1(x) = y`
+    2. Fit a model to the residuals, `h_1(x) = y - F_1(x)`
+    3. Create a new model, `F_2(x) = F_1(x) + h(x)`
 
 #### [World’s largest hedge fund to replace managers with artificial intelligence](https://www.theguardian.com/technology/2016/dec/22/bridgewater-associates-ai-artificial-intelligence-management) (12/23/16)
 * "Automated decision-making is appealing to businesses as it can save time and **eliminate human emotional volatility**.  People have a bad day and it then colors their perception of the world and they make different decisions."
