@@ -1,6 +1,13 @@
 #### [Web ARChive (WARC) file format](https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/)
 
 #### [All About the New Google RankBrain Algorithm](http://searchengineland.com/faq-all-about-the-new-google-rankbrain-algorithm-234440) (3/2/17)
+* [The Periodic Table Of SEO Success Factors](http://searchengineland.com/seotable)
+* [Google: Hummingbird](http://searchengineland.com/library/google/hummingbird-google)
+* What exactly does RankBrain do?
+  * From emailing with Google, I gather RankBrain is mainly used as a way to interpret the searches that people submit to find pages that might not have the exact words that were searched for.
+* The Bloomberg article did have a single example of a search where RankBrain is supposedly helping. Here it is:
+  * "What's the title of the consumer at the highest level of a food chain?"
+  * Imagine that RankBrain is connecting that original long and complicated query to this much shorter one: "highest level of a food chain"
 
 #### [PageRank on Wikipedia](https://en.wikipedia.org/wiki/PageRank) (3/2/17)
 * "The PageRank algorithm outputs a probability distribution used to represent the likelihood that a person randomly clicking on links will arrive at any particular page... It is assumed in several research papers that the distribution is evenly divided among all documents in the collection at the beginning of the computational process."  The algorithm iterates to update the distribution a bit in each pass.
