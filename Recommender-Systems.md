@@ -1,3 +1,13 @@
+#### Variational Inference: A Review for Statisticians. Blei, Kucukelbir, McAuliffe. 2016. (3/6/17)
+* file:///home/fred/Documents/articles/variational_inference_1601.00670v4.pdf
+* Thus, **variational inference is suited to large data sets and scenarios where we want to
+quickly explore many models; MCMC is suited to smaller data sets and scenarios where
+we happily pay a heavier computational cost for more precise samples**. For example, we
+might use MCMC in a setting where we spent 20 years collecting a small but expensive data
+set, where we are confident that our model is appropriate, and where we require precise
+inferences. We might **use variational inference when fitting a probabilistic model of text to
+one billion text documents and where the inferences will be used to serve search results** [kws: semantic hashing] to a large population of users.
+
 #### [Collaborative Filtering with Stacked Denoising AutoEncoders and Sparse Inputs](https://hal.inria.fr/hal-01256422v1/document). Strub and Mary, 2016 (2/28/17)
 * Three processes are described to corrupt data:
   1. Gaussian Noise : Gaussian Noise is added to a subset of the input
