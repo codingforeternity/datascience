@@ -1915,12 +1915,12 @@ is too slow (big vectors! 2000D in their case)
 * It's easy to get a binary description of an image such as black-white vs. color or inside-scene vs. outside-scene, but it's much more difficult to get 30 orthogonal binary bits
 * Start by considering documents rather than images
   * Finding binary codes for documents
-  * 200 word counts -> 500 -> 250 -> 30 -> 250 -> 500 -> 2000 reconstructed softmax counts
+  * 2000D word counts -> 500 -> 250 -> 30 -> 250 -> 500 -> 2000 reconstructed softmax counts
   * Train an auto-encoder using 30 **logistic units for the code layer** (logistic units not sufficient b/c used in their middle ranges to convey as much information as possible--which the noise is added to prevent from happening)
   * During the fine-tuning stage, add noise to the inputs to the code units.
     * The noise forces their activities to become bimodal in order to resist the effects of the noise.
     * Then we simply threshold the activities of the 30 code units to get a binary code.
-  * Krizhevsky discovered later that its easier to just use binary stochastic units in the code layer during training
+  * Krizhevsky discovered later that **it's easier to just use binary stochastic units in the code layer** during training
     * in forward pass use stochastic binary units for code layer
     * in backward pass pretend we used logistic units to get a smooth value for the gradient
   * To summarize:
