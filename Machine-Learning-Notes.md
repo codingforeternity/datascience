@@ -5,10 +5,15 @@
 
 [JMetzen's blog](https://jmetzen.github.io/2015-01-29/ml_advice.html)
 
+[Wild ML](http://www.wildml.com/) (todo: read more here; kws: reinforcement)
+
 [Neural Network Zoo](http://www.asimovinstitute.org/wp-content/uploads/2016/09/neuralnetworks.png) (also in ~/Documents)
 
 Scikit-Learn Algorithm Cheatsheet (in ~/Documents)
 ***
+
+#### [TensorFlow: Examples of End-to-End Implementation](https://dzone.com/articles/tensorflow-example-of-end-to-end-implementations) (3/6/17)
+* The differences were that the MNIST example initializes its hidden layers with truncated normals instead of normals divided by the square root of the input size, initializes biases at 0.1 instead of 0 and uses ReLU activations instead of tanh. By switching to **Xavier initialization** (using Delip’s handy function), 0 biases, and tanh, everything worked as in the WildML example. (It turns out that what matters most is the initialization of the weights.) This is a simple example of what is often discussed with deep learning methods: they can work amazingly well, but they are very sensitive to initialization and choices about the sizes of layers, activation functions, and the influence of these choices on each other. They are a very powerful set of techniques, but they (still) require finesse and understanding, compared to, say, many linear modeling toolkits that can effectively be used as black boxes these days.
 
 #### [Entity Embeddings of Categorical Variables](https://arxiv.org/abs/1604.06737)
 * Mentioned on [slide 17](https://www.slideshare.net/HJvanVeen/feature-engineering-72376750)
