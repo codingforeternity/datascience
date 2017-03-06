@@ -1866,7 +1866,7 @@ hidden layer.
   * **FWC - i.e. don't use linear risk factors**
 
 ### [Lecture 15c: Deep autoencoders for document retrieval and visualization]
-* "10 components extracted with a DAE are worth as much as 50 components extracted with a linear method such as LSA" (file:///home/fred/Documents/articles/autoencoders/reducing_dimensionality_w_NNs_hinton_salakhutdinov_2006.pdf and also see Semantic Hashing. Salakhutdinov, Hinton, 2009)
+* "**10 components extracted with a DAE are worth as much as 50 components extracted with a linear method such as LSA**" (file:///home/fred/Documents/articles/autoencoders/reducing_dimensionality_w_NNs_hinton_salakhutdinov_2006.pdf and also see **Semantic Hashing**. Salakhutdinov, Hinton, 2009)
   * also showed that if you make the code vector very small (e.g. 2 components) you can use that for visualization in a 2D plot (which also works better than just extracting the first 2 principal components)
 * How to find documents that are similar to a query document
   * Convert each document into a “bag of words”.
