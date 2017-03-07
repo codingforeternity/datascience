@@ -1886,9 +1886,9 @@ is too slow (big vectors! 2000D in their case)
     * At the output of the autoencoder, we use a softmax.
     * The probability vector defines the desired outputs of the softmax.
   * Second trick: When we train the first RBM in the stack we use the same trick.
-    * We treat the word counts as probabilities, but we make the visible to hidden weights N times bigger than the hidden to visible because we have N observations from the probability distribution.
+    * We treat the word counts as probabilities, but **we make the visible to hidden weights N times bigger than the hidden to visible** because we have N observations from the probability distribution.
     * If we left them as probabilities, the input units would have very small activities (i.e. when multiplied by weights), and wouldn't provide much input to the first hidden layer.
-    * So we have this funny property that for the first RBM, the bottom-up weights are N times bigger than the top-down weights.
+    * So we have this funny property that **for the first RBM, the bottom-up weights are N times bigger than the top-down weights**.
 * Performance of the autoencoder at document retrieval
   * Train on bags of 2000 words for 400,000 training cases of business documents.
     * First train a stack of RBM’s. Then fine-tune with backprop.
