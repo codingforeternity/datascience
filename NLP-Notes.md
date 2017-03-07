@@ -9,6 +9,7 @@
 #### [Quora: What's the best word2vec implementation?](https://www.quora.com/Whats-the-best-word2vec-implementation-for-generating-Word-Vectors-Word-Embeddings-of-a-2Gig-corpus-with-2-billion-words) (3/7/17)
 * Gensim: https://rare-technologies.com/word2vec-tutorial (seems to be a nice impl)
 * Tensorflow: https://github.com/jdwittenauer/ipython-notebooks/blob/master/notebooks/tensorflow/Tensorflow-5-Word2Vec.ipynb
+* Google's impl: https://code.google.com/archive/p/word2vec/
 
 #### [Extracting Relations between Non-Standard Entities using Distant Supervision and Imitation Learning](http://www.aclweb.org/anthology/D15-1086) (2/28/17)
 * "jointly training the named entity classifier and the relation extractor using imitation learning which reduces structured prediction learning to classification learning"
