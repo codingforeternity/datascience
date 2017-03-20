@@ -1,3 +1,6 @@
+#### [NLTK has its own datasets](http://www.nltk.org/book/ch02.html)
+* downloaded here: ~/nltk_data
+
 #### [First billion characters from Wikipedia](https://code.google.com/archive/p/word2vec/)
 
 #### [UCI Machine Learning Datasets](https://archive.ics.uci.edu/ml/datasets.html)
