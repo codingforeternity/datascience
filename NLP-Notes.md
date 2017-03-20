@@ -12,6 +12,7 @@
     * "Tokenize Punkt module has many pre-trained tokenize model for many european languages, here is the list from the nltk_data/tokenizers/punkt/README file..."
   * [though they don't appear to recognize non-ASCII chars well]
 * part-of-speech tagging
+  * "You can find the pre-trained POS Tagging Model in nltk_data/taggers..."
 * stemming and lemmatization
 
 #### [Quora: What's the best word2vec implementation?](https://www.quora.com/Whats-the-best-word2vec-implementation-for-generating-Word-Vectors-Word-Embeddings-of-a-2Gig-corpus-with-2-billion-words) (3/7/17)
