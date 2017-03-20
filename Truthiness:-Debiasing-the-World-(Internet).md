@@ -11,6 +11,9 @@
 #### how do you assess intelligence while filtering out smooth talkers (3/8/17)
 * too much of politics (job searches, etc) seems to select for the "smooth talker"
 
+#### What I find strange is people who think this has only recently become relevant (2/28/17)
+* Self-deception as the root of political failure http://marginalrevolution.com/marginalrevolution/2017/02/self-deception-root-political-failure.html
+
 #### Kws: truthiness (2/1/17)
 * Why so many *direct* lies from the Trump administration? http://marginalrevolution.com/marginalrevolution/2017/01/many-direct-lies-trump-administration.html
 
