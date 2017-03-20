@@ -22,3 +22,10 @@ Slides cannot be copy and pasted--ugh.  Go here: `/home/fred/coursera/big_data_a
   * retains fault tolerance
   * but massively improves latency by keeping all data in memory (and immutable--i.e. ideas from FP)
   * more expressive APIs
+* Spark (and Hadoop) require rewriting code to handle abstractions
+  * premature optimization
+  * this is why the system I built at HBK was better (user didn't have to consider such abstractions)
+  * "By default, RDDs are recomputed each time you run an action on them.  This can be expensive (in time) if you need to use a dataset more than once."
+    * "Spark allows you to control what is cached in memory.  To tell Spark to cache an RDD in memory, simply call `persist()` or `cache()` on it."
+    * For example, if you compute an RDD then call `take(10)` on it followed by `count()` it will be recomputed twice, but if you call `persist()` on it first, it gets cached when `take(10)` is called so that `count()` is faster.
+    * Hugely useful if iterating repeatedly across a large collection of points, for example (to compute a logistic regression, see spark-1-6.pdf, slide 23).
