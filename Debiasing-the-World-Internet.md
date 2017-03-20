@@ -7,3 +7,12 @@
 * Ads and Twitter messages are geared to incite bias.  Can it be undone?
 * Commonsensemedia on zootopia was biased by adult-think.  It should have focused more on scary animal scenes (more likely to give kids nightmares) than adult innuendo that kids wouldn't even get.
 * A.k.a.: delouse the web
+
+#### News bias (1/13/17)
+* Just heard a reporter report "carries a maximum sentence of life in prison" which is true, but why did they only report the max?  Because they are optimizing for viewers, not truth.
+* Kws: truthiness
+
+#### Confirmation bias is the root of all evil (1/2/17)
+* The more news there is, the easier it is for people to participate in confirmation bias. The more CB the bigger the problem. So how does one neutralize wrt CB?
+* Or how does one tailor his life to avoid CB?
+* What is this type of self experimentation, self optimization, called?
