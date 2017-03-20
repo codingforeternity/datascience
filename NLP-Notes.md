@@ -14,6 +14,7 @@
 * part-of-speech tagging
   * "You can find the pre-trained POS Tagging Model in nltk_data/taggers..."
 * stemming and lemmatization
+  * "it is usually sufficient that related words map to the same stem, even if this stem is not in itself a valid root"
 
 #### [Quora: What's the best word2vec implementation?](https://www.quora.com/Whats-the-best-word2vec-implementation-for-generating-Word-Vectors-Word-Embeddings-of-a-2Gig-corpus-with-2-billion-words) (3/7/17)
 * Gensim: https://rare-technologies.com/word2vec-tutorial (seems to be a nice impl)
