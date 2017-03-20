@@ -8,6 +8,8 @@
 
 #### [Dive into NLTK](http://textminingonline.com/dive-into-nltk-part-ii-sentence-tokenize-and-word-tokenize) (3/20/17)
 * sentence/word tokenization
+  * pre-*trained* tokenization *models* for European languages!
+  * [though they don't appear to recognize non-ASCII chars well]
 * part-of-speech tagging
 * stemming and lemmatization
 
