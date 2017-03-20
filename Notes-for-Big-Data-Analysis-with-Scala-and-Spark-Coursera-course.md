@@ -18,3 +18,6 @@ Slides cannot be copy and pasted--ugh.  Go here: `/home/fred/coursera/big_data_a
     * The sbt task submit allows you to submit your solution for the assignment. The submit tasks takes two arguments: your Coursera e-mail address and the submission password.
     * NOTE: the submission password <spass> is not your login password.  It is located on the Coursera programming assignment page in a frame in the top right.
     * FWC - I had to exit sbt (even though tests were passing correctly) and go back in to get submission to work correctly.
+* Spark better than Hadoop
+  * retains fault tolerance
+  * but massively improves latency by keeping all data in memory
