@@ -1,7 +1,6 @@
 ***
 
-Slides cannot be copy and pasted--ugh.
-`/home/fred/coursera/big_data_analysis_w_scala_\&_spark`
+Slides cannot be copy and pasted--ugh.  Go here: `/home/fred/coursera/big_data_analysis_w_scala_\&_spark`
 
 ***
 
