@@ -9,6 +9,7 @@
 #### [Dive into NLTK](http://textminingonline.com/dive-into-nltk-part-ii-sentence-tokenize-and-word-tokenize) (3/20/17)
 * sentence/word tokenization
   * pre-*trained* tokenization *models* for European languages!
+    * "Tokenize Punkt module has many pre-trained tokenize model for many european languages, here is the list from the nltk_data/tokenizers/punkt/README file..."
   * [though they don't appear to recognize non-ASCII chars well]
 * part-of-speech tagging
 * stemming and lemmatization
