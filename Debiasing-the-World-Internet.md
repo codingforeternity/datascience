@@ -8,6 +8,12 @@
 * Commonsensemedia on zootopia was biased by adult-think.  It should have focused more on scary animal scenes (more likely to give kids nightmares) than adult innuendo that kids wouldn't even get.
 * A.k.a.: delouse the web
 
+#### Kws: truthiness (2/1/17)
+* Why so many *direct* lies from the Trump administration? http://marginalrevolution.com/marginalrevolution/2017/01/many-direct-lies-trump-administration.html
+
+#### Kws: truthiness (1/30/17)
+* The Predatory Publishers List Goes Dark http://blogs.sciencemag.org/pipeline/archives/2017/01/30/the-predatory-publishers-list-goes-dark
+
 #### News bias (1/13/17)
 * Just heard a reporter report "carries a maximum sentence of life in prison" which is true, but why did they only report the max?  Because they are optimizing for viewers, not truth.
 * Kws: truthiness
