@@ -8,6 +8,9 @@
 * Commonsensemedia on zootopia was biased by adult-think.  It should have focused more on scary animal scenes (more likely to give kids nightmares) than adult innuendo that kids wouldn't even get.
 * A.k.a.: delouse the web
 
+#### how do you assess intelligence while filtering out smooth talkers (3/8/17)
+* too much of politics (job searches, etc) seems to select for the "smooth talker"
+
 #### Kws: truthiness (2/1/17)
 * Why so many *direct* lies from the Trump administration? http://marginalrevolution.com/marginalrevolution/2017/01/many-direct-lies-trump-administration.html
 
