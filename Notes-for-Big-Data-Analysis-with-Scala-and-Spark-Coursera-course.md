@@ -24,6 +24,7 @@ Slides cannot be copy and pasted--ugh.  Go here: `/home/fred/coursera/big_data_a
   * more expressive APIs
 * Spark (and Hadoop) require rewriting code to handle abstractions
   * premature optimization
+  * need to think about where data is located, when it is cached, where code is running (driver/executor)
   * this is why the system I built at HBK was better (user didn't have to consider such abstractions)
   * "By default, RDDs are recomputed each time you run an action on them.  This can be expensive (in time) if you need to use a dataset more than once."
     * "Spark allows you to control what is cached in memory.  To tell Spark to cache an RDD in memory, simply call `persist()` [customizable storage level] or `cache()` [MEMORY_ONLY storage level] on it."
