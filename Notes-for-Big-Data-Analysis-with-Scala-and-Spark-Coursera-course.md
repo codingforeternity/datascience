@@ -21,3 +21,4 @@ Slides cannot be copy and pasted--ugh.  Go here: `/home/fred/coursera/big_data_a
 * Spark better than Hadoop (10x)
   * retains fault tolerance
   * but massively improves latency by keeping all data in memory (and immutable--i.e. ideas from FP)
+  * more expressive APIs
