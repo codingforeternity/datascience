@@ -2,7 +2,7 @@
 * sbt tutorial
   * sbt console
     * You can start the Scala interpreter inside sbt using the console task. The interpreter (also called REPL, for "read-eval-print loop") is useful for trying out snippets of Scala code. Note that the interpreter can only be started if there are no compilation errors in your code.
-    * Use `~console` (rather than `console) to incrementally compile code changes in the Scala REPL when file changes are saved per [here](http://stackoverflow.com/questions/12703535/scala-sbt-console-code-changes-not-reflected-in-sbt-console)
+    * Use `~console` (rather than `console`) to incrementally compile code changes in the Scala REPL when file changes are saved per [here](http://stackoverflow.com/questions/12703535/scala-sbt-console-code-changes-not-reflected-in-sbt-console)
   * sbt compile
   * sbt test
     * The directory src/test/scala contains unit tests for the project. In order to run these tests in sbt, you can use the test command.
