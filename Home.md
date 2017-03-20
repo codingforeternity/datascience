@@ -75,6 +75,7 @@ Welcome to the fcrimins.github.io wiki!
 
 * [[Apache Spark]]
   * [[Databricks Notes]]
+  * [[Notes for Big Data Analysis with Scala and Spark Coursera course]]
 * [[Linux Notes]] (kws: UNIX)
 * [[Jupyter Notes]] (kws: IPython, notebook)
 * [[TensorFlow Notes]]
