@@ -15,6 +15,8 @@
   * "You can find the pre-trained POS Tagging Model in nltk_data/taggers..."
 * stemming and lemmatization
   * "it is usually sufficient that related words map to the same stem, even if this stem is not in itself a valid root"
+  * "Many search engines treat words with the same stem as synonyms as a kind of query expansion, a process called **conflation**."
+  * "*Lemmatisation is closely related to stemming. The difference is that a stemmer operates on a single word without knowledge of the context*, and therefore cannot discriminate between words which have different meanings depending on part of speech. However, stemmers are typically easier to implement and run faster, and the reduced accuracy may not matter for some applications."
 
 #### [Quora: What's the best word2vec implementation?](https://www.quora.com/Whats-the-best-word2vec-implementation-for-generating-Word-Vectors-Word-Embeddings-of-a-2Gig-corpus-with-2-billion-words) (3/7/17)
 * Gensim: https://rare-technologies.com/word2vec-tutorial (seems to be a nice impl)
