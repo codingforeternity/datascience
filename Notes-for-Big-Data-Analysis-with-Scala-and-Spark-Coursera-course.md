@@ -1,3 +1,10 @@
+***
+
+Slides cannot be copy and pasted--ugh.
+`/home/fred/coursera/big_data_analysis_w_scala_\&_spark`
+
+***
+
 ### Week 1
 * sbt tutorial
   * sbt console
