@@ -1,4 +1,5 @@
 #### [Netflix phasing out ratings in favor of thumbs](https://www.theguardian.com/culture/2017/mar/17/netflix-thumbs-up-down-rating-system) (3/20/17)
+* Netflix is phasing out ratings in favor of thumbs partly because the rating predictions don't seem to be very good--they're too heavily based on users who rate lots of stuff.  Possible also that negative ratings just aren't that accurate.  The article suggests that usage statistics are better for recommenders than ratings themselves.
 
 #### Hashing for Similarity Search: A Survey. Wang. 2014 (3/6/17)
 * file:///home/fred/Documents/articles/autoencoders/hashing_4_similarity_search_survey_wang_1408.2927.pdf
