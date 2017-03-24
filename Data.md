@@ -1,3 +1,5 @@
+#### [Google's One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling](https://research.google.com/pubs/pub41880.html) (3/24/17)
+
 #### [NLTK has its own datasets](http://www.nltk.org/book/ch02.html) (3/20/17)
 * downloaded here: ~/nltk_data
 
