@@ -1,4 +1,13 @@
 
+#### [This one is a real blooper and I cannot let it pass by](http://marginalrevolution.com/marginalrevolution/2017/03/one-real-blooper-cannot-let-pass.html)
+  * Stephanie Saul wrote in The New York Times:
+    * Nearly 40 percent of colleges are reporting overall declines in applications from international students, according to a survey…
+  * Here is what the opening of the survey itself said:
+    * 39% of responding institutions reported a decline in international applications, 35% reported an increase, and 26% reported no change in applicant numbers.
+  * The NYT article does not reproduce the more positive pieces of information...  The headline of the piece?:
+    * Amid 'Trump Effect' Fear, 40% of Colleges See Dip in Foreign Applicants
+  * I look forward to not only a correction but in fact a retraction of the entire article and its headline.
+
 #### Contrastive divergence to suppress biases (3/19/17)
 * Take 2 people, expose one to bias inducing stimula and another not, and take the difference as truth.
 
