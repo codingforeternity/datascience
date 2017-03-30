@@ -93,7 +93,7 @@ Scikit-Learn Algorithm Cheatsheet (in ~/Documents)
   * Unsupervised learning
 * Cake analogy (in terms of the amount of information per environment): Reinforcement learning (cherry) < Supervised learning (icing) < Unsupervised (cake)
   * All the successes in RI are in games but it falls on its face in the real world.
-  * Intelligence: We want the cherry on top of our cake, but it's not going to solve the problem by itself.
+  * Intelligence: **We want the cherry on top of our cake, but it's not going to solve the problem by itself.**
 * Personal definition of Unsupervised Learning, contrast functions
   * learning a manifold, and distance from that manifold [FWC - this is why RBMs are involved]
     1. pick a point on the manifold and lower its energy (push down)
