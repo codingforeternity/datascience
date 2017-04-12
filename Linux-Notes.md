@@ -1,3 +1,11 @@
+#### Remote desktop (xrdp; 4/12/17)
+* [Arch Linux xrdp wiki page](https://wiki.archlinux.org/index.php/xrdp)
+  * except it says you need to start xrdp-sesman service, which now gets automatically started w/ xrdp
+* [These](http://c-nergy.be/blog/?p=5305) are the instructions I followed to install xrdp and perform initial configuration.
+  * But they don't explain how to connect to an existing session.
+* [These](http://c-nergy.be/blog/?p=4471) instructions might explain how to connect to an existing session.
+  * Or [these](http://askubuntu.com/questions/235905/use-xrdp-to-connect-to-desktop-session) instructions might be more straightforward.  They connect to Vino (VNC server) on the Ubuntu machine via an xrdp-to-vino gateway.
+
 #### .bashrc vs. .bash_profile
 * .bashrc is only sourced for non-login shells, like terminals that you start once you've already logged in
 * .bash_profile is sourced when you login
