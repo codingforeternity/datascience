@@ -17,6 +17,8 @@
 * wrt IntelliJ specifically: http://askubuntu.com/questions/542152/desktop-file-with-bashrc-environment
 
 #### [Ubuntu Sound](https://wiki.ubuntu.com/Sound)
+  * The issue with my sound after upgrading to Ubuntu 16.04 was that the sound control is only shown for the applications that are currently running.  So to control the sound for Firefox, you have to first start Firefox.
+  * Also see this command: `pavucontrol`
 
 #### [UNIX Shell Tutorial](http://swcarpentry.github.io/shell-novice/)
 * "put together by the always excellent Software Carpentry Foundation." [http://localhost:8888/notebooks/01.05-IPython-And-Shell-Commands.ipynb]
