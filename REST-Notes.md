@@ -1,35 +1,41 @@
-[API microservices, the Unix philosophy, and the Richardson Maturity Model](https://medium.com/@chrstphrhrt/microservices-the-unix-philosophy-and-the-richardson-maturity-model-425abed44826#.5nkrvzhsu) (4/12/16)
+### [Why RESTful communication between microservices can be perfectly fine](https://www.innoq.com/en/blog/why-restful-communication-between-microservices-can-be-perfectly-fine/) (4/13/17)
+* "Do not communicate with other services during your own service’s request/response cycle. Ultimately, the goal is for your service to be available to the end-user even if other services that are part of the whole system are offline or unhealthy."
+* "*If you have to call other services in order to be able to serve a response to a request from a **public** client*, this is really an architectural problem. Don’t blame the protocol! It doesn’t matter whether you are using HTTP or asynchronous message passing (with a request-reply pattern), *the overall response time for the public client will be bad*, and your service will not be as resilient as it could be, because it is coupled in time to the service it depends on."
+* "**Actors** are pretty nice for handling the communication with other services outside of your own request/response cycle, but any other mechanism using some kind of buffer or queue should work as well."
+* "If your service relies on data that is located in another service, **replicate that data** into your own service’s data store, using eventual consistency."
 
-[Microservices Theory](http://martinfowler.com/articles/microservices.html) (3/4/16)
+### [API microservices, the Unix philosophy, and the Richardson Maturity Model](https://medium.com/@chrstphrhrt/microservices-the-unix-philosophy-and-the-richardson-maturity-model-425abed44826#.5nkrvzhsu) (4/12/16)
+
+### [Microservices Theory](http://martinfowler.com/articles/microservices.html) (3/4/16)
 * "To start explaining the microservice style it's useful to compare it to the monolithic style: a monolithic application built as a single unit. Enterprise Applications are often built in three main parts: a client-side user interface (consisting of HTML pages and javascript running in a browser on the user's machine) a database (consisting of many tables inserted into a common, and usually relational, database management system), and a server-side application"
 * "Design for Failure"
 
-[Bruno Rocha: Microservices with Python, RabbitMQ and Nameko](http://brunorocha.org/python/microservices-with-python-rabbitmq-and-nameko.html) (3/4/16)
+### [Bruno Rocha: Microservices with Python, RabbitMQ and Nameko](http://brunorocha.org/python/microservices-with-python-rabbitmq-and-nameko.html) (3/4/16)
 
-[RESTful API Best Practices and Common Pitfalls](https://medium.com/@schneidsDotNet/restful-api-best-practices-and-common-pitfalls-7a83ba3763b5#.sii1bf1qe) (2/25/16)
+### [RESTful API Best Practices and Common Pitfalls](https://medium.com/@schneidsDotNet/restful-api-best-practices-and-common-pitfalls-7a83ba3763b5#.sii1bf1qe) (2/25/16)
 * "Respect the change management process. Avoid introducing break changes to existing endpoints that people are using."
 * Also discusses asynchronous query response.
 
-[How RESTful is Your API?](http://www.bitnative.com/2012/08/26/how-restful-is-your-api/) (2/25/16)
+### [How RESTful is Your API?](http://www.bitnative.com/2012/08/26/how-restful-is-your-api/) (2/25/16)
 * "Pragmatic REST"
 * Really good, succinct article that specifically covers REST sans discovery and what that means for an API.
 * Also discusses pragmatic versioning in place of discovery.
 
-[Rescuing REST From the API Winter](http://intercoolerjs.org/2016/01/18/rescuing-rest.html) (2/1/16)
+### [Rescuing REST From the API Winter](http://intercoolerjs.org/2016/01/18/rescuing-rest.html) (2/1/16)
 * Basically, JSON-based REST isn't REST because it doesn't have native support for links.
 * Schema/Structure needs to be discovered at runtime which is what HATEOS is for.
 * HATEOAS - Hypermedia as the Engine of Application State.
 * HATEOAS is a bigger part of REST than anyone ever really realized.
 
-[Testing REST clients](https://www.kenneth-truyers.net/2016/01/29/testing-rest-clients/) (2/1/16)
+### [Testing REST clients](https://www.kenneth-truyers.net/2016/01/29/testing-rest-clients/) (2/1/16)
 
-[REST Introduction](http://www.infoq.com/articles/rest-introduction) 1/9/16
+### [REST Introduction](http://www.infoq.com/articles/rest-introduction) 1/9/16
 * The beauty of the link approach using URIs is that the links can point to resources that are provided by a different application, a different server, or even a different company on another continent
 * the representations of a resource should be in standard formats -- if a client "knows" both the HTTP application protocol and a set of data formats, it can interact with any RESTful HTTP application in the world in a very meaningful way
 * i.e. the idea that every resource should respond to the same methods. But REST doesn't say which methods these should be, or how many of them there should be
 * HTTP "instantiates" the REST uniform interface with a particular one, consisting of the HTTP verbs
 
-[REST Misconceptions Video](http://www.infoq.com/presentations/rest-misconceptions) (1/9/16)
+### [REST Misconceptions Video](http://www.infoq.com/presentations/rest-misconceptions) (1/9/16)
 * UriApi 25:00
   * As a client I have to have some knowledge about the structure of the URIs so that I can build them myself
   * Code is full of getting a customer and then appending slash-something to get to the orders--to get to the orders
@@ -58,11 +64,11 @@
   * hypermedia flows over static links
   * generalized formats over services
 
-[A Brief Introduction to REST](http://www.infoq.com/articles/rest-introduction) (12/21/15 and 1/8/16)
+### [A Brief Introduction to REST](http://www.infoq.com/articles/rest-introduction) (12/21/15 and 1/8/16)
 
-[Dr. Dobb's - RESTful Web Services: A Tutorial](http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069) (1/8/16)
+### [Dr. Dobb's - RESTful Web Services: A Tutorial](http://www.drdobbs.com/web-development/restful-web-services-a-tutorial/240169069) (1/8/16)
 * Don't use query parameters (except for "parameters to an operation that needs the data items")
 
-[Is REST Best in a Microservices Architecture?](http://capgemini.github.io/architecture/is-rest-best-microservices/) (12/21/15)
+### [Is REST Best in a Microservices Architecture?](http://capgemini.github.io/architecture/is-rest-best-microservices/) (12/21/15)
 
-[Why REST is important even for your internal API](https://medium.com/@_reneweb_/why-rest-is-important-even-for-your-internal-api-ab08a40d01d3#.o8uyilkxr) (12/9/15)
+### [Why REST is important even for your internal API](https://medium.com/@_reneweb_/why-rest-is-important-even-for-your-internal-api-ab08a40d01d3#.o8uyilkxr) (12/9/15)
