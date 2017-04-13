@@ -1,3 +1,9 @@
+#### [Collaborative Filtering for Implicit Feedback Datasets](http://yifanhu.net/PUB/cf.pdf) by Hu, Koren, Volinsky, 2008 (4/13/17)
+* This is the original *implicit* recommendation system paper.
+* "Transferring the raw observations (r_ui) into two separate magnitudes with distinct interpretations: preferences (p_ui) and confidence levels (c_ui).  This better reflect the nature of the data and is essential to improving prediction accuracy"
+* Explaining recommendations "helps in improving the users' trust in the system and their ability to put recommendations in the right perspective."
+  * "Interestingly, our alternating least squares model enables a novel way to compute explanations ... reduces our latent factor model into a linear model that predicts preferences as a linear function of past actions ... each past action receives a separate term in forming the predicted p̂hat_ui, and thus we can isolate its unique contribution"
+
 #### [Netflix phasing out ratings in favor of thumbs](https://www.theguardian.com/culture/2017/mar/17/netflix-thumbs-up-down-rating-system) (3/20/17)
 * Netflix is phasing out ratings in favor of thumbs partly because the rating predictions don't seem to be very good--they're too heavily based on users who rate lots of stuff.  Possible also that negative ratings just aren't that accurate.  The article suggests that usage statistics are better for recommenders than ratings themselves.
 
@@ -75,7 +81,7 @@ strong regularizer. Second, it **trains the autoencoder to predict missing value
 
 #### ["People Who Like This Also Like ... " Part 2: Finding Similar Music using Matrix Factorization](http://www.benfrederickson.com/matrix-factorization/) (1/31/17)
 * "Matrix Factorization methods can generate matches that are impossible to find with the techniques in my original [IR] post [below]."
-* Covered techniques: Latent Semantic Analysis ([SVD](https://jeremykun.com/2016/04/18/singular-value-decomposition-part-1-perspectives-on-linear-algebra/) of BM25 weights), (Implicit) Alternating Least Squares (aka Collaborative Filtering (for implicit datasets))
+* Covered techniques: Latent Semantic Analysis ([SVD](https://jeremykun.com/2016/04/18/singular-value-decomposition-part-1-perspectives-on-linear-algebra/) of BM25 weights), (Implicit) Alternating Least Squares (aka Collaborative Filtering (for implicit feedback datasets))
 * Spotify uses a matrix factorization technique called [Logistic Matrix Factorization]() to generate their lists of related artists. This method has a similar idea to Implicit ALS: it's a confidence weighted factorization on binary preference data - but uses a logistic loss instead of a least squares loss
 
 #### ["People Who Like This Also Like ... " Part 1: Distance Metrics for Fun and Profit](http://www.benfrederickson.com/distance-metrics/) (1/30/17)
