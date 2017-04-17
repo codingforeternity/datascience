@@ -1,6 +1,9 @@
 #### [Tutorial - What is a variational autoencoder?](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/) (4/17/17)
 * "We measure this using the reconstruction log-likelihood `log p(x∣z)` whose units are *nats*."
 * "If the encoder outputs representations `z` that are different than those from a standard normal distribution, it will receive a penalty in the loss. This regularizer term means 'keep the representations `z` of each digit sufficiently diverse.' If we didn’t include the regularizer, the encoder could learn to cheat and give each datapoint a representation in a different region of Euclidean space [FWC - i.e. not normal]. This is bad, because then two images of the same number (say a 2 written by different people, 2_alice​​ and 2_bob​​) could end up with very different representations z_alice, z_​bob​​. We want the representation space of `z` to be meaningful, so we penalize this behavior. This has the effect of keeping similar numbers' representations close together (e.g. so the representations of the digit two z_alice, z_bob, z_charley​​ remain sufficiently close)."
+* "Now we can think about **inference** in this model. The goal is to infer good values of the latent variables given observed data, or to calculate the posterior p(z∣x)."
+* "Note that at the start of training, the distribution of latent variables is close to the prior (a round blob around 0)."
+* "**Inference**: in neural nets, inference usually means prediction of latent representations given new, never-before-seen datapoints. In probability models, inference refers to inferring the values of latent variables given observed data."
 
 #### [Collaborative Filtering for Implicit Feedback Datasets](http://yifanhu.net/PUB/cf.pdf) by Hu, Koren, Volinsky, 2008 (4/13/17)
 * This is the original *implicit* recommendation system paper.
