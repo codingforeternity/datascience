@@ -1,3 +1,6 @@
+#### [Tutorial - What is a variational autoencoder?](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/) (4/17/17)
+* "We measure this using the reconstruction log-likelihood `log p(x∣z)` whose units are *nats*."
+
 #### [Collaborative Filtering for Implicit Feedback Datasets](http://yifanhu.net/PUB/cf.pdf) by Hu, Koren, Volinsky, 2008 (4/13/17)
 * This is the original *implicit* recommendation system paper.
 * "Transferring the raw observations (r_ui) into two separate magnitudes with distinct interpretations: preferences (p_ui) and confidence levels (c_ui).  This better reflect the nature of the data and is essential to improving prediction accuracy"
