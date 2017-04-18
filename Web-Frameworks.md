@@ -1,3 +1,10 @@
+#### [AngularJS's Controller As and the `vm` Variable](https://johnpapa.net/angularjss-controller-as-and-the-vm-variable/)
+* Fred 11:17 AM 4/18/17 - Hi Vova.... question(s).  Could you explain this line of code to me in a couple sentences please?  label in vm.searchLabelResults = (vm.apiLabels | searchInArray : vm.searchLabel) | orderBy : label  First, is this JavaScript or Angular syntax?  The searchInArray function/filter defined in searchInArray.filter.js appears to take 2 inputs, array and searchText.  So why does this line of code look like one of those inputs vm.apiLabels comes before | searchInArray : while the other vm.searchLabel comes after?  Also, what does "vm" stand for.  I see it gets set to this.  Is that JS or Angular?  (Maybe more than a couple sentences
+* Volodymyr - This is Angular's way of filtering data - we are taking vm.apiLabels and then applying filter to it by '|' sign. So searchInArray takes it as a first argument (array), and second argument is passed by ': vm.searchLabel'. "vm" is a way to refer controller in angular, it can be anything) It just came from style guide I try to stick to) if you're interested in deeper explanation, here's an article https://johnpapa.net/angularjss-controller-as-and-the-vm-variable/
+* "VM" stands for ViewModel aka the Controller
+* Fred 11:40 - Followup: is there a reason I can't find "as vm" anywhere in the code?
+* Vova - app.routes.js, inside in `states` declarations we have "controllerAs" for each state
+
 #### [Twitter Moving to JVM](https://www.infoq.com/articles/twitter-java-use)
 * FWC - **really nice overview of Twitter architecture**
 * "One of the overall observations one can make from looking at Twitter's architecture is that many of the design decisions are admirably pragmatic."
