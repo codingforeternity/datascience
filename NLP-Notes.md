@@ -7,7 +7,7 @@
 ***
 
 #### [Using NLP, Machine Learning & Deep Learning Algorithms to Extract Meaning from Text](https://www.infoq.com/presentations/nlp-machine-learning-meaning-text?utm_source=presentations_about_architecture-design&utm_medium=link&utm_campaign=architecture-design)
-* From Roman
+* From Roman on 4/15/17
 * At the beginning, there was search
   * Scalable & robust indexing pipeline ("put corpus into a search engine")
   * Tokenizers & analyzers
@@ -33,6 +33,7 @@
     * Implied by context (relevant labs normal)
 * Bootstrap and then expand your vocabulary
   * Every field has its own jargon.  Even if it's just 60-100 words, those are the most used words, day to day.
+* github.com/atigeo/nlp_demo
 
 #### [Dive into NLTK](http://textminingonline.com/dive-into-nltk-part-ii-sentence-tokenize-and-word-tokenize) (3/20/17)
 * sentence/word tokenization
