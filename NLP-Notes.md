@@ -6,6 +6,34 @@
 
 ***
 
+#### [Using NLP, Machine Learning & Deep Learning Algorithms to Extract Meaning from Text](https://www.infoq.com/presentations/nlp-machine-learning-meaning-text?utm_source=presentations_about_architecture-design&utm_medium=link&utm_campaign=architecture-design)
+* From Roman
+* At the beginning, there was search
+  * Scalable & robust indexing pipeline ("put corpus into a search engine")
+  * Tokenizers & analyzers
+  * Synonyms, spellers & auto-suggest
+  * File formats & header boosting [FWC - weighing headers higher?]
+  * Rankers, link, and reputation boosting
+* Then there was semantic search (for specific domains)
+  * User context: location and time
+  * 2 general techniques:
+    * Dictionary based attribute extraction
+    * Machine learned attribute extraction
+* And then you need to understand language
+  * positive/negative, speculative, possible, conditional, family/patient history [e.g. hypotheticals]
+  * nothing, double negative, compound, speculative ("Patient denies alcohol abuse" -- the only reason for a Dr to write this is if he suspects alcohol abuse -- highly domain specific), lists
+* Machine learned annotators
+  * "Most of the time you're doing NLU, you're really doing ML--and earlier than you would think"
+  * Sometimes easier to just code an annotators biz logic
+    * Grammatical patterns ("if ... then ... else ...")
+    * Direct inferences (Age <= 18 ==> child)
+    * Lookups (RIDT ==> lab test)
+  * But sometimes easier to learn it from examples
+    * Under diagnosed conditions (e.g. flu, depression)
+    * Implied by context (relevant labs normal)
+* Bootstrap and then expand your vocabulary
+  * Every field has its own jargon.  Even if it's just 60-100 words, those are the most used words, day to day.
+
 #### [Dive into NLTK](http://textminingonline.com/dive-into-nltk-part-ii-sentence-tokenize-and-word-tokenize) (3/20/17)
 * sentence/word tokenization
   * pre-*trained* tokenization *models* for European languages!
