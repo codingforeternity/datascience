@@ -1,3 +1,6 @@
+### [Awesome Microservices](https://github.com/mfornos/awesome-microservices) (4/19/17)
+* A curated list of Microservice Architecture related principles and technologies.
+
 ### [Why RESTful communication between microservices can be perfectly fine](https://www.innoq.com/en/blog/why-restful-communication-between-microservices-can-be-perfectly-fine/) (4/13/17)
 * "Do not communicate with other services during your own service’s request/response cycle. Ultimately, the goal is for your service to be available to the end-user even if other services that are part of the whole system are offline or unhealthy."
 * "*If you have to call other services in order to be able to serve a response to a request from a **public** client*, this is really an architectural problem. Don’t blame the protocol! It doesn’t matter whether you are using HTTP or asynchronous message passing (with a request-reply pattern), *the overall response time for the public client will be bad*, and your service will not be as resilient as it could be, because it is coupled in time to the service it depends on."
