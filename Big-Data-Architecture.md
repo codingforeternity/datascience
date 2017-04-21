@@ -2,6 +2,7 @@
 * Why not just use TensorFlow for everything?
   * Dask creates its own execution graphs, but why is this necessary when TF already has them?
   * In particular, TF even has [support for reading from files](https://www.tensorflow.org/programmers_guide/reading_data).  So if that is the case, then why not just construct the files and start the TF graph there?
+  * `.tfrecords` file format: all records for an *entire* training/validation/test set are intended to be written to a single file.  See example [here](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/how_tos/reading_data/convert_to_records.py) (which also includes good example usage of `argparser` and `tf.app`.
 * [Dask](https://jakevdp.github.io/blog/2015/08/14/out-of-core-dataframes-in-python/)
   * Out-of-core functional/numpy/dataframes promoted by @jakevdp--so it must be good.
 * [Xray + Dask: Out-of-Core, Labeled Arrays in Python](https://www.continuum.io/content/xray-dask-out-core-labeled-arrays-python)
