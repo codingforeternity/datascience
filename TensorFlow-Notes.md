@@ -9,7 +9,7 @@
     [loss_value, _] = session.run([loss_op, train_op],
                                feed_dict={images: batch_image})
     ```
-  * A workaround: Use session.partial_run() (undocumented, and still experimental)
+  * A workaround: Use **`session.partial_run()`** (undocumented, and still experimental)
     ```python
     h = sess.partial_run_setup([net['fc7'], loss_op, train_op], [images])
     [loss_value, _] = sess.partial_run(h, [loss_op, train_op],
