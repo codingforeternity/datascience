@@ -1,4 +1,4 @@
-### [](https://wookayin.github.io/tensorflow-talk-debugging)
+### [A Practical Guide for Debugging Tensorflow](https://wookayin.github.io/tensorflow-talk-debugging) (4/27/17)
 * Tensor Fetching: The Bad (ii)
   * In fact, we can just perform an additional session.run() for debugging purposes, if it does not involve any side effect
 
