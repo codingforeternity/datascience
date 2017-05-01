@@ -30,7 +30,6 @@
     inp = tf.placeholder(tf.float32, [...])
     y = py_func(my_func, [inp], [tf.float32])
     ```
-  * https://www.tensorflow.org/extras/candidate_sampling.pdf
 * Debugging: Summary
   * Session.run(): Explicitly fetch, and print
   * Tensorboard: Histogram and Image Summary
@@ -55,3 +54,12 @@
         fc1 = layers.fully_connected(x, 256, activation_fn=tf.nn.relu,
                                      scope='fc1')
     ```
+* [Other Topics: Performance and Profiling](https://wookayin.github.io/tensorflow-talk-debugging/#82)
+  * Run-time performance is a very important topic!  There will be another lecture soon.  Beyond the scope of this talk...
+  * Make sure that your GPU utilization is always non-zero (and, near 100%)
+    * Watch and monitor using `nvidia-smi` or `gpustat`
+  * Use `nvprof` for profiling CUDA operations
+  * Use CUPTI (CUDA Profiling Tools Interface) tools for TF
+
+
+### https://www.tensorflow.org/extras/candidate_sampling.pdf
