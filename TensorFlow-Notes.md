@@ -31,3 +31,4 @@
     y = py_func(my_func, [inp], [tf.float32])
     ```
   * https://www.tensorflow.org/extras/candidate_sampling.pdf
+* tfdbg: The official TensorFlow debugger
