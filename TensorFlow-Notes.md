@@ -31,4 +31,27 @@
     y = py_func(my_func, [inp], [tf.float32])
     ```
   * https://www.tensorflow.org/extras/candidate_sampling.pdf
-* tfdbg: The official TensorFlow debugger
+* Debugging: Summary
+  * Session.run(): Explicitly fetch, and print
+  * Tensorboard: Histogram and Image Summary
+  * tf.Print(), tf.Assert() operation
+  * Use python debugger (ipdb, pudb)
+  * Interpose your debugging python code in the graph
+  * The (official) TensorFlow debugger: tfdbg
+* Name your tensors properly
+  * The style that I much prefer:
+    ```python
+    def multilayer_perceptron(x):
+        with tf.variable_scope('fc1'):
+            W_fc1 = tf.get_variable('weights', [784, 256])  # fc1/weights
+            b_fc1 = tf.get_variable('bias', [256])          # fc1/bias
+            fc1 = tf.nn.xw_plus_b(x, W_fc1, b_fc1)          # fc1/xw_plus_b
+            fc1 = tf.nn.relu(fc1)                           # fc1/relu
+    ```
+  * or use high-level APIs or your custom functions:
+    ```python
+    import tensorflow.contrib.layers as layers
+    def multilayer_perceptron(x):
+        fc1 = layers.fully_connected(x, 256, activation_fn=tf.nn.relu,
+                                     scope='fc1')
+    ```
