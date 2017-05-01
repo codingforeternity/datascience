@@ -16,6 +16,18 @@
                                        feed_dict={images: batch_image})
     fc7 = sess.partial_run(h, net['fc7'])
     ```
-
-
-### https://www.tensorflow.org/extras/candidate_sampling.pdf
+* Interpose any python code in the computation graph
+  * We can also embed and interpose a python function in the graph: tf.py_func() comes to the rescue!
+    ```python
+    tf.py_func(func, inp, Tout, stateful=True, name=None)
+    ```
+  * Wraps a python function and uses it as a tensorflow op.
+  * Given a python function func, which takes numpy arrays as its inputs and returns numpy arrays as its outputs, the function is wrapped as an operation.
+    ```python
+    def my_func(x):
+        # x will be a numpy array with the contents of the placeholder below
+        return np.sinh(x)
+    inp = tf.placeholder(tf.float32, [...])
+    y = py_func(my_func, [inp], [tf.float32])
+    ```
+  * https://www.tensorflow.org/extras/candidate_sampling.pdf
