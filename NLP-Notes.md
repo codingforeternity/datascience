@@ -11,6 +11,7 @@
   * It seems like Numberbatch is a subset of ConceptNet "built using an ensemble that combines data from ConceptNet, word2vec, GloVe...."
   * So ConceptNet is the knowledge graph and Numberbatch is the word embeddings.
 * ConceptNet (sans Numberbatch)
+  * [Wiki](https://github.com/commonsense/conceptnet5/wiki)
   * [Running your own copy](https://github.com/commonsense/conceptnet5/wiki/Running-your-own-copy)
   * http://www.conceptnet.io/
   * http://api.conceptnet.io/
