@@ -6,6 +6,17 @@
 
 ***
 
+#### [ConceptNet Numberbatch](https://github.com/commonsense/conceptnet-numberbatch) (5/2/17)
+* "The best word embeddings you can use"
+  * It seems like Numberbatch is a subset of ConceptNet "built using an ensemble that combines data from ConceptNet, word2vec, GloVe...."
+  * So ConceptNet is the knowledge graph and Numberbatch is the word embeddings.
+* ConceptNet (sans Numberbatch)
+  * [Running your own copy](https://github.com/commonsense/conceptnet5/wiki/Running-your-own-copy)
+  * http://www.conceptnet.io/
+  * http://api.conceptnet.io/
+  * http://api.conceptnet.io/docs
+  * https://github.com/commonsense/conceptnet5/wiki/API
+
 #### [Using NLP, Machine Learning & Deep Learning Algorithms to Extract Meaning from Text](https://www.infoq.com/presentations/nlp-machine-learning-meaning-text?utm_source=presentations_about_architecture-design&utm_medium=link&utm_campaign=architecture-design)
 * From Roman on 4/15/17
 * At the beginning, there was search
