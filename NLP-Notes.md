@@ -17,6 +17,16 @@
   * http://api.conceptnet.io/
   * http://api.conceptnet.io/docs
   * https://github.com/commonsense/conceptnet5/wiki/API
+* Running
+  * "you will also need the ConceptNet database and its strategy for looking up words, including those that are out-of-vocabulary. You'll find this in the conceptnet5.vectors sub-package"
+  * From the `conceptnet5` repo root, `$ python setup.py develop` will install (into your Python distribution) the binaries listed in setup.py's `entry_points` dict.
+    * So afterwards these next 2 commands now do the same thing:
+      1. `$ python -c 'from conceptnet5.vectors.cli import *; cli()`
+      2. `$ cn5-vectors`
+  * To convert the downloaded `txt.gz` datafile to hdf5 format:
+    * `$ cn5-vectors convert_fasttext numberbatch-17.04.txt.gz numberbatch-17.04.hdf5 -n 100000`
+  * To lookup a word embedding vector:
+    * `$ cn5-vectors filter_word_vectors numbervatch-17.04.hdf5 --vector_str='absolute zero, anarchy'`
 
 #### [Using NLP, Machine Learning & Deep Learning Algorithms to Extract Meaning from Text](https://www.infoq.com/presentations/nlp-machine-learning-meaning-text?utm_source=presentations_about_architecture-design&utm_medium=link&utm_campaign=architecture-design)
 * From Roman on 4/15/17
