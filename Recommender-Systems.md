@@ -1,3 +1,6 @@
+#### [A Statistical View of Deep Learning (III): Memory and Kernels 4](http://blog.shakirm.com/2015/04/a-statistical-view-of-deep-learning-iii-memory-and-kernels/) (5/10/17)
+* "This highlights the deep relationship between deep networks and kernel machines: they are more than simply related, they are duals of each other."
+
 #### [A Statistical View of Deep Learning (II): Auto-encoders and Free Energy](http://blog.shakirm.com/2015/03/a-statistical-view-of-deep-learning-ii-auto-encoders-and-free-energy/) (4/24/17)
 * "Instead of considering perturbations in the observation space, we consider perturbations in the hidden space, obtained by using a prior p(z). The hidden variables are now random, latent variables.  Auto-encoders are now generative models that are straightforward to sample from."
 * "Rather than designing the penalty by hand, we are able to *derive* the form this penalty should take, appearing as the KL divergence between the the prior and the encoder distribution."
