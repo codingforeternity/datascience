@@ -26,7 +26,10 @@ ERROR:  fred/0001.bin.png: scale (7.48331) less than --minscale; skipping
 $ identify fred_ocropy_test.png
 fred_ocropy_test.png PNG 918x1001 918x1001+0+0 8-bit sRGB 180KB 0.000u 0:00.000
 
-$ convert fred_ocropy_test.png -resize 1836x2002 bigger.png  # exact proportional resizing not required: "Resize will fit the image into the requested size. It does NOT fill, the requested box size." [http://www.imagemagick.org/Usage/resize/]
+$ convert fred_ocropy_test.png -resize 1836x2002 bigger.png
+    # exact proportional resizing not required: "Resize will fit the
+    # image into the requested size. It does NOT fill, the requested
+    # box size." [http://www.imagemagick.org/Usage/resize/]
 
 $ ocropus-nlbin fred/bigger.png -o fred
 
