@@ -23,7 +23,7 @@ Welcome to the fcrimins.github.io wiki!
 * [[Machine Learning Notes]]
   * [[Recommender Systems]]
   * [[Notes for Geoff Hinton's Coursera ML course]]
-  * [[Computer Vision]] (kws: CNNs)
+  * [[Computer Vision]] (kws: CNN, OCR)
   * [[AdaBoost Notes]]
   * [[ML Noted Strengths]] (kws: principles of ML)
   * [[Machine Knowledge]] (kws: knowledge graphs)
