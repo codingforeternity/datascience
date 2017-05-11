@@ -11,7 +11,8 @@
   * "A free document layout analysis and OCR system, implemented in C++ and Python and for FreeBSD, Linux, and Mac OS X. This software supports a plug-in architecture which allows the user to select from a variety of different document layout analysis and OCR algorithms"
 * [OCRFeeder](https://en.wikipedia.org/wiki/OCRFeeder)
   * "OCRFeeder is an optical character recognition suite for GNOME, which also supports virtually any command-line OCR engine, such as CuneiForm, GOCR, Ocrad and Tesseract."
-  * 
+* pyocr
+  * Mentioned on [Quora](https://www.quora.com/What-are-the-best-open-source-OCR-libraries)
 
 #### [A short guide to learn NNs](https://chatbotslife.com/a-short-guide-to-learn-neural-networks-and-get-famous-and-rich-then-bf7da3cba76f#.bsa5v9ekx)
 * http://cs231n.stanford.edu/
