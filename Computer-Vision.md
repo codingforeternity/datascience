@@ -7,7 +7,7 @@
   * "Since version 3.00 Tesseract has supported output text formatting, hOCR[9] positional information and page-layout analysis."
   * "**Tesseract is suitable for use as a backend and can be used for more complicated OCR tasks including layout analysis by using a frontend such as OCRopus.**"
   * "Tesseract's output will have very poor quality if the input images are not preprocessed to suit it: Images (**especially screenshots**) must be scaled up such that the text x-height is at least 20 pixels,[13] any rotation or skew must be corrected or no text will be recognized, low-frequency changes in brightness must be high-pass filtered, or Tesseract's binarization stage will destroy much of the page, and dark borders must be manually removed, or they will be misinterpreted as characters"
-* OCRopus ([[OCRopus installation]])
+* OCRopus ([[OCRopus installation and examples]])
   * "A free document layout analysis and OCR system, implemented in C++ and Python and for FreeBSD, Linux, and Mac OS X. This software supports a plug-in architecture which allows the user to select from a variety of different document layout analysis and OCR algorithms"
 * [OCRFeeder](https://en.wikipedia.org/wiki/OCRFeeder)
   * "OCRFeeder is an optical character recognition suite for GNOME, which also supports virtually any command-line OCR engine, such as CuneiForm, GOCR, Ocrad and Tesseract."
