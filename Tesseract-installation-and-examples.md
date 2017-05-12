@@ -1,3 +1,6 @@
+Back to [[Computer Vision]]
+***
+
 [Installation](https://github.com/tesseract-ocr/tesseract) and [compilation](https://github.com/tesseract-ocr/tesseract/wiki/Compiling) instructions
 
 ```bash
