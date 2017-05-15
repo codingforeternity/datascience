@@ -42,6 +42,13 @@
       * hard to train, conversion problems
       * in some cases matches performance of supervised learning
       * need to prove usability of representation (a problem of ALL unsupervised algorithms)"
+  * Unsupervised "Learn-from-data models"
+    * Clever tricks:
+      * "break the image into a puzzle and train a deep neural network to solve the puzzle"
+      * two patches from same image + another patch from third -> train discriminator
+  * "Unsupervised training is very much an open topic, where you can make a large contribution by:
+    * creating a new unsupervised task to train networks, e.g.: solve a puzzle, compare image patches, generate images, …)
+    * thinking of tasks that create great unsupervised features, e.g.: what is object and what is background, same on stereo images, same on video frames ~= similar to how our human visual system develops"
 
 #### Selective HTTP (12/23/16)
 * Once a page has been served to a client, the thing doing the serving (e.g. the browser) should know what the important components of the page are (e.g. by what users choose to highlight, or ?) such that future requests can be for only the important components.
