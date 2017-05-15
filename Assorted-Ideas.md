@@ -18,6 +18,9 @@
 * "specifies a communication protocol that tracks how often an algorithm makes queries about the objective" [https://arxiv.org/pdf/1509.08627.pdf] i.e. learn Cat from {2 cats a dog and a horse}, not from {1000 cats}
 * update 3/22/17 - *neural episodic control* [How DeepMind’s Memory Trick Helps AI Learn Faster](https://www.technologyreview.com/s/603868/how-deepminds-memory-trick-helps-ai-learn-faster) “Our architecture does not try to learn when to write to memory, as this can be slow to learn and take a significant amount of time,” say Pritzel and co. “Instead, we elect to write all experiences to the memory, and allow it to grow very large compared to existing memory architectures.”
   * FWC - this also makes me think that machine learning will need some notion of sleep to perform well--perhaps sleep is what weeds out the crap experiences that have been written to memory (as suggested by some article that I wish I could search my notes for right now--but I actually can!--I just grepped my wiki for "sleep" and saw the "Crick and Mitchison" reference)
+* update 5/15/17 - [Navigating the Unsupervised Learning Landscape](https://medium.com/intuitionmachine/navigating-the-unsupervised-learning-landscape-951bd5842df9)
+  * "Ideally, we would like to have a model that behaves more like our brain. That needs just a few labels here"
+  * "the most successful models are the ones that predict future representation of a *video*"
 
 #### Selective HTTP (12/23/16)
 * Once a page has been served to a client, the thing doing the serving (e.g. the browser) should know what the important components of the page are (e.g. by what users choose to highlight, or ?) such that future requests can be for only the important components.
