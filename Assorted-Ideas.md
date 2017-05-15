@@ -21,6 +21,27 @@
 * update 5/15/17 - [Navigating the Unsupervised Learning Landscape](https://medium.com/intuitionmachine/navigating-the-unsupervised-learning-landscape-951bd5842df9)
   * "Ideally, we would like to have a model that behaves more like our brain. That needs just a few labels here"
   * "the most successful models are the ones that predict future representation of a *video*"
+  * encoding: "the primary visual vortex (V1) in our brain uses principles of sparsity to create a minimal set of base functions that can be also used to reconstruct the input image."
+  * "Auto-encoders / sparse-coding / stacked auto-encoders advantages and disadvantages
+    * Advantages:
+      * simple technique: reconstruct input
+      * multiple layer can be stacked
+      * intuitive and based on neuroscience research
+    * Disadvantages:
+      * *each layer is trained greedily*
+      * no global optimization
+      * does not match performance of supervised learning
+      * **multiple layer ineffective**
+      * reconstruction of input may not be ideal metric for learning a general-purpose representation"
+  * "Generative models try to create a categorization (discriminator or encoder) network and a model that generates images (generative model) at the same time."
+  * "Generative adversarial model advantages and disadvantages
+    * Advantages:
+      * global training of entire network
+      * simple to code and implement
+    * Disadvantages:
+      * hard to train, conversion problems
+      * in some cases matches performance of supervised learning
+      * need to prove usability of representation (a problem of ALL unsupervised algorithms)"
 
 #### Selective HTTP (12/23/16)
 * Once a page has been served to a client, the thing doing the serving (e.g. the browser) should know what the important components of the page are (e.g. by what users choose to highlight, or ?) such that future requests can be for only the important components.
