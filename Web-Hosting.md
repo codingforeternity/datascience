@@ -22,8 +22,14 @@ See also: [[Docker Notes]]
     * "Images in *other online* repositories are qualified further by a domain name (for example, quay.io/assemblyline/ubuntu or account-id.dkr.ecr.us-east-1.amazonaws.com/ubuntu:trusty)."
   * Includes instructions on "Using Images from an Amazon ECR Repository" on EB
 * [Difference between Amazon ec2 and AWS Elastic Beanstalk](http://stackoverflow.com/questions/25956193/difference-between-amazon-ec2-and-aws-elastic-beanstalk)
-  * "Elastic Beanstalk is one layer of abstraction away from the EC2 layer. Elastic Beanstalk will setup an "environment" for you that can contain a number of EC2 instances, an optional database, as well as a few other AWS components such as a Elastic Load Balancer, Auto-Scaling Group, Security Group. Then Elastic Beanstalk will manage these items for you whenever you want to update your software running in AWS."
+  * "Elastic Beanstalk is one layer of abstraction away from the EC2 layer. Elastic Beanstalk will setup an 'environment' for you that can contain a number of EC2 instances, an optional database, as well as a few other AWS components such as a Elastic Load Balancer, Auto-Scaling Group, Security Group. Then Elastic Beanstalk will manage these items for you whenever you want to update your software running in AWS."
   * "EC2 Container Service is Amazon's managed replacement for running your own Mesos cluster. It's a good solution if you're running multiple applications, and simplifies management and billing. If you're running a single application, *unless you just like the Dockerized model*, Beanstalk is a better option."
+* [CloudAcademy: Amazon EC2 Container Service and Elastic Beanstalk: Docker on AWS](http://cloudacademy.com/blog/amazon-ec2-container-service-docker-aws/)
+  * "three ways to run Docker containers on AWS"
+      1. "Deploying Docker containers directly to an Ec2 instance."
+      2. "Using Docker containers on Elastic Beanstalk."
+      3. "Docker cluster management using the AWS EC2 Container Service."
+  * "Even a slight difference between your development, test, and production environments may completely break your application. **Traditional development models follow a change management process to solve these kind of the problems. But this process won’t fit in today’s rapid build and deploy cycles.**"
 
 #### [Getting Started with AWS](https://www.youtube.com/watch?v=bFc5Fg9YSQg)
 * Set up multi factor identification (MFA) on root account and all IAM accounts
