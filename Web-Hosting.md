@@ -32,6 +32,10 @@ See also: [[Docker Notes]]
       2. "Using Docker containers on Elastic Beanstalk."
       3. "Docker cluster management using the AWS EC2 Container Service."
   * "Even a slight difference between your development, test, and production environments may completely break your application. **Traditional development models follow a change management process to solve these kind of the problems. But this process won’t fit in today’s rapid build and deploy cycles.**"
+* [Amazon ECS FAQs](https://aws.amazon.com/ecs/faqs/)
+  * "Q: How is Amazon ECS different from AWS Elastic Beanstalk?"
+  * "Q: I want to launch containers. Why do I have to launch Tasks?"
+    * "Tasks allow you to define a set of containers that you would like to be placed together, their properties, and how they may be linked. Tasks include all the information that EC2 Container Service needs to make the placement decision. To launch a single container, your Task Definition should only include one container definition."
 * [EC2 Container Service Load Balancing](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-load-balancing.html)
   * **This is what I've been looking for.**
   * *Application* Load Balancer
