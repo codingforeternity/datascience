@@ -9,6 +9,8 @@ See also: [[Docker Notes]]
   * "Is there any way that I can make my Flask application accept requests from multiple users?"
   * "Yes, deploy your application on a different WSGI server, see the Flask deployment options documentation."
 * [Flask Deployment Options](http://flask.pocoo.org/docs/0.12/deploying/)
+  * "While lightweight and easy to use, Flask's built-in server is not suitable for production as it doesn’t scale well and by default serves only one request at a time."
+  * This said, when you go to the AWS EB link on that page, the example EB deployment still runs using "Flask's build-in server," just with `debug` set to False.
 * [Deploying a Flask Application to AWS Elastic Beanstalk](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html)
   * These instructions don't use Docker; they go straight from Python to AWS.
   * [Using the AWS Elastic Beanstalk Python Platform](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-container.html)
