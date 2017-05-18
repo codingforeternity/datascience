@@ -16,6 +16,8 @@ See also: [[Docker Notes]]
   * This approach uses a `Dockerrun.aws.json` file in place of `docker-compose.yml`
 * [Configuring Docker Environments (for deployment to EB) ](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html)
 * [Difference between Amazon ec2 and AWS Elastic Beanstalk](http://stackoverflow.com/questions/25956193/difference-between-amazon-ec2-and-aws-elastic-beanstalk)
+  * "Elastic Beanstalk is one layer of abstraction away from the EC2 layer. Elastic Beanstalk will setup an "environment" for you that can contain a number of EC2 instances, an optional database, as well as a few other AWS components such as a Elastic Load Balancer, Auto-Scaling Group, Security Group. Then Elastic Beanstalk will manage these items for you whenever you want to update your software running in AWS."
+  * "EC2 Container Service is Amazon's managed replacement for running your own Mesos cluster. It's a good solution if you're running multiple applications, and simplifies management and billing. If you're running a single application, *unless you just like the Dockerized model*, Beanstalk is a better option."
 
 #### [Getting Started with AWS](https://www.youtube.com/watch?v=bFc5Fg9YSQg)
 * Set up multi factor identification (MFA) on root account and all IAM accounts
