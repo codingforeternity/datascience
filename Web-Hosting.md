@@ -12,9 +12,14 @@ See also: [[Docker Notes]]
 * [Deploying a Flask Application to AWS Elastic Beanstalk](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html)
   * These instructions don't use Docker; they go straight from Python to AWS.
   * [Using the AWS Elastic Beanstalk Python Platform](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-container.html)
+  * `pip freeze > requirements.txt` to create this file from all the installed packages in a virtualenv
 * [Dockerizing a Python web app (and deploying it to EB)](https://aws.amazon.com/blogs/devops/dockerizing-a-python-web-app/)
   * This approach uses a `Dockerrun.aws.json` file in place of `docker-compose.yml`
-* [Configuring Docker Environments (for deployment to EB) ](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html)
+* [Configuring Docker Environments (for deployment to EB)](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html)
+  * "Specify images by name in `Dockerrun.aws.json`. Note these conventions:"
+    * "Images in *official* repositories on Docker Hub use a single name (for example, ubuntu or mongo)."
+    * "Images in *other* repositories on Docker Hub are qualified with an organization name (for example, amazon/amazon-ecs-agent)."
+    * "Images in *other online* repositories are qualified further by a domain name (for example, quay.io/assemblyline/ubuntu or account-id.dkr.ecr.us-east-1.amazonaws.com/ubuntu:trusty)."
 * [Difference between Amazon ec2 and AWS Elastic Beanstalk](http://stackoverflow.com/questions/25956193/difference-between-amazon-ec2-and-aws-elastic-beanstalk)
   * "Elastic Beanstalk is one layer of abstraction away from the EC2 layer. Elastic Beanstalk will setup an "environment" for you that can contain a number of EC2 instances, an optional database, as well as a few other AWS components such as a Elastic Load Balancer, Auto-Scaling Group, Security Group. Then Elastic Beanstalk will manage these items for you whenever you want to update your software running in AWS."
   * "EC2 Container Service is Amazon's managed replacement for running your own Mesos cluster. It's a good solution if you're running multiple applications, and simplifies management and billing. If you're running a single application, *unless you just like the Dockerized model*, Beanstalk is a better option."
