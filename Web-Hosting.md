@@ -4,6 +4,19 @@ See also: [[Docker Notes]]
 
 ***
 
+#### Flask Deployment Options (5/18/17)
+* [Handling multiple requests in Flask](http://stackoverflow.com/questions/14672753/handling-multiple-requests-in-flask)
+  * "Is there any way that I can make my Flask application accept requests from multiple users?"
+  * "Yes, deploy your application on a different WSGI server, see the Flask deployment options documentation."
+* [Flask Deployment Options](http://flask.pocoo.org/docs/0.12/deploying/)
+* [Deploying a Flask Application to AWS Elastic Beanstalk](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html)
+  * These instructions don't use Docker; they go straight from Python to AWS.
+  * [Using the AWS Elastic Beanstalk Python Platform](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-container.html)
+* [Dockerizing a Python web app (and deploying it to EB)](https://aws.amazon.com/blogs/devops/dockerizing-a-python-web-app/)
+  * This approach uses a `Dockerrun.aws.json` file in place of `docker-compose.yml`
+* [Configuring Docker Environments (for deployment to EB) ](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker.container.console.html)
+* [Difference between Amazon ec2 and AWS Elastic Beanstalk](http://stackoverflow.com/questions/25956193/difference-between-amazon-ec2-and-aws-elastic-beanstalk)
+
 #### [Getting Started with AWS](https://www.youtube.com/watch?v=bFc5Fg9YSQg)
 * Set up multi factor identification (MFA) on root account and all IAM accounts
 * Common user access policies (distinct from security groups)
