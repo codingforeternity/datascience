@@ -1,3 +1,5 @@
+#### [3 Million Instacart Orders, Open Sourced](https://tech.instacart.com/3-million-instacart-orders-open-sourced-d40d29ead6f2)
+
 #### [Google's One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling](https://research.google.com/pubs/pub41880.html) (3/24/17)
 * per [here](https://medium.com/@majortal/deep-spelling-9ffef96a24f6)
 
