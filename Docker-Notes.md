@@ -4,6 +4,8 @@ See also: [[Web Hosting]]
 
 ***
 
+#### [Retagging an Image with the AWS CLI](http://docs.aws.amazon.com/AmazonECR/latest/userguide/retag-aws-cli.html)
+
 #### [Data-only containers and data persistence with Docker](https://learning-continuous-deployment.github.io/docker/container/volumes/2015/05/22/persistent-data-with-docker/)
 * Bottom line: use --volume-from into a data-only container that does nothing other than expose a volume
 
