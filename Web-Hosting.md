@@ -4,6 +4,9 @@ See also: [[Docker Notes]]
 
 ***
 
+#### [A Comprehensive Guide to Building a Scalable Web App on Amazon Web Services - Part 1](https://www.airpair.com/aws/posts/building-a-scalable-web-app-on-amazon-web-services-p1) (5/31/17)
+* "Among those services, the bulk of your learning will be in EC2, VPC, S3, and one or more of the persistence services including RDS or DynamoDB."
+
 #### Flask Deployment Options (5/18/17)
 * [Handling multiple requests in Flask](http://stackoverflow.com/questions/14672753/handling-multiple-requests-in-flask)
   * "Is there any way that I can make my Flask application accept requests from multiple users?"
