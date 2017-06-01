@@ -4,6 +4,8 @@ See also: [[Docker Notes]]
 
 ***
 
+#### [AWS Service Load Balancing](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-load-balancing.html) (6/1/17)
+
 #### [A Comprehensive Guide to Building a Scalable Web App on Amazon Web Services - Part 1](https://www.airpair.com/aws/posts/building-a-scalable-web-app-on-amazon-web-services-p1) (5/31/17)
 * "Among those services, the bulk of your learning will be in EC2, VPC, S3, and one or more of the persistence services including RDS or DynamoDB."
 
