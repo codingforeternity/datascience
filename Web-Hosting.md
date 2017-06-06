@@ -8,6 +8,13 @@ See also: [[Docker Notes]]
 
 #### [A Comprehensive Guide to Building a Scalable Web App on Amazon Web Services - Part 1](https://www.airpair.com/aws/posts/building-a-scalable-web-app-on-amazon-web-services-p1) (5/31/17)
 * "Among those services, the bulk of your learning will be in EC2, VPC, S3, and one or more of the persistence services including RDS or DynamoDB."
+* "The best practice here is to make your App Tier instances stateless and store things like session state in a different tier. We discuss this more more in *4.3 Architecting for Scalability*"
+* "The role of the Cache Tier is to store ephemeral data like user session information, or the results of commonly requested queries."
+  * We don't seem to have a cache tier.
+  * "You can setup any cache server of your choice on an EC2 instance, or AWS provides the ElastiCache service as a managed Cache Tier and lets you choose whether it should use Memcached or Redis as the underlying software. Redis is generally the newer and more popular solution on newer projects."
+  * "When your Cache Tier holds all ephemeral state like session values, your App Tier no longer has to maintain this state itself. This means you can launch additional EC2 instances, and as long as they are configured to look to the Cache Tier for ephemeral data and the Database Tier for persistent data, they will "just work." For this reason, **a Cache Tier is usually an essential part of auto scaling**."
+* "If you decide to use AWS DynamoDB you are entering a world that comes as close to zero administration as I have seen."
+  * "**If you're using DynamoDB you should be paranoid about things going wrong in your Database Tier. If you're not using DynamoDB, you should be very, very paranoid about things going wrong.**"
 
 #### Flask Deployment Options (5/18/17)
 * [Handling multiple requests in Flask](http://stackoverflow.com/questions/14672753/handling-multiple-requests-in-flask)
