@@ -1,3 +1,6 @@
+#### [HowTo: UNIX / Linux Open TCP / UDP Ports](https://www.cyberciti.biz/faq/linux-unix-open-ports/) (6/6/17)
+* "The `nc` (or netcat utility) is used for just about anything under the sun involving TCP or UDP. It can **open TCP connections**, send UDP packets, listen on arbitrary TCP and UDP ports, do port scanning, and deal with both IPv4 and IPv6."
+
 #### Remote desktop (xrdp; 4/12/17)
 * [Arch Linux xrdp wiki page](https://wiki.archlinux.org/index.php/xrdp)
   * except it says you need to start xrdp-sesman service, which now gets automatically started w/ xrdp
