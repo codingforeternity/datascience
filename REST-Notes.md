@@ -5,7 +5,7 @@
     > Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure.
     > -- Melvyn Conway, 1967
 * "The microservice approach to division is different, splitting up into **services organized around business capability**. Such services take a broad-stack implementation of software for that business area, including user-interface, persistant storage, and any external collaborations."
-
+* "As well as decentralizing decisions about conceptual models, microservices also decentralize data storage decisions. ... Microservices prefer letting each service manage its own database, either different instances of the same database technology, or entirely different database systems - an approach called Polyglot Persistence."
 
 ### [Awesome Microservices](https://github.com/mfornos/awesome-microservices) (4/19/17)
 * A curated list of Microservice Architecture related principles and technologies.
