@@ -15,6 +15,7 @@ See also: [[Docker Notes]]
   * "When your Cache Tier holds all ephemeral state like session values, your App Tier no longer has to maintain this state itself. This means you can launch additional EC2 instances, and as long as they are configured to look to the Cache Tier for ephemeral data and the Database Tier for persistent data, they will "just work." For this reason, **a Cache Tier is usually an essential part of auto scaling**."
 * "If you decide to use AWS DynamoDB you are entering a world that comes as close to zero administration as I have seen."
   * "**If you're using DynamoDB you should be paranoid about things going wrong in your Database Tier. If you're not using DynamoDB, you should be very, very paranoid about things going wrong.**"
+* "Hard-coding an IP address in your Web Tier configuration is the most basic form of Service Discovery and suffers from the problems of not being dynamically updated when new servers get added, and not auto-removing unhealthy instances. The classic way to handle Service Discovery for ASGs is using an Elastic Load Balancer as described in the official documentation."
 
 #### Flask Deployment Options (5/18/17)
 * [Handling multiple requests in Flask](http://stackoverflow.com/questions/14672753/handling-multiple-requests-in-flask)
