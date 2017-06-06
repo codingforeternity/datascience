@@ -2,8 +2,8 @@
 * "Monolithic applications can be successful, but increasingly people are feeling frustrations with them - **especially as more applications are being deployed to the cloud**."
   * FWC - so is this "cloud" piece essential or not in terms of marginal benefit?
 * "When looking to split a large application into parts, often management focuses on the technology layer, leading to UI teams, server-side logic teams, and database teams. When teams are separated along these lines, even simple changes can lead to a cross-team project taking time and budgetary approval. A smart team will optimise around this and plump for the lesser of two evils - just force the logic into whichever application they have access to. Logic everywhere in other words. This is an example of Conway's Law"
-  > Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure.
-  > -- Melvyn Conway, 1967
+    > Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure.
+    > -- Melvyn Conway, 1967
 * "The microservice approach to division is different, splitting up into **services organized around business capability**. Such services take a broad-stack implementation of software for that business area, including user-interface, persistant storage, and any external collaborations."
 
 
