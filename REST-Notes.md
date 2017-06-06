@@ -1,4 +1,4 @@
-### [](https://martinfowler.com/articles/microservices.html) (6/6/17)
+### [Microservices: a definition of this new architectural term](https://martinfowler.com/articles/microservices.html) (6/6/17)
 * "Monolithic applications can be successful, but increasingly people are feeling frustrations with them - **especially as more applications are being deployed to the cloud**."
   * FWC - so is this "cloud" piece essential or not in terms of marginal benefit?
 * "When looking to split a large application into parts, often management focuses on the technology layer, leading to UI teams, server-side logic teams, and database teams. When teams are separated along these lines, even simple changes can lead to a cross-team project taking time and budgetary approval. A smart team will optimise around this and plump for the lesser of two evils - just force the logic into whichever application they have access to. Logic everywhere in other words. This is an example of Conway's Law"
