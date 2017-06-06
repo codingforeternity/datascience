@@ -1,3 +1,5 @@
+#### [How to use mock objects with ScalaTest](http://alvinalexander.com/scala/how-to-use-mock-objects-with-scalatest) (6/6/17)
+
 #### [How to use serialization in Scala (Serializable trait)](http://alvinalexander.com/scala/how-to-use-serialization-in-scala-serializable-trait) (5/31/17)
 
 #### [Dependency Injection in Scala: MacWire](https://di-in-scala.github.io/) (12/13/16)
