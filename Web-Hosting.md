@@ -16,6 +16,8 @@ See also: [[Docker Notes]]
 * "If you decide to use AWS DynamoDB you are entering a world that comes as close to zero administration as I have seen."
   * "**If you're using DynamoDB you should be paranoid about things going wrong in your Database Tier. If you're not using DynamoDB, you should be very, very paranoid about things going wrong.**"
 * "Hard-coding an IP address in your Web Tier configuration is the most basic form of Service Discovery and suffers from the problems of not being dynamically updated when new servers get added, and not auto-removing unhealthy instances. The classic way to handle Service Discovery for ASGs is using an Elastic Load Balancer as described in the official documentation."
+* "So in November 2014, AWS released AWS Key Management Service. This service is a perfect complement to the OWASP recommendations and provides a centralized place to manage all of your keys. Of course, you'll still need to implement best practices in your app itself."
+  * "This is again, a much bigger topic than I can cover here, and I encourage you to review the AWS White Paper [Securing Data at Rest with Encryption](http://media.amazonwebservices.com/AWS_Securing_Data_at_Rest_with_Encryption.pdf)."
 
 #### Flask Deployment Options (5/18/17)
 * [Handling multiple requests in Flask](http://stackoverflow.com/questions/14672753/handling-multiple-requests-in-flask)
