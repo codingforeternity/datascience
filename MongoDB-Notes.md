@@ -1,3 +1,9 @@
+### In-Memory MongoDB (6/7/17)
+* [Embedded MongoDB when running integration tests - StackOverflow](https://stackoverflow.com/questions/6437226/embedded-mongodb-when-running-integration-tests), 2 options:
+  1. [Embedded MongoDB](https://github.com/flapdoodle-oss/de.flapdoodle.embed.mongo)
+  2. [fakemongo/Fongo](https://github.com/fakemongo/fongo) (formerly a Foursquare project?)
+* [Integration Testing Done Right With Embedded MongoDB](https://dzone.com/articles/integration-testing-done-right)
+
 ### Notes
 * Terminology: a "collection of documents" is analogous to a "table of rows."
   * "The `grades` array contains embedded *documents* as its elements."  So a "document" is also analogous to a hash or a dict, if you will.
