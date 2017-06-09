@@ -12,6 +12,13 @@
 Scikit-Learn Algorithm Cheatsheet (in ~/Documents)
 ***
 
+#### [Reasons to Switch from TensorFlow to CNTK](https://docs.microsoft.com/en-us/cognitive-toolkit/reasons-to-switch-from-tensorflow-to-cntk?) (6/9/17)
+* "Following Microsoft’s vision that AI shall be accessible for all instead of a few elite companies, we created the Microsoft Cognitive Toolkit (CNTK), an open source deep learning toolkit free for anyone to use. Today, it is the third most popular deep learning toolkit in terms of GitHub stars, behind TensorFlow and Caffe, and ahead of MxNet, Theano, Torch, etc."
+
+#### [Hacks and optimizations for neural nets](https://medium.com/@m0nologuer/hacks-and-optimizations-for-neural-nets-95ed49fa12c2) (6/9/17)
+* "**Synthetic gradients** are an attempt to ‘unlock’ the layers of a neural network. It works by *training a second model to predict the gradients of the first*. Clever, right? This means you actually can cut and paste a layer from a different model."
+* "**Batch normalization** is normalization applied to the input. It works on batches of training samples, where it computes the mean and variance of each batch, which are then used to scale the input values. This significantly reduces the training time in feed-forward neural networks."
+
 #### [TensorFlow: Examples of End-to-End Implementation](https://dzone.com/articles/tensorflow-example-of-end-to-end-implementations) (3/6/17)
 * The differences were that the MNIST example initializes its hidden layers with truncated normals instead of normals divided by the square root of the input size, initializes biases at 0.1 instead of 0 and uses ReLU activations instead of tanh. By switching to **Xavier initialization** (using Delip’s handy function), 0 biases, and tanh, everything worked as in the WildML example. (It turns out that what matters most is the initialization of the weights.) This is a simple example of what is often discussed with deep learning methods: they can work amazingly well, but they are very sensitive to initialization and choices about the sizes of layers, activation functions, and the influence of these choices on each other. They are a very powerful set of techniques, but they (still) require finesse and understanding, compared to, say, many linear modeling toolkits that can effectively be used as black boxes these days.
 
