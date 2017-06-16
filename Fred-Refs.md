@@ -1,3 +1,5 @@
+"Fred Flinstone" used as an example [http://alvinalexander.com/scala/how-to-create-multiple-class-constructors-in-scala-alternate-constructors]
+
 "def hello(name="Fred")" [https://flask-script.readthedocs.io/en/latest/]
 
 "Hi fred how was the pizza?" [https://www.quora.com/What-are-the-continuous-bag-of-words-and-skip-gram-architectures-in-laymans-terms]
