@@ -1,3 +1,10 @@
+
+Fred society .com
+
+Freddie spaghetti Alex's children's song
+
+"85% of the gravity of the universe has no known origin so we just call it dark matter, we don't really know if it's matter, we can call it fred for all that matters here" neil deGrasse tyson, on stuart smiley
+
 "Fred Flinstone" used as an example [http://alvinalexander.com/scala/how-to-create-multiple-class-constructors-in-scala-alternate-constructors]
 
 "def hello(name="Fred")" [https://flask-script.readthedocs.io/en/latest/]
