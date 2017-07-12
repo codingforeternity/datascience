@@ -1,4 +1,6 @@
 #### [Reducing Dimensionality from Dimensionality Reduction Techniques](https://medium.com/towards-data-science/reducing-dimensionality-from-dimensionality-reduction-techniques-f658aec24dfe) (7/12/17)
+* "Another great plus in Auto Encoders, is that since by the end of the training we have the weights that lead to the hidden layer, we can train on certain input, and if later on we come across another data point we can reduce its dimensionality using those weights without re-training"
+
 #### [Two Decades of Recommender Systems at Amazon.com](https://www.computer.org/csdl/mags/ic/2017/03/mic2017030012.html) (7/12/17)
 
 #### [A Statistical View of Deep Learning (III): Memory and Kernels 4](http://blog.shakirm.com/2015/04/a-statistical-view-of-deep-learning-iii-memory-and-kernels/) (5/10/17)
