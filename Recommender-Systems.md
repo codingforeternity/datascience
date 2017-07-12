@@ -1,5 +1,10 @@
 #### [How to Use t-SNE Effectively](http://distill.pub/2016/misread-tsne/) (7/12/17)
 * "A second feature of t-SNE is a tuneable parameter, “perplexity,” which says (loosely) how to balance attention between local and global aspects of your data. The parameter is, in a sense, a guess about the number of close neighbors each point has."
+* "The t-SNE algorithm adapts its notion of “distance” to regional density variations in the data set. As a result, it naturally expands dense clusters, and contracts sparse ones, evening out cluster sizes."
+* "There may not be one perplexity value that will capture distances across all clusters—and sadly perplexity is a global parameter."
+* "In fact, these features are saying useful things about high-dimensional normal distributions, which are very close to uniform distributions on a sphere: evenly distributed, with roughly equal spaces between points. Seen in this light, the t-SNE plot is more accurate than any linear projection could be."
+* "t-SNE tends to expand denser regions of data"
+  * FWC - this seems like a huge benefit - the problem with a lot of data is uneven distribution - could this be used to de-bias fake news, the main problem with which is sampling bias (kws: truthiness)
 
 #### [Reducing Dimensionality from Dimensionality Reduction Techniques](https://medium.com/towards-data-science/reducing-dimensionality-from-dimensionality-reduction-techniques-f658aec24dfe) (7/12/17)
 * "Another great plus in Auto Encoders, is that since by the end of the training we have the weights that lead to the hidden layer, we can train on certain input, and if later on we come across another data point we can reduce its dimensionality using those weights without re-training"
