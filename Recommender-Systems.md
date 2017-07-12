@@ -1,3 +1,6 @@
+#### [Reducing Dimensionality from Dimensionality Reduction Techniques](https://medium.com/towards-data-science/reducing-dimensionality-from-dimensionality-reduction-techniques-f658aec24dfe) (7/12/17)
+#### [Two Decades of Recommender Systems at Amazon.com](https://www.computer.org/csdl/mags/ic/2017/03/mic2017030012.html) (7/12/17)
+
 #### [A Statistical View of Deep Learning (III): Memory and Kernels 4](http://blog.shakirm.com/2015/04/a-statistical-view-of-deep-learning-iii-memory-and-kernels/) (5/10/17)
 * "This highlights the deep relationship between deep networks and kernel machines: they are more than simply related, they are duals of each other."
 
